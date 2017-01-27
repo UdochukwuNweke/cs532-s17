@@ -1,0 +1,350 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Perl} % Load Perl syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=Perl, % Use Perl in this example
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
+        keywordstyle=[2]\color{Purple}, % Perl function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard Perl functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put Perl function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+\newcommand{\perlscript}[2]{
+\begin{itemize}
+\item[]\lstinputlisting[caption=#2,label=#1]{#1.pl}
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Assignment\ \#1} % Assignment title
+\newcommand{\hmwkDueDate}{Thursday,\ January\ 26,\ 2017} % Due date
+\newcommand{\hmwkClass}{ Introduction to Web Science} % Course/class
+\newcommand{\hmwkClassTime}{} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Dr. Nelson} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Udochukwu Nweke} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\newpage
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\begin{homeworkProblem}
+
+Demonstrate that you know how to use ``curl'' well enough to correctly POST data to a form. Show that the HTML response that is returned is ``correct''. That is the server should take the arguments you POSTed and build a response accordingly. Save the HTML response to a file and then view that file in a browser and take a screen shot.
+
+
+
+\perlscript{p1}{Shows curl Demonstration Script With Highlighting}
+
+The Listing 1. shows how I used curl command to submit data to the server through a POST method by using --data option. In listing 1, the number 17 submitted to the server at address: ``http://www.numberempire.com
+/primenumbers.php''  is printed by the web application.
+
+
+\begin{figure}
+    \centering
+    %\textbf{Your title}\par\medskip
+    \includegraphics[scale=0.3]{curlDemo}
+    \caption{Showing the value 17 correctly received from the server}
+\end{figure}
+
+
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 2
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}
+Write a Python code that:
+
+
+1. takes as a command line argument a web page
+
+
+2. extracts all the links from the page
+
+
+3. lists all the links that result in PDF files, and prints out the bytes for each of the links. ( note: be sure to follow all the redirects until the link terminates with a ``200 ok''.)
+
+
+4. Show that the program works on 3 different URIs, one of which needs to be:
+
+   http://www.cs.odu.edu/~mln/teaching/cs532-s17/test/pdf/html
+
+
+\perlscript{p2}{Shows curl Demonstration Script With Highlighting}
+I extracted the command line arguments with the python sys.argv array. Next, a the function called \textit{derefURL} extracts the HTML content using curl with the -L option to follow redirects. I used BeautifulSoup to parse the HTML content and extract links with function \textit{getLinks}. I made a HEAD HTML request using curl -I option to process the extracted URLs in other to get the PDF files and bytesize (function \textit{getPDFLinks and getHeadAttr}). The following below is a sample output from ``http://www.cs.odu.edu/~mweigle/Main/PubsByYear''. I have included all the ouput (pdflinks.txt, pdflink1.txt and pdflinks2.txt) in my submission.
+
+\begin{verbatim}
+webpage: http://www.cs.odu.edu/~mweigle/Main/PubsByYear
+http://www.cs.odu.edu/~mweigle/files/CV.pdf
+	7 bytesize: 93364
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/pardue-vis16-2pg-poster.pdf
+	17 bytesize: 583877
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/pardue-vis16-poster.pdf
+	18 bytesize: 614446
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/aturban-tpdl15.pdf
+	33 bytesize: 622981
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-stories.pdf
+	35 bytesize: 1274604
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-off-topic.pdf
+	37 bytesize: 4308768
+	type: PDF
+\end{verbatim}
+
+\end{homeworkProblem}
+
+
+
+\begin{homeworkProblem}
+Consider the "bow-tie" graph in the Broder et al. paper (fig 9):
+http://www9.org/w9cdrom/160/160.html
+
+Now consider the following graph:
+\begin{verbatim}
+	A --> B
+	B --> C
+    C --> D
+    C --> A
+    C --> G
+    E --> F
+    G --> C
+    G --> H
+    I --> H
+    I --> K
+    L --> D
+    M --> A
+    M --> N
+    N --> D
+    O --> A
+    P --> G 
+    
+\end{verbatim}
+For the above graph, give the values for:
+
+IN: {M, P, O}
+ 
+SCC: {A, B, C, G}
+
+OUT: {D, H}
+
+Tendrils: {L, I, K} 
+
+Tubes: {N}
+
+Disconnected: {E, F}
+
+\begin{figure}
+    \centering
+    %\textbf{Your title}\par\medskip
+    \includegraphics[scale=0.3]{graph}
+    \caption{bow-tie graph}
+\end{figure}
+
+SCC: This is the Strongly Connected Component and it is refers to all the links that are connected to one another along a directed link. Hence, from our graph (http://www9.org/w9cdrom/160/160.html).
+
+ SCC: {A, B, C, D}
+
+
+IN: These are points that can be reached by SCC but cannot be reached from SCC (http://www9.org/w9cdrom/160/160.html)
+
+IN: {M, P, O}
+
+OUT: These are the pages that can be accessed from the SCC but they do not have any link back to the SCC (http://www9.org/w9cdrom/160/160.html)
+
+OUT: {D,H}
+
+TENDRIL: These are pages that cannot get to the SCC and they cannot be cannot be reached from SCC as well. (http://www9.org/w9cdrom/160/160.html)
+
+TENDRIL: {L, I, K}
+
+TUBES: Pages that have in-links from IN or other pages in Tubes and out-links to pages in Tubes or OUT.
+(http://www.harding.edu/fmccown/classes/comp475-s13/web-structure-homework.pdf)
+
+Tube: {N}
+
+DISCONNECTED: Pages that have no in-links from any other components and no out-links to other components.
+These pages may be linked to each other. 
+
+(http://www.harding.edu/fmccown/classes/
+comp475-s13/web-structure-homework.pdf)
+
+DISCONNECTED {E, F}
+
+
+\end{homeworkProblem}
+
+%--------------------------------------------------------------------------------
+\end{document}
+

@@ -1,0 +1,281 @@
+webpage: http://www.cs.odu.edu/~mweigle/Main/PubsByYear
+http://www.cs.odu.edu/~mweigle/files/CV.pdf
+	7 bytesize: 93364
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/pardue-vis16-2pg-poster.pdf
+	17 bytesize: 583877
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/pardue-vis16-poster.pdf
+	18 bytesize: 614446
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/aturban-tpdl15.pdf
+	33 bytesize: 622981
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-stories.pdf
+	35 bytesize: 1274604
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/tpdl-2015/tpdl-2015-off-topic.pdf
+	37 bytesize: 4308768
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/mohrehkesh-tmbmc15.pdf
+	42 bytesize: 3387091
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/jcdl-2015/jcdl-2015-arabic-sites.pdf
+	47 bytesize: 709420
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/jcdl-2015/jcdl-2015-mink.pdf
+	49 bytesize: 1254605
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/rawat-ahswn15.pdf
+	52 bytesize: 1039622
+	type: PDF
+
+http://www.cs.odu.edu/~smohrehk/pub/JSAC2014.pdf
+	60 bytesize: 1992270
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/wang-milcom14.pdf
+	65 bytesize: 402145
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ruffing-milcom14.pdf
+	69 bytesize: 498835
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/mohrehkesh-misenet14.pdf
+	73 bytesize: 1231147
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/jcdl-2014/jcdl-2014-kelly-mink.pdf
+	76 bytesize: 556863
+	type: PDF
+
+http://www.cs.odu.edu/~mln/pubs/jcdl-2014/jcdl-2014-brunelle-damage.pdf
+	82 bytesize: 2205546
+	type: PDF
+
+http://www.cs.odu.edu/~mkelly/papers/2014_dl_acid.pdf
+	85 bytesize: 541843
+	type: PDF
+
+http://www.cs.odu.edu/~aalsum/pubs/ArchiveDescriptor.pdf
+	90 bytesize: 543004
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/mohrehkesh-nanocom14.pdf
+	93 bytesize: 1773662
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/olariu-mccr14.pdf
+	96 bytesize: 876816
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/mohrehkesh-globecom13.pdf
+	101 bytesize: 347912
+	type: PDF
+
+http://www.cs.odu.edu/~mkelly/papers/2013_ieeevis_boxofficeprediction.pdf
+	108 bytesize: 122738
+	type: PDF
+
+http://www.cs.odu.edu/~mkelly/posters/2013_vis_boxoffice.pdf
+	109 bytesize: 373897
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/olariu-misenet13.pdf
+	112 bytesize: 405542
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/mohrehkesh-misenet13.pdf
+	115 bytesize: 1093385
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/almalag-mp2p13.pdf
+	138 bytesize: 398562
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/almalag-vtp12.pdf
+	155 bytesize: 3742576
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/kelly-jcdl12.pdf
+	159 bytesize: 152402
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/padia-jcdl12.pdf
+	162 bytesize: 755860
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ainsworth-jcdl11.pdf
+	170 bytesize: 918103
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/arbabi-ivcs11.pdf
+	176 bytesize: 434778
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/arbabi-vnc10.pdf
+	179 bytesize: 627549
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/arbabi-wsc10.pdf
+	182 bytesize: 532128
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/almalag-onmove10.pdf
+	185 bytesize: 872159
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/comcom10-preprint.pdf
+	192 bytesize: 342066
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/yan-ieeewc09-preprint.pdf
+	195 bytesize: 294498
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/rawat-vtc09.pdf
+	198 bytesize: 328033
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/arbabi-vanet09.pdf
+	201 bytesize: 174746
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/yan-soli09.pdf
+	204 bytesize: 278184
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/tmix-nsdoc.pdf
+	206 bytesize: 117974
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-vtc09spr.pdf
+	211 bytesize: 120303
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-wave08.pdf
+	217 bytesize: 215936
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-autonet08.pdf
+	220 bytesize: 315141
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/yan-wave08.pdf
+	222 bytesize: 530852
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/yan-its08.pdf
+	225 bytesize: 805169
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-movenet08.pdf
+	229 bytesize: 199851
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-vanet08.pdf
+	233 bytesize: 49328
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-vanet08-poster.pdf
+	234 bytesize: 370639
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/yan-comcom08.pdf
+	238 bytesize: 709599
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/abuelela-vtc08spr.pdf
+	241 bytesize: 170064
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-move08.pdf
+	244 bytesize: 160539
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ibrahim-vanet07.pdf
+	250 bytesize: 102748
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/yan-vanet07.pdf
+	253 bytesize: 185035
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/rizvi-netcri07.pdf
+	258 bytesize: 230229
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/weigle-netcri07.pdf
+	262 bytesize: 88757
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/wintersim06.pdf
+	266 bytesize: 505932
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/globecom06.pdf
+	269 bytesize: 259643
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/comcom06-preprint.pdf
+	272 bytesize: 324734
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/wicon06.pdf
+	275 bytesize: 342969
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/ccr06.pdf
+	278 bytesize: 747117
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/networking06.pdf
+	280 bytesize: 583335
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/adurthi-tmix-TR06.pdf
+	282 bytesize: 188306
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/research/netsim/packmime-nsdoc.pdf
+	284 bytesize: 46574
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/research/netsim/delaybox-nsdoc.pdf
+	286 bytesize: 16814
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/comcom05-preprint.pdf
+	289 bytesize: 476999
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/INFOCOM04.pdf
+	292 bytesize: 241793
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/MASCOTS03.pdf
+	295 bytesize: 296716
+	type: PDF
+
+http://www.cs.unc.edu/~jeffay/papers/MMCN-01.pdf
+	300 bytesize: 88359
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/sigcomm00-abs.pdf
+	302 bytesize: 10370
+	type: PDF
+
+http://www.cs.odu.edu/~mweigle/papers/icmcs99.pdf
+	305 bytesize: 186587
+	type: PDF
+
