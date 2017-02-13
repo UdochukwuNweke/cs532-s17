@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T05:02:52Z",
+        "uri": "http://web.archive.org/web/20170130050252/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/"
+      },
+      {
+        "datetime": "2017-02-02T09:32:11Z",
+        "uri": "http://web.archive.org/web/20170202093211/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T05:02:52Z",
+      "uri": "http://web.archive.org/web/20170130050252/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/"
+    },
+    "last": {
+      "datetime": "2017-02-02T09:32:11Z",
+      "uri": "http://web.archive.org/web/20170202093211/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.usatoday.com/story/sports/nfl/49ers/2017/01/29/49ers-hire-john-lynch-general-manager/97228746/"
+}

@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T15:22:47Z",
+        "uri": "http://web.archive.org/web/20170128152247/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T15:22:47Z",
+      "uri": "http://web.archive.org/web/20170128152247/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/"
+    },
+    "last": {
+      "datetime": "2017-01-28T15:22:47Z",
+      "uri": "http://web.archive.org/web/20170128152247/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://prodavinci.com/2017/01/28/actualidad/mirando-al-presidente-trump-con-horror-alrededor-del-mundo-por-jon-lee-anderson/"
+}

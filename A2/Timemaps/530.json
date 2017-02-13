@@ -1,0 +1,50 @@
+{
+  "original_uri": "http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T03:33:17Z",
+        "uri": "http://web.archive.org/web/20170130033317/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+      },
+      {
+        "datetime": "2017-01-31T05:07:15Z",
+        "uri": "http://web.archive.org/web/20170131050715/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+      },
+      {
+        "datetime": "2017-02-01T09:35:25Z",
+        "uri": "http://web.archive.org/web/20170201093525/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+      },
+      {
+        "datetime": "2017-02-02T23:12:18Z",
+        "uri": "http://web.archive.org/web/20170202231218/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+      },
+      {
+        "datetime": "2017-02-04T01:23:20Z",
+        "uri": "http://web.archive.org/web/20170204012320/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+      },
+      {
+        "datetime": "2017-02-05T00:28:57Z",
+        "uri": "http://web.archive.org/web/20170205002857/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+      },
+      {
+        "datetime": "2017-02-06T00:27:07Z",
+        "uri": "http://web.archive.org/web/20170206002707/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T03:33:17Z",
+      "uri": "http://web.archive.org/web/20170130033317/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+    },
+    "last": {
+      "datetime": "2017-02-06T00:27:07Z",
+      "uri": "http://web.archive.org/web/20170206002707/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.hindustantimes.com/other-sports/pv-sindhu-sameer-verma-claim-syed-modi-international-gp-titles/story-c6GK95O4Av4enAXKbWvb4N.html"
+}

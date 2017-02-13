@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T02:35:25Z",
+        "uri": "http://web.archive.org/web/20170130023525/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T02:35:25Z",
+      "uri": "http://web.archive.org/web/20170130023525/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb"
+    },
+    "last": {
+      "datetime": "2017-01-30T02:35:25Z",
+      "uri": "http://web.archive.org/web/20170130023525/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.washingtonpost.com/news/fact-checker/wp/2017/01/29/trumps-facile-claim-that-his-refugee-policy-is-similar-to-obama-in-2011/?tid=sm_fb"
+}

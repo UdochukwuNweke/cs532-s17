@@ -1,0 +1,46 @@
+{
+  "original_uri": "https://www.google.com/url?rct=j",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.google.com/url?rct=j",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2014-12-30T07:10:25Z",
+        "uri": "http://archive.is/20141230071025/https://www.google.com/url?rct=j"
+      },
+      {
+        "datetime": "2014-12-30T09:02:35Z",
+        "uri": "http://archive.is/20141230090235/https://www.google.com/url?rct=j"
+      },
+      {
+        "datetime": "2014-12-30T14:52:11Z",
+        "uri": "http://archive.is/20141230145211/https://www.google.com/url?rct=j"
+      },
+      {
+        "datetime": "2015-01-02T20:47:52Z",
+        "uri": "http://archive.is/20150102204752/https://www.google.com/url?rct=j"
+      },
+      {
+        "datetime": "2015-04-25T16:07:28Z",
+        "uri": "http://archive.is/20150425160728/https://www.google.com/url?rct=j"
+      },
+      {
+        "datetime": "2016-01-27T23:12:27Z",
+        "uri": "http://webarchive.loc.gov/all/20160127231227/https://www.google.com/url?rct=j&"
+      }
+    ],
+    "first": {
+      "datetime": "2014-12-30T07:10:25Z",
+      "uri": "http://archive.is/20141230071025/https://www.google.com/url?rct=j"
+    },
+    "last": {
+      "datetime": "2016-01-27T23:12:27Z",
+      "uri": "http://webarchive.loc.gov/all/20160127231227/https://www.google.com/url?rct=j&"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.google.com/url?rct=j",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.google.com/url?rct=j",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.google.com/url?rct=j"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.google.com/url?rct=j"
+}

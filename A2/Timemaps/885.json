@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T22:13:32Z",
+        "uri": "http://web.archive.org/web/20170129221332/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html"
+      },
+      {
+        "datetime": "2017-02-05T05:16:09Z",
+        "uri": "http://web.archive.org/web/20170205051609/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T22:13:32Z",
+      "uri": "http://web.archive.org/web/20170129221332/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html"
+    },
+    "last": {
+      "datetime": "2017-02-05T05:16:09Z",
+      "uri": "http://web.archive.org/web/20170205051609/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://it.blastingnews.com/tecnologia/2017/01/trump-lo-smartphone-del-presidente-e-un-pericoloso-galaxy-s3-001432941.html"
+}

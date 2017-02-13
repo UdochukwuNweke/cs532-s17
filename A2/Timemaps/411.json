@@ -1,0 +1,54 @@
+{
+  "original_uri": "http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T01:28:09Z",
+        "uri": "http://web.archive.org/web/20170130012809/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      },
+      {
+        "datetime": "2017-01-30T04:46:47Z",
+        "uri": "http://web.archive.org/web/20170130044647/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      },
+      {
+        "datetime": "2017-01-30T18:30:30Z",
+        "uri": "http://web.archive.org/web/20170130183030/https://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      },
+      {
+        "datetime": "2017-01-31T05:55:19Z",
+        "uri": "http://web.archive.org/web/20170131055519/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      },
+      {
+        "datetime": "2017-02-02T02:03:51Z",
+        "uri": "http://web.archive.org/web/20170202020351/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      },
+      {
+        "datetime": "2017-02-03T16:16:58Z",
+        "uri": "http://web.archive.org/web/20170203161658/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      },
+      {
+        "datetime": "2017-02-04T04:13:31Z",
+        "uri": "http://web.archive.org/web/20170204041331/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      },
+      {
+        "datetime": "2017-02-05T03:19:21Z",
+        "uri": "http://web.archive.org/web/20170205031921/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T01:28:09Z",
+      "uri": "http://web.archive.org/web/20170130012809/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+    },
+    "last": {
+      "datetime": "2017-02-05T03:19:21Z",
+      "uri": "http://web.archive.org/web/20170205031921/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://abcnews.go.com/Entertainment/sia-rosie-odonnell-celebs-vow-match-aclu-donations/story?id=45128450"
+}

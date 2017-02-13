@@ -1,0 +1,42 @@
+{
+  "original_uri": "http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-27T16:05:31Z",
+        "uri": "http://web.archive.org/web/20170127160531/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+      },
+      {
+        "datetime": "2017-02-01T20:41:07Z",
+        "uri": "http://archive.is/20170201204107/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+      },
+      {
+        "datetime": "2017-02-03T01:52:02Z",
+        "uri": "http://web.archive.org/web/20170203015202/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall"
+      },
+      {
+        "datetime": "2017-02-03T09:04:47Z",
+        "uri": "http://web.archive.org/web/20170203090447/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+      },
+      {
+        "datetime": "2017-02-03T17:14:27Z",
+        "uri": "http://web.archive.org/web/20170203171427/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-27T16:05:31Z",
+      "uri": "http://web.archive.org/web/20170127160531/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+    },
+    "last": {
+      "datetime": "2017-02-03T17:14:27Z",
+      "uri": "http://web.archive.org/web/20170203171427/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.forbes.com/sites/timworstall/2017/01/27/memo-to-trump-20-mexican-import-tariff-means-americans-pay-for-the-wall/"
+}

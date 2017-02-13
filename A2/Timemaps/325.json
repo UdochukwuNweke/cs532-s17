@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-05-19T16:13:39Z",
+        "uri": "http://web.archive.org/web/20160519161339/http://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/"
+      }
+    ],
+    "first": {
+      "datetime": "2016-05-19T16:13:39Z",
+      "uri": "http://web.archive.org/web/20160519161339/http://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/"
+    },
+    "last": {
+      "datetime": "2016-05-19T16:13:39Z",
+      "uri": "http://web.archive.org/web/20160519161339/http://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://auwa666.jimdo.com/cymatune-%E3%82%B5%E3%82%A4%E3%83%9E%E3%83%81%E3%83%A5%E3%83%BC%E3%83%B3cd/"
+}

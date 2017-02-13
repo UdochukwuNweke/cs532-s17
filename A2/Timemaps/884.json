@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T23:13:00Z",
+        "uri": "http://web.archive.org/web/20170129231300/http://www.thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order"
+      },
+      {
+        "datetime": "2017-01-30T09:41:31Z",
+        "uri": "http://web.archive.org/web/20170130094131/http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T23:13:00Z",
+      "uri": "http://web.archive.org/web/20170129231300/http://www.thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order"
+    },
+    "last": {
+      "datetime": "2017-01-30T09:41:31Z",
+      "uri": "http://web.archive.org/web/20170130094131/http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://thehill.com/homenews/house/316777-democrats-will-hold-rally-at-supreme-court-to-protest-trumps-executive-order"
+}

@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T16:17:12Z",
+        "uri": "http://web.archive.org/web/20170129161712/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump"
+      },
+      {
+        "datetime": "2017-02-02T17:33:31Z",
+        "uri": "http://web.archive.org/web/20170202173331/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T16:17:12Z",
+      "uri": "http://web.archive.org/web/20170129161712/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump"
+    },
+    "last": {
+      "datetime": "2017-02-02T17:33:31Z",
+      "uri": "http://web.archive.org/web/20170202173331/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump"
+}

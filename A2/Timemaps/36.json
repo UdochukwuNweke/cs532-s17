@@ -1,0 +1,126 @@
+{
+  "original_uri": "http://www.ebay.com/sch/i.html?_from=R40",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.ebay.com/sch/i.html?_from=R40",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2012-03-19T00:09:02Z",
+        "uri": "http://web.archive.org/web/20120319000902/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2012-06-06T23:20:31Z",
+        "uri": "http://web.archive.org/web/20120606232031/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2012-08-07T15:35:59Z",
+        "uri": "http://web.archive.org/web/20120807153559/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2012-10-13T07:28:10Z",
+        "uri": "http://web.archive.org/web/20121013072810/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2012-11-19T04:12:28Z",
+        "uri": "http://wayback.archive-it.org/all/20121119041228/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2012-11-19T04:12:28Z",
+        "uri": "http://web.archive.org/web/20121119041228/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2012-12-16T02:40:34Z",
+        "uri": "http://web.archive.org/web/20121216024034/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2013-02-10T03:57:39Z",
+        "uri": "http://web.archive.org/web/20130210035739/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2013-02-24T08:15:37Z",
+        "uri": "http://web.archive.org/web/20130224081537/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2013-05-01T04:08:03Z",
+        "uri": "http://web.archive.org/web/20130501040803/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2013-08-07T03:22:38Z",
+        "uri": "http://web.archive.org/web/20130807032238/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2013-10-06T22:52:28Z",
+        "uri": "http://web.archive.org/web/20131006225228/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2013-10-09T23:19:02Z",
+        "uri": "http://web.archive.org/web/20131009231902/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2013-12-07T01:43:18Z",
+        "uri": "http://web.archive.org/web/20131207014318/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2014-02-06T00:09:31Z",
+        "uri": "http://web.archive.org/web/20140206000931/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2014-04-20T11:41:22Z",
+        "uri": "http://web.archive.org/web/20140420114122/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2014-06-20T18:08:52Z",
+        "uri": "http://web.archive.org/web/20140620180852/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2014-08-20T08:35:33Z",
+        "uri": "http://web.archive.org/web/20140820083533/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2014-10-20T19:38:35Z",
+        "uri": "http://web.archive.org/web/20141020193835/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2014-12-20T13:31:22Z",
+        "uri": "http://web.archive.org/web/20141220133122/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2015-01-06T23:30:06Z",
+        "uri": "http://web.archive.org/web/20150106233006/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2015-01-25T02:04:31Z",
+        "uri": "http://archive.is/20150125020431/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2015-01-26T09:07:17Z",
+        "uri": "http://archive.is/20150126090717/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2015-04-10T10:51:51Z",
+        "uri": "http://web.archive.org/web/20150410105151/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2015-09-27T06:09:44Z",
+        "uri": "http://web.archive.org/web/20150927060944/http://www.ebay.com/sch/i.html?_from=R40"
+      },
+      {
+        "datetime": "2015-09-29T20:37:22Z",
+        "uri": "http://web.archive.org/web/20150929203722/http://www.ebay.com/sch/i.html?_from=R40"
+      }
+    ],
+    "first": {
+      "datetime": "2012-03-19T00:09:02Z",
+      "uri": "http://web.archive.org/web/20120319000902/http://www.ebay.com/sch/i.html?_from=R40"
+    },
+    "last": {
+      "datetime": "2015-09-29T20:37:22Z",
+      "uri": "http://web.archive.org/web/20150929203722/http://www.ebay.com/sch/i.html?_from=R40"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.ebay.com/sch/i.html?_from=R40",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.ebay.com/sch/i.html?_from=R40",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.ebay.com/sch/i.html?_from=R40"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.ebay.com/sch/i.html?_from=R40"
+}

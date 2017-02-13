@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T08:48:32Z",
+        "uri": "http://web.archive.org/web/20170130084832/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T08:48:32Z",
+      "uri": "http://web.archive.org/web/20170130084832/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump"
+    },
+    "last": {
+      "datetime": "2017-01-30T08:48:32Z",
+      "uri": "http://web.archive.org/web/20170130084832/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://thehill.com/blogs/blog-briefing-room/news/316789-ny-gov-launches-hotline-to-report-missing-people-due-to-trump"
+}

@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-25T23:14:06Z",
+        "uri": "http://web.archive.org/web/20170125231406/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/"
+      },
+      {
+        "datetime": "2017-01-28T03:26:45Z",
+        "uri": "http://web.archive.org/web/20170128032645/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-25T23:14:06Z",
+      "uri": "http://web.archive.org/web/20170125231406/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/"
+    },
+    "last": {
+      "datetime": "2017-01-28T03:26:45Z",
+      "uri": "http://web.archive.org/web/20170128032645/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.detroitnews.com/story/entertainment/music/2017/01/25/big-sean-raises-flint-children/97054780/"
+}

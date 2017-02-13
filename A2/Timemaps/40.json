@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%E2%80%8Bdaniel-tharp-bass-player-everyone-dies-utah-band/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%E2%80%8Bdaniel-tharp-bass-player-everyone-dies-utah-band/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-04T17:06:23Z",
+        "uri": "http://web.archive.org/web/20170204170623/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%e2%80%8bdaniel-tharp-bass-player-everyone-dies-utah-band/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-04T17:06:23Z",
+      "uri": "http://web.archive.org/web/20170204170623/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%e2%80%8bdaniel-tharp-bass-player-everyone-dies-utah-band/"
+    },
+    "last": {
+      "datetime": "2017-02-04T17:06:23Z",
+      "uri": "http://web.archive.org/web/20170204170623/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%e2%80%8bdaniel-tharp-bass-player-everyone-dies-utah-band/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%E2%80%8Bdaniel-tharp-bass-player-everyone-dies-utah-band/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%E2%80%8Bdaniel-tharp-bass-player-everyone-dies-utah-band/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%E2%80%8Bdaniel-tharp-bass-player-everyone-dies-utah-band/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://batteredandbrewed.com/interviews/music-in-the-kitchen-favorite-recipes/music-kitchen-chili-con-tharpe-%E2%80%8Bdaniel-tharp-bass-player-everyone-dies-utah-band/"
+}

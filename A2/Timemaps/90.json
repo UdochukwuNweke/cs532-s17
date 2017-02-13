@@ -1,0 +1,62 @@
+{
+  "original_uri": "http://www.bigalspicks.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.bigalspicks.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-12-26T01:32:04Z",
+        "uri": "http://web.archive.org/web/20151226013204/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-01-25T20:15:36Z",
+        "uri": "http://web.archive.org/web/20160125201536/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-03-11T06:29:08Z",
+        "uri": "http://web.archive.org/web/20160311062908/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-04-15T06:37:51Z",
+        "uri": "http://web.archive.org/web/20160415063751/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-05-17T10:03:06Z",
+        "uri": "http://web.archive.org/web/20160517100306/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-05-18T12:03:58Z",
+        "uri": "http://web.archive.org/web/20160518120358/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-06-03T08:36:55Z",
+        "uri": "http://web.archive.org/web/20160603083655/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-06-20T16:24:25Z",
+        "uri": "http://web.archive.org/web/20160620162425/http://www.bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-10-02T10:42:59Z",
+        "uri": "http://web.archive.org/web/20161002104259/http://bigalspicks.com/"
+      },
+      {
+        "datetime": "2016-10-16T10:12:54Z",
+        "uri": "http://web.archive.org/web/20161016101254/http://www.bigalspicks.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2015-12-26T01:32:04Z",
+      "uri": "http://web.archive.org/web/20151226013204/http://www.bigalspicks.com/"
+    },
+    "last": {
+      "datetime": "2016-10-16T10:12:54Z",
+      "uri": "http://web.archive.org/web/20161016101254/http://www.bigalspicks.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.bigalspicks.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.bigalspicks.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.bigalspicks.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.bigalspicks.com/"
+}

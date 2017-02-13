@@ -1,0 +1,50 @@
+{
+  "original_uri": "http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T15:32:33Z",
+        "uri": "http://web.archive.org/web/20170129153233/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+      },
+      {
+        "datetime": "2017-01-30T06:38:50Z",
+        "uri": "http://web.archive.org/web/20170130063850/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+      },
+      {
+        "datetime": "2017-01-31T09:21:41Z",
+        "uri": "http://web.archive.org/web/20170131092141/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+      },
+      {
+        "datetime": "2017-02-01T09:04:55Z",
+        "uri": "http://web.archive.org/web/20170201090455/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+      },
+      {
+        "datetime": "2017-02-02T10:02:48Z",
+        "uri": "http://web.archive.org/web/20170202100248/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+      },
+      {
+        "datetime": "2017-02-03T20:37:41Z",
+        "uri": "http://web.archive.org/web/20170203203741/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+      },
+      {
+        "datetime": "2017-02-04T15:42:52Z",
+        "uri": "http://web.archive.org/web/20170204154252/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T15:32:33Z",
+      "uri": "http://web.archive.org/web/20170129153233/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+    },
+    "last": {
+      "datetime": "2017-02-04T15:42:52Z",
+      "uri": "http://web.archive.org/web/20170204154252/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.chicagotribune.com/sports/basketball/ct-nba-trump-executive-order-20170128-story.html"
+}

@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-10-06T08:04:13Z",
+        "uri": "http://web.archive.org/web/20151006080413/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+      },
+      {
+        "datetime": "2015-10-09T02:05:53Z",
+        "uri": "http://web.archive.org/web/20151009020553/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+      },
+      {
+        "datetime": "2015-11-08T11:26:50Z",
+        "uri": "http://web.archive.org/web/20151108112650/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+      },
+      {
+        "datetime": "2016-12-23T20:18:18Z",
+        "uri": "http://web.archive.org/web/20161223201818/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+      }
+    ],
+    "first": {
+      "datetime": "2015-10-06T08:04:13Z",
+      "uri": "http://web.archive.org/web/20151006080413/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+    },
+    "last": {
+      "datetime": "2016-12-23T20:18:18Z",
+      "uri": "http://web.archive.org/web/20161223201818/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.tparris.com/interviews/t-parris-music-group-and-hip-hop-breathe-present-all-i-had"
+}

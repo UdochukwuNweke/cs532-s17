@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://sports.vsw.jp/%E3%83%97%E3%83%BC%E3%83%9E-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E3%82%B3%E3%83%A9%E3%83%9C-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%93%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-27-5cm-2/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://sports.vsw.jp/%E3%83%97%E3%83%BC%E3%83%9E-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E3%82%B3%E3%83%A9%E3%83%9C-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%93%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-27-5cm-2/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-03T16:11:10Z",
+        "uri": "http://web.archive.org/web/20170203161110/http://sports.vsw.jp/%e3%83%97%e3%83%bc%e3%83%9e-%e3%83%95%e3%82%a7%e3%83%a9%e3%83%bc%e3%83%aa%e3%82%b3%e3%83%a9%e3%83%9c-%e3%83%89%e3%83%a9%e3%82%a4%e3%83%93%e3%83%b3%e3%82%b0%e3%82%b7%e3%83%a5%e3%83%bc%e3%82%ba-27-5cm-2/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-03T16:11:10Z",
+      "uri": "http://web.archive.org/web/20170203161110/http://sports.vsw.jp/%e3%83%97%e3%83%bc%e3%83%9e-%e3%83%95%e3%82%a7%e3%83%a9%e3%83%bc%e3%83%aa%e3%82%b3%e3%83%a9%e3%83%9c-%e3%83%89%e3%83%a9%e3%82%a4%e3%83%93%e3%83%b3%e3%82%b0%e3%82%b7%e3%83%a5%e3%83%bc%e3%82%ba-27-5cm-2/"
+    },
+    "last": {
+      "datetime": "2017-02-03T16:11:10Z",
+      "uri": "http://web.archive.org/web/20170203161110/http://sports.vsw.jp/%e3%83%97%e3%83%bc%e3%83%9e-%e3%83%95%e3%82%a7%e3%83%a9%e3%83%bc%e3%83%aa%e3%82%b3%e3%83%a9%e3%83%9c-%e3%83%89%e3%83%a9%e3%82%a4%e3%83%93%e3%83%b3%e3%82%b0%e3%82%b7%e3%83%a5%e3%83%bc%e3%82%ba-27-5cm-2/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://sports.vsw.jp/%E3%83%97%E3%83%BC%E3%83%9E-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E3%82%B3%E3%83%A9%E3%83%9C-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%93%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-27-5cm-2/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://sports.vsw.jp/%E3%83%97%E3%83%BC%E3%83%9E-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E3%82%B3%E3%83%A9%E3%83%9C-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%93%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-27-5cm-2/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://sports.vsw.jp/%E3%83%97%E3%83%BC%E3%83%9E-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E3%82%B3%E3%83%A9%E3%83%9C-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%93%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-27-5cm-2/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://sports.vsw.jp/%E3%83%97%E3%83%BC%E3%83%9E-%E3%83%95%E3%82%A7%E3%83%A9%E3%83%BC%E3%83%AA%E3%82%B3%E3%83%A9%E3%83%9C-%E3%83%89%E3%83%A9%E3%82%A4%E3%83%93%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%A5%E3%83%BC%E3%82%BA-27-5cm-2/"
+}

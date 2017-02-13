@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://barock-music.playtheradio.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://barock-music.playtheradio.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2013-01-02T00:44:39Z",
+        "uri": "http://archive.is/20130102004439/http://barock-music.playtheradio.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2013-01-02T00:44:39Z",
+      "uri": "http://archive.is/20130102004439/http://barock-music.playtheradio.com/"
+    },
+    "last": {
+      "datetime": "2013-01-02T00:44:39Z",
+      "uri": "http://archive.is/20130102004439/http://barock-music.playtheradio.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://barock-music.playtheradio.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://barock-music.playtheradio.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://barock-music.playtheradio.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://barock-music.playtheradio.com/"
+}

@@ -1,0 +1,374 @@
+{
+  "original_uri": "http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T19:27:07Z",
+        "uri": "http://web.archive.org/web/20170129192707/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-29T22:36:04Z",
+        "uri": "http://web.archive.org/web/20170129223604/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-29T23:16:37Z",
+        "uri": "http://web.archive.org/web/20170129231637/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-29T23:52:12Z",
+        "uri": "http://web.archive.org/web/20170129235212/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T00:14:41Z",
+        "uri": "http://web.archive.org/web/20170130001441/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T00:26:06Z",
+        "uri": "http://web.archive.org/web/20170130002606/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T00:28:03Z",
+        "uri": "http://web.archive.org/web/20170130002803/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T00:45:22Z",
+        "uri": "http://web.archive.org/web/20170130004522/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T01:00:00Z",
+        "uri": "http://web.archive.org/web/20170130010000/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T02:08:13Z",
+        "uri": "http://web.archive.org/web/20170130020813/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T02:09:53Z",
+        "uri": "http://web.archive.org/web/20170130020953/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T02:43:41Z",
+        "uri": "http://web.archive.org/web/20170130024341/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T03:16:27Z",
+        "uri": "http://web.archive.org/web/20170130031627/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T04:25:29Z",
+        "uri": "http://web.archive.org/web/20170130042529/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T05:00:29Z",
+        "uri": "http://web.archive.org/web/20170130050029/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T05:33:32Z",
+        "uri": "http://web.archive.org/web/20170130053332/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T06:08:03Z",
+        "uri": "http://web.archive.org/web/20170130060803/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T06:41:36Z",
+        "uri": "http://web.archive.org/web/20170130064136/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T07:15:09Z",
+        "uri": "http://web.archive.org/web/20170130071509/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T07:49:04Z",
+        "uri": "http://web.archive.org/web/20170130074904/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T08:22:42Z",
+        "uri": "http://web.archive.org/web/20170130082242/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T08:55:41Z",
+        "uri": "http://web.archive.org/web/20170130085541/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T09:29:25Z",
+        "uri": "http://web.archive.org/web/20170130092925/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T10:05:08Z",
+        "uri": "http://web.archive.org/web/20170130100508/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T10:05:42Z",
+        "uri": "http://archive.is/20170130100542/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T10:38:35Z",
+        "uri": "http://web.archive.org/web/20170130103835/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T11:11:57Z",
+        "uri": "http://web.archive.org/web/20170130111157/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T11:45:39Z",
+        "uri": "http://web.archive.org/web/20170130114539/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T12:20:37Z",
+        "uri": "http://web.archive.org/web/20170130122037/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T12:56:02Z",
+        "uri": "http://web.archive.org/web/20170130125602/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T13:29:18Z",
+        "uri": "http://web.archive.org/web/20170130132918/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T14:04:41Z",
+        "uri": "http://web.archive.org/web/20170130140441/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-30T14:39:51Z",
+        "uri": "http://web.archive.org/web/20170130143951/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-01-31T02:15:56Z",
+        "uri": "http://web.archive.org/web/20170131021556/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-01T01:32:19Z",
+        "uri": "http://web.archive.org/web/20170201013219/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-01T16:06:50Z",
+        "uri": "http://web.archive.org/web/20170201160650/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T09:40:44Z",
+        "uri": "http://web.archive.org/web/20170202094044/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T09:41:09Z",
+        "uri": "http://web.archive.org/web/20170202094109/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:02:42Z",
+        "uri": "http://web.archive.org/web/20170202100242/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:05:15Z",
+        "uri": "http://web.archive.org/web/20170202100515/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:14:20Z",
+        "uri": "http://web.archive.org/web/20170202101420/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:24:23Z",
+        "uri": "http://web.archive.org/web/20170202102423/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:29:07Z",
+        "uri": "http://web.archive.org/web/20170202102907/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:21Z",
+        "uri": "http://web.archive.org/web/20170202103021/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:22Z",
+        "uri": "http://web.archive.org/web/20170202103022/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:23Z",
+        "uri": "http://web.archive.org/web/20170202103023/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:24Z",
+        "uri": "http://web.archive.org/web/20170202103024/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:24Z",
+        "uri": "http://web.archive.org/web/20170202103024/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:24Z",
+        "uri": "http://web.archive.org/web/20170202103024/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:25Z",
+        "uri": "http://web.archive.org/web/20170202103025/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:26Z",
+        "uri": "http://web.archive.org/web/20170202103026/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:26Z",
+        "uri": "http://web.archive.org/web/20170202103026/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:26Z",
+        "uri": "http://web.archive.org/web/20170202103026/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:28Z",
+        "uri": "http://web.archive.org/web/20170202103028/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:29Z",
+        "uri": "http://web.archive.org/web/20170202103029/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:30Z",
+        "uri": "http://web.archive.org/web/20170202103030/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:30Z",
+        "uri": "http://web.archive.org/web/20170202103030/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:31Z",
+        "uri": "http://web.archive.org/web/20170202103031/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:31Z",
+        "uri": "http://web.archive.org/web/20170202103031/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:30:32Z",
+        "uri": "http://web.archive.org/web/20170202103032/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T10:37:41Z",
+        "uri": "http://web.archive.org/web/20170202103741/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T11:14:42Z",
+        "uri": "http://web.archive.org/web/20170202111442/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T11:16:37Z",
+        "uri": "http://web.archive.org/web/20170202111637/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T11:17:07Z",
+        "uri": "http://web.archive.org/web/20170202111707/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T11:48:36Z",
+        "uri": "http://web.archive.org/web/20170202114836/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T11:50:11Z",
+        "uri": "http://web.archive.org/web/20170202115011/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T12:30:39Z",
+        "uri": "http://web.archive.org/web/20170202123039/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T12:32:47Z",
+        "uri": "http://web.archive.org/web/20170202123247/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T12:34:52Z",
+        "uri": "http://web.archive.org/web/20170202123452/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T12:35:18Z",
+        "uri": "http://web.archive.org/web/20170202123518/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T13:10:24Z",
+        "uri": "http://web.archive.org/web/20170202131024/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T13:11:44Z",
+        "uri": "http://web.archive.org/web/20170202131144/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T13:49:32Z",
+        "uri": "http://web.archive.org/web/20170202134932/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T13:50:54Z",
+        "uri": "http://web.archive.org/web/20170202135054/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T13:53:13Z",
+        "uri": "http://web.archive.org/web/20170202135313/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T13:54:41Z",
+        "uri": "http://web.archive.org/web/20170202135441/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T13:55:52Z",
+        "uri": "http://web.archive.org/web/20170202135552/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T14:18:38Z",
+        "uri": "http://web.archive.org/web/20170202141838/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T14:51:30Z",
+        "uri": "http://web.archive.org/web/20170202145130/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T14:53:15Z",
+        "uri": "http://web.archive.org/web/20170202145315/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T14:55:10Z",
+        "uri": "http://web.archive.org/web/20170202145510/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T15:47:54Z",
+        "uri": "http://web.archive.org/web/20170202154754/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T15:49:45Z",
+        "uri": "http://web.archive.org/web/20170202154945/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-02T16:47:26Z",
+        "uri": "http://web.archive.org/web/20170202164726/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-03T04:05:07Z",
+        "uri": "http://web.archive.org/web/20170203040507/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-04T04:36:13Z",
+        "uri": "http://web.archive.org/web/20170204043613/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-05T05:23:23Z",
+        "uri": "http://web.archive.org/web/20170205052323/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      },
+      {
+        "datetime": "2017-02-06T07:08:39Z",
+        "uri": "http://web.archive.org/web/20170206070839/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T19:27:07Z",
+      "uri": "http://web.archive.org/web/20170129192707/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+    },
+    "last": {
+      "datetime": "2017-02-06T07:08:39Z",
+      "uri": "http://web.archive.org/web/20170206070839/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.latimes.com/politics/washington/la-na-trailguide-updates-how-has-the-public-responded-to-1485715449-htmlstory.html"
+}

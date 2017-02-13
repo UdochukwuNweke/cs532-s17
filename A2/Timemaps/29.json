@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-04T06:00:00Z",
+        "uri": "http://web.archive.org/web/20170204060000/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-04T06:00:00Z",
+      "uri": "http://web.archive.org/web/20170204060000/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/"
+    },
+    "last": {
+      "datetime": "2017-02-04T06:00:00Z",
+      "uri": "http://web.archive.org/web/20170204060000/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://dirtyconservative.com/top-senate-democrat-announces-legislation-to-reverse-trumps-immigration-executive-order/"
+}

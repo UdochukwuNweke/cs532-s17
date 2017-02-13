@@ -1,0 +1,426 @@
+{
+  "original_uri": "http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T18:39:10Z",
+        "uri": "http://web.archive.org/web/20170129183910/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-29T18:58:23Z",
+        "uri": "http://web.archive.org/web/20170129185823/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-29T19:14:36Z",
+        "uri": "http://wayback.archive-it.org/all/20170129191436/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-29T19:14:36Z",
+        "uri": "http://web.archive.org/web/20170129191436/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-30T10:54:23Z",
+        "uri": "http://web.archive.org/web/20170130105423/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-30T20:15:23Z",
+        "uri": "http://wayback.archive-it.org/all/20170130201523/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-30T20:15:23Z",
+        "uri": "http://web.archive.org/web/20170130201523/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-31T05:49:05Z",
+        "uri": "http://web.archive.org/web/20170131054905/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-31T07:27:17Z",
+        "uri": "http://web.archive.org/web/20170131072717/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-31T21:09:12Z",
+        "uri": "http://wayback.archive-it.org/all/20170131210912/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-01-31T21:09:12Z",
+        "uri": "http://web.archive.org/web/20170131210912/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T02:11:06Z",
+        "uri": "http://wayback.archive-it.org/all/20170202021106/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T02:11:06Z",
+        "uri": "http://web.archive.org/web/20170202021106/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T06:19:52Z",
+        "uri": "http://web.archive.org/web/20170202061952/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T06:20:48Z",
+        "uri": "http://web.archive.org/web/20170202062048/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T06:40:27Z",
+        "uri": "http://web.archive.org/web/20170202064027/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T06:43:42Z",
+        "uri": "http://web.archive.org/web/20170202064342/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T06:53:46Z",
+        "uri": "http://web.archive.org/web/20170202065346/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:52Z",
+        "uri": "http://web.archive.org/web/20170202070152/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:52Z",
+        "uri": "http://web.archive.org/web/20170202070152/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:53Z",
+        "uri": "http://web.archive.org/web/20170202070153/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:53Z",
+        "uri": "http://web.archive.org/web/20170202070153/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:55Z",
+        "uri": "http://web.archive.org/web/20170202070155/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:55Z",
+        "uri": "http://web.archive.org/web/20170202070155/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:57Z",
+        "uri": "http://web.archive.org/web/20170202070157/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:58Z",
+        "uri": "http://web.archive.org/web/20170202070158/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:01:59Z",
+        "uri": "http://web.archive.org/web/20170202070159/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:02:00Z",
+        "uri": "http://web.archive.org/web/20170202070200/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:02:01Z",
+        "uri": "http://web.archive.org/web/20170202070201/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:06:24Z",
+        "uri": "http://web.archive.org/web/20170202070624/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T07:24:15Z",
+        "uri": "http://web.archive.org/web/20170202072415/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T22:42:24Z",
+        "uri": "http://web.archive.org/web/20170202224224/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T22:42:34Z",
+        "uri": "http://web.archive.org/web/20170202224234/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T22:57:22Z",
+        "uri": "http://web.archive.org/web/20170202225722/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T22:59:00Z",
+        "uri": "http://web.archive.org/web/20170202225900/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:02:22Z",
+        "uri": "http://web.archive.org/web/20170202230222/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:18Z",
+        "uri": "http://web.archive.org/web/20170202230818/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:18Z",
+        "uri": "http://web.archive.org/web/20170202230818/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:18Z",
+        "uri": "http://web.archive.org/web/20170202230818/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:18Z",
+        "uri": "http://web.archive.org/web/20170202230818/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:20Z",
+        "uri": "http://web.archive.org/web/20170202230820/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:20Z",
+        "uri": "http://web.archive.org/web/20170202230820/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:20Z",
+        "uri": "http://web.archive.org/web/20170202230820/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:21Z",
+        "uri": "http://web.archive.org/web/20170202230821/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:22Z",
+        "uri": "http://web.archive.org/web/20170202230822/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:23Z",
+        "uri": "http://web.archive.org/web/20170202230823/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:08:24Z",
+        "uri": "http://web.archive.org/web/20170202230824/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:13:14Z",
+        "uri": "http://web.archive.org/web/20170202231314/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-02T23:24:07Z",
+        "uri": "http://web.archive.org/web/20170202232407/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:05:17Z",
+        "uri": "http://web.archive.org/web/20170203000517/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:06:59Z",
+        "uri": "http://web.archive.org/web/20170203000659/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:15:37Z",
+        "uri": "http://web.archive.org/web/20170203001537/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:21:28Z",
+        "uri": "http://web.archive.org/web/20170203002128/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:24:19Z",
+        "uri": "http://web.archive.org/web/20170203002419/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:07Z",
+        "uri": "http://web.archive.org/web/20170203002707/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:09Z",
+        "uri": "http://web.archive.org/web/20170203002709/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:10Z",
+        "uri": "http://web.archive.org/web/20170203002710/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:10Z",
+        "uri": "http://web.archive.org/web/20170203002710/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:12Z",
+        "uri": "http://web.archive.org/web/20170203002712/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:12Z",
+        "uri": "http://web.archive.org/web/20170203002712/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:13Z",
+        "uri": "http://web.archive.org/web/20170203002713/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:15Z",
+        "uri": "http://web.archive.org/web/20170203002715/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:15Z",
+        "uri": "http://web.archive.org/web/20170203002715/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:19Z",
+        "uri": "http://web.archive.org/web/20170203002719/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:21Z",
+        "uri": "http://web.archive.org/web/20170203002721/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:27:22Z",
+        "uri": "http://web.archive.org/web/20170203002722/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:35:59Z",
+        "uri": "http://web.archive.org/web/20170203003559/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T00:49:17Z",
+        "uri": "http://web.archive.org/web/20170203004917/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T01:14:35Z",
+        "uri": "http://wayback.archive-it.org/all/20170203011435/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-03T01:14:35Z",
+        "uri": "http://web.archive.org/web/20170203011435/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T01:41:12Z",
+        "uri": "http://web.archive.org/web/20170204014112/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T01:42:42Z",
+        "uri": "http://web.archive.org/web/20170204014242/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T02:14:26Z",
+        "uri": "http://wayback.archive-it.org/all/20170204021426/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T02:14:26Z",
+        "uri": "http://web.archive.org/web/20170204021426/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T02:26:48Z",
+        "uri": "http://web.archive.org/web/20170204022648/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T02:42:52Z",
+        "uri": "http://web.archive.org/web/20170204024252/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T05:39:20Z",
+        "uri": "http://web.archive.org/web/20170204053920/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T07:25:46Z",
+        "uri": "http://web.archive.org/web/20170204072546/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T07:25:52Z",
+        "uri": "http://web.archive.org/web/20170204072552/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T07:46:50Z",
+        "uri": "http://web.archive.org/web/20170204074650/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T07:49:17Z",
+        "uri": "http://web.archive.org/web/20170204074917/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T07:51:37Z",
+        "uri": "http://web.archive.org/web/20170204075137/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:31Z",
+        "uri": "http://web.archive.org/web/20170204080631/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:31Z",
+        "uri": "http://web.archive.org/web/20170204080631/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:33Z",
+        "uri": "http://web.archive.org/web/20170204080633/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:33Z",
+        "uri": "http://web.archive.org/web/20170204080633/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:34Z",
+        "uri": "http://web.archive.org/web/20170204080634/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:34Z",
+        "uri": "http://web.archive.org/web/20170204080634/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:35Z",
+        "uri": "http://web.archive.org/web/20170204080635/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:35Z",
+        "uri": "http://web.archive.org/web/20170204080635/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:37Z",
+        "uri": "http://web.archive.org/web/20170204080637/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:38Z",
+        "uri": "http://web.archive.org/web/20170204080638/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:06:39Z",
+        "uri": "http://web.archive.org/web/20170204080639/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:13:21Z",
+        "uri": "http://web.archive.org/web/20170204081321/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T08:31:47Z",
+        "uri": "http://web.archive.org/web/20170204083147/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T22:58:31Z",
+        "uri": "http://wayback.archive-it.org/all/20170204225831/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-04T22:58:31Z",
+        "uri": "http://web.archive.org/web/20170204225831/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-05T21:41:04Z",
+        "uri": "http://wayback.archive-it.org/all/20170205214104/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-05T21:41:04Z",
+        "uri": "http://web.archive.org/web/20170205214104/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-06T01:26:30Z",
+        "uri": "http://web.archive.org/web/20170206012630/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      },
+      {
+        "datetime": "2017-02-06T04:48:58Z",
+        "uri": "http://web.archive.org/web/20170206044858/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T18:39:10Z",
+      "uri": "http://web.archive.org/web/20170129183910/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+    },
+    "last": {
+      "datetime": "2017-02-06T04:48:58Z",
+      "uri": "http://web.archive.org/web/20170206044858/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.breitbart.com/big-government/2017/01/29/populist-leaders-praise-trumps-refugee-ban-model-europe/"
+}

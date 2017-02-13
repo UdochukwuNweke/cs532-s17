@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T13:43:58Z",
+        "uri": "http://web.archive.org/web/20170129134358/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+      },
+      {
+        "datetime": "2017-01-30T20:35:00Z",
+        "uri": "http://web.archive.org/web/20170130203500/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+      },
+      {
+        "datetime": "2017-01-31T00:28:48Z",
+        "uri": "http://archive.is/20170131002848/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+      },
+      {
+        "datetime": "2017-02-02T18:32:28Z",
+        "uri": "http://web.archive.org/web/20170202183228/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T13:43:58Z",
+      "uri": "http://web.archive.org/web/20170129134358/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+    },
+    "last": {
+      "datetime": "2017-02-02T18:32:28Z",
+      "uri": "http://web.archive.org/web/20170202183228/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://heavy.com/news/2017/01/barack-obama-ban-refugees-did-iraq-iraqi-muslim-trump-jimmy-carter-iran-iranian-immigration/"
+}

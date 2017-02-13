@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T10:19:32Z",
+        "uri": "http://web.archive.org/web/20170130101932/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T10:19:32Z",
+      "uri": "http://web.archive.org/web/20170130101932/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly"
+    },
+    "last": {
+      "datetime": "2017-01-30T10:19:32Z",
+      "uri": "http://web.archive.org/web/20170130101932/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.nydailynews.com/sports/football/robert-kraft-opens-goodell-deflategate-donald-trump-article-1.2958959?cid=bitly"
+}

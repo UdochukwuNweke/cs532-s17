@@ -1,0 +1,238 @@
+{
+  "original_uri": "http://news.imagista.com/sports/baseball/lions/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://news.imagista.com/sports/baseball/lions/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2009-03-30T17:59:23Z",
+        "uri": "http://web.archive.org/web/20090330175923/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2009-05-30T18:15:27Z",
+        "uri": "http://web.archive.org/web/20090530181527/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2009-08-03T08:39:24Z",
+        "uri": "http://web.archive.org/web/20090803083924/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2009-10-07T05:43:01Z",
+        "uri": "http://web.archive.org/web/20091007054301/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2009-12-09T14:41:51Z",
+        "uri": "http://web.archive.org/web/20091209144151/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2010-03-04T03:06:49Z",
+        "uri": "http://web.archive.org/web/20100304030649/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2010-05-04T02:59:33Z",
+        "uri": "http://web.archive.org/web/20100504025933/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2010-08-23T08:20:09Z",
+        "uri": "http://web.archive.org/web/20100823082009/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2010-10-22T23:34:20Z",
+        "uri": "http://web.archive.org/web/20101022233420/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2011-06-03T11:15:11Z",
+        "uri": "http://web.archive.org/web/20110603111511/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2011-10-26T03:27:41Z",
+        "uri": "http://web.archive.org/web/20111026032741/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2012-01-04T23:45:23Z",
+        "uri": "http://web.archive.org/web/20120104234523/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2012-03-17T22:55:23Z",
+        "uri": "http://web.archive.org/web/20120317225523/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2012-03-23T02:34:01Z",
+        "uri": "http://web.archive.org/web/20120323023401/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2012-04-23T11:32:27Z",
+        "uri": "http://web.archive.org/web/20120423113227/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2012-06-20T14:44:34Z",
+        "uri": "http://web.archive.org/web/20120620144434/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2012-09-01T09:49:29Z",
+        "uri": "http://web.archive.org/web/20120901094929/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2012-10-28T13:56:44Z",
+        "uri": "http://web.archive.org/web/20121028135644/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2012-11-01T04:36:51Z",
+        "uri": "http://web.archive.org/web/20121101043651/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2012-12-24T09:19:57Z",
+        "uri": "http://web.archive.org/web/20121224091957/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2013-05-25T04:36:34Z",
+        "uri": "http://web.archive.org/web/20130525043634/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2013-06-13T10:52:51Z",
+        "uri": "http://web.archive.org/web/20130613105251/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2013-06-13T10:52:51Z",
+        "uri": "http://web.archive.org/web/20130613105251/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2013-07-22T18:30:05Z",
+        "uri": "http://web.archive.org/web/20130722183005/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2013-07-27T03:07:51Z",
+        "uri": "http://web.archive.org/web/20130727030751/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2013-07-27T03:07:51Z",
+        "uri": "http://web.archive.org/web/20130727030751/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2013-07-27T03:08:06Z",
+        "uri": "http://web.archive.org/web/20130727030806/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2013-11-27T16:39:29Z",
+        "uri": "http://web.archive.org/web/20131127163929/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2014-11-18T02:05:18Z",
+        "uri": "http://web.archive.org/web/20141118020518/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-02-19T02:23:26Z",
+        "uri": "http://web.archive.org/web/20150219022326/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-02-19T02:23:26Z",
+        "uri": "http://web.archive.org/web/20150219022326/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2015-02-19T11:10:49Z",
+        "uri": "http://web.archive.org/web/20150219111049/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2015-04-08T10:00:56Z",
+        "uri": "http://web.archive.org/web/20150408100056/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2015-04-30T04:36:49Z",
+        "uri": "http://web.archive.org/web/20150430043649/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-05-09T00:44:15Z",
+        "uri": "http://web.archive.org/web/20150509004415/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-05-09T00:44:15Z",
+        "uri": "http://web.archive.org/web/20150509004415/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2015-05-10T11:49:22Z",
+        "uri": "http://web.archive.org/web/20150510114922/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2015-09-01T17:33:30Z",
+        "uri": "http://web.archive.org/web/20150901173330/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2015-09-06T01:54:52Z",
+        "uri": "http://web.archive.org/web/20150906015452/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-10-20T06:33:30Z",
+        "uri": "http://web.archive.org/web/20151020063330/http://news.imagista.com/sports/baseball/lions/?"
+      },
+      {
+        "datetime": "2015-10-26T05:45:54Z",
+        "uri": "http://web.archive.org/web/20151026054554/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-10-26T05:45:54Z",
+        "uri": "http://web.archive.org/web/20151026054554/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2015-11-07T07:12:13Z",
+        "uri": "http://web.archive.org/web/20151107071213/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-12-07T08:59:41Z",
+        "uri": "http://web.archive.org/web/20151207085941/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2015-12-07T08:59:41Z",
+        "uri": "http://web.archive.org/web/20151207085941/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2016-01-07T03:58:08Z",
+        "uri": "http://web.archive.org/web/20160107035808/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2016-03-02T18:21:28Z",
+        "uri": "http://web.archive.org/web/20160302182128/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2016-03-02T18:21:28Z",
+        "uri": "http://web.archive.org/web/20160302182128/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2016-03-29T20:02:09Z",
+        "uri": "http://web.archive.org/web/20160329200209/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2016-04-02T21:39:02Z",
+        "uri": "http://web.archive.org/web/20160402213902/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2016-04-02T21:39:02Z",
+        "uri": "http://web.archive.org/web/20160402213902/http://news.imagista.com/sports/baseball/lions"
+      },
+      {
+        "datetime": "2016-04-07T08:18:36Z",
+        "uri": "http://web.archive.org/web/20160407081836/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2016-05-04T06:48:55Z",
+        "uri": "http://web.archive.org/web/20160504064855/http://news.imagista.com/sports/baseball/lions/"
+      },
+      {
+        "datetime": "2016-05-04T06:48:55Z",
+        "uri": "http://web.archive.org/web/20160504064855/http://news.imagista.com/sports/baseball/lions"
+      }
+    ],
+    "first": {
+      "datetime": "2009-03-30T17:59:23Z",
+      "uri": "http://web.archive.org/web/20090330175923/http://news.imagista.com/sports/baseball/lions/"
+    },
+    "last": {
+      "datetime": "2016-05-04T06:48:55Z",
+      "uri": "http://web.archive.org/web/20160504064855/http://news.imagista.com/sports/baseball/lions"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://news.imagista.com/sports/baseball/lions/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://news.imagista.com/sports/baseball/lions/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://news.imagista.com/sports/baseball/lions/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://news.imagista.com/sports/baseball/lions/"
+}

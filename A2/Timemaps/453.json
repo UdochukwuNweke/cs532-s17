@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T02:48:53Z",
+        "uri": "http://web.archive.org/web/20170130024853/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T02:48:53Z",
+      "uri": "http://web.archive.org/web/20170130024853/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349"
+    },
+    "last": {
+      "datetime": "2017-01-30T02:48:53Z",
+      "uri": "http://web.archive.org/web/20170130024853/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.politico.com/story/2017/01/house-democrats-demand-meeting-with-dhs-chief-over-trump-ban-234349"
+}

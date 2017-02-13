@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://anihack.jimdo.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://anihack.jimdo.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-17T08:00:12Z",
+        "uri": "http://web.archive.org/web/20170117080012/https://anihack.jimdo.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-17T08:00:12Z",
+      "uri": "http://web.archive.org/web/20170117080012/https://anihack.jimdo.com/"
+    },
+    "last": {
+      "datetime": "2017-01-17T08:00:12Z",
+      "uri": "http://web.archive.org/web/20170117080012/https://anihack.jimdo.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://anihack.jimdo.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://anihack.jimdo.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://anihack.jimdo.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://anihack.jimdo.com/"
+}

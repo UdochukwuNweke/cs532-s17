@@ -1,0 +1,78 @@
+{
+  "original_uri": "https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-25T08:22:04Z",
+        "uri": "http://web.archive.org/web/20170125082204/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-25T08:40:35Z",
+        "uri": "http://web.archive.org/web/20170125084035/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-26T09:21:10Z",
+        "uri": "http://web.archive.org/web/20170126092110/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-26T09:31:25Z",
+        "uri": "http://web.archive.org/web/20170126093125/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-27T09:16:43Z",
+        "uri": "http://web.archive.org/web/20170127091643/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-27T09:21:03Z",
+        "uri": "http://web.archive.org/web/20170127092103/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-28T10:11:22Z",
+        "uri": "http://web.archive.org/web/20170128101122/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-28T12:22:48Z",
+        "uri": "http://web.archive.org/web/20170128122248/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-29T09:56:06Z",
+        "uri": "http://web.archive.org/web/20170129095606/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-29T12:34:39Z",
+        "uri": "http://web.archive.org/web/20170129123439/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-30T10:42:26Z",
+        "uri": "http://web.archive.org/web/20170130104226/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-30T14:03:40Z",
+        "uri": "http://web.archive.org/web/20170130140340/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-01-31T12:30:37Z",
+        "uri": "http://web.archive.org/web/20170131123037/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      },
+      {
+        "datetime": "2017-02-02T23:27:04Z",
+        "uri": "http://web.archive.org/web/20170202232704/http://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-25T08:22:04Z",
+      "uri": "http://web.archive.org/web/20170125082204/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+    },
+    "last": {
+      "datetime": "2017-02-02T23:27:04Z",
+      "uri": "http://web.archive.org/web/20170202232704/http://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.theguardian.com/music/2017/jan/25/what-keeps-uk-music-venues-alive-gigs-independent-venue-week"
+}

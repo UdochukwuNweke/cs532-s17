@@ -1,0 +1,34 @@
+{
+  "original_uri": "http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T01:42:58Z",
+        "uri": "http://web.archive.org/web/20170130014258/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html"
+      },
+      {
+        "datetime": "2017-01-30T05:38:48Z",
+        "uri": "http://web.archive.org/web/20170130053848/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html"
+      },
+      {
+        "datetime": "2017-02-04T04:57:05Z",
+        "uri": "http://web.archive.org/web/20170204045705/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T01:42:58Z",
+      "uri": "http://web.archive.org/web/20170130014258/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html"
+    },
+    "last": {
+      "datetime": "2017-02-04T04:57:05Z",
+      "uri": "http://web.archive.org/web/20170204045705/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.politicususa.com/2017/01/29/kellyanne-conway-epic-meltdown-compares-donald-trump-jesus.html"
+}

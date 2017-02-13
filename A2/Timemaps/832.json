@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-02T09:47:20Z",
+        "uri": "http://web.archive.org/web/20170202094720/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-02T09:47:20Z",
+      "uri": "http://web.archive.org/web/20170202094720/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947"
+    },
+    "last": {
+      "datetime": "2017-02-02T09:47:20Z",
+      "uri": "http://web.archive.org/web/20170202094720/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.nydailynews.com/sports/basketball/knicks/carmelo-anthony-knicks-fall-hawks-four-overtime-marathon-142-139-article-1.2958947"
+}

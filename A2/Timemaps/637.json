@@ -1,0 +1,66 @@
+{
+  "original_uri": "http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T10:06:48Z",
+        "uri": "http://web.archive.org/web/20170129100648/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-01-30T19:05:38Z",
+        "uri": "http://web.archive.org/web/20170130190538/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-01-31T14:44:40Z",
+        "uri": "http://web.archive.org/web/20170131144440/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-01T22:37:03Z",
+        "uri": "http://web.archive.org/web/20170201223703/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-02T01:06:56Z",
+        "uri": "http://web.archive.org/web/20170202010656/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-02T02:36:55Z",
+        "uri": "http://web.archive.org/web/20170202023655/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-02T16:22:01Z",
+        "uri": "http://web.archive.org/web/20170202162201/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-02T19:24:02Z",
+        "uri": "http://web.archive.org/web/20170202192402/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-04T00:13:09Z",
+        "uri": "http://web.archive.org/web/20170204001309/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-04T17:56:05Z",
+        "uri": "http://web.archive.org/web/20170204175605/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      },
+      {
+        "datetime": "2017-02-06T01:11:10Z",
+        "uri": "http://web.archive.org/web/20170206011110/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T10:06:48Z",
+      "uri": "http://web.archive.org/web/20170129100648/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+    },
+    "last": {
+      "datetime": "2017-02-06T01:11:10Z",
+      "uri": "http://web.archive.org/web/20170206011110/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.usatoday.com/story/news/politics/onpolitics/2017/01/29/national-security-council-stephen-bannon-presidential-memo/97210776/"
+}

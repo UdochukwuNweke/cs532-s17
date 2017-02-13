@@ -1,0 +1,54 @@
+{
+  "original_uri": "http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T20:14:31Z",
+        "uri": "http://wayback.archive-it.org/all/20170129201431/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      },
+      {
+        "datetime": "2017-01-29T20:14:31Z",
+        "uri": "http://web.archive.org/web/20170129201431/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      },
+      {
+        "datetime": "2017-01-29T20:20:33Z",
+        "uri": "http://web.archive.org/web/20170129202033/http://www.thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      },
+      {
+        "datetime": "2017-01-29T20:49:10Z",
+        "uri": "http://web.archive.org/web/20170129204910/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      },
+      {
+        "datetime": "2017-01-30T00:42:27Z",
+        "uri": "http://web.archive.org/web/20170130004227/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      },
+      {
+        "datetime": "2017-01-30T08:01:23Z",
+        "uri": "http://wayback.archive-it.org/all/20170130080123/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      },
+      {
+        "datetime": "2017-01-30T08:01:23Z",
+        "uri": "http://web.archive.org/web/20170130080123/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      },
+      {
+        "datetime": "2017-01-30T09:58:35Z",
+        "uri": "http://web.archive.org/web/20170130095835/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T20:14:31Z",
+      "uri": "http://wayback.archive-it.org/all/20170129201431/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+    },
+    "last": {
+      "datetime": "2017-01-30T09:58:35Z",
+      "uri": "http://web.archive.org/web/20170130095835/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://thehill.com/policy/national-security/316764-susan-rice-trumps-nsc-order-stone-cold-crazy"
+}

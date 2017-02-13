@@ -1,0 +1,70 @@
+{
+  "original_uri": "http://www.radioparadise.com/rp2-content.php?name=Music",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.radioparadise.com/rp2-content.php?name=Music",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2012-04-26T23:49:54Z",
+        "uri": "http://web.archive.org/web/20120426234954/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2012-06-27T05:02:26Z",
+        "uri": "http://web.archive.org/web/20120627050226/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2013-05-12T13:34:45Z",
+        "uri": "http://web.archive.org/web/20130512133445/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2015-05-23T00:28:27Z",
+        "uri": "http://web.archive.org/web/20150523002827/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2015-06-28T16:01:32Z",
+        "uri": "http://web.archive.org/web/20150628160132/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2015-09-06T18:58:53Z",
+        "uri": "http://web.archive.org/web/20150906185853/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2016-02-13T06:19:10Z",
+        "uri": "http://web.archive.org/web/20160213061910/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2016-04-12T06:14:09Z",
+        "uri": "http://web.archive.org/web/20160412061409/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2016-04-13T23:53:05Z",
+        "uri": "http://web.archive.org/web/20160413235305/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2016-04-21T21:12:13Z",
+        "uri": "http://web.archive.org/web/20160421211213/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2016-06-14T00:40:53Z",
+        "uri": "http://web.archive.org/web/20160614004053/http://www.radioparadise.com/rp2-content.php?name=Music"
+      },
+      {
+        "datetime": "2016-09-14T22:10:43Z",
+        "uri": "http://web.archive.org/web/20160914221043/http://www.radioparadise.com/rp2-content.php?name=Music"
+      }
+    ],
+    "first": {
+      "datetime": "2012-04-26T23:49:54Z",
+      "uri": "http://web.archive.org/web/20120426234954/http://www.radioparadise.com/rp2-content.php?name=Music"
+    },
+    "last": {
+      "datetime": "2016-09-14T22:10:43Z",
+      "uri": "http://web.archive.org/web/20160914221043/http://www.radioparadise.com/rp2-content.php?name=Music"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.radioparadise.com/rp2-content.php?name=Music",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.radioparadise.com/rp2-content.php?name=Music",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.radioparadise.com/rp2-content.php?name=Music"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.radioparadise.com/rp2-content.php?name=Music"
+}

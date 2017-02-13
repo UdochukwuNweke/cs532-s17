@@ -1,0 +1,34 @@
+{
+  "original_uri": "http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T02:56:06Z",
+        "uri": "http://web.archive.org/web/20170128025606/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html"
+      },
+      {
+        "datetime": "2017-01-29T06:55:39Z",
+        "uri": "http://web.archive.org/web/20170129065539/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html"
+      },
+      {
+        "datetime": "2017-01-30T01:59:21Z",
+        "uri": "http://web.archive.org/web/20170130015921/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T02:56:06Z",
+      "uri": "http://web.archive.org/web/20170128025606/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html"
+    },
+    "last": {
+      "datetime": "2017-01-30T01:59:21Z",
+      "uri": "http://web.archive.org/web/20170130015921/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.philly.com/philly/sports/20170129_Frank_s_Place__When_a_Phillie_of_great_promise_died_young.html"
+}

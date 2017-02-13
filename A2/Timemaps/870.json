@@ -1,0 +1,78 @@
+{
+  "original_uri": "http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-27T22:54:08Z",
+        "uri": "http://web.archive.org/web/20170127225408/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-01-27T23:10:01Z",
+        "uri": "http://web.archive.org/web/20170127231001/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-01-28T04:29:45Z",
+        "uri": "http://web.archive.org/web/20170128042945/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-01-29T00:35:14Z",
+        "uri": "http://web.archive.org/web/20170129003514/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-01-29T04:51:24Z",
+        "uri": "http://web.archive.org/web/20170129045124/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-01-30T05:24:38Z",
+        "uri": "http://web.archive.org/web/20170130052438/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-01-30T23:36:54Z",
+        "uri": "http://web.archive.org/web/20170130233654/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-01-31T07:01:55Z",
+        "uri": "http://web.archive.org/web/20170131070155/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-02-01T08:22:45Z",
+        "uri": "http://web.archive.org/web/20170201082245/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-02-02T09:43:42Z",
+        "uri": "http://web.archive.org/web/20170202094342/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-02-03T10:02:19Z",
+        "uri": "http://web.archive.org/web/20170203100219/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-02-04T11:02:46Z",
+        "uri": "http://web.archive.org/web/20170204110246/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-02-05T11:18:56Z",
+        "uri": "http://web.archive.org/web/20170205111856/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      },
+      {
+        "datetime": "2017-02-06T12:30:45Z",
+        "uri": "http://web.archive.org/web/20170206123045/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-27T22:54:08Z",
+      "uri": "http://web.archive.org/web/20170127225408/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+    },
+    "last": {
+      "datetime": "2017-02-06T12:30:45Z",
+      "uri": "http://web.archive.org/web/20170206123045/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.chicagotribune.com/news/opinion/zorn/ct-blagojevich-daughter-letter-obama-trump-zorn-perspec-0129-jm-20170127-column.html"
+}

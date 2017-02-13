@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://www.breakingtracks.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.breakingtracks.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-05-26T11:44:57Z",
+        "uri": "http://web.archive.org/web/20160526114457/http://www.breakingtracks.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2016-05-26T11:44:57Z",
+      "uri": "http://web.archive.org/web/20160526114457/http://www.breakingtracks.com/"
+    },
+    "last": {
+      "datetime": "2016-05-26T11:44:57Z",
+      "uri": "http://web.archive.org/web/20160526114457/http://www.breakingtracks.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.breakingtracks.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.breakingtracks.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.breakingtracks.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.breakingtracks.com/"
+}

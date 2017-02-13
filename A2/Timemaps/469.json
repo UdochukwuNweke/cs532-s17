@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T19:59:56Z",
+        "uri": "http://web.archive.org/web/20170129195956/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+      },
+      {
+        "datetime": "2017-01-29T21:47:22Z",
+        "uri": "http://web.archive.org/web/20170129214722/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+      },
+      {
+        "datetime": "2017-02-02T21:17:07Z",
+        "uri": "http://archive.is/20170202211707/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+      },
+      {
+        "datetime": "2017-02-04T10:20:12Z",
+        "uri": "http://web.archive.org/web/20170204102012/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T19:59:56Z",
+      "uri": "http://web.archive.org/web/20170129195956/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+    },
+    "last": {
+      "datetime": "2017-02-04T10:20:12Z",
+      "uri": "http://web.archive.org/web/20170204102012/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.mediaite.com/online/who-is-cleaning-house-kellyanne-conway-wants-media-outlets-to-fire-people-critical-of-trump/"
+}

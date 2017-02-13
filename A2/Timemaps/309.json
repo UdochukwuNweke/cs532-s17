@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T23:38:59Z",
+        "uri": "http://web.archive.org/web/20170129233859/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+      },
+      {
+        "datetime": "2017-01-31T22:58:22Z",
+        "uri": "http://web.archive.org/web/20170131225822/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+      },
+      {
+        "datetime": "2017-02-01T23:17:19Z",
+        "uri": "http://web.archive.org/web/20170201231719/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+      },
+      {
+        "datetime": "2017-02-03T20:59:47Z",
+        "uri": "http://web.archive.org/web/20170203205947/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T23:38:59Z",
+      "uri": "http://web.archive.org/web/20170129233859/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+    },
+    "last": {
+      "datetime": "2017-02-03T20:59:47Z",
+      "uri": "http://web.archive.org/web/20170203205947/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.wnd.com/2017/01/trump-to-prioritize-christian-refugees-reversing-obama-policy/"
+}

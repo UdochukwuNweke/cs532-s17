@@ -1,0 +1,910 @@
+{
+  "original_uri": "http://static.williamhill.com/sport/football-betting/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://static.williamhill.com/sport/football-betting/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-05-05T17:01:05Z",
+        "uri": "http://web.archive.org/web/20150505170105/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-05-07T18:06:00Z",
+        "uri": "http://web.archive.org/web/20150507180600/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-05-07T18:06:00Z",
+        "uri": "http://web.archive.org/web/20150507180600/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-05-15T04:17:34Z",
+        "uri": "http://web.archive.org/web/20150515041734/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-05-15T16:54:50Z",
+        "uri": "http://web.archive.org/web/20150515165450/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-05-15T16:54:50Z",
+        "uri": "http://web.archive.org/web/20150515165450/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-05-23T14:56:48Z",
+        "uri": "http://web.archive.org/web/20150523145648/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-05-23T14:56:48Z",
+        "uri": "http://web.archive.org/web/20150523145648/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-05-26T05:01:30Z",
+        "uri": "http://web.archive.org/web/20150526050130/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-05-31T06:54:12Z",
+        "uri": "http://web.archive.org/web/20150531065412/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-05-31T06:54:12Z",
+        "uri": "http://web.archive.org/web/20150531065412/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-05-31T15:52:08Z",
+        "uri": "http://web.archive.org/web/20150531155208/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-06-08T00:37:30Z",
+        "uri": "http://web.archive.org/web/20150608003730/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-06-08T00:45:36Z",
+        "uri": "http://web.archive.org/web/20150608004536/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-06-08T00:45:36Z",
+        "uri": "http://web.archive.org/web/20150608004536/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-06-17T03:55:50Z",
+        "uri": "http://web.archive.org/web/20150617035550/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-06-17T03:55:50Z",
+        "uri": "http://web.archive.org/web/20150617035550/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-06-17T04:00:29Z",
+        "uri": "http://web.archive.org/web/20150617040029/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-06-24T10:00:52Z",
+        "uri": "http://web.archive.org/web/20150624100052/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-06-24T10:00:52Z",
+        "uri": "http://web.archive.org/web/20150624100052/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-06-25T09:01:53Z",
+        "uri": "http://web.archive.org/web/20150625090153/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-07-02T09:19:29Z",
+        "uri": "http://web.archive.org/web/20150702091929/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-07-02T09:19:29Z",
+        "uri": "http://web.archive.org/web/20150702091929/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-07-04T00:52:30Z",
+        "uri": "http://web.archive.org/web/20150704005230/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-07-10T09:28:03Z",
+        "uri": "http://web.archive.org/web/20150710092803/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-07-10T09:28:03Z",
+        "uri": "http://web.archive.org/web/20150710092803/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-07-11T03:09:12Z",
+        "uri": "http://web.archive.org/web/20150711030912/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-07-15T02:36:18Z",
+        "uri": "http://web.archive.org/web/20150715023618/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-07-19T08:36:17Z",
+        "uri": "http://web.archive.org/web/20150719083617/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-07-19T08:36:17Z",
+        "uri": "http://web.archive.org/web/20150719083617/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-07-28T15:58:16Z",
+        "uri": "http://web.archive.org/web/20150728155816/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-07-28T15:58:16Z",
+        "uri": "http://web.archive.org/web/20150728155816/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-07-31T01:01:27Z",
+        "uri": "http://web.archive.org/web/20150731010127/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-08-05T11:00:17Z",
+        "uri": "http://web.archive.org/web/20150805110017/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-08-05T11:00:17Z",
+        "uri": "http://web.archive.org/web/20150805110017/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-08-12T06:26:02Z",
+        "uri": "http://web.archive.org/web/20150812062602/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-08-12T09:59:51Z",
+        "uri": "http://web.archive.org/web/20150812095951/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-08-12T09:59:51Z",
+        "uri": "http://web.archive.org/web/20150812095951/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-08-16T22:47:07Z",
+        "uri": "http://web.archive.org/web/20150816224707/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-08-21T07:44:30Z",
+        "uri": "http://web.archive.org/web/20150821074430/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-08-21T07:44:30Z",
+        "uri": "http://web.archive.org/web/20150821074430/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-08-23T00:17:21Z",
+        "uri": "http://web.archive.org/web/20150823001721/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-08-27T13:55:46Z",
+        "uri": "http://web.archive.org/web/20150827135546/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-08-27T13:55:46Z",
+        "uri": "http://web.archive.org/web/20150827135546/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-08-31T20:35:34Z",
+        "uri": "http://web.archive.org/web/20150831203534/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-09-02T08:41:50Z",
+        "uri": "http://web.archive.org/web/20150902084150/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-02T08:41:50Z",
+        "uri": "http://web.archive.org/web/20150902084150/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-09-02T11:18:10Z",
+        "uri": "http://web.archive.org/web/20150902111810/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-03T16:52:02Z",
+        "uri": "http://web.archive.org/web/20150903165202/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-05T12:17:29Z",
+        "uri": "http://web.archive.org/web/20150905121729/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-07T11:56:45Z",
+        "uri": "http://web.archive.org/web/20150907115645/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-07T11:56:45Z",
+        "uri": "http://web.archive.org/web/20150907115645/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-09-12T09:56:07Z",
+        "uri": "http://web.archive.org/web/20150912095607/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-12T17:20:42Z",
+        "uri": "http://web.archive.org/web/20150912172042/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-12T17:20:42Z",
+        "uri": "http://web.archive.org/web/20150912172042/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-09-13T03:12:44Z",
+        "uri": "http://web.archive.org/web/20150913031244/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-09-17T07:43:21Z",
+        "uri": "http://web.archive.org/web/20150917074321/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-17T07:43:21Z",
+        "uri": "http://web.archive.org/web/20150917074321/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-09-23T22:12:02Z",
+        "uri": "http://web.archive.org/web/20150923221202/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-09-24T01:04:03Z",
+        "uri": "http://web.archive.org/web/20150924010403/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-24T01:04:03Z",
+        "uri": "http://web.archive.org/web/20150924010403/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-09-28T17:37:38Z",
+        "uri": "http://web.archive.org/web/20150928173738/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-09-28T17:37:38Z",
+        "uri": "http://web.archive.org/web/20150928173738/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-10-03T14:03:09Z",
+        "uri": "http://web.archive.org/web/20151003140309/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-10-03T20:05:33Z",
+        "uri": "http://web.archive.org/web/20151003200533/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-10-03T20:05:33Z",
+        "uri": "http://web.archive.org/web/20151003200533/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-10-08T17:06:31Z",
+        "uri": "http://web.archive.org/web/20151008170631/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-10-08T17:06:31Z",
+        "uri": "http://web.archive.org/web/20151008170631/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-10-12T19:47:16Z",
+        "uri": "http://web.archive.org/web/20151012194716/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-10-12T20:10:50Z",
+        "uri": "http://web.archive.org/web/20151012201050/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-10-12T20:10:50Z",
+        "uri": "http://web.archive.org/web/20151012201050/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-10-17T04:59:27Z",
+        "uri": "http://web.archive.org/web/20151017045927/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-10-17T04:59:27Z",
+        "uri": "http://web.archive.org/web/20151017045927/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-10-21T01:58:34Z",
+        "uri": "http://web.archive.org/web/20151021015834/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-10-21T01:58:34Z",
+        "uri": "http://web.archive.org/web/20151021015834/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-10-24T05:23:36Z",
+        "uri": "http://web.archive.org/web/20151024052336/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-10-25T02:08:43Z",
+        "uri": "http://web.archive.org/web/20151025020843/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-10-25T02:08:43Z",
+        "uri": "http://web.archive.org/web/20151025020843/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-10-29T13:02:19Z",
+        "uri": "http://web.archive.org/web/20151029130219/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-10-29T13:02:19Z",
+        "uri": "http://web.archive.org/web/20151029130219/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-11-02T06:46:37Z",
+        "uri": "http://web.archive.org/web/20151102064637/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-11-03T02:55:52Z",
+        "uri": "http://web.archive.org/web/20151103025552/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-11-03T02:55:52Z",
+        "uri": "http://web.archive.org/web/20151103025552/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-11-08T00:25:56Z",
+        "uri": "http://web.archive.org/web/20151108002556/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-11-08T00:25:56Z",
+        "uri": "http://web.archive.org/web/20151108002556/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-11-10T04:02:21Z",
+        "uri": "http://web.archive.org/web/20151110040221/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-11-13T04:42:56Z",
+        "uri": "http://web.archive.org/web/20151113044256/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-11-13T04:42:56Z",
+        "uri": "http://web.archive.org/web/20151113044256/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-11-16T22:49:44Z",
+        "uri": "http://web.archive.org/web/20151116224944/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-11-18T01:30:54Z",
+        "uri": "http://web.archive.org/web/20151118013054/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-11-19T05:25:45Z",
+        "uri": "http://web.archive.org/web/20151119052545/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-11-19T05:25:45Z",
+        "uri": "http://web.archive.org/web/20151119052545/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-11-25T23:02:42Z",
+        "uri": "http://web.archive.org/web/20151125230242/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-11-26T03:43:13Z",
+        "uri": "http://web.archive.org/web/20151126034313/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-11-26T03:43:13Z",
+        "uri": "http://web.archive.org/web/20151126034313/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-12-04T10:56:47Z",
+        "uri": "http://web.archive.org/web/20151204105647/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-04T10:56:47Z",
+        "uri": "http://web.archive.org/web/20151204105647/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-12-04T10:56:52Z",
+        "uri": "http://web.archive.org/web/20151204105652/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-12-10T13:55:12Z",
+        "uri": "http://web.archive.org/web/20151210135512/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-12-10T16:41:25Z",
+        "uri": "http://web.archive.org/web/20151210164125/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-11T17:38:42Z",
+        "uri": "http://web.archive.org/web/20151211173842/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-11T17:38:42Z",
+        "uri": "http://web.archive.org/web/20151211173842/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-12-17T07:05:21Z",
+        "uri": "http://web.archive.org/web/20151217070521/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-17T07:28:46Z",
+        "uri": "http://web.archive.org/web/20151217072846/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-12-19T11:01:32Z",
+        "uri": "http://web.archive.org/web/20151219110132/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-19T11:01:32Z",
+        "uri": "http://web.archive.org/web/20151219110132/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-12-21T00:24:32Z",
+        "uri": "http://web.archive.org/web/20151221002432/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-24T12:10:41Z",
+        "uri": "http://web.archive.org/web/20151224121041/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-12-24T12:30:58Z",
+        "uri": "http://web.archive.org/web/20151224123058/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-26T07:43:41Z",
+        "uri": "http://web.archive.org/web/20151226074341/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-26T07:43:41Z",
+        "uri": "http://web.archive.org/web/20151226074341/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2015-12-31T11:18:43Z",
+        "uri": "http://web.archive.org/web/20151231111843/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2015-12-31T11:34:18Z",
+        "uri": "http://web.archive.org/web/20151231113418/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2015-12-31T11:34:18Z",
+        "uri": "http://web.archive.org/web/20151231113418/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-01-06T08:56:27Z",
+        "uri": "http://web.archive.org/web/20160106085627/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-06T08:56:27Z",
+        "uri": "http://web.archive.org/web/20160106085627/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-01-06T22:11:20Z",
+        "uri": "http://web.archive.org/web/20160106221120/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-06T22:11:20Z",
+        "uri": "http://web.archive.org/web/20160106221120/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-01-07T12:50:33Z",
+        "uri": "http://web.archive.org/web/20160107125033/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-01-11T13:16:52Z",
+        "uri": "http://web.archive.org/web/20160111131652/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-11T13:16:52Z",
+        "uri": "http://web.archive.org/web/20160111131652/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-01-13T13:43:03Z",
+        "uri": "http://web.archive.org/web/20160113134303/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-14T04:14:10Z",
+        "uri": "http://web.archive.org/web/20160114041410/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-01-16T08:51:37Z",
+        "uri": "http://web.archive.org/web/20160116085137/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-16T08:51:37Z",
+        "uri": "http://web.archive.org/web/20160116085137/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-01-17T03:49:16Z",
+        "uri": "http://web.archive.org/web/20160117034916/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-18T21:28:52Z",
+        "uri": "http://web.archive.org/web/20160118212852/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-20T16:58:33Z",
+        "uri": "http://web.archive.org/web/20160120165833/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-01-21T23:57:19Z",
+        "uri": "http://web.archive.org/web/20160121235719/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-21T23:57:19Z",
+        "uri": "http://web.archive.org/web/20160121235719/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-01-22T01:27:31Z",
+        "uri": "http://web.archive.org/web/20160122012731/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-25T12:51:31Z",
+        "uri": "http://web.archive.org/web/20160125125131/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-26T18:08:23Z",
+        "uri": "http://web.archive.org/web/20160126180823/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-01-26T18:11:50Z",
+        "uri": "http://web.archive.org/web/20160126181150/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-26T18:11:50Z",
+        "uri": "http://web.archive.org/web/20160126181150/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-01-27T09:54:02Z",
+        "uri": "http://web.archive.org/web/20160127095402/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-28T11:45:41Z",
+        "uri": "http://web.archive.org/web/20160128114541/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-31T05:19:56Z",
+        "uri": "http://web.archive.org/web/20160131051956/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-31T12:12:57Z",
+        "uri": "http://web.archive.org/web/20160131121257/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-01-31T12:12:57Z",
+        "uri": "http://web.archive.org/web/20160131121257/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-02-01T06:05:56Z",
+        "uri": "http://web.archive.org/web/20160201060556/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-01T06:05:56Z",
+        "uri": "http://web.archive.org/web/20160201060556/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-02-02T11:08:20Z",
+        "uri": "http://web.archive.org/web/20160202110820/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-02-04T17:29:45Z",
+        "uri": "http://web.archive.org/web/20160204172945/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-07T03:28:59Z",
+        "uri": "http://web.archive.org/web/20160207032859/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-07T09:31:14Z",
+        "uri": "http://web.archive.org/web/20160207093114/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-07T09:31:14Z",
+        "uri": "http://web.archive.org/web/20160207093114/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-02-10T07:22:16Z",
+        "uri": "http://web.archive.org/web/20160210072216/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-02-11T10:42:16Z",
+        "uri": "http://web.archive.org/web/20160211104216/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-12T14:36:24Z",
+        "uri": "http://web.archive.org/web/20160212143624/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-12T14:36:24Z",
+        "uri": "http://web.archive.org/web/20160212143624/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-02-17T07:07:22Z",
+        "uri": "http://web.archive.org/web/20160217070722/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-17T12:06:34Z",
+        "uri": "http://web.archive.org/web/20160217120634/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-17T12:06:34Z",
+        "uri": "http://web.archive.org/web/20160217120634/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-02-18T00:11:39Z",
+        "uri": "http://web.archive.org/web/20160218001139/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-18T00:11:39Z",
+        "uri": "http://web.archive.org/web/20160218001139/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-02-18T13:37:29Z",
+        "uri": "http://web.archive.org/web/20160218133729/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-02-23T04:46:00Z",
+        "uri": "http://web.archive.org/web/20160223044600/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-23T04:46:00Z",
+        "uri": "http://web.archive.org/web/20160223044600/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-02-23T18:52:02Z",
+        "uri": "http://web.archive.org/web/20160223185202/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-27T11:55:15Z",
+        "uri": "http://web.archive.org/web/20160227115515/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-02-28T18:42:03Z",
+        "uri": "http://web.archive.org/web/20160228184203/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-02-28T18:42:03Z",
+        "uri": "http://web.archive.org/web/20160228184203/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-03-04T10:32:22Z",
+        "uri": "http://web.archive.org/web/20160304103222/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-03-04T10:32:22Z",
+        "uri": "http://web.archive.org/web/20160304103222/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-03-07T04:32:21Z",
+        "uri": "http://web.archive.org/web/20160307043221/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-03-09T20:46:56Z",
+        "uri": "http://web.archive.org/web/20160309204656/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-03-09T20:46:56Z",
+        "uri": "http://web.archive.org/web/20160309204656/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-03-14T04:43:55Z",
+        "uri": "http://web.archive.org/web/20160314044355/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-03-14T04:43:55Z",
+        "uri": "http://web.archive.org/web/20160314044355/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-03-14T04:55:03Z",
+        "uri": "http://web.archive.org/web/20160314045503/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-03-18T16:03:13Z",
+        "uri": "http://web.archive.org/web/20160318160313/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-03-18T16:03:13Z",
+        "uri": "http://web.archive.org/web/20160318160313/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-03-20T22:02:23Z",
+        "uri": "http://web.archive.org/web/20160320220223/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-03-22T20:31:21Z",
+        "uri": "http://web.archive.org/web/20160322203121/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-03-22T20:31:21Z",
+        "uri": "http://web.archive.org/web/20160322203121/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-03-29T08:34:19Z",
+        "uri": "http://web.archive.org/web/20160329083419/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-03-29T08:54:43Z",
+        "uri": "http://web.archive.org/web/20160329085443/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-03-29T08:54:43Z",
+        "uri": "http://web.archive.org/web/20160329085443/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-04-04T08:23:53Z",
+        "uri": "http://web.archive.org/web/20160404082353/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-04-04T08:23:53Z",
+        "uri": "http://web.archive.org/web/20160404082353/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-04-05T16:33:24Z",
+        "uri": "http://web.archive.org/web/20160405163324/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-04-06T15:35:40Z",
+        "uri": "http://web.archive.org/web/20160406153540/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-04-09T16:55:53Z",
+        "uri": "http://web.archive.org/web/20160409165553/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-04-12T21:17:20Z",
+        "uri": "http://web.archive.org/web/20160412211720/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-04-15T16:59:42Z",
+        "uri": "http://web.archive.org/web/20160415165942/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-04-15T16:59:42Z",
+        "uri": "http://web.archive.org/web/20160415165942/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-04-19T16:41:09Z",
+        "uri": "http://web.archive.org/web/20160419164109/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-04-21T19:40:09Z",
+        "uri": "http://web.archive.org/web/20160421194009/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-04-21T19:40:09Z",
+        "uri": "http://web.archive.org/web/20160421194009/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-04-25T23:03:29Z",
+        "uri": "http://web.archive.org/web/20160425230329/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-04-26T11:41:43Z",
+        "uri": "http://web.archive.org/web/20160426114143/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-04-28T07:14:54Z",
+        "uri": "http://web.archive.org/web/20160428071454/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-04-28T07:14:54Z",
+        "uri": "http://web.archive.org/web/20160428071454/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-05-01T23:29:31Z",
+        "uri": "http://web.archive.org/web/20160501232931/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-05-04T06:27:08Z",
+        "uri": "http://web.archive.org/web/20160504062708/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-05-04T20:04:30Z",
+        "uri": "http://web.archive.org/web/20160504200430/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-05-04T20:04:30Z",
+        "uri": "http://web.archive.org/web/20160504200430/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-05-07T19:36:05Z",
+        "uri": "http://web.archive.org/web/20160507193605/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-05-09T21:53:05Z",
+        "uri": "http://web.archive.org/web/20160509215305/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-05-09T21:53:05Z",
+        "uri": "http://web.archive.org/web/20160509215305/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-05-14T23:05:28Z",
+        "uri": "http://web.archive.org/web/20160514230528/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-05-14T23:10:17Z",
+        "uri": "http://web.archive.org/web/20160514231017/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-05-14T23:10:17Z",
+        "uri": "http://web.archive.org/web/20160514231017/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-05-18T15:27:05Z",
+        "uri": "http://web.archive.org/web/20160518152705/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-05-19T17:00:06Z",
+        "uri": "http://web.archive.org/web/20160519170006/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-05-19T17:00:06Z",
+        "uri": "http://web.archive.org/web/20160519170006/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-05-21T07:20:22Z",
+        "uri": "http://web.archive.org/web/20160521072022/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-06-10T00:27:39Z",
+        "uri": "http://web.archive.org/web/20160610002739/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-06-16T08:12:25Z",
+        "uri": "http://web.archive.org/web/20160616081225/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-06-16T08:12:25Z",
+        "uri": "http://web.archive.org/web/20160616081225/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-06-23T21:13:33Z",
+        "uri": "http://web.archive.org/web/20160623211333/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-06-26T23:49:55Z",
+        "uri": "http://web.archive.org/web/20160626234955/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-07-02T06:51:49Z",
+        "uri": "http://web.archive.org/web/20160702065149/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-07-09T21:26:44Z",
+        "uri": "http://web.archive.org/web/20160709212644/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-07-09T21:26:44Z",
+        "uri": "http://web.archive.org/web/20160709212644/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-07-14T20:46:33Z",
+        "uri": "http://web.archive.org/web/20160714204633/http://static.williamhill.com/sport/football-betting/?"
+      },
+      {
+        "datetime": "2016-07-15T09:57:51Z",
+        "uri": "http://web.archive.org/web/20160715095751/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-07-15T09:57:51Z",
+        "uri": "http://web.archive.org/web/20160715095751/http://static.williamhill.com/sport/football-betting"
+      },
+      {
+        "datetime": "2016-10-31T08:15:53Z",
+        "uri": "http://web.archive.org/web/20161031081553/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2016-11-15T10:32:51Z",
+        "uri": "http://archive.is/20161115103251/http://static.williamhill.com/sport/football-betting/"
+      },
+      {
+        "datetime": "2017-02-05T09:01:03Z",
+        "uri": "http://web.archive.org/web/20170205090103/http://static.williamhill.com/sport/football-betting/"
+      }
+    ],
+    "first": {
+      "datetime": "2015-05-05T17:01:05Z",
+      "uri": "http://web.archive.org/web/20150505170105/http://static.williamhill.com/sport/football-betting/?"
+    },
+    "last": {
+      "datetime": "2017-02-05T09:01:03Z",
+      "uri": "http://web.archive.org/web/20170205090103/http://static.williamhill.com/sport/football-betting/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://static.williamhill.com/sport/football-betting/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://static.williamhill.com/sport/football-betting/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://static.williamhill.com/sport/football-betting/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://static.williamhill.com/sport/football-betting/"
+}

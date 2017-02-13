@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T23:11:51Z",
+        "uri": "http://web.archive.org/web/20170129231151/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T23:11:51Z",
+      "uri": "http://web.archive.org/web/20170129231151/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html"
+    },
+    "last": {
+      "datetime": "2017-01-29T23:11:51Z",
+      "uri": "http://web.archive.org/web/20170129231151/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.dailymail.co.uk/news/article-4169904/Trump-DC-hotel-lost-1m-net-income.html"
+}

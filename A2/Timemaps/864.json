@@ -1,0 +1,38 @@
+{
+  "original_uri": "https://rootsacousticevening.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://rootsacousticevening.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-01-09T16:04:12Z",
+        "uri": "http://web.archive.org/web/20160109160412/http://rootsacousticevening.com/"
+      },
+      {
+        "datetime": "2016-03-12T21:32:45Z",
+        "uri": "http://web.archive.org/web/20160312213245/http://rootsacousticevening.com/"
+      },
+      {
+        "datetime": "2016-10-03T01:16:01Z",
+        "uri": "http://web.archive.org/web/20161003011601/http://rootsacousticevening.com/"
+      },
+      {
+        "datetime": "2016-10-18T18:54:42Z",
+        "uri": "http://web.archive.org/web/20161018185442/https://rootsacousticevening.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2016-01-09T16:04:12Z",
+      "uri": "http://web.archive.org/web/20160109160412/http://rootsacousticevening.com/"
+    },
+    "last": {
+      "datetime": "2016-10-18T18:54:42Z",
+      "uri": "http://web.archive.org/web/20161018185442/https://rootsacousticevening.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://rootsacousticevening.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://rootsacousticevening.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://rootsacousticevening.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://rootsacousticevening.com/"
+}

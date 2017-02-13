@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T00:52:15Z",
+        "uri": "http://web.archive.org/web/20170130005215/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T00:52:15Z",
+      "uri": "http://web.archive.org/web/20170130005215/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/"
+    },
+    "last": {
+      "datetime": "2017-01-30T00:52:15Z",
+      "uri": "http://web.archive.org/web/20170130005215/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.cnn.com/2017/01/29/politics/donald-trump-white-house-supreme-court-pick/"
+}

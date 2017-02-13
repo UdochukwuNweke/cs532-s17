@@ -1,0 +1,46 @@
+{
+  "original_uri": "http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T01:34:47Z",
+        "uri": "http://wayback.archive-it.org/all/20170130013447/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+      },
+      {
+        "datetime": "2017-01-30T01:34:47Z",
+        "uri": "http://web.archive.org/web/20170130013447/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+      },
+      {
+        "datetime": "2017-01-30T08:54:06Z",
+        "uri": "http://web.archive.org/web/20170130085406/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+      },
+      {
+        "datetime": "2017-02-03T14:23:42Z",
+        "uri": "http://wayback.archive-it.org/all/20170203142342/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+      },
+      {
+        "datetime": "2017-02-03T14:23:42Z",
+        "uri": "http://web.archive.org/web/20170203142342/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+      },
+      {
+        "datetime": "2017-02-04T02:57:38Z",
+        "uri": "http://web.archive.org/web/20170204025738/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T01:34:47Z",
+      "uri": "http://wayback.archive-it.org/all/20170130013447/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+    },
+    "last": {
+      "datetime": "2017-02-04T02:57:38Z",
+      "uri": "http://web.archive.org/web/20170204025738/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://thehill.com/homenews/administration/316784-trump-my-first-priority-will-always-be-to-protect-and-serve-our"
+}

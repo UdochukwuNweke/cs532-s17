@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T19:12:28Z",
+        "uri": "http://web.archive.org/web/20170129191228/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+      },
+      {
+        "datetime": "2017-01-29T19:52:40Z",
+        "uri": "http://web.archive.org/web/20170129195240/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+      },
+      {
+        "datetime": "2017-01-30T00:31:06Z",
+        "uri": "http://web.archive.org/web/20170130003106/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+      },
+      {
+        "datetime": "2017-01-31T16:46:49Z",
+        "uri": "http://web.archive.org/web/20170131164649/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T19:12:28Z",
+      "uri": "http://web.archive.org/web/20170129191228/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+    },
+    "last": {
+      "datetime": "2017-01-31T16:46:49Z",
+      "uri": "http://web.archive.org/web/20170131164649/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.foxnews.com/politics/2017/01/29/conway-defends-trump-immigration-ban-ripped-press-new-one-over-bias.html"
+}

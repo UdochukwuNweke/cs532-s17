@@ -1,0 +1,42 @@
+{
+  "original_uri": "http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-26T21:51:26Z",
+        "uri": "http://web.archive.org/web/20170126215126/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+      },
+      {
+        "datetime": "2017-01-27T00:23:08Z",
+        "uri": "http://wayback.archive-it.org/all/20170127002308/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+      },
+      {
+        "datetime": "2017-01-27T00:23:08Z",
+        "uri": "http://web.archive.org/web/20170127002308/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+      },
+      {
+        "datetime": "2017-01-31T04:49:28Z",
+        "uri": "http://web.archive.org/web/20170131044928/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+      },
+      {
+        "datetime": "2017-02-03T11:08:48Z",
+        "uri": "http://web.archive.org/web/20170203110848/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-26T21:51:26Z",
+      "uri": "http://web.archive.org/web/20170126215126/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+    },
+    "last": {
+      "datetime": "2017-02-03T11:08:48Z",
+      "uri": "http://web.archive.org/web/20170203110848/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.motherjones.com/politics/2017/01/trump-commerce-secretary-nominee-wilbur-ross-insider-trading-allegations"
+}

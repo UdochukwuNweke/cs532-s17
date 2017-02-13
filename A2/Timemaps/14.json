@@ -1,0 +1,46 @@
+{
+  "original_uri": "https://www.loopslive.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.loopslive.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2004-03-25T20:59:19Z",
+        "uri": "http://web.archive.org/web/20040325205919/http://loopslive.com/"
+      },
+      {
+        "datetime": "2010-05-14T19:38:39Z",
+        "uri": "http://web.archive.org/web/20100514193839/http://loopslive.com/"
+      },
+      {
+        "datetime": "2011-02-07T11:57:09Z",
+        "uri": "http://web.archive.org/web/20110207115709/http://loopslive.com/"
+      },
+      {
+        "datetime": "2016-03-05T00:56:44Z",
+        "uri": "http://web.archive.org/web/20160305005644/http://loopslive.com/"
+      },
+      {
+        "datetime": "2016-10-04T05:00:09Z",
+        "uri": "http://web.archive.org/web/20161004050009/http://loopslive.com/"
+      },
+      {
+        "datetime": "2016-11-12T11:28:56Z",
+        "uri": "http://web.archive.org/web/20161112112856/https://www.loopslive.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2004-03-25T20:59:19Z",
+      "uri": "http://web.archive.org/web/20040325205919/http://loopslive.com/"
+    },
+    "last": {
+      "datetime": "2016-11-12T11:28:56Z",
+      "uri": "http://web.archive.org/web/20161112112856/https://www.loopslive.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.loopslive.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.loopslive.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.loopslive.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.loopslive.com/"
+}

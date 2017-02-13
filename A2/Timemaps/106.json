@@ -1,0 +1,62 @@
+{
+  "original_uri": "https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-26T02:01:36Z",
+        "uri": "http://web.archive.org/web/20170126020136/http://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-26T02:14:16Z",
+        "uri": "http://web.archive.org/web/20170126021416/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-26T02:47:38Z",
+        "uri": "http://web.archive.org/web/20170126024738/http://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-26T07:23:39Z",
+        "uri": "http://web.archive.org/web/20170126072339/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-27T00:23:59Z",
+        "uri": "http://web.archive.org/web/20170127002359/http://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-27T01:25:43Z",
+        "uri": "http://web.archive.org/web/20170127012543/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-27T03:50:09Z",
+        "uri": "http://web.archive.org/web/20170127035009/http://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-27T03:50:19Z",
+        "uri": "http://web.archive.org/web/20170127035019/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-28T03:50:38Z",
+        "uri": "http://web.archive.org/web/20170128035038/http://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      },
+      {
+        "datetime": "2017-01-28T04:09:21Z",
+        "uri": "http://web.archive.org/web/20170128040921/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-26T02:01:36Z",
+      "uri": "http://web.archive.org/web/20170126020136/http://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+    },
+    "last": {
+      "datetime": "2017-01-28T04:09:21Z",
+      "uri": "http://web.archive.org/web/20170128040921/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.washingtonpost.com/sports/highschools/sport-specialization-increases-injury-risk-for-high-school-athletes-study-finds/2017/01/25/49dcda1a-e24c-11e6-a453-19ec4b3d09ba_story.html"
+}

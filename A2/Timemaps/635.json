@@ -1,0 +1,54 @@
+{
+  "original_uri": "https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T10:33:13Z",
+        "uri": "http://web.archive.org/web/20170130103313/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      },
+      {
+        "datetime": "2017-01-31T12:25:38Z",
+        "uri": "http://web.archive.org/web/20170131122538/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      },
+      {
+        "datetime": "2017-02-01T13:18:59Z",
+        "uri": "http://web.archive.org/web/20170201131859/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      },
+      {
+        "datetime": "2017-02-02T14:07:55Z",
+        "uri": "http://web.archive.org/web/20170202140755/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      },
+      {
+        "datetime": "2017-02-03T15:01:38Z",
+        "uri": "http://web.archive.org/web/20170203150138/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      },
+      {
+        "datetime": "2017-02-04T15:14:16Z",
+        "uri": "http://web.archive.org/web/20170204151416/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      },
+      {
+        "datetime": "2017-02-05T17:14:29Z",
+        "uri": "http://web.archive.org/web/20170205171429/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      },
+      {
+        "datetime": "2017-02-06T18:10:09Z",
+        "uri": "http://web.archive.org/web/20170206181009/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T10:33:13Z",
+      "uri": "http://web.archive.org/web/20170130103313/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+    },
+    "last": {
+      "datetime": "2017-02-06T18:10:09Z",
+      "uri": "http://web.archive.org/web/20170206181009/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.washingtonpost.com/video/c/video/60c9e48e-e625-11e6-903d-9b11ed7d8d2a"
+}

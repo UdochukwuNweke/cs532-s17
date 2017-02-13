@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T01:33:28Z",
+        "uri": "http://web.archive.org/web/20170130013328/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T01:33:28Z",
+      "uri": "http://web.archive.org/web/20170130013328/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler"
+    },
+    "last": {
+      "datetime": "2017-01-30T01:33:28Z",
+      "uri": "http://web.archive.org/web/20170130013328/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.si.com/tech-media/2017/01/29/australian-open-roger-federer-rafael-nadal-chris-fowler"
+}

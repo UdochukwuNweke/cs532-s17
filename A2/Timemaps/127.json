@@ -1,0 +1,54 @@
+{
+  "original_uri": "http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T05:22:55Z",
+        "uri": "http://web.archive.org/web/20170130052255/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      },
+      {
+        "datetime": "2017-01-31T07:48:51Z",
+        "uri": "http://web.archive.org/web/20170131074851/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      },
+      {
+        "datetime": "2017-02-01T08:44:15Z",
+        "uri": "http://web.archive.org/web/20170201084415/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      },
+      {
+        "datetime": "2017-02-02T09:33:03Z",
+        "uri": "http://web.archive.org/web/20170202093303/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      },
+      {
+        "datetime": "2017-02-03T09:24:48Z",
+        "uri": "http://web.archive.org/web/20170203092448/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      },
+      {
+        "datetime": "2017-02-04T11:09:50Z",
+        "uri": "http://web.archive.org/web/20170204110950/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      },
+      {
+        "datetime": "2017-02-05T10:56:54Z",
+        "uri": "http://web.archive.org/web/20170205105654/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      },
+      {
+        "datetime": "2017-02-06T11:29:38Z",
+        "uri": "http://web.archive.org/web/20170206112938/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T05:22:55Z",
+      "uri": "http://web.archive.org/web/20170130052255/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+    },
+    "last": {
+      "datetime": "2017-02-06T11:29:38Z",
+      "uri": "http://web.archive.org/web/20170206112938/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.chicagotribune.com/sports/columnists/ct-sullivan-white-sox-finally-rebuilding-spt-0130-20170129-column.html"
+}

@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T20:26:59Z",
+        "uri": "http://web.archive.org/web/20170128202659/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T20:26:59Z",
+      "uri": "http://web.archive.org/web/20170128202659/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health"
+    },
+    "last": {
+      "datetime": "2017-01-28T20:26:59Z",
+      "uri": "http://web.archive.org/web/20170128202659/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.dailykos.com/story/2017/1/28/1626188/-View-from-the-left-Journalists-must-start-covering-the-elephant-in-the-room-Trump-s-mental-health"
+}

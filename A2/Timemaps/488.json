@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://matome.naver.jp/odai/2140541045780157201/2140541063080238603",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://matome.naver.jp/odai/2140541045780157201/2140541063080238603",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-07-11T15:10:50Z",
+        "uri": "http://web.archive.org/web/20160711151050/http://matome.naver.jp/odai/2140541045780157201/2140541063080238603"
+      }
+    ],
+    "first": {
+      "datetime": "2016-07-11T15:10:50Z",
+      "uri": "http://web.archive.org/web/20160711151050/http://matome.naver.jp/odai/2140541045780157201/2140541063080238603"
+    },
+    "last": {
+      "datetime": "2016-07-11T15:10:50Z",
+      "uri": "http://web.archive.org/web/20160711151050/http://matome.naver.jp/odai/2140541045780157201/2140541063080238603"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://matome.naver.jp/odai/2140541045780157201/2140541063080238603",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://matome.naver.jp/odai/2140541045780157201/2140541063080238603",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://matome.naver.jp/odai/2140541045780157201/2140541063080238603"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://matome.naver.jp/odai/2140541045780157201/2140541063080238603"
+}

@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://www.youtube.com/watch?v=-sM8SynMM5I",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.youtube.com/watch?v=-sM8SynMM5I",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-11-18T20:24:27Z",
+        "uri": "http://web.archive.org/web/20161118202427/https://www.youtube.com/watch?v=-sM8SynMM5I"
+      }
+    ],
+    "first": {
+      "datetime": "2016-11-18T20:24:27Z",
+      "uri": "http://web.archive.org/web/20161118202427/https://www.youtube.com/watch?v=-sM8SynMM5I"
+    },
+    "last": {
+      "datetime": "2016-11-18T20:24:27Z",
+      "uri": "http://web.archive.org/web/20161118202427/https://www.youtube.com/watch?v=-sM8SynMM5I"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.youtube.com/watch?v=-sM8SynMM5I",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.youtube.com/watch?v=-sM8SynMM5I",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.youtube.com/watch?v=-sM8SynMM5I"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.youtube.com/watch?v=-sM8SynMM5I"
+}

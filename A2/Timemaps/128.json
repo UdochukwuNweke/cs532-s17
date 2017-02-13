@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T00:52:38Z",
+        "uri": "http://web.archive.org/web/20170130005238/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T00:52:38Z",
+      "uri": "http://web.archive.org/web/20170130005238/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865"
+    },
+    "last": {
+      "datetime": "2017-01-30T00:52:38Z",
+      "uri": "http://web.archive.org/web/20170130005238/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.cp24.com/world/military-first-known-combat-death-since-trump-in-office-1.3261865"
+}

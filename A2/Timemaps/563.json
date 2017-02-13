@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T02:37:57Z",
+        "uri": "http://web.archive.org/web/20170130023757/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T02:37:57Z",
+      "uri": "http://web.archive.org/web/20170130023757/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html"
+    },
+    "last": {
+      "datetime": "2017-01-30T02:37:57Z",
+      "uri": "http://web.archive.org/web/20170130023757/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.bet.com/music/2017/01/29/according-to-lupe-fiasco-this-is-what-americans-afraid-of.html"
+}

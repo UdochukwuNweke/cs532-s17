@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-01T01:14:12Z",
+        "uri": "http://web.archive.org/web/20170201011412/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente"
+      },
+      {
+        "datetime": "2017-02-05T02:26:26Z",
+        "uri": "http://web.archive.org/web/20170205022626/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-01T01:14:12Z",
+      "uri": "http://web.archive.org/web/20170201011412/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente"
+    },
+    "last": {
+      "datetime": "2017-02-05T02:26:26Z",
+      "uri": "http://web.archive.org/web/20170205022626/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://cnnespanol.cnn.com/2017/01/21/esta-es-la-pension-que-recibira-obama-como-expresidente/"
+}

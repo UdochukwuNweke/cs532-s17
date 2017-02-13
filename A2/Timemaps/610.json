@@ -1,0 +1,42 @@
+{
+  "original_uri": "http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-09-28T22:23:33Z",
+        "uri": "http://web.archive.org/web/20150928222333/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos/"
+      },
+      {
+        "datetime": "2015-09-28T22:23:33Z",
+        "uri": "http://web.archive.org/web/20150928222333/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos"
+      },
+      {
+        "datetime": "2015-09-30T02:01:16Z",
+        "uri": "http://web.archive.org/web/20150930020116/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos/"
+      },
+      {
+        "datetime": "2015-10-29T14:07:12Z",
+        "uri": "http://web.archive.org/web/20151029140712/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos/"
+      },
+      {
+        "datetime": "2015-10-29T14:07:12Z",
+        "uri": "http://web.archive.org/web/20151029140712/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos"
+      }
+    ],
+    "first": {
+      "datetime": "2015-09-28T22:23:33Z",
+      "uri": "http://web.archive.org/web/20150928222333/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos/"
+    },
+    "last": {
+      "datetime": "2015-10-29T14:07:12Z",
+      "uri": "http://web.archive.org/web/20151029140712/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.broadway.com/shows/sound-music-baa/photos/the-sound-of-music-national-tour-show-photos"
+}

@@ -1,0 +1,34 @@
+{
+  "original_uri": "http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-04T12:15:52Z",
+        "uri": "http://web.archive.org/web/20170204121552/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2"
+      },
+      {
+        "datetime": "2017-02-05T13:34:46Z",
+        "uri": "http://web.archive.org/web/20170205133446/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2"
+      },
+      {
+        "datetime": "2017-02-06T15:13:15Z",
+        "uri": "http://web.archive.org/web/20170206151315/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-04T12:15:52Z",
+      "uri": "http://web.archive.org/web/20170204121552/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2"
+    },
+    "last": {
+      "datetime": "2017-02-06T15:13:15Z",
+      "uri": "http://web.archive.org/web/20170206151315/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.nba.com/video/2017/01/29/20170127-john-wall-top-10-all-star-v2/"
+}

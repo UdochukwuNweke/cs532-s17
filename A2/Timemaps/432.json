@@ -1,0 +1,42 @@
+{
+  "original_uri": "http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-27T07:55:26Z",
+        "uri": "http://web.archive.org/web/20170127075526/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/"
+      },
+      {
+        "datetime": "2017-01-27T16:41:08Z",
+        "uri": "http://web.archive.org/web/20170127164108/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/"
+      },
+      {
+        "datetime": "2017-01-27T17:43:21Z",
+        "uri": "http://archive.is/20170127174321/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/"
+      },
+      {
+        "datetime": "2017-01-29T12:14:22Z",
+        "uri": "http://web.archive.org/web/20170129121422/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/"
+      },
+      {
+        "datetime": "2017-02-03T03:37:19Z",
+        "uri": "http://web.archive.org/web/20170203033719/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-27T07:55:26Z",
+      "uri": "http://web.archive.org/web/20170127075526/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/"
+    },
+    "last": {
+      "datetime": "2017-02-03T03:37:19Z",
+      "uri": "http://web.archive.org/web/20170203033719/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://consequenceofsound.net/2017/01/seattle-pirate-radio-station-is-playing-fuck-donald-trump-on-repeat/"
+}

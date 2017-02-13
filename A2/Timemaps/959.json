@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-02T10:30:21Z",
+        "uri": "http://web.archive.org/web/20170202103021/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-02T10:30:21Z",
+      "uri": "http://web.archive.org/web/20170202103021/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/"
+    },
+    "last": {
+      "datetime": "2017-02-02T10:30:21Z",
+      "uri": "http://web.archive.org/web/20170202103021/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://indianexpress.com/article/sports/cricket/india-vs-england-ind-vs-eng-t20-jasprit-bumrah-at-the-death-keeps-india-alive-4498107/"
+}

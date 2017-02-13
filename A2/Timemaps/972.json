@@ -1,0 +1,82 @@
+{
+  "original_uri": "http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-24T15:03:05Z",
+        "uri": "http://web.archive.org/web/20170124150305/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T15:35:09Z",
+        "uri": "http://web.archive.org/web/20170124153509/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T16:04:42Z",
+        "uri": "http://web.archive.org/web/20170124160442/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T16:17:19Z",
+        "uri": "http://archive.is/20170124161719/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T16:50:05Z",
+        "uri": "http://web.archive.org/web/20170124165005/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T17:12:43Z",
+        "uri": "http://web.archive.org/web/20170124171243/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T17:36:38Z",
+        "uri": "http://web.archive.org/web/20170124173638/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T19:29:00Z",
+        "uri": "http://web.archive.org/web/20170124192900/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T19:41:02Z",
+        "uri": "http://web.archive.org/web/20170124194102/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T20:01:04Z",
+        "uri": "http://archive.is/20170124200104/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-24T22:29:12Z",
+        "uri": "http://web.archive.org/web/20170124222912/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-25T02:05:39Z",
+        "uri": "http://web.archive.org/web/20170125020539/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-01-26T11:43:12Z",
+        "uri": "http://web.archive.org/web/20170126114312/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-02-03T05:04:48Z",
+        "uri": "http://web.archive.org/web/20170203050448/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      },
+      {
+        "datetime": "2017-02-05T01:32:50Z",
+        "uri": "http://web.archive.org/web/20170205013250/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-24T15:03:05Z",
+      "uri": "http://web.archive.org/web/20170124150305/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+    },
+    "last": {
+      "datetime": "2017-02-05T01:32:50Z",
+      "uri": "http://web.archive.org/web/20170205013250/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.foxnews.com/politics/2017/01/24/trump-to-sign-orders-reviving-pipeline-projects-sources-say.html"
+}

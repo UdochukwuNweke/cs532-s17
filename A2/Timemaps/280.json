@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T18:38:08Z",
+        "uri": "http://web.archive.org/web/20170128183808/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html"
+      },
+      {
+        "datetime": "2017-02-01T13:52:16Z",
+        "uri": "http://web.archive.org/web/20170201135216/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T18:38:08Z",
+      "uri": "http://web.archive.org/web/20170128183808/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html"
+    },
+    "last": {
+      "datetime": "2017-02-01T13:52:16Z",
+      "uri": "http://web.archive.org/web/20170201135216/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.independent.co.uk/voices/donald-trump-refugee-ban-muslim-countries-christians-welcomerobert-fisk-a7550941.html"
+}

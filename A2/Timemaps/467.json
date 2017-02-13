@@ -1,0 +1,42 @@
+{
+  "original_uri": "http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T14:56:52Z",
+        "uri": "http://web.archive.org/web/20170130145652/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+      },
+      {
+        "datetime": "2017-01-31T16:36:52Z",
+        "uri": "http://web.archive.org/web/20170131163652/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+      },
+      {
+        "datetime": "2017-02-01T18:46:50Z",
+        "uri": "http://web.archive.org/web/20170201184650/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+      },
+      {
+        "datetime": "2017-02-02T18:56:43Z",
+        "uri": "http://web.archive.org/web/20170202185643/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+      },
+      {
+        "datetime": "2017-02-03T20:09:03Z",
+        "uri": "http://web.archive.org/web/20170203200903/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T14:56:52Z",
+      "uri": "http://web.archive.org/web/20170130145652/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+    },
+    "last": {
+      "datetime": "2017-02-03T20:09:03Z",
+      "uri": "http://web.archive.org/web/20170203200903/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.usatoday.com/story/sports/ncaab/big12/2017/01/29/josh-jackson-kansas-matchup-nightmare-against-kentucky/97218484/"
+}

@@ -1,0 +1,70 @@
+{
+  "original_uri": "https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T23:51:22Z",
+        "uri": "http://web.archive.org/web/20170129235122/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-30T00:22:52Z",
+        "uri": "http://web.archive.org/web/20170130002252/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-30T00:26:49Z",
+        "uri": "http://archive.is/20170130002649/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-30T03:57:11Z",
+        "uri": "http://web.archive.org/web/20170130035711/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-30T05:59:36Z",
+        "uri": "http://web.archive.org/web/20170130055936/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-30T06:38:31Z",
+        "uri": "http://web.archive.org/web/20170130063831/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-30T15:21:06Z",
+        "uri": "http://web.archive.org/web/20170130152106/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-30T18:02:11Z",
+        "uri": "http://web.archive.org/web/20170130180211/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-01-31T11:46:08Z",
+        "uri": "http://web.archive.org/web/20170131114608/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-02-01T16:36:38Z",
+        "uri": "http://web.archive.org/web/20170201163638/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-02-02T23:42:09Z",
+        "uri": "http://web.archive.org/web/20170202234209/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      },
+      {
+        "datetime": "2017-02-03T21:01:53Z",
+        "uri": "http://web.archive.org/web/20170203210153/http://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T23:51:22Z",
+      "uri": "http://web.archive.org/web/20170129235122/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+    },
+    "last": {
+      "datetime": "2017-02-03T21:01:53Z",
+      "uri": "http://web.archive.org/web/20170203210153/http://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.washingtonpost.com/world/national-security/jihadist-groups-hail-trumps-travel-ban-as-a-victory/2017/01/29/50908986-e66d-11e6-b82f-687d6e6a3e7c_story.html"
+}

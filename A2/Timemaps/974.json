@@ -1,0 +1,78 @@
+{
+  "original_uri": "http://www.radionursery.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.radionursery.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-11-01T22:31:14Z",
+        "uri": "http://web.archive.org/web/20151101223114/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2015-11-20T00:46:56Z",
+        "uri": "http://web.archive.org/web/20151120004656/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2015-12-20T15:35:04Z",
+        "uri": "http://web.archive.org/web/20151220153504/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-01-20T02:37:47Z",
+        "uri": "http://web.archive.org/web/20160120023747/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-02-19T14:13:55Z",
+        "uri": "http://web.archive.org/web/20160219141355/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-02-20T03:43:22Z",
+        "uri": "http://web.archive.org/web/20160220034322/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-03-08T06:52:38Z",
+        "uri": "http://web.archive.org/web/20160308065238/http://radionursery.com/"
+      },
+      {
+        "datetime": "2016-03-21T16:31:08Z",
+        "uri": "http://web.archive.org/web/20160321163108/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-03-28T21:15:16Z",
+        "uri": "http://web.archive.org/web/20160328211516/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-04-21T14:02:50Z",
+        "uri": "http://web.archive.org/web/20160421140250/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-05-22T19:44:46Z",
+        "uri": "http://web.archive.org/web/20160522194446/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-08-07T00:24:01Z",
+        "uri": "http://web.archive.org/web/20160807002401/http://www.radionursery.com/"
+      },
+      {
+        "datetime": "2016-10-08T13:26:58Z",
+        "uri": "http://web.archive.org/web/20161008132658/http://radionursery.com/"
+      },
+      {
+        "datetime": "2016-11-01T09:42:40Z",
+        "uri": "http://web.archive.org/web/20161101094240/http://www.radionursery.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2015-11-01T22:31:14Z",
+      "uri": "http://web.archive.org/web/20151101223114/http://www.radionursery.com/"
+    },
+    "last": {
+      "datetime": "2016-11-01T09:42:40Z",
+      "uri": "http://web.archive.org/web/20161101094240/http://www.radionursery.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.radionursery.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.radionursery.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.radionursery.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.radionursery.com/"
+}

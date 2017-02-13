@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-02T19:21:54Z",
+        "uri": "http://web.archive.org/web/20170202192154/http://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-02T19:21:54Z",
+      "uri": "http://web.archive.org/web/20170202192154/http://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072"
+    },
+    "last": {
+      "datetime": "2017-02-02T19:21:54Z",
+      "uri": "http://web.archive.org/web/20170202192154/http://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.valeursactuelles.com/monde/trump-bloque-larrivee-des-musulmans-aux-etats-unis-63072"
+}

@@ -1,0 +1,38 @@
+{
+  "original_uri": "https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T11:31:51Z",
+        "uri": "http://archive.is/20170129113151/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+      },
+      {
+        "datetime": "2017-01-30T12:26:37Z",
+        "uri": "http://web.archive.org/web/20170130122637/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+      },
+      {
+        "datetime": "2017-01-31T04:19:33Z",
+        "uri": "http://web.archive.org/web/20170131041933/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+      },
+      {
+        "datetime": "2017-02-04T02:56:48Z",
+        "uri": "http://web.archive.org/web/20170204025648/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T11:31:51Z",
+      "uri": "http://archive.is/20170129113151/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+    },
+    "last": {
+      "datetime": "2017-02-04T02:56:48Z",
+      "uri": "http://web.archive.org/web/20170204025648/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://thenextweb.com/insider/2017/01/29/airbnb-ceo-brian-chesky-offers-free-housing-stranded-muslim-ban/"
+}

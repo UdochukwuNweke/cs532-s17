@@ -1,0 +1,34 @@
+{
+  "original_uri": "http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T06:37:25Z",
+        "uri": "http://web.archive.org/web/20170130063725/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html"
+      },
+      {
+        "datetime": "2017-01-30T06:37:33Z",
+        "uri": "http://web.archive.org/web/20170130063733/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html"
+      },
+      {
+        "datetime": "2017-01-30T06:37:40Z",
+        "uri": "http://archive.is/20170130063740/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T06:37:25Z",
+      "uri": "http://web.archive.org/web/20170130063725/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html"
+    },
+    "last": {
+      "datetime": "2017-01-30T06:37:40Z",
+      "uri": "http://archive.is/20170130063740/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.hochi.co.jp/sports/ballsports/20170129-OHT1T50324.html"
+}

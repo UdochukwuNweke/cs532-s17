@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T01:21:44Z",
+        "uri": "http://web.archive.org/web/20170128012144/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday"
+      },
+      {
+        "datetime": "2017-02-05T12:16:24Z",
+        "uri": "http://web.archive.org/web/20170205121624/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T01:21:44Z",
+      "uri": "http://web.archive.org/web/20170128012144/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday"
+    },
+    "last": {
+      "datetime": "2017-02-05T12:16:24Z",
+      "uri": "http://web.archive.org/web/20170205121624/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.billboard.com/articles/news/playlists/7669929/migos-major-lazer-spotify-new-music-friday"
+}

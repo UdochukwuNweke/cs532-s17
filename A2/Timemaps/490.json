@@ -1,0 +1,58 @@
+{
+  "original_uri": "http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T05:55:47Z",
+        "uri": "http://web.archive.org/web/20170130055547/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-01-31T10:37:49Z",
+        "uri": "http://web.archive.org/web/20170131103749/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-01-31T13:42:50Z",
+        "uri": "http://web.archive.org/web/20170131134250/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-02-01T14:39:04Z",
+        "uri": "http://web.archive.org/web/20170201143904/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-02-02T15:14:24Z",
+        "uri": "http://web.archive.org/web/20170202151424/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-02-03T16:57:09Z",
+        "uri": "http://web.archive.org/web/20170203165709/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-02-04T17:17:53Z",
+        "uri": "http://web.archive.org/web/20170204171753/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-02-05T18:12:00Z",
+        "uri": "http://web.archive.org/web/20170205181200/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      },
+      {
+        "datetime": "2017-02-06T19:11:50Z",
+        "uri": "http://web.archive.org/web/20170206191150/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T05:55:47Z",
+      "uri": "http://web.archive.org/web/20170130055547/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+    },
+    "last": {
+      "datetime": "2017-02-06T19:11:50Z",
+      "uri": "http://web.archive.org/web/20170206191150/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.newsweek.com/four-federal-judges-rule-against-trump-ban-549831"
+}

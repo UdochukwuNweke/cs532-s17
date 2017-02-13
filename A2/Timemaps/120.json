@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T20:08:05Z",
+        "uri": "http://web.archive.org/web/20170129200805/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order"
+      },
+      {
+        "datetime": "2017-01-29T21:09:24Z",
+        "uri": "http://web.archive.org/web/20170129210924/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order/"
+      },
+      {
+        "datetime": "2017-01-29T21:09:29Z",
+        "uri": "http://web.archive.org/web/20170129210929/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order"
+      },
+      {
+        "datetime": "2017-01-30T13:55:56Z",
+        "uri": "http://web.archive.org/web/20170130135556/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T20:08:05Z",
+      "uri": "http://web.archive.org/web/20170129200805/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order"
+    },
+    "last": {
+      "datetime": "2017-01-30T13:55:56Z",
+      "uri": "http://web.archive.org/web/20170130135556/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://perezhilton.com/2017-01-29-donald-trump-muslim-ban-uber-lyft-ride-sharing-one-million-dollar-donation-aclu-immigration-ban-executive-order"
+}

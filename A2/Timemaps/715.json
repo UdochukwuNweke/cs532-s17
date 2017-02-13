@@ -1,0 +1,318 @@
+{
+  "original_uri": "https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T18:05:56Z",
+        "uri": "http://web.archive.org/web/20170129180556/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-29T18:09:36Z",
+        "uri": "http://web.archive.org/web/20170129180936/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-29T18:09:51Z",
+        "uri": "http://web.archive.org/web/20170129180951/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-29T18:09:57Z",
+        "uri": "http://web.archive.org/web/20170129180957/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868"
+      },
+      {
+        "datetime": "2017-01-29T18:12:44Z",
+        "uri": "http://web.archive.org/web/20170129181244/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-29T18:18:55Z",
+        "uri": "http://web.archive.org/web/20170129181855/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-29T18:18:57Z",
+        "uri": "http://web.archive.org/web/20170129181857/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-29T20:27:33Z",
+        "uri": "http://archive.is/20170129202733/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T00:09:29Z",
+        "uri": "http://web.archive.org/web/20170130000929/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T00:18:31Z",
+        "uri": "http://web.archive.org/web/20170130001831/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T04:58:42Z",
+        "uri": "http://web.archive.org/web/20170130045842/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T04:58:48Z",
+        "uri": "http://web.archive.org/web/20170130045848/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T08:39:50Z",
+        "uri": "http://wayback.archive-it.org/all/20170130083950/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T08:39:50Z",
+        "uri": "http://web.archive.org/web/20170130083950/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T08:39:56Z",
+        "uri": "http://wayback.archive-it.org/all/20170130083956/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T08:39:56Z",
+        "uri": "http://web.archive.org/web/20170130083956/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T10:20:58Z",
+        "uri": "http://web.archive.org/web/20170130102058/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T10:21:05Z",
+        "uri": "http://web.archive.org/web/20170130102105/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T16:01:32Z",
+        "uri": "http://web.archive.org/web/20170130160132/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T16:37:09Z",
+        "uri": "http://web.archive.org/web/20170130163709/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T18:39:08Z",
+        "uri": "http://web.archive.org/web/20170130183908/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-30T19:04:50Z",
+        "uri": "http://web.archive.org/web/20170130190450/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T00:17:17Z",
+        "uri": "http://wayback.archive-it.org/all/20170131001717/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T00:17:17Z",
+        "uri": "http://web.archive.org/web/20170131001717/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T00:17:18Z",
+        "uri": "http://wayback.archive-it.org/all/20170131001718/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T00:17:18Z",
+        "uri": "http://web.archive.org/web/20170131001718/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T12:14:58Z",
+        "uri": "http://web.archive.org/web/20170131121458/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T12:15:00Z",
+        "uri": "http://web.archive.org/web/20170131121500/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T20:16:41Z",
+        "uri": "http://wayback.archive-it.org/all/20170131201641/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T20:16:41Z",
+        "uri": "http://web.archive.org/web/20170131201641/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T20:16:43Z",
+        "uri": "http://wayback.archive-it.org/all/20170131201643/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-01-31T20:16:43Z",
+        "uri": "http://web.archive.org/web/20170131201643/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-01T12:06:53Z",
+        "uri": "http://web.archive.org/web/20170201120653/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-01T13:06:07Z",
+        "uri": "http://web.archive.org/web/20170201130607/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-01T13:06:08Z",
+        "uri": "http://web.archive.org/web/20170201130608/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-01T20:56:11Z",
+        "uri": "http://web.archive.org/web/20170201205611/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-01T21:14:55Z",
+        "uri": "http://wayback.archive-it.org/all/20170201211455/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-01T21:14:55Z",
+        "uri": "http://web.archive.org/web/20170201211455/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T01:41:00Z",
+        "uri": "http://wayback.archive-it.org/all/20170202014100/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T01:41:00Z",
+        "uri": "http://web.archive.org/web/20170202014100/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T05:46:00Z",
+        "uri": "http://web.archive.org/web/20170202054600/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T09:03:20Z",
+        "uri": "http://web.archive.org/web/20170202090320/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T13:50:57Z",
+        "uri": "http://web.archive.org/web/20170202135057/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T13:50:58Z",
+        "uri": "http://web.archive.org/web/20170202135058/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T20:11:45Z",
+        "uri": "http://wayback.archive-it.org/all/20170202201145/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T20:11:45Z",
+        "uri": "http://web.archive.org/web/20170202201145/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T23:13:00Z",
+        "uri": "http://wayback.archive-it.org/all/20170202231300/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-02T23:13:00Z",
+        "uri": "http://web.archive.org/web/20170202231300/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-03T13:21:29Z",
+        "uri": "http://web.archive.org/web/20170203132129/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-03T14:41:04Z",
+        "uri": "http://web.archive.org/web/20170203144104/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-03T14:41:07Z",
+        "uri": "http://web.archive.org/web/20170203144107/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T01:42:52Z",
+        "uri": "http://web.archive.org/web/20170204014252/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T08:03:03Z",
+        "uri": "http://wayback.archive-it.org/all/20170204080303/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T08:03:03Z",
+        "uri": "http://web.archive.org/web/20170204080303/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T08:03:41Z",
+        "uri": "http://wayback.archive-it.org/all/20170204080341/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T08:03:41Z",
+        "uri": "http://web.archive.org/web/20170204080341/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T14:44:21Z",
+        "uri": "http://web.archive.org/web/20170204144421/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T14:56:10Z",
+        "uri": "http://web.archive.org/web/20170204145610/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-04T14:56:12Z",
+        "uri": "http://web.archive.org/web/20170204145612/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T08:02:28Z",
+        "uri": "http://wayback.archive-it.org/all/20170205080228/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T08:02:28Z",
+        "uri": "http://web.archive.org/web/20170205080228/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T08:03:01Z",
+        "uri": "http://wayback.archive-it.org/all/20170205080301/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T08:03:01Z",
+        "uri": "http://web.archive.org/web/20170205080301/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T14:22:09Z",
+        "uri": "http://web.archive.org/web/20170205142209/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T14:38:21Z",
+        "uri": "http://web.archive.org/web/20170205143821/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T16:54:05Z",
+        "uri": "http://web.archive.org/web/20170205165405/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-05T16:54:07Z",
+        "uri": "http://web.archive.org/web/20170205165407/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-06T03:17:59Z",
+        "uri": "http://wayback.archive-it.org/all/20170206031759/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-06T03:17:59Z",
+        "uri": "http://web.archive.org/web/20170206031759/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-06T08:02:09Z",
+        "uri": "http://wayback.archive-it.org/all/20170206080209/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-06T08:02:09Z",
+        "uri": "http://web.archive.org/web/20170206080209/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-06T08:02:51Z",
+        "uri": "http://wayback.archive-it.org/all/20170206080251/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-06T08:02:51Z",
+        "uri": "http://web.archive.org/web/20170206080251/http://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      },
+      {
+        "datetime": "2017-02-06T15:40:52Z",
+        "uri": "http://web.archive.org/web/20170206154052/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T18:05:56Z",
+      "uri": "http://web.archive.org/web/20170129180556/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+    },
+    "last": {
+      "datetime": "2017-02-06T15:40:52Z",
+      "uri": "http://web.archive.org/web/20170206154052/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.theatlantic.com/politics/archive/2017/01/a-clarifying-moment-in-american-history/514868/"
+}

@@ -1,0 +1,50 @@
+{
+  "original_uri": "http://www.shikoku-np.co.jp/sports/local/20170130000116",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.shikoku-np.co.jp/sports/local/20170130000116",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T06:20:00Z",
+        "uri": "http://web.archive.org/web/20170130062000/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+      },
+      {
+        "datetime": "2017-01-31T07:29:21Z",
+        "uri": "http://web.archive.org/web/20170131072921/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+      },
+      {
+        "datetime": "2017-02-01T10:16:09Z",
+        "uri": "http://web.archive.org/web/20170201101609/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+      },
+      {
+        "datetime": "2017-02-02T11:09:23Z",
+        "uri": "http://web.archive.org/web/20170202110923/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+      },
+      {
+        "datetime": "2017-02-03T11:51:17Z",
+        "uri": "http://web.archive.org/web/20170203115117/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+      },
+      {
+        "datetime": "2017-02-04T12:27:53Z",
+        "uri": "http://web.archive.org/web/20170204122753/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+      },
+      {
+        "datetime": "2017-02-05T13:14:59Z",
+        "uri": "http://web.archive.org/web/20170205131459/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T06:20:00Z",
+      "uri": "http://web.archive.org/web/20170130062000/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+    },
+    "last": {
+      "datetime": "2017-02-05T13:14:59Z",
+      "uri": "http://web.archive.org/web/20170205131459/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.shikoku-np.co.jp/sports/local/20170130000116",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.shikoku-np.co.jp/sports/local/20170130000116",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.shikoku-np.co.jp/sports/local/20170130000116"
+}

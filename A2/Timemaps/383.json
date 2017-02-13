@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T03:10:01Z",
+        "uri": "http://web.archive.org/web/20170130031001/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T03:10:01Z",
+      "uri": "http://web.archive.org/web/20170130031001/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka"
+    },
+    "last": {
+      "datetime": "2017-01-30T03:10:01Z",
+      "uri": "http://web.archive.org/web/20170130031001/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://gayahidup.republika.co.id/berita/gaya-hidup/trend/17/01/30/okkkl7328-unggah-foto-glamor-ivanka-trump-disebut-tak-peka"
+}

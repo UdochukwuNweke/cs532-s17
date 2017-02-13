@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T15:09:03Z",
+        "uri": "http://web.archive.org/web/20170129150903/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T15:09:03Z",
+      "uri": "http://web.archive.org/web/20170129150903/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/"
+    },
+    "last": {
+      "datetime": "2017-01-29T15:09:03Z",
+      "uri": "http://web.archive.org/web/20170129150903/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://christiannews.net/2017/01/28/obama-admin-issues-memo-on-last-day-allowing-transgender-immigrants-to-change-gender-on-docs/"
+}

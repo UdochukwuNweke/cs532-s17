@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-02T06:02:49Z",
+        "uri": "http://web.archive.org/web/20170202060249/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/"
+      },
+      {
+        "datetime": "2017-02-03T08:35:27Z",
+        "uri": "http://web.archive.org/web/20170203083527/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/"
+      },
+      {
+        "datetime": "2017-02-03T22:08:55Z",
+        "uri": "http://web.archive.org/web/20170203220855/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash"
+      },
+      {
+        "datetime": "2017-02-04T21:41:52Z",
+        "uri": "http://web.archive.org/web/20170204214152/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-02T06:02:49Z",
+      "uri": "http://web.archive.org/web/20170202060249/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/"
+    },
+    "last": {
+      "datetime": "2017-02-04T21:41:52Z",
+      "uri": "http://web.archive.org/web/20170204214152/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://wsvn.com/sports/atlanta-braves-confirm-player-family-involved-in-west-miami-dade-crash/"
+}

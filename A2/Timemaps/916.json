@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T01:38:36Z",
+        "uri": "http://wayback.archive-it.org/all/20170130013836/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db"
+      },
+      {
+        "datetime": "2017-01-30T01:38:36Z",
+        "uri": "http://web.archive.org/web/20170130013836/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T01:38:36Z",
+      "uri": "http://wayback.archive-it.org/all/20170130013836/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db"
+    },
+    "last": {
+      "datetime": "2017-01-30T01:38:36Z",
+      "uri": "http://web.archive.org/web/20170130013836/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.colts.com/news/article-1/Colts-Hire-Chris-Ballard-As-General-Manager/672a1331-154c-4c9b-92ac-2c2466fda5db"
+}

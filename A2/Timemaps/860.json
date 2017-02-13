@@ -1,0 +1,78 @@
+{
+  "original_uri": "http://sportschasing.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://sportschasing.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-02-15T18:42:13Z",
+        "uri": "http://web.archive.org/web/20150215184213/http://www.sportschasing.com/"
+      },
+      {
+        "datetime": "2015-02-15T18:42:13Z",
+        "uri": "http://web.archive.org/web/20150215184213/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2015-03-27T20:20:38Z",
+        "uri": "http://web.archive.org/web/20150327202038/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2015-05-07T12:32:17Z",
+        "uri": "http://web.archive.org/web/20150507123217/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2015-12-06T00:51:38Z",
+        "uri": "http://web.archive.org/web/20151206005138/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2016-01-05T20:15:30Z",
+        "uri": "http://web.archive.org/web/20160105201530/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2016-01-23T14:54:40Z",
+        "uri": "http://web.archive.org/web/20160123145440/http://www.sportschasing.com/"
+      },
+      {
+        "datetime": "2016-02-02T21:43:59Z",
+        "uri": "http://web.archive.org/web/20160202214359/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2016-02-21T16:32:17Z",
+        "uri": "http://web.archive.org/web/20160221163217/http://www.sportschasing.com/"
+      },
+      {
+        "datetime": "2016-02-22T00:11:31Z",
+        "uri": "http://web.archive.org/web/20160222001131/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2016-03-03T23:35:44Z",
+        "uri": "http://web.archive.org/web/20160303233544/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2016-06-16T20:32:48Z",
+        "uri": "http://web.archive.org/web/20160616203248/http://www.sportschasing.com/"
+      },
+      {
+        "datetime": "2016-09-27T11:42:23Z",
+        "uri": "http://web.archive.org/web/20160927114223/http://sportschasing.com/"
+      },
+      {
+        "datetime": "2016-10-22T22:08:44Z",
+        "uri": "http://web.archive.org/web/20161022220844/http://sportschasing.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2015-02-15T18:42:13Z",
+      "uri": "http://web.archive.org/web/20150215184213/http://www.sportschasing.com/"
+    },
+    "last": {
+      "datetime": "2016-10-22T22:08:44Z",
+      "uri": "http://web.archive.org/web/20161022220844/http://sportschasing.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://sportschasing.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://sportschasing.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://sportschasing.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://sportschasing.com/"
+}

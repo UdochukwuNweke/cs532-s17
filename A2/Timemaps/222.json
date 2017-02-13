@@ -1,0 +1,190 @@
+{
+  "original_uri": "https://www.youtube.com/watch?v=3IBe1v9Ah_I",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.youtube.com/watch?v=3IBe1v9Ah_I",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-03-25T01:03:54Z",
+        "uri": "http://wayback.archive-it.org/all/20160325010354/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-25T01:03:54Z",
+        "uri": "http://web.archive.org/web/20160325010354/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-25T01:26:28Z",
+        "uri": "http://wayback.archive-it.org/all/20160325012628/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-25T01:26:28Z",
+        "uri": "http://web.archive.org/web/20160325012628/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T00:47:37Z",
+        "uri": "http://wayback.archive-it.org/all/20160326004737/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T00:47:37Z",
+        "uri": "http://web.archive.org/web/20160326004737/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T00:57:56Z",
+        "uri": "http://wayback.archive-it.org/all/20160326005756/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T00:57:56Z",
+        "uri": "http://web.archive.org/web/20160326005756/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T23:37:01Z",
+        "uri": "http://wayback.archive-it.org/all/20160326233701/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T23:37:01Z",
+        "uri": "http://web.archive.org/web/20160326233701/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T23:48:40Z",
+        "uri": "http://wayback.archive-it.org/all/20160326234840/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-26T23:48:40Z",
+        "uri": "http://web.archive.org/web/20160326234840/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-28T00:57:39Z",
+        "uri": "http://wayback.archive-it.org/all/20160328005739/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-28T00:57:39Z",
+        "uri": "http://web.archive.org/web/20160328005739/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-28T01:10:54Z",
+        "uri": "http://wayback.archive-it.org/all/20160328011054/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-28T01:10:54Z",
+        "uri": "http://web.archive.org/web/20160328011054/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-29T02:51:50Z",
+        "uri": "http://wayback.archive-it.org/all/20160329025150/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-29T02:51:50Z",
+        "uri": "http://web.archive.org/web/20160329025150/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-29T03:08:32Z",
+        "uri": "http://wayback.archive-it.org/all/20160329030832/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-29T03:08:32Z",
+        "uri": "http://web.archive.org/web/20160329030832/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-30T00:45:26Z",
+        "uri": "http://wayback.archive-it.org/all/20160330004526/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-30T00:45:26Z",
+        "uri": "http://web.archive.org/web/20160330004526/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-30T01:00:15Z",
+        "uri": "http://wayback.archive-it.org/all/20160330010015/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-03-30T01:00:15Z",
+        "uri": "http://web.archive.org/web/20160330010015/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-08-26T16:33:42Z",
+        "uri": "http://web.archive.org/web/20160826163342/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-08-26T16:33:44Z",
+        "uri": "http://web.archive.org/web/20160826163344/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-15T09:22:28Z",
+        "uri": "http://web.archive.org/web/20161215092228/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-22T05:17:48Z",
+        "uri": "http://wayback.archive-it.org/all/20161222051748/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-22T05:17:48Z",
+        "uri": "http://web.archive.org/web/20161222051748/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-24T03:39:21Z",
+        "uri": "http://wayback.archive-it.org/all/20161224033921/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-24T03:39:21Z",
+        "uri": "http://web.archive.org/web/20161224033921/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-26T20:14:22Z",
+        "uri": "http://wayback.archive-it.org/all/20161226201422/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-26T20:14:22Z",
+        "uri": "http://web.archive.org/web/20161226201422/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-28T04:09:19Z",
+        "uri": "http://wayback.archive-it.org/all/20161228040919/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2016-12-28T04:09:19Z",
+        "uri": "http://web.archive.org/web/20161228040919/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2017-01-11T07:34:12Z",
+        "uri": "http://web.archive.org/web/20170111073412/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2017-01-19T02:28:15Z",
+        "uri": "http://wayback.archive-it.org/all/20170119022815/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2017-01-19T02:28:15Z",
+        "uri": "http://web.archive.org/web/20170119022815/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2017-01-19T09:02:04Z",
+        "uri": "http://web.archive.org/web/20170119090204/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2017-01-20T17:23:04Z",
+        "uri": "http://wayback.archive-it.org/all/20170120172304/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2017-01-20T17:23:04Z",
+        "uri": "http://web.archive.org/web/20170120172304/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      },
+      {
+        "datetime": "2017-01-26T09:40:53Z",
+        "uri": "http://web.archive.org/web/20170126094053/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+      }
+    ],
+    "first": {
+      "datetime": "2016-03-25T01:03:54Z",
+      "uri": "http://wayback.archive-it.org/all/20160325010354/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+    },
+    "last": {
+      "datetime": "2017-01-26T09:40:53Z",
+      "uri": "http://web.archive.org/web/20170126094053/http://www.youtube.com/watch?v=3IBe1v9Ah_I"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.youtube.com/watch?v=3IBe1v9Ah_I",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.youtube.com/watch?v=3IBe1v9Ah_I",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.youtube.com/watch?v=3IBe1v9Ah_I"
+}

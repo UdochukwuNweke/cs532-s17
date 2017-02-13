@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T12:57:24Z",
+        "uri": "http://web.archive.org/web/20170130125724/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T12:57:24Z",
+      "uri": "http://web.archive.org/web/20170130125724/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests"
+    },
+    "last": {
+      "datetime": "2017-01-30T12:57:24Z",
+      "uri": "http://web.archive.org/web/20170130125724/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://thehill.com/blogs/in-the-know/in-the-know/316685-malia-obama-joins-dakota-access-pipeline-protests"
+}

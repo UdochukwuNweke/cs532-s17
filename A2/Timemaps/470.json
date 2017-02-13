@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-03T00:45:33Z",
+        "uri": "http://web.archive.org/web/20170203004533/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-03T00:45:33Z",
+      "uri": "http://web.archive.org/web/20170203004533/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/"
+    },
+    "last": {
+      "datetime": "2017-02-03T00:45:33Z",
+      "uri": "http://web.archive.org/web/20170203004533/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://blackburnnews.com/windsor/windsor-sports/2017/01/29/express-drop-close-one-cape-breton-103-100/"
+}

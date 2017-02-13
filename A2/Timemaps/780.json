@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T10:23:21Z",
+        "uri": "http://web.archive.org/web/20170130102321/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T10:23:21Z",
+      "uri": "http://web.archive.org/web/20170130102321/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps"
+    },
+    "last": {
+      "datetime": "2017-01-30T10:23:21Z",
+      "uri": "http://web.archive.org/web/20170130102321/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://thehill.com/blogs/blog-briefing-room/news/316786-canada-offers-housing-for-people-stranded-due-to-trumps"
+}

@@ -1,0 +1,46 @@
+{
+  "original_uri": "https://soundcloud.com/iamlevihinson",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://soundcloud.com/iamlevihinson",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2014-10-05T08:16:37Z",
+        "uri": "http://web.archive.org/web/20141005081637/http://soundcloud.com/iamlevihinson"
+      },
+      {
+        "datetime": "2014-10-05T08:16:41Z",
+        "uri": "http://web.archive.org/web/20141005081641/https://soundcloud.com/iamlevihinson"
+      },
+      {
+        "datetime": "2014-10-20T23:43:25Z",
+        "uri": "http://web.archive.org/web/20141020234325/https://soundcloud.com/iamlevihinson"
+      },
+      {
+        "datetime": "2015-05-02T04:28:04Z",
+        "uri": "http://web.archive.org/web/20150502042804/http://www.soundcloud.com/iamlevihinson"
+      },
+      {
+        "datetime": "2015-07-20T11:42:10Z",
+        "uri": "http://web.archive.org/web/20150720114210/http://www.soundcloud.com/iamlevihinson"
+      },
+      {
+        "datetime": "2016-01-12T21:20:19Z",
+        "uri": "http://web.archive.org/web/20160112212019/http://www.soundcloud.com/iamlevihinson"
+      }
+    ],
+    "first": {
+      "datetime": "2014-10-05T08:16:37Z",
+      "uri": "http://web.archive.org/web/20141005081637/http://soundcloud.com/iamlevihinson"
+    },
+    "last": {
+      "datetime": "2016-01-12T21:20:19Z",
+      "uri": "http://web.archive.org/web/20160112212019/http://www.soundcloud.com/iamlevihinson"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://soundcloud.com/iamlevihinson",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://soundcloud.com/iamlevihinson",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://soundcloud.com/iamlevihinson"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://soundcloud.com/iamlevihinson"
+}

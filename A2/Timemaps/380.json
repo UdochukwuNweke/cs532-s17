@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T15:48:45Z",
+        "uri": "http://web.archive.org/web/20170129154845/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T15:48:45Z",
+      "uri": "http://web.archive.org/web/20170129154845/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/"
+    },
+    "last": {
+      "datetime": "2017-01-29T15:48:45Z",
+      "uri": "http://web.archive.org/web/20170129154845/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://reportuk.org/2017/01/29/bad-lip-reading-of-the-inauguration-reveals-what-obama-really-thinks-of-trump/"
+}

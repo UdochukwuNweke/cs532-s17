@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T23:37:57Z",
+        "uri": "http://web.archive.org/web/20170129233757/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/"
+      },
+      {
+        "datetime": "2017-01-30T00:09:35Z",
+        "uri": "http://archive.is/20170130000935/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/"
+      },
+      {
+        "datetime": "2017-02-01T10:53:12Z",
+        "uri": "http://web.archive.org/web/20170201105312/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/"
+      },
+      {
+        "datetime": "2017-02-04T02:10:27Z",
+        "uri": "http://web.archive.org/web/20170204021027/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T23:37:57Z",
+      "uri": "http://web.archive.org/web/20170129233757/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/"
+    },
+    "last": {
+      "datetime": "2017-02-04T02:10:27Z",
+      "uri": "http://web.archive.org/web/20170204021027/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://ktla.com/2017/01/29/7-countries-targeted-in-trumps-executive-order-initially-identified-as-countries-of-concern-under-obama-administration/"
+}

@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-03T15:10:35Z",
+        "uri": "http://web.archive.org/web/20170203151035/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-03T15:10:35Z",
+      "uri": "http://web.archive.org/web/20170203151035/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team"
+    },
+    "last": {
+      "datetime": "2017-02-03T15:10:35Z",
+      "uri": "http://web.archive.org/web/20170203151035/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://campussports.net/2017/01/29/purdue-basketball-basil-smotherman-no-longer-with-team/"
+}

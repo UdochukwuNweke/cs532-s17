@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T23:18:48Z",
+        "uri": "http://web.archive.org/web/20170129231848/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T23:18:48Z",
+      "uri": "http://web.archive.org/web/20170129231848/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days"
+    },
+    "last": {
+      "datetime": "2017-01-29T23:18:48Z",
+      "uri": "http://web.archive.org/web/20170129231848/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.sott.net/article/341058-Trump-defends-executive-order-rejects-Muslim-ban-label-Says-visa-restrictions-to-be-lifted-after-90-days"
+}

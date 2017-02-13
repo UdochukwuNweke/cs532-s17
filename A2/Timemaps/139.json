@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T02:38:34Z",
+        "uri": "http://web.archive.org/web/20170130023834/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+      },
+      {
+        "datetime": "2017-02-02T15:28:13Z",
+        "uri": "http://web.archive.org/web/20170202152813/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+      },
+      {
+        "datetime": "2017-02-04T07:22:08Z",
+        "uri": "http://web.archive.org/web/20170204072208/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+      },
+      {
+        "datetime": "2017-02-05T18:30:57Z",
+        "uri": "http://web.archive.org/web/20170205183057/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T02:38:34Z",
+      "uri": "http://web.archive.org/web/20170130023834/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+    },
+    "last": {
+      "datetime": "2017-02-05T18:30:57Z",
+      "uri": "http://web.archive.org/web/20170205183057/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://variety.com/2017/film/reviews/columbus-review-sundance-john-cho-1201971998/"
+}

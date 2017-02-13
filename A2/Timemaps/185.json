@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T14:37:39Z",
+        "uri": "http://web.archive.org/web/20170130143739/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/"
+      },
+      {
+        "datetime": "2017-01-31T16:09:50Z",
+        "uri": "http://web.archive.org/web/20170131160950/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T14:37:39Z",
+      "uri": "http://web.archive.org/web/20170130143739/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/"
+    },
+    "last": {
+      "datetime": "2017-01-31T16:09:50Z",
+      "uri": "http://web.archive.org/web/20170131160950/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.usatoday.com/story/sports/nba/2017/01/29/millsap-hawks-outlast-anthony-knicks-142-139-in-4-ots/97224754/"
+}

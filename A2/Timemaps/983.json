@@ -1,0 +1,38 @@
+{
+  "original_uri": "http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T21:36:28Z",
+        "uri": "http://web.archive.org/web/20170129213628/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+      },
+      {
+        "datetime": "2017-01-30T17:48:53Z",
+        "uri": "http://web.archive.org/web/20170130174853/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+      },
+      {
+        "datetime": "2017-02-02T14:00:09Z",
+        "uri": "http://web.archive.org/web/20170202140009/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+      },
+      {
+        "datetime": "2017-02-04T06:25:39Z",
+        "uri": "http://web.archive.org/web/20170204062539/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T21:36:28Z",
+      "uri": "http://web.archive.org/web/20170129213628/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+    },
+    "last": {
+      "datetime": "2017-02-04T06:25:39Z",
+      "uri": "http://web.archive.org/web/20170204062539/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.foxnews.com/politics/2017/01/29/white-house-backs-trumps-decision-to-include-strategist-bannon-at-national-security-meetings.html"
+}

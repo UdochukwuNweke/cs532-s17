@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T04:06:32Z",
+        "uri": "http://web.archive.org/web/20170128040632/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update"
+      },
+      {
+        "datetime": "2017-02-01T02:38:27Z",
+        "uri": "http://web.archive.org/web/20170201023827/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T04:06:32Z",
+      "uri": "http://web.archive.org/web/20170128040632/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update"
+    },
+    "last": {
+      "datetime": "2017-02-01T02:38:27Z",
+      "uri": "http://web.archive.org/web/20170201023827/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.billboard.com/articles/business/7669919/hmv-canada-in-receivership-all-stores-to-close-by-april-30-update"
+}

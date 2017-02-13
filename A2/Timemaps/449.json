@@ -1,0 +1,34 @@
+{
+  "original_uri": "http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T07:44:24Z",
+        "uri": "http://web.archive.org/web/20170130074424/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms"
+      },
+      {
+        "datetime": "2017-02-01T17:11:00Z",
+        "uri": "http://web.archive.org/web/20170201171100/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-T20I-Nehra-Bumrah-star-as-India-seal-last-ball-thriller/articleshow/56857673.cms"
+      },
+      {
+        "datetime": "2017-02-01T17:11:16Z",
+        "uri": "http://web.archive.org/web/20170201171116/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T07:44:24Z",
+      "uri": "http://web.archive.org/web/20170130074424/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms"
+    },
+    "last": {
+      "datetime": "2017-02-01T17:11:16Z",
+      "uri": "http://web.archive.org/web/20170201171116/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://timesofindia.indiatimes.com/sports/cricket/england-in-india-2016/2nd-t20i-nehra-bumrah-star-as-india-seal-last-ball-thriller/articleshow/56857673.cms"
+}

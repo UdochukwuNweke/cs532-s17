@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-26T07:07:45Z",
+        "uri": "http://web.archive.org/web/20170126070745/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-26T07:07:45Z",
+      "uri": "http://web.archive.org/web/20170126070745/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j"
+    },
+    "last": {
+      "datetime": "2017-01-26T07:07:45Z",
+      "uri": "http://web.archive.org/web/20170126070745/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.wsbtv.com/list/sports/football/super-bowl-stories/ac7j"
+}

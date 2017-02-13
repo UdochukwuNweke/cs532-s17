@@ -1,0 +1,54 @@
+{
+  "original_uri": "http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T19:51:04Z",
+        "uri": "http://archive.is/20170128195104/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      },
+      {
+        "datetime": "2017-01-28T21:11:08Z",
+        "uri": "http://web.archive.org/web/20170128211108/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      },
+      {
+        "datetime": "2017-01-29T12:34:29Z",
+        "uri": "http://web.archive.org/web/20170129123429/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      },
+      {
+        "datetime": "2017-01-30T01:42:08Z",
+        "uri": "http://wayback.archive-it.org/all/20170130014208/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      },
+      {
+        "datetime": "2017-01-30T01:42:08Z",
+        "uri": "http://web.archive.org/web/20170130014208/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      },
+      {
+        "datetime": "2017-01-30T05:11:12Z",
+        "uri": "http://web.archive.org/web/20170130051112/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      },
+      {
+        "datetime": "2017-02-01T13:57:33Z",
+        "uri": "http://web.archive.org/web/20170201135733/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      },
+      {
+        "datetime": "2017-02-01T23:27:12Z",
+        "uri": "http://web.archive.org/web/20170201232712/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T19:51:04Z",
+      "uri": "http://archive.is/20170128195104/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+    },
+    "last": {
+      "datetime": "2017-02-01T23:27:12Z",
+      "uri": "http://web.archive.org/web/20170201232712/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.independent.co.uk/news/world/americas/donald-trump-muslim-immigration-ban-facebook-check-iraq-sudan-syria-mana-yegani-a7551256.html"
+}

@@ -1,0 +1,34 @@
+{
+  "original_uri": "https://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T21:54:05Z",
+        "uri": "http://web.archive.org/web/20170129215405/http://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168"
+      },
+      {
+        "datetime": "2017-01-30T05:38:18Z",
+        "uri": "http://web.archive.org/web/20170130053818/https://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168"
+      },
+      {
+        "datetime": "2017-02-05T14:36:34Z",
+        "uri": "http://web.archive.org/web/20170205143634/http://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T21:54:05Z",
+      "uri": "http://web.archive.org/web/20170129215405/http://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168"
+    },
+    "last": {
+      "datetime": "2017-02-05T14:36:34Z",
+      "uri": "http://web.archive.org/web/20170205143634/http://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://mediamatters.org/research/2017/01/29/former-breitbart-chief-now-writing-americas-foreign-policy-trump-gives-stephen-bannon-place-national/215168"
+}

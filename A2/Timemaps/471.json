@@ -1,0 +1,50 @@
+{
+  "original_uri": "http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-25T22:30:32Z",
+        "uri": "http://web.archive.org/web/20170125223032/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+      },
+      {
+        "datetime": "2017-01-26T03:45:40Z",
+        "uri": "http://archive.is/20170126034540/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+      },
+      {
+        "datetime": "2017-01-26T08:50:46Z",
+        "uri": "http://web.archive.org/web/20170126085046/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+      },
+      {
+        "datetime": "2017-01-26T11:07:21Z",
+        "uri": "http://web.archive.org/web/20170126110721/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+      },
+      {
+        "datetime": "2017-01-26T17:10:49Z",
+        "uri": "http://web.archive.org/web/20170126171049/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+      },
+      {
+        "datetime": "2017-01-26T19:34:56Z",
+        "uri": "http://web.archive.org/web/20170126193456/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+      },
+      {
+        "datetime": "2017-01-27T08:35:10Z",
+        "uri": "http://web.archive.org/web/20170127083510/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-25T22:30:32Z",
+      "uri": "http://web.archive.org/web/20170125223032/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+    },
+    "last": {
+      "datetime": "2017-01-27T08:35:10Z",
+      "uri": "http://web.archive.org/web/20170127083510/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.businessinsider.com/trump-weekly-crime-list-aliens-2017-1"
+}

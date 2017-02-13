@@ -1,0 +1,102 @@
+{
+  "original_uri": "http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T14:46:40Z",
+        "uri": "http://web.archive.org/web/20170129144640/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T06:08:13Z",
+        "uri": "http://web.archive.org/web/20170130060813/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T06:41:44Z",
+        "uri": "http://web.archive.org/web/20170130064144/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T07:15:13Z",
+        "uri": "http://web.archive.org/web/20170130071513/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T07:49:08Z",
+        "uri": "http://web.archive.org/web/20170130074908/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T08:22:47Z",
+        "uri": "http://web.archive.org/web/20170130082247/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T08:55:46Z",
+        "uri": "http://web.archive.org/web/20170130085546/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T09:29:31Z",
+        "uri": "http://web.archive.org/web/20170130092931/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T10:05:13Z",
+        "uri": "http://web.archive.org/web/20170130100513/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T10:38:36Z",
+        "uri": "http://web.archive.org/web/20170130103836/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T11:11:58Z",
+        "uri": "http://web.archive.org/web/20170130111158/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T11:45:39Z",
+        "uri": "http://web.archive.org/web/20170130114539/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T12:20:35Z",
+        "uri": "http://web.archive.org/web/20170130122035/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T12:56:02Z",
+        "uri": "http://web.archive.org/web/20170130125602/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T13:29:17Z",
+        "uri": "http://web.archive.org/web/20170130132917/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T14:04:37Z",
+        "uri": "http://web.archive.org/web/20170130140437/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T14:39:45Z",
+        "uri": "http://web.archive.org/web/20170130143945/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-01-30T15:14:50Z",
+        "uri": "http://web.archive.org/web/20170130151450/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-02-01T07:47:52Z",
+        "uri": "http://web.archive.org/web/20170201074752/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      },
+      {
+        "datetime": "2017-02-02T01:01:28Z",
+        "uri": "http://web.archive.org/web/20170202010128/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T14:46:40Z",
+      "uri": "http://web.archive.org/web/20170129144640/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+    },
+    "last": {
+      "datetime": "2017-02-02T01:01:28Z",
+      "uri": "http://web.archive.org/web/20170202010128/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.dailymail.co.uk/news/article-4168928/PIERS-MORGAN-Trump-s-immigration-ban.html"
+}

@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.politico.com/story/2017/01/trump-immigration-christians-234341",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.politico.com/story/2017/01/trump-immigration-christians-234341",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T01:08:39Z",
+        "uri": "http://web.archive.org/web/20170130010839/http://www.politico.com/story/2017/01/trump-immigration-christians-234341"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T01:08:39Z",
+      "uri": "http://web.archive.org/web/20170130010839/http://www.politico.com/story/2017/01/trump-immigration-christians-234341"
+    },
+    "last": {
+      "datetime": "2017-01-30T01:08:39Z",
+      "uri": "http://web.archive.org/web/20170130010839/http://www.politico.com/story/2017/01/trump-immigration-christians-234341"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.politico.com/story/2017/01/trump-immigration-christians-234341",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.politico.com/story/2017/01/trump-immigration-christians-234341",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.politico.com/story/2017/01/trump-immigration-christians-234341"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.politico.com/story/2017/01/trump-immigration-christians-234341"
+}

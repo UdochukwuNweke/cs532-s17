@@ -1,0 +1,62 @@
+{
+  "original_uri": "http://wife2.masukachi.com/redirect_ios",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://wife2.masukachi.com/redirect_ios",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-07-21T21:27:11Z",
+        "uri": "http://web.archive.org/web/20150721212711/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2015-08-21T05:41:06Z",
+        "uri": "http://web.archive.org/web/20150821054106/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2015-08-30T06:42:06Z",
+        "uri": "http://webarchive.loc.gov/all/20150830064206/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2015-10-13T07:58:56Z",
+        "uri": "http://web.archive.org/web/20151013075856/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2015-11-13T02:04:06Z",
+        "uri": "http://web.archive.org/web/20151113020406/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2015-12-29T12:43:30Z",
+        "uri": "http://web.archive.org/web/20151229124330/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2016-01-29T23:14:33Z",
+        "uri": "http://web.archive.org/web/20160129231433/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2016-02-29T23:41:49Z",
+        "uri": "http://web.archive.org/web/20160229234149/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2016-04-01T16:36:37Z",
+        "uri": "http://web.archive.org/web/20160401163637/http://wife2.masukachi.com/redirect_ios"
+      },
+      {
+        "datetime": "2016-07-09T12:04:09Z",
+        "uri": "http://web.archive.org/web/20160709120409/http://wife2.masukachi.com/redirect_ios"
+      }
+    ],
+    "first": {
+      "datetime": "2015-07-21T21:27:11Z",
+      "uri": "http://web.archive.org/web/20150721212711/http://wife2.masukachi.com/redirect_ios"
+    },
+    "last": {
+      "datetime": "2016-07-09T12:04:09Z",
+      "uri": "http://web.archive.org/web/20160709120409/http://wife2.masukachi.com/redirect_ios"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://wife2.masukachi.com/redirect_ios",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://wife2.masukachi.com/redirect_ios",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://wife2.masukachi.com/redirect_ios"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://wife2.masukachi.com/redirect_ios"
+}

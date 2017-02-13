@@ -1,0 +1,394 @@
+{
+  "original_uri": "https://bts-official.jp/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://bts-official.jp/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2014-03-06T21:03:10Z",
+        "uri": "http://web.archive.org/web/20140306210310/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-04-07T05:02:44Z",
+        "uri": "http://web.archive.org/web/20140407050244/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-05-08T19:15:09Z",
+        "uri": "http://web.archive.org/web/20140508191509/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-05-27T19:02:39Z",
+        "uri": "http://archive.is/20140527190239/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-05-27T22:07:33Z",
+        "uri": "http://web.archive.org/web/20140527220733/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-05-28T02:22:37Z",
+        "uri": "http://web.archive.org/web/20140528022237/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-06-13T12:32:47Z",
+        "uri": "http://web.archive.org/web/20140613123247/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-06-21T19:52:20Z",
+        "uri": "http://web.archive.org/web/20140621195220/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-07-03T09:59:55Z",
+        "uri": "http://web.archive.org/web/20140703095955/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-07-26T17:25:40Z",
+        "uri": "http://web.archive.org/web/20140726172540/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-08-31T23:41:39Z",
+        "uri": "http://web.archive.org/web/20140831234139/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-09-27T11:20:27Z",
+        "uri": "http://web.archive.org/web/20140927112027/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-10-23T12:10:03Z",
+        "uri": "http://web.archive.org/web/20141023121003/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-10-26T12:48:36Z",
+        "uri": "http://web.archive.org/web/20141026124836/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-12-10T11:57:17Z",
+        "uri": "http://web.archive.org/web/20141210115717/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-12-17T01:00:25Z",
+        "uri": "http://web.archive.org/web/20141217010025/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2014-12-20T08:38:17Z",
+        "uri": "http://web.archive.org/web/20141220083817/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-01-06T16:41:41Z",
+        "uri": "http://web.archive.org/web/20150106164141/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-02-05T23:09:18Z",
+        "uri": "http://web.archive.org/web/20150205230918/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-02-07T00:00:27Z",
+        "uri": "http://web.archive.org/web/20150207000027/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-02-12T08:06:08Z",
+        "uri": "http://web.archive.org/web/20150212080608/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-02-21T20:11:51Z",
+        "uri": "http://web.archive.org/web/20150221201151/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-03-11T22:50:18Z",
+        "uri": "http://web.archive.org/web/20150311225018/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-03-14T20:45:21Z",
+        "uri": "http://web.archive.org/web/20150314204521/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-03-15T00:03:18Z",
+        "uri": "http://web.archive.org/web/20150315000318/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-04-02T07:05:32Z",
+        "uri": "http://web.archive.org/web/20150402070532/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-04-22T05:24:21Z",
+        "uri": "http://web.archive.org/web/20150422052421/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-05-07T03:38:01Z",
+        "uri": "http://web.archive.org/web/20150507033801/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-05-14T15:56:51Z",
+        "uri": "http://wayback.archive-it.org/all/20150514155651/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-05-14T15:56:51Z",
+        "uri": "http://web.archive.org/web/20150514155651/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-05-20T21:11:57Z",
+        "uri": "http://web.archive.org/web/20150520211157/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-05-21T04:29:44Z",
+        "uri": "http://wayback.archive-it.org/all/20150521042944/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-05-21T04:29:44Z",
+        "uri": "http://web.archive.org/web/20150521042944/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-06-10T08:05:29Z",
+        "uri": "http://web.archive.org/web/20150610080529/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-06-14T11:06:58Z",
+        "uri": "http://webarchive.loc.gov/all/20150614110658/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-06-16T23:41:29Z",
+        "uri": "http://webarchive.loc.gov/all/20150616234129/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-06-23T01:53:29Z",
+        "uri": "http://web.archive.org/web/20150623015329/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-06-24T02:21:55Z",
+        "uri": "http://webarchive.loc.gov/all/20150624022155/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-06-27T17:25:38Z",
+        "uri": "http://web.archive.org/web/20150627172538/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-07-01T04:14:12Z",
+        "uri": "http://webarchive.loc.gov/all/20150701041412/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-07-02T10:11:04Z",
+        "uri": "http://web.archive.org/web/20150702101104/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-07-11T19:08:59Z",
+        "uri": "http://web.archive.org/web/20150711190859/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-07-12T03:16:02Z",
+        "uri": "http://webarchive.loc.gov/all/20150712031602/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-07-22T03:32:14Z",
+        "uri": "http://web.archive.org/web/20150722033214/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-08-01T04:06:50Z",
+        "uri": "http://web.archive.org/web/20150801040650/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-08-04T03:33:08Z",
+        "uri": "http://web.archive.org/web/20150804033308/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-08-06T18:58:39Z",
+        "uri": "http://webarchive.loc.gov/all/20150806185839/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-08-15T21:44:56Z",
+        "uri": "http://wayback.archive-it.org/all/20150815214456/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-08-15T21:44:56Z",
+        "uri": "http://web.archive.org/web/20150815214456/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-08-20T08:11:28Z",
+        "uri": "http://web.archive.org/web/20150820081128/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-08-22T09:45:01Z",
+        "uri": "http://webarchive.loc.gov/all/20150822094501/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-09-05T02:39:31Z",
+        "uri": "http://web.archive.org/web/20150905023931/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-09-06T07:53:44Z",
+        "uri": "http://webarchive.loc.gov/all/20150906075344/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-09-10T05:04:22Z",
+        "uri": "http://web.archive.org/web/20150910050422/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-09-13T07:40:01Z",
+        "uri": "http://webarchive.loc.gov/all/20150913074001/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-09-19T04:25:14Z",
+        "uri": "http://webarchive.loc.gov/all/20150919042514/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-09-20T07:32:02Z",
+        "uri": "http://web.archive.org/web/20150920073202/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-10-06T08:14:45Z",
+        "uri": "http://web.archive.org/web/20151006081445/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-10-08T06:46:43Z",
+        "uri": "http://webarchive.loc.gov/all/20151008064643/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-10-22T04:47:15Z",
+        "uri": "http://web.archive.org/web/20151022044715/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-11-03T13:29:12Z",
+        "uri": "http://web.archive.org/web/20151103132912/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-11-05T15:19:12Z",
+        "uri": "http://web.archive.org/web/20151105151912/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-11-15T06:34:03Z",
+        "uri": "http://web.archive.org/web/20151115063403/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-11-26T08:21:37Z",
+        "uri": "http://web.archive.org/web/20151126082137/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-12-06T10:53:53Z",
+        "uri": "http://web.archive.org/web/20151206105353/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-12-15T18:26:17Z",
+        "uri": "http://web.archive.org/web/20151215182617/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2015-12-25T03:21:52Z",
+        "uri": "http://web.archive.org/web/20151225032152/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-01-02T22:08:58Z",
+        "uri": "http://web.archive.org/web/20160102220858/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-01-09T12:44:53Z",
+        "uri": "http://web.archive.org/web/20160109124453/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-01-09T20:55:24Z",
+        "uri": "http://web.archive.org/web/20160109205524/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-01-11T21:14:08Z",
+        "uri": "http://web.archive.org/web/20160111211408/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-01-20T04:34:27Z",
+        "uri": "http://web.archive.org/web/20160120043427/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-01-29T14:24:30Z",
+        "uri": "http://web.archive.org/web/20160129142430/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-02-09T06:17:13Z",
+        "uri": "http://web.archive.org/web/20160209061713/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-02-19T15:15:55Z",
+        "uri": "http://web.archive.org/web/20160219151555/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-02-20T05:13:55Z",
+        "uri": "http://web.archive.org/web/20160220051355/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-02-29T04:46:33Z",
+        "uri": "http://web.archive.org/web/20160229044633/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-03-04T23:43:44Z",
+        "uri": "http://web.archive.org/web/20160304234344/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-03-09T21:46:01Z",
+        "uri": "http://web.archive.org/web/20160309214601/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-03-10T06:36:41Z",
+        "uri": "http://web.archive.org/web/20160310063641/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-03-19T09:35:03Z",
+        "uri": "http://web.archive.org/web/20160319093503/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-03-29T16:43:29Z",
+        "uri": "http://web.archive.org/web/20160329164329/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-04-08T18:27:09Z",
+        "uri": "http://web.archive.org/web/20160408182709/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-04-19T12:53:16Z",
+        "uri": "http://web.archive.org/web/20160419125316/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-04-30T19:55:10Z",
+        "uri": "http://web.archive.org/web/20160430195510/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-05-11T03:37:04Z",
+        "uri": "http://web.archive.org/web/20160511033704/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-05-21T18:17:04Z",
+        "uri": "http://web.archive.org/web/20160521181704/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-06-23T09:33:31Z",
+        "uri": "http://web.archive.org/web/20160623093331/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-07-10T10:47:26Z",
+        "uri": "http://web.archive.org/web/20160710104726/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-10-03T04:50:50Z",
+        "uri": "http://web.archive.org/web/20161003045050/http://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-10-03T15:59:00Z",
+        "uri": "http://web.archive.org/web/20161003155900/https://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-10-19T13:21:31Z",
+        "uri": "http://web.archive.org/web/20161019132131/https://bts-official.jp/"
+      },
+      {
+        "datetime": "2016-11-30T19:11:18Z",
+        "uri": "http://web.archive.org/web/20161130191118/http://bts-official.jp/"
+      }
+    ],
+    "first": {
+      "datetime": "2014-03-06T21:03:10Z",
+      "uri": "http://web.archive.org/web/20140306210310/http://bts-official.jp/"
+    },
+    "last": {
+      "datetime": "2016-11-30T19:11:18Z",
+      "uri": "http://web.archive.org/web/20161130191118/http://bts-official.jp/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://bts-official.jp/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://bts-official.jp/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://bts-official.jp/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://bts-official.jp/"
+}

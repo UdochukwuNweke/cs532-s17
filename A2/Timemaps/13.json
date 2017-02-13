@@ -1,0 +1,58 @@
+{
+  "original_uri": "http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T23:39:24Z",
+        "uri": "http://web.archive.org/web/20170130233924/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-01-31T23:54:37Z",
+        "uri": "http://web.archive.org/web/20170131235437/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-02-01T01:10:45Z",
+        "uri": "http://web.archive.org/web/20170201011045/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-02-02T01:56:13Z",
+        "uri": "http://web.archive.org/web/20170202015613/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-02-02T10:12:56Z",
+        "uri": "http://web.archive.org/web/20170202101256/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-02-03T02:04:13Z",
+        "uri": "http://web.archive.org/web/20170203020413/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-02-04T08:12:28Z",
+        "uri": "http://web.archive.org/web/20170204081228/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-02-05T07:04:25Z",
+        "uri": "http://web.archive.org/web/20170205070425/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      },
+      {
+        "datetime": "2017-02-06T04:12:21Z",
+        "uri": "http://web.archive.org/web/20170206041221/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T23:39:24Z",
+      "uri": "http://web.archive.org/web/20170130233924/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+    },
+    "last": {
+      "datetime": "2017-02-06T04:12:21Z",
+      "uri": "http://web.archive.org/web/20170206041221/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html"
+}

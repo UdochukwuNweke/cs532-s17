@@ -1,0 +1,46 @@
+{
+  "original_uri": "http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T16:26:10Z",
+        "uri": "http://web.archive.org/web/20170129162610/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+      },
+      {
+        "datetime": "2017-01-29T22:31:43Z",
+        "uri": "http://archive.is/20170129223143/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+      },
+      {
+        "datetime": "2017-02-01T11:29:25Z",
+        "uri": "http://web.archive.org/web/20170201112925/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+      },
+      {
+        "datetime": "2017-02-01T20:19:17Z",
+        "uri": "http://web.archive.org/web/20170201201917/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+      },
+      {
+        "datetime": "2017-02-04T10:49:24Z",
+        "uri": "http://web.archive.org/web/20170204104924/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+      },
+      {
+        "datetime": "2017-02-04T11:46:11Z",
+        "uri": "http://web.archive.org/web/20170204114611/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T16:26:10Z",
+      "uri": "http://web.archive.org/web/20170129162610/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+    },
+    "last": {
+      "datetime": "2017-02-04T11:46:11Z",
+      "uri": "http://web.archive.org/web/20170204114611/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.dailymail.co.uk/news/article-4169090/Trump-defends-controversial-Muslim-ban-Twitter.html"
+}

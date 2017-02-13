@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T23:21:04Z",
+        "uri": "http://web.archive.org/web/20170128232104/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T23:21:04Z",
+      "uri": "http://web.archive.org/web/20170128232104/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583"
+    },
+    "last": {
+      "datetime": "2017-01-28T23:21:04Z",
+      "uri": "http://web.archive.org/web/20170128232104/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.rollingstone.com/music/news/ronnie-james-dio-hologram-to-make-us-debut-w463583"
+}

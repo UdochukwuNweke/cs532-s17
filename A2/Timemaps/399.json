@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.disabledsportsusa.org/sports/youth-programs/e-team/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.disabledsportsusa.org/sports/youth-programs/e-team/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-11-17T00:21:24Z",
+        "uri": "http://web.archive.org/web/20161117002124/http://www.disabledsportsusa.org/sports/youth-programs/e-team/"
+      }
+    ],
+    "first": {
+      "datetime": "2016-11-17T00:21:24Z",
+      "uri": "http://web.archive.org/web/20161117002124/http://www.disabledsportsusa.org/sports/youth-programs/e-team/"
+    },
+    "last": {
+      "datetime": "2016-11-17T00:21:24Z",
+      "uri": "http://web.archive.org/web/20161117002124/http://www.disabledsportsusa.org/sports/youth-programs/e-team/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.disabledsportsusa.org/sports/youth-programs/e-team/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.disabledsportsusa.org/sports/youth-programs/e-team/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.disabledsportsusa.org/sports/youth-programs/e-team/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.disabledsportsusa.org/sports/youth-programs/e-team/"
+}

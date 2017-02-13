@@ -1,0 +1,42 @@
+{
+  "original_uri": "https://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-20T03:35:35Z",
+        "uri": "http://web.archive.org/web/20170120033535/http://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+      },
+      {
+        "datetime": "2017-01-25T14:23:43Z",
+        "uri": "http://web.archive.org/web/20170125142343/http://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+      },
+      {
+        "datetime": "2017-01-26T05:08:55Z",
+        "uri": "http://web.archive.org/web/20170126050855/http://www.mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+      },
+      {
+        "datetime": "2017-01-26T05:54:37Z",
+        "uri": "http://web.archive.org/web/20170126055437/https://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+      },
+      {
+        "datetime": "2017-01-26T07:22:47Z",
+        "uri": "http://web.archive.org/web/20170126072247/http://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-20T03:35:35Z",
+      "uri": "http://web.archive.org/web/20170120033535/http://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+    },
+    "last": {
+      "datetime": "2017-01-26T07:22:47Z",
+      "uri": "http://web.archive.org/web/20170126072247/http://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://mediamatters.org/blog/2017/01/19/how-press-never-stopped-blaming-obama-radical-gop-obstruction/215056"
+}

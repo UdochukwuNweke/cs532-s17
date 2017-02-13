@@ -1,0 +1,66 @@
+{
+  "original_uri": "https://www.twitch.tv/reverieesports",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.twitch.tv/reverieesports",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2015-08-05T06:10:47Z",
+        "uri": "http://web.archive.org/web/20150805061047/http://www.twitch.tv/reverieesports"
+      },
+      {
+        "datetime": "2015-08-08T02:25:25Z",
+        "uri": "http://web.archive.org/web/20150808022525/http://www.twitch.tv/reverieesports/"
+      },
+      {
+        "datetime": "2015-09-08T07:12:17Z",
+        "uri": "http://web.archive.org/web/20150908071217/http://www.twitch.tv/reverieesports"
+      },
+      {
+        "datetime": "2015-10-08T02:22:07Z",
+        "uri": "http://web.archive.org/web/20151008022207/http://www.twitch.tv/reverieesports/"
+      },
+      {
+        "datetime": "2015-10-24T07:10:00Z",
+        "uri": "http://web.archive.org/web/20151024071000/http://www.twitch.tv/reverieesports"
+      },
+      {
+        "datetime": "2015-11-27T16:46:11Z",
+        "uri": "http://web.archive.org/web/20151127164611/http://www.twitch.tv/reverieesports"
+      },
+      {
+        "datetime": "2015-12-07T15:45:33Z",
+        "uri": "http://web.archive.org/web/20151207154533/http://www.twitch.tv/reverieesports/"
+      },
+      {
+        "datetime": "2016-02-06T18:47:04Z",
+        "uri": "http://web.archive.org/web/20160206184704/http://www.twitch.tv/reverieesports/"
+      },
+      {
+        "datetime": "2016-03-25T08:22:42Z",
+        "uri": "http://web.archive.org/web/20160325082242/http://www.twitch.tv/reverieesports"
+      },
+      {
+        "datetime": "2016-04-08T00:08:56Z",
+        "uri": "http://web.archive.org/web/20160408000856/http://www.twitch.tv/reverieesports/"
+      },
+      {
+        "datetime": "2016-07-09T04:59:22Z",
+        "uri": "http://web.archive.org/web/20160709045922/http://www.twitch.tv/reverieesports/"
+      }
+    ],
+    "first": {
+      "datetime": "2015-08-05T06:10:47Z",
+      "uri": "http://web.archive.org/web/20150805061047/http://www.twitch.tv/reverieesports"
+    },
+    "last": {
+      "datetime": "2016-07-09T04:59:22Z",
+      "uri": "http://web.archive.org/web/20160709045922/http://www.twitch.tv/reverieesports/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.twitch.tv/reverieesports",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.twitch.tv/reverieesports",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.twitch.tv/reverieesports"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.twitch.tv/reverieesports"
+}

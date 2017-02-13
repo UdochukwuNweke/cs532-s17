@@ -1,0 +1,26 @@
+{
+  "original_uri": "https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-01T21:27:11Z",
+        "uri": "http://web.archive.org/web/20170201212711/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-01T21:27:11Z",
+      "uri": "http://web.archive.org/web/20170201212711/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html"
+    },
+    "last": {
+      "datetime": "2017-02-01T21:27:11Z",
+      "uri": "http://web.archive.org/web/20170201212711/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://sports.bwin.es/es/news/futbol/sergio-ramos-se-supera-como-goleador-del-real-madrid,58331.html"
+}

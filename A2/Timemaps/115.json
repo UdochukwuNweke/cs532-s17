@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-04T02:32:45Z",
+        "uri": "http://web.archive.org/web/20170204023245/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-04T02:32:45Z",
+      "uri": "http://web.archive.org/web/20170204023245/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html"
+    },
+    "last": {
+      "datetime": "2017-02-04T02:32:45Z",
+      "uri": "http://web.archive.org/web/20170204023245/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.bizjournals.com/seattle/news/2017/01/29/starbucks-refugee-hiring-trump-immigration-order.html"
+}

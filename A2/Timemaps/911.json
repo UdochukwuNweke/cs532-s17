@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T03:03:21Z",
+        "uri": "http://web.archive.org/web/20170130030321/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T03:03:21Z",
+      "uri": "http://web.archive.org/web/20170130030321/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875"
+    },
+    "last": {
+      "datetime": "2017-01-30T03:03:21Z",
+      "uri": "http://web.archive.org/web/20170130030321/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.weareiowa.com/news/local-news/music-and-art-for-anmials/646959875"
+}

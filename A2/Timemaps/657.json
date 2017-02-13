@@ -1,0 +1,50 @@
+{
+  "original_uri": "http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2016-07-05T19:28:36Z",
+        "uri": "http://web.archive.org/web/20160705192836/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+      },
+      {
+        "datetime": "2016-07-08T20:49:43Z",
+        "uri": "http://web.archive.org/web/20160708204943/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+      },
+      {
+        "datetime": "2016-07-08T23:59:06Z",
+        "uri": "http://web.archive.org/web/20160708235906/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+      },
+      {
+        "datetime": "2016-07-10T04:51:18Z",
+        "uri": "http://web.archive.org/web/20160710045118/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+      },
+      {
+        "datetime": "2016-07-10T16:28:37Z",
+        "uri": "http://web.archive.org/web/20160710162837/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+      },
+      {
+        "datetime": "2016-07-10T19:06:30Z",
+        "uri": "http://web.archive.org/web/20160710190630/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+      },
+      {
+        "datetime": "2016-07-11T13:55:43Z",
+        "uri": "http://web.archive.org/web/20160711135543/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+      }
+    ],
+    "first": {
+      "datetime": "2016-07-05T19:28:36Z",
+      "uri": "http://web.archive.org/web/20160705192836/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+    },
+    "last": {
+      "datetime": "2016-07-11T13:55:43Z",
+      "uri": "http://web.archive.org/web/20160711135543/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.usatoday.com/story/sports/ncaaf/sec/2016/07/05/alabama-football-reports-five-secondary-ncaa-violations/86713204/"
+}

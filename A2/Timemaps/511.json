@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-30T09:30:58Z",
+        "uri": "http://web.archive.org/web/20170130093058/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-30T09:30:58Z",
+      "uri": "http://web.archive.org/web/20170130093058/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html"
+    },
+    "last": {
+      "datetime": "2017-01-30T09:30:58Z",
+      "uri": "http://web.archive.org/web/20170130093058/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.chunichi.co.jp/chuspo/article/sports/news/CK2017013002000137.html"
+}

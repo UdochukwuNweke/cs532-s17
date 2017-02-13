@@ -1,0 +1,70 @@
+{
+  "original_uri": "https://www.faith-music-school.com/",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.faith-music-school.com/",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2014-12-17T07:41:08Z",
+        "uri": "http://web.archive.org/web/20141217074108/http://faith-music-school.com/"
+      },
+      {
+        "datetime": "2014-12-19T21:02:53Z",
+        "uri": "http://web.archive.org/web/20141219210253/http://www.faith-music-school.com/"
+      },
+      {
+        "datetime": "2014-12-26T03:35:49Z",
+        "uri": "http://web.archive.org/web/20141226033549/http://www.faith-music-school.com/"
+      },
+      {
+        "datetime": "2015-06-19T01:31:20Z",
+        "uri": "http://web.archive.org/web/20150619013120/http://www.faith-music-school.com/"
+      },
+      {
+        "datetime": "2015-08-01T09:38:28Z",
+        "uri": "http://web.archive.org/web/20150801093828/http://faith-music-school.com/"
+      },
+      {
+        "datetime": "2016-01-11T08:42:32Z",
+        "uri": "http://web.archive.org/web/20160111084232/http://faith-music-school.com/"
+      },
+      {
+        "datetime": "2016-01-25T16:35:53Z",
+        "uri": "http://web.archive.org/web/20160125163553/http://www.faith-music-school.com/"
+      },
+      {
+        "datetime": "2016-02-18T23:39:54Z",
+        "uri": "http://web.archive.org/web/20160218233954/http://www.faith-music-school.com/"
+      },
+      {
+        "datetime": "2016-03-05T18:14:29Z",
+        "uri": "http://web.archive.org/web/20160305181429/http://faith-music-school.com/"
+      },
+      {
+        "datetime": "2016-05-31T07:40:02Z",
+        "uri": "http://web.archive.org/web/20160531074002/http://www.faith-music-school.com/"
+      },
+      {
+        "datetime": "2016-10-02T23:56:16Z",
+        "uri": "http://web.archive.org/web/20161002235616/http://faith-music-school.com/"
+      },
+      {
+        "datetime": "2016-10-18T18:24:49Z",
+        "uri": "http://web.archive.org/web/20161018182449/http://www.faith-music-school.com/"
+      }
+    ],
+    "first": {
+      "datetime": "2014-12-17T07:41:08Z",
+      "uri": "http://web.archive.org/web/20141217074108/http://faith-music-school.com/"
+    },
+    "last": {
+      "datetime": "2016-10-18T18:24:49Z",
+      "uri": "http://web.archive.org/web/20161018182449/http://www.faith-music-school.com/"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.faith-music-school.com/",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.faith-music-school.com/",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.faith-music-school.com/"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.faith-music-school.com/"
+}

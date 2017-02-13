@@ -1,0 +1,142 @@
+{
+  "original_uri": "http://Sports",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://Sports",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2011-04-21T21:23:07Z",
+        "uri": "http://web.archive.org/web/20110421212307/http://sports/"
+      },
+      {
+        "datetime": "2011-06-19T07:13:44Z",
+        "uri": "http://web.archive.org/web/20110619071344/http://www.sports/"
+      },
+      {
+        "datetime": "2011-06-19T07:13:45Z",
+        "uri": "http://web.archive.org/web/20110619071345/http://www.sports./"
+      },
+      {
+        "datetime": "2011-07-12T14:05:02Z",
+        "uri": "http://web.archive.org/web/20110712140502/http://sports/"
+      },
+      {
+        "datetime": "2011-08-06T19:43:16Z",
+        "uri": "http://web.archive.org/web/20110806194316/http://sports/"
+      },
+      {
+        "datetime": "2012-03-20T22:18:43Z",
+        "uri": "http://web.archive.org/web/20120320221843/http://sports/"
+      },
+      {
+        "datetime": "2012-06-07T20:29:06Z",
+        "uri": "http://web.archive.org/web/20120607202906/http://sports/"
+      },
+      {
+        "datetime": "2012-06-26T21:23:21Z",
+        "uri": "http://web.archive.org/web/20120626212321/http://sports/"
+      },
+      {
+        "datetime": "2012-09-22T19:35:07Z",
+        "uri": "http://web.archive.org/web/20120922193507/http://sports/"
+      },
+      {
+        "datetime": "2012-10-05T21:14:38Z",
+        "uri": "http://web.archive.org/web/20121005211438/http://sports/"
+      },
+      {
+        "datetime": "2012-10-11T04:07:40Z",
+        "uri": "http://web.archive.org/web/20121011040740/http://sports/"
+      },
+      {
+        "datetime": "2012-10-19T15:14:56Z",
+        "uri": "http://web.archive.org/web/20121019151456/http://sports/"
+      },
+      {
+        "datetime": "2012-11-18T15:50:43Z",
+        "uri": "http://web.archive.org/web/20121118155043/http://sports/"
+      },
+      {
+        "datetime": "2012-11-18T22:55:35Z",
+        "uri": "http://web.archive.org/web/20121118225535/http://sports/"
+      },
+      {
+        "datetime": "2013-02-02T23:53:33Z",
+        "uri": "http://web.archive.org/web/20130202235333/http://sports/"
+      },
+      {
+        "datetime": "2013-04-03T05:23:50Z",
+        "uri": "http://web.archive.org/web/20130403052350/http://sports"
+      },
+      {
+        "datetime": "2013-04-18T18:01:19Z",
+        "uri": "http://web.archive.org/web/20130418180119/http://sports"
+      },
+      {
+        "datetime": "2013-04-20T04:15:31Z",
+        "uri": "http://web.archive.org/web/20130420041531/http://www.sports."
+      },
+      {
+        "datetime": "2013-04-23T15:28:18Z",
+        "uri": "http://web.archive.org/web/20130423152818/http://sports"
+      },
+      {
+        "datetime": "2013-05-03T16:03:26Z",
+        "uri": "http://web.archive.org/web/20130503160326/http://sports"
+      },
+      {
+        "datetime": "2013-05-10T18:38:09Z",
+        "uri": "http://web.archive.org/web/20130510183809/http://sports"
+      },
+      {
+        "datetime": "2013-05-20T00:21:45Z",
+        "uri": "http://web.archive.org/web/20130520002145/http://Sports"
+      },
+      {
+        "datetime": "2013-05-21T06:56:27Z",
+        "uri": "http://web.archive.org/web/20130521065627/http://sports"
+      },
+      {
+        "datetime": "2013-05-27T22:58:26Z",
+        "uri": "http://web.archive.org/web/20130527225826/http://sports."
+      },
+      {
+        "datetime": "2013-06-25T18:04:51Z",
+        "uri": "http://web.archive.org/web/20130625180451/http://sports"
+      },
+      {
+        "datetime": "2013-06-29T04:10:56Z",
+        "uri": "http://web.archive.org/web/20130629041056/http://sports"
+      },
+      {
+        "datetime": "2013-07-08T20:52:08Z",
+        "uri": "http://web.archive.org/web/20130708205208/http://sports"
+      },
+      {
+        "datetime": "2013-07-10T15:50:37Z",
+        "uri": "http://web.archive.org/web/20130710155037/http://sports"
+      },
+      {
+        "datetime": "2013-08-16T21:48:33Z",
+        "uri": "http://web.archive.org/web/20130816214833/http://sports"
+      },
+      {
+        "datetime": "2013-08-17T04:27:36Z",
+        "uri": "http://web.archive.org/web/20130817042736/http://sports"
+      }
+    ],
+    "first": {
+      "datetime": "2011-04-21T21:23:07Z",
+      "uri": "http://web.archive.org/web/20110421212307/http://sports/"
+    },
+    "last": {
+      "datetime": "2013-08-17T04:27:36Z",
+      "uri": "http://web.archive.org/web/20130817042736/http://sports"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://Sports",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://Sports",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://Sports"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://Sports"
+}

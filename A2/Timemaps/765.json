@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-28T01:20:11Z",
+        "uri": "http://web.archive.org/web/20170128012011/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198"
+      },
+      {
+        "datetime": "2017-01-28T11:17:45Z",
+        "uri": "http://web.archive.org/web/20170128111745/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-28T01:20:11Z",
+      "uri": "http://web.archive.org/web/20170128012011/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198"
+    },
+    "last": {
+      "datetime": "2017-01-28T11:17:45Z",
+      "uri": "http://web.archive.org/web/20170128111745/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.rollingstone.com/sports/kofi-kingstons-five-best-wwe-royal-rumble-escapes-w463198"
+}

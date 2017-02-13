@@ -1,0 +1,30 @@
+{
+  "original_uri": "http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T21:05:53Z",
+        "uri": "http://archive.is/20170129210553/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616"
+      },
+      {
+        "datetime": "2017-01-29T21:32:32Z",
+        "uri": "http://web.archive.org/web/20170129213232/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T21:05:53Z",
+      "uri": "http://archive.is/20170129210553/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616"
+    },
+    "last": {
+      "datetime": "2017-01-29T21:32:32Z",
+      "uri": "http://web.archive.org/web/20170129213232/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.rollingstone.com/politics/features/all-the-ways-trump-defies-the-law-by-targeting-muslims-w463616"
+}

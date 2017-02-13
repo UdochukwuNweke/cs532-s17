@@ -1,0 +1,58 @@
+{
+  "original_uri": "http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T04:02:36Z",
+        "uri": "http://web.archive.org/web/20170129040236/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-01-29T05:15:40Z",
+        "uri": "http://archive.is/20170129051540/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-01-30T20:09:51Z",
+        "uri": "http://web.archive.org/web/20170130200951/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-02-02T02:11:51Z",
+        "uri": "http://web.archive.org/web/20170202021151/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-02-03T02:31:57Z",
+        "uri": "http://web.archive.org/web/20170203023157/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-02-04T09:44:15Z",
+        "uri": "http://web.archive.org/web/20170204094415/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-02-04T16:01:08Z",
+        "uri": "http://web.archive.org/web/20170204160108/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-02-05T04:53:31Z",
+        "uri": "http://web.archive.org/web/20170205045331/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      },
+      {
+        "datetime": "2017-02-06T04:24:55Z",
+        "uri": "http://web.archive.org/web/20170206042455/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T04:02:36Z",
+      "uri": "http://web.archive.org/web/20170129040236/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+    },
+    "last": {
+      "datetime": "2017-02-06T04:24:55Z",
+      "uri": "http://web.archive.org/web/20170206042455/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.politico.com/story/2017/01/trump-lobbying-ban-weakens-obama-ethics-rules-234318"
+}

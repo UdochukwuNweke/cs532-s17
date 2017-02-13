@@ -1,0 +1,50 @@
+{
+  "original_uri": "https://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html",
+  "self": "http://memgator.cs.odu.edu/timemap/json/https://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2014-10-04T14:50:49Z",
+        "uri": "http://web.archive.org/web/20141004145049/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+      },
+      {
+        "datetime": "2014-10-27T14:10:49Z",
+        "uri": "http://web.archive.org/web/20141027141049/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+      },
+      {
+        "datetime": "2014-12-27T13:10:11Z",
+        "uri": "http://web.archive.org/web/20141227131011/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+      },
+      {
+        "datetime": "2015-01-01T18:40:36Z",
+        "uri": "http://web.archive.org/web/20150101184036/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+      },
+      {
+        "datetime": "2015-02-09T01:54:21Z",
+        "uri": "http://web.archive.org/web/20150209015421/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+      },
+      {
+        "datetime": "2015-05-01T20:05:23Z",
+        "uri": "http://web.archive.org/web/20150501200523/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+      },
+      {
+        "datetime": "2015-11-07T01:43:35Z",
+        "uri": "http://web.archive.org/web/20151107014335/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+      }
+    ],
+    "first": {
+      "datetime": "2014-10-04T14:50:49Z",
+      "uri": "http://web.archive.org/web/20141004145049/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+    },
+    "last": {
+      "datetime": "2015-11-07T01:43:35Z",
+      "uri": "http://web.archive.org/web/20151107014335/http://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/https://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/https://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/https://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/https://www.quedeletras.com/letra-el-perdedor-feat-marco-antonio-solis/enrique-iglesias/171149.html"
+}

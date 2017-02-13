@@ -1,0 +1,26 @@
+{
+  "original_uri": "http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-02-03T04:43:01Z",
+        "uri": "http://web.archive.org/web/20170203044301/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php"
+      }
+    ],
+    "first": {
+      "datetime": "2017-02-03T04:43:01Z",
+      "uri": "http://web.archive.org/web/20170203044301/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php"
+    },
+    "last": {
+      "datetime": "2017-02-03T04:43:01Z",
+      "uri": "http://web.archive.org/web/20170203044301/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php"
+}

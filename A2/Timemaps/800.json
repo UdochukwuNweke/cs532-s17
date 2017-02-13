@@ -1,0 +1,42 @@
+{
+  "original_uri": "http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128",
+  "self": "http://memgator.cs.odu.edu/timemap/json/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128",
+  "mementos": {
+    "list": [
+      {
+        "datetime": "2017-01-29T19:29:00Z",
+        "uri": "http://web.archive.org/web/20170129192900/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+      },
+      {
+        "datetime": "2017-01-30T04:43:29Z",
+        "uri": "http://web.archive.org/web/20170130044329/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+      },
+      {
+        "datetime": "2017-01-31T23:05:33Z",
+        "uri": "http://web.archive.org/web/20170131230533/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+      },
+      {
+        "datetime": "2017-02-01T22:23:52Z",
+        "uri": "http://web.archive.org/web/20170201222352/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+      },
+      {
+        "datetime": "2017-02-03T15:58:05Z",
+        "uri": "http://web.archive.org/web/20170203155805/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+      }
+    ],
+    "first": {
+      "datetime": "2017-01-29T19:29:00Z",
+      "uri": "http://web.archive.org/web/20170129192900/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+    },
+    "last": {
+      "datetime": "2017-02-03T15:58:05Z",
+      "uri": "http://web.archive.org/web/20170203155805/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+    }
+  },
+  "timemap_uri": {
+    "link_format": "http://memgator.cs.odu.edu/timemap/link/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128",
+    "json_format": "http://memgator.cs.odu.edu/timemap/json/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128",
+    "cdxj_format": "http://memgator.cs.odu.edu/timemap/cdxj/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+  },
+  "timegate_uri": "http://memgator.cs.odu.edu/timegate/http://abcnews.go.com/Sports/mo-farah-unsure-executive-order-affects-return-united/story?id=45123128"
+}
