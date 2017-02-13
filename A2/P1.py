@@ -73,26 +73,6 @@ def getLinksFromTweets():
 
 				outfile = open('./allTweets.txt', 'a')
 				
-				'''
-				1. We used Twitter search api to search periodically
-				for tweet with the search terms: "Trump,Obama,Sports,Music" since the last tweet seen (since_id)
-				
-				2. For each of these tweets we extracted links from tweets
-				that have not been truncated, because truncated tweets (which have a self reference) will require another api call 
-				with ?tweet_mode=extended option in other to get a link that is not a self reference
-
-				3. We collected 5220 tweets and removed duplicates			
-				'''
-
-				for tweet in tweepy.Cursor(api.search, q=searchKey, since_id=sinceID[searchKey]).items(30):
-					if( tweet.truncated == True ):
-						continue
-
-					sinceID[searchKey] = tweet.id
-					for url in tweet.entities['urls']:
-						strToWrite = str(tweet.id) + ' <**> ' + url['expanded_url'] + '\n'
-						print '\t', tweet.id, url['expanded_url']
-						outfile.write(strToWrite)
 
 				
 				outfile.close()
@@ -105,7 +85,7 @@ def getLinksFromTweets():
 		errorMessage()
 
 
-	#print api.rate_limit_status()['resources']['search']['/search/tweets']['remaining']
+	
 
 def removeDups():
 
@@ -128,10 +108,7 @@ def removeDups():
 		id = line[0]
 		url = line[1]
 
-		'''
-		Deduplicate by using a dictionary to store key value pairs, url - key, id-value
-		Dictionaries do not permit duplicates
-		'''
+	
 		dedupDict[url] = id
 		#print(line)
 
