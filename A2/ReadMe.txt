@@ -1,5 +1,5 @@
 P1.py
-	Address getting unique tweets
+	Addresses getting unique tweets
 allTweets.txt
 	raw tweets with duplicates
 1000UniqueUrls.txt
