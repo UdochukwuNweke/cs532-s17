@@ -1,0 +1,466 @@
+Hawks survive four OTs to defeat Knicks behind marathon man Millsap 
+Whoa there! 
+Looks like you're already verified. 
+If you still have trouble signing in, you probably need a new confirmation link email. 
+{* resendLink *} Please resend verification. 
+Thanks for verifying your email address 
+You're now logged in. 
+LINK YOUR ACCOUNT FOR PREMIUM ACCESS 
+Are you already a home delivery subscriber for ajc.com? 
+Yes, Link My Account No, I'm good 
+Change password 
+{* newPasswordForm *}
+{* newPassword *}
+{* newPasswordConfirm *}
+{* submitButton *}
+{* /newPasswordForm *}
+Your password has been changed 
+Password has been successfully updated. 
+Sign in 
+Email sent 
+We have sent you an email with a link to change your password. 
+Create a new password 
+We didn't recognize that password reset code. Enter your email address to get a new one. 
+{* #forgotPasswordForm *}
+{* forgotPassword_emailAddress *}
+{* forgotPassword_sendButton *}
+{* /forgotPasswordForm *}
+Create a new password 
+We've sent an email with instructions to create a new password. Your existing password has not been changed. 
+Close 
+Sign In 
+OR 
+Sign in using your AJC.com profile 
+Need a Profile? Register Now. 
+{* #userInformationForm *}
+*EMAIL 
+{* traditionalSignIn_emailAddress *}
+*PASSWORD 
+Forgot your password? 
+{* traditionalSignIn_password *}
+{* traditionalSignIn_signInButton *}
+{* /userInformationForm *}
+Sign in using your existing account 
+{* loginWidget *}
+Sign In 
+OR 
+Sign in using your AJC.com profile 
+Need a Profile? Register Now. 
+{* #userInformationForm *}
+*EMAIL 
+{* traditionalSignIn_emailAddress *}
+*PASSWORD 
+Forgot your password? 
+{* traditionalSignIn_password *}
+{* traditionalSignIn_signInButton *}
+{* /userInformationForm *}
+Sign in using your existing account 
+{* loginWidget *}
+Sign In 
+OR 
+Sign in using your AJC.com profile 
+Need a Profile? Register Now. 
+{* #userInformationForm *}
+*EMAIL 
+{* traditionalSignIn_emailAddress *}
+*PASSWORD 
+Forgot your password? 
+{* traditionalSignIn_password *}
+{* traditionalSignIn_signInButton *}
+{* /userInformationForm *}
+Sign in using your existing account 
+{* loginWidget *}
+You're Almost Done! 
+Please confirm the information below before signing in. 
+*Required 
+{* #socialRegistrationForm *}
+{* socialRegistration_displayName *}
+{* socialRegistration_emailAddress *}
+By submitting your registration information, you agree to our
+Visitor Agreement and Privacy Policy . 
+{* socialRegistration_signInButton *}
+{* /socialRegistrationForm *}
+Register 
+*Required 
+{* #registrationForm *}
+{* traditionalRegistration_emailAddress *}
+{* traditionalRegistration_password *}
+{* traditionalRegistration_passwordConfirm *}
+{* traditionalRegistration_displayName *}
+By submitting your registration information, you agree to our
+Visitor Agreement and Privacy Policy . 
+{* createAccountButton *}
+{* /registrationForm *}
+Create a New Account 
+*Required 
+{* #registrationFormBlank *}
+{* traditionalRegistration_emailAddressBlank *}
+{* traditionalRegistration_passwordBlank *}
+{* traditionalRegistration_passwordConfirmBlank *}
+{* traditionalRegistration_displayName *}
+By submitting your registration information, you agree to our
+Visitor Agreement and Privacy Policy . 
+{* createAccountButton *}
+{* /registrationForm *}
+Just One More Thing... 
+We have sent you a verification email. Please check your email and click on the link to activate your AJC.com profile. 
+If you do not receive the verification message within a few minutes of signing up, please check your Spam or Junk folder. 
+Close 
+Thank you for registering! 
+We look forward to seeing you on AJC.com frequently. Visit us and sign in to update your profile, receive the latest news and keep up to date with mobile alerts. 
+Click here to return to the page you were visiting.
+Create a new password 
+Don't worry, it happens. We'll send you a link to create a new password. 
+{* #forgotPasswordForm *}
+{* forgotPassword_emailAddress *}
+{* forgotPassword_sendButton *}
+{* /forgotPasswordForm *}
+Email sent 
+We have sent you an email with a link to change your password. 
+Close 
+{* mergeAccounts *}
+Sign in to complete account merge 
+{* #tradAuthenticateMergeForm *}
+{* traditionalSignIn_emailAddress *}
+{* mergePassword *}
+{* backButton *}
+{* traditionalSignIn_signInButton *}
+{* /tradAuthenticateMergeForm *}
+Resend Email Verification 
+Click submit to receive another verification email 
+{* #resendVerificationForm *}
+{* traditionalSignIn_emailAddress *}
+{* /resendVerificationForm *}
+Your Verification Email Has Been Sent 
+Check your email for a verification link 
+Close 
+Thanks for verifying your email address. 
+You're now logged in. 
+Close 
+Sign In 
+It looks like you are already verified. If you still have trouble signing in, you probably need a new confirmation link email. 
+{* #userInformationForm *}
+{* traditionalSignIn_emailAddress *}
+{* traditionalSignIn_password *}
+{* traditionalSignIn_signInButton *}
+Use another account
+{* /userInformationForm *}
+Change password 
+{* newPasswordForm *}
+{* newPassword *}
+{* newPasswordConfirm *}
+{* submitButton *}
+{* /newPasswordForm *}
+Your password has been changed 
+Password has been successfully updated. 
+Sign in 
+Email sent 
+We have sent you an email with a link to change your password. 
+Create a new password 
+We didn't recognize that password reset code. Enter your email address to get a new one. 
+{* #forgotPasswordForm *}
+{* forgotPassword_emailAddress *}
+{* forgotPassword_sendButton *}
+{* /forgotPasswordForm *}
+Create a new password 
+We've sent an email with instructions to create a new password. Your existing password has not been changed. 
+Close 
+Thanks for verifying your email address. 
+You're now logged in. 
+{# Show dss link in NP sites that have subscriptions_url set #}
+{% if subscriptions_url %}
+* LINK YOUR ACCOUNT FOR PREMIUM ACCESS - 
+Are you already a home delivery subscriber for {% site_setting friendly_name %}? 
+Yes, Link My Account 
+No, I'm good 
+{% else %}
+Close 
+{% endif %}
+{% include "includes/auth/janrain/signIn_traditional.html" with message='It looks like you are already verified. If you still have trouble signing in, you probably need a new confirmation link email. ' %}
+Our Products
+Your AJC, your way. Explore these products from The Atlanta Journal-Constitution.                       AJC.com Get Atlanta's News Now                       AJC access ATL Find Fun Things to Do                       myAJC Explore Exclusive Digital Extras and More                       AJC ePaper Read Today's Paper        
+AJC Jobs      Contact Us      
+46 
+0 
+open search 
+clear 
+Subscribe now   As low as 99¢  
+Log in 
+Log in to Manage your Profile and Account
+Create your account 
+Receive up-to-date newsletters 
+Set up text alerts 
+Sign up and manage subscriptions 
+Log In
+Log Out
+Open menu 
+open search 
+clear 
+46 
+0 
+Subscribe now   As low as 99¢  
+close menu 
+Subscribe 
+Log in 
+Log in to Manage your Profile and Account
+Create your account 
+Receive up-to-date newsletters 
+Set up text alerts 
+Sign up and manage subscriptions 
+Log In
+Log Out
+close subnav 
+open subnav 
+Log Out 
+Home 
+NEWS 
+close subnav 
+open subnav 
+All News 
+News Video 
+Local News 
+Education 
+Business 
+Politics 
+Technology 
+Nation & World 
+Crime & Safety 
+Offbeat 
+Atlanta Weather 
+NEWS BLOGS				 
+AJC Investigations 
+Political								Insider 
+Get Schooled 
+IN THE NEWS 
+Atlanta Watering Restrictions 
+Traffic: Construction Alert 
+Ga. Public School Ratings 
+Atlanta Gas								Prices 
+SPORTS 
+close subnav 
+open subnav 
+All Sports 
+Braves 
+Falcons 
+Hawks 
+High Schools 
+Georgia Tech 
+Georgia Colleges 
+UGA / DawgNation 
+SEC Country 
+Sports Video 
+AJC Store 
+BUY STUFF 
+AJC Store 
+SPORTS BLOGS 
+Recruiting 
+Falcons 
+Hawks 
+IN THE NEWS 
+Sports Scores 
+Golf 
+NASCAR 
+NEIGHBORHOOD 
+close subnav 
+open subnav 
+All Neighborhood 
+Newcomer's Guide 
+Buckhead 
+Decatur 
+Buford 
+Peachtree City 
+Gwinnett County 
+Intown Atlanta 
+Marietta 
+Roswell 
+Sandy Springs 
+Smyrna 
+COUNTY NEWS 
+Clayton								County 
+Cobb								County 
+DeKalb								County 
+Gwinnett								County 
+IN THE NEWS 
+Living Northside 
+Living Intown 
+LIFE 
+close subnav 
+open subnav 
+All Life 
+Celebrities 
+Home & Garden 
+Weddings & Celebrations 
+Health 
+Travel 
+Parenting 
+Movies & TV 
+Home Design Ideas 
+Arts & Culture 
+Food & Drink 
+Music 
+LIFE BLOGS 
+Best of Atlanta 
+Atlanta								Restaurants 
+Atlanta								Shopping 
+IN THE NEWS 
+Black History 
+Games 
+AJC Peachtree								Road Race 
+THINGS TO DO 
+close subnav 
+open subnav 
+All Things to Do 
+Black History 
+Events in Atlanta 
+Best of Atlanta 
+Arts & Culture 
+Movie Showtimes 
+Radio & TV 
+Food & Drink 
+Music 
+Shopping 
+Latest Video 
+Games 
+Blogs					 
+Atlanta								Restaurants 
+Music Scene 
+Arts &								Culture 
+In the News					 
+Upcoming								Movies 
+Living Intown: BeltLine 
+Horoscopes 
+MORE 
+close subnav 
+open subnav 
+Newsletters 
+Customer Care 
+Contact the AJC 
+Shopping 
+Games 
+Obituaries 
+Homefinder 
+AJC Jobs 
+AJC Cars 
+Kudzu 
+Celebrating Nurses 
+AJC Cup 
+AJC ePaper  
+Today's Buzz					 
+Buzz Blog 
+Radio &								TV Talk 
+News to Me 
+Inside AJC					 
+Movie Theaters 
+Atlanta's								Top Workplaces 
+Find a								Garage Sale 
+AJC Store 
+close subnav 
+open subnav 
+Storefront 
+46 
+Atlanta, GA 
+30303 
+0 
+Traffic Conditions  
+Follow us:   
+Facebook    
+Twitter    
+Top   
+Full Site Index |    Visitor Agreement |   Privacy Policy |    Contact Us        ©2017 Cox Media Group      
+Shortcuts 
+AJC Store 
+Homefinder 
+Atlanta Jobs 
+Find A Car 
+Classifieds 
+Obituaries 
+Family-placed Notices 
+Contact Us/Subscribe 
+Customer Care 
+Advertise With Us 
+Digital Products 
+Subscribe now   As low as 99¢  
+Log in 
+Log in to Manage your Profile and Account
+Create your account 
+Receive up-to-date newsletters 
+Set up text alerts 
+Sign up and manage subscriptions 
+Log In
+Log Out
+Hawks survive four OTs to defeat Knicks behind marathon man Millsap
+0 
+Hawks survive four OTs to defeat Knicks behind marathon man Millsap 
+0 
+Chris Vivlamore 
+The Atlanta Journal-Constitution 
+8:58 p.m Sunday, Jan. 29, 2017 
+Atlanta Hawks 
+0 
+Hawks 
+View Caption Hide Caption 
+Atlanta Hawks forward Paul Millsap (4) reacts with forward Mike Muscala (31) and forward Kent Bazemore (24) in the fourth overtime of an NBA basketball game against the New York Knicks on Sunday, Jan. 29, 2017, in Atlanta. The Hawks won the game in the fourth overtime 142-139. (AP Photo/Todd Kirkland) 
+Paul Millsap was the marathon man. 					
+The Hawks All-Star power forward tied a franchise record by playing 61 minutes in a dramatic 142-139 four overtime victory over the Knicks Sunday afternoon. Millsap had 37 points, 19 rebounds and seven assists as he played the final 35:52 of the game, including every minute of the fourth quarter and four overtimes. 					
+&ldquo;There was no chance I was coming out,&rdquo; Millsap said. 					
+The Hawks had three players with double-doubles in the victory. Dwight Howard had 19 points and 13 rebounds before fouling out and Dennis Schroder had 23 points and 15 assists. 					
+The Hawks also had three other players reach career-highs in minutes played with Tim Hardaway Jr. (58), Schroder (55) and Kent Bazemore (50). 					
+&ldquo;Pretty amazing game, huh?,&rdquo; Hawks coach Mike Budenholzer said. &ldquo;It felt like both sides had it won several times and both teams made big plays and big shots. There are so many swings of emotion. Pretty special effort. We kept grinding for 68 minutes instead of 48.&rdquo; 					
+The four overtimes were necessary when Carmelo Anthony tied the game with jump shots at the end of regulation and the first overtime. He would foul out with a game-high 45 points late in the second overtime. The Knicks&rsquo; Courtney Lee hit a 3-pointer with 1.5 seconds left in the second overtime to force a third overtime. Schroder scored on a layup with 3.0 seconds left to force a fourth overtime. 					
+The Hawks finally won the game when Kent Bazemore scored the first eight points of the fourth session, Millsap scored on a free throw and a put-back and Schroder hit a final free throw. Still, Lee had a good look at a corner 3-pointer as time expired that would have forced another extra period. 					
+It was the 11th four overtime game in NBA history and the Hawks have been involved in three of them &ndash; all wins. 					
+The Hawks (28-20) won the season series from the Knicks, 3-1. They also got double-figure scoring from Hardaway (19) and Mike Dunleavy (12). 					
+The Knicks (21-28) lost four players to fouls with Anthony, Kristaps Porzingis, Joakim Noah and Kyle O&rsquo;Quinn. 					
+&ldquo;Everything different and challenging to me is fun,&rdquo; Millsap said. &ldquo;It was fun. I don&rsquo;t ever want to do that again but it was fun definitely.&rdquo; 					
+View Comments		
+0 
+Sign up for e-newsletters 
+Want more news? 
+Sign up for free e-newsletters to get more of AJC delivered to your inbox. 
+Most Read 
+Matt Kemp came to Braves camp leaner and perhaps even stronger 
+Atlanta Braves great Greg Maddux wears disguise for baseball prank 
+Matt Ryan relaxing in Mexico with wife and … Matthew Stafford 
+Things To Do 
+Add Event + 
+See More 
+Weather and Traffic 
+45 
+30303 
+0 
+Most Read 
+Matt Kemp came to Braves camp leaner and perhaps even stronger 
+Atlanta Braves great Greg Maddux wears disguise for baseball prank 
+Matt Ryan relaxing in Mexico with wife and … Matthew Stafford 
+Things To Do 
+Add Event + 
+See More 
+More from ajc.com 
+Topics 
+News 
+Sports 
+Neighborhoods 
+Life 
+Things to do 
+Blogs 
+More 
+Life 
+7 Day Menu Planner 
+News 
+Close to home for Feb. 18 
+News 
+Give Back Connection for Feb. 18 
+Life 
+Conquering our dreams, one step at a time 
+51 Atlanta homicides from 2016 unsolved 
+News 
+Harward turns down national security adviser role 
+Follow us:   
+Facebook    
+Twitter    
+Top   
+Full Site Index |    Visitor Agreement |   Privacy Policy |    Contact Us        ©2017 Cox Media Group      
+Close 
+Sections news sports life neighborhoods shop things to do  Shortcuts ajc obituaries family-placed notices classifieds homefinder atlanta jobs find your car manage your profile contact us customer care advertise with us digital products  Partners find & save coupons kudzu savings.com valpak myajc Fun game center  Member Center sign in manage your profile Utilities archives weather traffic sitemap  Follow Us facebook twitter instagram youtube pinterest 
+PRODUCTS From The Atlanta Journal-Constitution             AJC.com - Get Atlanta's News Now        AJC Access Atlanta - Find Fun Things to Do        myAJC - Explore Exclusive Digital Extras and More        AJC ePaper - Read Today's Paper                  Subscribe          
+Follow Us            Facebook       Twitter                            © 2017 Cox Media Group .            By using this website, you accept the terms of our       Visitor Agreement and       Privacy Policy , and understand your options regarding       Ad Choices .            Learn about careers at Cox Media Group .

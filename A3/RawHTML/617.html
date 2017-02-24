@@ -1,0 +1,2232 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ar">
+<head id="Head1">
+<script type="text/javascript">
+        var _sf_startpt = (new Date()).getTime()
+    </script>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"0e4d60497b","applicationID":"13031839","transactionName":"NFcBMREDXksFARBaCQ0dIjYzTUZdFhENXAhRAlJQTBJRXwERS0MJEEYHABcDWVQXTAVAFhs=","queueTime":0,"applicationTime":255,"ttGuid":"EA34D8F1555D1232","agent":""}</script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script><title>
+بالصور.. سخرية رواد الإنترنت من "العقدة المغربية والشيخة خديجة"
+</title><meta id="metaKeyword" name="keywords" content="مصر,المغرب,كأس الأمم الإفريقية,الجابون 2017"/><meta id="metaDesc" name="description" content="احتفل رواد الإنترنت بوصول المنتخب المصري إلى المربع الذهبي لكأس الأمم الإفريقية 2017 بالجابون، بعد تخطي المنتخب المغربي بنتيجة (1-0)، مساء الأحد."/><link id="canonicalUrl" rel="canonical" href="http://www.masrawy.com/sports/ACN-Gabon-2017-news/details/2017/1/30/1020914/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%B3%D8%AE%D8%B1%D9%8A%D8%A9-%D8%B1%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D9%82%D8%AF%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%D8%A9-%D8%AE%D8%AF%D9%8A%D8%AC%D8%A9-"/>
+ 
+ 
+<meta property="og:site_name" content="Masrawy"/><meta property="og:locale" content="ar_AR"/><meta property="fb:app_id" content="5483364177"/><meta property="fb:pages" content="120674707992667"/><meta property="article:author" content="https://www.facebook.com/masrawy"/><meta property="article:publisher" content="https://www.facebook.com/masrawy"/><meta id="fbUrl" property="og:url"/><meta id="fbTitle" property="og:title" content="بالصور.. سخرية رواد الإنترنت من &quot;العقدة المغربية والشيخة خديجة&quot;"/><meta id="fbDescription" property="og:description" content="احتفل رواد الإنترنت بوصول المنتخب المصري إلى المربع الذهبي لكأس الأمم الإفريقية 2017 بالجابون، بعد تخطي المنتخب المغربي بنتيجة (1-0)، مساء الأحد."/><meta id="fbImage" data-page-subject="true" property="og:image" content="http://media.linkonlineworld.com/img/Large/2017/1/30/2017_1_30_0_27_41_277.png"/><meta property="og:type" content="article"/><meta property="og:image:width" content="614"/><meta property="og:image:height" content="430"/><meta name="Googlebot-Mobile" content="nofollow, follow"/><meta name="bingbot-mobile" content="noindex, follow"/>
+ 
+ 
+<meta name="twitter:card" content="summary"/><meta name="twitter:site" content="@Masrawy"/><meta name="twitter:creator" content="@Masrawy"/><meta id="TwitterUrl" name="twitter:url" content="http://www.masrawy.com/sports/ACN-Gabon-2017-news/details/2017/1/30/1020914/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%B3%D8%AE%D8%B1%D9%8A%D8%A9-%D8%B1%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D9%82%D8%AF%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%D8%A9-%D8%AE%D8%AF%D9%8A%D8%AC%D8%A9-"/><meta id="TwitterTitle" name="twitter:title" content="بالصور.. سخرية رواد الإنترنت من &quot;العقدة المغربية والشيخة خديجة&quot;"/><meta id="TwitterDesc" name="twitter:description" content="احتفل رواد الإنترنت بوصول المنتخب المصري إلى المربع الذهبي لكأس الأمم الإفريقية 2017 بالجابون، بعد تخطي المنتخب المغربي بنتيجة (1-0)، مساء الأحد."/><meta id="TwitterImg" name="twitter:image" content="http://media.linkonlineworld.com/img/Large/2017/1/30/2017_1_30_0_27_41_277.png"/>
+ 
+ 
+<link href="http://www.masrawy.com/favicon.ico" type="image/ico" rel="icon"/><link rel="SHORTCUT ICON" href="http://www.masrawy.com/favicon.ico" type="image/x-icon"/>
+ 
+<link rel="stylesheet" href="http://www.masrawy.com/version2015/css/main.css?ver=2.2.6" type="text/css"/>
+ 
+<link rel="stylesheet" href="http://www.masrawy.com/version2015/css/print.min.css" media="print" type="text/css"/>
+<script type="text/javascript">
+        var AppPath = 'http://www.masrawy.com/';
+    </script>
+ 
+<script type="text/javascript" src="http://www.masrawy.com/js/jquery-1.8.3.min.js"></script>
+ 
+<script type="text/javascript" src="//native.sharethrough.com/assets/sfp.js" async></script>
+ 
+ 
+<script type="text/javascript">
+        //$(function () { console.log("document ready new") });
+        $(document).ready(function () {
+            //general variables to be used in the entire project
+            CMS.AppPath = 'http://www.masrawy.com/';
+            var metaKeyword = '#metaKeyword';
+            var metaDesc = '#metaDesc';
+            var fbTitle = '#fbTitle';
+            var fbDescription = '#fbDescription';
+            var fbImage = '#fbImage';
+            var TwitterUrl = '#TwitterUrl';
+            var TwitterDesc = '#TwitterDesc';
+            var TwitterImg = '#TwitterImg';
+            var TwitterTitle = '#TwitterUrl';
+        });
+    </script>
+ 
+ 
+<script type="text/javascript">
+    _atrk_opts = { atrk_acct: "C9NPf1agwt00yr", domain: "masrawy.com", dynamic: true };
+    (function () { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=C9NPf1agwt00yr" style="display:none" height="1" width="1" alt=""/></noscript>
+ 
+ 
+<script async src="https://cdn.onthe.io/io.js/4zOApESGS6Dj"></script>
+ 
+<script src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+</script>
+ 
+<script>
+    googletag.cmd.push(function () {
+        googletag.defineSlot('/96551095/Masrawy_Desktop_CAN_1x1', [1, 1], 'div-gpt-ad-1484040853874-0').addService(googletag.pubads());
+        googletag.defineSlot('/96551095/Masrawy_Desktop_CAN_300x250', [[300, 250], [300, 600]], 'div-gpt-ad-1484040853874-1').addService(googletag.pubads());
+        googletag.defineSlot('/96551095/Masrawy_Desktop_CAN_300x250_norich', [300, 250], 'div-gpt-ad-1484040853874-2').addService(googletag.pubads());
+        googletag.defineSlot('/96551095/Masrawy_Desktop_CAN_728x90', [728, 90], 'div-gpt-ad-1484040853874-3').addService(googletag.pubads());
+    });
+</script>
+ 
+<script type="text/javascript">
+    googletag.cmd.push(function () {
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        googletag.pubads().enableSyncRendering();
+        googletag.enableServices();
+    });
+</script>
+ 
+<link rel="alternate" media="only screen and (max-width: 640px)" href='http://wwwmasrawycom/mobile/sports/acn-gabon-2017-news/details/2017/1/30/1020914/بالصور-سخرية-رواد-الإنترنت-من-العقدة-المغربية-والشيخة-خديجة-'/>
+<div id="fb-root">
+</div>
+<script type="text/javascript">
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ar_AR/sdk.js#xfbml=1&version=v2.3&appId=266574946726271";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 520) {
+                $('.artclHd').addClass("sticky");
+            }
+            else {
+                $('.artclHd').removeClass("sticky");
+            }
+        });
+    </script>
+ 
+<script type="text/javascript">    (function () {
+        var _fbq = window._fbq || (window._fbq = []);
+        if (!_fbq.loaded) {
+            var fbds = document.createElement('script');
+            fbds.async = true;
+            fbds.src = '//connect.facebook.net/en_US/fbds.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(fbds, s);
+            _fbq.loaded = true;
+        }
+    })();
+        window._fbq = window._fbq || [];
+        window._fbq.push(['track', '6030994952555', { 'value': '0.00', 'currency': 'USD' }]);
+    </script>
+<noscript>
+<img height="1" width="1" alt="" style="display: none" src="https://www.facebook.com/tr?ev=6030994952555&amp;cd[value]=0.00&amp;cd[currency]=USD&amp;noscript=1"/>
+</noscript>
+ 
+<meta name="google-site-verification" content="QGhx2NlK0kC9fOrghayLlCfo0X3MJgbwheSPjuQdhVk"/></head>
+<body class="bodySponsor">
+ 
+<input type="hidden" value="masrawy_linkonline"/>
+ 
+<div class="mainWrapper">
+ 
+ 
+<form method="post" action="./بالصور-سخرية-رواد-الإنترنت-من-العقدة-المغربية-والشيخة-خديجة-" id="form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEyNTI0OTI3NjlkZExRP5abReayB9hxt9srm2ufQGiK/7MrJ6OJfr6E5qBh"/>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="0AF05821"/>
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAJZh/5lvnSCOUgazYkIZVdJEPvFDyUcr9Q9APRtUF6cNwZW7J07GPKe85WkRBumUyom9k2SXMPKrOiQLxy/oZUx"/>
+<div class="hp2014">
+<div class="wrapper" id="wrap" style="position: relative">
+ 
+<header class="Grey">
+<div class="headerFixed">
+<a href="http://www.masrawy.com/" class="logo"></a>
+<div class="hdrDateLnks">
+<div class="dateDiv">
+<p>
+الجمعة
+20 جمادى الأولى 1438
+<span>&nbsp;&nbsp;&nbsp; الموافق </span>
+17 فبراير 2017
+</p>
+</div>
+<div class="weatherDiv">
+<div class="icon-weather">
+</div>
+<p><a href='/weather#Header'>
+16&nbsp;القاهرة,&nbsp;مصر
+</a></p>
+</div>
+<div class="srchDd">
+<input type="text" id="txtSearch" class="srchtxt" value="بحث..." onblur="CMS.inputOut(this,'بحث...')" onfocus="CMS.inputIn(this,'بحث...')"/>
+<a id="btnSearch" class="srchBtn"></a>
+<div class="clear">
+</div>
+</div>
+<script type="text/javascript">
+    $('#btnSearch').click(function () {
+        DoHeaderSearch();
+    });
+
+    $('#txtSearch').keypress(function () {
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            DoHeaderSearch();
+        }
+    });
+
+    function DoHeaderSearch() {
+        var txtSearchval = $('#txtSearch').val().replace('بحث...', '').replace(/ /g, '');
+        if (txtSearchval != '') {
+            var curURL = window.location.href.toLocaleLowerCase();
+            if (curURL.indexOf('mobile') != -1)
+                window.location = '/mobile/search?sk=' + $("#txtSearch").val();
+            else
+                window.location = '/search?sk=' + $("#txtSearch").val();
+        }
+    }
+</script>
+<div class="socialDiv">
+<a href='/contact' class="icon-cu"></a><a href="http://www.facebook.com/masrawy" target="_blank" class="icon-fb"></a><a href="http://twitter.com/masrawy" target="_blank" class="icon-tw"></a><a href="https://plus.google.com/+masrawy/posts" target="_blank" rel="publisher" class="icon-ggl"></a><a href="https://www.youtube.com/user/masrawynews" target="_blank" class="icon-yt"></a><a href="http://www.masrawy.com/rss" class="icon-rss"></a><a target="_blank" href="http://ar.hao123.com/?tn=Masrawy_hao123_ar" class="hao"></a>
+</div>
+</div>
+<nav id="mainNav" role="navigation">
+ 
+<div class="navLnks">
+<div class="homeLnk selected">
+<a href="http://www.masrawy.com/#NewHPNav" class="icon-home"></a>
+</div>
+<div class="newsLnk news shown">
+<a class='FirstLevel ' href='http://www.masrawy.com/slides/news#hpnav' behavior="1" target='_self' rel="">
+أخبار</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/News/News_Egypt/section/35/أخبار-مصر#hpnav" class=''>
+مصر
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_PublicAffairs/section/202/#hpnav" class=''>
+عرب وعالم
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_Press/section/209/صحافة#hpnav" class=''>
+صحافة
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_Economy/section/206/اقتصاد#hpnav" class=''>
+إقتصاد
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_Cases/section/205/حوادث-وقضايا#hpnav" class=''>
+حوادث
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_Regions/section/204/أخبار-المحافظات#hpnav" class=''>
+محافظات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_Reports/section/207/تحقيقات?ref=newsmenu#hpnav" class=''>
+تقارير و تحقيقات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_Essays/section/211/مقالات-مصراوى#hpnav" class=''>
+مقالات
+</a>
+</li>
+<li><a href="javascript:;" class='dropdownLnk'>
+منوعات
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/News/News_Various/section/208/منوعات#hpnav">
+أخبار منوعات</a>
+<a href="http://www.masrawy.com/News/Various-Videos/section/196/#hpnav">
+فيديوهات منوعات</a>
+<a href="http://www.masrawy.com/news/cartoons/section/46/كاريكاتير#hpnav">
+كاريكاتير</a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/News/News-Videos/section/121/#hpnav" class=''>
+فيديوهات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/News_Tech/section/382/#hpnav" class='dropdownLnk'>
+علوم و تكنولوجيا
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/News/Tech-reports/section/385/#hpnav">
+أخبار و تقارير</a>
+<a href="http://www.masrawy.com/News/Tech-Electronics/section/383/#hpnav">
+أجهزة متنوعة</a>
+<a href="http://www.masrawy.com/News/Tech-Videos/section/386/#hpnav">
+فيديوهات</a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/News/news-ayamzaman/section/586/#hpnav" class=''>
+أخبار زمان
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News-Pointer#hpnav" class=''>
+بورصة الأخبار
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk arts">
+<a class='FirstLevel ' href='http://www.masrawy.com/slides/arts#hpnav' behavior="1" target='_self' rel="">
+فنون و ترفيه</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/arts/music/section/255/#hpnav" class=''>
+موسيقى
+</a>
+</li>
+<li><a href="http://www.masrawy.com/arts/tv-theater/section/235/#hpnav" class=''>
+مسرح و تليفزيون
+</a>
+</li>
+<li><a href="http://www.masrawy.com/arts/cinema/section/254/#hpnav" class=''>
+سينما
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Arts/zoom/section/582/%D8%B2%D9%88%D9%88%D9%85#hpnav" class=''>
+زووم
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Arts/Agnaby/section/583/%D8%A3%D8%AC%D9%86%D8%A8%D9%8A#hpnav" class=''>
+أجنبي
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Arts/Arts-Videos/section/122/#hpnav" class=''>
+فيديوهات فنية
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Arts/Abyad-Fi-Eswed/section/632/%D8%A7%D8%A8%D9%8A%D8%B6-%D9%81%D9%8A-%D8%A3%D8%B3%D9%88%D8%AF#hpnav" class=''>
+أبيض واسود
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk howa_w_hya">
+<a class='FirstLevel ' href='http://www.masrawy.com/slides/Howa_w_Hya#hpnav' behavior="1" target='_self' rel="">
+هو وهي</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Fashion-Beauty/section/218#hpnav" class='dropdownLnk'>
+الموضة و الجمال
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Howa_w_Hya/Fashion/section/220/#hpnav">
+الموضة</a>
+<a href="http://www.masrawy.com/Howa_w_Hya/Fashion-BeautyTips/section/231/#hpnav">
+نصائح الجمال </a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Relationship/section/223/#hpnav" class=''>
+علاقات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Cooking/section/221#hpnav" class='dropdownLnk'>
+مطبخ مصراوى
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Howa_w_Hya/Cooking-Recipes/section/239/#hpnav">
+وصفات</a>
+<a href="http://www.masrawy.com/Videos/Cooking-Videos/section/214#hpnav">
+فيديوهات</a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Health/section/219/#hpnav" class=''>
+نصائح طبيه
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Pregnancy/section/222/%D8%A7%D9%84%D8%AD%D9%85%D9%84-%D9%88%D8%A7#hpnav" class=''>
+الحمل والامومة
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Grooming/section/402/#hpnav" class=''>
+الرجل
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Travel/section/603#hpnav" class=''>
+سفر وسياحة
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk sports">
+<a class='FirstLevel ' href='http://www.masrawy.com/slides/sports#hpnav' behavior="1" target='_self' rel="">
+رياضة</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/Sports/Sports_News/section/577/أخبار-الرياضة#hpnav" class=''>
+أخبار محلية
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Sports/Sports-arab-international/section/579/#hpnav" class=''>
+أخبارعربية وعالمية
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Sports/Sports-others/section/578/#hpnav" class=''>
+رياضات أخرى
+</a>
+</li>
+<li><a href="http://beta.masrawy.com/Sports/Articles/section2/227/مقالات#hpnav" class=''>
+آراء حرة
+</a>
+</li>
+<li><a href="http://www.masrawy.com/sports/matchestimes#hpnav" class=''>
+مواعيد ونتائج
+</a>
+</li>
+<li><a href="http://www.masrawy.com/sports/sports_galleries/Section/467/صور#hpnav" class=''>
+البوم الصور
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Sports/Sports_Videos/Section/468/فيديوهات#hpnav" class=''>
+فيديوهات
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk videos">
+<a class='FirstLevel ' href='http://www.masrawy.com/slides/videos#hpnav' behavior="1" target='_self' rel="">
+فيديوهات</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/News/News-Videos/section/121/#hpnav" class=''>
+فيديوهات اخبارية
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Arts/Arts-Videos/section/122/#hpnav" class=''>
+فيديوهات فنية
+</a>
+</li>
+<li><a href="http://www.masrawy.com/News/Various-Videos/section/196/#hpnav" class=''>
+فيديوهات منوعات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Sports/Sports-Videos/section/468/#hpnav" class=''>
+فيديوهات رياضية
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/Islameyat-Videos/section/215/#hpnav" class=''>
+فيديوهات إسلامية
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Howa_w_Hya/Cooking-Videos/section/214/#hpnav" class=''>
+فيديوهات وصفات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Autos/Autos-Videos/section/379/#hpnav" class=''>
+فيديوهات سيارات
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk autos">
+<a class='FirstLevel ' href='http://www.masrawy.com/slides/autos#hpnav' behavior="1" target='_self' rel="">
+سيارات</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/Autos/autos_news/section/375/#hpnav" class=''>
+أخبار
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Autos/Galleries/section/378/#hpnav" class=''>
+ألبوم صور
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Autos/Autos-Videos/section/379/#hpnav" class=''>
+فيديوهات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Autos/Races/section/376/سباقات#hpnav" class=''>
+سباقات
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Autos/tips/section/598/%D9%86%D8%B5%D8%A7%D8%A6%D8%AD#hpnav" class=''>
+نصائح
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk islameyat">
+<a class='FirstLevel ' href='http://www.masrawy.com/slides/islameyat#hpnav' behavior="1" target='_self' rel="">
+اسلاميات</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/Islameyat/Zakah#hpnav" class=''>
+حساب الزكاة
+</a>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/Fatawa/section/61/#hpnav" class='dropdownLnk'>
+فتاوى
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Islameyat/Fatawa-3badat/section/81/#hpnav">
+عبادات</a>
+<a href="http://www.masrawy.com/Islameyat/Fatawa-Mo3amlat_Togaria/section/82/#hpnav">
+معاملات تجارية </a>
+<a href="http://www.masrawy.com/Islameyat/Fatawa-Nesaa/section/83/#hpnav">
+نساء</a>
+<a href="http://www.masrawy.com/Islameyat/Fatawa-Zakaa_Mawarith/section/86/#hpnav">
+زكاة و مواريث </a>
+<a href="http://www.masrawy.com/Islameyat/Fatawa-Other/section/88/#hpnav">
+فتاوى متنوعة</a>
+<a href="http://www.masrawy.com/Islameyat/Fatawa-seyam/section/587/#hpnav">
+فتاوى الصيام</a>
+<a href="http://www.masrawy.com/Islameyat/fatawa_haj/section/489/#hpnav">
+الحج والعمرة </a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/makalat/section/50/#hpnav" class='dropdownLnk'>
+مقالات
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Islameyat/Makalat-Quran_Sunah/section/74/#hpnav">
+قرآن و سنة </a>
+<a href="http://www.masrawy.com/Islameyat/Makalat-3ebadat/section/75/#hpnav">
+عبادات</a>
+<a href="http://www.masrawy.com/Islameyat/Makalat-Akhlak/section/76/#hpnav">
+أخلاقيات</a>
+<a href="http://www.masrawy.com/Islameyat/Makalat-Osra/section/78/#hpnav">
+الأسرة المسلمة </a>
+<a href="http://www.masrawy.com/Islameyat/Makalat-Other/section/80/#hpnav">
+متنوعة</a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/Sera/section/51/#hpnav" class='dropdownLnk'>
+السيرة النبوية
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Islameyat/Sera-7adeth/section/58/#hpnav">
+الحديث الشريف </a>
+<a href="http://www.masrawy.com/Islameyat/Sera-Hdi_Nabawy/section/71/#hpnav">
+الهدى النبوى </a>
+<a href="http://www.masrawy.com/Islameyat/Sera-hayat_ElRasoul/section/72/#hpnav">
+حياة الرسول </a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/Quran/section/56/#hpnav" class='dropdownLnk'>
+القران الكريم
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Islameyat/Quran-a7kam_Telawa/section/65/#hpnav">
+أحكام التلاوة </a>
+<a href="http://www.masrawy.com/Islameyat/Quran-Ayt_ElYoum/section/66/#hpnav">
+أية اليوم </a>
+<a href="http://www.masrawy.com/Islameyat/Quran-Sofraa_Quran/section/68/#hpnav">
+سفراء القرآن </a>
+<a href="http://www.masrawy.com/Islameyat/Quran-Asbab_Nezol/section/69/#hpnav">
+أسباب النزول </a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/Others/section/445/#hpnav" class='dropdownLnk'>
+أخرى
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Islameyat/Others-Masaged/section/53/#hpnav">
+مساجد لها تاريخ </a>
+<a href="http://www.masrawy.com/Islameyat/Others-99AllahNames/section/55/#hpnav">
+أسماء الله الحسنى </a>
+<a href="http://www.masrawy.com/Islameyat/Others-Du3aa/section/59/#hpnav">
+الذكر و الدعاء</a>
+<a href="http://www.masrawy.com/Islameyat/Others-Happen_Today/section/62/#hpnav">
+حدث فى مثل هذا اليوم </a>
+<a href="http://www.masrawy.com/Islameyat/Others-Islamic_ppl_News/section/63/#hpnav">
+أخبار العالم الاسلامى </a>
+<a href="http://www.masrawy.com/Islameyat/Others-Ramadan/section/97/#hpnav">
+رمضان</a>
+<a href="http://www.masrawy.com/Islameyat/Others-Haj/section/102/#hpnav">
+الحج والعمرة</a>
+<a href="http://www.masrawy.com/Islameyat/Others-Monasabat/section/106/#hpnav">
+مناسبات دينية</a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/kesas/section/446/#hpnav" class='dropdownLnk'>
+قصص و عبر
+</a>
+<div class="subSubLnks">
+<a href="http://www.masrawy.com/Islameyat/kesas-Anbiaa/section/54/#hpnav">
+قصص الانبياء</a>
+<a href="http://www.masrawy.com/Islameyat/kesas-Quran/section/67/#hpnav">
+القصص القرآنى</a>
+<a href="http://www.masrawy.com/Islameyat/kesas-mawakef/section/79/#hpnav">
+مواقف ايمانية</a>
+<a href="http://www.masrawy.com/Islameyat/kesas-Al3olmaa/section/93/#hpnav">
+سير العلماء </a>
+</div>
+</li>
+<li><a href="http://www.masrawy.com/Islameyat/Islameyat-Videos/section/215/#hpnav" class=''>
+فيديوهات
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk services">
+<a class='FirstLevel ' href='http://www.masrawy.com/services/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%85%D8%B5%D8%B1%D8%A7%D9%88%D9%8A#hpnav' behavior="1" target='_self' rel="">
+خدمات مصراوى</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://mobawaba.masrawy.com/egypt/ar?ref=HPNav#hpnav" class=''>
+مبوبة
+</a>
+</li>
+<li><a href="http://www.masrawy.com/bulksms/introar.aspx?ref=NewHPNav#hpnav" class=''>
+Bulk SMS
+</a>
+</li>
+<li><a href="http://www.masrawy.com/vas/home?ref=NewHPNav#hpnav" class=''>
+الإخبارية SMS
+</a>
+</li>
+<li><a href="http://www.masrawy.com/sms/Default.aspx?ref=NewHPNav#hpnav" class=''>
+SMS
+</a>
+</li>
+<li><a href="http://www.masrawy.com/weather#hpnav" class=''>
+الطقس
+</a>
+</li>
+<li><a href="https://masrawy.jumia.com.eg/ar/?wt_af=eg.affiliate.masrawy.sale.homepage.&utm_source=masrawy&utm_medium=affiliate&utm_campaign=homepage&utm_term=header#hpnav" class=''>
+عروض مصراوى
+</a>
+</li>
+<li><a href="http://www.masrawy.com/fos7etak#hpnav#hpnav" class=''>
+اتفسح معانا
+</a>
+</li>
+<li><a href="http://www.masrawy.com/shaghalni#nav#hpnav" class=''>
+شغلنى
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="newsLnk news">
+<a class='FirstLevel ' href='javascript:;' behavior="1" target='_self' rel="">
+المزيد</a>
+<div class="SubLnks">
+<ul>
+<li><a href="http://www.masrawy.com/news/cartoons/section/46/#hpnav" class=''>
+كاريكاتير
+</a>
+</li>
+<li><a href="http://www.masrawy.com/saf7a#hpnav" class=''>
+صفحة في الشارع
+</a>
+</li>
+</ul> </div>
+</div>
+<div class="clear">
+</div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //MarkCurrentchannel();
+    });
+    // Created by Bassem 2-11-2015 3pm
+    function MarkCurrentchannel() {
+        var isMarked = false;
+        var CurUrlSpcialCase = false;
+        var curUrl = window.location.pathname.toLowerCase();
+        // handle special Casses 1
+        if (curUrl.indexOf('survey') > -1) {
+            CurUrlSpcialCase = true;
+        }
+
+        $(".FirstLevel").each(function () {
+
+            var curRootCatNodeUrl = $(this).attr("href").toLowerCase();
+            if (curRootCatNodeUrl != "") {
+                // handle special Casses 2
+                if ((curUrl.indexOf("survey") > -1 && curRootCatNodeUrl.indexOf("survey") > -1)) {
+                    $(".homeLnk").removeClass("selected");
+                    $(this).parent(".newsLnk").addClass("selected");
+                    isMarked = true;
+                }
+                else if (!CurUrlSpcialCase && !isMarked) {
+                    if (curRootCatNodeUrl.indexOf('slides/') != -1) {
+                        curRootCatNodeUrl = curRootCatNodeUrl.split('slides/')[1];
+                    }
+                    else {
+                        if (curRootCatNodeUrl.indexOf('.com/') > 0)
+                            curRootCatNodeUrl = curRootCatNodeUrl.split('.com/')[1].split('/')[0];
+                    }
+                    if (curUrl.indexOf('/' + curRootCatNodeUrl) > -1) {
+                        $(".homeLnk").removeClass("selected");
+                        $(this).parent(".newsLnk").addClass("selected");
+                        isMarked = true;
+                    }
+                }
+            }
+            else {
+                $(this).removeAttr("href");
+            }
+        });
+    }
+    //apply change to otlob link 
+    $('.newsLnk.services').find("a:contains('ديليفري مطاع')").attr("href", "https://masrawy.otlob.com/?hpnav");
+</script>
+ 
+</nav>
+</div>
+</header>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#aBackToOld').click(function () {
+            var OldIsGold = CMS.getCookie("Masrawy-OldIsGold-OldHp");
+            if (isNaN(OldIsGold) && OldIsGold == undefined) {
+                CMS.setCookie("Masrawy-OldIsGold-OldHp", "true", 3, "/", "", "");
+            }
+        });
+    });
+</script>
+<div class="leaderAd">
+<div class="bannerAd LeaderBoard">
+ 
+<div id='div-gpt-ad-1484040853874-3'>
+<script>
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1484040853874-3'); });
+    </script>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    $(window).scroll(function () {
+        //desktop: rest of site
+        if ($(this).scrollTop() > 100) {
+            $('.Grey').addClass("headerSticky");
+            $('.bodySponsor').addClass("bodySponsorSticky");
+            $('.navLnks > div > .SubLnks').css({ 'top': '48px' });
+
+            $('#HomePageBody').removeClass();
+            $('#HomePageBody').addClass("bodySponsorSticky");
+
+        }
+        else {
+            $('.Grey').removeClass("headerSticky");
+            $('.bodySponsor').removeClass("bodySponsorSticky");
+            $('.navLnks > div > .SubLnks').css({ 'top': '78px' });
+            $('.bodySponsor').css({ 'background-position': 'center 75px' });
+
+            $('#HomePageBody').removeClass();
+            $('#HomePageBody').addClass("bodySponsor");
+        }
+    });
+    function hideStrip(target) {
+        document.getElementById(target).style.height = '0';
+        $('#' + target).addClass('opinionHide');
+        $('.mainWrapper').css({ 'margin-top': '75px', 'transition': 'margin-top 0.4s ease-in-out 0s' });
+        $('.navLnks > div > .SubLnks').css({ 'top': '78px' });
+        if ($(window).scrollTop() > 100) {
+            $('#HomePageBody').removeClass();
+            $('#HomePageBody').addClass("bodySponsorSticky");
+        } else {
+            $('#HomePageBody').removeClass();
+            $('#HomePageBody').addClass("bodySponsor");
+        }
+
+        // $('.headerSticky .navLnks > div > .SubLnks').css({ 'top': '50px!important' });
+    }
+</script>
+<div class="wrappContent">
+<section id="content" role="main">
+<div class='fixedWrapp sports'>
+ 
+<section class="cafTitle">
+<a class="cafLink" href="/sports/ACN-Gabon-2017/home-page"></a>
+<div class="title">
+<h2>كأس الأمم الأفريقية 2017
+<span>14 يناير - 5 فبراير</span>
+</h2>
+<div class="picpacSpnsr">
+<p>برعاية</p>
+<a target="_blank" href="https://goo.gl/5irGMH" title="Picpac">
+<img src="http://www.masrawy.com/version2015/CAF2017/Images/picpacLogo.jpg?ref=1" alt="Picpac">
+</a>
+</div>
+</div>
+<div class="cafMenu">
+<div class="cafMenuLinks">
+<a href='http://www.masrawy.com/sports/ACN-Gabon-2017/home-page' class="ACNMenuitem ">الرئيسية</a>
+<a href='http://www.masrawy.com/sports/ACN-Gabon-2017/matches' class="ACNMenuitem ">مواعيد المباريات</a>
+<a href='http://www.masrawy.com/sports/ACN-Gabon-2017/groups' class="ACNMenuitem ">جدول المجموعات</a>
+<a href='http://www.masrawy.com/Sports/ACN-Gabon-2017-news/section/700/اخبار-الجابون-2017' class="ACNMenuitem ">أخبار الجابون</a>
+<a href='http://www.masrawy.com/Sports/ACN-Gabon-2017-arab-news/section/701/العرب-في-الجابون-2017' class="ACNMenuitem ">العرب في الجابون</a>
+<a href='http://www.masrawy.com/Sports/ACN-Gabon-2017-scenes/section/702/كواليس-الجابون-2017' class="ACNMenuitem ">كواليس الجابون</a>
+<a href='http://www.masrawy.com/Sports/ACN-Gabon-2017-reactions/section/703/قالوا-في-الجابون-2017' class="ACNMenuitem ">قالوا في الجابون</a>
+<a href='http://www.masrawy.com/Sports/ACN-Gabon-2017-pics/section/704/صور-الجابون-2017' class="ACNMenuitem ">ألبوم الصور</a>
+<a href='http://www.masrawy.com/Sports/ACN-Gabon-2017-videos/section/705/فيديوهات-الجابون-2017' class="ACNMenuitem ">فيديوهات</a>
+</div>
+</div>
+</section>
+<script>
+    $(function () {
+        var curURL;
+        var selectedItemKey;
+        var categoryId = parseInt('-1');
+
+        if (categoryId > 0)
+            selectedItemKey = '/' + categoryId + '/'
+        else {
+            curURL = window.location.href.toLocaleLowerCase();
+
+            if (curURL.indexOf('matches') > -1)
+                selectedItemKey = 'acn-gabon-2017/matches';
+            else if (curURL.indexOf('groups') > -1)
+                selectedItemKey = 'acn-gabon-2017/groups';
+            else if (curURL.indexOf('home-page') > -1)
+                selectedItemKey = 'acn-gabon-2017/home-page';
+        }
+        if (selectedItemKey != undefined && selectedItemKey != '') {
+            $('.ACNMenuitem').each(function () {
+                var itemURL = $(this).attr("href").toLocaleLowerCase();
+                if (itemURL.indexOf(selectedItemKey) > -1) {
+                    $(this).addClass('selected');
+                    return false;
+                }
+                //console.log($(this).attr("href"));
+            });
+        }
+    });
+
+</script>
+ 
+<article role="content" itemscope itemtype="http://www.schema.org/Article">
+<div class="">
+<section class="articleDiv">
+<div class="artclHd">
+<div class="breadcrumb">
+<a href='http://www.masrawy.com'>الرئيسية</a>
+<a itemprop="articleSection" href='http://www.masrawy.com/slides/sports'>رياضة</a>
+<a href='/sports/ACN-Gabon-2017-news/section/700/%D8%A7%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D8%A7%D8%A8%D9%88%D9%86-2017' class="active">اخبار الجابون 2017</a>
+</div>
+<h1 itemprop="headline">
+بالصور.. سخرية رواد الإنترنت من ''العقدة المغربية والشيخة خديجة''</h1>
+<div class="socialTimeDiv">
+<time itemprop="datePublished">
+الإثنين, 30 يناير, 2017, 12:27 ص
+</time>
+<section class="socialControl">
+<a class="social-share facebookBtn icon-fb" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=' + 'http://www.masrawy.com/sports/ACN-Gabon-2017-news/details/2017/1/30/1020914/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%B3%D8%AE%D8%B1%D9%8A%D8%A9-%D8%B1%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D9%82%D8%AF%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%D8%A9-%D8%AE%D8%AF%D9%8A%D8%AC%D8%A9-','sharer', 'width=655,height=430'); return false;">Facebook</a>
+<a class="social-share twitterBtn icon-tw" onclick="window.open('https://twitter.com/share?url=' + 'http://www.masrawy.com/sports/ACN-Gabon-2017-news/details/2017/1/30/1020914/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%B3%D8%AE%D8%B1%D9%8A%D8%A9-%D8%B1%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D9%82%D8%AF%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%D8%A9-%D8%AE%D8%AF%D9%8A%D8%AC%D8%A9-' + '&text=' + document.title, 'sharer', 'width=600,height=450');">Twitter</a>
+<a class="social-share GPlusBtn icon-ggl" onclick="window.open('https://plus.google.com/share?url=' + 'http://www.masrawy.com/sports/ACN-Gabon-2017-news/details/2017/1/30/1020914/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D8%B3%D8%AE%D8%B1%D9%8A%D8%A9-%D8%B1%D9%88%D8%A7%D8%AF-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D9%82%D8%AF%D8%A9-%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D8%B4%D9%8A%D8%AE%D8%A9-%D8%AE%D8%AF%D9%8A%D8%AC%D8%A9-', 'sharer', 'width=600,height=600');">Google+</a>
+</section>
+<script type="text/javascript">
+    function UpdateLikes(current, postid) {
+        var PostsLikesCookie = CMS.getCookie("Sofra_Competition_Posts_Likes");
+        if (PostsLikesCookie == null) {
+            CMS.setCookie("Sofra_Competition_Posts_Likes", postid, 1, "", "", "");
+
+            $('#SpnLikes').html(parseInt($('#SpnLikes').html()) + 1);
+            $('#divPostLikeIco').css('background', 'url("' + CMS.AppPath + '/images/likeIcoR.png") no-repeat scroll left center transparent');
+            $('#divPostLikeIco').addClass('dimmed');
+            CMS.ajax.doCallbackHtml('ctl00$MainContent$PostDetailsCtrl$SocialShareCtrl', "UpdatePostLikes~" + postid, retDataLikes); // Ajax call here 
+        }
+        else {
+            if (PostsLikesCookie.indexOf(postid) == -1) {
+                CMS.setCookie("Sofra_Competition_Posts_Likes", PostsLikesCookie + "-" + postid, 1, "", "", "");
+                $('#SpnLikes').html(parseInt($('#SpnLikes').html()) + 1);
+                $('#divPostLikeIco').css('background', 'url("' + CMS.AppPath + '/images/likeIcoR.png") no-repeat scroll left center transparent');
+                $('#divPostLikeIco').addClass('dimmed');
+                // Ajax call here 
+                CMS.ajax.doCallbackHtml('ctl00$MainContent$PostDetailsCtrl$SocialShareCtrl', "UpdatePostLikes~" + postid, retDataLikes);
+            }
+            else {
+                // Do Nothing cause it liked before by this user
+                $('#divPostLikeIco').css('background', 'url("' + CMS.AppPath + '/images/likeIcoR.png") no-repeat scroll left center transparent');
+                $('#divPostLikeIco').addClass('dimmed');
+                alert("لقد أعجبتك من قبل ");
+            }
+        }
+    }
+
+    function retDataLikes(result) {
+        if (result.indexOf("UpdatePostLikes~True") != -1) {
+            //alert('likes updated');
+        }
+
+    }
+</script>
+<script type="text/javascript">
+    var identifier = "";
+    $('#lnkPrint' + '[identifier=' + identifier + ']').click(function () {
+        var loc = window.location.href;
+        window.open(loc.replace("/details/", "/details/print/"), '_blank');
+    });
+</script>
+ 
+<a onclick="printWindow()" class="icon-print">Print</a>
+ 
+</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+<div id="MainContent_PostDetailsCtrl_divNewsBody" class="articleCntnt">
+<figure itemscope itemtype="http://schema.org/ImageObject">
+<script type="text/javascript" src="http://www.masrawy.com/Version2015/Js/jquery.royalslider.min.js"></script>
+<link href="http://www.masrawy.com/Version2015/Css/royalslider.css?ver=1.4" rel="stylesheet"/>
+ 
+<div class="galleryWrapp">
+<div id="gallery-1" class="royalSlider rsDefault">
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_12_325.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_12_325.jpg'>
+<p>
+1
+</p>
+<img itemprop="thumbnail" alt='1                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_12_325.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_14_278.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_14_278.jpg'>
+<p>
+2
+</p>
+<img itemprop="thumbnail" alt='2                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_14_278.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_16_418.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_16_418.png'>
+<p>
+3
+</p>
+<img itemprop="thumbnail" alt='3                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_16_418.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_18_90.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_18_90.jpg'>
+<p>
+4
+</p>
+<img itemprop="thumbnail" alt='4                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_18_90.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_19_700.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_19_700.jpg'>
+<p>
+5
+</p>
+<img itemprop="thumbnail" alt='5                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_19_700.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_21_403.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_21_403.jpg'>
+<p>
+6
+</p>
+<img itemprop="thumbnail" alt='6                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_21_403.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_23_106.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_23_106.png'>
+<p>
+7
+</p>
+<img itemprop="thumbnail" alt='7                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_23_106.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_24_950.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_24_950.jpg'>
+<p>
+8
+</p>
+<img itemprop="thumbnail" alt='8                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_24_950.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_26_590.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_26_590.png'>
+<p>
+9
+</p>
+<img itemprop="thumbnail" alt='9                                                                                                                                                                                                       ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_26_590.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_28_28.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_28_28.jpg'>
+<p>
+10
+</p>
+<img itemprop="thumbnail" alt='10                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_28_28.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_30_231.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_30_231.jpg'>
+<p>
+11
+</p>
+<img itemprop="thumbnail" alt='11                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_30_231.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_31_903.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_31_903.jpg'>
+<p>
+12
+</p>
+<img itemprop="thumbnail" alt='12                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_31_903.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_33_528.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_33_528.jpg'>
+<p>
+13
+</p>
+<img itemprop="thumbnail" alt='13                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_33_528.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_35_278.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_35_278.jpg'>
+<p>
+14
+</p>
+<img itemprop="thumbnail" alt='14                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_35_278.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_36_731.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_36_731.jpg'>
+<p>
+15
+</p>
+<img itemprop="thumbnail" alt='15                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_36_731.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_38_184.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_38_184.jpg'>
+<p>
+16
+</p>
+<img itemprop="thumbnail" alt='16                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_38_184.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_39_856.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_39_856.jpg'>
+<p>
+17
+</p>
+<img itemprop="thumbnail" alt='17                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_39_856.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_41_528.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_41_528.png'>
+<p>
+18
+</p>
+<img itemprop="thumbnail" alt='18                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_41_528.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_43_74.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_43_74.png'>
+<p>
+19
+</p>
+<img itemprop="thumbnail" alt='19                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_43_74.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_44_809.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_44_809.png'>
+<p>
+20
+</p>
+<img itemprop="thumbnail" alt='20                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_44_809.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_46_574.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_46_574.png'>
+<p>
+21
+</p>
+<img itemprop="thumbnail" alt='21                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_46_574.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_48_715.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_48_715.png'>
+<p>
+22
+</p>
+<img itemprop="thumbnail" alt='22                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_48_715.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_50_231.JPG' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_50_231.JPG'>
+<p>
+23
+</p>
+<img itemprop="thumbnail" alt='23                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_50_231.JPG' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_51_762.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_51_762.jpg'>
+<p>
+24
+</p>
+<img itemprop="thumbnail" alt='24                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_51_762.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_53_199.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_53_199.png'>
+<p>
+25
+</p>
+<img itemprop="thumbnail" alt='25                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_53_199.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_54_574.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_54_574.jpg'>
+<p>
+26
+</p>
+<img itemprop="thumbnail" alt='26                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_54_574.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_57_106.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_57_106.jpg'>
+<p>
+27
+</p>
+<img itemprop="thumbnail" alt='27                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_57_106.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_59_481.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_24_59_481.jpg'>
+<p>
+28
+</p>
+<img itemprop="thumbnail" alt='28                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_24_59_481.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_1_184.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_1_184.png'>
+<p>
+29
+</p>
+<img itemprop="thumbnail" alt='29                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_1_184.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_2_574.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_2_574.png'>
+<p>
+30
+</p>
+<img itemprop="thumbnail" alt='30                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_2_574.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_3_996.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_3_996.png'>
+<p>
+31
+</p>
+<img itemprop="thumbnail" alt='31                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_3_996.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_5_699.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_5_699.png'>
+<p>
+32
+</p>
+<img itemprop="thumbnail" alt='32                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_5_699.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_7_356.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_7_356.jpg'>
+<p>
+33
+</p>
+<img itemprop="thumbnail" alt='33                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_7_356.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_9_27.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_9_27.png'>
+<p>
+34
+</p>
+<img itemprop="thumbnail" alt='34                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_9_27.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_10_527.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_10_527.jpg'>
+<p>
+35
+</p>
+<img itemprop="thumbnail" alt='35                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_10_527.jpg' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_12_59.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_12_59.png'>
+<p>
+36
+</p>
+<img itemprop="thumbnail" alt='36                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_12_59.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_13_777.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_13_777.png'>
+<p>
+37
+</p>
+<img itemprop="thumbnail" alt='37                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_13_777.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_15_277.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_15_277.png'>
+<p>
+38
+</p>
+<img itemprop="thumbnail" alt='38                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_15_277.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_16_856.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_16_856.png'>
+<p>
+39
+</p>
+<img itemprop="thumbnail" alt='39                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_16_856.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_18_465.png' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_18_465.png'>
+<p>
+40
+</p>
+<img itemprop="thumbnail" alt='40                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_18_465.png' height="72" width="96"></a>
+<a itemprop="contentUrl" class="rsImg bugaga" data-rsbigimg='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_21_152.jpg' href='http://media.linkonlineworld.com/img/Original/2017/1/30/2017_1_30_0_25_21_152.jpg'>
+<p>
+41
+</p>
+<img itemprop="thumbnail" alt='41                                                                                                                                                                                                      ' class="rsTmb" src='http://media.linkonlineworld.com/img/Thumb/2017/1/30/2017_1_30_0_25_21_152.jpg' height="72" width="96"></a>
+</div>
+</div>
+ 
+<div id="divShowcase" class="ShowCase" style="visibility: hidden; height: 0px; width: 0">
+<iframe id="MainContent_PostDetailsCtrl_ImgGalleryCtrl_IframeShowCase" src="" width="300px" height="250px" style="border: 0; top: 50%; margin-top: -150px; position: relative; left: 50%; margin-left: -150px;" scrolling="no"></iframe>
+</div>
+<script type="text/javascript">
+    $('#MainContent_PostDetailsCtrl_ImgGalleryCtrl_IframeShowCase').attr('src', 'http://www.masrawy.com/Ads/Web/GalleryAdFrame.aspx');
+    var SlidesCount = 0;
+    var current_slides_showed = 1;
+    jQuery(document).ready(function ($) {
+        $('#gallery-1').royalSlider({
+            fullscreen: {
+                enabled: true,
+                nativeFS: true
+            },
+            controlNavigation: 'thumbnails',
+            autoScaleSlider: true,
+            autoScaleSliderWidth: 600,
+            autoScaleSliderHeight: 476,
+            imageAlignCenter: true,
+            loop: true,
+            imageScaleMode: 'fit-if-smaller',
+            navigateByClick: true,
+            numImagesToPreload: 2,
+            arrowsNav: true,
+            arrowsNavAutoHide: true,
+            arrowsNavHideOnTouch: false,
+            keyboardNavEnabled: true,
+            fadeinLoadedSlide: true,
+            globalCaption: true,
+            globalCaptionInside: false,
+            thumbs: {
+                spacing: 10,
+                appendSpan: true,
+                firstMargin: false,
+                paddingBottom: 4,
+                fitInViewport: true
+            },
+            autoPlay: {
+                enabled: true,
+                pauseOnHover: true,
+                stopAtAction: true,
+                delay: 4000
+            }
+        });
+        var gallerySlider = $('#gallery-1').data('royalSlider');
+
+        var gallery_click_count = 0;
+        SlidesCount = gallerySlider.numSlides;
+        current_slides_showed = 1;
+        gallerySlider.ev.on('rsAfterSlideChange', function (event) {
+            // triggers after slide change
+            //alert("Slide Canged");
+            trackPageView('#Ajaxpvs');
+            gallery_click_count++;
+            current_slides_showed++;
+            //stop auto rotate if reach to the end of images
+            if (current_slides_showed == SlidesCount)
+            { gallerySlider.stopAutoPlay(); }
+            if (gallery_click_count === 3) {
+                //alert("count is 3 will refresh Ads");
+                refresh_ads();
+                gallery_click_count = 0;
+            }
+        });
+        if (window.location.pathname.toLowerCase().indexOf('mobile') == -1)
+            MakePlacesForShowCase($('.rsThumbsContainer').children());
+    });
+</script>
+<script type="text/javascript">
+    function MakePlacesForShowCase(list) {
+        var ShowcasePlaces = "";
+        if (list.length <= 3) {
+            ShowcasePlaces = list.length - 1 + ",";
+        }
+        else {
+            for (var i = 0; i < list.length; i++) {
+                if ((i + 1) % 3 == 0 && i != 0) {
+                    ShowcasePlaces += i + ",";
+                    SlidesCount++;
+                }
+            }
+        }
+
+        if (ShowcasePlaces != null && ShowcasePlaces.length > 0) {
+            ShowcasePlaces = ShowcasePlaces.split(",");
+            for (var i = 0; i < ShowcasePlaces.length; i++) {
+                if (i == 0) {
+                    $('.royalSlider').royalSlider('appendSlide', $("#divShowcase").html(), Number(ShowcasePlaces[i]) + Number(1));
+                }
+                else if (ShowcasePlaces[i] != "") {
+                    $('.royalSlider').royalSlider('appendSlide', $("#divShowcase").html(), (Number(ShowcasePlaces[i]) + Number(i + 1)));
+
+                }
+            }
+
+            var GalleryThumbs = $('.royalSlider')[0].children[1].children[0].children;
+            $(GalleryThumbs).each(function () {
+                if ($(this)[0].childElementCount != 2) {
+                    //        $(this).hide();
+                    $(this).addClass("AdThumb");
+                }
+            });
+        }
+    }
+</script>
+ 
+ 
+</figure>
+<div id="content" itemprop="articleBody">
+<div class="articleBody">
+<p style="direction: rtl;"><strong style="color: #fb0317;">مصراوي- (القاهرة):</strong></p>
+<p style="direction: rtl;">احتفل رواد الإنترنت بوصول المنتخب المصري إلى المربع الذهبي لكأس الأمم الإفريقية 2017 بالجابون، بعد تخطي المنتخب المغربي بنتيجة (1-0)، مساء الأحد.</p>
+<p style="direction: rtl;">أنهى أحفاد الفراعنة عقدة دامت 31 عامًا بعدم الفوز على أسود الأطلس، بهد محمود عبدالمنعم كهربا في الوقت القاتل بالدقيقة 88 من عمر اللقاء.</p>
+<p style="direction: rtl;">وكان آخر فوز سابق للمنتخب المصري على نظيره المغربي، عندما فاز عليه بهدف أيضا بالمربع الذهبي لبطولة كأس إفريقيا 1986، التي استضافتها مصر.</p>
+<p style="direction: rtl;">ومن المقرر أن يواجه رجال المدير الفني هيكتور كوبر منتخب بوركينا فاسو يوم الأربعاء، في مباراة الدور قبل النهائي لـ"كان 2017".</p>
+<p style="direction: rtl;"><strong><a href="http://www.masrawy.com/sports/ACN-Gabon-2017/home-page#hpnav">تابع كل اخبار وكواليس كأس الأمم الإفريقية عبر صفحة مصراوي الخاصة بالبطولة... من هنا</a></strong></p>
+<p style="direction: rtl;"><a href="http://www.masrawy.com/slides/sports#hpnav"><strong>تابع كل أخبار وكواليس الأخبار الرياضية عبر صفحة الرياضة على موقع مصراوي من هنا</strong></a></p>
+</div>
+<div id="div_bodyFooter">
+</div>
+</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<div id="MainContent_PostDetailsCtrl_divkeyWords" class="keywordsDiv">
+<div class="keywordsTtl">
+<h3>
+<span>#</span>الكلمات المتعلقة</h3>
+</div>
+<meta itemprop="keywords" id="articleKeywords" content="مصر,المغرب,كأس الأمم الإفريقية,الجابون 2017,"/>
+<div class="kewywords" itemprop="keywords">
+<a class="keywordslinks" id="464" href="/sports/tag/464?keyword=%D9%85%D8%B5%D8%B1">
+مصر</a>
+<a class="keywordslinks" id="4959" href="/sports/tag/4959?keyword=%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8">
+المغرب</a>
+<a class="keywordslinks" id="182833" href="/sports/tag/182833?keyword=%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D8%A5%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A9">
+كأس الأمم الإفريقية</a>
+<a class="keywordslinks" id="392204" href="/sports/tag/392204?keyword=%D8%A7%D9%84%D8%AC%D8%A7%D8%A8%D9%88%D9%86-2017">
+الجابون 2017</a>
+</div>
+</div>
+ 
+ 
+<div id="MainContent_PostDetailsCtrl_VasDiv" class="artclfollowing">
+<p>لمتابعة أهم وأحدث الأخبار اشترك الآن في خدمة مصراوي للرسائل القصيرة للاشتراك</p>
+<a href="http://www.masrawy.com/News/details/2013/9/17/61644#vas" class="followBtn">إضغط هنا</a>
+</div>
+ 
+</section>
+ 
+<div id='div-gpt-ad-1455803640832-0' style='height: 2px; width: 2px;'>
+<script type='text/javascript'>
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1455803640832-0'); });
+    </script>
+</div>
+<div data-mc-widget data-lang="ar" data-mc-bg-color="white"></div>
+<div class="ArticleAdSliderDiv">
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.ArticleAdSlider').bxSlider({
+                mode: 'fade',
+                randomStart: true,
+                infiniteLoop: true,
+                captions: false,
+                pager: false,
+                controls: false
+            });
+        });
+    </script>
+<ul class="ArticleAdSlider">
+<li><a target="_blank" href="https://goo.gl/CesCfm">
+<img src="http://www.masrawy.com/files//Downloads/Picpacs615x60.jpg">
+</a></li>
+</ul>
+</div>
+<section class="newspointeriFrame">
+<div class="ttl">
+<h2>
+<a href="/news-pointer">الأكثر قراءة الآن</a></h2>
+<a class="moreLnk" data-hover="المزيد" href="/news-pointer"><span>المزيد</span></a>
+<div class="clear">
+</div>
+</div>
+<div class="newspointerDiv">
+<iframe src="http://www.masrawy.com/newspointer2015.htm?ver=1.2" width="613px" height="368px"></iframe>
+</div>
+</section>
+ 
+ 
+<div id="AdsDiv" class="pDtlsAdsDiv">
+<section class="pattern06 rghtRelated">
+<div class="ttl">
+<h2>أخبار متعلقة
+</h2>
+<div class="clear">
+</div>
+</div>
+<div class="pattern06Cnts">
+<div class='pattern06list'>
+<a class='' title='مكافأة استثنائية للفراعنة وتهديد للأندية وترك الفضائيات ضمن 5 قرارات لاتحاد الكرة ' href='/Sports/Sports_News/details/2017/2/15/1029054/%D9%85%D9%83%D8%A7%D9%81%D8%A3%D8%A9-%D8%A7%D8%B3%D8%AA%D8%AB%D9%86%D8%A7%D8%A6%D9%8A%D8%A9-%D9%84%D9%84%D9%81%D8%B1%D8%A7%D8%B9%D9%86%D8%A9-%D9%88%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D9%84%D9%84%D8%A3%D9%86%D8%AF%D9%8A%D8%A9-%D9%88%D8%AA%D8%B1%D9%83-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A7%D8%AA-%D8%B6%D9%85%D9%86-5-%D9%82%D8%B1%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D9%83%D8%B1%D8%A9-#NEWS-RELATED'>
+<img alt='مكافأة استثنائية للفراعنة وتهديد للأندية وترك الفضائيات ضمن 5 قرارات لاتحاد الكرة ' title='مكافأة استثنائية للفراعنة وتهديد للأندية وترك الفضائيات ضمن 5 قرارات لاتحاد الكرة ' src='http://media.linkonlineworld.com/img/Normal/2017/2/15/2017_2_15_18_1_33_269.jpg'/>
+<p>
+مكافأة استثنائية للفراعنة وتهديد للأندية وترك الفضائيات ضمن 5 قرارات لاتحاد الكرة
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a class='' title='بالفيديو.. ماذا تمنى عمرو أديب قبل زيارة ميسي المؤجلة؟' href='/Sports/Sports_News/details/2017/2/15/1028963/%D8%A8%D8%A7%D9%84%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D9%85%D9%86%D9%89-%D8%B9%D9%85%D8%B1%D9%88-%D8%A3%D8%AF%D9%8A%D8%A8-%D9%82%D8%A8%D9%84-%D8%B2%D9%8A%D8%A7%D8%B1%D8%A9-%D9%85%D9%8A%D8%B3%D9%8A-%D8%A7%D9%84%D9%85%D8%A4%D8%AC%D9%84%D8%A9-#NEWS-RELATED'>
+<img alt='بالفيديو.. ماذا تمنى عمرو أديب قبل زيارة ميسي المؤجلة؟' title='بالفيديو.. ماذا تمنى عمرو أديب قبل زيارة ميسي المؤجلة؟' src='http://media.linkonlineworld.com/img/Normal/2017/2/15/2017_2_15_15_38_39_801.JPG'/>
+<p>
+بالفيديو.. ماذا تمنى عمرو أديب قبل زيارة ميسي المؤجلة؟
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a class='' title='الشناوي: لا أخشى المباريات الكبيرة' href='/Sports/Sports_News/details/2017/2/14/1028149/%D8%A7%D9%84%D8%B4%D9%86%D8%A7%D9%88%D9%8A-%D9%84%D8%A7-%D8%A3%D8%AE%D8%B4%D9%89-%D8%A7%D9%84%D9%85%D8%A8%D8%A7%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%83%D8%A8%D9%8A%D8%B1%D8%A9#NEWS-RELATED'>
+<img alt='الشناوي: لا أخشى المباريات الكبيرة' title='الشناوي: لا أخشى المباريات الكبيرة' src='http://media.linkonlineworld.com/img/Normal/2016/5/27/2016_5_27_17_13_42_750.jpg'/>
+<p>
+الشناوي: لا أخشى المباريات الكبيرة
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a class='' title='الشناوي يخرج عن صمته ويرد على مدحت شلبي (فيديو)' href='/Sports/Sports_News/details/2017/2/13/1028076/%D8%A7%D9%84%D8%B4%D9%86%D8%A7%D9%88%D9%8A-%D9%8A%D8%AE%D8%B1%D8%AC-%D8%B9%D9%86-%D8%B5%D9%85%D8%AA%D9%87-%D9%88%D9%8A%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D9%85%D8%AF%D8%AD%D8%AA-%D8%B4%D9%84%D8%A8%D9%8A-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-#NEWS-RELATED'>
+<img alt='الشناوي يخرج عن صمته ويرد على مدحت شلبي (فيديو)' title='الشناوي يخرج عن صمته ويرد على مدحت شلبي (فيديو)' src='http://media.linkonlineworld.com/img/Normal/2017/1/19/2017_1_19_12_49_42_541.jpg'/>
+<p>
+الشناوي يخرج عن صمته ويرد على مدحت شلبي (فيديو)
+</p>
+</a>
+</div>
+</div>
+</section>
+ 
+<section class="pattern06 rghtLatest">
+<div class="ttl">
+<h2>
+اختيارات مصراوى</h2>
+<div class="clear">
+</div>
+</div>
+<div class="pattern06Cnts">
+<div class='pattern06list'>
+<a title='إحباط أعمال شغب بسجن مركز شرطة في الغربية' href='/News/News_Regions/details/2017/2/16/1029684/%D8%A5%D8%AD%D8%A8%D8%A7%D8%B7-%D8%A3%D8%B9%D9%85%D8%A7%D9%84-%D8%B4%D8%BA%D8%A8-%D8%A8%D8%B3%D8%AC%D9%86-%D9%85%D8%B1%D9%83%D8%B2-%D8%B4%D8%B1%D8%B7%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9#details-featuredNews'>
+<img title='إحباط أعمال شغب بسجن مركز شرطة في الغربية' alt='إحباط أعمال شغب بسجن مركز شرطة في الغربية' src='http://media.linkonlineworld.com/img/Normal/2017/2/16/2017_2_16_20_18_1_407.jpeg'/>
+<p class="imgDesc">
+إحباط أعمال شغب بسجن مركز شرطة في الغربية
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a title='شرباص: سوق السيارات لن يشعر بتأثير "الدولار الجمركي" قريبًا' href='/Autos/autos_news/details/2017/2/16/1029514/%D8%B4%D8%B1%D8%A8%D8%A7%D8%B5-%D8%B3%D9%88%D9%82-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B1%D8%A7%D8%AA-%D9%84%D9%86-%D9%8A%D8%B4%D8%B9%D8%B1-%D8%A8%D8%AA%D8%A3%D8%AB%D9%8A%D8%B1-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%A7%D9%84%D8%AC%D9%85%D8%B1%D9%83%D9%8A-%D9%82%D8%B1%D9%8A%D8%A8-%D8%A7#details-featuredNews'>
+<img title='شرباص: سوق السيارات لن يشعر بتأثير "الدولار الجمركي" قريبًا' alt='شرباص: سوق السيارات لن يشعر بتأثير "الدولار الجمركي" قريبًا' src='http://media.linkonlineworld.com/img/Normal/2017/2/16/2017_2_16_15_55_49_162.jpg'/>
+<p class="imgDesc">
+شرباص: سوق السيارات لن يشعر بتأثير "الدولار الجمركي" قريبًا
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a title='في أول أيامه.. وزير التعليم الجديد يوقف قرارًا للهلالي الشربيني' href='/News/News_Egypt/details/2017/2/16/1029715/%D9%81%D9%8A-%D8%A3%D9%88%D9%84-%D8%A3%D9%8A%D8%A7%D9%85%D9%87-%D9%88%D8%B2%D9%8A%D8%B1-%D8%A7%D9%84%D8%AA%D8%B9%D9%84%D9%8A%D9%85-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-%D9%8A%D9%88%D9%82%D9%81-%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7-%D9%84%D9%84%D9%87%D9%84%D8%A7%D9%84%D9%8A-%D8%A7%D9%84%D8%B4%D8%B1%D8%A8%D9%8A%D9%86%D9%8A#details-featuredNews'>
+<img title='في أول أيامه.. وزير التعليم الجديد يوقف قرارًا للهلالي الشربيني' alt='في أول أيامه.. وزير التعليم الجديد يوقف قرارًا للهلالي الشربيني' src='http://media.linkonlineworld.com/img/Normal/2017/2/16/2017_2_16_19_56_51_116.jpg'/>
+<p class="imgDesc">
+في أول أيامه.. وزير التعليم الجديد يوقف قرارًا للهلالي الشربيني
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a title='للمحجبات.. فساتين الشتاء هي الأنسب لك هذه الأيام' href='/Howa_w_Hya/Fashion-Moda/details/2017/2/16/1029594/%D9%84%D9%84%D9%85%D8%AD%D8%AC%D8%A8%D8%A7%D8%AA-%D9%81%D8%B3%D8%A7%D8%AA%D9%8A%D9%86-%D8%A7%D9%84%D8%B4%D8%AA%D8%A7%D8%A1-%D9%87%D9%8A-%D8%A7%D9%84%D8%A3%D9%86%D8%B3%D8%A8-%D9%84%D9%83-%D9%87%D8%B0%D9%87-%D8%A7%D9%84%D8%A3%D9%8A%D8%A7%D9%85#details-featuredNews'>
+<img title='للمحجبات.. فساتين الشتاء هي الأنسب لك هذه الأيام' alt='للمحجبات.. فساتين الشتاء هي الأنسب لك هذه الأيام' src='http://media.linkonlineworld.com/img/Normal/2017/2/16/2017_2_16_17_52_56_451.jpg'/>
+<p class="imgDesc">
+للمحجبات.. فساتين الشتاء هي الأنسب لك هذه الأيام
+</p>
+</a>
+</div>
+</div>
+</section>
+</div>
+ 
+<section id="MainContent_PostDetailsCtrl_divCommentEngine" class="fbComments">
+<div id="divCommentEngine">
+<div id="usercomment">
+<div style="display: block;" class="AddCom hide" id="divAddComment">
+<div class="CmntItmHdr">
+<div class="CE-head CE-com floatright">
+اضف تعليق
+</div>
+</div>
+<p>موقع مصراوي غير مسئول عن محتوى التعليقات ونرجو الالتزام باللياقة في التعبير </p>
+<div class="fb-comments" data-href="http://developers.facebook.com/docs/plugins/comments/" data-width="100%" data-numposts="5" data-colorscheme="light">
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.fb-comments').attr("data-href", location.href.toLowerCase().replace('/mobile/', '/'));
+        if ($('.fb-comments-count').length > 0)
+            $('.fb-comments-count').attr("data-href", location.href.toLowerCase().replace('/mobile/', '/'));
+    });
+
+</script>
+</div>
+</div>
+</div>
+</section>
+</div>
+<input name="ctl00$MainContent$PostDetailsCtrl$hdn_nextPost" type="hidden" id="MainContent_PostDetailsCtrl_hdn_nextPost"/>
+<script type="text/javascript">
+    var curPage = '';
+    var hashTag = '';
+    var postBody = '';
+    var hdn_nextPost = '#MainContent_PostDetailsCtrl_hdn_nextPost';
+    //var curUrl = window.location.href.toLowerCase();
+    var curUrl = window.location.origin.toLowerCase() + window.location.pathname.toLowerCase();
+    var divPostSeries = '#MainContent_PostDetailsCtrl_divPostSeries';
+    var hdTotalPagesVal = $('#MainContent_PostDetailsCtrl_hdTotalPages').val();
+    var sperator = "<div class='articlePagesSeparator'></div>";
+    var rootCategoryName = "sports";
+    var allow_body_keyword_links = "True";
+    var body_keyword_links_class_name = "kwhd";
+    var body_keyword_links_link_templete = "http://www.masrawy.com/{rootcategory}/Tag-search/{keywordid}/{keywordname}#bodykeywords";
+
+    function changeKeywords() {
+        if (allow_body_keyword_links === "True") {
+            var anchorlist = [];
+            $('.articleBody').find('a').each(function () {
+                anchorlist.push($(this).html());
+                $(this).html("");
+            })
+            var bodystring = $('.articleBody').html();
+            $('.kewywords a').each(function (index) {
+                var re = new RegExp(' ' + $(this).html().trim() + ' ', 'g');
+                bodystring = bodystring.replace(re, '<a class="' + body_keyword_links_class_name + '" href="' + body_keyword_links_link_templete.replace("{keywordid}", $(this).attr('id')).replace("{rootcategory}", rootCategoryName).replace("{keywordname}", $(this).html().trim().split(" ").join("-")) + '"> ' + $(this).html().trim() + ' </a>');
+            });
+            $('.articleBody').html(bodystring);
+            $('.articleBody').find("a[class!='kwhd']").each(function (index) {
+                $(this).html(anchorlist[index]);
+            })
+        }
+    }
+    if (window.location.toString().indexOf('instantarticle') === -1)
+    { changeKeywords(); }
+    $(document).ready(function () {
+        //hanlde read more hashtags
+        $('#div_bodyFooter a').each(function (index) {
+            $(this).attr('href', $(this).attr('href') + '#readmore');
+        });
+        if ($(divPostSeries).is(':visible')) {
+            GetNextPageLink();
+            CreatePaging();
+
+            if (curPage > 6)
+                $('.First6').hide();
+            else
+                $('.Second6').hide();
+            $('#aPagingMore').live('click', function () {
+
+                if ($('.First6').is(':visible')) {
+                    $('.First6').hide();
+                    $('.Second6').show();
+                }
+                else {
+                    $('.First6').show();
+                    $('.Second6').hide();
+                }
+            });
+        }
+        else {
+            $('.nextBtn').remove();
+        }
+    });
+    //get query string parameter by name
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+        var regexS = "[\\?&]" + name + "=([^&#]*)";
+        var regex = new RegExp(regexS);
+        var results = regex.exec(window.location.href);
+        if (results == null)
+            return "";
+        else
+            return decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    function CreatePaging() {
+
+        if (getParameterByName("page") != "") {
+            curPage = parseInt(getParameterByName("page"));
+            if (isNaN(curPage)) {
+                curPage = 1;
+            }
+        }
+        else {
+            curPage = 1;
+        }
+        // curUrl = window.location.origin + window.location.pathname;
+
+        var postPages = postBody.split(sperator);
+
+        if (postPages.length > 0 && parseInt(hdTotalPagesVal) > 0) {
+
+            for (var i = 0; i < postPages.length; i++) {
+
+                if (i == 6) {
+                    $('#divPaging').append('<a id="aPagingMore" class="more">....</a>');
+                }
+
+                var curTitle = postPages[i].split('</h3>')[0].replace('<h3>', '');
+
+                if (curTitle == '"') {
+                    curTitle = 'بالصور.. سخرية رواد الإنترنت من "العقدة المغربية والشيخة خديجة"';
+                }
+
+                var CurPaging = '';
+                if (i < 6) {
+                    if (curPage == (i + 1)) {
+                        //add one wiiz class selected 
+                        CurPaging = '<div class="tooltipDiv selected First6"><a class="selected" href="' + curUrl + '?page=' + (i + 1) + '" >'
+                                    + (i + 1) + '</a><div class="title">' + curTitle + '</div>';
+                    }
+                    else
+                        CurPaging = '<div class="tooltipDiv First6"><a href="' + curUrl + '?page=' + (i + 1) + '" >'
+                                    + (i + 1) + '</a><div class="title">' + curTitle + '</div>';
+                }
+
+                else {
+                    if (curPage == (i + 1)) {
+                        //add one wiiz class selected 
+                        CurPaging = '<div class="tooltipDiv selected Second6"><a class="selected" href="' + curUrl + '?page=' + (i + 1) + '" >'
+                                                        + (i + 1) + '</a><div class="title">' + curTitle + '</div>';
+                    }
+                    else
+                        CurPaging = '<div class="tooltipDiv Second6"><a href="' + curUrl + '?page=' + (i + 1) + '" >'
+                                                        + (i + 1) + '</a><div class="title">' + curTitle + '</div>';
+                }
+                $('#divPaging').append(CurPaging);
+            }
+        }
+    }
+
+    function GetNextPageLink() {
+
+        var totlapages = parseInt(hdTotalPagesVal);
+
+        if (getParameterByName("page") != "") {
+            curPage = parseInt(getParameterByName("page"));
+            if (isNaN(curPage)) {
+                curPage = 1;
+            }
+
+            if (curPage > totlapages || curPage == 1) { // first page as it has wronge page index
+                //$('.prevBtn').hide();
+                $('.nextBtn').attr("href", curUrl + "?page=2");
+            }
+            else if (curPage == totlapages) {//Current is last page
+                try {
+                    var arr_NextPost = $(hdn_nextPost).val().split("~");
+                    if (arr_NextPost) {
+                        if (arr_NextPost.length > 0) {
+                            if (arr_NextPost[0] > 0) {
+                                $('.nextBtn').html("الخبر التالى").attr("title", arr_NextPost[1]).attr("href", arr_NextPost[2] + "#pagenextnews");
+                            }
+                            else { $('.nextBtn').hide(); }
+                        }
+                        else { $('.nextBtn').hide(); }
+                    }
+                    else { $('.nextBtn').hide(); }
+                } catch (e) {
+                    $('.nextBtn').hide();
+                }
+            }
+            else { // normal case 
+                //$('.prevBtn').attr("href", curUrl + "?page=" + parseInt(curPage - 1) + hashTag);
+                $('.nextBtn').attr("href", curUrl + "?page=" + parseInt(curPage + 1));
+            }
+        }
+        else {
+            //$('.prevBtn').hide();
+            $('.nextBtn').attr("href", curUrl + "?page=2");
+        }
+    }
+</script>
+<script>
+    function printWindow() {
+        window.print();
+    }
+
+</script>
+</article>
+ 
+ 
+<aside role="complementary">
+<div class="showcaseDiv">
+<p class="adTtl">
+اعلان
+</p>
+<div id="" class="showcase">
+ 
+<div id='div-gpt-ad-1484040853874-1'>
+<script>
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1484040853874-1'); });
+    </script>
+</div>
+</div>
+</div>
+<div class="OfferSliderDiv">
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.OfferSlider').bxSlider({
+                mode: 'fade',
+                randomStart: true,
+                infiniteLoop: true,
+                captions: false,
+                pager: false,
+                controls: false
+            });
+        });
+    </script>
+<ul class="OfferSlider  Test">
+<li>
+<a title='مؤسسة مصر الخير' href='http://goo.gl/oFujZh' target='_blank'>
+<img alt='مؤسسة مصر الخير' title='مؤسسة مصر الخير' src='http://www.masrawy.com/files//Downloads/Misr-Al-Kheir%5b1%5d.jpg'/>
+</a>
+</li>
+</ul>
+</div>
+<section id="usermobile">
+<h2 id="MainMessage">خدمة الرسائل
+الأخبارية<br/>
+<span>تابع الخبر لحظة بلحظة على تليفونك</span>
+</h2>
+<div class="topTrngl">
+<h3>إسبوع
+<br/>
+ببلاش</h3>
+</div>
+<div id="arpuframe">
+<iframe scrolling="no" frameborder="0" height="60px" width="270px" src="http://mobilebox.eg.mobizone.mobi/mobilebox/Linkonline.aspx?s=2&l=ar"></iframe>
+</div>
+<div class="prices">
+<div class="vod-mob">
+30 قرش كل يوم من موبينيل و فودافون واتصالات
+</div>
+</div>
+</section>
+<section class="mostReadImgs">
+<div class="ttl">
+<h2>
+الأكثر قراءة فى
+رياضة</h2>
+</div>
+<div id="TopViewed">
+<div class='newsDiv1'>
+<a href='/Sports/Sports_News/details/2017/2/16/1029755/-%D8%A3%D9%86%D9%88%D8%B1-%D8%B3%D9%84%D8%A7%D9%85%D8%A9-%D8%A3%D8%A8%D9%88%D8%AA%D8%B1%D9%8A%D9%83%D8%A9-%D8%AF%D8%AE%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-%D8%AD%D8%B3%D9%86-#SPORTS-MOSTREAD-details' class="newsTtl">
+<img alt=' أنور سلامة: أبوتريكة دخل المستشفى بسبب إبراهيم حسن ' title=' أنور سلامة: أبوتريكة دخل المستشفى بسبب إبراهيم حسن ' src='http://media.linkonlineworld.com/img/Normal/2017/2/16/2017_2_16_22_51_5_420.jpg'/>
+<p>
+أنور سلامة: أبوتريكة دخل المستشفى بسبب إبراهيم حسن </p>
+</a><a href='/Sports/Sports_News/details/2017/2/16/1029755/-%D8%A3%D9%86%D9%88%D8%B1-%D8%B3%D9%84%D8%A7%D9%85%D8%A9-%D8%A3%D8%A8%D9%88%D8%AA%D8%B1%D9%8A%D9%83%D8%A9-%D8%AF%D8%AE%D9%84-%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%B4%D9%81%D9%89-%D8%A8%D8%B3%D8%A8%D8%A8-%D8%A5%D8%A8%D8%B1%D8%A7%D9%87%D9%8A%D9%85-%D8%AD%D8%B3%D9%86-#SPORTS-MOSTREAD-details' class="more">إقرأ المزيد</a>
+<span class="newsNum">
+12,025</span>
+</div>
+<div class='newsDiv'>
+<a href='/Sports/Sports_News/details/2017/2/16/1029384/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D9%87%D8%AC%D9%88%D9%85-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B9%D8%AC%D9%8A%D8%B2%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%B3%D8%AE%D8%B1%D9%8A%D8%AA%D9%87-%D9%85%D9%86-%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83#SPORTS-MOSTREAD-details' class="newsTtl">
+<img alt='بالصور- هجوم على العجيزي بعد سخريته من الزمالك' title='بالصور- هجوم على العجيزي بعد سخريته من الزمالك' src='http://media.linkonlineworld.com/img/Normal/2017/2/16/2017_2_16_13_18_54_687.jpg'/>
+<p>
+بالصور- هجوم على العجيزي بعد سخريته من الزمالك</p>
+</a><a href='/Sports/Sports_News/details/2017/2/16/1029384/%D8%A8%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D9%87%D8%AC%D9%88%D9%85-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%B9%D8%AC%D9%8A%D8%B2%D9%8A-%D8%A8%D8%B9%D8%AF-%D8%B3%D8%AE%D8%B1%D9%8A%D8%AA%D9%87-%D9%85%D9%86-%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83#SPORTS-MOSTREAD-details' class="more">إقرأ المزيد</a>
+<span class="newsNum">
+6,434</span>
+</div>
+<div class='newsDiv'>
+<a href='/Sports/Sports_News/details/2017/2/16/1029358/5-%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%AA%D8%AD%D9%84%D9%8A%D9%84-#SPORTS-MOSTREAD-details' class="newsTtl">
+<img alt='5 أسباب لخسارة الزمالك أمام الإنتاج (تحليل)' title='5 أسباب لخسارة الزمالك أمام الإنتاج (تحليل)' src='http://media.linkonlineworld.com/img/Normal/2017/2/15/2017_2_15_23_30_4_551.jpg'/>
+<p>
+5 أسباب لخسارة الزمالك أمام الإنتاج (تحليل)</p>
+</a><a href='/Sports/Sports_News/details/2017/2/16/1029358/5-%D8%A3%D8%B3%D8%A8%D8%A7%D8%A8-%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%B2%D9%85%D8%A7%D9%84%D9%83-%D8%A3%D9%85%D8%A7%D9%85-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%A7%D8%AC-%D8%AA%D8%AD%D9%84%D9%8A%D9%84-#SPORTS-MOSTREAD-details' class="more">إقرأ المزيد</a>
+<span class="newsNum">
+2,574</span>
+</div>
+<div class='newsDiv'>
+<a href='/Sports/Sports_News/details/2017/2/16/1029311/%D8%A3%D8%B2%D9%85%D8%A9-%D9%85%D9%86%D8%AA%D8%AE%D8%A8-%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D8%A8-%D9%88%D8%A7%D8%AF%D9%8A-%D8%AF%D8%AC%D9%84%D8%A9-%D9%8A%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D9%83%D8%B1%D8%A9#SPORTS-MOSTREAD-details' class="newsTtl">
+<img alt='أزمة منتخب الشباب.. وادي دجلة يرد على تهديد اتحاد الكرة' title='أزمة منتخب الشباب.. وادي دجلة يرد على تهديد اتحاد الكرة' src='http://media.linkonlineworld.com/img/Normal/2017/2/16/2017_2_16_11_50_52_914.jpg'/>
+<p>
+أزمة منتخب الشباب.. وادي دجلة يرد على تهديد اتحاد الكرة</p>
+</a><a href='/Sports/Sports_News/details/2017/2/16/1029311/%D8%A3%D8%B2%D9%85%D8%A9-%D9%85%D9%86%D8%AA%D8%AE%D8%A8-%D8%A7%D9%84%D8%B4%D8%A8%D8%A7%D8%A8-%D9%88%D8%A7%D8%AF%D9%8A-%D8%AF%D8%AC%D9%84%D8%A9-%D9%8A%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D8%AA%D9%87%D8%AF%D9%8A%D8%AF-%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D9%83%D8%B1%D8%A9#SPORTS-MOSTREAD-details' class="more">إقرأ المزيد</a>
+<span class="newsNum">
+2,194</span>
+</div>
+</div>
+</section>
+<div class="showcase">
+ 
+<div class="showcaseDiv">
+<p class="adTtl">
+اعلان
+</p>
+<div id="" class="showcase">
+ 
+<div id='div-gpt-ad-1484040853874-2' style='height: 250px; width: 300px;'>
+<script>
+                googletag.cmd.push(function () { googletag.display('div-gpt-ad-1484040853874-2'); });
+            </script>
+</div>
+</div>
+</div>
+</div>
+ 
+<div class="mobBody">
+<iframe style="width:300px ; height:468px;padding-bottom:20px;border:none" src="http://www.masrawy.com/Version2015/Pages/E3lanatControl.aspx"></iframe>
+</div>
+ 
+<section class="pattern06 rghtLatest">
+<div class="ttl">
+<h2>
+أحدث الموضوعات</h2>
+<div class="clear">
+</div>
+</div>
+<div class="pattern06Cnts">
+<div class='pattern06list'>
+<a class='' title='الهواري يشبه كوبر بـ"طالب الثانوية".. ويكشف كواليس جديدة في الجابون' href='/Sports/ACN-Gabon-2017-news/details/2017/2/7/1024872/%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%B1%D9%8A-%D9%8A%D8%B4%D8%A8%D9%87-%D9%83%D9%88%D8%A8%D8%B1-%D8%A8%D9%80-%D8%B7%D8%A7%D9%84%D8%A8-%D8%A7%D9%84%D8%AB%D8%A7%D9%86%D9%88%D9%8A%D8%A9-%D9%88%D9%8A%D9%83%D8%B4%D9%81-%D9%83%D9%88%D8%A7%D9%84%D9%8A%D8%B3-%D8%AC%D8%AF%D9%8A%D8%AF%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AC%D8%A7%D8%A8%D9%88%D9%86#SPORTS-LATEST-details'>
+<img alt='الهواري يشبه كوبر بـ"طالب الثانوية".. ويكشف كواليس جديدة في الجابون' title='الهواري يشبه كوبر بـ"طالب الثانوية".. ويكشف كواليس جديدة في الجابون' src='http://media.linkonlineworld.com/img/Normal/2017/2/7/2017_2_7_12_19_21_494.jpg'/>
+<p>
+الهواري يشبه كوبر بـ"طالب الثانوية".. ويكشف كواليس جديدة في الجابون
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a class='' title='مصراوى يكشف حقيقة سحب كأس الأمم من الكاميرون بسبب مخالفة اللوائح' href='/Sports/ACN-Gabon-2017-news/details/2017/2/7/1024743/%D9%85%D8%B5%D8%B1%D8%A7%D9%88%D9%89-%D9%8A%D9%83%D8%B4%D9%81-%D8%AD%D9%82%D9%8A%D9%82%D8%A9-%D8%B3%D8%AD%D8%A8-%D9%83%D8%A3%D8%B3-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D9%85%D9%86-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D9%88%D9%86-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%85%D8%AE%D8%A7%D9%84%D9%81%D8%A9-%D8%A7%D9%84%D9%84%D9%88%D8%A7%D8%A6%D8%AD#SPORTS-LATEST-details'>
+<img alt='مصراوى يكشف حقيقة سحب كأس الأمم من الكاميرون بسبب مخالفة اللوائح' title='مصراوى يكشف حقيقة سحب كأس الأمم من الكاميرون بسبب مخالفة اللوائح' src='http://media.linkonlineworld.com/img/Normal/2017/2/6/2017_2_6_13_0_9_18.jpg'/>
+<p>
+مصراوى يكشف حقيقة سحب كأس الأمم من الكاميرون بسبب مخالفة اللوائح
+</p>
+</a>
+</div>
+<div class=' nativeAdContainer2'>
+ 
+<div id='div-gpt-ad-721577296309755359-5'>
+<script type='text/javascript'>
+            googletag.display('div-gpt-ad-721577296309755359-5');
+        </script>
+</div>
+ 
+</div>
+<div class='pattern06list'>
+<a class='' title='خلاف بين فتحي وحجازى على الهواء بسبب هدف الكاميرون الأول فى نهائى افريقيا (فيديو)' href='/Sports/ACN-Gabon-2017-news/details/2017/2/6/1024725/%D8%AE%D9%84%D8%A7%D9%81-%D8%A8%D9%8A%D9%86-%D9%81%D8%AA%D8%AD%D9%8A-%D9%88%D8%AD%D8%AC%D8%A7%D8%B2%D9%89-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D9%87%D9%88%D8%A7%D8%A1-%D8%A8%D8%B3%D8%A8%D8%A8-%D9%87%D8%AF%D9%81-%D8%A7%D9%84%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D9%88%D9%86-%D8%A7%D9%84%D8%A3%D9%88%D9%84-%D9%81%D9%89-%D9%86%D9%87%D8%A7%D8%A6%D9%89-%D8%A7%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A7-%D9%81%D9%8A%D8%AF%D9%8A%D9%88-#SPORTS-LATEST-details'>
+<img alt='خلاف بين فتحي وحجازى على الهواء بسبب هدف الكاميرون الأول فى نهائى افريقيا (فيديو)' title='خلاف بين فتحي وحجازى على الهواء بسبب هدف الكاميرون الأول فى نهائى افريقيا (فيديو)' src='http://media.linkonlineworld.com/img/Normal/2017/2/6/2017_2_6_23_12_5_610.jpg'/>
+<p>
+خلاف بين فتحي وحجازى على الهواء بسبب هدف الكاميرون الأول فى نهائى افريقيا (فيديو)
+</p>
+</a>
+</div>
+<div class='pattern06list'>
+<a class='' title='مخرج يرد على محمود فايز بفيديو تحفيزي للمنتخب بعد خسارة نهائى افريقيا' href='/Sports/ACN-Gabon-2017-news/details/2017/2/6/1024716/%D9%85%D8%AE%D8%B1%D8%AC-%D9%8A%D8%B1%D8%AF-%D8%B9%D9%84%D9%89-%D9%85%D8%AD%D9%85%D9%88%D8%AF-%D9%81%D8%A7%D9%8A%D8%B2-%D8%A8%D9%81%D9%8A%D8%AF%D9%8A%D9%88-%D8%AA%D8%AD%D9%81%D9%8A%D8%B2%D9%8A-%D9%84%D9%84%D9%85%D9%86%D8%AA%D8%AE%D8%A8-%D8%A8%D8%B9%D8%AF-%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D9%86%D9%87%D8%A7%D8%A6%D9%89-%D8%A7%D9%81%D8%B1%D9%8A%D9%82%D9%8A%D8%A7#SPORTS-LATEST-details'>
+<img alt='مخرج يرد على محمود فايز بفيديو تحفيزي للمنتخب بعد خسارة نهائى افريقيا' title='مخرج يرد على محمود فايز بفيديو تحفيزي للمنتخب بعد خسارة نهائى افريقيا' src='http://media.linkonlineworld.com/img/Normal/2017/1/16/2017_1_16_16_54_31_943.jpg'/>
+<p>
+مخرج يرد على محمود فايز بفيديو تحفيزي للمنتخب بعد خسارة نهائى افريقيا
+</p>
+</a>
+</div>
+</div>
+</section>
+<section class="socialMediaBar">
+<h2>
+تابع مصراوي الرياضى</h2>
+<div class="followLnks">
+<a class="icon-fb" href='https://www.facebook.com/SportsMasrawy?fref=ts' target="_blank"></a>
+</div>
+<div class="clear">
+</div>
+</section>
+ 
+<section class="pattern08">
+<script type="text/javascript">
+        $(document).ready(function () {
+            $('.pattern08Slider').show().bxSlider({
+                slideWidth: 300,
+                minSlides: 1,
+                maxSlides: 1,
+                moveSlides: 1,
+                slideMargin: 20,
+                pager: false
+            });
+        });</script>
+<div class="ttl">
+<h2>
+<a href='/Sports/Sports-Videos/section/468/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9' title='فيديوهات رياضية'>
+فيديوهات رياضية</a>
+</h2>
+<a class="moreLnk" href='/Sports/Sports-Videos/section/468/%D9%81%D9%8A%D8%AF%D9%8A%D9%88%D9%87%D8%A7%D8%AA-%D8%B1%D9%8A%D8%A7%D8%B6%D9%8A%D8%A9' data-hover="المزيد" title='فيديوهات رياضية'><span>المزيد</span></a>
+<div class="clear">
+</div>
+</div>
+<div class="pattern08Content">
+<div class="pattern08Slider" style="display: none">
+<div class="pattern08Div slide">
+<a class="icon-playIcon" href='/Sports/Sports-Videos/details/2017/2/17/1029776/%D9%85%D9%84%D8%AE%D8%B5-%D9%84%D9%85%D8%B3%D8%A7%D8%AA-%D8%B5%D9%84%D8%A7%D8%AD-%D8%A3%D9%85%D8%A7%D9%85-%D9%81%D9%8A%D8%A7%D8%B1%D9%8A%D8%A7%D9%84#MASRWAY-MostSeen'>
+<img alt='ملخص لمسات صلاح أمام فياريال' title='ملخص لمسات صلاح أمام فياريال' src='http://media.linkonlineworld.com/img/Wide/2017/2/17/2017_2_17_0_32_56_824.JPG'/>
+<p>
+ملخص لمسات صلاح أمام فياريال
+</p>
+</a>
+</div>
+<div class="pattern08Div slide">
+<a class="icon-playIcon" href='/Sports/Sports-Videos/details/2017/2/15/1029211/%D8%A3%D9%87%D8%AF%D8%A7%D9%81-%D8%A8%D8%A7%D9%8A%D8%B1%D9%86-%D9%85%D9%8A%D9%88%D9%86%D9%8A%D8%AE-5-%D8%A3%D8%B1%D8%B3%D9%86%D8%A7%D9%84-1-%D8%A8%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D8%A8%D8%B7%D8%A7%D9%84#MASRWAY-MostSeen'>
+<img alt='أهداف (بايرن ميونيخ 5 - أرسنال 1) بدوري الأبطال' title='أهداف (بايرن ميونيخ 5 - أرسنال 1) بدوري الأبطال' src='http://media.linkonlineworld.com/img/Wide/2017/2/15/2017_2_15_23_50_35_904.jpg'/>
+<p>
+أهداف (بايرن ميونيخ 5 - أرسنال 1) بدوري الأبطال
+</p>
+</a>
+</div>
+<div class="pattern08Div slide">
+<a class="icon-playIcon" href='/Sports/Sports-Videos/details/2017/2/15/1029212/%D8%A3%D9%87%D8%AF%D8%A7%D9%81-%D9%85%D8%A8%D8%A7%D8%B1%D8%A7%D8%A9-%D8%B1%D9%8A%D8%A7%D9%84-%D9%85%D8%AF%D8%B1%D9%8A%D8%AF-3-%D9%86%D8%A7%D8%A8%D9%88%D9%84%D9%8A-1-%D8%A8%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D8%A8%D8%B7%D8%A7%D9%84#MASRWAY-MostSeen'>
+<img alt='أهداف مباراة (ريال مدريد 3 - نابولي 1) بدوري الأبطال' title='أهداف مباراة (ريال مدريد 3 - نابولي 1) بدوري الأبطال' src='http://media.linkonlineworld.com/img/Wide/2017/2/15/2017_2_15_23_52_37_434.jpg'/>
+<p>
+أهداف مباراة (ريال مدريد 3 - نابولي 1) بدوري الأبطال
+</p>
+</a>
+</div>
+<div class="pattern08Div slide">
+<a class="icon-playIcon" href='/Sports/Sports-Videos/details/2017/2/17/1029788/%D9%85%D9%84%D8%AE%D8%B5-%D9%84%D9%85%D8%B3%D8%A7%D8%AA-%D8%B9%D9%85%D8%B1%D9%88-%D9%88%D8%B1%D8%AF%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%B4%D8%A7%D9%84%D9%83%D9%87-#MASRWAY-MostSeen'>
+<img alt='ملخص لمسات عمرو وردة أمام شالكه ' title='ملخص لمسات عمرو وردة أمام شالكه ' src='http://media.linkonlineworld.com/img/Wide/2017/2/17/2017_2_17_1_32_1_586.jpg'/>
+<p>
+ملخص لمسات عمرو وردة أمام شالكه
+</p>
+</a>
+</div>
+</div>
+</div>
+</section>
+<iframe style="margin-bottom:20px" src='http://www.akhbarak.net/widgetgen_new/sources/2/height/465/width/305/article_clr/000000/article_bck/fcfcfc/src_clr/BA0800/date_clr/666666/footer_bck/eeeeee' frameborder='0' scrolling='no' width='300' height='465'></iframe>
+ 
+</aside>
+ 
+</div>
+</section>
+ 
+<script type="text/javascript" src="http://www.masrawy.com/Version2015/Js/jquery.bxslider.min.js"></script>
+ 
+<div id='div-gpt-ad-1484040853874-0' style='height: 1px; width: 1px;'>
+<script>
+        googletag.cmd.push(function () { googletag.display('div-gpt-ad-1484040853874-0'); });
+    </script>
+</div>
+<script type="text/javascript" language="javascript">
+        $(document).ready(function () {
+            // check if post not updated views
+            var url = $(".artclfollowing").find("a").attr("href");
+            if (url && $($('a[href^="' + url + '"]')).length > 1) {
+                var element = $('a[href^="' + url + '"]').get(0);
+                $(element).parent().find("p").hide();
+                $(element).parent().hide();
+            }
+            var updatedViews = 'false';
+            var PostID = '1020914';
+            var cookieName = "postview_" + PostID;
+            var PostsViewCookie = CMS.getCookie(cookieName);
+            if (PostsViewCookie == undefined) {
+                if (updatedViews == 'false') {
+                    CMS.setCookie(cookieName, PostID, 1, "", "", "");
+                    CMS.ajax.doCallbackHtml('__Page', "addPostView", getAjaxRes);
+                }
+            }
+        });
+        function getAjaxRes(data) {
+            //alert(data);
+        }
+        function getAjaxResError() {
+            //alert("error:" + data);
+        }
+    </script>
+</div>
+ 
+<div class="wrappFooter">
+<div class="fixedWrapp">
+<div class="rightTxt">
+<div class="mobileReg">
+<p>
+إشترك في خدمة الرسائل الإخبارية</p>
+<iframe width="290px" scrolling="no" height="65px" frameborder="0" src="http://mobilebox.eg.mobizone.mobi/mobilebox/Linkonline.aspx?s=2&amp;l=ar">
+</iframe>
+<div class="clear">
+</div>
+</div>
+<div class="footerNav">
+<ul class="navSec">
+<li class="sec"><a class="title" href='http://www.masrawy.com/slides/news#hpfooter'>
+أخبار</a>
+<ul class="subNavSec">
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Egypt/section/35#hpfooter'>
+مصر</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_PublicAffairs/section/202/#hpfooter'>
+عرب وعالم</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Press/section/209/#hpfooter'>
+صحافة</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Economy/section/206/#hpfooter'>
+إقتصاد</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Cases/section/205/#hpfooter'>
+حوادث وقضايا</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Regions/section/204/#hpfooter'>
+محافظات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/slides/videos#hpfooter'>
+فيديوهات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Reports/section/207/#hpfooter'>
+تقارير وتحقيقات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Essays/section/211/#hpfooter'>
+مقالات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Various/section/208/#hpfooter'>
+منوعات</a></li>
+<li class="subNav"><a class="cat" href='http://weladelbalad.masrawy.com/#hpfooter'>
+ولاد البلد</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/News_Tech/section/382/#hpfooter'>
+علوم وتكنولوجيا</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/News/news-ayamzaman/section/586/#hpfooter'>
+أخبار زمان</a></li>
+</ul>
+</li>
+</ul>
+<ul class="navSec">
+<li class="sec"><a class="title" href='http://www.masrawy.com/slides/sports#hpfooter'>
+رياضة</a>
+<ul class="subNavSec">
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Sports/Sports_News/section/577/#hpfooter'>
+أخبار محلية</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Sports/Sports-arab-international/section/579/#hpfooter'>
+أخبار عربية وعالمية</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Sports/Sports-others/section/578/#hpfooter'>
+رياضات أخرى</a></li>
+<li class="subNav"><a class="cat" href='http://beta.masrawy.com/Sports/Articles/section2/227/#hpfooter'>
+آراء حرة</a></li>
+<li class="subNav"><a class="cat" href='http://beta.masrawy.com/sports/matchestimes#hpfooter'>
+مواعيد ونتائج</a></li>
+<li class="subNav"><a class="cat" href='http://beta.masrawy.com/sports/sports_galleries/Section/467/#hpfooter'>
+البوم الصور</a></li>
+<li class="subNav"><a class="cat" href='http://beta.masrawy.com/Sports/Sports_Videos/Section/468/#hpfooter'>
+فيديوهات رياضية</a></li>
+</ul>
+</li>
+</ul>
+<ul class="navSec">
+<li class="sec"><a class="title" href='http://www.masrawy.com/slides/Howa_w_Hya#hpfooter'>
+هو وهي</a>
+<ul class="subNavSec">
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Howa_w_Hya/Fashion-Beauty/section/218#hpfooter'>
+الموضة والجمال</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Howa_w_Hya/Relationship/section/223/#hpfooter'>
+علاقات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Howa_w_Hya/Cooking/section/221#hpfooter'>
+مطبخ مصراوي</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Howa_w_Hya/Health/section/219/#hpfooter'>
+نصائح طبيه</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Howa_w_Hya/Pregnancy/section/222/#hpfooter'>
+الحمل والامومة</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Howa_w_Hya/Grooming/section/402/#hpfooter'>
+الرجل</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Howa_w_Hya/Travel/section/603#hpfooter'>
+سفر وسياحة</a></li>
+</ul>
+</li>
+</ul>
+<ul class="navSec">
+<li class="sec"><a class="title" href='http://www.masrawy.com/slides/arts#hpfooter'>
+فنون وترفيه</a>
+<ul class="subNavSec">
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/arts/music/section/255/#hpfooter'>
+موسيقى</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/arts/tv-theater/section/235/#hpfooter'>
+مسرح وتليفزيون</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/arts/cinema/section/254/#hpfooter'>
+سينما</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Arts/zoom/section/582/#hpfooter'>
+زووم</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Arts/Agnaby/section/583/#hpfooter'>
+أجنبي</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Arts/Arts-Videos/section/122/#hpfooter'>
+فيديوهات فنية</a></li>
+</ul>
+</li>
+</ul>
+<ul class="navSec">
+<li class="sec"><a class="title" href='http://www.masrawy.com/slides/autos#hpfooter'>
+سيارات</a>
+<ul class="subNavSec">
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Autos/autos_news/section/375/#hpfooter'>
+أخبار</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Autos/Galleries/section/378/#hpfooter'>
+ألبوم صور</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Autos/Autos-Videos/section/379/#hpfooter'>
+فيديوهات سيارات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Autos/Races/section/376/#hpfooter'>
+سباقات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Autos/tips/section/598/#hpfooter'>
+نصائح</a></li>
+</ul>
+</li>
+</ul>
+<ul class="navSec">
+<li class="sec"><a class="title" href='http://www.masrawy.com/slides/islameyat#hpfooter'>
+إسلاميات</a>
+<ul class="subNavSec">
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/Zakah#hpfooter'>
+حساب الزكاة</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/Fatawa/section/61/#hpfooter'>
+فتاوى</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/makalat/section/50/#hpfooter'>
+مقالات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/Sera/section/51/#hpfooter'>
+السيرة النبوية</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/Quran/section/56/#hpfooter'>
+القرآن الكريم</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/Others/section/445/#hpfooter'>
+أخرى</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/kesas/section/446/#hpfooter'>
+قصص وعبر</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/Islameyat/Islameyat-Videos/section/215/#hpfooter'>
+فيديوهات اسلامية</a></li>
+</ul>
+</li>
+</ul>
+<ul class="navSec">
+<li class="sec"><a class="title" href='#hpfooter'>
+خدمات</a>
+<ul class="subNavSec">
+<li class="subNav"><a class="cat" href='http://mobawaba.masrawy.com/egypt/ar?ref=HPNav#hpfooter'>
+مبوبة</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/bulksms/introar.aspx?ref=NewHPNav#hpfooter'>
+Bulk SMS</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/masrawylines/#hpfooter'>
+مصراوي Lines</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/vas/masr.aspx?ref=NewHPNav#hpfooter'>
+SMS الإخبارية</a></li>
+<li class="subNav"><a class="cat" href='http://masrawy.otlob.com/ar#hpfooter'>
+ديليفري مطاعم</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/sms/Default.aspx?ref=NewHPNav#hpfooter'>
+SMS</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/dsl/#hpfooter'>
+LinkDsl</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/GovServices/CitizensServices.aspx#hpfooter'>
+خدمات المواطنين</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/ketabat/default.aspx#hpfooter'>
+كتابات</a></li>
+<li class="subNav"><a class="cat" href='http://www.masrawy.com/weather#hpfooter'>
+الطقس</a></li>
+<li class="subNav"><a class="cat" href='https://masrawy.jumia.com.eg/ar/#hpfooter'>
+عروض مصراوي</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<ul class="ftrLnks">
+<li><a target="_blank" href='/contact#hpfooter'>اتصل بنا</a></li>
+<span></span>
+<li><a target="_blank" href='/policy#hpfooter'>سياسة الخصوصية
+</a></li>
+</ul>
+<div class="clear">
+</div>
+<img class="masrawyLogoLve" src="http://www.masrawy.com/version2015/images/masrawyLogo.png"/>
+<div class="leftLogos">
+<a class="ftrMsrwyLogo" href='/#hpfooter'></a>
+<div class="socialDiv">
+<a target="_blank" href='/contact' class="icon-cu"></a>
+<a target="_blank" class="icon-fb" href="http://www.facebook.com/masrawy"></a>
+<a target="_blank" class="icon-tw" href="http://twitter.com/masrawy"></a>
+<a target="_blank" class="icon-ggl" href="https://plus.google.com/+masrawy/posts"></a>
+<a target="_blank" class="icon-yt" href="https://www.youtube.com/channel/UCpfZqY4SGVhHxF8x4XMWNew"></a>
+<a target="_blank" class="icon-rss" href="http://www.masrawy.com/news/rss/rss.html"></a>
+<a target="_blank" href="http://ar.hao123.com/?tn=Masrawy_hao123_ar" class="hao"></a>
+<div class="clear">
+</div>
+</div>
+</div>
+</div>
+<div class="clear">
+</div>
+</div>
+</div>
+ 
+ 
+<script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-49294580-1']);
+    _gaq.push(['_setDomainName', 'masrawy.com']);
+
+
+
+    _gaq.push(['_setCustomVar', 3, 'Provider', 'MicrosoftFeed', 1]);
+    
+    _gaq.push(['_trackPageview', location.pathname + location.search + location.hash]);
+
+
+    (function () {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+</script>
+ 
+<script type="text/javascript">
+    (function () {
+        var em = document.createElement('script'); em.type = 'text/javascript'; em.async = true;
+        em.src = ('https:' == document.location.protocol ? 'https://me-ssl' : 'http://me-cdn') + '.effectivemeasure.net/em.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(em, s);
+    })();
+</script>
+<noscript>
+<img src="//me.effectivemeasure.net/em_image" alt="" style="position: absolute; left: -5px;"/>
+</noscript>
+</div>
+</div>
+</form>
+<a class="back-to-top" href="#">الي الاعلي</a>
+ 
+ 
+</div>
+ 
+<script type="text/javascript">
+        setTimeout(function () {
+            var a = document.createElement("script");
+            var b = document.getElementsByTagName("script")[0];
+            a.src = document.location.protocol + "//script.crazyegg.com/pages/scripts/0026/9582.js?" + Math.floor(new Date().getTime() / 3600000);
+            a.async = true; a.type = "text/javascript"; b.parentNode.insertBefore(a, b)
+        }, 1);
+    </script>
+ 
+<script type="text/javascript">
+        //track page view function
+        function trackPageView() {
+            //For effective measure
+            _em.trackAjaxPageview(location.href);
+            //For google analytics
+            _gaq.push(['_trackPageview', location.href]);
+        }
+        //track page view function
+        function trackPageView(hashTag) {
+            var curUrl = location.href;
+            if (hashTag != '' && hashTag != undefined) {
+                curUrl = location.href + hashTag;
+            }
+            //For effective measure
+            _em.trackAjaxPageview(curUrl);
+            //For google analytics
+            _gaq.push(['_trackPageview', curUrl]);
+        }
+        function refresh_ads() {
+            $('.iframe_ads_showcase').attr('src', $('.iframe_ads_showcase').attr('src'));
+        }
+
+    </script>
+<script type="text/javascript">
+        jQuery(document).ready(function () {
+            $('.logo').click(function () {
+                window.location = "http://www.masrawy.com/";
+                return false;
+            });
+
+            var offset = 220;
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > offset) {
+                    jQuery('.back-to-top').fadeIn(duration);
+                    //setTimeout(function () { jQuery('.back-to-top').fadeOut(duration); }, 3000);
+                } else {
+                    jQuery('.back-to-top').fadeOut(duration);
+                }
+            });
+
+            jQuery('.back-to-top').click(function (event) {
+                event.preventDefault();
+                jQuery('html, body').animate({ scrollTop: 0 }, duration);
+                return false;
+            })
+        });
+    </script>
+<script type="text/javascript" src="http://www.masrawy.com/Js/tmpl.min.js"></script>
+<script type="text/javascript" src="http://www.masrawy.com/js/2014/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="http://www.masrawy.com/js/MainJS/CMS.min.js?v=1.1"></script>
+<script type="text/javascript" src="http://www.masrawy.com/js/MainJS/CMS.services.min.js"></script>
+<script type="text/javascript">
+        $(function () {
+            $(".mostReadImgs img").lazyload({
+                placeholder: "http://www.masrawy.com/Version2015/images/LazyLoad01.gif",
+                effect: "fadeIn", threshold: 50
+            });
+        });
+        $(function () {
+            $(".pattern01 img").lazyload({
+                placeholder: "http://www.masrawy.com/Version2015/images/LazyLoad01.gif",
+                effect: "fadeIn", threshold: 50
+            });
+        });
+        $(function () {
+            $(".pattern02 img").lazyload({
+                placeholder: "http://www.masrawy.com/Version2015/images/LazyLoad01.gif",
+                effect: "fadeIn", threshold: 50
+            });
+        });
+        $(function () {
+            $(".pattern04 img").lazyload({
+                placeholder: "http://www.masrawy.com/Version2015/images/LazyLoad01.gif",
+                effect: "fadeIn", threshold: 50
+            });
+        });
+        $(function () {
+            $(".pattern06 img").lazyload({
+                placeholder: "http://www.masrawy.com/Version2015/images/LazyLoad01.gif",
+                effect: "fadeIn", threshold: 50
+            });
+        });
+        $(function () {
+            $(".pattern10 img").lazyload({
+                placeholder: "http://www.masrawy.com/Version2015/images/LazyLoad01.gif",
+                effect: "fadeIn", threshold: 50
+            });
+        });
+        $('.logo').click(function () {
+            window.location = "http://www.masrawy.com/";
+            return false;
+        });
+    </script>
+ 
+<script type='text/javascript'>
+        var _sf_async_config = _sf_async_config || {};
+        /** CONFIGURATION START **/
+        _sf_async_config.uid = 29519;
+        _sf_async_config.domain = 'masrawy.com';
+        _sf_async_config.useCanonical = true;
+        /** CONFIGURATION END **/
+        (function () {
+            function loadChartbeat() {
+                window._sf_endpt = (new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src', '//static.chartbeat.com/js/chartbeat.js');
+                document.body.appendChild(e);
+            }
+            var oldonload = window.onload;
+            window.onload = (typeof window.onload != 'function') ?
+                loadChartbeat : function () {
+                    oldonload();
+                    loadChartbeat();
+                };
+        })();
+    </script>
+ 
+</body>
+</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  lang="fr" >
+  
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta http-equiv="refresh" content="600"/>
+<meta name="robots" content="follow, index" />
+<meta name="googlebot" content="follow, index">
+<meta name="googlebot-news" content="follow, index">
+<meta name="copyright" content="fr.le360.ma" />
+<meta name="google-site-verification" content="VXJtzuswql7FRUNkpvgvR2w4d7w0tQiTIYiFZTT7MEY" />
+
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5536223c4a81ff2a" async="async"></script>
+
+<script type='text/javascript' src='http://pub.le360.ma/ads360/www/delivery/spcjs.php?id=5&amp;block=1'></script>
+<link rel="shortcut icon" href="http://fr.le360.ma/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="alternate" type="application/rss+xml" title="Le360 Feed" href="http://fr.le360.ma/rss" />
+<link rel="publisher" href="https://plus.google.com/102828122756544892646" />
+<style type="text/css" media="all">
+@import url("http://fr.le360.ma/css/system.base.css");
+@import url("http://fr.le360.ma/css/system.menus.css");
+@import url("http://fr.le360.ma/css/system.messages.css");
+@import url("http://fr.le360.ma/css/system.theme.css");</style>
+
+<style type="text/css" media="all">
+@import url("http://fr.le360.ma/css/fonts.css");
+@import url("http://fr.le360.ma/css/form.css");
+@import url("http://fr.le360.ma/css/ie.css");
+@import url("http://fr.le360.ma/css/styles.css?v=10");
+@import url("http://fr.le360.ma/css/color-spectrum.css");
+@import url("http://fr.le360.ma/css/custom.css?v=09");</style>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.min.js?v=1.7.1"></script>
+<script type="text/javascript" src="http://m.le360.ma/js/device.min.js"></script>
+
+<script type="text/javascript" src="http://m.le360.ma/js/device9.js?v4"></script>
+
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/drupal.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"http://fr.le360.ma","pathPrefix":"","le_site":{"french_disabled":0,"current_nid":0,"current_language":"fr"}});
+//--><!]]>
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56328976-1', 'auto');
+
+  ga('send', 'pageview');
+
+</script>
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"qRkLk1ao6C52bm", domain:"le360.ma",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=qRkLk1ao6C52bm" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->     
+<meta http-equiv="refresh" content="0; URL=http://sport.le360.ma/football/video-can-bouhaddouz-chafik-et-boutaib-sadressent-au-public-marocain-25968"><script type="application/javascript">
+			        location.href="http://sport.le360.ma/football/video-can-bouhaddouz-chafik-et-boutaib-sadressent-au-public-marocain-25968";
+					 </script>  <meta property="og:url" content="http://fr.le360.ma/sports/video-can-2017-bouhaddouz-chafik-et-boutaib-sadressent-au-public-marocain-au-micro-de-le360-105803" />
+									 <meta property="og:type" content="article" />
+									 <meta property="og:title" content="Vidéo. CAN 2017: Bouhaddouz, Chafik et Boutaib s’adressent au public marocain au micro de le360" />
+									 <meta property="og:site_name" content="fr.le360.ma" />
+								   	 <meta property="fb:admins" content="100003202529194" />
+									 <meta property="fb:app_id" content="537657189588485" />
+									 <meta property="og:image" content="http://i.le360.ma/fr/sites/default/files/styles/image_la_une_on_home_page/public/assets/images/2017/01/lions_impressions.jpg" />
+									 <meta property="og:image:width" content="585" /> 
+									 <meta property="og:description" content="Juste après la fin du match Maroc-Egypte, notre envoyée spéciale au Gabon a recueilli les impressions de Boutaib, Bouhaddouz et Chafik. Tous les trois rendent un vibrant hommage au public marocain et lui donnent rendez-vous pour la prochaine échéance: le Mondial." />
+									 <meta name="title" content="Vidéo. CAN 2017: Bouhaddouz, Chafik et Boutaib s’adressent au public marocain au micro de le360" />
+									 <meta name="description" content="Juste après la fin du match Maroc-Egypte, notre envoyée spéciale au Gabon a recueilli les impressions de Boutaib, Bouhaddouz et Chafik. Tous les trois rendent un vibrant hommage au public marocain et lui donnent rendez-vous pour la prochaine échéance: le Mondial." />
+									 <link rel="author" href="http://fr.le360.ma" />
+									 <link rel="canonical" href="http://fr.le360.ma/sports/video-can-2017-bouhaddouz-chafik-et-boutaib-sadressent-au-public-marocain-au-micro-de-le360-105803?utm_source=twitter.com&utm_medium=twitter&utm_campaign=news" />
+									 <meta name="news_keywords" content="Vidéo. CAN 2017: Bouhaddouz, Chafik et Boutaib s’adressent au public marocain au micro de le360,news maroc, journal maroc, journaux marocain, press  maroc, le360, maroc, journal, akhbar, maroc" />
+									 <meta name="keywords" content="Vidéo. CAN 2017: Bouhaddouz, Chafik et Boutaib s’adressent au public marocain au micro de le360, journal maroc, press  maroc, le360, maroc, journal, akhbar, maroc" />
+									 <title>Vidéo. CAN 2017: Bouhaddouz, Chafik et Boutaib s’adressent au public marocain au micro de le360 | www.le360.ma</title></head><body class="article page-sports">
+                                  <div class="container"><div class="search-panel">
+  <div class="holder">
+    <form action="#" method="post" id="search-block-form" accept-charset="UTF-8"><div><fieldset>
+  <div class="form-item form-type-textfield form-item-search-block-form text-form">
+ <input title="Indiquer les termes à rechercher" class="input-placeholder-text form-text" placeholder="Taper votre recherche ..." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input class="btn-submit form-submit" type="submit" id="edit-submit--2" name="op" value="Rechercher" /><a href="#" class="close-search-panel">close</a></div><input type="hidden" name="form_build_id" value="form-OQACcSrG8rf3X6wYcHEQONHAL_EQMpQIcV8f60ZNqI0" />
+</fieldset>
+</div></form>
+</div>
+</div>
+<div id="header">
+    
+    
+                      
+    
+      <div class="panel-pane pane-header">
+    <div class="header-holder"> <strong class="logo"><a href="/">le360</a></strong>
+      <div id="nav">
+        <ul>
+          <li><a href="/politique" class="policy">Politique</a></li>
+          <li><a href="/economie" class="economy">Economie</a></li>
+          <li><a href="/societe" class="company">Société</a></li>
+          <li style="width: 85px;"><a href="/monde" class="monde">International</a></li>
+          <li><a href="/culture" class="culture">Culture</a></li>
+          <li><a href="/medias" class="media">Médias</a></li>
+          <li><a href="http://sport.le360.ma" class="sports">Sports</a></li>
+          <li><a href="/people" class="people">People</a></li>
+          <li><a href="/lifestyle" class="nisaiat">Lifestyle</a></li>
+        </ul>
+      </div>
+      <ul class="top-nav">
+        <li><span><a class="blog" href="/blogs360">Blogs 360</a></span></li>
+        <li class="mail-btn"> <span><a class="mail" href="#">courriel</a></span>
+          <div class="drop-share">
+            <div class="holder"> <strong class="arrow">&nbsp;</strong>
+              <div class="frame">
+                <div class="newsletter-form">
+                  <form action="http://le360.us9.list-manage1.com/subscribe?u=cc53e98eaccc71cf0f0ada82c&amp;id=9a48a4e55c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+                    <fieldset>
+                     <!-- <span style="color: rgb(80, 79, 78); position: absolute;" class="input-placeholder-text">Inscrivez votre adresse email pour recevoir la newsletter</span>-->
+                      <input value="" name="EMAIL" type="text" placeholder="Inscrivez votre adresse email pour recevoir la newsletter">
+                      <select name="MMERGE3" class="required" id="mce-MMERGE3">
+                        <option value="AR">AR</option>
+                        <option selected="" value="FR">FR</option>
+                      </select>
+					  <input class="btn-submit" type="submit" value="ENVOYER" style="display:none">
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="search-btn"><span><a class="search open-search-panel" href="#">rechercher</a></span></li>
+        <li> <span> <a id="menu-link-to-arabic" class="menu-link-to-arabic arabe" href="http://ar.le360.ma">العربية</a> </span> </li>
+      </ul>
+    </div>
+  </div>
+    
+    
+  </div><div class="wrapper"><div class="wrap">
+				  <div class="m1">
+					<div class="m2">
+					  <div class="m3">
+<script type='text/javascript'><!--// <![CDATA[
+    OA_show(141);
+// ]]> --></script><noscript><a target='_blank' href='http://pub.le360.ma/ads360/www/delivery/ck.php?n=c421f36'><img border='0' alt='' src='http://pub.le360.ma/ads360/www/delivery/avw.php?zoneid=141&amp;n=c421f36' /></a></noscript>
+<script type='text/javascript'><!--// <![CDATA[
+    OA_show(9);
+// ]]> --></script><noscript><a target='_blank' href='http://pub.le360.ma/ads360/www/delivery/ck.php?n=e73ee86'><img border='0' alt='' src='http://pub.le360.ma/ads360/www/delivery/avw.php?zoneid=9&amp;n=e73ee86' /></a></noscript>
+
+<script type='text/javascript'><!--// <![CDATA[
+    OA_show(1);
+// ]]> --></script><noscript><a target='_blank' href='http://pub.le360.ma/ads360/www/delivery/ck.php?n=5399707'><img border='0' alt='' src='http://pub.le360.ma/ads360/www/delivery/avw.php?zoneid=1&amp;n=5399707' /></a></noscript></div></div></div></div><div class="banner-holder"><div id="main"><div id="block-system-main" class="block block-system">
+                         <div class="content"><div class="content-block"><div class="label-ttl">
+										<div>Sports</div>
+										<div class="corner"></div>
+									  </div><div  class="addthis_sharing_toolbox social-list"></div><div class="articles-holder"><h1>Vidéo. CAN 2017: Bouhaddouz, Chafik et Boutaib s’adressent au public marocain au micro de le360</h1><span class="date-ttl">Par <u><a href="/recherche?f[0]=field_signature%253Auid%3A24105">Hajar Toufik</a></u>  le 30/01/2017 à 01h03 (mise à jour le 30/01/2017 à 01h05)</span><div class="full-item">
+  <div class="holder">
+        <img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/asset_image_in_body/public/assets/images/2017/01/lions_impressions.jpg" alt="Impressions des Lions de l&amp;#039;Atlas" title="Impressions des Lions de l&amp;#039;Atlas" />          </div>
+</div>
+  <span class="copy-item">&copy; Copyright : le360</span>
+<p class="marker">Juste après la fin du match Maroc-Egypte, notre envoyée spéciale au Gabon a recueilli les impressions de Boutaib, Bouhaddouz et Chafik. Tous les trois rendent un vibrant hommage au public marocain et lui donnent rendez-vous pour la prochaine échéance: le Mondial.</p><div class="ctn"><p><strong>Voir la vidéo sur notre site: <a href="http://sport.le360.ma/football/video-can-bouhaddouz-chafik-et-boutaib-sadressent-au-public-marocain-25968">sport.le360.ma</a></strong></p>
+</div><h3 align="center">Par <a href="/recherche?f[0]=field_signature%253Auid%3A24105">Hajar Toufik</a></h3>
+					              <div class="social-bar-bottom">
+                                  <div class="addthis_sharing_toolbox"></div>
+                                  </div></div><div style="width:300px; margin:10px auto 17px;"><script type='text/javascript'><!--// <![CDATA[
+    OA_show(137);
+// ]]> --></script><noscript><a target='_blank' href='http://pub.le360.ma/ads360/www/delivery/ck.php?n=5ade8bf'><img border='0' alt='' src='http://pub.le360.ma/ads360/www/delivery/avw.php?zoneid=137&amp;n=5ade8bf' /></a></noscript></div><div id="disqus_thread"><div id="disqus_thread"></div>
+                                     <script>
+                                                 
+                           var disqus_config = function () {
+                             this.page.url = "http://fr.le360.ma/sports/video-can-2017-bouhaddouz-chafik-et-boutaib-sadressent-au-public-marocain-au-micro-de-le360-105803";  
+                              this.page.identifier ="node/105803"; 
+                                  };
+        
+                         (function() {   
+              var d = document, s = d.createElement("script");
+         
+                 s.src = "//le360.disqus.com/embed.js";
+        
+                               s.setAttribute("data-timestamp", +new Date());
+          (d.head || d.body).appendChild(s);
+             })();
+              </script>
+			  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+              </div></div><!-- date article : 2017-02-17 05:37:17 --><script>ga("set", "dimension1","23919");
+						                 ga("set", "dimension2","24105");
+										</script><input type="hidden" name="taxonomy" value="Sports" /><script> ga("set", "dimension3","article");</script><div class="page-overlay"></div>  <img style="position: fixed;display:none" src="http://fr.le360.ma/stat.php?nid=105803" width="1" height="1" /><div class="sidebar"><div class="right-top-banner"><script type='text/javascript'><!--// <![CDATA[
+    OA_show(5);
+// ]]> --></script><noscript><a target='_blank' href='http://pub.le360.ma/ads360/www/delivery/ck.php?n=cf39735'><img border='0' alt='' src='http://pub.le360.ma/ads360/www/delivery/avw.php?zoneid=5&amp;n=cf39735' /></a></noscript></div><div class="side-slider"><div class="title">
+      <h3>KIOSQUE 360</h3>
+    </div><div class="holder"><a href="#" class="prev">prev</a>
+        <a href="#" class="next">next</a><div class="frame"><ul class="side-slider-list"><li><div class="img review-de-presse"><a href="/politique/nizar-baraka-appelle-a-une-autocritique-pour-sauver-le-parti-de-listiqlal-108145"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2014/08/baraka.jpg" width="291" height="161" alt="Cover Video - Nizar Baraka" title="Cover Video - Nizar Baraka" /></a> </div><p><a href="/politique/nizar-baraka-appelle-a-une-autocritique-pour-sauver-le-parti-de-listiqlal-108145">Nizar Baraka appelle à une autocritique pour sauver le Parti de l’Istiqlal</a></p></li><li><div class="img review-de-presse"><a href="/economie/les-gros-debiteurs-menacent-la-solvabilite-des-banques-108159"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2015/09/banques-marocaine.jpg" width="291" height="161" alt="Banques" title="Banques" /></a> </div><p><a href="/economie/les-gros-debiteurs-menacent-la-solvabilite-des-banques-108159">Les gros débiteurs menacent la solvabilité des banques</a></p></li><li><div class="img review-de-presse"><a href="/politique/benkirane-est-le-premier-contributeur-aux-finances-du-pjd-108151"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2016/12/benkirane.jpg" width="291" height="161" alt="BENKIRANE" title="BENKIRANE" /></a> </div><p><a href="/politique/benkirane-est-le-premier-contributeur-aux-finances-du-pjd-108151">Benkirane est le premier contributeur aux finances du PJD</a></p></li><li><div class="img review-de-presse"><a href="/economie/immobilier-le-label-iltizam-seduit-de-plus-en-plus-108161"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2017/02/iltiz.jpeg" width="291" height="161" alt="Immobilier Iltizam" title="Immobilier Iltizam" /></a> </div><p><a href="/economie/immobilier-le-label-iltizam-seduit-de-plus-en-plus-108161">Immobilier: le label Iltizam séduit de plus en plus</a></p></li><li><div class="img review-de-presse"><a href="/politique/lachgar-dement-formellement-tout-complot-contre-le-pjd-108143"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2016/01/driss_lachgar.jpg" width="291" height="161" alt="Driss Lachgar" title="Driss Lachgar" /></a> </div><p><a href="/politique/lachgar-dement-formellement-tout-complot-contre-le-pjd-108143">Lachgar dément formellement tout complot contre le PJD</a></p></li><li><div class="img review-de-presse"><a href="/economie/smt-iam-et-ocp-les-trois-premiers-contributeurs-du-tresor-108163"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2014/09/ocp.jpg" width="291" height="161" alt="OCP" title="OCP" /></a> </div><p><a href="/economie/smt-iam-et-ocp-les-trois-premiers-contributeurs-du-tresor-108163">SMT, IAM et OCP, les trois premiers contributeurs du Trésor </a></p></li><li><div class="img review-de-presse"><a href="/politique/letat-entre-en-guerre-contre-la-spoliation-des-biens-immobiliers-108169"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2017/02/immobilier.jpg" width="291" height="161" alt="immobilier" title="immobilier" /></a> </div><p><a href="/politique/letat-entre-en-guerre-contre-la-spoliation-des-biens-immobiliers-108169">L'Etat entre en guerre contre la spoliation des biens immobiliers</a></p></li><li><div class="img review-de-presse"><a href="/economie/nouvelles-regles-de-tva-pour-les-zones-franches-108165"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2017/02/zones.jpeg" width="291" height="161" alt="Zones franches" title="Zones franches" /></a> </div><p><a href="/economie/nouvelles-regles-de-tva-pour-les-zones-franches-108165">Nouvelles règles de TVA pour les zones franches</a></p></li><li><div class="img review-de-presse"><a href="/societe/revue-du-web-najat-aatabou-dealeuse-de-cocaine-hadi-kedba-bayna-108147"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2015/08/capture_decran_2015-08-29_a_12.11.53.jpg" width="291" height="161" alt="najat aatabou " title="najat aatabou " /></a> </div><p><a href="/societe/revue-du-web-najat-aatabou-dealeuse-de-cocaine-hadi-kedba-bayna-108147">Revue du Web: Najat Aatabou dealeuse de cocaïne? "Hadi kedba bayna!"</a></p></li><li><div class="img review-de-presse"><a href="/societe/casablanca-compte-5000-milliardaires-108149"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2016/10/benjeloun-othman.jpg" width="291" height="161" alt="Othman benjelloun, BBoA" title="Othman benjelloun, BBoA" /></a> </div><p><a href="/societe/casablanca-compte-5000-milliardaires-108149">Casablanca compte 5.000 milliardaires</a></p></li><li><div class="img review-de-presse"><a href="/culture/taia-parle-de-trump-dans-les-inrocks-108133"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2015/03/abdellah_taia.jpg" width="291" height="161" alt="abdellah taia" title="abdellah taia" /></a> </div><p><a href="/culture/taia-parle-de-trump-dans-les-inrocks-108133">Taïa parle de Trump dans les Inrocks</a></p></li><li><div class="img review-de-presse"><a href="/sports/paul-pogba-est-il-moins-bon-joueur-que-son-frere-florentin-108153"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2017/02/6684627_roissy_1000x625.jpg" width="291" height="161" alt="Pogba frères" title="Pogba frères" /></a> </div><p><a href="/sports/paul-pogba-est-il-moins-bon-joueur-que-son-frere-florentin-108153">Paul Pogba est-il moins bon joueur que son frère Florentin?</a></p></li><li><div class="img review-de-presse"><a href="/sports/linterieur-surpris-par-la-mobilisation-des-ultras-108155"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2017/02/green_boys_1_0.jpg" width="291" height="161" alt="green boys" title="green boys" /></a> </div><p><a href="/sports/linterieur-surpris-par-la-mobilisation-des-ultras-108155">L’Intérieur surpris par la mobilisation des Ultras</a></p></li><li><div class="img review-de-presse"><a href="/sports/le-stade-mohammed-v-equipe-dune-centaine-de-cameras-108157"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2016/09/complexe_mohammed_v.jpg" width="291" height="161" alt="Complexe Mohammed V" title="Complexe Mohammed V" /></a> </div><p><a href="/sports/le-stade-mohammed-v-equipe-dune-centaine-de-cameras-108157">Le stade Mohammed V équipé d’une centaine de caméras</a></p></li><li><div class="img review-de-presse"><a href="/sports/le-raja-prive-des-revenus-des-droits-tele-108167"><img typeof="foaf:Image" src="http://i.le360.ma/fr/sites/default/files/styles/mise_en_avant_medium/public/assets/images/2017/02/dddd.jpg" width="291" height="161" alt="DERBY TELE" title="DERBY TELE" /></a> </div><p><a href="/sports/le-raja-prive-des-revenus-des-droits-tele-108167">Le Raja privé des revenus des droits télé</a></p></li></ul></div><div class="m1">
+            <div class="m2">
+              <div class="m3">
+                <ul class="side-slider-nav"><li class=""><a href="#">1</a></li><li class=""><a href="#">2</a></li><li class=""><a href="#">3</a></li><li class=""><a href="#">4</a></li><li class=""><a href="#">5</a></li><li class=""><a href="#">6</a></li><li class=""><a href="#">7</a></li><li class=""><a href="#">8</a></li><li class=""><a href="#">9</a></li><li class=""><a href="#">10</a></li><li class=""><a href="#">11</a></li><li class=""><a href="#">12</a></li><li class=""><a href="#">13</a></li><li class=""><a href="#">14</a></li><li class=""><a href="#">15</a></li></ul></div></div></div> </div></div><div class="right-top-banner"><script type='text/javascript'><!--// <![CDATA[
+    OA_show(269);
+// ]]> --></script><noscript><a target='_blank' href='http://pub.le360.ma/ads360/www/delivery/ck.php?n=c0c10c6'><img border='0' alt='' src='http://pub.le360.ma/ads360/www/delivery/avw.php?zoneid=269&amp;n=c0c10c6' /></a></noscript></div><div class="newletter-form">
+    <div class="title">
+      <h3>Abonnement Newsletter</h3>
+      <p>Saisissez votre adresse email pour recevoir la newsletter du Le360</p>
+    </div>
+    <form action="http://le360.us9.list-manage1.com/subscribe?u=cc53e98eaccc71cf0f0ada82c&amp;id=9a48a4e55c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+      <fieldset>
+        <div class="row">
+          <div class="text-form">
+            <input type="text" value="" name="EMAIL">
+            <select name="MMERGE3" class="required" id="mce-MMERGE3">
+              <option value="AR">AR</option>
+              <option selected="" value="FR">FR</option>
+            </select>
+          </div>
+          <input class="btn-submit" type="submit" value="ENVOYER">
+        </div>
+      </fieldset>
+    </form>
+  </div><div class="top360"><div class="title">
+    <h3>TOP 360</h3>
+  </div><div class="top360_all"><ul class="tabset tab360"><li><a class="active" href="#tab_jour">Du Jour</a></li>
+                <li><a href="#tab_semain" class="">De la semaine</a></li>           
+               </ul><div id="tab_jour" class=" "><ul class="top360-list"><li><span class="num">1</span><div class="text"><span><a href="/politique/onu-quand-le-representant-du-polisario-rate-son-show-mediatique-108077">ONU: quand le représentant du Polisario rate son show médiatique</a></span></div></li><li><span class="num">2</span><div class="text"><span><a href="/economie/la-liste-des-vingt-deux-operateurs-economiques-qui-accompagnent-le-roi-au-ghana-108135">La liste des vingt-deux opérateurs économiques qui accompagnent le roi au Ghana</a></span></div></li><li><span class="num">3</span><div class="text"><span><a href="/societe/saad-lamjarred-les-rumeurs-de-sa-liberation-imminente-dementies-par-son-avocat-108085">Saâd Lamjarred: les rumeurs de sa libération imminente démenties par son avocat</a></span></div></li><li><span class="num">4</span><div class="text"><span><a href="/monde/affaire-graciet-laurent-me-dupond-morreti-nous-avons-gagne-108071">Affaire Graciet-Laurent. Me Dupond-Morreti: "Nous avons gagné"</a></span></div></li><li><span class="num">5</span><div class="text"><span><a href="/politique/video-arrivee-du-roi-a-accra-pour-une-visite-officielle-en-republique-du-ghana-108115">Vidéo. Arrivée du roi à Accra pour une visite officielle en République du Ghana</a></span></div></li></ul></div><div id="tab_semain" class=""><ul class="tabset top360-nav"><li><a class="active" href="#tab1">Articles</a></li>
+              <li><a href="#tab2" class="">Vidéos</a></li>
+              <li><a href="#tab3" class="">Photos</a></li>
+             </ul><div id="tab1" class="view view-right-column-blocks view-id-right_column_blocks "><ul class="top360-list"><li><span class="num">1</span><div class="text"><span><a href="/politique/immigration-la-belgique-adopte-une-loi-contre-ses-citoyens-dorigine-marocaine-107625">Immigration: la Belgique adopte une loi contre ses citoyens d'origine marocaine</a></span></div></li><li><span class="num">2</span><div class="text"><span><a href="/societe/lepouse-de-kamal-lahlou-est-decedee-ce-lundi-a-ifrane-107705">L’épouse de Kamal Lahlou est décédée ce lundi à Ifrane</a></span></div></li><li><span class="num">3</span><div class="text"><span><a href="/economie/flexibilite-des-changes-le-maroc-pourra-t-il-eviter-les-scenarios-egyptien-et-turc-107677">Flexibilité des changes: le Maroc pourra-t-il éviter les scénarios égyptien et turc?</a></span></div></li><li><span class="num">4</span><div class="text"><span><a href="/politique/les-details-de-la-nouvelle-tournee-royale-en-afrique-107607">Les détails de la nouvelle tournée royale en Afrique</a></span></div></li><li><span class="num">5</span><div class="text"><span><a href="/politique/audio-video-un-documentaire-sur-le-roi-mohammed-vi-signe-youssef-britel-107671">Audio-Vidéo. Un documentaire sur le roi Mohammed VI signé Youssef Britel</a></span></div></li></ul> </div><div id="tab2" class="view view-right-column-blocks view-id-right_column_blocks "><ul class="top360-list"><li><span class="num">1</span><div class="text"><span><a href="/medias/le36-ep84-salim-cheikh-et-saad-lamjarred-ensemble-a-la-brigade-107555">Le36. EP84. Salim Cheikh et Saâd Lamjarred ensemble à «La Brigade»</a></span></div></li><li><span class="num">2</span><div class="text"><span><a href="/politique/video-ce-que-pensent-les-deputes-de-la-nation-de-la-saint-valentin-107789">Vidéo. Ce que pensent les députés de la Nation de la Saint-Valentin</a></span></div></li><li><span class="num">3</span><div class="text"><span><a href="/economie/video-visite-guidee-dans-le-nouveau-terminal-de-laeroport-de-marrakech-menara-107799">Vidéo. Visite guidée dans le nouveau terminal de l'aéroport de Marrakech-Ménara</a></span></div></li><li><span class="num">4</span><div class="text"><span><a href="/politique/video-maroc-ue-akhannouch-cest-a-lue-de-resoudre-ses-propres-problemes-107877">Vidéo. Maroc-UE. Akhannouch: "C'est à l'UE de résoudre ses propres problèmes"</a></span></div></li><li><span class="num">5</span><div class="text"><span><a href="/politique/video-futur-gouvernement-akhannouch-rien-nest-encore-joue-107867">Vidéo. Futur gouvernement. Akhannouch: "Rien n'est encore joué"</a></span></div></li></ul> </div><div id="tab3" class="view view-right-column-blocks view-id-right_column_blocks "><ul class="top360-list"><li><span class="num">1</span><div class="text"><span><a href="/societe/diapo-casablanca-sous-la-pluie-et-les-bourrasques-107657">Diapo. Casablanca sous la pluie et les bourrasques</a></span></div></li><li><span class="num">2</span><div class="text"><span><a href="/culture/diapo-du-beau-monde-a-lexposition-de-mohamed-fariji-a-latelier-21-107955">Diapo. Du beau monde à l'exposition de Mohamed Fariji à l'Atelier 21</a></span></div></li><li><span class="num">3</span><div class="text"><span><a href="/people/le-mannequin-australien-shanina-shaik-profite-du-soleil-de-marrakech-108089">Le mannequin australien Shanina Shaik profite du soleil de Marrakech </a></span></div></li><li><span class="num">4</span><div class="text"><span><a href="/people/diapo-gad-elmaleh-et-jamel-debbouze-reunis-dans-le-jamel-comedy-kids-108075">Diapo. Gad Elmaleh et Jamel Debbouze réunis dans le "Jamel Comedy Kids"</a></span></div></li><li><span class="num">5</span><div class="text"><span><a href="/people/video-dernier-hommage-a-fatima-aouam-28353">Vidéo. Dernier hommage à Fatima Aouam</a></span></div></li></ul> </div></div></div></div><div class="right-bottom-banner"><script type='text/javascript'><!--// <![CDATA[
+    OA_show(107);
+// ]]> --></script><noscript><a target='_blank' href='http://pub.le360.ma/ads360/www/delivery/ck.php?n=9264161'><img border='0' alt='' src='http://pub.le360.ma/ads360/www/delivery/avw.php?zoneid=107&amp;n=9264161' /></a></noscript></div></div></div></div></div></div><div id="footer">
+<div class="footer-top">
+  <div class="footer-holder">
+    <div class="column">
+      <div class="ttl">
+        <h3><span>Sondages 360</span></h3>
+      </div>
+                    
+<div class="content">
+  <div class="poll"><p>Pensez-vous que le gouvernement sera formé en janvier, mettant ainsi fin au blocage persistant?</p><div class="vote-holder full" id="100919"><div class="vote-form"><div class="content"><form action="/api/blockpoll" method="post" id="poll-view-voting" accept-charset="UTF-8"><div><div class="poll">
+  <div class="vote-form">
+    <div class="choices">
+            <div class="form-item form-type-radios form-item-choice">
+  <label class="element-invisible" for="edit-choice">Choix </label>
+ <div id="edit-choice" class="form-radios"><div class="form-item form-type-radio form-item-choice">
+ <input type="radio" id="edit-choice-287" name="choice" value="287" checked="checked" class="form-radio" />  <label class="option" for="edit-choice-287">Oui </label>
+
+</div>
+<div class="form-item form-type-radio form-item-choice">
+ <input type="radio" id="edit-choice-289" name="choice" value="289" class="form-radio" />  <label class="option" for="edit-choice-289">Non </label>
+
+</div>
+<div class="form-item form-type-radio form-item-choice">
+ <input type="radio" id="edit-choice-291" name="choice" value="291" class="form-radio" />  <label class="option" for="edit-choice-291">Sans avis </label>
+
+</div>
+</div>
+</div>
+    </div>
+    <input class="btn-submit form-submit" type="submit" id="edit-vote" name="op" value="Voter" />  </div>
+    <input type="hidden" name="form_build_id" value="form-Gs8YVfVa0vr8ahcnuOI5L_rYDuOhZ6XU6GDJ__bVsLk" />
+<input type="hidden" name="form_id" value="poll_view_voting" />
+</div>
+</div></form></div></div><div class="poll_results content"><div class="poll">
+  
+<div class="text">Oui</div>
+<div class="row">
+  <div class="bar">
+    <div style="width: 44%;" class="foreground">
+      <div class="percent">
+        44%
+      </div>
+    </div>
+  </div>
+  <div class="votes">
+    172 votes  </div>
+</div>
+
+<div class="text">Non</div>
+<div class="row">
+  <div class="bar">
+    <div style="width: 46%;" class="foreground">
+      <div class="percent">
+        46%
+      </div>
+    </div>
+  </div>
+  <div class="votes">
+    182 votes  </div>
+</div>
+
+<div class="text">Sans avis</div>
+<div class="row">
+  <div class="bar">
+    <div style="width: 10%;" class="foreground">
+      <div class="percent">
+        10%
+      </div>
+    </div>
+  </div>
+  <div class="votes">
+    40 votes  </div>
+</div>
+  </div>
+</div></div></div>
+          </div>
+		  </div>
+    <div class="column">
+      <div class="ttl">
+        <h3><span>Le360 en un clic</span></h3>
+      </div>
+              <div class="holder">
+                      <ul class="footer-list">
+                              <li><a href="/politique">Politique</a></li>
+                              <li><a href="/economie">Economie</a></li>
+                              <li><a href="/societe">Société</a></li>
+                              <li><a href="/monde">Monde</a></li>
+                              <li><a href="/culture">Culture</a></li>
+                              <li><a href="/medias">Médias</a></li>
+                              <li><a href="/sports">Sports</a></li>
+                              <li><a href="/people">People</a></li>
+                          </ul>
+                      <ul class="footer-list">
+                              <li><a href="/horaires-des-prieres">Horaires des prières</a></li>
+                              <li><a href="/qui-sommes-nous">Qui sommes-nous?</a></li>
+                              <li><a href="/faq">FAQ</a></li>
+                              <li><a href="/mentions-legales">Mentions légales</a></li>
+                              <li><a href="/contact">Contact</a></li>
+                              <li><a href="/publicite">Publicité</a></li>
+                              <li><a href="/sitemap">Site Map</a></li>
+                                <li><a href="http://m.le360.ma/app">Application Mobile</a></li>
+                              <li><a href="http://goo.gl/2amLDO">Version mobile</a></li>
+                          </ul>
+                  </div>
+          </div>
+    <div class="column-last">
+      <div class="ttl">
+        <h3><span>Suivez-nous !</span></h3>
+      </div>
+              <ul class="footer-soc-list">
+      <li><a href="https://www.facebook.com/le360fr" class="facebook" target="_blank">facebook</a></li>
+      <li><a href="https://twitter.com/Le360fr" class="twitter" target="_blank">twitter</a></li>
+      <li><a href="http://www.youtube.com/user/Le360Live" class="youtube" target="_blank">youtube</a></li>
+      <li><a href="https://plus.google.com/+Le360Live" class="google" target="_blank">google</a></li>
+      <li><a href="http://www.linkedin.com/company/le360" class="linkedin" target="_blank">linkedin</a></li>
+      <li><a href="http://pinterest.com/le360/" class="pinterest" target="_blank">pinterest</a></li>
+     
+  </ul>
+              <div class="newletter-form">
+    <h4>Abonnement Newsletter</h4>
+    <p>Saisissez votre adresse email pour recevoir la newsletter du Le360</p>
+    <form action="http://le360.us9.list-manage1.com/subscribe?u=cc53e98eaccc71cf0f0ada82c&amp;id=9a48a4e55c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate="">
+      <fieldset>
+        <div class="row">
+          <div class="text-form">
+            <input type="text" value="" name="EMAIL">
+            <select name="MMERGE3" class="required" id="mce-MMERGE3">
+              <option value="AR">AR</option>
+              <option selected="" value="FR">FR</option>
+            </select>
+         </div>
+          <input class="btn-submit" type="submit" value="ENVOYER">
+        </div>
+      </fieldset>
+    </form>
+  </div>
+    </div>
+  </div>
+</div>
+<div class="footer-bottom">
+  <div class="footer-holder">
+    <strong class="logo-footer"><a href="/" class="active">le360</a></strong>
+    <span class="copy">© Web News / le360.ma / Tous droits réservés 2016</span>
+  </div>
+</div>
+
+  </div></div></div><!-- date :  2017-02-17 05:37:17 -->
+<link  rel="stylesheet" type="text/css"  href="http://fr.le360.ma/css/jquery.fancybox-1.3.4.css?v05" />
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.form.min.js?v=2.69"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/form.js?v=7.19"></script>
+
+<script type="text/javascript" src="http://fr.le360.ma/scripts/le-site-links.js"></script>
+
+
+<script type="text/javascript" src="http://fr.le360.ma/scripts/progress.js?v=7.19"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/html5.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.tabs.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.form.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.main.js?07"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/placeholder.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.mobile.custom.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/scripts.js?07"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.carousel.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.simplelightbox.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.slideshow.js?07"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/ads.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/custom.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/jquery.cookie.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/le_site.js"></script>
+<script type="text/javascript" src="http://fr.le360.ma/scripts/track.js?v=02"></script>
+<script>
+      !function(d,s,id){
+        var js,fjs=d.getElementsByTagName(s)[0];
+        if(!d.getElementById(id)){
+          js=d.createElement(s);
+          js.id=id;js.src="//platform.twitter.com/widgets.js";
+          fjs.parentNode.insertBefore(js,fjs);
+        }
+      }(document,"script","twitter-wjs");
+	     ga('send', 'pageview');
+    </script>    <!-- Place this tag after the last +1 button tag. -->
+     <div id="ads_inter">
+<script type='text/javascript'><!--//<![CDATA[
+   var ox_u = 'http://pub.le360.ma/ads360/www/delivery/al.php?zoneid=257&cb=INSERT_RANDOM_NUMBER_HERE&layerstyle=simple&align=center&valign=middle&padding=2&padding=2&shifth=0&shiftv=0&closebutton=t&nobg=t&noborder=t';
+   if (document.context) ox_u += '&context=' + escape(document.context);
+   document.write("<scr"+"ipt type='text/javascript' src='" + ox_u + "'></scr"+"ipt>");
+//]]>--></script></div>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"02d76c8e25","applicationID":"8176075","transactionName":"Y11TMEFWVkZQVUxZDVoXZBZaGFFbVVNAHhJcSA==","queueTime":0,"applicationTime":0,"atts":"TxpQRglMRUg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

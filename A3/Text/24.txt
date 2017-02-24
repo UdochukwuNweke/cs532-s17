@@ -1,0 +1,354 @@
+/
+Debug 
+Show log entry
+Show visual element tree
+Copy Visitor ID 
+Show logging window 
+Log Entry 
+[[data.logEntryString]] 
+Visual Element Tree 
+[[data.veTree]] 
+[[getSimpleString(data.formattedTitle)]] 
+[[data.count]] 
+[[unseenCount_]]
+[[_text]] 
+[[_charCounterStr]] 
+[[label]] 
+[[errorMessage]] 
+[[placeholderText_]] 
+[[placeholderText_]] 
+[[countryCode]] 
+[[menuStrings_.BACK_ALT_LABEL]]
+[[menuStrings_.SEARCH_ALT_LABEL]] 
+[[badge.metadataBadgeRenderer.label]] 
+[[badge.metadataBadgeRenderer.tooltip]] 
+[[getSimpleString_(item)]] 
+[[getSimpleString_(item)]] 
+[[getSimpleString(data.indexText)]] 
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.shortBylineText)]] 
+[[computeIndexMessage_(data.currentIndex, data.totalVideos)]]
+[[getCastDeviceName_(isCasting_)]] 
+[[computeCastDeviceName_(isCasting_)]] 
+[[getSimpleString(data.title)]] 
+[[getSimpleString(data.promoText)]] 
+[[getSimpleString(item.musicPassSmallFeatureInfoRenderer.header)]]
+[[ariaLabel]] 
+[[data.title]] 
+[[item.tabRenderer.title]] 
+[[getSimpleString(data.text)]] 
+[[getSimpleString(data.title)]]
+[[data.channelTitle]] 
+[[iconLabel]] 
+[[computeLabel_(selected)]] 
+[[item.title]] 
+[[data.tooltip]] 
+[[data.businessEmail]] 
+[[getSimpleString(data.text)]]
+[[computeTooltip_(data.untoggledTooltip, data.toggledTooltip, data.isToggled)]]
+[[getSimpleString(data.title)]] 
+[[getSimpleString(data.subscriberCountText)]] 
+[[getSimpleString(data.videoCountText)]] 
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(missingData_.readMoreText)]] 
+[[getSimpleString(missingData_.showLessText)]] 
+[[getSimpleString(data.dragLabel)]] 
+[[getSimpleString(data.licenseText)]] 
+[[errorMessage_]] 
+[[computePlaceholderText_(data)]] 
+[[getSimpleString(voteCount)]]
+[[getSimpleString(data.authorText)]]
+[[getSimpleString(missingData_.readMoreText)]] 
+[[getSimpleString(missingData_.showLessText)]] 
+[[getSimpleString(data.question)]] 
+[[getSimpleString(data.header)]] 
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.responseText)]] 
+[[data.iconText]] 
+[[getSimpleString(data.title)]]
+[[item]] 
+[[getSimpleString(item)]] 
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[data.query]] 
+AD
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]] 
+[[heading]] 
+[[getSimpleString(item.unlimitedSubscriptionInfoRenderer.title)]]
+[[getSimpleString(item.unlimitedSubscriptionInfoRenderer.content)]]
+[[getSimpleString(data.title)]] 
+[[getSimpleString(item)]] 
+[[getSimpleString(item.watchCardVideoRenderer.title)]]
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]] 
+[[getSimpleString(data.toggleDescription)]] 
+[[getSimpleString(data.infoText)]] 
+[[getSimpleString(data.headline)]] 
+[[getSimpleString(data.priceText)]] 
+[[getSimpleString(data.merchant)]] 
+[[getSimpleString(data.reviewText)]] 
+[[getSimpleString(data.priceText)]] 
+[[getSimpleString(data.merchant)]] 
+[[getSimpleString(data.shopText)]] 
+[[getSimpleString(data.sponsoredText)]] 
+[[getSimpleString(data.adInfoText)]] 
+[[reason]] 
+[[reason]] 
+[[label]] 
+[[errorMessage]] 
+[[item.optionSelectableItemRenderer.accessibility.accessibilityData.label]]
+: 
+[[item.navigationItem.accessibility.accessibilityData.label]] 
+[[getSimpleString(data.title)]] 
+{{text}} 
+[[getSimpleString(content)]] 
+[[getSimpleString(data.title)]]
+[[getSimpleString(data.title)]]
+[[adBadgeText]]
+[[getSimpleString(data.title)]]
+-
+:
+[[getLabel_()]] 
+[[getLabel_()]]
+[[addToStrings_.ADD_TO_DROPDOWN_LABEL]] 
+[[getSimpleString(data.title)]] 
+[[computeText_(data.isToggled, data.defaultText, data.toggledText)]] 
+[[menuStrings_.DARK_MODE_LABEL]] 
+[[computeDarkModeText_(clientSettings_.darkMode)]] 
+[[menuStrings_.LANGUAGE_LABEL]] 
+[[clientSettings_.language]] 
+[[menuStrings_.COUNTRY_LABEL]] 
+[[clientSettings_.country]] 
+[[menuStrings_.RESTRICTED_MODE_LABEL]] 
+[[computeRestrictedModeText_(clientSettings_.restrictedMode)]] 
+[[menuStrings_.SETTINGS_LABEL]]
+[[menuStrings_.HELP_LABEL]]
+[[menuStrings_.FEEDBACK_LABEL]]
+[[menuStrings_.CLASSIC_YOUTUBE_LABEL]]
+[[menuStrings_.CHOOSE_LANGUAGE_LABEL]] 
+[[item.1]]
+[[menuStrings_.CHOOSE_COUNTRY_LABEL]] 
+[[item.2]] 
+[[menuStrings_.RESTRICTED_MODE_TITLE]] 
+[[menuStrings_.RESTRICTED_MODE_TEXT_LINE_1]] 
+[[menuStrings_.RESTRICTED_MODE_TEXT_LINE_2]] 
+[[computeRestrictedModeText_(clientSettings_.restrictedMode)]] 
+[[menuStrings_.DARK_MODE_TITLE]] 
+[[menuStrings_.DARK_MODE_TEXT_LINE_1]] 
+[[menuStrings_.DARK_MODE_TEXT_LINE_2]] 
+[[menuStrings_.DARK_MODE_SWITCH_LABEL]] 
+[[getSimpleString(data.description)]]
+[[getSimpleString(data.description)]]
+[[getSimpleString(data.title)]] 
+[[getSimpleString(data.subtitle)]] 
+Embed Video 
+[[data.enablePrivacyModeOptionLabel.accessibility.accessibilityData.label]]
+[[menuStrings_.COPY_URL_BTN_LABEL]]
+[[menuStrings_.SHARE_LABEL]] 
+[[menuStrings_.EMBED_BTN_LABEL]]
+[[menuStrings_.COPY_URL_BTN_LABEL]]
+[[getSimpleString(data.title)]] 
+[[getSimpleString(data.additionalInfoHeader)]] 
+[[getSimpleString(data.memberInfo)]] 
+[[getSimpleString(data.memberTitle)]] 
+Dwyane Wade FAKES Out Defender Then Hits The Jumper! - YouTube   
+Skip navigation
+Sign in  Search   
+Loading...
+Close 
+Yeah, keep it 
+Undo 
+Close 
+This video is unavailable.
+Watch Queue Queue    Watch Queue Queue  
+Remove all Disconnect 
+The next video is starting stop   
+Loading...
+Watch Queue
+Queue 
+__count__/__total__
+Find out why Close 
+Dwyane Wade FAKES Out Defender Then Hits The Jumper!
+NBA 
+Subscribe Subscribed Unsubscribe   7,441,051 7M 
+Loading...
+Loading...
+Working...
+Add to 
+Want to watch this again later? 
+Sign in to add this video to a playlist.
+Sign in 
+Share
+More 
+Report 
+Need to report the video? 
+Sign in to report inappropriate content.
+Sign in 
+Statistics 
+Add translations 
+147,201 views 
+2,382 
+Like this video? 
+Sign in to make your opinion count.
+Sign in 
+2,383 
+18 
+Don't like this video? 
+Sign in to make your opinion count.
+Sign in 
+19 
+Loading...
+Loading...
+Loading...
+Rating is available when the video has been rented. 
+This feature is not available right now. Please try again later.
+Published on Jan 29, 2017 Here is Dwyane Wade with the pass fake that gets the defense to react, then hits the jumper.  
+Category
+Sports 
+License
+Standard YouTube License 
+Show more 
+Show less 
+Loading...
+Advertisement
+Autoplay 
+When autoplay is enabled, a suggested video will automatically play next.   
+Up next
+The Top 10 NBA Dunks Of All Time
+- Duration: 3:44.
+House Of Hoops 
+14,535,459 views 
+3:44 
+Dwyane Wade&#39;s Top 35 Plays of His Career!
+- Duration: 8:36.
+NBA 
+136,248 views 
+8:36 
+LeBron James and Russell Westbrook&#39;s Most Vicious Dunks
+- Duration: 3:25.
+NBA 
+291,662 views 
+3:25 
+What&#39;s Wade Doing In Chicago?
+- Duration: 8:53.
+ISAIAH 
+9,894 views 
+8:53 
+NBA Best Bench Reactions To Opposing Team Plays
+- Duration: 3:47.
+HoopsFixationHD 
+465,378 views 
+3:47 
+LeBron James vs Dwyane Wade!!! | Historic Duels | Full Highlights | 04.01.2006
+- Duration: 8:48.
+NBA 
+122,858 views 
+8:48 
+Dwyane Wade Full Highlights 2017.02.06 at Kings - 31 Pts, NASTY In CLUTCH!
+- Duration: 5:04.
+FreeDawkins 
+61,485 views 
+5:04 
+LeBron James Mic&#39;d Up | Best Moments
+- Duration: 2:53.
+NBA 
+393,989 views 
+2:53 
+Dwyane Wade Full Highlights 2017.01.25 vs Hawks - 33 Pts!
+- Duration: 4:26.
+FreeDawkins 
+24,174 views 
+4:26 
+The Weirdest NBA Game Ever! (Warriors vs. Blazers)
+- Duration: 6:29.
+Mixed Tape Videos 
+2,127,585 views 
+6:29 
+JR Smith Be Like…
+- Duration: 2:04.
+BdotAdot5 
+2,521,595 views 
+2:04 
+Draymond Green on Russell Westbrook All-Star Snub | 2016-17 NBA Season
+- Duration: 1:51.
+Ximo Pierto Final 
+287,660 views 
+1:51 
+Dwyane Wade&#39;s Top 10 Plays of His Career
+- Duration: 3:48.
+NBA 
+7,471,359 views 
+3:48 
+Dwyane Wade Meets the Basketball Impersonator and Talks the Evolution of NBA Style
+- Duration: 8:41.
+VICE Sports 
+2,784,983 views 
+8:41 
+Dwyane Wade - Flash
+- Duration: 10:45.
+Joseph Vincent 
+342,664 views 
+10:45 
+Andrew Wiggins Drops 40+ Points Two Nights in a Row! | 02.15.17
+- Duration: 6:36.
+NBA 
+17,453 views New 
+6:36 
+Dwyane Wade got a very warm reception in Miami, is that a problem? | UNDISPUTED
+- Duration: 6:22.
+UNDISPUTED ON FS1 
+77,475 views 
+6:22 
+Dwyane Wade Does Not Give A F**k About Fight During Game
+- Duration: 2:59.
+The Fumble 
+1,005,900 views 
+2:59 
+NBA Bloopers: The Starters
+- Duration: 3:03.
+NBA 
+701,720 views 
+3:03 
+Best Bench Reactions In The NBA
+- Duration: 3:06.
+House Of Hoops 
+3,060,839 views 
+3:06 
+Loading more suggestions...
+Show more 
+Language:
+English
+Content location:
+United States
+Restricted Mode:
+Off
+History   Help
+Loading...
+Loading...
+Loading...
+About 
+Press 
+Copyright 
+Creators 
+Advertise 
+Developers 
++YouTube 
+Terms 
+Privacy 
+Policy &amp; Safety
+Send feedback 
+Test new features 
+Loading...
+Working...
+Sign in to add this to Watch Later
+Add to
+Loading playlists...

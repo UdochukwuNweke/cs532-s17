@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://ogp.me/ns/fb#"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwQBWFdXGwsAVFlUBgg="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,!1),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script><meta content="en" http-equiv="Content-Language"><meta name="google" content="notranslate"><link rel="preconnect dns-prefetch" href="http://sportshub.cbsistatic.com"><link rel="preconnect dns-prefetch" href="http://sportsfly.cbsistatic.com"><link rel="preconnect dns-prefetch" href="http://sports.cbsimg.net"><title>Pat Tillman's widow rips Trump's ban: This isn't the country he died for - CBSSports.com</title><meta itemprop="name" content="Pat Tillman's widow rips Trump's ban: This isn't the country he died for - CBSSports.com"><meta name="description" content="Marie Tillman founded the Pat Tillman Foundation after her husband died in Afghanistan"><meta itemprop="description" content="Marie Tillman founded the Pat Tillman Foundation after her husband died in Afghanistan"><link rel="canonical" href="http://www.cbssports.com/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/"><link rel="amphtml" href="http://www.cbssports.com/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/amp/"><meta property="og:site_name" content="CBSSports.com"><meta property="og:title" content="Pat Tillman's widow rips Trump's ban: This isn't the country he died for"><meta property="og:description" content="Marie Tillman founded the Pat Tillman Foundation after her husband died in Afghanistan"><meta property="og:image" content="http://sportshub.cbsistatic.com/i/r/2017/01/30/d23250ec-0256-4585-8019-8ffaae5ea2e3/thumbnail/770x433/68d7d164ee8ba1f307098b88b89b9872/pat-tillman.jpg"><meta property="og:type" content="Article"><meta property="og:url" content="http://www.cbssports.com/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/"><meta property="fb:pages" content="25902406772"><meta property="fb:app_id" content="297742330311988"><meta property="fb:admins" content="100002967552623"><meta property="article:publisher" content="https://www.facebook.com/cbssports"><meta content="14885860" property="twitter:account_id"><meta content="summary" property="twitter:card"><meta content="http://www.cbssports.com/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/" property="twitter:url"><meta content="Pat Tillman's widow rips Trump's ban: This isn't the country he died for" property="twitter:title"><meta content="Marie Tillman founded the Pat Tillman Foundation after her husband died in Afghanistan" property="twitter:description"><meta content="http://sportshub.cbsistatic.com/i/r/2017/01/30/d23250ec-0256-4585-8019-8ffaae5ea2e3/thumbnail/770x433/68d7d164ee8ba1f307098b88b89b9872/pat-tillman.jpg" property="twitter:image"><meta content="770" property="twitter:image:width"><meta content="433" property="twitter:image:height"><meta content="@cbssports" property="twitter:site"><meta content="@seanjwagner" property="twitter:creator"><meta content="CBSSports.com features live scoring and news for NFL football, MLB baseball, NBA basketball, NHL hockey, college basketball and football. CBSSports.com is also your source for fantasy sports news." name="msapplication-tooltip"><meta content="http://www.cbssports.com/" name="msapplication-starturl"><meta content="width=1024;height=768" name="msapplication-window"><meta content="#1483b2" name="msapplication-navbutton-color"><link rel="alternate" href="android-app://com.handmark.sportcaster/cbssportsapp/www.cbssports.com/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/"><meta name="google-site-verification" content="EdjXVFTZ6BgUzS3Void8cMiXXzE6bXDvNg-Yjl3VZj8"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/images/core/webclips/touch-icon-iphone.png"><link rel="apple-touch-icon" sizes="76x76" href="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/images/core/webclips/touch-icon-ipad.png"><link rel="apple-touch-icon" sizes="120x120" href="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/images/core/webclips/touch-icon-iphone-retina.png"><link rel="apple-touch-icon" sizes="152x152" href="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/images/core/webclips/touch-icon-ipad-retina.png"><link rel="stylesheet" href="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/css/main.desktop.css"><link rel="stylesheet" href="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/css/icon-moon/icon-moon.css"><script type="text/javascript">
+    //Set doc domain for video embed crossdomain fix
+    document.domain = "cbssports.com";
+
+            if ((top.location != self.location) && (document.referrer.indexOf("cbssports.com") == -1)) {
+            window.open(location.href, '_top');
+        }
+    
+    window.SportsPageVars = {
+        ads: {
+            enabled: true,
+            data: {"gpt":{"targeting":{"exclude":"nfl","device":"desktop","ptype":"stories","cid":"pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for","env":"prod"},"adConfig":{"network":{"local":7336,"dev":7336,"qa":8264,"stage":8264,"prod":8264},"method":"async-inline","regions":[],"adUnits":{"intromercial":{"outOfPage":true},"skin":{"sizes":[[1600,1000]],"position":"top","eventCallbacks":{"slotRenderEnded":"adSkinCallback"}},"interstitial":{"outOfPage":true},"resourceCenterTop":{"sizes":[[300,300]],"position":"top"},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,250],[300,600]],"position":"top"},"marqueeTop":{"sizes":[[234,60]],"position":"top"},"mpuTop":{"sizes":[[300,250]],"position":"top"},"mpuBottom":{"sizes":[[300,250]],"position":"bottom","disableInitialLoad":false},"leaderPlusTop":{"sizes":[[728,90],[970,66],[970,250],[970,90]],"position":"top","eventCallbacks":{"slotRenderEnded":"leaderboardCallback"}},"leaderTop":{"sizes":[[728,90],[970,66],[970,90]],"position":"top","eventCallbacks":{"slotRenderEnded":"leaderboardCallback"}},"buttonTop":{"sizes":[[88,31]],"position":"top"},"skyBox":{"sizes":[[980,45]],"position":"top"},"nflnetworkBarTop":{"sizes":[[750,50]],"position":"top"},"nflnetworkMarqueeTop":{"sizes":[[170,100]],"position":"top"},"nflnetworkMarquee2Top":{"sizes":[[400,45]],"position":"top"},"mobileNflnetworkTop":{"sizes":[[300,100]],"position":"top"},"leaderPlus2Bottom":{"sizes":[[728,90],[970,66]],"position":"bottom"},"leaderMiddle":{"sizes":[[728,90],[970,66]],"position":"middle"},"leaderBottom":{"sizes":[[970,66],[728,90]],"position":"bottom"},"mMarqueeTop":{"sizes":[[356,365]],"position":"top"},"mRailTopLeft":{"sizes":[[170,360]],"position":"top"},"mRailBottomLeft":{"sizes":[[170,230]],"position":"bottom"},"mLeaderTop":{"sizes":[[1170,150]],"position":"top"},"mLeaderMiddle":{"sizes":[[1170,150]],"position":"middle"},"mRailTopRight":{"sizes":[[370,345]],"position":"top"},"mStoryInset":{"sizes":[[300,310]],"position":"top"},"mDropdown":{"sizes":[[220,350]],"position":"top"},"mpuMiddle":{"sizes":[[300,250]],"position":"middle"},"mpuTopGametracker":{"sizes":[[300,250]],"position":"top","disableInitialLoad":true,"eventCallbacks":{"slotRenderEnded":"clear20second"}},"sharethroughTop":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"a749ea2b"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"sharethroughBottom":{"sizes":[[11,11]],"position":"bottom","customTargeting":{"strnativekey":"a749ea2b"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"sharethroughArticle":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"433f2831"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"nativeHome":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"rtLBWW4BAaPuvFH4f1kbstrh"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"nativeArena":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"ZWh1zq9on1qtmFoVaRqjA5v9"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"nativeArenaMiddle":{"sizes":[[11,11]],"position":"middle","customTargeting":{"strnativekey":"rSRFToMHkC84SmYyCbF6LsXG"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"nativeStoryTop":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"pUtkm6PEEeEqSsKgmNRVvEGN"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"nativeStoryMiddle":{"sizes":[[11,11]],"position":"middle","customTargeting":{"strnativekey":"pUtkm6PEEeEqSsKgmNRVvEGN"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"nativeStoryBottom":{"sizes":[[11,11]],"position":"bottom","customTargeting":{"strnativekey":"pUtkm6PEEeEqSsKgmNRVvEGN"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"nativeStoryBottom2":{"sizes":[[11,11]],"position":"bottom2","customTargeting":{"strnativekey":"pUtkm6PEEeEqSsKgmNRVvEGN"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"videoThumbnailTop":{"sizes":[[171,231]],"position":"top"}},"mobile":{"adUnits":{"interstitial":{"outOfPage":true},"intromercial":{"outOfPage":true},"mobileBannerTop":{"sizes":[[320,50]],"position":"top"},"mobileBannerMpuHptoOverlay":{"outOfPage":true},"mobileMpuBottom":{"sizes":[[300,250]],"position":"bottom"},"mobileNflnetworkMarqueeTop":{"sizes":[[300,100]],"position":"top"},"mobileNflnetworkTop":{"sizes":[[300,100]],"position":"top"},"mobileHomeFlexTop":{"sizes":[[11,11],[300,250]],"position":"top","customTargeting":{"strnativekey":"FPbxvZ35anf9AJRvNfe6i5bj"}},"mobileHomeFlexMiddle":{"sizes":[[11,11],[300,250]],"position":"middle","customTargeting":{"strnativekey":"FPbxvZ35anf9AJRvNfe6i5bj"}},"mobileHomeFlexBottom":{"sizes":[[11,11],[300,250]],"position":"bottom","customTargeting":{"strnativekey":"FPbxvZ35anf9AJRvNfe6i5bj"}},"mobileHomeFlexBottom2":{"sizes":[[11,11],[300,250]],"position":"bottom2","customTargeting":{"strnativekey":"FPbxvZ35anf9AJRvNfe6i5bj"}},"mobileArenaFlexTop":{"sizes":[[11,11],[300,250]],"position":"top","customTargeting":{"strnativekey":"nJQjFMCYfivejGXoqNXYEKsY"}},"mobileArenaFlexMiddle":{"sizes":[[11,11],[300,250]],"position":"middle","customTargeting":{"strnativekey":"nJQjFMCYfivejGXoqNXYEKsY"}},"mobileArenaFlexBottom":{"sizes":[[11,11],[300,250]],"position":"bottom","customTargeting":{"strnativekey":"nJQjFMCYfivejGXoqNXYEKsY"}},"mobileArenaFlexBottom2":{"sizes":[[11,11],[300,250]],"position":"bottom2","customTargeting":{"strnativekey":"nJQjFMCYfivejGXoqNXYEKsY"}},"mobileBannerTop2":{"sizes":[[320,51]],"position":"top"},"mpuBottom":{"sizes":[[300,250]],"position":"bottom"},"mpuMiddle":{"sizes":[[300,50]],"position":"middle"},"mpuTop":{"sizes":[[320,50]],"position":"top"},"mobileMpuTop":{"sizes":[[300,250]],"position":"top"},"mobileMarketingMpuTop":{"sizes":[[320,100]],"position":"top"},"mobileMarketingMpuMiddle":{"sizes":[[320,100]],"position":"middle"},"mobileMarketingMpuBottom":{"sizes":[[320,100]],"position":"bottom"},"mobileNativeTop":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"FPbxvZ35anf9AJRvNfe6i5bj"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeTop2":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"nJQjFMCYfivejGXoqNXYEKsY"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeTeamTop":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"pjJXawoyvqmBkden6uzUT6kQ"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeGtTop":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"83b0ae49"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeBottom":{"sizes":[[11,11]],"position":"bottom","customTargeting":{"strnativekey":"FPbxvZ35anf9AJRvNfe6i5bj"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeBottom2":{"sizes":[[11,11]],"position":"bottom","customTargeting":{"strnativekey":"nJQjFMCYfivejGXoqNXYEKsY"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"sharethroughPos2":{"sizes":[[11,11]],"position":2,"customTargeting":{"strnativekey":"54ab0589"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeStoryTop":{"sizes":[[11,11]],"position":"top","customTargeting":{"strnativekey":"UhpLuUjohuTPZ7eAodkse53o"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeStoryMiddle":{"sizes":[[11,11]],"position":"middle","customTargeting":{"strnativekey":"UhpLuUjohuTPZ7eAodkse53o"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeStoryBottom":{"sizes":[[11,11]],"position":"bottom","customTargeting":{"strnativekey":"UhpLuUjohuTPZ7eAodkse53o"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mobileNativeStoryBottom2":{"sizes":[[11,11]],"position":"bottom2","customTargeting":{"strnativekey":"UhpLuUjohuTPZ7eAodkse53o"},"eventCallbacks":{"slotRenderEnded":"nativeAdContainerClear"}},"mMarqueeTop":{"sizes":[[356,365]],"position":"top"},"mobileMpuTopGametracker":{"sizes":[[300,250]],"position":"top","disableInitialLoad":true,"eventCallbacks":{"slotRenderEnded":"clear20second"}}}},"tablet":{"adUnits":{"resourceCenterTop":{"sizes":[[300,300]],"position":"top"},"resourceCenterBottom":{"sizes":[[632,160]],"position":"bottom"},"mpuPlusTop":{"sizes":[[300,600],[300,250]]},"marqueeTop":{"sizes":[[234,60]],"position":"top"},"mpuTop":{"sizes":[[300,250],[300,600]],"position":"top"},"mpuBottom":{"sizes":[[300,250]],"position":"bottom"},"leaderTop":{"sizes":[[728,90],[970,66]],"position":"bottom"},"leaderPlusTop":{"sizes":[[728,90],[970,66],[970,250]],"position":"top"}}},"siteName":"cbssports","collapseEmptyDiv":true,"setRefreshUnfilledSlots":false,"setClearUnfilledSlots":true,"disableInitialLoad":false,"disableInitialLoadCompanions":true,"enableSingleRequest":true,"enableAsyncRendering":true,"defaultRegion":"aw","adOrder":["leader_plus_top","leader_top","m_leader_top","skin","mpu_plus_top","mpu_top","mpu_top_gametracker","m_marquee_top","m_rail_top_left","m_rail_top_right","sharethrough_top","sharethrough_bottom","leader_middle","m_leader_middle","mpu_middle","m_story_inset","m_dropdown","leader_plus2_bottom","leader_bottom","mpu_bottom","m_rail_bottom_left","native_story_top","native_story_middle","native_story_bottom","native_story_bottom2","interstitial"],"disableInitialLoadRefresh":true,"enableHeaderBidding":true,"disableClearTargetingOnInit":true,"enableRepeatedAds":true},"containerId":"58a68d431efcd","slotVars":{"network":"8264","siteName":"cbssports","collapseEmptyDiv":"1","topics":"nfl\/media\/stories","platform":"desktop"},"adType":"gpt","adDivIds":["mpu-plus-top-58a68d431efcd","mpu-middle-58a68d431efcd","leader-bottom-58a68d431efcd","intromercial-58a68d431efcd","skin-58a68d431efcd","leader-top-58a68d431efcd","nflnetwork-bar-top-58a68d431efcd"]},"cookieName":"cbssports_ad","cookieServicePath":"\/ad\/ad-cookie\/","session":6,"subSession":4,"useFirstPageTargeting":true}
+        },
+        assetsVersion: {
+            version: 'fly-516'
+        },
+        device: "desktop",
+        environment: 'prod',
+        locale: 'en',
+        tracking: {
+            enabled: true
+        },
+        user: {
+            baseUrl: "https://www.cbssports.com",
+            'urls': {
+                                                                                                                                                                                                }
+        },
+        liveConnection: {
+            enabled: true
+        },
+        taboolaTag: {
+            enabled: true
+        }
+    };
+    // console.log(window.SportsPageVars);
+</script><script async="async" src="//www.googletagservices.com/tag/js/gpt.js"></script><script src="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediajs/js-build/fly/libs/guid-1.0.js"></script><script type="text/javascript">
+		    var __tealium_data_guid = null;
+		    if (typeof window.uuid.v1 === 'function'){
+		        __tealium_data_guid=window.uuid.v1();
+		    }
+
+		    var _utag_obj={"isEnabled":true,"articleAuthorId":["3039f2a8-a8f0-411d-b40e-325a6dbeb0a0"],"articleAuthorName":["sean wagner-mcgough"],"articleId":"d5f3d6da-3b97-41b4-8d75-668b6af1dd8b","articlePubDate":"2017-01-30 01:00:40","articleTitle":"pat tillman\u0027s widow rips trump\u0027s ban: this isn\u0027t the country he died for","articleType":"content_article_vembed","deviceType":"desktop","isDev":"0","pageNum":"1","pageType":"stories","siteHier":["media","nfl","stories"],"siteSection":["media","nfl","","","stories",""],"siteType":"desktop web","topicId":["f9d653c1-f145-42fd-836f-c5f09d0cbd5a"],"topicName":["nfl"],"userState":"not authenticated","userType":"anon","dwAccount":"cbsicbssportssite","dwHost":"dw.cbsi.com","siteId":175,"reportSuiteId":"cbsicbssportssite","bkSiteId":3344,"limit":4,"pageName":"\/nfl\/news\/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for\/","pageTypeId":"6858","pageOntologyId":"23734","contentOrigin":"cbssports.com original","siteName":"cbssports","tealium":{"profile":"cbssportssite","env":"prod"}};    
+		    _utag_obj.pageViewGuid=__tealium_data_guid;
+		    var utag_data=_utag_obj;
+		</script><script async src="//cdn.optimizely.com/js/3717650865.js"></script><script type="text/javascript" src="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediajs/js-build/libs/require-2.1.22.js"></script><script type="text/javascript">
+    require.config({"baseUrl":"http:\/\/sportsfly.cbsistatic.com\/fly-516\/bundles\/sportsmediajs\/js-build","urlArgs":"","config":{"version":{"fly\/components\/accordion":"1.0","fly\/components\/alert":"1.0","fly\/components\/base":"1.0","fly\/components\/carousel":"1.0","fly\/components\/dropdown":"1.0","fly\/components\/fixate":"1.0","fly\/components\/form-validate":"1.0","fly\/components\/image-gallery":"1.0","fly\/components\/iframe-messenger":"1.0","fly\/components\/livefyre-commentcount":"1.0","fly\/components\/livefyre-conversation":"1.0","fly\/components\/load-more":"1.0","fly\/components\/load-more-article":"1.0","fly\/components\/load-more-scroll":"1.0","fly\/components\/loading":"1.0","fly\/components\/marketing-slider":"1.0","fly\/components\/modal":"1.0","fly\/components\/modal-iframe":"1.0","fly\/components\/network-bar":"1.0","fly\/components\/poll":"1.0","fly\/components\/search-player":"1.0","fly\/components\/social-button":"1.0","fly\/components\/social-counts":"1.0","fly\/components\/social-links":"1.0","fly\/components\/tabs":"1.0","fly\/components\/video":"1.0","fly\/libs\/easy-xdm":"2.4.17.1","fly\/libs\/jquery.cookie":"1.2","fly\/libs\/jquery.throttle-debounce":"1.1","fly\/libs\/jquery.widget":"1.9.2","fly\/libs\/omniture.s-code":"1.0","fly\/utils\/jquery-mobile-init":"1.0","fly\/libs\/jquery.mobile":"1.3.2","fly\/libs\/backbone":"1.0.0","fly\/libs\/underscore":"1.5.1","fly\/libs\/jquery.easing":"1.3","fly\/managers\/ad":"2.0","fly\/managers\/components":"1.0","fly\/managers\/cookie":"1.0","fly\/managers\/debug":"1.0","fly\/managers\/geo":"1.0","fly\/managers\/gpt":"4.2","fly\/managers\/history":"2.0","fly\/managers\/madison":"1.0","fly\/managers\/social-authentication":"1.0","fly\/managers\/tealium":"1.0","fly\/utils\/data-prefix":"1.0","fly\/utils\/data-selector":"1.0","fly\/utils\/function-natives":"1.0","fly\/utils\/guid":"1.0","fly\/utils\/log":"1.0","fly\/utils\/object-helper":"1.0","fly\/utils\/string-helper":"1.0","fly\/utils\/string-vars":"1.0","fly\/utils\/url-helper":"1.0","libs\/jshashtable":"2.1","libs\/select2":"3.5.1","libs\/jsonp":"2.4.0","libs\/jquery\/mobile":"1.4.5","libs\/modernizr.custom":"2.6.2","libs\/velocity":"1.2.2","libs\/dataTables":"1.10.6","libs\/dataTables.fixedColumns":"3.0.4","libs\/dataTables.fixedHeader":"2.1.2","libs\/dateformat":"1.0.3","libs\/waypoints\/infinite":"3.1.1","libs\/waypoints\/inview":"3.1.1","libs\/waypoints\/jquery.waypoints":"3.1.1","libs\/waypoints\/sticky":"3.1.1","libs\/jquery\/dotdotdot":"1.6.1","libs\/jquery\/flexslider":"2.1","libs\/jquery\/lazyload":"1.9.3","libs\/jquery\/maskedinput":"1.3.1","libs\/jquery\/marquee":"1.3.1","libs\/jquery\/numberformatter":"1.2.3","libs\/jquery\/placeholder":"0.2.4","libs\/jquery\/scrollbar":"0.1.6","libs\/jquery\/tablesorter":"2.0.5","libs\/jquery\/ui\/jquery.ui.core":"1.11.4","libs\/jquery\/ui\/jquery.ui.draggable":"1.11.4","libs\/jquery\/ui\/jquery.ui.mouse":"1.11.4","libs\/jquery\/ui\/jquery.ui.position":"1.11.4","libs\/jquery\/ui\/jquery.ui.slider":"1.11.4","libs\/jquery\/ui\/jquery.ui.sortable":"1.11.4","libs\/jquery\/ui\/jquery.ui.touch-punch":"0.2.3","libs\/jquery\/ui\/jquery.ui.autocomplete":"1.11.4","libs\/jquery\/ui\/jquery.ui.accordion":"1.11.4","libs\/jquery\/ui\/jquery.ui.tabs":"1.11.4","libs\/jquery\/ui\/jquery.ui.menu":"1.11.4","libs\/jquery\/ui\/jquery.ui.dialog":"1.11.4","libs\/jquery\/ui\/jquery.ui.resizable":"1.11.4","libs\/jquery\/ui\/jquery.ui.button":"1.11.4","libs\/jquery\/ui\/jquery.ui.tooltip":"1.11.4","libs\/jquery\/ui\/jquery.ui.effects":"1.11.4","libs\/jquery\/ui\/jquery.ui.datepicker":"1.11.4"}},"shim":{"libs\/getValueFromArray":{"exports":"get"},"fly\/libs\/jquery.mobile-1.3.2":["version!fly\/utils\/jquery-mobile-init"],"libs\/backbone.marionette":{"deps":["jquery","version!fly\/libs\/underscore","version!fly\/libs\/backbone"],"exports":"Marionette"},"fly\/libs\/underscore-1.5.1":{"exports":"_"},"fly\/libs\/backbone-1.0.0":{"deps":["version!fly\/libs\/underscore","jquery"],"exports":"Backbone"},"libs\/dateformat-1.0.3":{"deps":["jquery"],"exports":"DateFormat"},"libs\/jquery\/ui\/jquery.ui.tabs-1.11.4":["jquery","version!libs\/jquery\/ui\/jquery.ui.core","version!fly\/libs\/jquery.widget"],"libs\/jquery\/flexslider-2.1":["jquery"],"libs\/dataTables.fixedColumns-3.0.4":["jquery","version!libs\/dataTables"],"libs\/dataTables.fixedHeader-2.1.2":["jquery","version!libs\/dataTables"]},"map":{"*":{"facebook":"\/\/connect.facebook.net\/en_US\/sdk.js","facebook-debug":"\/\/connect.facebook.net\/en_US\/all\/debug.js","google":"https:\/\/apis.google.com\/js\/plusone.js","google-signin":"https:\/\/apis.google.com\/js\/client:platform.js","google-csa":"\/\/www.google.com\/adsense\/search\/async-ads.js","google-javascript-api":"https:\/\/www.google.com\/jsapi","gpt":"\/\/www.googletagservices.com\/tag\/js\/gpt.js","livefyre":"\/\/cdn.livefyre.com\/Livefyre.js","livefyre-commentcount":"\/\/zor.livefyre.com\/wjs\/v1.0\/javascripts\/CommentCount.js","recaptcha":"http:\/\/www.google.com\/recaptcha\/api\/js\/recaptcha_ajax.js","optimizely":"\/\/cdn.optimizely.com\/js\/3717650865.js","twitter":"\/\/platform.twitter.com\/widgets.js","mpx":"libs\/tpPdk","tealium":"\/\/tags.tiqcdn.com\/utag\/cbsi\/cbssportssite\/prod\/utag.js","taboola":"\/\/cdn.taboola.com\/libtrc\/cbsinteractive-cbssports\/loader.js","sharethrough":"\/\/native.sharethrough.com\/assets\/tag.js","newsroom":"\/\/c2.taboola.com\/nr\/cbsinteractive-cbssports\/newsroom.js"}}});
+    require(['main.desktop']);
+</script><script src="//js-sec.indexww.com/ht/ls-cbssports.js" async></script><script type="text/javascript" src="//mtrx.go.sonobi.com/morpheus.cbssports.1044.js" async></script></head><body data-cms-edit='{"url":"http://cms.cbssports.com/content/article/d5f3d6da-3b97-41b4-8d75-668b6af1dd8b"}'>
+        <div id="cbs-site-data" style="display: none">
+        site: media | arena: nfl | pageType: stories | 
+        section: news | slug: pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for | sport: football | 
+        6-keys: media/spln/nfl/reg/free/stories
+    </div>
+
+    <div class="page-shell article-page single-block-layout ">
+        <div id="intromercial-58a68d431efcd" class="ad-intromercial " data-ad="intromercial">
+    <script>
+        window.console && console.log && console.log("ADS: queuing intromercial-58a68d431efcd for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("intromercial-58a68d431efcd");
+    </script></div>
+
+    
+                    
+<link rel="stylesheet" href="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/css/header-footer/header-footer.desktop.css"><header id="cbs-site-header" class="cbs-site-header" data-component="siteHeader"><div id="cbs-network-bar" class="nav-network-bar">
+            <ul class="nav-networks"><li class="nav-networks-item is-selected">
+                    <a href="http://www.cbssports.com" om-event="Brand Bar|CBSSports">
+                        CBSSports.com
+                    </a>
+                </li>
+                                                            
+                <li class="nav-networks-item ">
+                    <a href="http://247sports.com/" target="_blank" om-event="Brand Bar|247Sports">
+                        247Sports
+                    </a>
+                </li>
+                                                            
+                <li class="nav-networks-item ">
+                    <a href="http://www.maxpreps.com" target="_blank" om-event="Brand Bar|MaxPreps">
+                        MaxPreps
+                    </a>
+                </li>
+                                                            
+                <li class="nav-networks-item ">
+                    <a href="http://www.sportsline.com" target="_blank" om-event="Brand Bar|SportsLine">
+                        SportsLine
+                    </a>
+                </li>
+                                                            
+                <li class="nav-networks-item ">
+                    <a href="http://shop.cbssports.com/?utm_source=cbssportscom_hp&amp;utm_medium=bm_referral&amp;utm_term=kw--CBS_Sports" target="_blank" om-event="Brand Bar|Shop">
+                        Shop
+                    </a>
+                </li>
+                    </ul><ul class="nav-follow-us"><li class="nav-follow-us-item nav-follow-us-item-label">
+            Follow CBS Sports         </li>
+                    <li class="nav-follow-us-item">
+                                                
+                                
+    <a href="https://www.facebook.com/cbssports" class="btn social icon-moon-facebook" target="_blank" rel="nofollow" aria-label="Facebook" title="Facebook" om-event="Brand Bar|Facebook"></a>
+
+            </li>
+            <li class="nav-follow-us-item">
+                                                
+                                
+    <a href="https://twitter.com/cbssports" class="btn social icon-moon-twitter" target="_blank" rel="nofollow" aria-label="Twitter" title="Twitter" om-event="Brand Bar|Twitter"></a>
+
+            </li>
+            <li class="nav-follow-us-item">
+                                                
+                                
+    <a href="https://instagram.com/cbssports/" class="btn social icon-moon-instagram" target="_blank" rel="nofollow" aria-label="Instagram" title="Instagram" om-event="Brand Bar|Instagram"></a>
+
+            </li>
+            </ul></div>
+        
+
+
+
+                                                                                    
+    
+        
+                                                                                                                                                                                                                                                                                            
+
+<div id="cbs-site-nav" class="cbs-site-nav">
+    <div class="site-nav-inner">
+        <div class="site-nav-logo">
+            <div class="cbs-logo-lockup">
+                
+                <div class="cbs-logo">
+                    <a href="/" om-event="Arena Nav|Logo">
+                        <span class="cbs-logo-icon icon-moon-cbs-icon"></span>
+                    </a>
+                </div>
+
+                <div id="cbs-logo-section" class="cbs-logo-section has-icon">
+                    <div class="cbs-logo-pos">
+                        <span class="logo-sport icon-moon-arena-text-nfl"></span>
+                        <span class="logo-icon icon-moon-caret-down"></span>
+                    </div>
+                                        <div class="cbs-logo-dropdown">
+                                                    <ul class="nav-dropdown-col"><li class="nav-dropdown-item">
+                                            <span class="icon-sport icon-moon-cbs-icon"></span>
+                                            <a href="http://www.cbssports.com" om-event="Arena Nav|NFL|CBSSports">CBS Sports Home</a>
+                                        </li>
+                                                                        <li class="nav-dropdown-item ">
+                                                                                    <span class="icon-sport icon-moon-arena-fantasy"></span>
+                                                                                                                
+            <a href="/fantasy/" om-event="Arena Nav|NFL|Fantasy">
+            Fantasy
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item is-selected">
+                                                                                    <span class="icon-sport icon-moon-arena-nfl"></span>
+                                                                                                                
+            <a href="/nfl/" om-event="Arena Nav|NFL|NFL">
+            NFL
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                    <span class="icon-sport icon-moon-arena-basketball"></span>
+                                                                                                                
+            <a href="/nba/" om-event="Arena Nav|NFL|NBA">
+            NBA
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                    <span class="icon-sport icon-moon-arena-basketball"></span>
+                                                                                                                
+            <a href="/college-basketball/" om-event="Arena Nav|NFL|NCAA BB">
+            NCAA BB
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                    <span class="icon-sport icon-moon-arena-golf"></span>
+                                                                                                                
+            <a href="/golf/" om-event="Arena Nav|NFL|Golf">
+            Golf
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                    <span class="icon-sport icon-moon-arena-ncaafb"></span>
+                                                                                                                
+            <a href="/college-football/" om-event="Arena Nav|NFL|NCAA FB">
+            NCAA FB
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                    <span class="icon-sport icon-moon-arena-mlb"></span>
+                                                                                                                
+            <a href="/mlb/" om-event="Arena Nav|NFL|MLB">
+            MLB
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                                                            </ul><ul class="nav-dropdown-col"><li class="nav-dropdown-item ">
+                                                                                                                
+            <a href="/nhl/" om-event="Arena Nav|NFL|NHL">
+            NHL
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+            <a href="/soccer/" om-event="Arena Nav|NFL|Soccer">
+            Soccer
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+            <a href="/mma/" om-event="Arena Nav|NFL|MMA">
+            MMA
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+            <a href="/tennis/" om-event="Arena Nav|NFL|Tennis">
+            Tennis
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+            <a href="/boxing" om-event="Arena Nav|NFL|Boxing">
+            Boxing
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+            <a href="/olympics/" om-event="Arena Nav|NFL|Olympics">
+            Olympics
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="http://www.maxpreps.com/national/national.htm" target="_blank" class="external-link" om-event="Arena Nav|NFL|High School">
+            High School 
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="http://sports.cbslocal.com/" target="_blank" rel="nofollow" class="external-link" om-event="Arena Nav|NFL|CBS Local Sites">
+            CBS Local Sites 
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                                                            </ul><ul class="nav-dropdown-col"><li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="http://www.nascar.com/en_us/sprint-cup-series.html?cid=syn_cbs_referrers_navlinks_01112013&amp;synid=syn_cbs_referrers_navlinks_01112013" target="_blank" rel="nofollow" class="external-link" om-event="Arena Nav|NFL|NASCAR">
+            NASCAR 
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="https://www.americasbestracing.net/" target="_blank" rel="nofollow" class="external-link" om-event="Arena Nav|NFL|Horse Racing">
+            Horse Racing 
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="https://toughmudder.com/" target="_blank" rel="nofollow" class="external-link" om-event="Arena Nav|NFL|Tough Mudder">
+            Tough Mudder 
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="http://www.arenafootball.com/" target="_blank" rel="nofollow" class="external-link" om-event="Arena Nav|NFL|Arena Football">
+            Arena Football 
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="http://www.bowl.com/" target="_blank" rel="nofollow" class="external-link" om-event="Arena Nav|NFL|Bowling">
+            Bowling 
+        </a>
+    
+                                    </li>
+                                                                                                                                                                                                                                                                                                
+                                    
+                                                                                                            <li class="nav-dropdown-item ">
+                                                                                                                
+                                    <a href="https://www.ticketcity.com/" target="_blank" rel="nofollow" class="external-link" om-event="Arena Nav|NFL|Tickets">
+            Tickets 
+        </a>
+    
+                                    </li>
+                                                            </ul></div>
+                </div>
+            </div>
+        </div>
+
+        
+        <nav class="site-nav-list"><ul><li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/" om-event="Arena Nav|Home">
+            Home
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/scoreboard/" om-event="Arena Nav|Scores">
+            Scores
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/schedules/postseason" om-event="Arena Nav|Schedule">
+            Schedule
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/standings" om-event="Arena Nav|Standings">
+            Standings
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                                                                
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/fantasy/football/" om-event="Arena Nav|Fantasy">
+            Fantasy
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/teams" om-event="Arena Nav|Teams">
+            Teams
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/stats" om-event="Arena Nav|Stats">
+            Stats
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/injuries" om-event="Arena Nav|Injuries">
+            Injuries
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/transactions" om-event="Arena Nav|Transactions">
+            Transactions
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/players" om-event="Arena Nav|Players">
+            Players
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/powerrankings/" om-event="Arena Nav|Power Rankings">
+            Power Rankings
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/draft" om-event="Arena Nav|NFL Draft">
+            NFL Draft
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/superbowl/" om-event="Arena Nav|Super Bowl">
+            Super Bowl
+        </a>
+    
+
+                                                                    </li>
+                                                                                                                                                                
+                    
+                    <li class="nav-list-item  nav-item-overflow">
+                                                        
+            <a href="/nfl/video/pro-football-rundown" om-event="Arena Nav|PFB Rundown">
+            PFB Rundown
+        </a>
+    
+
+                                                                    </li>
+                
+                                                                        
+                    <li class="nav-list-item has-dropdown the-dots total-items-14">
+                        <span class="icon-more icon-moon-nav-more"></span>
+                        <ul class="site-nav-dropdown is-the-dots is-wide"><li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/" om-event="Arena Nav|NFL|More|Home">
+            Home
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/scoreboard/" om-event="Arena Nav|NFL|More|Scores">
+            Scores
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/schedules/postseason" om-event="Arena Nav|NFL|More|Schedule">
+            Schedule
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/standings" om-event="Arena Nav|NFL|More|Standings">
+            Standings
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/fantasy/football/" om-event="Arena Nav|NFL|More|Fantasy">
+            Fantasy
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/teams" om-event="Arena Nav|NFL|More|Teams">
+            Teams
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/stats" om-event="Arena Nav|NFL|More|Stats">
+            Stats
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/injuries" om-event="Arena Nav|NFL|More|Injuries">
+            Injuries
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/transactions" om-event="Arena Nav|NFL|More|Transactions">
+            Transactions
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/players" om-event="Arena Nav|NFL|More|Players">
+            Players
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/powerrankings/" om-event="Arena Nav|NFL|More|Power Rankings">
+            Power Rankings
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/draft" om-event="Arena Nav|NFL|More|NFL Draft">
+            NFL Draft
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/superbowl/" om-event="Arena Nav|NFL|More|Super Bowl">
+            Super Bowl
+        </a>
+    
+                                </li>
+                                                            <li class="nav-dropdown-item nav-dropdown-overflow">
+                                                                                                                                            
+            <a href="/nfl/video/pro-football-rundown" om-event="Arena Nav|NFL|More|PFB Rundown">
+            PFB Rundown
+        </a>
+    
+                                </li>
+                                                    </ul></li>
+                            </ul></nav><div class="site-nav-side">
+    <ul class="site-nav-side-inner"><li class="nav-side-item games-item has-dropdown">
+                <span class="narrow-text">Play</span>
+                <span class="narrow-icon icon-item icon-moon-nav-games"></span>
+                                <div class="site-nav-dropdown is-dropdown-games align-right">
+                    <div class="nav-dropdown-inner">
+                                                    <div class="nav-dropdown-game">
+                                                                    <h6 class="nav-dropdown-title">
+                                                                                                                
+            <a href="/fantasy/games/football/?ttag=FFB16_os_drpdwn_feat_lk" om-event="Global Nav|NFL|Play|Games|Text">
+            Games
+        </a>
+    
+                                    </h6>
+                                                                                                    <div class="nav-game-wrap">
+                                                                                                                                                                            <div class="nav-game game-left">
+                                                <div class="nav-game-image">
+                                                    <a href="http://www.cbssports.com/fantasy/games/?ftag=SPM-16-10aad1a" om-event="Global Nav|NFL|Play|Fantasy baseball|Feature 1">
+                                                                    <figure class=" img"><img class=" is-lazy-image" alt="fbb180x100.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/01/26/bdda51bd-f734-4aa9-9a83-11e914c0c74c/thumbnail/180x100/27fa792f402f585f512bae94c54e0dc3/fbb180x100.jpg" src="" height="100" width="180"></figure><p class="nav-game-text">
+                                                            Play Now
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <p class="nav-game-title">
+                                                                                    
+            <a href="/fantasy/games/?ftag=SPM-16-10aad1a" om-event="Global Nav|NFL|Play|Fantasy baseball|Feature 1">
+            FANTASY BASEBALL
+        </a>
+    
+                                                </p>
+                                            </div>
+                                                                                                                                                                            <div class="nav-game game-right">
+                                                <div class="nav-game-image">
+                                                    <a href="http://www.cbssports.com/fantasy/basketball/games/commissioner?ttag=FBKC16_os_drpdwn_feat" om-event="Global Nav|NFL|Play|Fantasy basketball|Feature 2">
+                                                                    <figure class=" img"><img class=" is-lazy-image" alt="basketballcommish568x320jpg.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2016/12/14/1f882d09-444d-4245-9402-46b38bb2da58/thumbnail/180x100/ca9fa3f522e9d4ba58c521bcdbdf2baf/basketballcommish568x320jpg.jpg" src="" height="100" width="180"></figure><p class="nav-game-text">
+                                                            Play Now
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <p class="nav-game-title">
+                                                                                    
+            <a href="/fantasy/basketball/games/commissioner?ttag=FBKC16_os_drpdwn_feat" om-event="Global Nav|NFL|Play|Fantasy basketball|Feature 2">
+            FANTASY BASKETBALL
+        </a>
+    
+                                                </p>
+                                            </div>
+                                                                            </div>
+                                                                                                                            </div>
+                                                    <div class="nav-dropdown-game">
+                                                                                                                                                                                                            <div class="nav-game-dropdown-text">
+                                                                                                                                
+            <a href="/fantasy/games/my-teams/" om-event="Global Nav|NFL|Play|Visit your leagues|Text">
+            Visit your Leagues
+        </a>
+    
+                                        </div>
+                                                                                                </div>
+                                                    <div class="nav-dropdown-game">
+                                                                    <h6 class="nav-dropdown-title">
+                                                                                                                
+            <a href="/fantasy/games/basketball/?ttag=FBK16_os_drpdwn_lk" om-event="Global Nav|NFL|Play|Fantasy basketball|Text">
+            Fantasy Basketball
+        </a>
+    
+                                    </h6>
+                                                                                                                                                            </div>
+                                                    <div class="nav-dropdown-game">
+                                                                    <h6 class="nav-dropdown-title">
+                                                                                                                
+            <a href="/fantasy/games/hockey/?ttag=FHK16_os_drpdwn_lk" om-event="Global Nav|NFL|Play|Fantasy hockey|Text">
+            Fantasy Hockey
+        </a>
+    
+                                    </h6>
+                                                                                                                                                            </div>
+                                                    <div class="nav-dropdown-game">
+                                                                    <h6 class="nav-dropdown-title">
+                                                                                                                
+            <a href="/fantasy/games/football?ttag=FF16_os_drpdwn_lk" om-event="Global Nav|NFL|Play|Fantasy football|Text">
+            Fantasy Football
+        </a>
+    
+                                    </h6>
+                                                                                                                                                            </div>
+                                                    <div class="nav-dropdown-game">
+                                                                    <h6 class="nav-dropdown-title">
+                                                                                                                
+            <a href="/fantasy/games/baseball/?ttag=FBB16_os_drpdwn_lk" om-event="Global Nav|NFL|Play|Fantasy baseball|Text">
+            Fantasy Baseball
+        </a>
+    
+                                    </h6>
+                                                                                                                                                            </div>
+                                            </div>
+                    <div class="nav-dropdown-bottom">
+                        <div class="nav-dropdown-button">
+                                                                                        
+            <a href="/fantasy/games/" om-event="Global Nav|NFL|Play|See All">
+            See All Sports Games
+        </a>
+    
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+                                <li class="nav-side-item watch-item has-dropdown">
+                <span class="narrow-text">Watch</span>
+                <span class="narrow-icon icon-item icon-moon-nav-watch"></span>
+                                <div class="site-nav-dropdown align-right">
+                    <div class="nav-dropdown-inner">
+                                                                                                                <h6 class="nav-dropdown-title">
+                                                                                                        
+            <a href="/video/player?channel=cbssportsnetwork" om-event="Global Nav|NFL|Watch|Featured Video|Text">
+            Latest from CBS Sports Network
+        </a>
+    
+                                </h6>
+                                <div class="nav-dropdown-top">
+                                                                                                                            
+                                                                                                                    
+                
+            <a href="/video/player?channel=cbssportsnetwork" class="">
+            <div class="image-icon-overlay-wrap     ">
+                                                        <figure class=" img"><img class=" is-lazy-image" alt="1400x788.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2016/05/31/768703e3-9788-460b-acc2-ecf6588b8815/thumbnail/270x152/f1241f61084d9497e268cebf15dce6f6/1400x788.jpg" src="" height="152" width="270"></figure><div class="image-icon-overlay size-small type-video ">
+                </div>
+                            
+            
+                    </div>
+            </a>
+    
+             
+                                                                    </div>
+                                <ul><li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/watch/cbssportsnetwork/" om-event="Global Nav|NFL|Watch|Watch CBS Sports Network">
+            Watch CBS Sports Network
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/collegebasketball/video/cbk-live" om-event="Global Nav|NFL|Watch|College Basketball Live">
+            College Basketball Live
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/fantasy/fantasy-football-today" om-event="Global Nav|NFL|Watch|Fantasy Football Today">
+            Fantasy Football Today
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/cbssports" om-event="Global Nav|NFL|Watch|TV Shows &amp; Listings">
+            TV Shows &amp; Listings
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+                                    <a href="http://www.cbssportsnetwork.com/" target="_blank" rel="nofollow" class="external-link" om-event="Global Nav|NFL|Watch|CBSSN Channel Finder">
+            CBSSN Channel Finder 
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/nfl/video/pro-football-rundown" om-event="Global Nav|NFL|Watch|Pro FB Rundown">
+            Pro FB Rundown
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="http://www.collegesportslive.com/start/?ftag=CSL-01-10aaa6f" om-event="Global Nav|NFL|Watch|College Sports Live">
+            College Sports Live
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/video/player/247-sports-live" om-event="Global Nav|NFL|Watch|247Sports Live">
+            247Sports Live
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/video/player/reiter-than-you" om-event="Global Nav|NFL|Watch|Reiter Than You">
+            Reiter Than You
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/partner/sports-minute" om-event="Global Nav|NFL|Watch|Sports Minute">
+            Sports Minute
+        </a>
+    
+                                </li>
+                                                                                                                                            <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/video/player/videos" om-event="Global Nav|NFL|Watch|All Videos">
+            All Videos
+        </a>
+    
+                                </li>
+                                                                            </ul></div>
+                </div>
+            </li>
+        
+                                <li class="nav-side-item listen-item has-dropdown">
+                <span class="narrow-text">Listen</span>
+                <span class="narrow-icon icon-item icon-moon-nav-listen"></span>
+                                <div class="site-nav-dropdown align-right">
+                    <div class="nav-dropdown-inner">
+                                                                                                                                            <h6 class="nav-dropdown-title">
+                                    CBS Sports Radio
+                                </h6>
+                                <div class="nav-dropdown-top">
+                                                                            <div class="nav-dropdown-image">
+                                            <a href="http://radio.cbssports.com/" target="_blank" om-event="Global Nav|NFL|Listen|Featured Podcast|Image">
+                                                            <figure class=" img"><img class=" is-lazy-image" alt="cbssports-radio.png" data-lazy="http://sportshub.cbsistatic.com/i/r/2016/02/24/fb0619ed-f59a-47ac-ac37-d7f670af79f3/thumbnail/100x100/97e3cd55c0d67234988d134e0d362eeb/cbssports-radio.png" src="" height="100" width="100"></figure></a>
+                                        </div>
+                                                                        <div class="nav-dropdown-top-side">
+                                        <p class="nav-dropdown-top-title">
+                                                                                                                        
+                                    <a href="http://radio.cbssports.com/" target="_blank" class="external-link" om-event="Global Nav|NFL|Listen|Featured Podcast|Text">
+            Listen Live 
+        </a>
+    
+                                        </p>
+                                                                            </div>
+                                </div>
+                                                                                                                                                                                                        <h6 class="nav-dropdown-title">
+                                    Fantasy Baseball Today
+                                </h6>
+                                <div class="nav-dropdown-top">
+                                                                            <div class="nav-dropdown-image">
+                                            <a href="https://soundcloud.com/cbssportspodcasts/first-base-preview-1" target="_blank" om-event="Global Nav|NFL|Listen|Featured Podcast|Image">
+                                                            <figure class=" img"><img class=" is-lazy-image" alt="fantasybaseballtodaypodcastcover.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/01/23/b48ed0c6-eb9c-45e6-aede-e238d2730514/thumbnail/100x100/b8b3178a8794e56f601fbf2f6473fd7f/fantasybaseballtodaypodcastcover.jpg" src="" height="100" width="100"></figure></a>
+                                        </div>
+                                                                        <div class="nav-dropdown-top-side">
+                                        <p class="nav-dropdown-top-title">
+                                                                                                                        
+                                    <a href="https://soundcloud.com/cbssportspodcasts/first-base-preview-1" target="_blank" rel="nofollow" class="external-link" om-event="Global Nav|NFL|Listen|Featured Podcast|Text">
+            First Base Preview 
+        </a>
+    
+                                        </p>
+                                                                                    <time class="nav-dropdown-top-date">
+                                                12h ago
+                                            </time></div>
+                                </div>
+                                                                    <ul><li class="nav-dropdown-item">
+                                                                                                        
+                                    <a href="http://sports.cbslocal.com/cbs-sports-radio-roundup/" target="_blank" rel="nofollow" class="external-link" om-event="Global Nav|NFL|Listen|CBS Sports Radio Roundup">
+            CBS Sports Radio Roundup 
+        </a>
+    
+                                </li>
+                                                                                                                                                                        <li class="nav-dropdown-item">
+                                                                                                        
+            <a href="/podcast" om-event="Global Nav|NFL|Listen|Podcasts">
+            Podcasts
+        </a>
+    
+                                </li>
+                                                                                                                                                                        <li class="nav-dropdown-item">
+                                                                                                        
+                                    <a href="http://gottlieb.radio.cbssports.com/" target="_blank" class="external-link" om-event="Global Nav|NFL|Listen|The Doug Gottlieb Show">
+            The Doug Gottlieb Show 
+        </a>
+    
+                                </li>
+                                                                                                                                                                        <li class="nav-dropdown-item">
+                                                                                                        
+                                    <a href="http://jimrome.com/" target="_blank" rel="nofollow" class="external-link" om-event="Global Nav|NFL|Listen|The Jim Rome Show">
+            The Jim Rome Show 
+        </a>
+    
+                                </li>
+                                                                            </ul></div>
+                </div>
+            </li>
+        
+                <li class="nav-side-item log-in-item">
+            <a href="https://auth.cbssports.com/login?master_product=150&amp;xurl=http%3A%2F%2Fwww.cbssports.com%2Fnfl%2Fnews%2Fpat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for%2F%3Futm_medium%3Dtwitter%26utm_source%3Ddlvr.it" om-event="Global Nav|NFL|Log In">
+                <span class="the-button">Log In</span>
+            </a>
+        </li>
+
+                <li class="nav-side-item user-item has-dropdown">
+            <span class="the-button">
+                <span class="icon-item-button icon-moon-nav-avatar"></span>
+                <span class="icon-item-text">My Teams</span>
+            </span>
+
+                        <div class="site-nav-dropdown is-dropdown-user align-right">
+                <div id="nav-side-my-teams">
+                                        <div class="loader">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+                <div class="nav-my-teams-bottom">
+                    <div class="bottom-row">
+                        <a href="/fantasy/games/my-teams/" om-event="Global Nav|NFL|Profile|Organize My Teams">Organize / See All Teams</a>
+                        <a href="http://cbsi.force.com/CBSi/cbssports" om-event="Global Nav|NFL|Profile|Wallet">Help</a>
+                    </div>
+                    <div class="bottom-row">
+                        <a href="http://www.cbssports.com/settings" om-event="Global Nav|NFL|Profile|Account Settings">Account Settings</a>
+                        <a href="http://www.cbssports.com/logout?end=http%3A%2F%2Fwww.cbssports.com%2Fnfl%2Fnews%2Fpat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for%2F%3Futm_medium%3Dtwitter%26utm_source%3Ddlvr.it" om-event="Global Nav|NFL|Profile|Sign Out">Log Out</a>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul></div>
+    </div>
+</div></header><div class="page-marquee-container">
+                            </div>
+
+            <div id="mantle_skin" class="mantle-skin" data-component="adsSticky">
+                                    <span id="adSkinLeft" class="ad-skin-left"></span>
+                    <span id="adSkinRight" class="ad-skin-right"></span>
+                    <div id="skin-58a68d431efcd" class="ad-skin " data-ad="skin">
+    <script>
+        window.console && console.log && console.log("ADS: queuing skin-58a68d431efcd for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("skin-58a68d431efcd");
+    </script></div>
+
+                
+                
+                
+                    <div id="leader-top-wrap" class="leaderboard-wrap" data-component="adsLeaderboardCollapse">
+        <div id="leader-top-58a68d431efcd" class="ad-leader-top " data-ad="leader-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing leader-top-58a68d431efcd for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("leader-top-58a68d431efcd");
+    </script></div>
+
+    </div>
+
+                <main id="page-content" class="highlander-page-container reading-list-page "><!--[if lt IE 10 ]> 
+                        <div class="upgrade-modal hide-upgrade" data-component='ieUpgradeMessage' > 
+                            <a class="icon-moon-close-x" id="close-upgrade-modal"></a>
+                            <div class="message">
+                                <strong>You are using an unsupported version of Internet Explorer.</strong><br/><br/>
+                                Your version of Internet Explorer is no longer supported by CBS Sports.<br/>
+                                Some features may not work correctly.<br/>
+                                Please upgrade to a modern browser:<br/><br/>
+                                <a href="http://windows.microsoft.com/en-US/internet-explorer/download-ie">1. Internet Explorer 11</a><br/>
+                                <a href="https://www.google.com/intl/en/chrome/browser/desktop/index.html">2. Google Chrome</a><br/>
+                                <a href="https://www.mozilla.org/en-US/firefox/new/">3. Firefox</a>
+                            </div>
+                        </div>
+                    <![endif]--><div class="reading-list-fixate hidden">
+
+		<div id="fantasy-reading-list" class="reading-list-wrapper" data-reading-list="wrapper" data-component="articleFixate" data-article-fixate-options='{"offset":{"top":60,"bottom":0},"guideTop":"#cbs-site-header"}'>
+
+		<div class="reading-list-label">Up next:</div>
+	
+		<div class="reading-list">
+
+																				
+								<div class="item-wrapper" data-reading-list="container" data-component="readingList">
+									<div class="item current" data-reading-list="item" section="ReadingList.1">
+	
+												
+                        <a class="title" data-goto="d5f3d6da-3b97-41b4-8d75-668b6af1dd8b" data-url="/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/">
+							<div>
+								<h5>Pat Tillman's widow rips Trump's ban: This isn't the country he died for</h5>
+							</div>
+						</a>
+					</div>
+
+																		</div>
+					</div>
+		
+		<div class="reading-list-close"><div class="icon-moon-close-x"></div></div>
+		
+	</div>
+</div>    
+    <div id="reading-list-items-container">
+        <div data-reading-list-item="d5f3d6da-3b97-41b4-8d75-668b6af1dd8b">
+            <div class="fixate-top-anchor relative"></div>
+            <div class="container article-content">
+                <section id="content" class="row"><article itemscope itemtype="http://schema.org/Article" class="col-12"><meta itemprop="mainEntityOfPage" content="http://www.cbssports.com/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/"><meta itemprop="headline" content="Pat Tillman's widow rips Trump's ban: This isn't the country he died for"><meta itemprop="description" content="Marie Tillman founded the Pat Tillman Foundation after her husband died in Afghanistan"><div itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+    <meta itemprop="url" content="http://sportshub.cbsistatic.com/i/r/2017/01/30/d23250ec-0256-4585-8019-8ffaae5ea2e3/thumbnail/770x433/68d7d164ee8ba1f307098b88b89b9872/pat-tillman.jpg"><meta itemprop="width" content="433"><meta itemprop="height" content="770"></div>
+<meta itemprop="keywords" content="NFL"><meta itemprop="url" content="http://www.cbssports.com/nfl/news/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for/"><meta itemprop="datePublished" content="2017-01-30 01:00:00"><meta itemprop="dateModified" content="2017-01-30 01:03:06"><meta itemprop="thumbnailUrl" content="http://sportshub.cbsistatic.com/i/r/2017/01/30/d23250ec-0256-4585-8019-8ffaae5ea2e3/thumbnail/770x433/68d7d164ee8ba1f307098b88b89b9872/pat-tillman.jpg"><div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+    <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+        <meta itemprop="url" content="http://sportsfly.cbsistatic.com/fly-516/bundles/sportsmediacss/images/core/cbssports-logo-60x289.png"><meta itemprop="width" content="289"><meta itemprop="height" content="60"></div>
+    <meta itemprop="name" content="CBS Sports"></div>                        <div class="row">
+                            
+                                                        
+                            <div class="article-head">
+                                                                <h1 class="article-headline">Pat Tillman's widow rips Trump's ban: This isn't the country he died for</h1>
+                                
+                                                                    <h2 class="article-subline ">Marie Tillman founded the Pat Tillman Foundation after her husband died in Afghanistan</h2>
+                                                                
+                                                                    
+
+
+    <ul class="article-author row" itemscope itemtype="http://schema.org/Person" itemprop="author" section="author"><li class="headshot"> 
+                                                    <a href="/writers/sean-wagner-mcgough/" rel="author">
+                                            <figure class=" img"><img class=" is-lazy-image" alt="    Sean Wagner-McGough
+ mugshot" data-lazy="http://sportshub.cbsistatic.com/i/r/2016/05/04/e6f9740c-a534-457c-855f-51a925baafd9/thumbnail/70x70/1b4f1ef6c51de9e2250ad08161a2391d/seanwagnermcgough.png" src="" height="70" width="70"></figure></a>
+                                            </li>
+                                    
+                                                <li class="author-name article-byline-last-author">
+                                            by
+                     
+                    <span itemprop="name">
+                        <a rel="author" href="/writers/sean-wagner-mcgough/">
+                            Sean Wagner-McGough
+                        </a>
+                    </span>
+                </li>
+            
+                            <li class="twitter-handle">
+                                    <a href="https://twitter.com/intent/user?screen_name=seanjwagner" target="_blank">
+			            <span class="twitter">
+				@seanjwagner
+            </span>
+                    </a>
+    
+                </li>
+            
+                    
+        <li class="date-published">
+                                                                            
+            <span class="date-original-reading-time">
+                <time datetime="2017-01-30 01:00:00 UTC">Jan 30, 2017</time>
+                                • 1 min read
+            </span>
+
+                    </li><li>
+    </li></ul></div>
+                                
+                            
+                        </div>
+                            <div class="container">
+        <div class="row">
+                                    <div class="row">
+                <div class="col-12">
+                                                            </div>
+                    </div>
+                                    <div class="row">
+                <div class="col-12">
+                                                            <div class="row">
+                                                            <div class="row">
+                <div class="col-12">
+                                                            <div class="row">
+                                                        <div class="col-8">
+                                                                                    <div class="row">
+                <div class="col-8">
+                                
+            
+                    
+    
+                                                </div>
+                    </div>
+                                    <div class="row">
+                <div class="col-8">
+                                                            <div class="row">
+                                                        <div class="col-1">
+                                
+            
+                    
+
+        
+    
+
+
+
+
+            <div class="fixation sharebar-fixate" id="fantasy-article-sharebar-component" data-component="articleFixate" data-article-fixate-options='{"offset":{"top":110,"bottom":0},"guideTop":"div[data-reading-list-item=d5f3d6da-3b97-41b4-8d75-668b6af1dd8b] .fixate-sharebar-top-anchor","guideBottom":"div[data-reading-list-item=d5f3d6da-3b97-41b4-8d75-668b6af1dd8b] .fixate-sharebar-bottom-anchor","customParentClass":"sharebar-fixate-col"}'>
+            <div class="share-module side is-vertical">
+                                                    <div class="share-wrapper" data-component="sharebar" data-sharebar-options='{"title":"Pat Tillman\u0027s widow rips Trump\u0027s ban: This isn\u0027t the country he died for","description":"Marie Tillman founded the Pat Tillman Foundation after her husband died in Afghanistan","url":"http:\/\/www.cbssports.com\/nfl\/news\/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for\/?utm_medium=twitter&amp;utm_source=dlvr.it","labelShares":"","viewClasses":"side is-vertical","viewPanel":"","showLabel":false}'>
+                        <a data-popup="facebook" href="#" class="btn-share icon-moon-facebook"></a>
+                        <a data-popup="twitter" href="#" class="btn-share icon-moon-twitter"></a>
+                        <a data-popup="email" href="#" class="btn-share icon-moon-envelope"></a>
+                    </div>
+                    </div>
+    </div>
+                                            </div>
+                                <div class="col-7">
+                                                                                    <div class="row">
+                <div class="col-7">
+                                
+            
+                        
+
+
+<div class="fixate-sharebar-top-anchor relative"></div>
+
+<div class="article article-main-body enable-watch-and-read module" itemprop="articleBody">
+
+    <div class="row" data-use-autolinker="true">
+        
+        
+        
+                
+        <div id="embedVideoContainer_999908383962" class="embedVideo embed-video-player  enable-watch-and-read">
+    <iframe id="embedVideo_999908383962" name="embedVideo_999908383962" src="//www.cbssports.com/video/player/embed?args=player_id%3D999908383962%26channel%3Dnfl%26pcid%3D864409155850%26width%3D640%26height%3D360%26autoplay%3Dtrue%26comp_ads_enabled%3Dfalse%26lazy_load%3Dfalse%26resizable%3Dtrue%26domain%3Dcbssports.com%26watchAndRead%3D1%26css%3Dcss%252Fmedia%252Fvideo%252Fplayer%252Fembed%252Fhighlander-min.css%26js%3D" width="640" height="360" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true"></iframe>
+</div>  <p> 	All over the country this weekend, thousands protested President Donald Trump's executive order that closed the United States' borders to refugees. In addition to the numerous airport protests that were organized, the American Civil Liberties Union announced that it <a href="https://www.yahoo.com/news/aclu-says-it-raised-10-million-since-saturday-201828838.html">raised more than $10 million since Saturday morning.</a></p><p>On Saturday night, Marie Tillman, Pat Tillman's widow, joined in by publicly voicing her objection to Trump's executive order. In 2002, Pat gave up his <a href="/nfl" data-is-autolink="true">NFL</a> career (he played safety for the <a href="/nfl/teams/page/ARI/arizona-cardinals">Cardinals</a> from 1998-2001) to join the military. In 2004, he died in Afghanistan at the age of 27. </p><p> 	On Facebook, Marie said that was "saddened" by Trump's executive order, adding that "this is not the country he (Pat) dreamed of, not what he served for, and not what he died for." </p><p> 	You can see read her entire post below:</p><div class="iframe"><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmarie.tillman.100%2Fposts%2F10210928865193055&amp;width=500" width="500" height="332" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowtransparency="true"></iframe></div><p><br>And here's a more detailed description of Trump's executive order, <a href="https://www.nytimes.com/2017/01/28/us/refugees-detained-at-us-airports-prompting-legal-challenges-to-trumps-immigration-order.html" target="_blank">via <em>The New York Times:</em></a></p><blockquote>The president's order, enacted with the stroke of a pen at 4:42 p.m. Friday, suspended entry of all refugees to the United States for 120 days, barred Syrian refugees indefinitely, and blocked entry into the United States for 90 days for citizens of seven predominantly Muslim countries: Iran, Iraq, Libya, Somalia, Sudan, Syria and Yemen.</blockquote><p>The Pat Tillman Foundation, which <a href="http://pattillmanfoundation.org/our-story/">"invests in military veterans</a> and their spouses through academic scholarships," was founded in 2004 by Marie. She's also the president.</p>
+
+            </div>
+
+    
+</div>
+
+    
+<div class="author-bio-box">
+    <div class="author-bio-box-info">
+                                    <a class="author-bio-box-image" href="/writers/sean-wagner-mcgough/" itemprop="name" rel="author">
+                                <figure class=" img"><img class=" is-lazy-image" alt="    Sean Wagner-McGough
+ mugshot" data-lazy="http://sportshub.cbsistatic.com/i/r/2016/05/04/e6f9740c-a534-457c-855f-51a925baafd9/thumbnail/170x170/a669670c74e9ceba4165a53ff004df1b/seanwagnermcgough.png" src="" height="170" width="170"></figure></a>
+                            <div class="author-bio-box-profile">
+            <span class="author-bio-box-name">
+                                    <a href="/writers/sean-wagner-mcgough/" itemprop="name" rel="author"><strong>    Sean Wagner-McGough
+</strong></a>
+                            </span>
+            <div class="author-bio-box-subline">
+                CBS Sports Writer
+            </div>
+        </div>
+    </div>
+            <a href="https://twitter.com/intent/user?screen_name=seanjwagner" target="_blank"><span class="twitter-follow-capsule">follow</span></a>
+    
+    <div class="author-bio-box-dek">
+        <p>
+            Sean Wagner-McGough joined CBS Sports in 2015 after graduating from UC Berkeley. A native of Seattle, Sean now resides in the Bay Area. He spends his spare time defending Jay Cutler on Twitter.
+                            <a href="/writers/sean-wagner-mcgough/bio/" target="_blank">
+                    Full Bio
+                </a>
+                    </p>
+    </div>
+</div>
+                
+            
+                    
+                                
+                                                                                        
+        <div class="collapsible livefyre-wrapper module" data-component="toggle">
+            
+    
+
+<!-- General comments -->
+<div id="articleComment">
+    <button id="showArticleComment" class="livefyre-toggle-button" type="button">
+        <span class="livefyre-commentcount" data-component="livefyreCommentcount" data-livefyre-commentcount-options='{"format":"toggleText"}' data-lf-site-id="309983" data-lf-article-id="c:33131823" data-lf-format="toggleText">
+            Add a comment
+        </span>
+    </button>
+    <div id="livefyreContainer-d5f3d6da-3b97-41b4-8d75-668b6af1dd8b" class="livefyreContainer comment" style="display:none;">
+        <div class="fyre-comment-hd">
+            <h4>Add a comment</h4><div id="closeXComment" class="icon-moon-close-x"></div>
+        </div>
+    	<!-- <a name="comments" class="livefyreJumpTarget">&nbsp;</a> -->
+
+        
+        <div id="livefyre" class="livefyreConversation" data-component="livefyreConversation" data-livefyre-conversation-options='{"globalConfig":{"network":"cbssports.fyre.co"},"commentStreamConfigs":{"siteId":"309983","articleId":"c:33131823","el":"livefyre","checksum":"f640c63154e784aeca3bda4d8843c83e","collectionMeta":"eyJ0eXAiOiJqd3QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IlBhdCBUaWxsbWFuJ3Mgd2lkb3cgcmlwcyBUcnVtcCdzIGJhbjogVGhpcyBpc24ndCB0aGUgY291bnRyeSBoZSBkaWVkIGZvciIsInVybCI6Imh0dHA6XC9cL3d3dy5jYnNzcG9ydHMuY29tXC9uZmxcL25ld3NcL3BhdC10aWxsbWFucy13aWRvdy1yaXBzLXRydW1wcy1iYW4tdGhpcy1pc250LXRoZS1jb3VudHJ5LWhlLWRpZWQtZm9yXC8iLCJjaGVja3N1bSI6ImY2NDBjNjMxNTRlNzg0YWVjYTNiZGE0ZDg4NDNjODNlIiwiYXJ0aWNsZUlkIjoiYzozMzEzMTgyMyJ9.K-_uhImGP8WhPxTcGZaTvH8PRUvPfIG-gTyNdrPTdCs"},"urlLogin":"https:\/\/auth.cbssports.com\/login?master_product=2580&amp;xurl=http:\/\/www.cbssports.com\/nfl\/news\/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for\/?utm_source=dlvr.it&amp;utm_medium=twitter","urlLogout":"http:\/\/www.cbssports.com\/logout?xurl=http:\/\/www.cbssports.com\/nfl\/news\/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for\/?utm_source=dlvr.it&amp;utm_medium=twitter","registrationUrl":"https:\/\/auth.cbssports.com\/registration?master_product=2580&amp;end=","validEmailUrl":"http:\/\/www.cbssports.com\/registration\/validate\/send?master_product=2580&amp;userid=","validateEmailURLPost":"?profFR=1","xurl":"http:\/\/www.cbssports.com\/nfl\/news\/pat-tillmans-widow-rips-trumps-ban-this-isnt-the-country-he-died-for\/?utm_source=dlvr.it&amp;utm_medium=twitter","socialLoginUrl":"http:\/\/www.cbssports.com\/data\/common\/livefyre\/lf_social_login"}'></div>
+        <div class="livefyreFooter">
+            <p class="livefyrePowered">Conversation powered by Livefyre</p>
+        </div>
+    </div>
+</div>
+            <div class="toggleComments" data-item="trigger">
+                <span class="showComments">Show Comments</span>
+                <span class="hideComments">Hide Comments</span>
+            </div>
+        </div>
+    
+<div class="fixate-sharebar-bottom-anchor relative"></div>
+<div class="fixate-mpu-top-bottom-anchor relative"></div>
+<div class="fixate-follow-us-bottom-anchor relative"></div>
+                                            </div>
+                    </div>
+                                    <div class="row">
+                <div class="col-7">
+                                                            </div>
+                    </div>
+                                                </div>
+                                                </div>
+                                    </div>
+                    </div>
+                                                </div>
+                                <div class="col-4">
+                                
+            
+                    
+
+                    <div id="mpu-plus-top-58a68d431efcd" class="ad-mpu-plus-top " data-ad="mpu-plus-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing mpu-plus-top-58a68d431efcd for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("mpu-plus-top-58a68d431efcd");
+    </script></div>
+                    
+            
+                    
+
+                    <div id="mpu-middle-58a68d431efcd" class="ad-mpu-middle " data-ad="mpu-middle">
+    <script>
+        window.console && console.log && console.log("ADS: queuing mpu-middle-58a68d431efcd for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("mpu-middle-58a68d431efcd");
+    </script></div>
+                    
+            
+                    
+
+    
+
+
+
+
+    
+    <div id="shop-home-mod" class="shopping-box article-shop">
+                                        
+    <h5 class="title-double-underline  is-small">
+        <span class="title-text">
+            CBS Sports Store
+        </span>
+        
+            </h5>
+
+            <h5 class="primary-item-label">
+                <a href="http://shop.cbssports.com/NFL_Cold_Weather_Gear">NFL Cold Weather Gear</a>
+            </h5>
+                <div class="product">
+                        
+            <a href="http://shop.cbssports.com/NFL_Cold_Weather_Gear">
+                <img src="http://sportshub.cbsistatic.com/i/r/2016/12/07/e01ace5e-f1ec-494a-a2c6-5f4c1af5532c/thumbnail/170x170/e1785d573d2cb288734f592100bf931b/thumb.jpg"></a>
+            
+            <div class="product-wrapper">
+                                		                                    <ul><li class="eyebrow">Plus:</li>
+                                                <li class="eyebrow"><a href="http://shop.cbssports.com/NFL_New_Era_Hats?utm_source=cbssportscom_sbc&amp;utm_medium=bm_referral&amp;utm_term=kw--CBS_NFLNewEra%7Ccpn--no_coupon%7Coffer--no_offer">NFL New Era Hats</a></li>
+                                        		                                        <li class="eyebrow"><a href="http://shop.cbssports.com/NFL_Everything_Nike">NFL Nike Gear</a></li>
+                                        		                                        <li class="eyebrow"><a href="http://shop.cbssports.com/NFL_Ladies?utm_source=cbssportscom_sbf&amp;utm_medium=bm_referral&amp;utm_term=kw--CBS_NFLLadies%7Ccpn--no_coupon%7Coffer--no_offer">NFL Ladies Gear</a></li>
+                                                </ul><div class="more-wrap">
+                         <a href="http://shop.cbssports.com/CBS_NFL?utm_source=cbssportscom_sbf&amp;utm_medium=bm_referral&amp;utm_term=kw--CBS_MoreNFL%7Ccpn--no_coupon%7Coffer--no_offer" class="more">More NFL Sports Gear</a>
+                    </div>
+                            </div>
+                    </div>
+            </div>
+                                            </div>
+                                                </div>
+                                    </div>
+                    </div>
+                                    <div class="row">
+                <div class="col-12">
+                                
+            
+                    
+
+    
+            <script type="text/javascript">
+            window.SportsPageVars.tracking.taboolaPlacement = "desktop-5x1-article";
+        </script><div class="recommended-recirc taboola-recommends">
+            
+                                
+    <div class="title-double-underline recommended-title taboola-title is-small">
+        <span class="title-text">
+            Around the Web
+        </span>
+        
+                    <span class="title-text-side">
+                <a href="//popup.taboola.com/en/" target="_blank" rel="nofollow">Promoted by Taboola<span class="recirc-ad-icon"></span></a>
+            </span>
+            </div>
+
+
+            <div id="taboola-bottom-page-thumbnails" data-taboola='{"mode":"alternating-thumbnails-L","container":"taboola-bottom-page-thumbnails","placement":"desktop-5x1-article"}'>
+            </div>
+        </div>
+                    
+            
+                    
+
+                
+    
+            <div class="latest-news-box">
+                                
+    <h5 class="title-double-underline latest-news-box-title is-small">
+        <span class="title-text">
+            Our Latest Stories
+        </span>
+        
+            </h5>
+
+
+                                                <ul class="latest-news-box-row"><li class="col-4">
+                                                                                                            
+                                                        
+                
+            <a href="/nfl/news/tom-brady-wants-to-play-for-the-patriots-forever-but-knows-it-might-not-happen/" class="thumbnail">
+                                                <figure class="latest-box-item-image img"><img class=" is-lazy-image" alt="robert-kraft-tom-brady-super-bowl-jersey-02-13-17.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/02/14/b4851c30-dab6-47a0-943b-4928c7169b33/thumbnail/368x210/ac70918c1c77be93cc7a1fd9c4980b0c/robert-kraft-tom-brady-super-bowl-jersey-02-13-17.jpg" src="" height="210" width="368"></figure></a>
+    
+                        <div class="latest-box-item-headlines">
+                            <h3 class="latest-box-item-title">
+                                <a href="/nfl/news/tom-brady-wants-to-play-for-the-patriots-forever-but-knows-it-might-not-happen/">
+                                    Brady wants to play for Patriots forever
+                                </a>
+                            </h3>
+                                                            <h4 class="latest-box-item-subline">The Greatest QB of All-Time has seen enough superstars play for other teams late in their...</h4>
+                                                    </div>
+                    </li> 
+                 
+                                                                                <li class="col-4">
+                                                                                                            
+                                                        
+                
+            <a href="/nfl/news/watch-drake-stops-concert-to-have-odell-beckham-sign-fans-jersey/" class="thumbnail">
+                                                <figure class="latest-box-item-image img"><img class=" is-lazy-image" alt="drake-concert-odell-beckham-jersey.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/02/17/bc185bf0-95a6-4a80-9472-bd164b566fea/thumbnail/368x210/5379a59d90fd57915ac74615d69bcc9f/drake-concert-odell-beckham-jersey.jpg" src="" height="210" width="368"></figure></a>
+    
+                        <div class="latest-box-item-headlines">
+                            <h3 class="latest-box-item-title">
+                                <a href="/nfl/news/watch-drake-stops-concert-to-have-odell-beckham-sign-fans-jersey/">
+                                    Watch Drake stop show for OBJ autograph
+                                </a>
+                            </h3>
+                                                            <h4 class="latest-box-item-subline">Rapper Drake stopped a concert to get the Giants WR's autograph</h4>
+                                                    </div>
+                    </li> 
+                 
+                                                                                <li class="col-4">
+                                                                                                            
+                                                        
+                
+            <a href="/nfl/news/atlanta-brewery-loses-super-bowl-bet-makes-deflating-soul-crushing-pats-beer/" class="thumbnail">
+                                                <figure class="latest-box-item-image img"><img class=" is-lazy-image" alt="sweetwater-brewing-patriot-super-bowl-pale-ale-beer-picture.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/02/17/c5d278bf-d450-4327-be63-93e9cdb7044d/thumbnail/368x210/8663e4c495bbfb4785df57e0bbe14dec/sweetwater-brewing-patriot-super-bowl-pale-ale-beer-picture.jpg" src="" height="210" width="368"></figure></a>
+    
+                        <div class="latest-box-item-headlines">
+                            <h3 class="latest-box-item-title">
+                                <a href="/nfl/news/atlanta-brewery-loses-super-bowl-bet-makes-deflating-soul-crushing-pats-beer/">
+                                    Atlanta brewery makes Pats beer for bet
+                                </a>
+                            </h3>
+                                                            <h4 class="latest-box-item-subline">Sweetwater Brewery had to make a handful of Boston beers for the Falcons loss</h4>
+                                                    </div>
+                    </li> 
+                 
+                                    </ul><ul class="latest-news-box-row"><li class="col-4">
+                                                                                                            
+                                                        
+                
+            <a href="/nfl/news/dolphins-tell-a-veteran-starter-theyre-cutting-him-then-dont-actually-cut-him/" class="thumbnail">
+                                                <figure class="latest-box-item-image img"><img class=" is-lazy-image" alt="branden-albert-not-cut-dolphins-rumors-trade-free-agency.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/02/17/be7fb1f2-e022-4af2-98cf-f778ef0f0e54/thumbnail/368x210/46111f986f167df077033eea830f216a/branden-albert-not-cut-dolphins-rumors-trade-free-agency.jpg" src="" height="210" width="368"></figure></a>
+    
+                        <div class="latest-box-item-headlines">
+                            <h3 class="latest-box-item-title">
+                                <a href="/nfl/news/dolphins-tell-a-veteran-starter-theyre-cutting-him-then-dont-actually-cut-him/">
+                                    Dolphins don't cut Albert after all
+                                </a>
+                            </h3>
+                                                            <h4 class="latest-box-item-subline">Miami is moving on from Branden Albert and told him so, but they're waiting for a bit</h4>
+                                                    </div>
+                    </li> 
+                 
+                                                                                <li class="col-4">
+                                                                                                            
+                                                        
+                
+            <a href="/nfl/news/buzz-is-building-that-the-patriots-might-not-trade-jimmy-garoppolo-at-all/" class="thumbnail">
+                                                <figure class="latest-box-item-image img"><img class=" is-lazy-image" alt="patriots-browns-jimmy-garoppolo-trade-rumors-bill-belichick-josh-mccown.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/02/11/6b9e6b89-40cc-457c-932f-eb8d87124a9d/thumbnail/368x210/218c9204183d6a08d697cc64088af93f/patriots-browns-jimmy-garoppolo-trade-rumors-bill-belichick-josh-mccown.jpg" src="" height="210" width="368"></figure></a>
+    
+                        <div class="latest-box-item-headlines">
+                            <h3 class="latest-box-item-title">
+                                <a href="/nfl/news/buzz-is-building-that-the-patriots-might-not-trade-jimmy-garoppolo-at-all/">
+                                    Buzz building against Garoppolo trade
+                                </a>
+                            </h3>
+                                                            <h4 class="latest-box-item-subline">Maybe New England will keep its backup quarterback through 2017</h4>
+                                                    </div>
+                    </li> 
+                 
+                                                                                <li class="col-4">
+                                                                                                            
+                                                        
+                
+            <a href="/nfl/news/look-lets-cast-the-hollywood-movie-for-tom-bradys-deflategate-saga/" class="thumbnail">
+                                                <figure class="latest-box-item-image img"><img class=" is-lazy-image" alt="olyphantbrady.jpg" data-lazy="http://sportshub.cbsistatic.com/i/r/2017/02/16/0a6f4186-1e88-4cf2-9a4f-1605fa302538/thumbnail/368x210/75e98297d37b2d910c061749e9fcfc48/olyphantbrady.jpg" src="" height="210" width="368"></figure></a>
+    
+                        <div class="latest-box-item-headlines">
+                            <h3 class="latest-box-item-title">
+                                <a href="/nfl/news/look-lets-cast-the-hollywood-movie-for-tom-bradys-deflategate-saga/">
+                                    Casting the Tom Brady Deflategate movie
+                                </a>
+                            </h3>
+                                                            <h4 class="latest-box-item-subline">Here's who should play Brady, Gronk and Roger Goodell on the silver screen</h4>
+                                                    </div>
+                    </li> 
+                 
+                                    </ul><ul class="latest-news-box-row"></ul></div>
+    
+                
+            
+                    
+
+                    <div id="leader-bottom-58a68d431efcd" class="ad-leader-bottom " data-ad="leader-bottom">
+    <script>
+        window.console && console.log && console.log("ADS: queuing leader-bottom-58a68d431efcd for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("leader-bottom-58a68d431efcd");
+    </script></div>
+                                                </div>
+                    </div>
+                                                </div>
+                                    </div>
+                    </div>
+                    </div>
+    </div>
+
+
+                    </article></section></div>
+        </div>
+    </div>
+
+                </main></div>
+
+                            
+
+<footer id="cbs-site-footer" class="cbs-site-footer"><div class="site-footer-row">
+        <div class="site-footer-branding">
+            <span class="site-footer-logo" tabindex="0" role="img" aria-label="CBS Sports Digital" title="CBS Sports Digital"></span>
+        </div>
+    </div>
+
+    <div class="site-footer-row">
+        <ul class="site-footer-follow"><li>
+                                                
+                                
+    <a href="https://www.facebook.com/cbssports" class="btn social icon-moon-facebook" target="_blank" rel="nofollow" aria-label="Facebook" title="Facebook" om-event="Global Footer|Facebook"></a>
+
+            </li>
+            <li>
+                                                
+                                
+    <a href="https://twitter.com/cbssports" class="btn social icon-moon-twitter" target="_blank" rel="nofollow" aria-label="Twitter" title="Twitter" om-event="Global Footer|Twitter"></a>
+
+            </li>
+            <li>
+                                                
+                                
+    <a href="https://plus.google.com/+CBSSportscom/posts" class="btn social icon-moon-google-plus2" target="_blank" rel="nofollow" aria-label="Google+" title="Google+" om-event="Global Footer|Google+"></a>
+
+            </li>
+            <li>
+                                                
+                                
+    <a href="https://www.youtube.com/user/cbssports" class="btn social icon-moon-youtube-play" target="_blank" rel="nofollow" aria-label="YouTube" title="YouTube" om-event="Global Footer|YouTube"></a>
+
+            </li>
+            <li>
+                                                
+                                
+    <a href="https://instagram.com/cbssports/" class="btn social icon-moon-instagram" target="_blank" rel="nofollow" aria-label="Instagram" title="Instagram" om-event="Global Footer|Instagram"></a>
+
+            </li>
+            <li>
+                                                
+                                
+    <a href="https://www.pinterest.com/cbssports/" class="btn social icon-moon-pinterest" target="_blank" rel="nofollow" aria-label="Pinterest" title="Pinterest" om-event="Global Footer|Pinterest"></a>
+
+            </li>
+        </ul></div>
+    
+            <div class="site-footer-row">
+            <ul class="site-footer-links"><li>
+                            <a href="http://www.cbssports.com/help" target="_blank" title="Help" om-event="Global Footer|Help">Help</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://www.cbssports.com/info/aboutus" target="_blank" title="About Us" om-event="Global Footer|About Us">About Us</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://www.cbsinteractive.com/careers" target="_blank" title="Careers" om-event="Global Footer|Careers">Careers</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://www.cbsinteractive.com/advertise/" target="_blank" title="Advertise" om-event="Global Footer|Advertise">Advertise</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://www.cbssports.com/sitemap" target="_blank" title="Site Map" om-event="Global Footer|Site Map">Site Map</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://www.cbssports.com/settings/newsletters" target="_blank" title="Newsletters" om-event="Global Footer|Newsletters">Newsletters</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://www.cbssports.com/mobile" target="_blank" title="Mobile Apps" om-event="Global Footer|Mobile Apps">Mobile Apps</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://collegenetwork.cbssports.com/" target="_blank" title="College Network" om-event="Global Footer|College Network">College Network</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://legalterms.cbsinteractive.com/adchoice" target="_blank" title="Ad Choice" om-event="Global Footer|Ad Choice">Ad Choice</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://www.cbssports.com/info/closed-caption" target="_blank" title="Closed Captioning" om-event="Global Footer|Closed Captioning">Closed Captioning</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://legalterms.cbsinteractive.com/privacy" target="_blank" title="Privacy" om-event="Global Footer|Privacy">Privacy</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://legalterms.cbsinteractive.com/terms-of-use" target="_blank" title="Terms" om-event="Global Footer|Terms">Terms</a>
+                        </li>
+                                                                                <li>
+                            <a href="http://legalterms.cbsinteractive.com/eula" target="_blank" title="Mobile User Agreement" om-event="Global Footer|Mobile User Agreement">Mobile User Agreement</a>
+                        </li>
+                                                </ul></div>
+    
+    <div class="site-footer-row">
+        <div class="site-footer-partners">
+            <div class="site-footer-button button1" tabindex="0" role="img" aria-label="Commissioner.com" title="Commissioner.com"></div>
+            <div class="site-footer-button button2" tabindex="0" role="img" aria-label="Commissioner.com" title="Commissioner.com"></div>
+            <div class="site-footer-button button3" tabindex="0" role="img" aria-label="Golfweb.com" title="Golfweb.com"></div>
+        </div>
+    </div>
+
+    <div class="site-footer-copyright">
+        <p class="site-footer-dates">© 2004-2017 CBS Interactive. All Rights Reserved.</p>
+        <p>CBS Sports is a registered trademark of CBS Broadcasting Inc. Commissioner.com is a registered trademark of CBS Interactive Inc.</p>
+        <p>Images by Getty Images and US Presswire</p>
+    </div>
+
+    </footer><div class="taboola-newsroom" data-component="taboolaNewsroom" data-taboola-newsroom-options='{"isTaboolaNewsroomDoor":false}'></div>                        
+                    
+    <div id="clicktaleBottom" class="clicktale-bottom" data-component="clicktaleBottom"></div>
+            </div>
+
+    <div id="sticky-leaderboard" class="sticky-leaderboard">
+    <div class="sticky-leaderboard-unit">
+        <div id="nflnetwork-bar-top-58a68d431efcd" class="ad-nflnetwork-bar-top " data-ad="nflnetwork-bar-top">
+    <script>
+        window.console && console.log && console.log("ADS: queuing nflnetwork-bar-top-58a68d431efcd for display");
+        var cbsiGptDivIds = cbsiGptDivIds || [];
+        cbsiGptDivIds.push("nflnetwork-bar-top-58a68d431efcd");
+    </script></div>
+
+    </div>
+</div>
+
+    
+
+
+                                                                                                                                                                                                                                                                                <div id="slideout" class="slideout" data-component="marketingSlider">
+            <div id="slideout-inner" class="slideout-inner">
+                                    <a href="http://shop.cbssports.com/CBS_New_England_Patriots?utm_source=cbssportscom_ros&amp;utm_medium=bm_referral&amp;utm_term=kw--CBS_SB_Champs_Pats%7Ccpn--no_coupon%7Coffer--no_offer" title="Super Bowl Champions" target="_blank" om-event="Marketing Slider|Image">
+                                <img src="https://sportshub.cbsistatic.com/i/2017/02/06/6972242c-0889-4aa7-b573-9eeabf29d70c/cbspatssb360x150.jpg" alt="Super Bowl Champions"></a>
+                                <div id="slideout-close" class="icon-moon-close-x slideout-close"></div>
+            </div>
+        </div>
+    
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0710d28d2a","applicationID":"8008619","transactionName":"MgEHZ0ICW0JZUBYMDgtLJFBEClpfF3UOHC0MEgBVSRFQc01dBgkEXygMRVUFTENdCQEKDxMBF0BRF1xeVg==","queueTime":0,"applicationTime":907,"atts":"HkYEEQoYSEw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body></html>

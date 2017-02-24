@@ -1,0 +1,14 @@
+8 https://www.buzzfeed.com/leticiamiranda/mexicans-are-boycotting-us-products-to-protest-trumps-wall-t?utm_term=4ldqpfp&bftw#4ldqpfp
+7 http://100percentfedup.com/embarrassing-nyc-mayor-de-blasio-cant-tell-difference-trump-obamas-immigration-policy-video/
+3 http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump
+1 https://www.washingtonpost.com/politics/trump-promised-disruption-thats-exactly-what-hes-delivering/2017/01/29/7d9ae81a-e63e-11e6-acf5-4589ba203144_story.html?postshare=7741485735220475&tid=ss_tw
+
+
+normalize score
+(x - min)/ (max-min)
+
+min = 1
+max = 9
+
+8-1/8-1 = 7/7 = 1
+7-1/8-1= 6/7 = 0.86

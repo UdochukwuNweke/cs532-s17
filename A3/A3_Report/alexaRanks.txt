@@ -1,0 +1,11 @@
+135 https://www.washingtonpost.com/
+202 https://www.buzzfeed.com/
+261 http://insider.foxnews.com/
+845 http://www.latimes.com/
+901 http://www.politico.com/
+1156 https://www.theatlantic.com/
+1191 http://www.express.co.uk/
+2462 http://variety.com/
+15728 http://www.ocregister.com/
+30729 http://100percentfedup.com/
+http://data.alexa.com/data?cli=10&url=[INPUT_URL]

@@ -1,0 +1,905 @@
+<!DOCTYPE html><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en"> <head>
+<base href="http://talkaboutmarriage.com/" /><!--[if IE]></base><![endif]-->  <script type='text/javascript' src='//c.amazon-adsystem.com/aax2/amzn_ads.js'></script> <script type='text/javascript'>
+    try {
+            amznads.getAds('3274');
+        } catch (e) { /*ignore*/ }
+</script>  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="keywords" content="Pop,music,1960s,Britain, Pop music in 1960s Britain, marriage therapist, marraige counselor, marriage, advice, help, family, relationships, forum, talk, gossip, men, women, marital, forms, discussion, counseling, support" /> <meta name="description" content="Freddie and the Dreamers https://www.youtube.com/watch?v=rXo-osvXgHU#t=15.810966 Can't get it to preview for some reason... Actually they were on NBC" />  <style type="text/css" id="vbulletin_css">
+/**
+* vBulletin 3.8.8 CSS
+* Style: 'Talkaboutmarriage.com Forum (Full)'; Style ID: 17
+*/
+@import url("http://talkaboutmarriage.com/clientscript/vbulletin_css/style-7feb9457-00017.css");
+</style> <link rel="stylesheet" type="text/css" href="http://talkaboutmarriage.com/clientscript/vbulletin_important.css?v=388" />  <!--[if lt IE 9]> <style>
+#update-browser{display:block}
+</style> <script>
+// HTML 5 Shiv. for older IE - should be an if statement?  /
+(function(){if(!/*@cc_on!@*/0)return;var e="abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(',');for(var i=0;i<e.length;i++){document.createElement(e[i])}})()
+</script> <![endif]--> <script>
+if (typeof(jQuery) == 'undefined'){
+        document.write('<scr' + 'ipt type="text/javascript" src=" http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></scr' + 'ipt>');
+}
+</script> <script src="http://talkaboutmarriage.com/clientscript/scripts.js"></script> <style>
+/* 
+Sticky Sidebar Styles
+*/
+#main-content_wrapper{
+margin: 0;
+width: calc(100% - 343px);
+}
+#main-content{
+margin-right: 0;
+padding: 8px 10px 20px 0px !important;
+border: none;
+}
+#sidebar, #sidebar .sidebar{
+width: 328px;
+
+}
+#main-content, .sidebar{
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    padding: 8px 0 15px !important;
+}
+#main-content img, #sidebar img{
+max-width: 100%;
+}
+
+#main-content td img {max-width: none;}
+
+@media screen and (max-width: 1024px){
+#main-content_wrapper{
+margin-right: 0 !important;
+width: 100% !important;
+}
+#main-content{
+margin-right: 0;
+}
+#sidebar{
+width: 326px;
+position: fixed !important;
+}
+#sidebar .sidebar{
+width: auto;
+}
+}
+
+
+</style> <!--[if lt IE 9]> <style>
+#main-content_wrapper{
+margin-right: -343px !important;
+width: 100% !important;
+}
+#main-content{
+margin-right: 328px;
+}
+#sidebar, #sidebar .sidebar{
+width: 328px;
+}
+#sidebar{
+position: static !important;
+}
+</style> <![endif]--> <script src="http://static.verticalscope.com/images/other/sticky.js"></script> <script>
+var $ = jQuery.noConflict();
+jQuery(document).ready(function($) {
+$("#main-content, .sidebar").addClass('theiaStickySidebar');
+$("#main-content_wrapper, #sidebar").theiaStickySidebar({
+      // Settings
+      additionalMarginTop: 30
+    });
+});
+
+</script> <style>
+/* #5 heart icon */
+.vbseo_buttons .vbseo_liked {background-image: url(http://img.verticalscope.com/images/like_update.png) !important;}
+
+/* #7 upgrade Reply Box */
+.controlbar .smilies-table td {display: table-cell;}
+.controlbar iframe, .controlbar textarea {width: calc(100% - 20px) !important;}
+
+/* #11 oversized smilies in preview */
+/* could exist already */
+.vs_preview .postquote img.inlineimg, .vs_preview .postquote img {max-width: 100%; width: auto;}
+
+/* fix indent issue*/
+.user-post .alt1 ul, .user-post .alt1 ol, blockquote {margin-left: 20px; margin-bottom: 10px;}
+
+#main-content .newreply_reviewbit img {max-width: 400px;}
+</style> <script async type="text/javascript"> <!--
+var SESSIONURL = "s=9e440f71fb6874d7119be2d6140eb2df&";
+var SECURITYTOKEN = "guest";
+var IMGDIR_MISC = "/images/TAMarriage_2015/misc";
+var vb_disable_ajax = parseInt("0", 10);
+// --> </script> <script language="JavaScript"> <!--
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+
+  if (restore) selObj.selectedIndex=0;
+
+}
+
+//--> </script> <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setCustomVar',3,'styleid','17',3]);
+</script> <script src='http://talkaboutmarriage.com/clientscript/dnd.js'>Your browser does not support scripts.</script><script src='http://talkaboutmarriage.com/clientscript/vbulletin_attachment.js?v=388'></script>   <style>
+.ams_gtsearch{min-height:20px;}
+#navbar_search_menu input.gsc-input{min-width:120px; min-height:20px;}
+</style> <script type="text/javascript" src="http://talkaboutmarriage.com/clientscript/ame.js" ></script><script type="text/javascript"> <!--
+function vba_attach_win(threadid)
+{
+	openWindow('http://talkaboutmarriage.com/misc.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;do=showattachments&t=' + threadid, 480, 300);
+}
+--> </script><style>
+div.ams_gtsearch .gsc-clear-button { display: none !important }
+</style> <script>
+vsamsgtsearches=[];
+</script> <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37540213-3']);
+  _gaq.push(['_setDomainName', '.talkaboutmarriage.com']);
+  _gaq.push(['_setCustomVar',1,'grp','guest', 2]);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script> <script type="text/javascript">
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "6036030", c4: "talkaboutmarriage.com" });
+(function() {
+var s = document.createElement("script"), el =
+document.getElementsByTagName("script")[0]; s.async = true;
+s.src = (document.location.protocol == "https:" ? "https://sb" :
+"http://b") + ".scorecardresearch.com/beacon.js";
+el.parentNode.insertBefore(s, el);
+})(); </script> <noscript> <img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=6036030&amp;c4=talkaboutmarriage.com&amp;cv=2.0&amp;cj=1" alt="" /> </noscript> <script type="text/javascript">
+netseer_tag_id="27085"; 
+netseer_publisher_label="talkaboutmarriage.com";
+</script> <script async src="//ps.ns-cdn.com/dsatserving2/scripts/ns_vmtag.js" type="text/javascript"></script>  <script type="text/javascript" src="/videoplayer/jwplayer.js?v=1407420058"></script> <script type="text/javascript" src="/videoplayer/playerscripts.min.js.php?v=1407430375"></script>   <script type="text/javascript" src="//ad.crwdcntrl.net/5/c=8059/pe=y/var=ccauds"></script> <script type="text/javascript" src="//native.sharethrough.com/assets/sfp.js"></script> <script type='text/javascript'>
+var PREBID_TIMEOUT = 1000;
+
+// prebid only works with ga so the gaconnector has been created to convert the analytics.js calls to ga.js compatible calls
+var _gaq = _gaq || [];
+var gaconnector = function(send, event, eventCategory, eventAction, eventLabel, eventValue, fieldsObject) {
+	var isNonInteraction = (typeof(fieldsObject) == 'object' && fieldsObject.nonInteraction) ? true : false;
+	_gaq.push(['_trackEvent', eventCategory, eventAction, eventLabel, eventValue, isNonInteraction]);
+}
+
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+function initAdserver() {
+    if (pbjs.initAdserverSet) return;
+    (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+    pbjs.initAdserverSet = true;
+};
+setTimeout(initAdserver, PREBID_TIMEOUT);
+
+var pbjs = pbjs || {};
+pbjs.que = pbjs.que || [];
+(function() {
+    var pbjsEl = document.createElement("script");
+    pbjsEl.type = "text/javascript";
+    pbjsEl.async = true;
+    pbjsEl.src = "//dz2fz0bgyq9tn.cloudfront.net/prebid-0.13.1-v7.js";
+    var pbjsTargetEl = document.getElementsByTagName("head")[0];
+    pbjsTargetEl.insertBefore(pbjsEl, pbjsTargetEl.firstChild);
+})();
+pbjs.que.push(function() {
+    pbjs.enableAnalytics({
+        provider: 'ga',
+        options: {
+            global: 'gaconnector',
+            enableDistribution: true,
+        }
+    });
+});
+pbjs.que.push(function() {
+    var adUnits = [{"code":"TalkAboutMarriage_com_728x90_Top_RV_Forum","sizes":[[728,90]],"bids":[{"bidder":"aol","params":{"placement":"4256778","network":"9430.1"}},{"bidder":"appnexus","params":{"placementId":"7643359"}},{"bidder":"brealtime","params":{"placementId":"9503125"}},{"bidder":"districtm","params":{"placementId":"9435164"}},{"bidder":"indexExchange","params":{"id":1,"siteID":"189383"}},{"bidder":"pulsepoint","params":{"cf":"728x90","cp":"560903","ct":"551321"}},{"bidder":"rubicon","params":{"accountId":"1019","siteId":"21368","zoneId":"72800","sizes":[2],"keywords":["TalkAboutMarriage.com"],"inventory":{"vsdomain":"TalkAboutMarriage.com"}}},{"bidder":"sekindoapn","params":{"placementId":"9899455"}},{"bidder":"sovrn","params":{"tagid":"336866"}}]},{"code":"TalkAboutMarriage_com_728x90_Bottom_RV_Forum","sizes":[[728,90]],"bids":[{"bidder":"aol","params":{"placement":"4256778","network":"9430.1"}},{"bidder":"appnexus","params":{"placementId":"7643359"}},{"bidder":"brealtime","params":{"placementId":"9503125"}},{"bidder":"districtm","params":{"placementId":"9435164"}},{"bidder":"indexExchange","params":{"id":5,"siteID":"189387"}},{"bidder":"pulsepoint","params":{"cf":"728x90","cp":"560903","ct":"551321"}},{"bidder":"rubicon","params":{"accountId":"1019","siteId":"21368","zoneId":"72800","sizes":[2],"keywords":["TalkAboutMarriage.com"],"inventory":{"vsdomain":"TalkAboutMarriage.com"}}},{"bidder":"sekindoapn","params":{"placementId":"9899455"}},{"bidder":"sovrn","params":{"tagid":"336867"}}]},{"code":"TalkAboutMarriage_com_300x250_Postbit_RV_Forum","sizes":[[300,250]],"bids":[{"bidder":"aol","params":{"placement":"4256777","network":"9430.1"}},{"bidder":"appnexus","params":{"placementId":"7643359"}},{"bidder":"brealtime","params":{"placementId":"9503124"}},{"bidder":"districtm","params":{"placementId":"9435164"}},{"bidder":"indexExchange","params":{"id":2,"siteID":"189384"}},{"bidder":"pulsepoint","params":{"cf":"300x250","cp":"560903","ct":"551321"}},{"bidder":"rubicon","params":{"accountId":"1019","siteId":"21368","zoneId":"72800","sizes":[15],"keywords":["TalkAboutMarriage.com"],"inventory":{"vsdomain":"TalkAboutMarriage.com"}}},{"bidder":"sekindo","params":{"spaceId":"71562"}},{"bidder":"sekindoapn","params":{"placementId":"9900279"}},{"bidder":"sovrn","params":{"tagid":"336871"}}]},{"code":"TalkAboutMarriage_com_300x250_TopRight_RV_Forum","sizes":[[300,250]],"bids":[{"bidder":"aol","params":{"placement":"4256777","network":"9430.1"}},{"bidder":"appnexus","params":{"placementId":"7643359"}},{"bidder":"brealtime","params":{"placementId":"9503124"}},{"bidder":"districtm","params":{"placementId":"9435164"}},{"bidder":"indexExchange","params":{"id":3,"siteID":"189385"}},{"bidder":"pulsepoint","params":{"cf":"300x250","cp":"560903","ct":"551321"}},{"bidder":"rubicon","params":{"accountId":"1019","siteId":"21368","zoneId":"72800","sizes":[15],"keywords":["TalkAboutMarriage.com"],"inventory":{"vsdomain":"TalkAboutMarriage.com"}}},{"bidder":"sekindo","params":{"spaceId":"71562"}},{"bidder":"sekindoapn","params":{"placementId":"9900279"}},{"bidder":"sovrn","params":{"tagid":"336872"}}]},{"code":"TalkAboutMarriage_com_300x250_TopLeft_RV_Forum","sizes":[[300,250]],"bids":[{"bidder":"aol","params":{"placement":"4256777","network":"9430.1"}},{"bidder":"appnexus","params":{"placementId":"7643359"}},{"bidder":"brealtime","params":{"placementId":"9503124"}},{"bidder":"districtm","params":{"placementId":"9435164"}},{"bidder":"indexExchange","params":{"id":4,"siteID":"189386"}},{"bidder":"pulsepoint","params":{"cf":"300x250","cp":"560903","ct":"551321"}},{"bidder":"rubicon","params":{"accountId":"1019","siteId":"21368","zoneId":"72800","sizes":[15],"keywords":["TalkAboutMarriage.com"],"inventory":{"vsdomain":"TalkAboutMarriage.com"}}},{"bidder":"sekindo","params":{"spaceId":"71562"}},{"bidder":"sekindoapn","params":{"placementId":"9900279"}},{"bidder":"sovrn","params":{"tagid":"336873"}}]},{"code":"TalkAboutMarriage_com_300x250_PostbitLower_RV_Forum","sizes":[[300,250]],"bids":[{"bidder":"aol","params":{"placement":"4256777","network":"9430.1"}},{"bidder":"appnexus","params":{"placementId":"7643359"}},{"bidder":"brealtime","params":{"placementId":"9503124"}},{"bidder":"districtm","params":{"placementId":"9435164"}},{"bidder":"pulsepoint","params":{"cf":"300x250","cp":"560903","ct":"551321"}},{"bidder":"rubicon","params":{"accountId":"1019","siteId":"21368","zoneId":"72800","sizes":[15],"keywords":["TalkAboutMarriage.com"],"inventory":{"vsdomain":"TalkAboutMarriage.com"}}},{"bidder":"sekindo","params":{"spaceId":"71562"}},{"bidder":"sekindoapn","params":{"placementId":"9900279"}},{"bidder":"sovrn","params":{"tagid":"336874"}}]}];
+    pbjs.addAdUnits(adUnits);
+        
+    pbjs.bidderSettings = {
+        standard: {
+            alwaysUseBid: false,
+            adserverTargeting: [{
+                key: "hb_bidder",
+                val: function(bidResponse) {                    
+                    return bidResponse.bidder;
+                }
+            }, {
+                key: "hb_adid",
+                val: function(bidResponse) {
+                    return bidResponse.adId;
+                }
+            }, {
+                key: "hb_pb",
+                val: function(bidResponse) {
+                    var cpm = bidResponse.cpm;
+                    if (cpm < 0.1) cpm = 0.10;
+                    if (cpm > 20) cpm = 20.00;
+                    var newCpm = (Math.floor(cpm * 10) / 10).toFixed(2);
+                    return "pb" + newCpm.replace(".", "");
+                }
+            }, {
+                key: "hb_size",
+                val: function(bidResponse) {
+                    return bidResponse.size;
+                }
+            }]
+        }
+    }
+    
+    pbjs.requestBids({
+        bidsBackHandler: function(bidResponses) {
+            initAdserver();
+        }
+    });
+});
+</script> <script id='dfpsetup' type='text/javascript'>
+googletag.cmd.push(function() {
+
+var dfpMapping728x90 = googletag.sizeMapping()
+	.addSize([320, 400], [320, 50])
+	.addSize([320, 700], [320, 50])
+	.addSize([480, 200], [320, 50])
+	.addSize([768, 200], [728, 90])
+	.addSize([1024, 200], [728, 90])
+	.build();
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_728x90_Top_RV_Forum', [[320, 50], [728, 90]], 'TalkAboutMarriage_com_728x90_Top_RV_Forum')
+	.defineSizeMapping(dfpMapping728x90)
+	.set("adsense_background_color", "FFD3DF")
+	.set("adsense_border_color", "FFD3DF")
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_728x90_Bottom_RV_Forum', [[320, 50], [728, 90]], 'TalkAboutMarriage_com_728x90_Bottom_RV_Forum')
+	.defineSizeMapping(dfpMapping728x90)
+	.set("adsense_background_color", "FFD3DF")
+	.set("adsense_border_color", "FFD3DF")
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_300x250_Postbit_RV_Forum', [[300, 250], [500, 250], [600, 250]], 'TalkAboutMarriage_com_300x250_Postbit_RV_Forum')
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_300x250_Pre-Roll', [300, 250], 'TalkAboutMarriage_com_300x250_Pre-Roll')
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_300x250_TopRight_RV_Forum', [300, 250], 'TalkAboutMarriage_com_300x250_TopRight_RV_Forum')
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_300x250_TopLeft_RV_Forum', [300, 250], 'TalkAboutMarriage_com_300x250_TopLeft_RV_Forum')
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_1x1_SlimCut_RV_Forum', [1, 1], 'TalkAboutMarriage_com_1x1_SlimCut_RV_Forum')
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_1x1_SharethroughPostbit_RV_Forum', [[1, 1], 'fluid'], 'TalkAboutMarriage_com_1x1_SharethroughPostbit_RV_Forum')
+	.addService(googletag.pubads());
+
+googletag
+	.defineSlot('/1030735/TalkAboutMarriage_com_300x250_PostbitLower_RV_Forum', [[300, 250], [500, 250], [600, 250]], 'TalkAboutMarriage_com_300x250_PostbitLower_RV_Forum')
+	.addService(googletag.pubads());
+
+googletag.pubads().setTargeting("sitename", "TalkAboutMarriage.com");
+googletag.pubads().setTargeting("make", "");
+googletag.pubads().setTargeting("model", "");
+googletag.pubads().setTargeting("group_id", "1");
+googletag.pubads().setTargeting("group_name", "Unregistered / Not Logged In");
+googletag.pubads().setTargeting("forum_id", "9");
+googletag.pubads().setTargeting("forum_name", "The Social Spot");
+googletag.pubads().setTargeting("PageID", "365745");
+googletag.pubads().setTargeting("VS1", "0");
+googletag.pubads().setTargeting("VS2", "0");
+googletag.pubads().setTargeting("registered", "false");
+
+if (typeof(ccauds) != "undefined" && typeof(ccauds.Profile.tpid) != "undefined" && ccauds.Profile.tpid != "") {  
+	googletag.pubads().setTargeting("tpid", ccauds.Profile.tpid); 
+} else { 
+	googletag.pubads().setTargeting("tpid", "0"); 
+}
+
+if (typeof(ccauds) != "undefined") {
+    (function(googletag, ccauds) {
+        var aud_abbr = [], audience = ccauds.Profile.Audiences.Audience;
+        for (var cci = 0; cci < audience.length; cci++) {
+            aud_abbr.push(audience[cci].abbr);
+        }
+        googletag.pubads().setTargeting("aud_abbr", aud_abbr);
+    })(googletag, ccauds);
+}
+
+googletag.pubads().setTargeting("strNativeKey", "URMBsimDVDFEJ3HgirLTPgUW");
+
+pbjs.que.push(function() {
+    pbjs.setTargetingForGPTAsync();
+});
+googletag.pubads().enableSingleRequest();
+googletag.enableServices();
+});
+googletag.cmd.push(function() {            
+googletag.pubads().set("adsense_background_color", "FFFFFF");
+googletag.pubads().set("adsense_border_color", "FFFFFF");
+googletag.pubads().set("adsense_link_color", "124583");
+googletag.pubads().set("adsense_text_color", "000000");
+googletag.pubads().set("adsense_url_color", "124583");
+googletag.pubads().set("google_ad_bg", "FFFFFF");
+googletag.pubads().set("google_ad_border", "FFFFFF");
+googletag.pubads().set("google_ad_link", "124583");
+googletag.pubads().set("google_ad_text", "000000");
+googletag.pubads().set("google_ad_url", "124583");
+googletag.pubads().set("page_url", "http://talkaboutmarriage.com/showthread.php?t=365745");});
+</script>   <script type='text/javascript'>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+  try { amznads.setTargetingForGPTAsync('passback'); } catch(e) { /*ignore*/}
+</script>   <link href="android-app://com.quoord.tapatalkpro.activity/tapatalk/talkaboutmarriage.com?location=topic&amp;fid=9&amp;tid=365745&amp;channel=google-indexing" rel="alternate" /> <link href="ios-app://307880732/tapatalk/talkaboutmarriage.com?location=topic&amp;fid=9&amp;tid=365745&amp;channel=google-indexing" rel="alternate" /> <meta property="al:android:package" content="com.quoord.tapatalkpro.activity" /> <meta property="al:android:url" content="tapatalk://talkaboutmarriage.com?location=topic&amp;fid=9&amp;tid=365745&amp;channel=facebook-indexing" /> <meta property="al:android:app_name" content="Tapatalk" /> <meta property="al:ios:url" content="tapatalk://talkaboutmarriage.com?location=topic&amp;fid=9&amp;tid=365745&amp;channel=facebook-indexing" /> <meta property="al:ios:app_store_id" content="307880732" /> <meta property="al:ios:app_name" content="Tapatalk" />   <meta name="twitter:card" content="summary" /> <meta name="twitter:site" content="@talkmarriage" /> <meta name="twitter:title" content="Pop music in 1960s Britain" /> <meta name="twitter:description" content="Talk About Marriage" /> <meta name="twitter:app:id:iphone" content="307880732" /> <meta name="twitter:app:url:iphone" content="tapatalk://talkaboutmarriage.com?location=topic&amp;fid=9&amp;tid=365745&amp;channel=twitter-indexing" /> <meta name="twitter:app:id:ipad" content="307880732" /> <meta name="twitter:app:url:ipad" content="tapatalk://talkaboutmarriage.com?location=topic&amp;fid=9&amp;tid=365745&amp;channel=twitter-indexing" /> <meta name="twitter:app:id:googleplay" content="com.quoord.tapatalkpro.activity" /> <meta name="twitter:app:url:googleplay" content="tapatalk://talkaboutmarriage.com?location=topic&amp;fid=9&amp;tid=365745&amp;channel=twitter-indexing" />   <script type="text/javascript" src="//d1r55yzuc1b1bw.cloudfront.net/vsapi.all.min.js"></script> <title> Pop music in 1960s Britain - Talk About Marriage</title>  <script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:"auto"});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement("script"),
+  document.getElementsByTagName("script")[0],
+  '//cdn.taboola.com/libtrc/verticalscope-network/loader.js');
+</script>  <link rel="stylesheet" type="text/css" href="vbseo/resources/css/vbseo_buttons.css?v=a4" />
+<script type="text/javascript" src="vbseo/resources/scripts/vbseo_ui.js?v=a4"></script>
+
+<script type="text/javascript">
+ YAHOO.util.Event.onDOMReady(function (){
+ 	vbseoui = new vBSEO_UI();
+ 	vbseoui.page_init(Array('postbody','blogbit','content','postcontainer','vbseo_like_postbit'), Array("php",1));
+ });
+</script>
+
+</head> <body onload=""> <script>
+var captify_kw_query_11825 = "";
+(function(c,a,p,t,i,f,y){i=c.createElement(a);t=c.getElementsByTagName(a)[0];i.type="text/javascript";i.async=true;i.src=p;t.parentNode.insertBefore(i,t);})(document,"script","https://p.cpx.to/p/11825/px.js");
+</script> <script type="text/javascript"> 
+    var xl8_script = document.createElement("script"); 
+    xl8_script.src = "https://loadus.exelator.com/load/?p=239&g=055&c=1761479&ctg=marriage&cmake=&cmodel=&j=d"; 
+    xl8_script.type = "text/javascript"; 
+    xl8_script.async = true; 
+    document.body.appendChild(xl8_script); 
+</script>  <script type="text/javascript">if (typeof(tapatalkDetect) == "function") tapatalkDetect()</script>  <div class="container">  <a name="top"></a> <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center" id="header" class="header" style="background: url(/images/TAMarriage_2015/misc/head-middle.png) repeat-x;"><tr><td align="left"><a href="http://talkaboutmarriage.com/forumindex.php"><img src="/images/TAMarriage_2015/misc/head-left.png" border="0" height="146" width="775" alt="Talk About Marriage" /></a></td><td align="right" id="header_right_cell"><img src="/images/TAMarriage_2015/misc/head-right.png" border="0" height="146" width="219" alt="" /></td> </tr></table>    <div align="center" itemscope itemtype="http://schema.org/WebPage"> <div id="page" class="page page-background" style="width:100%; text-align:left"> <div style="padding:0px 0px 0px 0px" align="left">  <nav> <div class="search-in-one"> <div class="change_btn "><div class="image sprite-google-search"></div> <ul class="search_menu"> <li data-search-type="google-search"><div class="icon sprite-google-search"></div> Google search</li> <li data-search-type="vb-search"><div class="icon sprite-vb-search"></div> VB search</li> </ul> </div> <div class="search-item google-search"> <div class='ams_gtsearch' style='max-width: 250px; margin:auto;' id='cse_gtsearch_form_3'></div> <script>
+vsamsgtsearches.push('cse_gtsearch_form_3');
+</script> </div> </div> <ul class="vbmenu_control navbar_search"> <li><a id="navbar_search" href="http://talkaboutmarriage.com/search.php" accesskey="4" rel="nofollow">Search</a> <script type="text/javascript"> vbmenu_register("navbar_search"); </script> </li></ul> <ul class="nav" id="nav"> <li class="vbmenu_control"><a href="http://talkaboutmarriage.com/">Home</a></li> <li class="vbmenu_control hovertouch"> <a href="/forumindex.php" id="navforums">Forums <img src="/images/misc/menu_open.gif" border="0" width="8" height="4" title="" alt=""></a> <div class="vbmenu_popup tools_wrapper forum-menu_wrapper" id="forum-menu"> <ul class="subnav" > <style>
+.subnav li.mobile_forumlink {display: none;}
+@media screen and (max-width: 1024px){
+.subnav li.mobile_forumlink {display: list-item;}
+}
+</style> <li class="vbmenu_control mobile_forumlink"><a href="http://talkaboutmarriage.com/forumindex.php">Forums</a></li> <li class="vbmenu_control hovertouch"> <a href="http://talkaboutmarriage.com/talk-about-family-marriage-relationships/">Talk About Family, Marriage and Relationships</a> <div class="vbmenu_popup" style="display:none;" align="left"> <ul class="subnav"> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/general-relationship-discussion/">General Relationship Discussion</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/ladies-lounge/">The Ladies' Lounge</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/mens-clubhouse/">The Men's Clubhouse</a> </li> </ul> </div> </li> <li class="vbmenu_control hovertouch"> <a href="http://talkaboutmarriage.com/focused-topics/">Focused Topics</a> <div class="vbmenu_popup" style="display:none;" align="left"> <ul class="subnav"> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/long-term-success-marriage/">Long Term Success in Marriage</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/coping-infidelity/">Coping with Infidelity</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/sex-marriage/">Sex in Marriage</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/financial-problems-marriage/">Financial Problems in Marriage</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/family-parenting-forums/">The Family &amp; Parenting Forums</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/relationships-addiction/">Relationships and Addiction</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/physical-mental-health-issues/">Physical &amp; Mental Health Issues</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/relationships-spirituality/">Relationships and Spirituality</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/dealing-grief-loss/">Dealing with Grief and Loss</a> </li> </ul> </div> </li> <li class="vbmenu_control hovertouch"> <a href="http://talkaboutmarriage.com/talk-about-divorce-separation/">Talk About Divorce and Separation</a> <div class="vbmenu_popup" style="display:none;" align="left"> <ul class="subnav"> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/considering-divorce-separation/">Considering Divorce  or Separation</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/going-through-divorce-separation/">Going Through Divorce or Separation</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/reconciliation/">Reconciliation</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/life-after-divorce/">Life After Divorce</a> </li> </ul> </div> </li> <li class="vbmenu_control hovertouch"> <a href="http://talkaboutmarriage.com/counseling-professional-help/">Counseling and Professional Help</a> <div class="vbmenu_popup" style="display:none;" align="left"> <ul class="subnav"> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/self-help-marriage-relationship-programs/">Self-Help Marriage &amp; Relationship Programs</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/self-help-resource-archives/">Self Help – Resource Archives</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/experiences-counseling/">Experiences in Counseling</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/articles/">Articles</a> </li> </ul> </div> </li> <li class="vbmenu_control hovertouch"> <a href="http://talkaboutmarriage.com/off-topic/">Off Topic</a> <div class="vbmenu_popup" style="display:none;" align="left"> <ul class="subnav"> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/social-spot/">The Social Spot</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/politics-religion/">Politics and Religion</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/new-member-forum-introduce-yourself/">New Member Forum - Introduce Yourself!</a> </li> </ul> </div> </li> <li class="vbmenu_control hovertouch"> <a href="http://talkaboutmarriage.com/about-talkaboutmarriage-com/">About TalkAboutMarriage.com</a> <div class="vbmenu_popup" style="display:none;" align="left"> <ul class="subnav"> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/home-page-feature-news/">Home Page Feature News</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/forum-guidelines/">Forum Guidelines</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/suggestion-box/">Suggestion Box</a> </li> <li class="vbmenu_control"> <a href="http://talkaboutmarriage.com/technical-difficulties/">Technical Difficulties?</a> </li> </ul> </div> </li> </ul> </div> </li> <if> <li class="vbmenu_control"><a href="http://talkaboutmarriage.com/index.php?page=active_topics">Active Topics</a></li> <li class="vbmenu_control"><a href="http://talkaboutmarriage.com/search.php?do=getdaily" accesskey="2">Today's Posts</a></li>   </li>  <li class="mobile-hide"><a href="/rtlp.php">For Therapists</a></li> <li class="vbmenu_control vs_register"><a href="http://talkaboutmarriage.com/register.php" rel="nofollow">Register</a></li> </ul> </nav>   <div class="text_wrapper info-bar"> <span class="login-or-links">  <form action="http://talkaboutmarriage.com/login.php?do=login" method="post" onsubmit="md5hash(vb_login_password, vb_login_md5password, vb_login_md5password_utf, 0)"> <a href="http://talkaboutmarriage.com/register.php?do=social&amp;provider=facebook&amp;reg=1" class="social_btn facebook_btn gradient"><span class="sprite inlineimg facebook_sprite">Facebook</span></a> <input type="text" class="bginput"  name="vb_login_username" id="navbar_username" size="10" accesskey="u" tabindex="101" value="User Name" onfocus="if (this.value == 'User Name') this.value = '';" /> <input type="password" class="bginput"  name="vb_login_password" id="navbar_password" size="10" tabindex="102" /  value="Password" onfocus="if (this.value == 'Password') this.value = '';"> <input type="submit" class="button" value="Log in" tabindex="104" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /> <label for="cb_cookieuser_navbar"><input type="checkbox" name="cookieuser" value="1" tabindex="103" id="cb_cookieuser_navbar" accesskey="c" /><span class="mobile-hide">Remember Me?</span></label> <input type="hidden" name="s" value="9e440f71fb6874d7119be2d6140eb2df" /> <input type="hidden" name="securitytoken" value="guest" /> <input type="hidden" name="do" value="login" /> <input type="hidden" name="vb_login_md5password" /> <input type="hidden" name="vb_login_md5password_utf" /> </form>  </span> </div> <table class="tborder" cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> <tr> <td class="alt1" width="100%"><strong>The Social Spot</strong> <span class="smallfont">Talk About Whatever.</span></td> </tr> </table> <br /> <div class="Leaderboard LeaderboardHeight"> <div style='width:100%; text-align:center;'><div id='TalkAboutMarriage_com_728x90_Top_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_728x90_Top_RV_Forum'); });
+						</script> </div></div> </div> <div class="text_wrapper navbar_wrapper"> <div class="breadcrumb" itemprop="breadcrumb"> <span class="navbar"><a href="http://talkaboutmarriage.com/forumindex.php" accesskey="1">Talk About Marriage</a></span> <span class="navbar">&gt; <a href="http://talkaboutmarriage.com/off-topic/">Off Topic</a></span> <span class="navbar">&gt; <a href="http://talkaboutmarriage.com/social-spot/">The Social Spot</a></span>
+
+
+                ><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html"></a> <strong>
+	 Pop music in 1960s Britain
+
+</strong> </div> </div>  <div id="wrapper" class="wrapper"> <div id="main-content_wrapper" class="center"> <div id="main-content"> <form method="post" action="http://talkaboutmarriage.com/usertag.php"> <table class="tborder" cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> <thead> <tr style="padding-top:5px;"> <td class="tcat"><a href="http://talkaboutmarriage.com/usertag.php?do=list&amp;action=tags&amp;t=365745">User Tag List</a></td> </tr> </thead> <tbody> </tbody> </table> <input type="hidden" name="s" value="9e440f71fb6874d7119be2d6140eb2df" /> <input type="hidden" name="securitytoken" value="guest" /> <input type="hidden" name="do" value="threadtag" /> <input type="hidden" name="action" value="update" /> <input type="hidden" name="threadid" value="365745" /> </form> <br /> <a name="poststop" id="poststop"></a><div class="text_wrapper"> <div id="vbseo-likes"> <span class="vbseo-likes-count" onclick="vbseoui.tree_dropdown()"><span class="sprite inlineimg vbseo_likes_heart">&nbsp;</span>12<em>Likes</em></span> <div id="liketree_1.365745" class="vbseo-likes-container"> <ul class="vbseo-likes-tabs"> <li><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#" onclick="return vbseoui.treetab_click(0)">Top</a></li> <li><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#" onclick="return vbseoui.treetab_click(1)">All</a></li> <li><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#" onclick="return vbseoui.treetab_click(2)">This Page</a></li> <li class="vbseo-likes-fusion"></li> </ul> <ul class="vbseo-likes-list"> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>MattMatt</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17275769" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17275769')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>blueinbr</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17275785" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17275785')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>2</strong></span> <span class="vbseo-likes-postby">Post By <strong>blueinbr</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276049" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17276049')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>TBT</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276465" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17276465')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>TBT</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276489" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17276489')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>TBT</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276513" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17276513')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>TBT</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276537" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17276537')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>2</strong></span> <span class="vbseo-likes-postby">Post By <strong>2ntnuf</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17280953" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17280953')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>lucy999</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17281817" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17281817')"> </a> </li> <li> <div class="vbseo-likes-tipsy"> <div class="vbseo-likes-tipsy-arrow"></div> <div class="vbseo-likes-tipsy-inner"></div> </div> <span class="vbseo-likes-hearts"><strong>1</strong></span> <span class="vbseo-likes-postby">Post By <strong>2ntnuf</strong></span> <a href="/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17281961" class="vbseo-likes-link" onclick="return vbseoui.scroll_to('17281961')"> </a> </li> </ul> </div> </div> <script type="text/javascript">
+var vbseoui_pageids = "17275769,17275785,17276041,17276049,17276465,17276489,17276513,17276537,17280953,17281817,17281961";
+</script> </div>  <div class="controls" id="fixed-controls"> <div class="fixed-controls-container"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;noquote=1&amp;p=17281961" rel="nofollow"><span class="sprite button reply">Reply</span></a> <span class="item pagenav"> </span> <span class="item item-social"> <div class="socialIcons threadPage"> <div class="gplus"><g:plusone size="medium"></g:plusone></div> <arel="nofollow" 
+		href="http://twitter.com/share"
+		class="twitter-share-button"
+		data-count="horizontal"
+		
+	>Tweet</a> <fb:like href="" send="false" layout="button_count" width="70" show_faces="false" action="like" font=""></fb:like> </div> <div style="clear:both;"></div> </span> </div> </div>  <div id="placeholder"></div>  <table class="tborder toolbar " cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-bottom-width:0px"> <tr> <td class="tcat" > <div class="smallfont">
+		
+		&nbsp;
+		</div> </td> <td class="vbmenu_control tcat" id="linkbacktools" nowrap="nowrap"> <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#links">LinkBack</a> </td> <td class="tcat" id="threadtools" > <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#goto_threadtools">Thread Tools</a> </td> <td class="tcat" id="threadsearch" > <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#goto_threadsearch">Search this Thread</a> </td> </tr> </table>    <div id="posts" itemscope itemtype="http://schema.org/Blog"> <table class="ads" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"> <TR> <TD align='center'></TD> </TR> </table>  <div id="edit17275769" style="padding:0px 0px 0px 0px">  <section id="post17275769" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17275769-post1.html" target="new"  id="postcount17275769" name="1"><strong>post #1</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17275769" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17275769"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-29-2017, 08:43 PM</span>  <span class="thread-starter">Thread Starter</span> </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17275769" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/mattmatt.html"><font color="#641690">MattMatt</font><img src="http://talkaboutmarriage.com/images/plus.gif" border="0" hspace="2" align="top"></a> </div> <div class="smallfont">Moderator</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/mattmatt.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=39191&amp;dateline=1373847711" width="100" height="100" alt="MattMatt's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: May 2012</div> <div>Location: England</div> <div>
+					Posts: 18,364
+				</div> <div> </div> </div> </div> <div id="td_post_17275769" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17275769" itemprop="text">
+			
+			Freddie and the Dreamers <br /> <br /> <a rel="nofollow" href="https://www.youtube.com/watch?v=rXo-osvXgHU#t=15.810966" target="_blank">https://www.youtube.com/watch?v=rXo-osvXgHU#t=15.810966</a><br />
+Can't get it to preview for some reason...<br /> <br />
+Actually they were on NBC in the States<br /> <div style="display: none;" id="ame_noshow_post_1487310797_1"> <a rel="nofollow" href="https://www.youtube.com/watch?v=g8oRf7SMEfo" title="YouTube" target="_blank">YouTube</a> </div> <div style="display: inline;" id="ame_doshow_post_1487310797_1"> <div align="center"> <table class="tborder" cellpadding="0" cellspacing="0" width="768" style="width:100% !important;margin:10px 0px"> <thead> <tr> <td class="tcat" colspan="2" style="text-align:center"> <a rel="nofollow" href="https://www.youtube.com/watch?v=g8oRf7SMEfo" title="YouTube" target="_blank">YouTube</a> </td> </tr> </thead> <tbody> <tr> <td class="panelsurround" align="center"> <iframe width="768" height="480" src="http://www.youtube.com/embed/g8oRf7SMEfo?start=" frameborder="0" allowfullscreen></iframe> </td> </tr> </tbody> </table></div> </div> <BR><BR> <span id="nointelliTXT"> <script type="text/javascript">
+							google_ad_client = "ca-pub-7865546952023728";
+							google_ad_slot = "7989824840";
+							google_override_format = true;
+							google_ad_width = 728;
+							google_ad_height = 250;
+							google_ad_type =  'text';
+							google_color_link =  '#124583';
+							google_color_url =  '#124583';
+							google_color_text = "#000000";
+							google_color_bg = '#ffffff';
+							google_color_border = "#ffffff";
+							google_language =  'en';
+							google_ad_region= "test";
+						</script>  <script type="text/javascript"
+						src="//pagead2.googlesyndication.com/pagead/show_ads.js"> </script> </span> </div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17275769"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275769&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275769">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275769&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275769&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275769&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275769&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/tbt.html">TBT</a> likes this.</div> </div>  <div class="vs_sig"> <hr class="sig"> <a rel="nofollow" href="http://mygeneralblog1.blogspot.co.uk" target="_blank">http://mygeneralblog1.blogspot.co.uk</a><br /> <a rel="nofollow" href="http://mygeneralblog1.blogspot.co.uk/2013/05/be-afraid-uk-based-cheaters.html" target="_blank">http://mygeneralblog1.blogspot.co.uk...-cheaters.html</a> (Be afraid UK cheaters! CheaterVille has come to the UK!
+			</div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_online" title="MattMatt is online now">MattMatt is online now</span>
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17275769" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17275769" rel="nofollow" id="qr_17275769" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit_vp1" class="vs_dfp_standard_postbit_container" style="padding:0px 0px 0px 0px; "> <table class="tborder vs_dfp_standard_postbit_ad" cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> <tr> <td class="thead" style="line-height:1.4em;" colspan="2"> <div> <span style="float:right;font-weight:normal"> <a href="http://talkaboutmarriage.com/register.php">Remove Advertisements</a> </span> </div>Sponsored Links
+		</td> </tr> <tr valign="top"> <td class="alt2" width="175px"> <div> <a class="bigusername" href="http://talkaboutmarriage.com">Talk About Marriage</a> </div> <div class="smallfont">Advertisement</div> <div>&nbsp;<br /></div> </td> <td class="alt1" > <table cellpadding="2" cellspacing="2" border="0" width="100%" align="left"> <tr> <td align="left"><div style='width:100%; text-align:left;'><div id='TalkAboutMarriage_com_300x250_Postbit_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_300x250_Postbit_RV_Forum'); });
+						</script> </div></div></td> <td></td> </tr> </table> </td> </tr> </table></div> <div id="edit17275785" style="padding:0px 0px 0px 0px">  <section id="post17275785" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17275785-post2.html" target="new"  id="postcount17275785" name="2"><strong>post #2</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17275785" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17275785"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-29-2017, 08:47 PM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17275785" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/blueinbr.html"><font color="#641690">blueinbr</font><img src="http://talkaboutmarriage.com/images/plus.gif" border="0" hspace="2" align="top"></a> </div> <div class="smallfont">Forum Supporter</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/blueinbr.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=225985&amp;dateline=1483642470" width="80" height="78" alt="blueinbr's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Dec 2015</div> <div>
+					Posts: 5,579
+				</div> <div> </div> </div> </div> <div id="td_post_17275785" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17275785" itemprop="text">
+			
+			I wasn't born yet.
+			
+						
+			
+		</div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17275785"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275785&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275785">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275785&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275785&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275785&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17275785&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> likes this.</div> </div> <div id="ld-140-7703"></div><script>(function(w,d,s,i){w.ldAdInit=w.ldAdInit||[];w.ldAdInit.push({slot:8275635462210151,size:[0, 0],id:"ld-140-7703"});if(!d.getElementById(i)){var j=d.createElement(s),p=d.getElementsByTagName(s)[0];j.async=true;j.src="//cdn2.lockerdome.com/_js/ajs.js";j.id=i;p.parentNode.insertBefore(j,p);}})(window,document,"script","ld-ajs");</script> </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="blueinbr is offline">blueinbr is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17275785" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17275785" rel="nofollow" id="qr_17275785" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17276041" style="padding:0px 0px 0px 0px">  <section id="post17276041" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17276041-post3.html" target="new"  id="postcount17276041" name="3"><strong>post #3</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276041" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17276041"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-29-2017, 10:20 PM</span>  <span class="thread-starter">Thread Starter</span> </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17276041" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/mattmatt.html"><font color="#641690">MattMatt</font><img src="http://talkaboutmarriage.com/images/plus.gif" border="0" hspace="2" align="top"></a> </div> <div class="smallfont">Moderator</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/mattmatt.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=39191&amp;dateline=1373847711" width="100" height="100" alt="MattMatt's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: May 2012</div> <div>Location: England</div> <div>
+					Posts: 18,364
+				</div> <div> </div> </div> </div> <div id="td_post_17276041" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17276041" itemprop="text"> <div style="margin:20px; margin-top:5px; "> <div class="smallfont" style="margin-bottom:2px">Quote:</div> <div>
+
+					Originally Posted by <strong>blueinbr</strong> <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html#post17275785" rel="nofollow"><span class="sprite inlineimg sviewpost">View Post</span></a> </div> <div style="font-style:italic; border:1px inset; padding: 5px;" class="postquote">I wasn't born yet.</div> </div>I used to watch them on the telly when I was little! <img src="http://talkaboutmarriage.com/images/smilies/smile.gif" border="0" alt="" title="Smile" class="inlineimg" /><br /> <br />
+I was about six or 7.
+			
+						
+			
+		</div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17276041"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276041&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276041">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276041&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276041&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276041&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276041&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked" style="display:none"></div> </div>  <div class="vs_sig"> <hr class="sig"> <a rel="nofollow" href="http://mygeneralblog1.blogspot.co.uk" target="_blank">http://mygeneralblog1.blogspot.co.uk</a><br /> <a rel="nofollow" href="http://mygeneralblog1.blogspot.co.uk/2013/05/be-afraid-uk-based-cheaters.html" target="_blank">http://mygeneralblog1.blogspot.co.uk...-cheaters.html</a> (Be afraid UK cheaters! CheaterVille has come to the UK!
+			</div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_online" title="MattMatt is online now">MattMatt is online now</span>
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276041" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276041" rel="nofollow" id="qr_17276041" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit_vp1" class="vs_dfp_standard_postbit_container" style="padding:0px 0px; margin-top: -8px;"> <table class="tborder vs_dfp_standard_postbit_ad" cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> <tr valign="top"> <td class="alt2" width="175px"> <div>&nbsp;<br /></div> </td> <td class="alt1"> <table cellpadding="2" cellspacing="2" border="0" width="100%" align="left"> <tr> <td align="left"><div style='width:100%; text-align:center;'><div id='TalkAboutMarriage_com_1x1_SharethroughPostbit_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_1x1_SharethroughPostbit_RV_Forum'); });
+						</script> </div></div> </td> </tr> </table> </td> </tr> </table></div> <div id="edit17276049" style="padding:0px 0px 0px 0px">  <section id="post17276049" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17276049-post4.html" target="new"  id="postcount17276049" name="4"><strong>post #4</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276049" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17276049"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-29-2017, 10:21 PM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17276049" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/blueinbr.html"><font color="#641690">blueinbr</font><img src="http://talkaboutmarriage.com/images/plus.gif" border="0" hspace="2" align="top"></a> </div> <div class="smallfont">Forum Supporter</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/blueinbr.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=225985&amp;dateline=1483642470" width="80" height="78" alt="blueinbr's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Dec 2015</div> <div>
+					Posts: 5,579
+				</div> <div> </div> </div> </div> <div id="td_post_17276049" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17276049" itemprop="text"> <div style="margin:20px; margin-top:5px; "> <div class="smallfont" style="margin-bottom:2px">Quote:</div> <div>
+
+					Originally Posted by <strong>MattMatt</strong> <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html#post17276041" rel="nofollow"><span class="sprite inlineimg sviewpost">View Post</span></a> </div> <div style="font-style:italic; border:1px inset; padding: 5px;" class="postquote">I used to watch them on the telly when I was little! <img src="http://talkaboutmarriage.com/images/smilies/smile.gif" border="0" alt="" title="Smile" class="inlineimg" /><br /> <br /> <br /> <br />
+I was about six or 7.</div> </div><br /> <br />
+Right after Doctor Who?  <img src="http://emoji.tapatalk-cdn.com/emoji3.png" /> </div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17276049"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276049&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276049">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276049&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276049&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276049&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276049&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> and <a href="http://talkaboutmarriage.com/members/honcho.html">honcho</a> like this.</div> </div> </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="blueinbr is offline">blueinbr is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276049" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276049" rel="nofollow" id="qr_17276049" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17276465" style="padding:0px 0px 0px 0px">  <section id="post17276465" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17276465-post5.html" target="new"  id="postcount17276465" name="5"><strong>post #5</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276465" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17276465"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-30-2017, 12:52 AM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17276465" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/tbt.html">TBT</a> </div> <div class="smallfont">Member</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/tbt.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=32130&amp;dateline=1367110582" width="100" height="75" alt="TBT's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Dec 2011</div> <div>Location: Canada</div> <div>
+					Posts: 6,367
+				</div> <div> </div> </div> </div> <div id="td_post_17276465" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17276465" itemprop="text"> <a rel="nofollow" href="https://youtu.be/tBuiTyIYpA8" target="_blank">The Young Ones-Cliff Richard and The Shadows</a><br /> <br />
+For the longest time I thought he shared DNA with D*ck Clark. <img src="http://talkaboutmarriage.com/images/smilies/wink.gif" border="0" alt="" title="Wink" class="inlineimg" /> </div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17276465"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276465&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276465">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276465&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276465&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276465&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276465&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> likes this.</div> </div>  <div class="vs_sig"> <hr class="sig">
+				
+				&quot;Truth is like the sun,you can shut it out for a time,but it ain't going away&quot;-Elvis
+			</div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="TBT is offline">TBT is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276465" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276465" rel="nofollow" id="qr_17276465" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17276489" style="padding:0px 0px 0px 0px">  <section id="post17276489" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17276489-post6.html" target="new"  id="postcount17276489" name="6"><strong>post #6</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276489" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17276489"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-30-2017, 01:08 AM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17276489" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/tbt.html">TBT</a> </div> <div class="smallfont">Member</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/tbt.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=32130&amp;dateline=1367110582" width="100" height="75" alt="TBT's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Dec 2011</div> <div>Location: Canada</div> <div>
+					Posts: 6,367
+				</div> <div> </div> </div> </div> <div id="td_post_17276489" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17276489" itemprop="text"> <a rel="nofollow" href="https://youtu.be/ZUxn6JLwdDY" target="_blank">Anyone Who Had A Heart-Cilla Black</a> <br /> <br />
+First saw her on Ed Sullivan. Always remember her.
+			
+						
+			
+		</div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17276489"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276489&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276489">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276489&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276489&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276489&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276489&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> likes this.</div> </div>  <div class="vs_sig"> <hr class="sig">
+				
+				&quot;Truth is like the sun,you can shut it out for a time,but it ain't going away&quot;-Elvis
+			</div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="TBT is offline">TBT is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276489" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276489" rel="nofollow" id="qr_17276489" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17276513" style="padding:0px 0px 0px 0px">  <section id="post17276513" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17276513-post7.html" target="new"  id="postcount17276513" name="7"><strong>post #7</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276513" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17276513"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-30-2017, 01:18 AM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17276513" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/tbt.html">TBT</a> </div> <div class="smallfont">Member</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/tbt.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=32130&amp;dateline=1367110582" width="100" height="75" alt="TBT's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Dec 2011</div> <div>Location: Canada</div> <div>
+					Posts: 6,367
+				</div> <div> </div> </div> </div> <div id="td_post_17276513" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17276513" itemprop="text"> <a rel="nofollow" href="https://youtu.be/PuGzPbj6zjA" target="_blank">Billy J Kramer With The Dakotas-From A Window</a><br /> <br />
+'John and Paul' song.
+			
+						
+			
+		</div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17276513"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276513&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276513">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276513&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276513&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276513&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276513&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> likes this.</div> </div>  <div class="vs_sig"> <hr class="sig">
+				
+				&quot;Truth is like the sun,you can shut it out for a time,but it ain't going away&quot;-Elvis
+			</div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="TBT is offline">TBT is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276513" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276513" rel="nofollow" id="qr_17276513" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17276537" style="padding:0px 0px 0px 0px">  <section id="post17276537" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17276537-post8.html" target="new"  id="postcount17276537" name="8"><strong>post #8</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17276537" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17276537"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-30-2017, 01:25 AM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17276537" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/tbt.html">TBT</a> </div> <div class="smallfont">Member</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/tbt.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=32130&amp;dateline=1367110582" width="100" height="75" alt="TBT's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Dec 2011</div> <div>Location: Canada</div> <div>
+					Posts: 6,367
+				</div> <div> </div> </div> </div> <div id="td_post_17276537" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17276537" itemprop="text"> <a rel="nofollow" href="https://youtu.be/TVAypqrvDlk" target="_blank">It's Just A Little Bit Too Late-Wayne Fontana &amp; The Mindbenders</a> </div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17276537"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276537&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276537">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276537&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276537&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276537&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17276537&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> likes this.</div> </div>  <div class="vs_sig"> <hr class="sig">
+				
+				&quot;Truth is like the sun,you can shut it out for a time,but it ain't going away&quot;-Elvis
+			</div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="TBT is offline">TBT is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276537" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17276537" rel="nofollow" id="qr_17276537" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17280953" style="padding:0px 0px 0px 0px">  <section id="post17280953" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17280953-post9.html" target="new"  id="postcount17280953" name="9"><strong>post #9</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17280953" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17280953"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-30-2017, 05:38 PM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17280953" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/2ntnuf.html">2ntnuf</a> </div> <div class="smallfont">Member</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/2ntnuf.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=41980&amp;dateline=1383481074" width="100" height="100" alt="2ntnuf's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Jul 2012</div> <div>Location: PA</div> <div>
+					Posts: 13,775
+				</div> <div> </div> </div> </div> <div id="td_post_17280953" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17280953" itemprop="text">
+			
+			Wow, you guys are making me envious. I'm gonna post this so I'll get a notice of a new song posted. I'd rather do it honestly than to subscribe and feel like a peeping Tom. <br /> <br />
+Here is a song for your thread:<br /> <br /> <a rel="nofollow" href="https://youtu.be/D3uo8v2Heow" target="_blank">Love Is All Around - The Troggs</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/EWdeWITHb6c" target="_blank">Baby, now that I've found you - The Foundations</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/LKta_gRc2gA" target="_blank">Don't Let the Sun Catch You Cryin' - Gerry and the Pacemakers</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/80oMW_t4svM" target="_blank">Sugar and Spice - The Searchers</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/hxbYxIggR_I" target="_blank">Because - The Dave Clark Five</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/v_lJPUKTchI" target="_blank">A World Without Love - Peter and Gordon</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/D27HlqEZWiY" target="_blank">I'm Into Something Good - Herman's Hermits</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/hTuPbJLqFKI" target="_blank">Sunshine Superman  -  Donovan</a> </div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17280953"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17280953&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17280953">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17280953&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17280953&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17280953&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17280953&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/prodigal.html">Prodigal</a> and <a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> like this.</div> </div>  <div class="vs_sig"> <hr class="sig">
+				
+				"I'm significant!!  Screamed the dust speck." - Bill Watterson<br /> <br />
+"And this, too, shall pass away."
+			</div>   <div class="smallfont"> <hr class="dividing-line" /> <em>
+					
+						Last edited by 2ntnuf; 01-30-2017 at <span class="time">06:31 PM</span>.
+					
+					
+				</em> </div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="2ntnuf is offline">2ntnuf is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17280953" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17280953" rel="nofollow" id="qr_17280953" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17281817" style="padding:0px 0px 0px 0px">  <section id="post17281817" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17281817-post10.html" target="new"  id="postcount17281817" name="10"><strong>post #10</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17281817" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17281817"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-30-2017, 07:38 PM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17281817" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/lucy999.html">lucy999</a> </div> <div class="smallfont">Member</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/lucy999.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=159146&amp;dateline=1483408588" width="100" height="100" alt="lucy999's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Sep 2014</div> <div>Location: Brownbackistan</div> <div>
+					Posts: 1,734
+				</div> <div> </div> </div> </div> <div id="td_post_17281817" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17281817" itemprop="text"> <div style="margin:20px; margin-top:5px; "> <div class="smallfont" style="margin-bottom:2px">Quote:</div> <div>
+
+					Originally Posted by <strong>TBT</strong> <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html#post17276465" rel="nofollow"><span class="sprite inlineimg sviewpost">View Post</span></a> </div> <div style="font-style:italic; border:1px inset; padding: 5px;" class="postquote"><a rel="nofollow" href="https://youtu.be/tBuiTyIYpA8" target="_blank">The Young Ones-Cliff Richard and The Shadows</a><br /> <br />
+For the longest time I thought he shared DNA with D*ck Clark. <img src="http://talkaboutmarriage.com/images/smilies/wink.gif" border="0" alt="" title="Wink" class="inlineimg" /></div> </div>Your pic or vid that you posted is broken but you're a young ones fan????!!!!!! Oh i loved loved loved that show. Watched it every sunday on MTV.<br /> <br />
+ ETA: doh nevermind. I clicked on the vid and it is not what i thought it was.<br /> <br />
+Carry on y'all!
+			
+			
+				
+					<BR><BR> <span id="nointelliTXT"> <script type="text/javascript">
+							google_ad_client = "ca-pub-7865546952023728";
+							google_ad_slot = "7989824840";
+							google_override_format = true;
+							google_ad_width = 728;
+							google_ad_height = 250;
+							google_ad_type =  'text';
+							google_color_link =  '#124583';
+							google_color_url =  '#124583';
+							google_color_text = "#000000";
+							google_color_bg = '#ffffff';
+							google_color_border = "#ffffff";
+							google_language =  'en';
+							google_ad_region= "test";
+						</script>  <script type="text/javascript"
+						src="//pagead2.googlesyndication.com/pagead/show_ads.js"> </script> </span> </div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17281817"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281817&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281817">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281817&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281817&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281817&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281817&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> likes this.</div> </div> </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="lucy999 is offline">lucy999 is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17281817" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17281817" rel="nofollow" id="qr_17281817" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit17281961" style="padding:0px 0px 0px 0px"> <section id="post17281961" class="tborder vbseo_like_postbit user-post" itemscope itemtype="http://schema.org/Comment"> <div class="text_wrapper postbit_legacy_wrapper_thead thead" > <span class="post-count"><a href="http://talkaboutmarriage.com/17281961-post11.html" target="new"  id="postcount17281961" name="11"><strong>post #11</strong> of 11</a> (<b><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#post17281961" title="Link to this Post">permalink</a></b>)
+			
+ </span>  <a name="post17281961"><span class="sprite inlineimg post_old">Old</span></a> <span itemprop="dateCreated">01-30-2017, 08:20 PM</span>  </div> <div class="text_wrapper postbit_legacy_wrapper"> <div class="alt2 picture main-column-picture"> <div id="postmenu_17281961" itemprop="contributor"> <a class="bigusername" href="http://talkaboutmarriage.com/members/2ntnuf.html">2ntnuf</a> </div> <div class="smallfont">Member</div> <div class="smallfont">
+					&nbsp;<br /><a href="http://talkaboutmarriage.com/members/2ntnuf.html"><img class="photo avatar" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="image.php?s=9e440f71fb6874d7119be2d6140eb2df&amp;u=41980&amp;dateline=1383481074" width="100" height="100" alt="2ntnuf's Avatar" border="0" /></a> </div> <div class="smallfont">
+				&nbsp;<br /> <div>Join Date: Jul 2012</div> <div>Location: PA</div> <div>
+					Posts: 13,775
+				</div> <div> </div> </div> </div> <div id="td_post_17281961" class="main-column-text-wrapper alt1"> <div class="main-column-text">  <div class="smallfont"> <strong itemprop="alternativeHeadline">Re: Pop music in 1960s Britain</strong> </div> <hr class="dividing-line" />   <div id="post_message_17281961" itemprop="text"> <a rel="nofollow" href="https://youtu.be/qzpPy9hJYA8" target="_blank">Time of the Season - The Zombies</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/sgA4-bLcoN8" target="_blank">Carrie Anne - The Hollies</a><br /> <br /> <a rel="nofollow" href="https://youtu.be/rBJLoYd8xak" target="_blank">Friday On My Mind - The Easybeats</a> </div>  <div class="text_wrapper vbseo_buttons" id="lkbtn_1.365745.17281961"> <ul class="vbseo_links" style="visibility:visible"> <li class="vbseo_share"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#">Share</a> <ul class="vbseo_share_body"> <li class="share_header">Share this post on</li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/fb.gif" width="18px" height="18px" alt="" /><a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281961&amp;t=Pop+music+in+1960s+Britain">Share on Facebook</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/twitter.gif" width="18px" height="18px" alt="" /><a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281961">Share on Twitter</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/stumble.gif" width="18px" height="18px" alt="" /><a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281961&amp;title=Pop+music+in+1960s+Britain">Stumble this Post!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/digg.gif" width="18px" height="18px" alt="" /><a href="http://digg.com/submit?phase=2&url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281961&title=Pop+music+in+1960s+Britain'">Digg this Post!</a></li> <li class="right"><img src="http://cdn.talkaboutmarriage.net/images/delicious.gif" width="18px" height="18px" alt="" /><a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281961&amp;title=Pop+music+in+1960s+Britain">Add to del.icio.us!</a></li> <li class="left"><img src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" width="18px" height="18px" alt="" /><a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html%23post17281961&amp;title=Pop+music+in+1960s+Britain">Reddit!</a></li> </ul> </li> </ul> <div class="alt2 vbseo_liked"><a href="http://talkaboutmarriage.com/members/mattmatt.html">MattMatt</a> likes this.</div> </div>  <div class="vs_sig"> <hr class="sig">
+				
+				"I'm significant!!  Screamed the dust speck." - Bill Watterson<br /> <br />
+"And this, too, shall pass away."
+			</div>  </div> </div> </div>  <div class="text_wrapper postbit_legacy_wrapper postbit_legacy_wrapper_bottom"> <div class="alt2 picture main-column-picture status-icons" > <span class="sprite inlineimg user_offline" title="2ntnuf is offline">2ntnuf is offline</span>
+
+
+		
+		
+		
+		
+		&nbsp;
+        
+</div> <div id="td_post_1162" class="main-column-text-wrapper buttons buttons-postings"> <div class="main-column-text"> <div class="right"> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17281961" rel="nofollow"><span class="sprite button quote">Quote</span></a> <a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;p=17281961" rel="nofollow" id="qr_17281961" onclick="return false"><span class="sprite button quickreply">Quick Reply</span></a>  </div> </div> </div> </div>  </section>   </div>  <div id="edit_vp2" class="vs_dfp_standard_postbit_container" style="padding:0px 0px 0px 0px; "> <table class="tborder vs_dfp_standard_postbit_ad" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="margin-bottom:6px;"> <tr> <td class="thead" style="line-height:1.4em;" colspan="2"> <div> <span style="float:right;font-weight:normal"> <a href="http://talkaboutmarriage.com/register.php">Remove Advertisements</a> </span> </div>Sponsored Links
+        </td> </tr> <tr valign="top"> <td class="alt2" width="175px"> <div> <a class="bigusername" href="http://talkaboutmarriage.com">Talk About Marriage</a> </div> <div class="smallfont">Advertisement</div> <div>&nbsp;<br /></div> </td> <td class="alt1"> <div style='width:100%; text-align:left;'><div id='TalkAboutMarriage_com_300x250_PostbitLower_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_300x250_PostbitLower_RV_Forum'); });
+						</script> </div></div> </td> </tr> </table></div> <table class="ads" cellspacing="0" cellpadding="0" border="0" align="center" width="100%" style="padding-bottom"> <TR> <TD align='center'></TD> </TR> </table> <div style="padding-bottom: 5px"> </div><div id="lastpost"></div></div>    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="margin-top:3px" class="text_wrapper"> <tr valign="top"> <td class="smallfont"><a href="http://talkaboutmarriage.com/newreply.php?do=newreply&amp;noquote=1&amp;p=17281961" rel="nofollow"><span class="sprite button reply">Reply</span></a></td> </tr> </table>   <div id="taboola-below-article-thumbnails-white"></div> <script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: "thumbnails-c",
+  container: "taboola-below-article-thumbnails-white",
+    placement: "Below Article Thumbnails White",
+    target_type: "mix"
+  });
+</script>   <table class="tborder" cellpadding="0" cellspacing="0" border="0" style="display:none; position:absolute" id="ajax_post_errors"> <tr> <td class="thead"> <span style="float:right"><input type="button" class="button" value=" X " onclick="vB_QuickEditor.hide_errors()" id="ajax_post_errors_closebtn" /></span>
+			vBulletin Message
+		</td> </tr> <tr> <td class="alt2" colspan="2" id="ajax_post_errors_message">&nbsp;</td> </tr> <tr> <td class="tfoot" colspan="2" align="center"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#" onclick="vB_QuickEditor.abort(); return false;">Cancel Changes</a></td> </tr> </table>    <script type="text/javascript"> <!--
+var fontoptions = new Array();
+var sizeoptions = new Array();
+var smilieoptions = {  };
+
+var istyles = {  };
+var ltr = 'left';
+
+var smiliewindow_x = 240;
+var smiliewindow_y = 280;
+
+var ignorequotechars = 0;
+var allowbasicbbcode = true;
+
+// vB Phrases
+vbphrase["wysiwyg_please_wait"]          = "Please wait for the WYSIWYG editor to finish loading...";
+vbphrase["wysiwyg_initialized"]          = "WYSIWYG Editor initialized for %1$s in %2$s seconds.";
+vbphrase["wysiwyg_command_invalid"]      = "This command is invalid or not implemented.";
+vbphrase["moz_must_select_text"]         = "Mozilla requires that you must select some text for this function to work";
+vbphrase["moz_edit_config_file"]         = "You need to edit your Mozilla config file to allow this action.";
+vbphrase["enter_tag_option"]             = "Please enter the option for your %1$s tag:";
+vbphrase["must_select_text_to_use"]      = "You must select some text to use this function.";
+vbphrase["browser_is_safari_no_wysiwyg"] = "The Safari browser does not support WYSIWYG mode.";
+vbphrase["enter_option_x_tag"]           = "Enter the option for the [%1$s] tag:";
+vbphrase["enter_text_to_be_formatted"]   = "Enter the text to be formatted";
+vbphrase["enter_link_text"]              = "Enter the text to be displayed for the link (optional):";
+vbphrase["enter_list_type"]              = "What type of list do you want? Enter '1' for a numbered list, enter 'a' for an alphabetical list, or leave blank for a list with bullet points:";
+vbphrase["enter_list_item"]              = "Enter a list item.\r\nLeave the box empty or press 'Cancel' to complete the list:";
+vbphrase["must_enter_subject"]           = "You must enter a title / subject!";
+vbphrase["message_too_short"]            = "The message you have entered is too short. Please lengthen your message to at least %1$s characters.";
+vbphrase["enter_link_url"]               = "Please enter the URL of your link:";
+vbphrase["enter_image_url"]              = "Please enter the URL of your image:";
+vbphrase["enter_email_link"]             = "Please enter the email address for the link:";
+vbphrase["complete_image_verification"]  = "You did not complete the Image Verification";
+vbphrase["iespell_not_installed"]        = "ieSpell is a spell-checking tool for Internet Explorer.\r\n\r\nIf you would like to download ieSpell, click OK; otherwise click Cancel.\r\n\r\nieSpell can be downloaded from http://www.iespell.com";
+vbphrase["click_quick_reply_icon"]       = "Please click one of the Quick Reply icons in the posts above to activate Quick Reply.";
+vbphrase["insert_all"]                   = "Insert All";
+
+//--> </script>  <script type="text/javascript"> <!--
+		vB_AJAX_QuickEdit_Init('posts');
+		//--> </script>   <br /> <form action="http://talkaboutmarriage.com/newreply.php?do=postreply&amp;t=365745" method="post" onsubmit="return vbpegp_qr_prepare_submit(this, 0);" name="vbform" id="qrform"> <table class="tborder" cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> <thead> <tr> <td class="tcat" colspan="2"> <a style="float:right" href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#top" onclick="return toggle_collapse('quickreply');"><span class="sprite inlineimg collapseimg" id="collapseimg_quickreply"></span></a>
+				Quick Reply
+			</td> </tr> </thead> <tbody id="qr_error_tbody" style="display:none"> <tr> <td class="thead">The following errors occurred with your submission</td> </tr> <tr> <td class="alt1" id="qr_error_td"></td> </tr> <tr> <td class="tfoot" align="center"><span class="smallfont"><a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#" onclick="return qr_hide_errors()">Okay</a></span></td> </tr> </tbody> <tbody id="collapseobj_quickreply"> <tr> <td class="panelsurround" align="center"> <div class="panel"> <div align="left" style="max-width:; width:auto !important; width:"> <div class="smallfont vs_msglabel">Message:</div> <div id="vB_Editor_QR" class="vBulletin_editor"> <script type="text/javascript"> <!--
+			var threaded_mode = 0;
+			var require_click = 0;
+			var is_last_page = 1; // leave for people with cached JS files
+			var allow_ajax_qr = 1;
+			var ajax_last_post = 1485825636;
+		// --> </script> <div class="controlbar" style="padding-right:8px"> <fieldset style="border:0px; padding:0px; margin:0px"> <textarea name="message" id="vB_Editor_QR_textarea" rows="10" cols="60" style="width:100%; height:200px" tabindex="1" dir="ltr"></textarea> </fieldset>  </div> <input type="hidden" name="wysiwyg" id="vB_Editor_QR_mode" value="0" /> <input type="hidden" name="styleid" value="0" /> <script type="text/javascript"> <!--
+vB_Editor['vB_Editor_QR'] = new vB_Text_Editor('vB_Editor_QR', 0, '9', '1');
+var QR_EditorID = 'vB_Editor_QR';
+//--> </script> </div> <fieldset class="fieldset"> <legend>Options</legend> <div style="padding:3px"> <label for="qr_quickreply"><input type="checkbox" name="quickreply" value="1" id="qr_quickreply" accesskey="w" tabindex="4" />Quote message in reply?</label> </div> </fieldset> <style type="text/css">
+/* ***** red and green boxes for username verification used during registration ***** */
+.greenbox { border: 1px solid #337733; background: #bbffbb; color: #337733; padding: 3px; }
+.redbox { border:1px solid #773333; background: #ffbbbb; color: #773333; padding: 3px; }
+</style> <link type="text/css" rel="stylesheet" href="http://talkaboutmarriage.com/vbpegp/resources/css/register.css" /> <div class="detailsContainer "> <style>
+table.registration .column_or .block_or {display: none;}
+.container table.registration .column_or .block_or {display: block;}
+</style> <table width="100%" cellspacing="0" cellpadding="0"  class="registration"> <tbody> <tr> <td width="55%" valign="top" class="" style="vertical-align:top"> <div class="blockrow"> <h2>
+Register Now
+</h2> <br> <br> </div> <div class="smallfont" style="margin-bottom:3px">
+In order to be able to post messages on Talk About Marriage, you must first register. Please enter your desired user name, your email address and other required details in the form below.<br /><br /> <b><font color="#FF0000" size="+1">Important!</font> Your username will be visible to the public next to anything you post and could show up in search engines like Google. <font color="#FF0000">If you are concerned about anonymity, PLEASE choose a username that will not be recognizable to anyone you know.</font></b><br><br> </div> <div class="smallfont" style="margin-bottom:3px"> <strong>User Name</strong>:<br /> <input class="bginput" id="regusername" type="text" name="username" maxlength="25" value="" /><img src="http://www.talkaboutmarriage.net/clear.gif" id="reg_verif_image" onclick="return toggle_collapse('dialog_box')" style="display:none;" alt="" /> <div id="collapseobj_dialog_box"><div id="reg_verif_div" style="display:none;"></div></div> <script type="text/javascript" src="http://talkaboutmarriage.com/clientscript/vbulletin_ajax_nameverif.js?v=388"></script> <script type="text/javascript"> <!--
+regname_verif = new vB_AJAX_NameVerify('regname_verif', 'regusername');
+//--> </script> </div> <fieldset class="fieldset"> <legend>Password</legend> <table cellpadding="0" cellspacing="3" border="0" width="400"> <tr> <td >Please enter a password for your user account. Note that passwords are case-sensitive.<Br><br></td> </tr> <tr> <td >
+Password:<br /> <input type="password" class="bginput" name="password"  maxlength="50" value="" /><br><br> </td> </tr> <tr> <td>
+Confirm Password:<br /> <input type="password" class="bginput" name="passwordconfirm"  maxlength="50" value="" /> </td> </tr> </table> </fieldset> <fieldset class="fieldset"> <legend>Email Address</legend> <table cellpadding="0" cellspacing="3" border="0" width="400"> <tr> <td colspan="2">Please enter a valid email address for yourself.<br><br></td> </tr> <tr> <td>
+Email Address:<br /> <input type="text" class="bginput" name="email" size="25" maxlength="50" value="" dir="ltr" /> </td> <td>  </td> </tr> </table> </fieldset> </td> <td class="column_or"><div class="block_or">OR</div></td> <td width="30%" valign="top" class="" style="vertical-align:top"> <div class="blockrow"> <h2>
+Log-in
+</h2><br> <br> </div> <table cellpadding="0" cellspacing="3" border="0" width="90%"> <tr> <td class="smallfont" style="white-space: nowrap;"><label for="navbar_username2">User Name</label></td> <td align="right"><input type="text" style="font-size: 11px" name="vb_login_username" id="navbar_username2" size="10" accesskey="u" tabindex="1" value="" onfocus="if (this.value == 'User Name') this.value = '';" /></td> </tr> <tr> <td class="smallfont"><br> <label for="navbar_password2">Password</label><br><br> </td> <td align="right"><br> <input type="password" style="font-size: 11px" name="vb_login_password" id="navbar_password2" size="10" tabindex="1" /><br> <br> </td> </tr> <tr> <td nowrap class="smallfont"><label for="cb_cookieuser_navbar2">Remember Me? <input type="checkbox" name="cookieuser" value="1" tabindex="1" id="cb_cookieuser_navbar2" accesskey="c" /></label></td> <td align="right"><input type="submit" class="button" value="Log in" tabindex="1" title="Enter your username and password in the boxes provided to login, or click the 'register' button to create a profile for yourself." accesskey="s" /></td> </tr> </table> </td> </tr> </tbody></table> </div> <fieldset><legend>Human Verification</legend> <input type="hidden" name="humanverify[hash]" value="" /> <script type='text/javascript'>
+			var ACPuzzleOptions = { theme:    'red',
+									tabindex: 0,
+									lang:     'en'
+			};
+		</script> <p>In order to verify that you are a human and not a spam bot, please enter the answer into the following box below based on the instructions contained in the graphic.</p><br/> <script type="text/javascript" src="http://api.solvemedia.com/papi/challenge.script?k=V.t4hRK.f8A6Vfsf8hODy5KPwxictDII"></script> <noscript> <iframe src="http://api.solvemedia.com/papi/challenge.noscript?k=V.t4hRK.f8A6Vfsf8hODy5KPwxictDII" height="300" width="500" frameborder="0"></iframe><br/> <textarea name="adcopy_challenge" rows="3" cols="40"></textarea> <input type="hidden" name="adcopy_response" value="manual_challenge"/> </noscript> </fieldset> </div> </div> <div class="vs_submit"> <input type="hidden" name="poststarttime" value="" /> <input type="hidden" name="posthash" value="" /> <input type="hidden" name="fromquickreply" value="1" /> <input type="hidden" name="s" value="9e440f71fb6874d7119be2d6140eb2df" /> <input type="hidden" name="securitytoken" value="guest" /> <input type="hidden" name="do" value="postreply" /> <input type="hidden" name="t" value="365745" id="qr_threadid" /> <input type="hidden" name="p" value="who cares" id="qr_postid" /> <input type="hidden" name="specifiedpost" value="0" id="qr_specifiedpost" /> <input type="hidden" name="parseurl" value="1" /> <input type="hidden" name="loggedinuser" value="0" /> <input type="button" class="button" value="Post Quick Reply" accesskey="s" title="(Alt + S)" name="sbutton" tabindex="2" id="qr_submit" onclick="clickedelm = this.value; " /> <input type="submit" class="button" value="Go Advanced" accesskey="x" title="(Alt + X)" name="preview" tabindex="3" id="qr_preview" onclick="clickedelm = this.value" /> <div align="center" id="qr_posting_msg" style="display:none; margin-top:6px"> <span class="sprite inlineimg progress">Posting Quick Reply - Please Wait</span>&nbsp;<strong>Posting Quick Reply - Please Wait</strong> </div> </td> </tr> </tbody> </table> </form> <script>
+(function ($, window) {
+$("#qr_submit").click(function(e){
+e.stopPropagation();
+$("#qrform").trigger('submit');
+});
+})(jQuery, window);
+</script> <script type="text/javascript"> <!--
+		// initialize quick reply
+		qr_init();
+	//--> </script>   <br /> <div class="smallfont" align="center"> <strong>&laquo;</strong> <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain-prev-thread.html" rel="nofollow">Previous Thread</a>
+			|
+			<a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain-next-thread.html" rel="nofollow">Next Thread</a> <strong></strong> </div>   <table class="tborder" cellpadding="0" cellspacing="0" border="0" width="100%" align="center" style="border-top-width:0px"> <tr> <td class="thead" >Thread Tools<a name="goto_threadtools"></a></td> <td class="thead">Search this Thread<a name="goto_threadsearch"></a></td> </tr> <tr valign="top"> <td class="alt1" >  <div class="smallfont"> <div><span class="sprite inlineimg printer">Show Printable Version</span> <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain-print.html" rel="nofollow">Show Printable Version</a></div> <div><span class="sprite inlineimg sendtofriend">Email this Page</span> <a href="http://talkaboutmarriage.com/sendmessage.php?do=sendtofriend&amp;t=365745" rel="nofollow">Email this Page</a></div> </div>  </td> <td class="alt1">  <form action="http://talkaboutmarriage.com/search.php?do=process&amp;searchthreadid=365745" method="post"> <div class="smallfont"> <input type="hidden" name="s" value="9e440f71fb6874d7119be2d6140eb2df" /> <input type="hidden" name="securitytoken" value="guest" /> <input type="hidden" name="do" value="process" /> <input type="hidden" name="searchthreadid" value="365745" /> <strong>Search this Thread</strong>:<br /> <input type="text" class="bginput" name="query" size="20" style="width:175px" /><input type="submit" class="button go_button" value="Go"  /><br /> <a href="http://talkaboutmarriage.com/search.php?searchthreadid=365745">Advanced Search</a> </div> </form>  </td> </tr> </table> <br />   <table cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> <tr valign="bottom"> <td width="100%" valign="top"> </td> <td class="smallfont" align="right"> <table cellpadding="0" cellspacing="0" border="0"> </table> </td> </tr> </table>  <br> <br /> <table class="tborder" cellpadding="0" cellspacing="0" border="0" width="100%" align="center"> <thead> <tr> <td class="tcat" width="100%" colspan="5"> <a style="float:right" href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#top" onclick="return toggle_collapse('similarthreads')"><span id="collapseimg_similarthreads" class="sprite inlineimg collapseimg collapse_tcat"></span></a>
+            Similar Threads<a name="similarthreads"></a> </td> </tr> </thead> <tbody id="collapseobj_similarthreads" style=""> <tr class="thead" align="center"> <td class="thead" width="40%">Thread</td> <td class="thead" width="15%" nowrap="nowrap">Thread Starter</td> <td class="thead" width="20%">Forum</td> <td class="thead" width="5%">Replies</td> <td class="thead" width="20%">Last Post</td> </tr> <tr> <td class="alt1" align="left"> <span class="smallfont"> <a href="http://talkaboutmarriage.com/social-spot/361810-mix-christmas-music-your-enjoyment.html" title="https://www.youtube.com/watch?v=y2jqXjNZ_9Q 
+ 
+https://www.youtube.com/watch?v=-CNFnkbwdZM 
+ 
+https://www.youtube.com/watch?v=cWgwTe01kMU 
+...">A mix of Christmas music for your enjoyment</a></span> </td> <td class="alt2" white-space="normal"><span class="smallfont">MattMatt</span></td> <td class="alt1" white-space="normal"><span class="smallfont">The Social Spot</span></td> <td class="alt2" align="center"><span class="smallfont">4</span></td> <td class="alt1" align="right"><span class="smallfont">12-26-2016 <span class="time">03:21 PM</span></span></td> </tr> <tr> <td class="alt1" align="left"> <span class="smallfont"> <a href="http://talkaboutmarriage.com/social-spot/325905-what-type-music-groups-do-you-listen-any-musicians-tam.html" title="I've never been into sports... I get so bored.. but Music... gotta have it.. love it.. love going to concerts.. I'm almost 50 and like some of the...">What type of music / groups do you listen to - any musicians on TAM?</a></span> </td> <td class="alt2" white-space="normal"><span class="smallfont">SimplyAmorous</span></td> <td class="alt1" white-space="normal"><span class="smallfont">The Social Spot</span></td> <td class="alt2" align="center"><span class="smallfont">86</span></td> <td class="alt1" align="right"><span class="smallfont">08-03-2016 <span class="time">09:29 AM</span></span></td> </tr> <tr> <td class="alt1" align="left"> <span class="smallfont"> <a href="http://talkaboutmarriage.com/social-spot/336601-top-ten-favorite-danish-music-acts.html" title="It is hard to narrow it down to just ten, but let's have a go! 
+ 
+Medina has to be in there, as does Sys Bjerre!  Who else is a must on this list?">Top Ten Favorite Danish Music Acts</a></span> </td> <td class="alt2" white-space="normal"><span class="smallfont">Mr The Other</span></td> <td class="alt1" white-space="normal"><span class="smallfont">The Social Spot</span></td> <td class="alt2" align="center"><span class="smallfont">12</span></td> <td class="alt1" align="right"><span class="smallfont">07-17-2016 <span class="time">02:45 PM</span></span></td> </tr> <tr> <td class="alt1" align="left"> <span class="smallfont"> <a href="http://talkaboutmarriage.com/social-spot/336745-your-music-collection.html" title="How many CDs, records, etc do you have in your music collection? 
+ 
+If you have your collection (or even just part of it) ripped into digital format,...">Your Music Collection</a></span> </td> <td class="alt2" white-space="normal"><span class="smallfont">GusPolinski</span></td> <td class="alt1" white-space="normal"><span class="smallfont">The Social Spot</span></td> <td class="alt2" align="center"><span class="smallfont">18</span></td> <td class="alt1" align="right"><span class="smallfont">06-19-2016 <span class="time">12:03 PM</span></span></td> </tr> <tr> <td class="alt1" align="left"> <span class="smallfont"> <a href="http://talkaboutmarriage.com/mens-clubhouse/310641-so-did-she-pop-cork-your-champagne-bottle-new-years-eve.html" title="The standard New Years' Day poll... 
+ 
+Were you one of the lucky dudes whose cork on your champagne bottle got popped by your...">So, did she pop the cork on your champagne bottle New Year's Eve?</a></span> </td> <td class="alt2" white-space="normal"><span class="smallfont">Methuselah</span></td> <td class="alt1" white-space="normal"><span class="smallfont">The Men's Clubhouse</span></td> <td class="alt2" align="center"><span class="smallfont">1</span></td> <td class="alt1" align="right"><span class="smallfont">01-01-2016 <span class="time">05:21 PM</span></span></td> </tr> </tbody> </table> <br /> <table class="tborder forumrules" cellpadding="0" cellspacing="0" border="0" width="210"> <thead> <tr> <td class="thead">
+Posting Rules
+</td> <td class="thead" align="right"> <a style="float:right" href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#top" onclick="return toggle_collapse('forumrules')"><span id="collapseimg_forumrules" class="sprite inlineimg collapseimg">&nbsp;</span></a> </td> </tr> </thead> <tbody id="collapseobj_forumrules" style=""> <tr> <td colspan="2" class="alt1" nowrap="nowrap"><div class="smallfont"> <div>You <strong>may</strong> post new threads</div> <div>You <strong>may</strong> post replies</div> <div>You <strong>may not</strong> post attachments</div> <div>You <strong>may not</strong> edit your posts</div> <hr /> <div><a href="http://talkaboutmarriage.com/misc.php?do=bbcode" target="_blank">BB code</a> is <strong>On</strong></div> <div><a href="http://talkaboutmarriage.com/misc.php?do=showsmilies" target="_blank">Smilies</a> are <strong>On</strong></div> <div><a href="http://talkaboutmarriage.com/misc.php?do=bbcode#imgcode" target="_blank">[IMG]</a> code is <strong>On</strong></div> <div>HTML code is <strong>Off</strong></div><div><a href="http://talkaboutmarriage.com/misc.php?do=linkbacks#trackbacks" target="_blank">Trackbacks</a> are <strong>On</strong></div> <div><a href="http://talkaboutmarriage.com/misc.php?do=linkbacks#pingbacks" target="_blank">Pingbacks</a> are <strong>On</strong></div> <div><a href="http://talkaboutmarriage.com/misc.php?do=linkbacks#refbacks" target="_blank">Refbacks</a> are <strong>Off</strong></div> <hr /> <div><a href="http://talkaboutmarriage.com/misc.php?do=showrules" target="_blank">Forum Rules</a></div> </div></td> </tr> </tbody> </table>  <div style="display:none">   </div> <script type="text/javascript" src="http://talkaboutmarriage.com/clientscript/vbulletin_autosave.js"></script>  <div style='width:100%; text-align:center;'><div id='TalkAboutMarriage_com_1x1_SlimCut_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_1x1_SlimCut_RV_Forum'); });
+						</script> </div></div> <div class="vbmenu_popup" id="linkbacktools_menu" style="display:none"> <table cellpadding="4" cellspacing="1" border="0"> <tr> <td class="thead">LinkBack<a name="goto_linkback"></a></td> </tr> <tr> <td class="vbmenu_option"><img class="inlineimg" src="http://talkaboutmarriage.com/vbseo/resources/images/forum/linkback_url.gif" alt="LinkBack URL" /> <a href="http://talkaboutmarriage.com/" onclick="prompt('Use the following URL when referencing this thread from another forum or blog.','');return false;">LinkBack URL</a></td> </tr> <tr> <td class="vbmenu_option"><img class="inlineimg" src="http://talkaboutmarriage.com/vbseo/resources/images/forum/linkback_about.gif" alt="About LinkBacks" /> <a href="http://talkaboutmarriage.com/misc.php?do=linkbacks">About LinkBacks</a></td> </tr> <tr> <td class="thead">Bookmark &amp; Share</td> </tr> <tr><td class="vbmenu_option"><img class="inlineimg" src="http://cdn.talkaboutmarriage.net/images/fb.gif" alt="Share on Facebook" /> <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html&amp;t=Pop+music+in+1960s+Britain" target="_blank">Share on Facebook</a><a name="vbseodm_0"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="http://cdn.talkaboutmarriage.net/images/twitter.gif" alt="Share on Twitter" /> <a href="http://twitter.com/home/?status=Check+this+out+http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html" target="_blank">Share on Twitter</a><a name="vbseodm_1"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="http://cdn.talkaboutmarriage.net/images/stumble.gif" alt="Stumble this Thread!" /> <a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html&amp;title=Pop+music+in+1960s+Britain" target="_blank">Stumble this Thread!</a><a name="vbseodm_2"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="http://cdn.talkaboutmarriage.net/images/digg.gif" alt="Digg this Thread!" /> <a href="http://digg.com/submit?phase=2&amp;url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html&amp;title=Pop+music+in+1960s+Britain'" target="_blank">Digg this Thread!</a><a name="vbseodm_3"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="http://cdn.talkaboutmarriage.net/images/delicious.gif" alt="Add to del.icio.us!" /> <a href="http://del.icio.us/post?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html&amp;title=Pop+music+in+1960s+Britain" target="_blank">Add to del.icio.us!</a><a name="vbseodm_4"></a></td></tr><tr><td class="vbmenu_option"><img class="inlineimg" src="http://cdn.talkaboutmarriage.net/images/vbseo/reddit.gif" alt="Reddit!" /> <a href="http://reddit.com/submit?url=http%3A%2F%2Ftalkaboutmarriage.com%2Fsocial-spot%2F365745-pop-music-1960s-britain.html&amp;title=Pop+music+in+1960s+Britain" target="_blank">Reddit!</a><a name="vbseodm_5"></a></td></tr> </table> </div> </div> </div> <aside class="noprint" id="sidebar"> <div style="display: none;" class="sidebar-controls "> <span class="sprite inlineimg sidebar-controls-icon"></span> <span class="sprite inlineimg br-creditcheck"></span> <span class="sprite inlineimg br-warranty"></span> <span class="sprite inlineimg br-history"></span> <span class="sprite inlineimg br-shipping"></span> <span class="sprite inlineimg br-escrow"></span> <span class="sprite inlineimg br-tires"></span> <span class="sprite inlineimg br-inspections"></span> <span class="sprite inlineimg br-insurance"></span> </div> <div class="sidebar"> <div class="search-in-one"> <div class="change_btn "><div class="image sprite-google-search"></div> <ul class="search_menu"> <li data-search-type="google-search"><div class="icon sprite-google-search"></div> Google search</li> <li data-search-type="vb-search"><div class="icon sprite-vb-search"></div> VB search</li> </ul> </div> <div class="search-item google-search"> <div class='ams_gtsearch' style='width: 150px; margin:auto;' id='cse_gtsearch_form_5'></div> <script>
+vsamsgtsearches.push('cse_gtsearch_form_5');
+</script> </div> </div><section class="text_wrapper ad box-ad"> <div style='width:100%; text-align:center;'><div id='TalkAboutMarriage_com_300x250_TopRight_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_300x250_TopRight_RV_Forum'); });
+						</script> </div></div> </section> <section> <table align="center" border="0" cellpadding="0" cellspacing="0" class="cmps-table" width="100%"> <thead> <tr> <td  colspan="0"> <h2 class="title">Find a Therapist</h2></td> </tr> </thead> <tbody id="collapseobj_module_81" style=""> <tr> <td class="alt2"> <div align="center"> <select name="menu1" onChange="MM_jumpMenu('parent',this,0)" class=formcolors style="font-family: Verdana; font-size: 14px" size="1"> <option value="#" selected>Select Your State:</option><br /> <option value="http://family-marriage-counseling.com/directory/alabama.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Alabama</option> <option value="http://family-marriage-counseling.com/directory/alaska.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Alaska</option> <option value="http://family-marriage-counseling.com/directory/arizona.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Arizona</option> <option value="http://family-marriage-counseling.com/directory/arkansas.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Arkansas</option> <option value="http://family-marriage-counseling.com/directory/california.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">California</option> <option value="http://family-marriage-counseling.com/directory/colorado.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Colorado</option> <option value="http://family-marriage-counseling.com/directory/connecticut.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Connecticut</option> <option value="http://family-marriage-counseling.com/directory/delaware.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Delaware</option> <option value="http://family-marriage-counseling.com/directory/florida.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Florida</option> <option value="http://family-marriage-counseling.com/directory/georgia.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Georgia</option> <option value="http://family-marriage-counseling.com/directory/hawaii.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Hawaii</option> <option value="http://family-marriage-counseling.com/directory/idaho.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Idaho</option> <option value="http://family-marriage-counseling.com/directory/illinois.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Illinois</option> <option value="http://family-marriage-counseling.com/directory/indiana.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Indiana</option> <option value="http://family-marriage-counseling.com/directory/iowa.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Iowa</option> <option value="http://family-marriage-counseling.com/directory/kansas.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Kansas</option> <option value="http://family-marriage-counseling.com/directory/kentucky.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Kentucky</option> <option value="http://family-marriage-counseling.com/directory/louisiana.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Louisiana</option> <option value="http://family-marriage-counseling.com/directory/maine.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Maine</option> <option value="http://family-marriage-counseling.com/directory/maryland.htm">Maryland</option> <option value="http://family-marriage-counseling.com/directory/massachusetts.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Massachusetts</option> <option value="http://family-marriage-counseling.com/directory/michigan.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Michigan</option> <option value="http://family-marriage-counseling.com/directory/minnesota.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Minnesota</option> <option value="http://family-marriage-counseling.com/directory/mississippi.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Mississippi</option> <option value="http://family-marriage-counseling.com/directory/missouri.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Missouri</option> <option value="http://family-marriage-counseling.com/directory/montana.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Montana</option> <option value="http://family-marriage-counseling.com/directory/nebraska.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Nebraska</option> <option value="http://family-marriage-counseling.com/directory/nevada.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Nevada</option> <option value="http://family-marriage-counseling.com/directory/new-hampshire.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">New Hampshire</option> <option value="http://family-marriage-counseling.com/directory/new-jersey.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">New Jersey</option> <option value="http://family-marriage-counseling.com/directory/new-mexico.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">New Mexico</option> <option value="http://family-marriage-counseling.com/directory/new-york.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">New York</option> <option value="http://family-marriage-counseling.com/directory/north-carolina.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">North Carolina</option> <option value="http://family-marriage-counseling.com/directory/north-dakota.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">North Dakota</option> <option value="http://family-marriage-counseling.com/directory/ohio.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Ohio</option> <option value="http://family-marriage-counseling.com/directory/oklahoma.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Oklahoma</option> <option value="http://family-marriage-counseling.com/directory/oregon.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Oregon</option> <option value="http://family-marriage-counseling.com/directory/pennsylvania.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Pennsylvania</option> <option value="http://family-marriage-counseling.com/directory/rhode-island.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Rhode Island</option> <option value="http://family-marriage-counseling.com/directory/south-carolina.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">South Carolina</option> <option value="http://family-marriage-counseling.com/directory/south-dakota.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">South Dakota</option> <option value="http://family-marriage-counseling.com/directory/tennessee.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Tennessee</option> <option value="http://family-marriage-counseling.com/directory/texas.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Texas</option> <option value="http://family-marriage-counseling.com/directory/utah.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Utah</option> <option value="http://family-marriage-counseling.com/directory/vermont.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Vermont</option> <option value="http://family-marriage-counseling.com/directory/virginia.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Virginia</option> <option value="http://family-marriage-counseling.com/directory/washington.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Washington</option> <option value="http://family-marriage-counseling.com/directory/washington-dc.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Washington D.C.</option> <option value="http://family-marriage-counseling.com/directory/west-virginia.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">West Virginia</option> <option value="http://family-marriage-counseling.com/directory/wisconsin.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Wisconsin</option> <option value="http://family-marriage-counseling.com/directory/wyoming.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Wyoming</option> <option value="#">-------------------</option> <option value="http://family-marriage-counseling.com/directory/bahamas/nassau.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Nassau, Bahamas</option> <option value="#">-------------------</option> <option value="#">Canadian Provinces:</option> <option value="http://family-marriage-counseling.com/directory/Canada/alberta.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Alberta</option> <option value="http://family-marriage-counseling.com/directory/Canada/british-columbia.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">British Columbia</option> <option value="http://family-marriage-counseling.com/directory/Canada/manitoba.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Manitoba</option> <option value="http://family-marriage-counseling.com/directory/Canada/new-brunswick.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">New Brunswick</option> <option value="http://family-marriage-counseling.com/directory/Canada/newfoundland.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Newfoundland</option> <option value="http://family-marriage-counseling.com/directory/Canada/northwest-territories.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Northwest Territories</option> <option value="http://family-marriage-counseling.com/directory/Canada/nova-scotia.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Nova Scotia</option> <option value="http://family-marriage-counseling.com/directory/Canada/nunavut.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Nunavut</option> <option value="http://family-marriage-counseling.com/directory/Canada/ontario.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Ontario</option> <option value="http://family-marriage-counseling.com/directory/Canada/princeedward-island.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Prince Edward Island</option> <option value="http://family-marriage-counseling.com/directory/Canada/quebec.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Quebec</option> <option value="http://family-marriage-counseling.com/directory/Canada/saskatchewan.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Saskatchewan</option> <option value="http://family-marriage-counseling.com/directory/Canada/yukon.htm?utm_source=TalkAboutMarriage&utm_medium=dropmenu">Yukon</option> </select> <br /> </div> </td> </tr> </tbody> </table> </section> <section> <table align="center" border="0" cellpadding="0" cellspacing="0" class="cmps-table" width="100%"> <thead> <tr> <td  colspan="0"> <h2 class="title">Recent Discussions</h2></td> </tr> </thead> <tbody id="collapseobj_module_33" style=""> <tr itemscope itemtype="http://schema.org/Blog"> <td class="alt1 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">3</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/going-through-divorce-separation/368154-started-paperwork.html" title="This week my lawyer sent out communications to my ex, asking for paperwork/documents etc. whatever they need... 
+ 
+I feel kind of bleh...mixed..." itemprop="headline">Started paperwork and...</a> <div> <span itemprop="dateModified">Today <span class="time">12:51 AM</span></span> by <a href="http://talkaboutmarriage.com/members/elegirl.html" itemprop="contributor">EleGirl</a> <meta itemprop="author" content="Mucc"> <meta itemprop="dateCreated" content="Yesterday 11:50 PM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt2 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">77</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/general-relationship-discussion/365065-brother-wants-marry.html" title="I don't know if this is the right place or not to seek advice for this issue but I am going to give it a try and hopefully you guys can help me out...." itemprop="headline">Brother wants to marry...</a> <div> <span itemprop="dateModified">Today <span class="time">12:50 AM</span></span> by <a href="http://talkaboutmarriage.com/members/justaverage.html" itemprop="contributor">Justaverage</a> <meta itemprop="author" content="Justaverage"> <meta itemprop="dateCreated" content="01-24-2017 04:18 AM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt1 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">7</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/considering-divorce-separation/367826-feel-like-its-all.html" title="Basics 
+I am 42 years old, married with no children. (just two cats that I love dearly) 
+I work in IT and have done so for 20 years in various roles...." itemprop="headline">Feel like it's all...</a> <div> <span itemprop="dateModified">Today <span class="time">12:45 AM</span></span> by <a href="http://talkaboutmarriage.com/members/marc878.html" itemprop="contributor">Marc878</a> <meta itemprop="author" content="falconbridge"> <meta itemprop="dateCreated" content="02-15-2017 03:34 AM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt2 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">27</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/financial-problems-marriage/367626-how-get-wife-go.html" title="We were currently living OK with only myself working and my wife being a stay at home mom.  She has recently went back to work for a few hours a..." itemprop="headline">How to get wife to go...</a> <div> <span itemprop="dateModified">Today <span class="time">12:44 AM</span></span> by <a href="http://talkaboutmarriage.com/members/elegirl.html" itemprop="contributor">EleGirl</a> <meta itemprop="author" content="ZDog377"> <meta itemprop="dateCreated" content="02-14-2017 12:58 AM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt1 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">4</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/going-through-divorce-separation/368162-husband-dating-while.html" title="We separated in September after 9 years together. We have a three year old together. He immediately started dating around and eventually found a girl..." itemprop="headline">Husband dating while...</a> <div> <span itemprop="dateModified">Today <span class="time">12:42 AM</span></span> by <a href="http://talkaboutmarriage.com/members/elegirl.html" itemprop="contributor">EleGirl</a> <meta itemprop="author" content="svarner"> <meta itemprop="dateCreated" content="Today 12:00 AM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt2 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">6</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/coping-infidelity/368098-long-story-he.html" title="Hi all. 
+I've had a very rough few days and seeking some support or advice from anyone who is willing to offer it.  
+ 
+So, some background...My..." itemprop="headline">Long story- is he...</a> <div> <span itemprop="dateModified">Today <span class="time">12:39 AM</span></span> by <a href="http://talkaboutmarriage.com/members/aine.html" itemprop="contributor">aine</a> <meta itemprop="author" content="ukf32"> <meta itemprop="dateCreated" content="Yesterday 06:30 PM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt1 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">0</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/sex-marriage/368170-sudden-slack-sex-drive.html" title="My husband and I have been married for 5 months and  
+together for 3 years. We have always had a healthy sex drive, even after moving to his home..." itemprop="headline">Sudden Slack in Sex Drive</a> <div> <span itemprop="dateModified">Today <span class="time">12:32 AM</span></span> by <a href="http://talkaboutmarriage.com/members/jamie+dean.html" itemprop="contributor">Jamie Dean</a> <meta itemprop="author" content="Jamie Dean"> <meta itemprop="dateCreated" content="Today 12:32 AM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt2 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">85</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/reconciliation/365657-reconciling-fianc-e.html" title="I was with my fiancée for 3 years and we have been separated for 2 months. Our engagement was pathetically short, less than a week before we..." itemprop="headline">Reconciling with fiancée</a> <div> <span itemprop="dateModified">Today <span class="time">12:27 AM</span></span> by <a href="http://talkaboutmarriage.com/members/sokillme.html" itemprop="contributor">sokillme</a> <meta itemprop="author" content="hudson"> <meta itemprop="dateCreated" content="01-28-2017 10:32 PM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt1 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">11</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/general-relationship-discussion/368106-taking-responsibility.html" title="I have been with my girlfriend for a little over 8 months now, but we get into arguments every month. She always says I'm the one to blame for the..." itemprop="headline">Taking responsibility</a> <div> <span itemprop="dateModified">Today <span class="time">12:25 AM</span></span> by <a href="http://talkaboutmarriage.com/members/bmichael.html" itemprop="contributor">bmichael</a> <meta itemprop="author" content="bmichael"> <meta itemprop="dateCreated" content="Yesterday 06:39 PM"> </div> </div> </div> </div> </td> </tr><tr itemscope itemtype="http://schema.org/Blog"> <td class="alt2 columns columns-comments"> <div class="picture main-column-picture"> <div style="padding-top:0px"><span class="sprite count">17</span></div> </div> <div class="main-column-text-wrapper"> <div class="text main-column-text"> <div class="smallfont"> <a href="http://talkaboutmarriage.com/general-relationship-discussion/368146-everyone-tam-new.html" title="To: All 
+From: The Mods (Ele, LifeIsTooShort, MattMatt, Farsidejunky and MEM2020) 
+ 
+The hardest part of being a moderator is trying to foster an..." itemprop="headline">To everyone on TAM - new...</a> <div> <span itemprop="dateModified">Today <span class="time">12:23 AM</span></span> by <a href="http://talkaboutmarriage.com/members/uhtred.html" itemprop="contributor">uhtred</a> <meta itemprop="author" content="MEM2020"> <meta itemprop="dateCreated" content="Yesterday 10:34 PM"> </div> </div> </div> </div> </td> </tr> </tbody> </table> </section> <section class="text_wrapper ad box-ad"> <div style='width:100%; text-align:center;'><div id='TalkAboutMarriage_com_300x250_TopLeft_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_300x250_TopLeft_RV_Forum'); });
+						</script> </div></div> </section> <section id="facebook-like" class="section"> <div align="center"> <div style="text-align:center;" class="fb-page" data-href="https://www.facebook.com/supporthealthymarriages"
+  data-width="300" data-hide-cover="false" data-show-facepile="false" 
+  data-show-posts="false"> </div> </div> </section>  <section> <table width="100%" class="tborder" cellpadding="0" cellspacing="0" style="border:none !important;"> <tr> <td class="alt2 smallfont" style="border:0px"> <div align="center">  <br/> <a rel="nofollow" href="http://www.addthis.com/bookmark.php" onclick="window.open('http://www.addthis.com/bookmark.php?pub=chartwell&url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title), 'addthis', 'scrollbars=yes,menubar=no,width=620,height=520,resizable=yes,toolbar=no,location=no,status=no'); return false;" title="Bookmark using any bookmark manager!" target="_blank"><img src="http://cdn.talkaboutmarriage.net/images/addthisbook.gif" width="125" height="16" border="0" alt="" /></a><br /> <br/> <a href="http://www.addthis.com/feed.php?pub=chartwell&amp;h1=http%3A%2F%2Ftalkaboutmarriage.com%2Fexternal.php%3Ftype%3DRSS2&amp;t1=" title="Subscribe using any feed reader!"><img src="http://cdn.talkaboutmarriage.net/images/addthisrss.gif" width="125" height="16" border="0" alt=""/></a><br /> <br/> <a href="http://talkaboutmarriage.com/external.php?type=RSS2"><img src="http://cdn.talkaboutmarriage.net/images/rss.gif" vspace="2" border="0" alt="" /></a><br />  <br/>  <table cellpadding="3" cellspacing="0" border="0" width="250" bgcolor="#FFEBEB"> <form method="post" action="http://www.aweber.com/scripts/addlead.pl"> <input type="hidden" name="meta_web_form_id" value="459393277"> <input type="hidden" name="meta_split_id" value=""> <input type="hidden" name="unit" value="fmcdirectory"> <input type="hidden" name="redirect" value="http://family-marriage-counseling.com/resource-guide-thank-you.htm" id="redirect_ec3948cf17f72b555383a5ed7b166bbe"> <input type="hidden" name="meta_redirect_onlist" value=""> <input type="hidden" name="meta_adtracking" value=""> <input type="hidden" name="meta_message" value="1"> <input type="hidden" name="meta_required" value="from"> <input type="hidden" name="meta_forward_vars" value="0"> <tr><td height="10" align="center" colspan="2" style="padding-bottom:5px;"> <font face="Arial" size="2"> <b>Get The Family &amp; Marriage Counseling Directory Help Guide 
+	via Email:</b></font> </td></tr> <tr> <td height="10" align="center" style="line-height:3;"><font face="Arial" size="2">Name:</font></td> <td height="10" align="center"><input type="text" name="name" value="" size="15" style="font-size: 10pt; font-family: Arial"></td> </tr> <tr> <td align="center" height="10" style="line-height:3;"><font face="Arial" size="2">Email:</font></td> <td align="center"><input type="text" name="from" value="" size="15" style="font-family: Arial; font-size: 10pt"></td> </tr> <tr> <td align="center" height="10" colspan="2"><input type="submit" name="submit" value="Submit" style="font-family: Arial; font-size: 10pt; margin-top:10px; width:100%;"></td></tr></form> </table> <br /> </div> </td> </tr> </table><br />  <br /> </td> </tr> </table> </section> </div> </aside> <div class="clear">&nbsp;</div> </div>  <script type="text/javascript">ame_toggle_view({other : 'true',post : 'true',blog : 'true',group : 'true',vm : 'true',sig : 'true'});</script><div class="Leaderboard"> <div style='width:100%; text-align:center;'><div id='TalkAboutMarriage_com_728x90_Bottom_RV_Forum' style='width:auto; height:auto;'> <script type='text/javascript'>
+							googletag.cmd.push(function() { googletag.display('TalkAboutMarriage_com_728x90_Bottom_RV_Forum'); });
+						</script> </div></div> </div> <div id="footer" class="footer"> <form action="http://talkaboutmarriage.com/forumindex.php" method="get" style="clear:left"> <table cellpadding="0" cellspacing="0" border="0" width="100%" class="page" align="center"> <tr> <td class="tfoot" valign="top"> <select name="styleid" onchange="switch_id(this, 'style')"> <optgroup label="Quick Style Chooser"> <option value="17" class="" selected="selected">-- Talkaboutmarriage.com Forum (Full)</option> <option value="25" class="" >---- Talkaboutmarriage.com Forum (Full - Alternate)</option> <option value="33" class="" >-- Talkaboutmarriage.com Forum (Classic)</option> <option value="41" class="" >-- Talkaboutmarriage.com Forum (Mobile)</option> </optgroup> </select> </td> <td class="tfoot subnav-bottom" align="right" width="100%"> <div class="smallfont"> <strong> <a href="http://talkaboutmarriage.com/sendmessage.php" rel="nofollow" accesskey="9">Contact Us</a> |
+<a href="http://www.talkaboutmarriage.com/advertise.php" rel="nofollow" accesskey="9">Advertise</a> |
+				<a href="http://talkaboutmarriage.com">Talk About Marriage Home</a> | 
+				
+				
+				<a href="http://talkaboutmarriage.com/archive/">Archive</a> | 
+				
+				<a href="http://talkaboutmarriage.com/privacy-policy.php">Privacy Statement</a> | 
+				
+				<a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#top" onclick="self.scrollTo(0, 0); return false;">Top</a> </strong> </div> </td> </tr> </table> <br /> <div align="center"> <a href="http://talkaboutmarriage.com/social-spot/365745-pop-music-1960s-britain.html?utm_source=dlvr.it&amp;utm_medium=twitter#"><img class="photo" src="/images/TAMarriage_2015/misc/spacer.gif" data-original="/images/TAMarriage_2015/misc/footer-logo.png" border="0" height="60" width="250" alt="" /></a> </div> <div align="center"> <div class="smallfont" align="center">   </div> </form> </div>  </div></div></div> </div>  <script type="text/javascript"> <!--
+	// Main vBulletin Javascript Initialization
+	vBulletin_init();
+//--> </script> <script src="http://talkaboutmarriage.com/clientscript/scripts-bottom.js"></script> <script src="http://talkaboutmarriage.com/clientscript/scripts-defer.js"></script> <script src="http://www.google.com/cse/brand?form=&amp;lang=en"></script> <script>
+//setTimeout(ghostwriter.loadscripts, 250); 
+</script> <div id="update-browser">For the best viewing experience please update your browser to <a rel="nofollow" href="http://www.google.com/chrome" target="blank">Google Chrome</a></div> <script>
+var vsAMSStylesToAdd='';var vsAMSbgPosition='';var vsAMSdefaultGoogleStyle='';var vsAMSNumberOfTries=0;var vsAMSDocHead;var vsAMSStyleNode;var vsAMSIntervalID;var vsAMSHiddenButton=document.createElement('INPUT');vsAMSHiddenButton.setAttribute('type','submit');vsAMSHiddenButton.setAttribute('style','display:none');vsAMSHiddenButton.setAttribute('class','button');var vsAMSbodyElement=document.getElementsByTagName('body')[0];vsAMSbodyElement.appendChild(vsAMSHiddenButton);var vsAMSbgColor=window.getComputedStyle(vsAMSHiddenButton,null).getPropertyValue('background-color');var vsAMSfColor=window.getComputedStyle(vsAMSHiddenButton,null).getPropertyValue('color');var vsAMSinputPadding='padding: 4px 10px !important;';var vsAMSgMaxWidth='310';var vsAMSChangeButton=document.getElementsByClassName('change_btn');if(typeof(vsAMSChangeButton)!='undefined'&&vsAMSChangeButton!=null&&vsAMSChangeButton.length>0) {if(window.getComputedStyle(vsAMSChangeButton[0],null).getPropertyValue('display')!='none'){vsAMSinputPadding='padding: 4px 10px 4px 38px !important;';vsAMSgMaxWidth='173';vsAMSbgPosition='background-position: 35px center !important;'}}
+vsAMSStylesToAdd='.google-search {position:absolute;}.search-in-one{min-height:30px;min-width: 311px;}input.gsc-search-button{height: auto; padding: 3px 10px !important;cursor: pointer;background: '+vsAMSbgColor+' !important;border: 1px solid '+vsAMSbgColor+' !important;border-radius:5px !important; -moz-border-radius:5px; -webkit-border-radius:5px; -o-border-radius:5px;min-height: 12px;font-weight: normal; font-size: 13px;font-family: Arial;} .gsc-search-button{ color:'+vsAMSfColor+' !important; background: transparent !important; border:0 !important;padding: 3px 10px  !important; max-width: 312px } .gsc-clear-button{display:none;} .search-in-one form input.gsc-input{max-width:'+vsAMSgMaxWidth+'px;'+vsAMSinputPadding+'} .ams_gtsearch{width:auto !important; max-width:312px} table.gsc-search-box{margin-top:-2px}';vsAMSStylesToAdd+='input.gsc-search-button{height:23px !important} .search-in-one form input.gsc-input {background: url(https://www.google.com/cse/static/en/google_custom_search_watermark.gif) left center no-repeat rgb(255, 255, 255) !important;'+vsAMSdefaultGoogleStyle+vsAMSbgPosition+'} .search-in-one form input.gsc-input-focus{background-image: none !important;}';vsAMSDocHead=document.head||document.getElementsByTagName('head')[0];vsAMSStyleNode=document.createElement('style');vsAMSStyleNode.type='text/css';if(vsAMSStyleNode.styleSheet){vsAMSStyleNode.styleSheet.cssText=vsAMSStylesToAdd}else{vsAMSStyleNode.appendChild(document.createTextNode(vsAMSStylesToAdd))}
+vsAMSDocHead.appendChild(vsAMSStyleNode);vsAMSbodyElement.removeChild(vsAMSHiddenButton);
+</script> <script>
+var renderVSAMSGTSearch = function() {
+	for(var a = 0; a < vsamsgtsearches.length; a++)     
+		google.search.cse.element.render({div: vsamsgtsearches[a], tag: 'searchbox-only'})
+}, startVSAMSGTSearch = function() {
+	'complete' == document.readyState ? renderVSAMSGTSearch() : google.setOnLoadCallback(renderVSAMSGTSearch)
+};
+			
+		window.__gcse = { parsetags: 'explicit', callback: startVSAMSGTSearch}, function() {
+			var cx = 'partner-pub-7865546952023728:3373816041';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		}();
+</script> <table cellpadding="3" cellspacing="0" border="0" class="page" align="center" width="100%"><tr><td class="tfoot" align="center" width="100%"><div class="smallfont"><strong><a href="http://www.verticalscope.com/aboutus/tos.php?site=talkaboutmarriage.com">Terms of Use</a></strong></div></td></tr></table>  <div class="afs_ads">&nbsp;</div> <script>
+(function() {
+    var adBlockDetector = function() {
+        setTimeout(function() {
+            if (!document.getElementsByClassName) return;
+            
+            var ads = document.getElementsByClassName("afs_ads");
+            ad  = ads[ads.length - 1];
+
+            if (!ad || ad.innerHTML.length == 0 || ad.clientHeight === 0) {
+                _gaq.push(["_trackEvent", "Adblock", "Blocked", "true",,true]);
+            } else {
+                ad.style.display = "none";
+                _gaq.push(["_trackEvent", "Adblock", "Unblocked", "false",,true]);
+            }
+
+        }, 500);
+    }
+
+    /* Attach a listener for page load */
+    if (window.addEventListener) {
+        window.addEventListener("load", adBlockDetector, false);
+    } else {
+        window.attachEvent("onload", adBlockDetector); //IE
+    }
+})();
+</script>   <script src="//tags.crwdcntrl.net/c/8060/cc_af.js"></script>  <script type="text/javascript">
+var vs_api = vsapi.api();
+var vs_o = vs_api.vbulletinInit(0, [17275769,17275785,17276041,17276049,17276465,17276489,17276513,17276537,17280953,17281817,17281961]);
+vs_o.addPostElement(document.getElementById("post17275769"), document.getElementById("post_message_17275769"), 17275769, 365745, 9, 39191, 0);vs_o.addPostElement(document.getElementById("post17275785"), document.getElementById("post_message_17275785"), 17275785, 365745, 9, 225985, 1);vs_o.addPostElement(document.getElementById("post17276041"), document.getElementById("post_message_17276041"), 17276041, 365745, 9, 39191, 2);vs_o.addPostElement(document.getElementById("post17276049"), document.getElementById("post_message_17276049"), 17276049, 365745, 9, 225985, 3);vs_o.addPostElement(document.getElementById("post17276465"), document.getElementById("post_message_17276465"), 17276465, 365745, 9, 32130, 4);vs_o.addPostElement(document.getElementById("post17276489"), document.getElementById("post_message_17276489"), 17276489, 365745, 9, 32130, 5);vs_o.addPostElement(document.getElementById("post17276513"), document.getElementById("post_message_17276513"), 17276513, 365745, 9, 32130, 6);vs_o.addPostElement(document.getElementById("post17276537"), document.getElementById("post_message_17276537"), 17276537, 365745, 9, 32130, 7);vs_o.addPostElement(document.getElementById("post17280953"), document.getElementById("post_message_17280953"), 17280953, 365745, 9, 41980, 8);vs_o.addPostElement(document.getElementById("post17281817"), document.getElementById("post_message_17281817"), 17281817, 365745, 9, 159146, 9);vs_o.addPostElement(document.getElementById("post17281961"), document.getElementById("post_message_17281961"), 17281961, 365745, 9, 41980, 10);
+</script> <br /><div style="z-index:3" class="smallfont" align="center"></div>  <script type="text/javascript">
+        var vglnk = { api_url: '//api.viglink.com/api',
+                      key: '0072d8f915851ac8e4345230601e0061' };
+
+        (function(d, t) {
+          var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+          s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+                   '//cdn.viglink.com/api') + '/vglnk.js';
+          var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+        }(document, 'script'));
+      </script>   <script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+</script>  
+<script type="text/javascript">
+//<![CDATA[
+
+window.orig_onload = window.onload;
+window.onload = function() {
+var cpost=document.location.hash.substring(1);var cpost2='';if(cpost && (typeof fetch_object != 'undefined')){ var ispost=cpost.substring(0,4)=='post';if(ispost)cpost2='post_'+cpost.substring(4);if((cobj = fetch_object(cpost))||(cobj = fetch_object(cpost2))){cobj.scrollIntoView(true);}else if(ispost){cpostno = cpost.substring(4,cpost.length);if(parseInt(cpostno)>0){location.replace('http://talkaboutmarriage.com/showthread.php?p='+cpostno);};} }
+
+if(typeof window.orig_onload == "function") window.orig_onload();
+}
+
+//]]>
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0f2b0d60a0","applicationID":"2343334","transactionName":"YFMEZUdYCBADVRddVlkZM0NcFhABEVMMGklfRg==","queueTime":0,"applicationTime":309,"atts":"TBQHEw9CGx4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body> </html>

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rapstation - Track Information</title>
+ 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+ 
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/css/jasny-bootstrap.min.css" rel='stylesheet' type='text/css'>
+<link href="/assets/css/video-js.css" rel='stylesheet' type='text/css'>
+<link href="/assets/css/hover.min.css" rel='stylesheet' type='text/css'>
+<link href="/assets/css/rapstation.css" rel='stylesheet' type='text/css'>
+<link href="/assets/css/nprogress.min.css" rel='stylesheet' type='text/css'>
+<link href="/assets/addons/summernote/summernote.css" rel="stylesheet">
+<link type="text/css" href="/assets/css/bootstrap-timepicker.min.css"/>
+<link rel="stylesheet" type="text/css" href="/assets/css/bootstrap-datepicker3.css">
+<link href="/assets/css/dropzone.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="/apple-touch-icon-60x60.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/apple-touch-icon-152x152.png"/>
+<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196"/>
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
+<link rel="icon" type="image/png" href="/favicon-128.png" sizes="128x128"/>
+<meta name="application-name" content="&nbsp;"/>
+<meta name="msapplication-TileColor" content="#FFFFFF"/>
+<meta name="msapplication-TileImage" content="/mstile-144x144.png"/>
+<meta name="msapplication-square70x70logo" content="/mstile-70x70.png"/>
+<meta name="msapplication-square150x150logo" content="/mstile-150x150.png"/>
+<meta name="msapplication-wide310x150logo" content="/mstile-310x150.png"/>
+<meta name="msapplication-square310x310logo" content="/mstile-310x310.png"/>
+</head>
+<body>
+<div id="pjax-container">
+<div class="container" id="main-container">
+<h1><a href="http://www.rapstation.com"><span class="sr-only">RapStation</span></a></h1>
+<nav class="navbar-default navbar-main">
+<div class="container-fluid">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar-collapse">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div class="collapse navbar-collapse" id="main-navbar-collapse">
+<ul class="nav navbar-nav">
+<li \/pages/home id="nav-fix-left" ><a href="http://www.rapstation.com" data-target="\/" class="internal">Home</a>
+                            </li>
+                            <li id="nav-fix-left" ><a href="http://www.rapstation.com/streams" data-target="\/streams" class="internal">Streams</a>
+                            </li>
+                            <li id="nav-fix-left" ><a href="http://www.rapstation.com/articles" data-target="\/articles" class="internal">Articles</a>
+                            </li>
+                            <li id="nav-fix-left" ><a href="http://www.rapstation.com/schedule" data-target="\/schedule" class="internal">Schedule</a>
+                            </li>
+                            <li id="nav-fix-left" ><a href="http://www.rapstation.com/shows" data-target="\/shows" class="internal">Shows</a>
+                            </li>
+                            <li id="nav-fix-left" ><a href="http://www.rapstation.com/charts" data-target="\/charts" class="internal">Charts</a>
+                            </li>
+                            <li id="nav-fix-left" ><a href="http://www.rapstation.com/videos" data-target="\/charts" class="internal">Videos</a>
+                            </li>
+                                                        <li id="nav-fix-right" ><a href="http://www.rapstation.com/register" data-target="\/register" class="internal">Sign Up</a>
+                            </li>
+                            <li id="nav-fix-right" ><a href="http://www.rapstation.com/login" data-target="\/login" class="internal">Login</a>
+                            </li>
+                            <li id="nav-fix-right" class="divider-vertical">&middot;</li>
+
+                            
+                            <li class="social-buttons"><a target="_default" href="https://www.facebook.com/RapstationOfficial/"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a>
+                            </li>
+                            <li class="social-buttons"><a target="_default" href="https://twitter.com/rapstationradio"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a>
+                            </li>
+                            <li class="social-buttons"><a target="_default" href="https://instagram.com/rap.station/"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a>
+                            </li>
+                            <li class="social-buttons"><a target="_default" href="https://www.youtube.com/channel/UCRApmfpRvbEAMZ9rQNOnhKQ"><i class="fa fa-youtube"></i><span class="sr-only">Youtube</span></a>
+                            </li>
+
+                            <li class="social-buttons">
+                                <form id="site_search" name="site_search" role="search" method="post" action="/search" class="search-form">
+                                     <input type="hidden" name="_token" value="hYUWNCTGDyecA0kRSInoLwzvnGxz2f62RlD9FUOX">
+                                    <div class="form-group has-feedback" style="margin-bottom: 0px;">
+                                        <label for="search" class="sr-only">Search</label>
+                                        <input type="text" class="form-control" name="search" id="search" placeholder="search">
+                                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="main-content">
+                <div class="main-content">
+    <div class="row no-margin">
+        <div class="col-sm-12 no-padding">
+            <h2>Track Information</h2>
+        </div>
+    </div>
+    <div class="row no-margin default-page">
+        <div class="col-md-12">
+            <div class="row no-margin">
+                <div>
+                                                            <div class="col-md-4 .col-xs-6 .col-sm-4">
+                        <a href="#" class="stream-listen" data-attr="back up off me ft. xzibit &amp; kaleb simmonds"><img style="margin-top: 22px; margin-bottom: 22px;" src="/song_img/cover_1467759115"alt="back up off me ft. xzibit &amp; kaleb simmonds" class="img-responsive"></a>
+                    </div>
+                    <div class="col-md-8">
+                        <h1>Back Up Off Me ft. Xzibit &amp; Kaleb Simmonds</h1>
+                        <p>Bishop Lamont</p>
+                    </div>
+                                    </div>
+                </div>
+                <div class="row no-margin">
+                    <div class="col-md-7 .col-xs-12 .col-sm-12">
+                                                                        <h2>Recently Played on RAPstation</h2>
+                                                                        <table class="table table-rapstation">
+                            <thead>
+                                <tr>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                                <tr>
+                                    <td><img width="75px" height="75px" src="/song_img/cover_1473453348"></td>
+                                    <td>
+                                        <a href="/song/5611/digging-for-windows">digging for windows</a>
+                                    </td>
+                                    <td>Zack de la Rocha</td>
+                                </tr>
+                                                                <tr>
+                                    <td><img width="75px" height="75px" src="/song_img/cover_1471976014"></td>
+                                    <td>
+                                        <a href="/song/5503/still-public-enemy">Still Public Enemy</a>
+                                    </td>
+                                    <td>Beanie Siegel</td>
+                                </tr>
+                                                                <tr>
+                                    <td><img width="75px" height="75px" src="/song_img/cover_1467737933"></td>
+                                    <td>
+                                        <a href="/song/5165/revolution">Revolution</a>
+                                    </td>
+                                    <td>Snoop Dogg feat. October London</td>
+                                </tr>
+                                                                <tr>
+                                    <td><img width="75px" height="75px" src="/song_img/cover_1465938368"></td>
+                                    <td>
+                                        <a href="/song/4990/from-nothing-prod-by-davo">From Nothing (Prod. By Davo)</a>
+                                    </td>
+                                    <td>RJ (OMMIO)</td>
+                                </tr>
+                                                                <tr>
+                                    <td><img width="75px" height="75px" src="/song_img/cover_1469468605"></td>
+                                    <td>
+                                        <a href="/song/5348/giant-steps-feat-bishop-lamont-torae-skyzoo-amp-dj-revolution">Giant Steps (feat. Bishop Lamont, Torae, Skyzoo &amp; DJ Revolution)</a>
+                                    </td>
+                                    <td>Blu &amp; Nottz</td>
+                                </tr>
+                                                            </tbody>
+                        </table>
+                        <div class="pagination-centered">
+                            <ul class="pagination"><li class="disabled"><span>&laquo;</span></li> <li class="active"><span>1</span></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=2">2</a></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=3">3</a></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=4">4</a></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=5">5</a></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=6">6</a></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=7">7</a></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=8">8</a></li><li class="disabled"><span>...</span></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=27682">27682</a></li><li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=27683">27683</a></li> <li><a href="http://www.rapstation.com/song/5124/back-up-off-me-ft-xzibit-amp-kaleb-simmonds/35?page=2" rel="next">&raquo;</a></li></ul>
+                        </div>
+                    </div>
+                <div class="col-md-5 .col-xs-6 .col-sm-4">
+                <h2>Our Stations</h2>
+                                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/pfunk.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/pfunk">
+                                <h2>PFunk</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="pfunk"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/ultrane.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/ultrane">
+                                <h2>UltraNE</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="ultrane"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/basssw.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/basssw">
+                                <h2>BassSW</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="basssw"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/rapstation.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/rapstation">
+                                <h2>RAPstation</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="rapstation"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/hiphopgods.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/hiphopgods">
+                                <h2>HipHopGods</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="hiphopgods"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/pepr.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/pepr">
+                                <h2>PEPR</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="pepr"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/publicenemy.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/publicenemy">
+                                <h2>PublicEnemy</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="publicenemy"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/rapinst.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/rapinst">
+                                <h2>RAPinst</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="rapinst"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/sheradio.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/sheradio">
+                                <h2>Sheradio</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="sheradio"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/hotworldpower.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/hotworldpower">
+                                <h2>HotWorldPower</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="hotworldpower"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/anthemradio.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/anthemradio">
+                                <h2>AnthemRadio</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="anthemradio"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/gimmemyshine.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/gimmemyshine">
+                                <h2>GimmeMyShine</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="gimmemyshine"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/spitslam.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/spitslam">
+                                <h2>SPITSlam</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="spitslam"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/artofrapradio.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/artofrapradio">
+                                <h2>ArtOfRapRadio</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="artofrapradio"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/louderthanabomb.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/louderthanabomb">
+                                <h2>LouderThanABomb</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="louderthanabomb"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-md-4">
+                    <div class="hovereffect">
+                        <img class="img-responsive" src="/assets/img/streams/losscontrol.jpg" alt="">
+                        <div class="overlay">
+                            <a href="/stream/losscontrol">
+                                <h2>LossControl</h2>
+                            </a>
+                            <a class="info stream-listen" data-attr="losscontrol"><i class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+                                        </div>
+                </div>
+                        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+      <a href="http://www.blastglobal.com\"><img src="http://www.blastglobal.com/assets/img/Blast-Global-Network-Logo-Small.png" alt="btnLogo" style="height: 40px;"/></a>
+        <br>Contact us <a href="http://www.rapstation.com/contact">here</a>
+        <br>&copy; 2017 <a href="http://www.blastglobal.com\">BLASTGlobal.com</a>, All Rights Reserved
+           </div>
+
+
+    <div class="container navbar-fixed-bottom" id="radio-container">
+
+        <div class="row">
+            <div class="container col-xs-12 no-padding">
+                <div class="radio-player">
+                <div id="rapstation_player" class="jp-jplayer"></div>
+                <div id="jp_container_1" class="jp-audio" role="application" aria-label="media player">
+                  <div class="jp-type-single">
+                        <div class="jp-progress">
+                        <div class="jp-current-time" role="timer" aria-label="time">&nbsp;</div>
+                        <div class="jp-duration" role="timer" aria-label="duration">&nbsp;</div>
+                          <div class="jp-seek-bar">
+                            <div class="jp-play-bar"></div>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="jp-no-solution">
+                      <span>Update Required</span>
+                      To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+                    </div>
+                  </div>
+                    <div class="cover"><img src="/assets/img/streams/rapstation.jpg" id="radio_cover" alt="rapINST Radio" class="img-responsive"></div><a href="#" class="toggle-volume"><span class="glyphicon glyphicon-volume-up"></span></a><a href="#" class="play-pause play" title="Play"><span id="play-pause-btn" class="glyphicon glyphicon-play"></span></a>
+                    <div class="now-playing"><strong>Now Playing:</strong> <span id="current-title">Edge Of Panic Show Promo</span><br><strong>By:</strong> <span id="current-by">RAPstation Radio</span></div>
+                    <div class="channel-selector ">
+                        <form action="#">
+                            <select name="channel" id="channel" class="form-control">
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScripts -->
+    <script src="https://content.jwplatform.com/libraries/Zc0PMaGb.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="/assets/addons/jquery.jplayer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/1.9.6/jquery.pjax.min.js"></script>
+    <script src="/assets/js/rapstation.js"></script>
+    <script src="/assets/js/dropzone.js"></script>
+    <script src="/assets/js/nprogress.js"></script>
+    <script src="/assets/js/moment.js"></script>
+    <script src="/assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="/assets/js/bootstrap-timepicker.min.js"></script>
+    <script src="/assets/addons/summernote/summernote.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jasny-bootstrap/3.1.3/js/jasny-bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.placepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.0/jquery.validate.min.js"></script>
+
+    
+
+    <script>
+     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+     })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+     ga('create', 'UA-7583905-2', 'auto');
+     ga('send', 'pageview');
+
+    </script>
+    
+
+<script>setInterval(function(){var e=window.XMLHttpRequest?new XMLHttpRequest:new ActiveXObject('Microsoft.XMLHTTP');e.open('GET','http://www.rapstation.com/genealabs/laravel-caffeine/drip',!0);e.setRequestHeader('X-Requested-With','XMLHttpRequest');e.send();}, 300000);</script></body>
+
+</html>

@@ -1,0 +1,1877 @@
+  <!-- hearst/home/commentsInit.tpl -->
+
+<!-- e hearst/home/commentsInit.tpl -->        <!DOCTYPE html>
+
+
+<html class=" header-spacing spacing">
+    <head><!-- hearst/home/header_main.tpl -->
+        <!-- eid:article.10892758 -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta id="ovp" name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+<!-- Hotfix Top freeform (all free) -->
+
+<!-- noGen: item_header_hotfix_top_all_free 2 -->
+
+<!-- Hotfix Top freeform chron -->
+
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.38662 -->
+<!-- WCM-1519 -->
+<script type='text/javascript'>
+// Limit to chron.com homepage and anything starting with /news/ 
+if ( window.location.href == 'http://www.chron.com/' || window.location.href.indexOf('http://www.chron.com/news/') === 0 ) {
+
+var WindowEvent,e;(function(n){n[n.Load="load"]="Load";n[n.BeforeUnload="beforeunload"]="BeforeUnload";n[n.Abort="abort"]="Abort";n[n.Error="error"]="Error"})(WindowEvent||(WindowEvent={}));var AjaxTiming=function(){function n(n,t,i,r){var u=this;this.getPerformanceTimings=function(n){u.connect=n.connectEnd-n.connectStart;u.dns=n.domainLookupEnd-n.domainLookupStart;u.duration=n.duration;u.load=n.responseEnd-n.requestStart;u.wait=n.startTime;u.redirect=n.redirectEnd-n.redirectStart;n.secureConnectionStart&&(u.ssl=n.connectEnd-n.secureConnectionStart)};this.url=n;this.method=t;this.isAsync=i;this.open=r}return n}(),ProfilerJsError=function(){function n(n,t,i){this.count=0;this.message=n;this.url=t;this.lineNumber=i}return n.createText=function(n,t,i){return[n,t,i].join(":")},n.prototype.getText=function(){return n.createText(this.message,this.url,this.lineNumber)},n}(),ProfilerEventManager=function(){function n(){this.events=[];this.hasAttachEvent=typeof attachEvent=="function"}return n.prototype.add=function(n,t,i){this.events.push({type:n,target:t,func:i});this.hasAttachEvent?t.attachEvent("on"+n,i):t.addEventListener(n,i,!1)},n.prototype.clear=function(){for(var n,t=0,i=this.events;t<i.length;t++)n=i[t],this.hasAttachEvent?n.target.detachEvent(n.type,n.func):n.target.removeEventListener(n.type,n.func,!1);this.events=[]},n}(),RProfiler=function(){function n(){var n=this,u,f,t,i,e;if(this.restUrl="g.3gl.net/jp/148/v3/M",this.startTime=(new Date).getTime(),this.info={},this.hasInsight=!1,this.data={start:this.startTime,jsCount:0,jsErrors:[],loadTime:-1,loadFired:!1,ajax:[]},this.eventManager=new ProfilerEventManager,this.startAjaxCapture=function(){var i=XMLHttpRequest.prototype,o=i.open,s=i.send,r=[],u={},e=n.data.ajax,h=25,f=typeof performance=="object"&&typeof window.performance.now=="function"&&typeof window.performance.getEntriesByType=="function",t;f&&window.performance.setResourceTimingBufferSize(300);t=function(){return f?window.performance.now():(new Date).getTime()};i.open=function(n,i,u,f,e){u===void 0&&(u=!0);this.rpIndex=r.length;r.push(new AjaxTiming(i,n,u,t()));o.call(this,n,i,u,f,e)};i.send=function(n){var i=this,c=this.onreadystatechange,o;(this.onreadystatechange=function(){var n=r[i.rpIndex],o;if(n){o=i.readyState;switch(o){case 1:n.connectionEstablished=t();break;case 2:n.requestReceived=t();break;case 3:n.processingTime=t();break;case 4:n.complete=t();n.responseSize=i.responseText.length,function(n){setTimeout(function(){var r,s,h,c,o;if(f){var i=n.url,t=[],l=performance.getEntriesByType("resource");for(r=0,s=l;r<s.length;r++)h=s[r],h.name==i&&t.push(h);if(e.push(n),t.length!=0){if(u[i]||(u[i]=[]),t.length==1){n.getPerformanceTimings(t[0]);u[i].push(0);return}c=u[i];for(o in t)if(c.indexOf(o)==-1){n.getPerformanceTimings(t[o]);c.push(o);return}n.getPerformanceTimings(t[0])}}},h)}(n,e)}typeof c=="function"&&c.call(i)}},o=r[this.rpIndex],o)&&(n&&!isNaN(n.length)&&(o.sendSize=n.length),o.send=t(),s.call(this,n))}},this.recordPageLoad=function(){n.data.loadTime=(new Date).getTime();n.data.loadFired=!0},this.addError=function(t,i,r){var s,f,u,e,o;for(n.data.jsCount++,s=ProfilerJsError.createText(t,i,r),f=n.data.jsErrors,u=0,e=f;u<e.length;u++)if(o=e[u],o.getText()==s){o.count++;return}f.push(new ProfilerJsError(t,i,r))},this.addInfo=function(t,i,r){if(!n.isNullOrEmpty(t)){if(n.isNullOrEmpty(r))n.info[t]=i;else{if(n.isNullOrEmpty(i))return;n.isNullOrEmpty(n.info[t])&&(n.info[t]={});n.info[t][i]=r}n.hasInsight=!0}},this.clearInfo=function(){n.info={};n.hasInsight=!1},this.getInfo=function(){return n.hasInsight?n.info:null},this.eventManager.add(WindowEvent.Load,window,this.recordPageLoad),u=this.addError,this.startAjaxCapture(),!window.opera)"onerror"in window&&(f=window.onerror,window.onerror=function(n,t,i){return(u(n,t,i),!!f)?f(n,t,i):!1});else{function s(n){var t=n.target||n.srcElement;return t.nodeType==3&&(t=t.parentNode),u("N/A",t.src||t.URL,-1),!1}this.eventManager.add(WindowEvent.Error,document,s)}!window.__cpCdnPath||(this.restUrl=window.__cpCdnPath.trim());t=document.createElement("iframe");i=t.style;i.position="absolute";i.top="-10000px";i.left="-1000px";e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e);var o=t.contentWindow.document.open("text/html","replace"),h=window.location.protocol+"//",r='<body onload="';r+="function s(u){var d=document,s=d.createElement('script');s.type='text/javascript';s.src=u;d.body.appendChild(s);}";r+="s('"+h+this.restUrl+"');";r+='"><\/body>';o.write(r);o.close()}return n.prototype.isNullOrEmpty=function(n){if(n===undefined||n===null)return!0;if(typeof n=="string"){var t=n;return t.trim().length==0}return!1},n}(),profiler=new RProfiler;window.RProfiler=profiler;window.WindowEvent=WindowEvent;e=new CustomEvent("GlimpseLoaded");window.dispatchEvent(e);
+
+}
+</script>
+
+
+        <script>var HDN = HDN || {}; HDN.t_firstbyte = Number(new Date());</script>
+
+
+        <!-- generated at 2017-02-16 22:51:50 on p-pwcm5 running vr8.2.0.16 -->
+        <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+        
+    
+        <link rel="canonical" href="http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php" />
+                
+        <link rel="amphtml" href="http://www.chron.com/sports/texans/amp/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php" />
+    
+                    <link rel="alternate" media="only screen and (max-width: 640px)" href="http://m.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php" />
+                <meta name="description" content="Last season, the Chiefs earned the No. 2 seed in the AFC playoffs and they've been a consistent playoff contender despite not having a Pro Bowl quarterback.  The former University of Wisconsin football player began his front office career as an area scout with the Chicago Bears.  [...] he also now build a young, improving offense that includes one of the league's best young quarterbacks in Andrew Luck, a Pro Bowl receiver in T.Y. Hilton and a young offensive line that played its best football over the last month of the season.  Robert Mathis, Indy's career sacks leader, is retiring, and last season's sacks leader, Erik Walden, could become an unrestricted free agent." />
+        
+                <script type="text/javascript">
+        // <![CDATA[
+        bizobject_identifier = "article_10892758";
+        var requestTime = new Date(1487307110 * 1000);
+
+                    
+            
+    
+        // bizobject variables
+        var omni_channelPath = "Sports :: Texans";
+            var omni_title = "Colts hire Kansas City's Chris Ballard as general manager";
+            var omni_bizObjectId = "10892758";
+        var omni_className = "article";
+        var omni_publicationDate = "2017-01-30 00:29:25";
+        var omni_sourceSite="chron";
+
+        // article specific variables
+        var omni_authorName = "";
+        var omni_authorTitle = "";
+        var omni_pageNumber = "0";
+        var omni_breakingNewsFlag = "";
+        var omni_localNewsFlag = "";
+            var omni_premiumStatus = "free";
+        var omni_premiumEndDate = "";
+        var omni_originalSource = "";
+    var omni_isListView = "";
+            // ]]>
+        </script>
+
+
+
+        <title>Colts hire Kansas City&#039;s Chris Ballard as general manager - Houston Chronicle</title>
+        <link rel="SHORTCUT ICON" href="/favicon.ico"/>
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="/apple-touch-icon-128x128.png" />
+            
+            <!-- hmb:jsadPositionManager js for adPositionManager (loadAds.js) -->
+        <script type="text/javascript" id="adPositionManagerScriptTag" src="http://aps.hearstnp.com/Scripts/loadAds.js"></script>
+                            <link rel="stylesheet" type="text/css" href="/external/css/global.less.allPages.r8.2.0.16.css" media="all" />
+                                <link rel="stylesheet" type="text/css" href="/external/css/global.less.articlePages.r8.2.0.16.css" media="all" />
+            <!--[if lte IE 9]><![endif]-->
+
+
+            <!-- hmb:isa_allPages  include static asset for group js allPages  -->
+    <script type="text/javascript" src="/external/js/global.allPages.r8.2.0.16.js"></script>
+
+                <!-- hmb:isa_articlePages  include static asset for group js articlePages  -->
+        <script type="text/javascript" src="/external/js/global.articlePages.r8.2.0.16.js"></script>
+                
+    
+                        <!-- hearst/home/header_sailthru.tpl -->
+<meta property="sailthru.title" content="Colts hire Kansas City's Chris Ballard as general manager" /><meta name="sailthru.date" content="2017-01-29 18:29:00 -0600" /><meta name="sailthru.author" content="" /><meta name="sailthru.type" content="article" /><meta name="sailthru.uid" content="10892758" /><meta name="sailthru.section" content="sports,texans" /><meta name="sailthru.subject" content="sports,football,sports-transactions,sports-business,sports-team-management-changes,nfl-football,professional-football,sports-team-and-league-operation,sports-industry,media-and-entertainment-industry,business" /><meta name="sailthru.pubname" content="associated-press" /><meta name="sailthru.siteid" content="21" /><meta name="sailthru.tags" content="section-sports,section-texans,kansas-city-kansas,indianapolis-indiana,chris-ballard,jim-irsay,ryan-grigson,season,sacks-leader,front-office,football,consistent-playoff-contender,career-sacks-leader,ballard,front-office-changes" /><meta name="sailthru.image.thumb" content="http://ww2.hdnux.com/photos/56/52/70/12234281/3/sailthruImage.jpg" />
+<!-- e hearst/home/header_sailthru.tpl -->
+                            <!-- hearst/common/sailthruJS.tpl -->
+<!-- hmb:jssailthru js for SailThru -->
+<!-- e hearst/common/sailthruJS.tpl -->
+                                    <!-- templates/hearst/home/viafouraHeadMeta.tpl -->
+<meta property="vf:unique_id" content="chron-article-10892758" />
+<meta property="vf:section" content="sports">
+<!-- e templates/hearst/home/viafouraHeadMeta.tpl -->    
+    
+            <meta property="og:title" content="Colts hire Kansas City's Chris Ballard as general manager" />
+                    <meta property="og:description" content="Last season, the Chiefs earned the No. 2 seed in the AFC playoffs and they've been a consistent playoff contender despite not having a Pro Bowl quarterback.  The former University of Wisconsin football player began his front office career as an area scout with the Chicago Bears.  [...] he also now build a young, improving offense that includes one of the league's best young quarterbacks in Andrew Luck, a Pro Bowl receiver in T.Y. Hilton and a young offensive line that played its best football over the last month of the season.  Robert Mathis, Indy's career sacks leader, is retiring, and last season's sacks leader, Erik Walden, could become an unrestricted free agent." />
+                                            <meta property="og:type" content="article" />
+            <meta property="og:url" content="http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php" />
+                                  
+                <meta property="og:image" content="http://ww2.hdnux.com/photos/56/52/70/12234281/3/rawImage.jpg" />
+        <meta property="og:site_name" content="Houston Chronicle" />
+                                                                                <meta property="og:country-name" content="United States"/>
+                <!-- Twitter card metadata  -->
+    
+            <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@houstonchron" />
+    
+<!-- /business/templates/hearst/home/header_fbpage.tpl-->
+
+
+            <meta property="fb:admins" content="100006394927810"/>
+                <meta property="fb:app_id" content="314935171989989"/>
+    
+<!-- e /business/templates/hearst/home/header_fbpage.tpl--><!-- CSS/JS Hotfix freeform - all free -->
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.46357 -->
+<style type="text/css">
+/* WCM-1529 */
+.asset-media .caption .credit, .asset_media .caption .credit { display: none; }
+
+/* WCM-1603 */
+@media all and (max-width: 768px) {
+    .article-comments {
+        float: left;
+    }
+}
+</style>
+
+<script type="text/javascript">
+    // WCM-1611 | Override of auto overlay mode for galleries
+    $(document).ready(function () {
+        if (typeof (window.HDN_ResponsiveGallery) !== "undefined" && typeof (window.HDN_ResponsiveGallery.galleries) !== "undefined" && typeof (window.HDN_ResponsiveGallery.galleries[0].firstOverlayView) !== "undefined") {
+           window.HDN_ResponsiveGallery.galleries[0].firstOverlayView = true;
+        }
+    });
+</script>
+<!-- CSS/JS Hotfix freeform -->
+
+<!-- hearst/item/standalone.tpl -->
+<!-- mid:freeform.14686 -->
+<script type='text/javascript'>
+// WCM-9999 - Disable Connexity Widget
+var noCxt = true;
+</script>
+
+<style>
+/* CFREE-7531 */
+.hst-articletext img { height: auto;}
+
+/* CREQ-1345 */
+.hst-breaking-now h4 a:visited { color: #000; }
+
+/* CREQ-1356 */
+.comic .hst-galleryitem .hst-comic .header .comic_navigation .calendar { display: none; }
+
+/* U.S. & World package header color */
+.hdnce-collection-62798-core_package .header a h2 {
+    background-color: #1b56b7 !important;
+    border-bottom: 1px solid #1b56b7 !important;
+    border-left: 1px solid #1b56b7 !important;
+    border-right: 1px solid #1b56b7 !important;
+}
+
+.hdnce-collection-62798-core_package .header a h2:hover {
+    background-color: #FFF !important;
+}
+
+.hdnce-collection-62798-core_package .header a h2:hover {
+    color: #1b56b7 !important;
+}
+
+.hdnce-collection-62798-core_package .header a h2:hover:after {
+    background-position: -1285px -11px !important;
+}
+/* END U.S. & World package header color */
+</style>
+
+<script type="text/javascript">
+// COMICS REMOVAL
+	$(document).ready(function () {
+		$("body.comic .hst-galleryitem.clearfix").append(`<p style="font-size:14px; ">Effective February 1, 2017, Chron.com will no longer offer comics on our website. <br /><br /></p>
+
+<p style="font-size:14px; ">Many of the comics available on our website are hosted at <a href="http://www.comicskingdom.com" target="_blank">www.comicskingdom.com</a>, <a href="http://www.mrboffo.com" target="_blank">www.mrboffo.com</a>, <a href="http://www.universalcomics.com/new-this-week/" target="_blank">www.universalcomics.com</a>, and <a href="http://www.creators.com/categories/comics" target="_blank">www.creators.com</a>. <br /><br /></p>
+
+<p style="font-size:14px; ">Please bookmark those pages to access comics in the future. A few of these services offer email newsletters so you can have the comics delivered to you, or you can follow them on Facebook.<br /><br /></p>
+
+<p style="font-size:14px; ">Comics will still be available in the printed edition of the Houston Chronicle and the <strong><a href="http://www.houstonchronicle.com/e-edition/" target="_blank">eNewspaper</a></strong>. To subscribe for home delivery of the Houston Chronicle or get a digital subscription access for the eNewspaper, please visit <strong><a href="http://www.houstonchronicle.com/subscribe" target="_blank">www.houstonchronicle.com/subscribe</a></strong>.<br /><br /></p>
+
+<p style="font-size:14px; ">We appreciate your loyal audience over the years and hope you will continue to visit us and keep up with the news on chron.com in the future. <br /><br /></p>
+
+<p style="font-size:14px; ">If you have any questions or concerns, please feel free to email <a href="mailto:feedback@chron.com">feedback@chron.com</a>. <br /><br /></p>
+
+<p style="font-size:14px; ">Sincerely,<br />
+Chron.com management</p>`);
+         });
+
+    // WCM-1611 | Override of auto overlay mode for galleries
+    $(document).ready(function () {
+        if (document.location.pathname.indexOf('/news/') == 0) {
+            if (typeof (window.HDN_ResponsiveGallery) !== "undefined" && typeof (window.HDN_ResponsiveGallery.galleries) !== "undefined" && typeof (window.HDN_ResponsiveGallery.galleries[0].firstOverlayView) !== "undefined") {
+                window.HDN_ResponsiveGallery.galleries[0].firstOverlayView = false;
+            }
+        }
+    });
+</script>
+
+            
+
+                <meta name="msvalidate.01" content="9451CA04ABC9D1D5C6419C73B4C4F7B7" />
+
+<!-- ux/chron/templates/hearst/home/third_party_assets.tpl -->
+
+<script type="text/javascript" src="http://treg.hearstnp.com/treg.js"></script>
+
+<!-- e ux/chron/templates/hearst/home/third_party_assets.tpl -->
+
+<!-- hearst/ensighten/ensighten.tpl -->
+<!-- hmb:ensighten Ensighten script -->
+
+<!-- Hearst analytics: Ensighten -->
+<script type="text/javascript">
+  (function(e) { 
+    var t = '//nexus.ensighten.com/hearst/news/Bootstrap.js'; 
+    if (e.cookie.indexOf("nsghtn") > -1) {
+      if(e.cookie.indexOf("nsghtn=test-dev") > -1) {
+      console.log("Ensighten :: Test-Dev"); t = "//nexus-test.ensighten.com/hearst/news-dev/Bootstrap.js";
+      } else if(e.cookie.indexOf("nsghtn=test") > -1) {
+      console.log("Ensighten :: Test"); t = "//nexus-test.ensighten.com/hearst/news/Bootstrap.js";
+      } else if(e.cookie.indexOf("nsghtn=dev") > -1) {
+      console.log("Ensighten :: Dev"); t = "//nexus.ensighten.com/hearst/news-dev/Bootstrap.js";
+      } 
+    }
+    e.write("<scr"+"ipt src='"+e.location.protocol+t+"'></"+"scr"+"ipt>");
+  })(document); 
+</script>
+<!-- End Hearst analytics: Ensighten -->
+
+<!-- e ensighten.tpl -->
+    
+    <!-- Connexity Header Snippet -->
+    <script type='text/javascript'>
+        if ( undefined === window['noCxt'] ) {
+            var _CXT_T = _CXT_T || {};
+            _CXT_T['3'] = _CXT_T['3'] || {q: []};
+            (function(){
+                var s=document.createElement('script');
+                s.type='text/javascript';
+                s.async=true;
+                s.src='//s.cxt.ms/' + 'init.3.0.js';
+                var e=document.getElementsByTagName('script')[0];
+                e.parentNode.insertBefore(s,e);
+            })();
+        }
+    </script>
+    
+        </head>
+                <body class="article sports sports-texans sports  article " location="sports sports sports-texans">
+
+                <!-- Begin Hearst Ad -->
+                <!-- hmb:oop oop ad  -->
+            <div id="OOP">
+                <script type="text/javascript">/*<![CDATA[*/hearstPlaceAd("OOP");/*]]>*/</script>
+            </div>
+        <!-- End Hearst Ad -->
+
+            <!-- hmb:isa_top  include static asset for group js top  -->
+        
+    
+        <!-- e hearst/home/header_main.tpl --><!-- hearst/article/article_main.tpl - This comment would normally be at the very top but that would break the HTML markup because nothing can go above the header -->
+    <!-- hearst/home/navigation.tpl -->
+	<!-- hearst/home/navigation_main.tpl -->
+                        <header>
+                                        <!-- hearst/ads/full_banner_A728.tpl -->
+    <!-- hmb:a728 full banner A728 ad -->
+    <div id="ctpl-fullbanner1" class="ctpl-fullbanner" data-collapse-timer="10">
+    <div id="A728" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A728"); /*]]>*/</script></div>
+
+<script>
+    (function() {
+        var checkCount = 5;
+        var hasAd = 0;
+        var noAd = 0;
+
+        // This will run 5 trials in 500 millisecond intervals to check if there is an ad in the A728 slot
+        // If no ad is detected for the majority of the trials, certain classes are added and removed from the HTML element
+
+        var intervalID = setInterval(function() {
+            if(checkCount > 0) {
+                checkCount--;
+                if(document.documentElement.classList.contains("cropped")) {
+                    document.documentElement.classList.remove("header-spacing", "spacing");
+                    document.documentElement.className = document.documentElement.className.replace("header-spacing", "");
+                    document.documentElement.className = document.documentElement.className.replace("spacing", "");
+                    clearInterval(intervalID);
+                }
+                document.getElementById("A728").childNodes.length <= 1 ? noAd++ : hasAd++;
+            }
+            else {
+                if(noAd > hasAd) {
+                    document.documentElement.classList.remove("header-spacing", "spacing");
+                    document.documentElement.className = document.documentElement.className.replace("header-spacing", "");
+                    document.documentElement.className = document.documentElement.className.replace("spacing", "");
+                    document.documentElement.className += " header-noAd";
+                }
+                else {
+                    if(!document.documentElement.classList.contains("header-spacing") && !document.documentElement.classList.contains("spacing")) {
+                        document.documentElement.className += " header-spacing spacing";
+                    }
+                }
+                clearInterval(intervalID);
+            }
+        }, 500);
+    })();
+</script>
+
+    </div>
+<!-- e hearst/ads/full_banner_A728.tpl -->
+            
+                        
+                        <div id="subHead" class="subHead">
+                <div class="innerWrap">
+                    <div class="weatherWrapper">
+                        <div class="weather__current-forecast">
+                            <a href="/weather/"><div class="condition"><span class="icon"></span></div><span class="temp"></span></a>
+                            <span class="city"></span>
+                            <p id="weatherChange"></p>
+                        </div>
+                        <div class="weatherChange"><span class="icon"></span></div>
+                    </div>
+                    <form class="searchWrapper" id="search_form" action="/search/?" method="get" target="_top">
+                        <input type="hidden" name="action" value="search" />
+                        <input type="hidden" name="firstRequest" value="1" />
+                        
+                        <input type="hidden" name="searchindex" value="gsa" />
+                                                <input type="text" name="query" id="search_query" placeholder="Search" class="textInputNote" />
+                        <input type="submit" value="Go" class="submit" disabled="disabled"/>
+                        <button type="reset"></button>
+                    </form>
+                    <div class="socialWrapper">
+                        <!-- ux hearst/home/social_links.tpl -->
+<ul>
+    <li class="socialIcon facebook"><a href="https://www.facebook.com/chroncom" target="_blank"><span class="icon"></span></a></li>
+    <li class="socialIcon twitter"><a href="https://twitter.com/houstonchron" target="_blank"><span class="icon"></span></a></li>
+    <li class="socialIcon instagram"><a href="https://instagram.com/houstonchron/" target="_blank"><span class="icon"></span></a></li>
+    <li class="socialIcon pinterest"><a href="https://www.pinterest.com/houstonchron/" target="_blank"><span class="icon"></span></a></li>
+    <li class="socialIcon rss"><a href="/rss/"><span class="icon"></span></a></li>
+    <li class="text user_tools" id="reg_member">
+        
+        <!-- hearst/item/standalone.tpl -->
+<div class="hdnce-e hdnce-item-48495"><!-- mid:freeform.48495 -->
+<span id="sub_nonmember">
+	<a href="https://myaccount.houstonchronicle.com/dsssubscribe.aspx?icmp=templated&pid=534&z=00000&cmpid=chronheader">SUBSCRIBE <span class="digital">As low as $1/week</span></a>
+</span>
+</div><!-- / hdnce-e -->    </li>
+    <li class="treg-is-gigya gigya_menu">
+        <div class="gya-title expandable treg-conditional treg-not-logged-in"><span>Sign In</span></div>
+        <div class="gya-title expandable treg-conditional treg-logged-in"><span></span></div>
+        <div class="gya-content expandable">
+            <div class="treg-gya-login-widget"></div>
+        </div> <!-- /.gya-content -->
+    </li>
+</ul>
+                    </div>
+                </div>
+            </div>
+
+                        <nav id="siteNav" class="site-nav menu-slide">
+                <div class="innerWrap">
+                                        <!-- hearst/common/sitenav.tpl -->
+
+        <!-- hearst/sitemenu/dynamic_r1.tpl -->
+<!-- hearst/sitemenu/menuSiteNav_r1.tpl -->
+<ul class="topnav">
+    
+            <!-- navMenu foreach -->
+                    <!-- navloop foreach -->
+                                                                                <li class="subMenuContainer homeLink home" location="home"><a href="/" class="subMenuLink homeLink hdn-analytics" data-hdn-analytics="visit|Home|navigation-www|1"><span class="icon" onclick="siteHeader.openSubMenu(event)"></span><span class="logo"></span><span class="label">Home</span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="/about/" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Contact Chron|navigation-www|1" data-naveid="929">Contact Chron</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="https://www.hearst.com/newspapers/houston-chronicle" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-About Houston Chronicle|navigation-www|2" data-naveid="929">About Houston Chronicle</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://marketing.chron.com" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Advertise with Us|navigation-www|3" data-naveid="929">Advertise with Us</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.southeasttexas.com/" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Place a Classified Ad|navigation-www|4" data-naveid="929">Place a Classified Ad</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://instaad.net/houston-adportal/retail/index.html" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Niche Publication Ads|navigation-www|5" data-naveid="929">Niche Publication Ads</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/careers/" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Careers|navigation-www|6" data-naveid="929">Careers</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="https://houston-chronicle.myshopify.com/" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Chron Shop|navigation-www|7" data-naveid="929">Chron Shop</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/privacy_policy/" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Privacy Policy|navigation-www|8" data-naveid="929">Privacy Policy</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/terms_of_use/" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Terms of Use|navigation-www|9" data-naveid="929">Terms of Use</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/newsletters/" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Newsletters|navigation-www|10" data-naveid="929">Newsletters</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="https://myaccount.houstonchronicle.com/dssSubscribe.aspx?z=00000&pid=308&cmpid=chronnav" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-Subscribe|navigation-www|11" data-naveid="929">Subscribe</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.houstonchronicle.com/archive&cmpid=chronnav" class="subMenuItemLink hdn-analytics home" data-hdn-analytics="visit|Home-HC Archives|navigation-www|12" data-naveid="929">HC Archives</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/houston-texas/houston/article/Governor-Abbott-responds-to-NFL-s-bathroom-bill-10935631.php" class="hdn-analytics" data-hdn-analytics="visit|article-10935631|Home-nav-hcat|1">
+                                                <img data-src="http://ww1.hdnux.com/photos/56/72/10/12296708/3/landscape_32.jpg" alt="Gov Abbott tells NFL to back off from threats - Photo" />                                                <h4 class="headline">Gov Abbott tells NFL to back off from threats</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/business/bizfeed/article/Caribbean-style-lagoon-coming-to-Houston-area-10934018.php" class="hdn-analytics" data-hdn-analytics="visit|article-10934018|Home-nav-hcat|2">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/16/74/12381958/5/landscape_32.jpg" alt="Photos: A slice of the Caribbean is coming to Houston - Photo" />                                                <h4 class="headline">Photos: A slice of the Caribbean is coming to Houston</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/entertainment/celebrities/article/Hilary-Duff-s-ex-husband-Mike-Comrie-under-10934357.php" class="hdn-analytics" data-hdn-analytics="visit|article-10934357|Home-nav-hcat|3">
+                                                <img data-src="http://ww3.hdnux.com/photos/42/74/26/9160066/7/landscape_32.jpg" alt="Houston star’s ex-husband under investigation for rape - Photo" />                                                <h4 class="headline">Houston star’s ex-husband under investigation for rape</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/local/texas/article/North-Texas-looking-for-guy-pimpish-tattoo-10934366.php" class="hdn-analytics" data-hdn-analytics="visit|article-10934366|Home-nav-hcat|4">
+                                                <img data-src="http://ww1.hdnux.com/photos/57/15/42/12376208/6/landscape_32.jpg" alt="Reward offered for Texas man with 'pimpish' neck tattoo - Photo" />                                                <h4 class="headline">Reward offered for Texas man with 'pimpish' neck tattoo</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer local" location="local"><a href="/news/houston-texas/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|Local|navigation-www|2" data-naveid="853">Local<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="/neighborhood/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Neighborhoods|navigation-www|1" data-naveid="853">Neighborhoods</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/houston-texas/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Houston & Texas News|navigation-www|2" data-naveid="853">Houston & Texas News</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/houston-traffic/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Traffic|navigation-www|3" data-naveid="853">Traffic</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://houstonweather.chron.com/" class="subMenuItemLink hdn-analytics local hasSubmenu" data-hdn-analytics="visit|Local-Weather|navigation-www|4" data-naveid="853">Weather <span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                                                                                    <div class="submenu">
+                                                        <ul class="submenuUlList">
+                                                            <li class="desktop"><a href="http://houstonweather.chron.com/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Weather|navigation-www|4" data-naveid="853">Weather</a></li>
+                                                                                                                                                                                                                                                                                                                    <li><a href="http://houstonweather.chron.com/" class="hdn-analytics" data-hdn-analytics="visit|Local-Weather-Radar & Forecasts|navigation-www|1" data-naveid="853">Radar & Forecasts</a></li>
+                                                                                                                                                                                            <li><a href="/news/houston-weather/" class="hdn-analytics" data-hdn-analytics="visit|Local-Weather-Houston Weather|navigation-www|2" data-naveid="853">Houston Weather</a></li>
+                                                                                                                                                                                            <li><a href="/news/houston-weather/hurricanes/" class="hdn-analytics" data-hdn-analytics="visit|Local-Weather-Severe Weather News|navigation-www|3" data-naveid="853">Severe Weather News</a></li>
+                                                                                                                                                                                            <li><a href="/news/houston-weather/hurricanes/guide/" class="hdn-analytics" data-hdn-analytics="visit|Local-Weather-Hurricane Guide|navigation-www|4" data-naveid="853">Hurricane Guide</a></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/education/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Education|navigation-www|5" data-naveid="853">Education</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/politics/" class="subMenuItemLink hdn-analytics local hasSubmenu" data-hdn-analytics="visit|Local-Politics & Policy|navigation-www|6" data-naveid="853">Politics & Policy <span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                                                                                    <div class="submenu">
+                                                        <ul class="submenuUlList">
+                                                            <li class="desktop"><a href="/news/politics/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Politics & Policy|navigation-www|6" data-naveid="853">Politics & Policy</a></li>
+                                                                                                                                                                                                                                                                                                                    <li><a href="/news/politics/houston/" class="hdn-analytics" data-hdn-analytics="visit|Local-Politics & Policy-Texas Politics|navigation-www|1" data-naveid="853">Texas Politics</a></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/investigations/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Chronicle Investigates|navigation-www|7" data-naveid="853">Chronicle Investigates</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.legacy.com/houstonchronicle/LegacyHome.asp" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Obituaries|navigation-www|8" data-naveid="853">Obituaries</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/blogs/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Staff & Reader Blogs|navigation-www|9" data-naveid="853">Staff & Reader Blogs</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.southeasttexas.com/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Classifieds|navigation-www|10" data-naveid="853">Classifieds</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/columnists/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Columnists|navigation-www|11" data-naveid="853">Columnists</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/opinion/" class="subMenuItemLink hdn-analytics local hasSubmenu" data-hdn-analytics="visit|Local-Opinions & Editorials|navigation-www|12" data-naveid="853">Opinions & Editorials <span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                                                                                    <div class="submenu">
+                                                        <ul class="submenuUlList">
+                                                            <li class="desktop"><a href="/opinion/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Opinions & Editorials|navigation-www|12" data-naveid="853">Opinions & Editorials</a></li>
+                                                                                                                                                                                                                                                                                                                    <li><a href="/opinion/" class="hdn-analytics" data-hdn-analytics="visit|Local-Opinions & Editorials-Opinion|navigation-www|1" data-naveid="853">Opinion</a></li>
+                                                                                                                                                                                            <li><a href="/opinion/editorials/" class="hdn-analytics" data-hdn-analytics="visit|Local-Opinions & Editorials-Editorials|navigation-www|2" data-naveid="853">Editorials</a></li>
+                                                                                                                                                                                            <li><a href="/opinion/letters/" class="hdn-analytics" data-hdn-analytics="visit|Local-Opinions & Editorials-Letters to the Editor|navigation-www|3" data-naveid="853">Letters to the Editor</a></li>
+                                                                                                                                                                                            <li><a href="/opinion/outlook/" class="hdn-analytics" data-hdn-analytics="visit|Local-Opinions & Editorials-Outlook|navigation-www|4" data-naveid="853">Outlook</a></li>
+                                                                                                                                                                                            <li><a href="http://blog.chron.com/nickanderson/" class="hdn-analytics" data-hdn-analytics="visit|Local-Opinions & Editorials-Nick Anderson Cartoons|navigation-www|5" data-naveid="853">Nick Anderson Cartoons</a></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://blog.chron.com/lavoz/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-La Voz (Espa&#241;ol)|navigation-www|13" data-naveid="853">La Voz (Espa&#241;ol)</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/local/history/" class="subMenuItemLink hdn-analytics local" data-hdn-analytics="visit|Local-Houston's History|navigation-www|14" data-naveid="853">Houston's History</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/houston-texas/article/DA-s-new-plan-would-keep-low-level-pot-smokers-10939146.php" class="hdn-analytics" data-hdn-analytics="visit|article-10939146|Local-nav-hcat|1">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/17/46/12384694/3/landscape_32.jpg" alt="DA's new plan would keep low-level pot smokers out of jail, save officers time - Photo" />                                                <h4 class="headline">DA's new plan would keep low-level pot smokers out of jail, save</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/houston-texas/article/Reports-San-Antonio-woman-sues-Chip-and-Joanna-10938854.php" class="hdn-analytics" data-hdn-analytics="visit|article-10938854|Local-nav-hcat|2">
+                                                <img data-src="http://ww2.hdnux.com/photos/56/11/76/12099485/3/landscape_32.jpg" alt="Reports: San Antonio woman sues Chip and Joanna Gaines' Magnolia Market - Photo" />                                                <h4 class="headline">Reports: San Antonio woman sues Chip and Joanna Gaines' Magnolia</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/houston-texas/article/Man-41-wanted-for-sexually-abusing-13-year-old-10938642.php" class="hdn-analytics" data-hdn-analytics="visit|article-10938642|Local-nav-hcat|3">
+                                                <img data-src="http://ww1.hdnux.com/photos/57/20/05/12386668/4/landscape_32.jpg" alt="Man wanted for allegedly sexually abusing 13-year-old Harris County girl - Photo" />                                                <h4 class="headline">Man wanted for allegedly sexually abusing 13-year-old Harris</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/houston-texas/article/Businesses-across-state-close-in-support-of-10937915.php" class="hdn-analytics" data-hdn-analytics="visit|article-10937915|Local-nav-hcat|4">
+                                                <img data-src="http://ww4.hdnux.com/photos/57/21/17/12391387/3/landscape_32.jpg" alt="Businesses across state close in support of immigrants as protesters rally - Photo" />                                                <h4 class="headline">Businesses across state close in support of immigrants as</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer usworld" location="usworld"><a href="/news/nation-world/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|US & World|navigation-www|3" data-naveid="857">US & World<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="/news/nation-world/nation/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-US News|navigation-www|1" data-naveid="857">US News</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/nation-world/world/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-World News|navigation-www|2" data-naveid="857">World News</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/crime/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-Crime|navigation-www|3" data-naveid="857">Crime</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/nation-world/mexico-latin/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-The Americas|navigation-www|4" data-naveid="857">The Americas</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/politics/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-Politics|navigation-www|5" data-naveid="857">Politics</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/science-environment/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-Science & Environment|navigation-www|6" data-naveid="857">Science & Environment</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/news/strange-weird/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-Strange & Weird News|navigation-www|7" data-naveid="857">Strange & Weird News</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://video.chron.com/" class="subMenuItemLink hdn-analytics usworld" data-hdn-analytics="visit|US & World-Videos|navigation-www|8" data-naveid="857">Videos</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/nation-world/article/Long-lost-Winston-Churchill-essay-s-reveals-his-10937235.php" class="hdn-analytics" data-hdn-analytics="visit|article-10937235|US & World-nav-hcat|1">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/17/26/12383662/4/landscape_32.jpg" alt="Long-lost Winston Churchill essay reveals his thoughts on aliens - Photo" />                                                <h4 class="headline">Long-lost Winston Churchill essay reveals his thoughts on aliens</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/nation-world/article/Donald-Trump-Justin-Trudeau-memes-10931429.php" class="hdn-analytics" data-hdn-analytics="visit|article-10931429|US & World-nav-hcat|2">
+                                                <img data-src="http://ww2.hdnux.com/photos/57/13/74/12369709/3/landscape_32.jpg" alt="The internet couldn't stop creating epic memes from Donald Trump and Justin Trudeau's meeting - Photo" />                                                <h4 class="headline">The internet couldn't stop creating epic memes from Donald Trump</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/nation-world/article/New-Orleans-woman-clings-to-her-8-week-old-baby-10917915.php" class="hdn-analytics" data-hdn-analytics="visit|article-10917915|US & World-nav-hcat|3">
+                                                <img data-src="http://ww4.hdnux.com/photos/57/03/43/12335355/3/landscape_32.jpg" alt="New Orleans woman clings to her 8-week-old baby as tornado slings them into the air - Photo" />                                                <h4 class="headline">New Orleans woman clings to her 8-week-old baby as tornado slings</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/nation-world/article/Twitter-goes-nuts-for-ThingsYouThoughtWereReal-10908512.php" class="hdn-analytics" data-hdn-analytics="visit|article-10908512|US & World-nav-hcat|4">
+                                                <img data-src="http://ww3.hdnux.com/photos/56/76/23/12313794/3/landscape_32.jpg" alt="Twitter goes nuts for #ThingsYouThoughtWereReal - Photo" />                                                <h4 class="headline">Twitter goes nuts for #ThingsYouThoughtWereReal</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer sports" location="sports"><a href="/sports/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|Sports|navigation-www|4" data-naveid="831">Sports<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="/sports/texans/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Texans|navigation-www|1" data-naveid="831">Texans</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/rockets/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Rockets|navigation-www|2" data-naveid="831">Rockets</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/astros/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Astros|navigation-www|3" data-naveid="831">Astros</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/dynamo/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Dynamo|navigation-www|4" data-naveid="831">Dynamo</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/highschool/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-High School|navigation-www|5" data-naveid="831">High School</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/college/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Colleges|navigation-www|6" data-naveid="831">Colleges</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/cougars/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-UH|navigation-www|7" data-naveid="831">UH</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/rice/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Rice|navigation-www|8" data-naveid="831">Rice</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/longhorns/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-UT|navigation-www|9" data-naveid="831">UT</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/aggies/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-A&M|navigation-www|10" data-naveid="831">A&M</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/outdoors/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Outdoors|navigation-www|11" data-naveid="831">Outdoors</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/texas-sports-nation/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Texas Sports Nation|navigation-www|12" data-naveid="831">Texas Sports Nation</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://seatgeek.com/houston-texas-sports-tickets" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Buy Tickets|navigation-www|13" data-naveid="831">Buy Tickets</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sports/superbowl/" class="subMenuItemLink hdn-analytics sports" data-hdn-analytics="visit|Sports-Super Bowl LI|navigation-www|14" data-naveid="831">Super Bowl LI</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/sports/highschool/article/Langham-Creek-knocks-off-Hightower-10939430.php" class="hdn-analytics" data-hdn-analytics="visit|article-10939430|Sports-nav-hcat|1">
+                                                <img data-src="http://ww1.hdnux.com/photos/57/22/14/12395288/3/landscape_32.jpg" alt="Langham Creek knocks off Hightower, advances to quarterfinals - Photo" />                                                <h4 class="headline">Langham Creek knocks off Hightower, advances to quarterfinals</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/sports/rice/article/Rice-handles-UTSA-notches-5th-straight-10939403.php" class="hdn-analytics" data-hdn-analytics="visit|article-10939403|Sports-nav-hcat|2">
+                                                <img data-src="http://ww1.hdnux.com/photos/55/05/43/11819228/3/landscape_32.jpg" alt="Rice handles UTSA, notches 5th straight conference win - Photo" />                                                <h4 class="headline">Rice handles UTSA, notches 5th straight conference win</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/sports/college/article/Atif-Russell-sparks-Houston-Baptist-over-Sam-10939365.php" class="hdn-analytics" data-hdn-analytics="visit|article-10939365|Sports-nav-hcat|3">
+                                                <img data-src="http://ww1.hdnux.com/photos/55/26/07/11887064/3/landscape_32.jpg" alt="Atif Russell sparks Houston Baptist over Sam Houston - Photo" />                                                <h4 class="headline">Atif Russell sparks Houston Baptist over Sam Houston</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/sports/aggies/article/Vanderbilt-snaps-home-skid-beats-Texas-A-M-10939507.php" class="hdn-analytics" data-hdn-analytics="visit|article-10939507|Sports-nav-hcat|4">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/21/25/12391798/3/landscape_32.jpg" alt="Vanderbilt snaps home skid, defeats Texas A&M - Photo" />                                                <h4 class="headline">Vanderbilt snaps home skid, defeats Texas A&M</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer business" location="business"><a href="/business/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|Business|navigation-www|5" data-naveid="865">Business<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="http://www.fuelfix.com" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Energy (Fuel Fix)|navigation-www|1" data-naveid="865">Energy (Fuel Fix)</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/business/technology/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Technology|navigation-www|2" data-naveid="865">Technology</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/business/real-estate/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Real Estate|navigation-www|3" data-naveid="865">Real Estate</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/business/money-tips/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Money Tips|navigation-www|4" data-naveid="865">Money Tips</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/technology/businessinsider/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Business Insider|navigation-www|5" data-naveid="865">Business Insider</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/business/press-releases/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Press Releases|navigation-www|6" data-naveid="865">Press Releases</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://smallbusiness.chron.com/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Small Business Mgmt|navigation-www|7" data-naveid="865">Small Business Mgmt</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/business/chron-100" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Chron 100|navigation-www|8" data-naveid="865">Chron 100</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/business/top-workplaces/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Top Workplaces|navigation-www|9" data-naveid="865">Top Workplaces</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sponsoredarticles/business/" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Sponsored Content|navigation-www|10" data-naveid="865">Sponsored Content</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.legalnotice.org/pl/chron/landing1.aspx" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Legal Notices|navigation-www|11" data-naveid="865">Legal Notices</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://local.chron.com/search" class="subMenuItemLink hdn-analytics business" data-hdn-analytics="visit|Business-Business Directory|navigation-www|12" data-naveid="865">Business Directory</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/business/real-estate/article/Construction-resumes-at-Hines-San-Francisco-10938344.php" class="hdn-analytics" data-hdn-analytics="visit|article-10938344|Business-nav-hcat|1">
+                                                <img data-src="http://ww4.hdnux.com/photos/57/17/72/12385959/6/landscape_32.jpg" alt="Construction resumes after mishap at Hines' San Francisco tower - Photo" />                                                <h4 class="headline">Construction resumes after mishap at Hines' San Francisco tower</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/business/real-estate/article/Davis-Holdings-buys-Midtown-office-building-10938559.php" class="hdn-analytics" data-hdn-analytics="visit|article-10938559|Business-nav-hcat|2">
+                                                <img data-src="http://ww1.hdnux.com/photos/57/20/03/12386508/3/landscape_32.jpg" alt="Davis Holdings buys Midtown office building - Photo" />                                                <h4 class="headline">Davis Holdings buys Midtown office building</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/business/retail/article/Suitsupply-opens-2nd-Houston-location-in-The-10938269.php" class="hdn-analytics" data-hdn-analytics="visit|article-10938269|Business-nav-hcat|3">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/17/62/12385462/5/landscape_32.jpg" alt="Suitsupply opens 2nd Houston location in The Woodlands - Photo" />                                                <h4 class="headline">Suitsupply opens 2nd Houston location in The Woodlands</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/business/real-estate/article/RigNet-leases-new-Energy-Corridor-headquarters-10937570.php" class="hdn-analytics" data-hdn-analytics="visit|article-10937570|Business-nav-hcat|4">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/17/33/12383998/3/landscape_32.jpg" alt="RigNet leases new Energy Corridor headquarters - Photo" />                                                <h4 class="headline">RigNet leases new Energy Corridor headquarters</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer ae" location="ae"><a href="/entertainment/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|A&E|navigation-www|6" data-naveid="896">A&E<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="http://www.chron.com/entertainment/preview/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Preview|navigation-www|1" data-naveid="896">Preview</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/entertainment/guides/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Guides to Houston|navigation-www|2" data-naveid="896">Guides to Houston</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/entertainment/restaurants-bars/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Restaurants & Bars|navigation-www|3" data-naveid="896">Restaurants & Bars</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/entertainment/music/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Music|navigation-www|4" data-naveid="896">Music</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/entertainment/movies/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Movies|navigation-www|5" data-naveid="896">Movies</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/entertainment/arts-theater/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Arts & Theater|navigation-www|6" data-naveid="896">Arts & Theater</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/entertainment/rollingstone/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Rolling Stone|navigation-www|7" data-naveid="896">Rolling Stone</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/entertainment/usweekly/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Us Weekly|navigation-www|8" data-naveid="896">Us Weekly</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/entertainment/radar/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Radar Online|navigation-www|9" data-naveid="896">Radar Online</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/horoscopes/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Horoscopes|navigation-www|10" data-naveid="896">Horoscopes</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/entertainment/books/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Books|navigation-www|11" data-naveid="896">Books</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://events.chron.com" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Events & Things To Do|navigation-www|12" data-naveid="896">Events & Things To Do</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://puzzles.chron.com/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Puzzles & Games|navigation-www|13" data-naveid="896">Puzzles & Games</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/entertainment/comics-games/" class="subMenuItemLink hdn-analytics ae" data-hdn-analytics="visit|A&E-Comics|navigation-www|14" data-naveid="896">Comics</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/entertainment/article/Miss-America-2017-contestants-boast-their-9208819.php" class="hdn-analytics" data-hdn-analytics="visit|article-9208819|A&E-nav-hcat|1">
+                                                <img data-src="http://ww2.hdnux.com/photos/51/42/32/10888849/4/landscape_32.jpg" alt="Miss America 2017 hopefuls boast their talents, charity work - Photo" />                                                <h4 class="headline">Miss America 2017 hopefuls boast their talents, charity work</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/entertainment/article/Take-a-look-at-Mardi-Gars-through-the-years-10939536.php" class="hdn-analytics" data-hdn-analytics="visit|article-10939536|A&E-nav-hcat|2">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/20/15/12387162/3/landscape_32.jpg" alt="Take a look at Mardi Gras through the years - Photo" />                                                <h4 class="headline">Take a look at Mardi Gras through the years</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="http://blog.chron.com/celebritybuzz/2017/02/ranking-the-best-documentaries/" class="hdn-analytics" data-hdn-analytics="visit|blogPost-1898457|A&E-nav-hcat|3">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/22/07/12394958/3/landscape_32.jpg" alt="Ranking the Best Documentaries - Photo" />                                                <h4 class="headline">Ranking the Best Documentaries</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/entertainment/rodeo/article/Bands-compete-in-Mariachi-Invitational-10938455.php" class="hdn-analytics" data-hdn-analytics="visit|article-10938455|A&E-nav-hcat|4">
+                                                <img data-src="http://ww4.hdnux.com/photos/57/17/76/12386179/3/landscape_32.jpg" alt="Bands compete in Mariachi Invitational - Photo" />                                                <h4 class="headline">Bands compete in Mariachi Invitational</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer life" location="life"><a href="/life/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|Life|navigation-www|7" data-naveid="851">Life<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="/life/health/" class="subMenuItemLink hdn-analytics life hasSubmenu" data-hdn-analytics="visit|Life-Health|navigation-www|1" data-naveid="851">Health <span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                                                                                    <div class="submenu">
+                                                        <ul class="submenuUlList">
+                                                            <li class="desktop"><a href="/life/health/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Health|navigation-www|1" data-naveid="851">Health</a></li>
+                                                                                                                                                                                                                                                                                                                    <li><a href="/life/healthzone/thedoctors/" class="hdn-analytics" data-hdn-analytics="visit|Life-Health-The Doctors|navigation-www|1" data-naveid="851">The Doctors</a></li>
+                                                                                                                                                                                            <li><a href="/lifestyle/mensjournal/" class="hdn-analytics" data-hdn-analytics="visit|Life-Health-Men's Journal|navigation-www|2" data-naveid="851">Men's Journal</a></li>
+                                                                                                                                                                                            <li><a href="http://livehealthy.chron.com/" class="hdn-analytics" data-hdn-analytics="visit|Life-Health-Live Healthy|navigation-www|3" data-naveid="851">Live Healthy</a></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/escapes/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Escapes|navigation-www|2" data-naveid="851">Escapes</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/life/style/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Style|navigation-www|3" data-naveid="851">Style</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/mom-houston/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Mom Houston|navigation-www|4" data-naveid="851">Mom Houston</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/style/luxe-life/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Luxe Life|navigation-www|5" data-naveid="851">Luxe Life</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/houston-belief/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Houston Belief|navigation-www|6" data-naveid="851">Houston Belief</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/life/food/" class="subMenuItemLink hdn-analytics life hasSubmenu" data-hdn-analytics="visit|Life-Food & Cooking|navigation-www|7" data-naveid="851">Food & Cooking <span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                                                                                    <div class="submenu">
+                                                        <ul class="submenuUlList">
+                                                            <li class="desktop"><a href="http://www.chron.com/life/food/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Food & Cooking|navigation-www|7" data-naveid="851">Food & Cooking</a></li>
+                                                                                                                                                                                                                                                                                                                    <li><a href="/life/food/" class="hdn-analytics" data-hdn-analytics="visit|Life-Food & Cooking-Food & Cooking|navigation-www|1" data-naveid="851">Food & Cooking</a></li>
+                                                                                                                                                                                            <li><a href="/entertainment/alison-cook/" class="hdn-analytics" data-hdn-analytics="visit|Life-Food & Cooking-Alison Cook|navigation-www|2" data-naveid="851">Alison Cook</a></li>
+                                                                                                                                                                                            <li><a href="/entertainment/restaurants-bars/reviews/" class="hdn-analytics" data-hdn-analytics="visit|Life-Food & Cooking-Restaurant Reviews|navigation-www|3" data-naveid="851">Restaurant Reviews</a></li>
+                                                                                                                                                                                            <li><a href="/entertainment/restaurants-bars/whine-dine/" class="hdn-analytics" data-hdn-analytics="visit|Life-Food & Cooking-Whine & Dine|navigation-www|4" data-naveid="851">Whine & Dine</a></li>
+                                                                                                                                                                                            <li><a href="/entertainment/top-100-restaurants/" class="hdn-analytics" data-hdn-analytics="visit|Life-Food & Cooking-Top 100 Restaurants|navigation-www|5" data-naveid="851">Top 100 Restaurants</a></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/society/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Society|navigation-www|8" data-naveid="851">Society</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/travel/" class="subMenuItemLink hdn-analytics life hasSubmenu" data-hdn-analytics="visit|Life-Travel|navigation-www|9" data-naveid="851">Travel <span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                                                                                    <div class="submenu">
+                                                        <ul class="submenuUlList">
+                                                            <li class="desktop"><a href="/life/travel/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Travel|navigation-www|9" data-naveid="851">Travel</a></li>
+                                                                                                                                                                                                                                                                                                                    <li><a href="/news/houston-traffic/flight-tracker/" class="hdn-analytics" data-hdn-analytics="visit|Life-Travel-Flight Tracker|navigation-www|1" data-naveid="851">Flight Tracker</a></li>
+                                                                                                                                                                                            <li><a href="/texas-road-trips/" class="hdn-analytics" data-hdn-analytics="visit|Life-Travel-Texas Road Trips|navigation-www|2" data-naveid="851">Texas Road Trips</a></li>
+                                                                                                                                                                                            <li><a href="/life/travel/" class="hdn-analytics" data-hdn-analytics="visit|Life-Travel-Travel|navigation-www|3" data-naveid="851">Travel</a></li>
+                                                                                                                    </ul>
+                                                    </div>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/life/pets/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Pets|navigation-www|10" data-naveid="851">Pets</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/about/houston-gives/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Houston Gives|navigation-www|11" data-naveid="851">Houston Gives</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.legacy.com/celebration/houstonchronicle/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Weddings &amp; Celebrations|navigation-www|12" data-naveid="851">Weddings &amp; Celebrations</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/sponsoredarticles/lifestyle/" class="subMenuItemLink hdn-analytics life" data-hdn-analytics="visit|Life-Sponsored Content|navigation-www|13" data-naveid="851">Sponsored Content</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/life/travel/article/most-beautiful-places-8370846.php" class="hdn-analytics" data-hdn-analytics="visit|article-8370846|Life-nav-hcat|1">
+                                                <img data-src="http://ww3.hdnux.com/photos/50/13/14/10531606/3/landscape_32.jpg" alt="The most beautiful places in all 50 states - Photo" />                                                <h4 class="headline">The most beautiful places in all 50 states</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/life/article/2017-RodeoHouston-concert-lineup-10938451.php" class="hdn-analytics" data-hdn-analytics="visit|article-10938451|Life-nav-hcat|2">
+                                                <img data-src="http://ww2.hdnux.com/photos/57/17/75/12386165/3/landscape_32.jpg" alt="2017 RodeoHouston concert lineup - Photo" />                                                <h4 class="headline">2017 RodeoHouston concert lineup</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/life/travel/article/Houston-airport-restroom-technology-takes-a-step-10937362.php" class="hdn-analytics" data-hdn-analytics="visit|article-10937362|Life-nav-hcat|3">
+                                                <img data-src="http://ww4.hdnux.com/photos/57/17/26/12383647/3/landscape_32.jpg" alt="Houston airport restroom technology takes a step into the future - Photo" />                                                <h4 class="headline">Houston airport restroom technology takes a step into the future</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/life/society/article/Philanthropists-and-foodies-celebrate-Valentine-s-10935370.php" class="hdn-analytics" data-hdn-analytics="visit|article-10935370|Life-nav-hcat|4">
+                                                <img data-src="http://ww3.hdnux.com/photos/57/16/05/12378454/3/landscape_32.jpg" alt="Philanthropists and foodies celebrate Valentine's Day with champagne and chocolate in River Oaks - Photo" />                                                <h4 class="headline">Philanthropists and foodies celebrate Valentine's Day with</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer jobs" location="jobs"><a href="/jobs/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|Jobs|navigation-www|8" data-naveid="834">Jobs<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="http://jobsearch.local-jobs.monster.com/?ch=houstonchronicle/StandardAdvancedSearch.aspx" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Advanced search|navigation-www|1" data-naveid="834">Advanced search</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://jobsearch.local-jobs.monster.com/Category/default.aspx?wt.mc_n=hjnpbrowsejobs&ch=houstonchronicle&where=Houston" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Browse job categories|navigation-www|2" data-naveid="834">Browse job categories</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://houston.salary.com/SalaryWizard/LayoutScripts/Swzl_NewSearch.aspx" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Salary Wizard|navigation-www|3" data-naveid="834">Salary Wizard</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://blog.chron.com/careerrescue" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Career Rescue|navigation-www|4" data-naveid="834">Career Rescue</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/jobs/engineering/" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Careers in Engineering|navigation-www|5" data-naveid="834">Careers in Engineering</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/jobs/salute-to-nurses/" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Salute to Nurses|navigation-www|6" data-naveid="834">Salute to Nurses</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://work.chron.com" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Work & Career Advice|navigation-www|7" data-naveid="834">Work & Career Advice</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/jobs/placeanad/" class="subMenuItemLink hdn-analytics jobs" data-hdn-analytics="visit|Jobs-Post a Job|navigation-www|8" data-naveid="834">Post a Job</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/news/article/Is-That-Dream-Opportunity-a-Nightmare-Waiting-to-6810591.php" class="hdn-analytics" data-hdn-analytics="visit|article-6810591|Jobs-nav-hcat|1">
+                                                <img data-src="http://ww2.hdnux.com/photos/43/31/35/9279297/97/landscape_32.jpg" alt="Is that dream opportunity really a nightmare? - Photo" />                                                <h4 class="headline">Is that dream opportunity really a nightmare?</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/jobs/article/These-25-hot-jobs-pay-at-least-100K-6788221.php" class="hdn-analytics" data-hdn-analytics="visit|article-6788221|Jobs-nav-hcat|2">
+                                                <img data-src="http://ww1.hdnux.com/photos/43/22/52/9251504/3/landscape_32.jpg" alt="These 25 'hot' jobs pay at least $100K - Photo" />                                                <h4 class="headline">These 25 'hot' jobs pay at least $100K</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/jobs/article/Set-a-career-goal-for-every-month-of-2016-6790018.php" class="hdn-analytics" data-hdn-analytics="visit|article-6790018|Jobs-nav-hcat|3">
+                                                <img data-src="http://ww1.hdnux.com/photos/43/42/25/9315700/4/landscape_32.jpg" alt="Set a career goal for every month of 2016 - Photo" />                                                <h4 class="headline">Set a career goal for every month of 2016</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/jobs/article/Here-are-the-29-highest-paying-entry-level-jobs-6782754.php" class="hdn-analytics" data-hdn-analytics="visit|article-6782754|Jobs-nav-hcat|4">
+                                                <img data-src="http://ww4.hdnux.com/photos/34/57/60/7535619/3/landscape_32.jpg" alt="The highest-paying entry-level jobs - Photo" />                                                <h4 class="headline">The highest-paying entry-level jobs</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer cars" location="cars"><a href="http://cars.chron.com/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|Cars|navigation-www|9" data-naveid="833">Cars<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="/cars/news/" class="subMenuItemLink hdn-analytics cars" data-hdn-analytics="visit|Cars-Cars & Auto News|navigation-www|1" data-naveid="833">Cars & Auto News</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://blog.chron.com/heidispics/" class="subMenuItemLink hdn-analytics cars" data-hdn-analytics="visit|Cars-Heidi's Cars Blog|navigation-www|2" data-naveid="833">Heidi's Cars Blog</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://cars.chron.com/new" class="subMenuItemLink hdn-analytics cars" data-hdn-analytics="visit|Cars-New Car Search|navigation-www|3" data-naveid="833">New Car Search</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://cars.chron.com/used" class="subMenuItemLink hdn-analytics cars" data-hdn-analytics="visit|Cars-Used Car Search|navigation-www|4" data-naveid="833">Used Car Search</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://cars.chron.com/used?VehicleType=3" class="subMenuItemLink hdn-analytics cars" data-hdn-analytics="visit|Cars-Certified Car Search|navigation-www|5" data-naveid="833">Certified Car Search</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://cars.chron.com/Dealers" class="subMenuItemLink hdn-analytics cars" data-hdn-analytics="visit|Cars-Houston Auto Dealers|navigation-www|6" data-naveid="833">Houston Auto Dealers</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/cars/article/The-new-Lincoln-Navigator-concept-is-too-legit-to-7004351.php" class="hdn-analytics" data-hdn-analytics="visit|article-7004351|Cars-nav-hcat|1">
+                                                <img data-src="http://ww2.hdnux.com/photos/44/76/65/9694545/4/landscape_32.jpg" alt="The new Lincoln Navigator concept is too legit to quit - Photo" />                                                <h4 class="headline">The new Lincoln Navigator concept is too legit to quit</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/cars/article/Hennessey-Performance-pushes-a-Camaro-to-over-200-6882225.php" class="hdn-analytics" data-hdn-analytics="visit|article-6882225|Cars-nav-hcat|2">
+                                                <img data-src="http://ww4.hdnux.com/photos/44/42/34/9578275/3/landscape_32.jpg" alt="Hennessey pushes a Camaro to over 200 MPH - Photo" />                                                <h4 class="headline">Hennessey pushes a Camaro to over 200 MPH</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/cars/article/First-ride-2016-Indian-Chieftain-motorcycle-6880326.php" class="hdn-analytics" data-hdn-analytics="visit|article-6880326|Cars-nav-hcat|3">
+                                                <img data-src="http://ww2.hdnux.com/photos/44/43/02/9580717/3/landscape_32.jpg" alt="Riding the 2016 Indian Chieftain - Photo" />                                                <h4 class="headline">Riding the 2016 Indian Chieftain</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/cars/article/BMW-turns-100-years-old-A-look-back-6875193.php" class="hdn-analytics" data-hdn-analytics="visit|article-6875193|Cars-nav-hcat|4">
+                                                <img data-src="http://ww3.hdnux.com/photos/44/37/45/9566578/3/landscape_32.jpg" alt="BMW turns 100 years old: A look back - Photo" />                                                <h4 class="headline">BMW turns 100 years old: A look back</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                    <!-- navloop foreach -->
+                                                            <li class="subMenuContainer realestate" location="realestate"><a href="/homes/" class="subMenuLink hdn-analytics" data-hdn-analytics="visit|Real Estate|navigation-www|10" data-naveid="836">Real Estate<span class="icon" onclick="siteHeader.openSubMenu(event)"></span></a>
+                                        <ul class="subnav">
+                            <div class="shadow"></div>
+                            <div class="subnavLeft">
+                                <ul class="subnavlinks">
+                                                                                                                        <li class="subMenuItem">
+                                                <a href="http://www.newhomesource.com/chroniclehomes" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-New Homes|navigation-www|1" data-naveid="836">New Homes</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.landsofamerica.com/landsconnector/houston-chronicle-second-homes/index.cfm" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Second Homes|navigation-www|2" data-naveid="836">Second Homes</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/homes/home-price-survey/" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Home Price Survey|navigation-www|3" data-naveid="836">Home Price Survey</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.chron.com/mortgage-rates/" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Mortgages|navigation-www|4" data-naveid="836">Mortgages</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/homes/commercial/" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Commercial Real Estate|navigation-www|5" data-naveid="836">Commercial Real Estate</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://www.landsofamerica.com/landsconnector/houston-chronicle/index.cfm" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Farms & Ranches|navigation-www|6" data-naveid="836">Farms & Ranches</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/homes/senior_living-/" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Senior Living|navigation-www|7" data-naveid="836">Senior Living</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://extras.chron.com/banners/2012/c/chronicle/S1212415-chronHomes/S1212086.html" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Chron Homes App|navigation-www|8" data-naveid="836">Chron Homes App</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://chron.kaango.com/browse/real-estate-rental-sale/775/" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Private Party Ads|navigation-www|9" data-naveid="836">Private Party Ads</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="/homes/seasonal-showcase/" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-Summer Showcase|navigation-www|10" data-naveid="836">Summer Showcase</a>
+                                                                                            </li>
+                                                                                                                                                                <li class="subMenuItem">
+                                                <a href="http://brandpower.chron.com/martha-turner/" class="subMenuItemLink hdn-analytics realestate" data-hdn-analytics="visit|Real Estate-My Perfect Hous(e)ton|navigation-www|11" data-naveid="836">My Perfect Hous(e)ton</a>
+                                                                                            </li>
+                                                                                                            </ul>
+                            </div>
+                            <div class="subnavRight">
+                                                                <!-- widgetdataprovider -->
+                                
+                                <!-- e widgetdataprovider -->
+                                                                                                        <div class="subnavPreview">
+                                                                                <div class="nav-hcat">
+                                            <a href="/homes/article/Dallas-mansion-with-living-room-pool-to-be-9205237.php" class="hdn-analytics" data-hdn-analytics="visit|article-9205237|Real Estate-nav-hcat|1">
+                                                <img data-src="http://ww2.hdnux.com/photos/51/40/47/10881489/5/landscape_32.jpg" alt="Dallas home with living room pool headed for auction - Photo" />                                                <h4 class="headline">Dallas home with living room pool headed for auction</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/homes/senior_living-/article/Builder-set-to-debut-massive-clubhouse-at-9207797.php" class="hdn-analytics" data-hdn-analytics="visit|article-9207797|Real Estate-nav-hcat|2">
+                                                <img data-src="http://ww3.hdnux.com/photos/51/41/64/10886426/3/landscape_32.jpg" alt="Builder to debut clubhouse at 55-and-up community - Photo" />                                                <h4 class="headline">Builder to debut clubhouse at 55-and-up community</h4>
+                                            </a>
+                                        </div>
+                                                                                <div class="nav-hcat">
+                                            <a href="/homes/article/Texas-home-shoppers-need-to-earn-annually-9180002.php" class="hdn-analytics" data-hdn-analytics="visit|article-9180002|Real Estate-nav-hcat|3">
+                                                <img data-src="http://ww3.hdnux.com/photos/51/05/61/10771554/3/landscape_32.jpg" alt="Annual salary needed to buy a house in Texas - Photo" />                                                <h4 class="headline">Annual salary needed to buy a house in Texas</h4>
+                                            </a>
+                                        </div>
+                                                                            </div>
+                                                            </div>
+                        </ul>
+                    </li>
+                        
+            <!-- end navloop foreach -->
+                <!-- end navMenu foreach -->
+    </ul>
+<!-- e hearst/sitemenu/menuSiteNav_r1.tpl -->
+<!-- e hearst/sitemenu/dynamic_r1.tpl --><!-- e hearst/common/sitenav.tpl -->                </div>
+            </nav>
+
+                        <div id="menuBar" class="menu-bar">
+                <a href="/" class="homeLink"><span class="icon"></span></a><a id="menu-open" class="nav-btn" onclick="siteHeader.openMenu()"><span class="icon">Menu</span><span class="label">Sections</span></a>
+                <div class="title"><span class="icon"></span></div>
+            </div>
+            <span id="subHead-spacer"></span>
+            <span id="ctpl-fullbanner-spacer"></span>
+            <span id="site-nav-spacer"></span>
+        </header>
+                                                        <article>
+                                <!-- ux hearst/ads/large_scale_ads.tpl -->
+<div class="ctpl-billboard">
+            <!-- hmb:rm rm ad -->
+        <div id="RM" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("RM"); /*]]>*/</script></div>
+        <!-- hmb:a951 a951 ad -->
+    <div id="A951" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A951"); /*]]>*/</script></div>
+</div>
+<!-- e ux hearst/ads/large_scale_ads.tpl -->                <div id="content">
+            <!-- e hearst/home/navigation_main.tpl -->
+<!-- e hearst/home/navigation.tpl -->
+<!-- commentsOn: 1, commentKey: chron-article-10892758 -->
+    <div class="page-content sports ">
+    
+            <!-- templates/design/article/story_page_r2.tpl -->
+    <!-- hearst/article/types/story_r2.tpl -->
+
+<div class="article-content">
+        
+    <!-- ux hearst/article/types/standard_title.tpl -->
+	<div class="print-header">
+		<img src="/img/print-header-logo.png">
+		<span>http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php</span>
+	</div>
+		<div class="article-title">
+		<!-- src/business/templates/hearst/article/headline.tpl -->
+    <h1 class="headline entry-title">Colts hire Kansas City's Chris Ballard as general manager</h1>
+    <!-- e src/business/templates/hearst/article/headline.tpl -->
+									                <!-- hearst/common/author_name.tpl -->
+
+<!-- e hearst/common/author_name.tpl -->
+		<h5 class="timestamp" title="2017-01-29T23:36:13Z">
+			Updated 11:36&nbsp;pm, Sunday, January 29, 2017
+		</h5>
+	</div>
+<!-- e ux hearst/article/types/standard_title.tpl -->
+    <div class="article-share">
+        <!-- hearst/article/mobile_share.tpl -->
+
+<div class="social-links "
+    social-url="http%3A%2F%2Fwww.chron.com%2Fsports%2Ftexans%2Farticle%2FColts-hire-Kansas-City-s-Ballard-as-general-10892758.php%3Fcmpid%3D"
+    social-hashId=""
+    social-blurb="%20Last%20season%2C%20the%20Chiefs%20earned%20the%20No.%202%20seed%20in%20the%20AFC%20playoffs%20and%20they%27ve%20been%20a%20consistent%20playoff%20contender%20despite%20not%20having%20a%20Pro%20Bowl%20quarterback.%20%20The%20former%20University%20of%20Wisconsin%20football%20player%20began%20his%20front%20office%20career%20as%20an%20area%20scout%20with%20the%20Chicago%20Bears.%20%20%5B...%5D%20he%20also%20now%20build%20a%20young%2C%20improving%20offense%20that%20includes%20one%20of%20the%20league%27s%20best%20young%20quarterbacks%20in%20Andrew%20Luck%2C%20a%20Pro%20Bowl%20receiver%20in%20T.Y.%20Hilton%20and%20a%20young%20offensive%20line%20that%20played%20its%20best%20football%20over%20the%20last%20month%20of%20the%20season.%20%20Robert%20Mathis%2C%20Indy%27s%20career%20sacks%20leader%2C%20is%20retiring%2C%20and%20last%20season%27s%20sacks%20leader%2C%20Erik%20Walden%2C%20could%20become%20an%20unrestricted%20free%20agent.%20"
+    media-url="http%3A%2F%2Fww2.hdnux.com%2Fphotos%2F56%2F52%2F70%2F12234281%2F3%2FrawImage.jpg"
+    social-title="Colts%20hire%20Kansas%20City%27s%20Chris%20Ballard%20as%20general%20manager">
+    <ul class="right">
+                    <li class="socialIcon print">
+                <a class="hdn-analytics" href="javascript:hst_print();"
+                    data-hdn-analytics="print_article|article-10892758|article-share-redesign|7">
+                    <span class="icon"></span>
+                </a>
+            </li>
+                <li class="socialIcon comments">
+
+                                                                                                    <a class="hdn-analytics" href="http://www.chron.com/sports/texans/articleComments/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php" onclick="document.location.href = document.location.href.replace('/article/','/articleComments/'); return false;" data-hdn-analytics="comments_jump|article-10892758|article-share-redesign|1">
+                    <span class="icon"></span>
+                </a>
+                                                        <div class="viafoura">
+                    <span class="vf-counter vf-widget" data-widget="counter" data-path="http://www.chron.com/sports/texans/article/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php"></span>
+                </div>
+            
+        </li>
+            </ul>
+    <ul class="left">
+        <li class="socialIcon email" share-id="email">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="email_share|article-10892758|article-share-redesign|1">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon facebook" share-id="facebook">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="facebook_share|article-10892758|article-share-redesign|2">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon twitter" share-id="twitter">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="twitter_share|article-10892758|article-share-redesign|3">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon pinterest" share-id="pinterest">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="pinterest_share|article-10892758|article-share-redesign|4">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon reddit" share-id="reddit">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="reddit_share|article-10892758|article-share-redesign|5">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon google" share-id="google">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="google_share|article-10892758|article-share-redesign|6">
+                <span class="icon"></span>
+            </a>
+        </li>
+            </ul>
+</div>
+<!-- e hearst/article/mobile_share.tpl -->
+    </div>
+        <div class="article-body">
+        <!-- hearst/article/types/story_body_r2.tpl -->
+
+<div class="asset_gallery"><!-- gallery float --><!-- design/gallery/main_redesign.tpl -->
+
+
+                                                            <div class="hst-resgallery-container static-frame full-captions">
+            <div class="hst-resgallery-wedge">
+                <ul class="hst-resgallery">
+                                                                                                                                            <li class="hst-resgalleryitem" item_id="photo-12234281" >
+                                                                                                                                                        
+                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="img-wrap landscape">
+                                                                                                
+                                                                                                    <img lazy-state="loaded" src="http://ww2.hdnux.com/photos/56/52/70/12234281/3/920x920.jpg" alt="Indianapolis Colts owner Jim Irsay is turning to another first-time general manager to get his franchise back on track. Photo: Michael Conroy, AP / Copyright 2017 The Associated Press. All rights reserved." class="landscape" />
+
+                                                
+                                                                
+                                </div>
+                                                    </li>
+                                                                                                                                                                    </ul>
+            </div>
+            <div class="hst-resgallerynav small hidden">
+                <div class="carousel">
+                    <ul class="clearfix">
+                                                                                                                                                                                    <li class="thumb selected">
+                                <a class="hdn-analytics" href="#photo-12234281" data-hdn-analytics="gallery_thumbnails_photo|photo-12234281|article-gallery-10892758|1">
+                                    <div class="inner-border"></div>
+                                                                                                                    <img load-src="http://ww2.hdnux.com/photos/56/52/70/12234281/3/square_gallery_thumb.jpg"  alt="Indianapolis Colts owner Jim Irsay is turning to another first-time general manager to get his franchise back on track.">
+                                                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+                        <div class="control-panel">
+                <span id="gallerySection" data="sports sports-texans"></span>
+                <div class="control-panel-inner">
+                                                                                                                                                                                                                                                                                                                                                                                                        
+                                                                                                                                                                                                                                <!-- hearst/article/mobile_share.tpl -->
+
+<div class="social-links hidden"
+    social-url="http%3A%2F%2Fwww.chron.com%2Fsports%2Ftexans%2Farticle%2FColts-hire-Kansas-City-s-Ballard-as-general-10892758.php%3Fcmpid%3D"
+    social-hashId="%23photo-12234281"
+    social-blurb="Indianapolis%20Colts%20owner%20Jim%20Irsay%20is%20turning%20to%20another%20first-time%20general%20manager%20to%20get%20his%20franchise%20back%20on%20track."
+    media-url="http%3A%2F%2Fww2.hdnux.com%2Fphotos%2F56%2F52%2F70%2F12234281%2F3%2F960x960.jpg"
+    social-title="Colts%20hire%20Kansas%20City%27s%20Chris%20Ballard%20as%20general%20manager">
+    <ul class="right">
+                    <li class="socialIcon print">
+                <a class="hdn-analytics" href="javascript:hst_print();"
+                    data-hdn-analytics="print_article_inline|photo-12234281|article-gallery-10892758|7">
+                    <span class="icon"></span>
+                </a>
+            </li>
+                <li class="socialIcon comments">
+
+                                                                                                    <a class="hdn-analytics" href="http://www.chron.com/sports/texans/articleComments/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php" onclick="document.location.href = document.location.href.replace('/article/','/articleComments/'); return false;" data-hdn-analytics="comments_jump_inline|photo-12234281|article-gallery-10892758|1">
+                    <span class="icon"></span>
+                </a>
+                                                        <div class="viafoura">
+                    <span class="vf-counter vf-widget" data-widget="counter"></span>
+                </div>
+            
+        </li>
+            </ul>
+    <ul class="left">
+        <li class="socialIcon email" share-id="email">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="email_share_inline|photo-12234281|article-gallery-10892758|1">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon facebook" share-id="facebook">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="facebook_share_inline|photo-12234281|article-gallery-10892758|2">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon twitter" share-id="twitter">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="twitter_share_inline|photo-12234281|article-gallery-10892758|3">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon pinterest" share-id="pinterest">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="pinterest_share_inline|photo-12234281|article-gallery-10892758|4">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon reddit" share-id="reddit">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="reddit_share_inline|photo-12234281|article-gallery-10892758|5">
+                <span class="icon"></span>
+            </a>
+        </li>
+        <li class="socialIcon google" share-id="google">
+            <a class="hdn-analytics"
+                href=""
+                                onclick="return false;"
+                data-hdn-analytics="google_share_inline|photo-12234281|article-gallery-10892758|6">
+                <span class="icon"></span>
+            </a>
+        </li>
+            </ul>
+</div>
+<!-- e hearst/article/mobile_share.tpl -->
+                                                
+                    <div class="control-bar">
+                        <div class="control-bar-left">
+                                               <div class="control-bar-credit">
+                                                                                                                                                                              <!-- design/gallery/caption_redesign.tpl -->
+                    <span class="credit">
+                                            Photo: Michael Conroy, AP
+                                    </span>
+            
+<!-- e design/gallery/caption_redesign.tpl -->                                                                                                       </div>
+                        </div>
+                        <div class="control-bar-right">
+                            <div class="slide-count"><div class="nav-stats">Image <span class="item-count-current">1</span><span class="nav-stats-of">of</span><span class="nav-stats-slash">/</span><span class="item-count-total">1</span></div></div>
+                            <div class="captionlink fade"><p class="open">Caption</p><p class="close">Close</p></div>
+                            <div class="play"><span class="icon action"></span></div>
+                            <div class="thumblink fade hdn-analytics" data-hdn-analytics="gallery_thumbnails_show|article-gallery-10892758|article-gallery-10892758|0">
+                                <span class="icon action"></span>
+                            </div>
+                            <div class="overlaylink expanded"><span class="icon action"></span></div>
+                            <div class="overlaylink fullscreen hdn-analytics" data-hdn-analytics="gallery_overlay_open|article-gallery-10892758|article-gallery-10892758|0">
+                                <span class="icon action"></span>
+                            </div>
+                            <div class="overlaylink thumbs hdn-analytics" data-hdn-analytics="gallery_overlay_open_thumbs|article-gallery-10892758|article-gallery-10892758|0">
+                                <span class="icon action"></span>
+                            </div>
+                            <div class="share-toggle"><span class="icon action"></span></div>
+                        </div>
+                    </div>
+                    <div class="caption-wedge"></div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                    <!-- design/gallery/caption_redesign.tpl -->
+                <div class="caption ">
+                                                                            <div class="slide-count">
+                                                                        <div class="nav-stats">
+                                                                                <span class="label">Image </span><span class="item-count-current">1</span><span> of </span><span class="item-count-total">1</span>
+                                                                                                                                                        </div>
+                                                                        
+                                                                </div>
+                                                                                                                                                                                                                                            <div class="caption-full">Indianapolis Colts owner Jim Irsay is turning to another first-time general manager to get his franchise back on track.</div>
+                    <div class="caption-truncated">Indianapolis Colts owner Jim Irsay is turning to another first-time general manager to get his franchise back on track.</div>
+                                                                                    <span class="credit">
+                                            Photo: Michael Conroy, AP
+                                    </span>
+            
+                                </div>
+            
+<!-- e design/gallery/caption_redesign.tpl -->                                                                                                        
+                </div>
+                <!-- hearst/ads/medium_rectangle_ad_gallery.tpl -->
+
+<div id="ctpl-mediumrectangle4" class="ctpl-mediumrectangle clearfix">
+            <!-- hmb:go300 go300 ad -->
+        <div id="GO300" class="galleryAd"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("GO300"); /*]]>*/ </script></div>
+    </div>
+<!-- e hearst/ads/medium_rectangle_ad_gallery.tpl -->            </div>
+                        <div class="gallery-overlay-outter lights-on hidden">
+                <div class="gallery-overlay-inner">
+                    <div class="gallery-overlay-title-container">
+                        <div class="homeLink">
+                            <span class="icon"></span>
+                        </div>
+                        <div class="gallery-overlay-title">Colts hire Kansas City's Chris Ballard as general manager</div>
+                        <div class="slide-count fade">
+                            <div class="nav-stats"><span class="item-count-current">1</span><span>&nbsp;/&nbsp;</span><span class="item-count-total">1</span></div>
+                        </div>
+                        <div class="thumbs-close-overlay hdn-analytics" data-hdn-analytics="gallery_thumbs_close|article-gallery-10892758|article-gallery-10892758|0">
+                            <div class="thumbs-close-overlay-label"><span class="icon action"></span>Back to Gallery</div>
+                        </div>
+                        <div class="gallery-close-overlay fade hdn-analytics" data-hdn-analytics="gallery_overlay_close|article-gallery-10892758|article-gallery-10892758|0">
+                            <span class="icon action"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--/.hst-resgallery-container -->
+<!-- e design/gallery/main_redesign.tpl --></div><!-- /gallery float --><div class="fixed-asset perfectPixel"><!-- hearst/item/standalone.tpl -->
+<div class="hdnce-e hdnce-item-41836"><!-- mid:freeform.41836 -->
+<div id="hst-mediumrectangle4" class="hst-mediumrectangle">
+	<div id="TMP300_3" class="ad_deferrable">
+		<script type="text/javascript">/*<![CDATA[*/hearstPlaceAd("TMP300_3");/*]]>*/</script>
+	</div>
+</div>
+</div><!-- / hdnce-e --></div><p>INDIANAPOLIS (AP) &mdash; <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Indianapolis+Colts%22">Indianapolis Colts</a> owner <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Jim+Irsay%22">Jim Irsay</a> is turning to another first-time general manager to get his franchise back on track.</p>
+<p>Eight days after firing <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Ryan+Grigson%22">Ryan Grigson</a> and conducting a week of interviews, Irsay hired former <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Kansas+City+Chiefs%22">Kansas City Chiefs</a> executive <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Chris+Ballard%22">Chris Ballard</a>.</p>
+<p>The announcement came Sunday on the team's website.</p>
+<p>"Chris has a solid reputation throughout the <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22National+Football+League%22">National Football League</a> as a heavyweight executive and our extensive discussions with him confirmed that reputation," Irsay said in a statement released by the team. "He's a savvy, organized, and thorough talent evaluator, but beyond that, he's a terrific person our community will be proud of."</p>
+<!-- fixed-asset perfectPixelWide --><!-- hearst/item/standalone.tpl -->
+<div class="hdnce-e hdnce-item-47758"><!-- mid:freeform.47758 -->
+<div class="fixed-asset perfectPixelWide ndn_embed" id="ndn-video-player-1" data-config-distributor-id="90000" data-config-width="100%" data-config-height="9/16w"></div>
+</div><!-- / hdnce-e --><!-- e fixed-asset perfectPixelWide --><p>Ballard has never previously served as a team's top decision-maker, but he comes with a long history as a scout and front-office experience.</p>
+<p>He was hired by the Chiefs in 2013 as the director of player personnel and was promoted to director of football operations under current GM <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22John+Dorsey%22">John Dorsey</a> in 2015.</p>
+<p>Last season, the Chiefs earned the No. 2 seed in the AFC playoffs and they've been a consistent playoff contender despite not having a Pro Bowl quarterback.</p>
+<p>Like Grigson, Ballard worked with coach <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Andy+Reid%22">Andy Reid</a>. And like Grigson, the move comes after most teams had already announced offseason coaching and front office changes.</p>
+<p>"I am so thankful to Mr. Irsay and his entire family for this opportunity to join the Colts organization," Ballard said. "I appreciate everyone who has been involved in the search process. I look forward to working with (coach) Chuck (Pagano) and his staff, the personnel staff, and all the outstanding Colts employees.</p>
+<p>Irsay has already said he expects Pagano back on the sideline next season.</p>
+<p>Ballard was chosen from a pool of six candidates, each of whom interviewed with Irsay during the week. Ballard reportedly was brought in for a second interview this weekend.</p>
+<p>The former <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22University+of+Wisconsin%22">University of Wisconsin</a> football player began his front office career as an area scout with the <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Chicago+Bears%22">Chicago Bears</a>. In 2012, he became the Bears' director of pro scouting. Kansas City hired him the next season, and he became a prime candidate around the league.</p>
+<p>Ballard also was an assistant coach at Texas A&amp;M-Kingsville from 1994-2000. He finished his college career as a student assistant for the Badgers after multiple knee injuries ended his playing career.</p>
+<p>He now takes over a team that has missed the playoffs each of the past two seasons after going 8-8.</p>
+<p>But he also now build a young, improving offense that includes one of the league's best young quarterbacks in <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Andrew+Luck%22">Andrew Luck</a>, a Pro Bowl receiver in T.Y. Hilton and a young offensive line that played its best football over the last month of the season.</p>
+<p>What he still needs to do is come up with playmakers on a defense that could be in for a major offseason overhaul.</p>
+<p><a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Robert+Mathis%22">Robert Mathis</a>, Indy's career sacks leader, is retiring, and last season's sacks leader, <a href="/search/?action=search&amp;channel=sports%2Ftexans&amp;inlineLink=1&amp;searchindex=gsa&amp;query=%22Erik+Walden%22">Erik Walden</a>, could become an unrestricted free agent.</p>
+<p>The team has not yet scheduled a formal introduction.</p>
+<p>"He brings a wealth of knowledge and a ton of experience to the organization," Pagano said. "I'm looking forward to rolling up our sleeves and going to work alongside him."</p>
+<p>___</p>
+<p>For more NFL coverage: <a href="http://www.pro32.ap.org">http://www.pro32.ap.org</a> and <a href="http://www.twitter.com/AP_NFL">http://www.twitter.com/AP_NFL</a></p>
+
+
+<!-- e hearst/article/types/story_body_r2.tpl -->
+    </div><!--/article-body-->
+
+        <div class="article-footer twelve-9 twelve-12">
+                    
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.19376 -->
+    <div class="hst-freeform hdnce-e hdnce-item-19376">
+                <div class="OUTBRAIN" data-widget-id="AR_2" data-ob-template="chron" ></div>
+    </div>
+                  
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.19377 -->
+    <div class="hst-freeform hdnce-e hdnce-item-19377">
+                <div class="OUTBRAIN" data-widget-id="AR_3" data-ob-template="chron" ></div>
+    </div>
+                  
+    <!-- src/business/widgets/hearst/collection/widget.tpl -->
+
+    <div class="hide-rss-link hdnce-e hdnce-collection-76476-core_promo"><!-- hearst/collections/core_promo.tpl -->
+<!-- collection.core_promo.76476 -->
+   <!-- design/collection/core_promo/single_zone.tpl  -->
+      <div class="core-promo sports">
+      <div class="header">
+         <!-- zone1 -->
+         <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                            <a href="http://www.houstonchronicle.com/sports/texas-sports-nation/"><h2><span class="first-word">Texas</span> Sports Nation</h2></a>
+            <!-- e widgets/hearst/moduleHeader/widget.tpl -->         <!-- e zone1 -->
+      </div>
+      <!-- hearst/collections/core_promo_body.tpl -->
+<ul>
+                                                                            <li class="item total-4"><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/Rewind-Revisiting-memorable-Rockets-all-star-10938117.php" data-hdn-analytics="visit-from-img|article-10938117|core_promo-76476|1"><img src="http://ww2.hdnux.com/photos/57/17/54/12385081/3/core_promo.jpg"alt="NEW YORK, NY - FEBRUARY 15:  James Harden #13 of the Houston Rockets and the Western Conference dribbles the ball during the 2015 NBA All-Star Game at Madison Square Garden on February 15, 2015 in New York City.  NOTE TO USER: User expressly acknowledges and agrees that, by downloading and/or using this photograph, user is consenting to the terms and conditions of the Getty Images License Agreement.  (Photo by Elsa/Getty Images)"srcset="http://ww2.hdnux.com/photos/57/17/54/12385081/3/core_promo.jpg 600w,http://ww2.hdnux.com/photos/57/17/54/12385081/3/core_promo_medium.jpg 411w,http://ww2.hdnux.com/photos/57/17/54/12385081/3/core_promo_small_.jpg 270w"sizes="(min-width: 61.625rem) 270px, (min-width: 27.625rem) 600px, 411px"/></a><h4><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/Rewind-Revisiting-memorable-Rockets-all-star-10938117.php" data-hdn-analytics="visit|article-10938117|core_promo-76476|1">Rewind: Memorable Rockets all-star performances</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h4></li>
+                                                                                    <li class="item total-4"><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/These-Houston-coaches-enjoyed-quick-success-10938199.php" data-hdn-analytics="visit-from-img|article-10938199|core_promo-76476|2"><img src="http://ww1.hdnux.com/photos/50/56/74/10678036/9/core_promo.jpg"alt="06/23/1994 - Houston Rockets at their sold-out victory party in the Astrodome Thursday night, June 23, 1994. Rockets coach Rudy Tomjanovich speaks to the nearly 52,000 fans celebrating the Houston Rockets' victory over the New York Knicks for the National Basketball Association championship. Â Houston Chronicle"srcset="http://ww1.hdnux.com/photos/50/56/74/10678036/9/core_promo.jpg 600w,http://ww1.hdnux.com/photos/50/56/74/10678036/9/core_promo_medium.jpg 411w,http://ww1.hdnux.com/photos/50/56/74/10678036/9/core_promo_small_.jpg 270w"sizes="(min-width: 61.625rem) 270px, (min-width: 27.625rem) 600px, 411px"/></a><h4><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/These-Houston-coaches-enjoyed-quick-success-10938199.php" data-hdn-analytics="visit|article-10938199|core_promo-76476|2">These Houston coaches enjoyed quick success</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h4></li>
+                                                                                    <li class="item total-4"><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/What-to-watch-The-weekend-s-top-sports-on-TV-10937755.php" data-hdn-analytics="visit-from-img|article-10937755|core_promo-76476|3"><img src="http://ww1.hdnux.com/photos/57/17/42/12384400/3/core_promo.jpg"alt="Houston Rockets' James Harden, left, argues a call with official Brian Forte, right, during the second half of the team's NBA basketball game against the Charlotte Hornets in Charlotte, N.C., Thursday, Feb. 9, 2017. The Rockets won 107-95. (AP Photo/Chuck Burton)"srcset="http://ww1.hdnux.com/photos/57/17/42/12384400/3/core_promo.jpg 600w,http://ww1.hdnux.com/photos/57/17/42/12384400/3/core_promo_medium.jpg 411w,http://ww1.hdnux.com/photos/57/17/42/12384400/3/core_promo_small_.jpg 270w"sizes="(min-width: 61.625rem) 270px, (min-width: 27.625rem) 600px, 411px"/></a><h4><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/What-to-watch-The-weekend-s-top-sports-on-TV-10937755.php" data-hdn-analytics="visit|article-10937755|core_promo-76476|3">What to watch: The weekend's top sports on TV</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h4></li>
+                                                                                    <li class="item total-4"><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/Houston-HS-basketball-primer-Feb-17-10937778.php" data-hdn-analytics="visit-from-img|article-10937778|core_promo-76476|4"><img src="http://ww2.hdnux.com/photos/57/15/02/12374153/5/core_promo.jpg"alt="College Park guard Quentin Grimes (5) shoots over Conroe guard Blaine Alger (22) during the third quarter of a District 12-6A high school boys basketball game at College Park High School Tuesday, Feb. 14, 2017, in The Woodlands. College Park defeated Conroe 87-74."srcset="http://ww2.hdnux.com/photos/57/15/02/12374153/5/core_promo.jpg 600w,http://ww2.hdnux.com/photos/57/15/02/12374153/5/core_promo_medium.jpg 411w,http://ww2.hdnux.com/photos/57/15/02/12374153/5/core_promo_small_.jpg 270w"sizes="(min-width: 61.625rem) 270px, (min-width: 27.625rem) 600px, 411px"/></a><h4><a class="hdn-analytics "  href="/sports/texas-sports-nation/article/Houston-HS-basketball-primer-Feb-17-10937778.php" data-hdn-analytics="visit|article-10937778|core_promo-76476|4">Houston HS basketball primer: Feb. 17</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h4></li>
+            </ul>
+<!-- e hearst/collections/core_promo_body.tpl -->    </div>
+  <!-- e design/collection/core_promo/single_zone.tpl  --><!-- e hearst/collections/core_promo.tpl -->
+</div><!-- e src/business/widgets/hearst/collection/widget.tpl -->    
+                        <!-- business/templates/design/item/single_zone.tpl -->
+  <!-- mid:freeform.66433 -->
+      <div class="hst-freeform hdnce-e hdnce-item-66433">
+        <div class="header clearfix">
+            <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                            <h2><span class="first-word">Watch</span> Texas Sports Nation</h2>
+            <!-- e widgets/hearst/moduleHeader/widget.tpl -->        </div>
+        <div style="position: relative; padding-bottom: 75%; height: 0px;"><iframe src="//player.hearstdigitalstudios.com/playlists/57d8085ae694aa77df0ddb12?sdbp=bottom&duration=true" frameborder="0" allowfullscreen="true" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+    </div>
+  <!-- e business/templates/design/item/single_zone.tpl -->
+                
+                                <!-- hearst/ads/full_banner_B728.tpl -->
+<div id="ctpl-fullbanner2" class="ctpl-fullbanner">
+            <!-- hmb:b728 b728 ad -->
+       <div id="B728" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("B728"); /*]]>*/</script></div>
+    </div>
+<!-- e hearst/ads/full_banner_B728.tpl -->                    </div><!--/article-footer-->
+</div><!--/article-content-->
+
+<!-- hearst/article/types/story_right_r2.tpl  -->
+	<div class="article-sidebar">
+		    
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.6541 -->
+    <div class="hst-freeform hdnce-e hdnce-item-6541">
+                <!-- Begin Hearst Ad -->
+<div id="A234">
+    <script type="text/javascript">/*<![CDATA[*/hearstPlaceAd("A234");/*]]>*/</script>
+</div>
+<!-- End Hearst Ad -->
+    </div>
+                  
+                        <!-- business/templates/design/item/single_zone.tpl -->
+  <!-- mid:freeform.40688 -->
+      <div class="hst-freeform hdnce-e hdnce-item-40688">
+        <div class="header clearfix">
+            <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                            <h2><span class="first-word">Latest</span> Videos</h2>
+            <!-- e widgets/hearst/moduleHeader/widget.tpl -->        </div>
+        <div class="ndn_embed" data-config-widget-id="11737" data-config-type="VideoLauncher/Slider300x250" data-config-tracking-group="90000"></div><script type="text/javascript">var _ndnq = _ndnq || []; _ndnq.push(['embed']);</script>
+    </div>
+  <!-- e business/templates/design/item/single_zone.tpl -->
+                
+    		<!-- templates/hearst/ads/medium_rectangle_ad_first.tpl  -->
+    <div id="ctpl-mediumrectangle1" class="ctpl-mediumrectangle clearfix">
+                    <!-- hmb:a300 a300 ad -->
+            <div id="A300" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("A300"); /*]]>*/</script></div>
+            </div>
+<!-- e templates/hearst/ads/medium_rectangle_ad_first.tpl  -->
+
+ 
+		    
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.19378 -->
+    <div class="hst-freeform hdnce-e hdnce-item-19378">
+                <div class="OUTBRAIN" data-widget-id="SB_1" data-ob-template="chron" ></div>
+    </div>
+                  
+        
+    <!-- src/business/widgets/hearst/collection/widget.tpl -->
+
+    <div class="hide-rss-link hdnce-e hdnce-collection-68587-core_headline_list"><!-- hearst/collections/core_headlinelist.tpl -->
+<!-- collection.core_headline_list.68587 -->
+   <!-- design/collection/core_headline_list/single_zone.tpl  -->
+  
+    <div class="core-headline-list sports">
+       <div class="header">
+          <!-- zone1 -->
+          <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                            <a href="http://www.chron.com/sports/texans"><h2><span class="first-word">Latest</span> Texans news</h2></a>
+            <!-- e widgets/hearst/moduleHeader/widget.tpl -->          <!-- e zone1 -->
+       </div>
+    <!-- hearst/collections/core_headline_list_body.tpl -->
+<ul>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/Texans-Quintin-Demps-soaks-up-knowledge-from-Ken-10939278.php" data-hdn-analytics="visit|article-10939278|core_headline_list-68587|1">Texans' Quintin Demps soaks up knowledge from Ken Houston</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/Jets-Revis-faces-pending-charges-after-fight-in-10939266.php" data-hdn-analytics="visit|article-10939266|core_headline_list-68587|2">Jets' Darrelle Revis faces pending charges after fight in...</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/John-McClain-on-the-Texans-offseason-10938782.php" data-hdn-analytics="visit|article-10938782|core_headline_list-68587|3">John McClain on the Texans offseason</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/Texans-Johnathan-Joseph-looking-forward-to-W-10938630.php" data-hdn-analytics="visit|article-10938630|core_headline_list-68587|4">Texans' Johnathan Joseph looking forward to W. Va. training camp</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/Agent-Vince-Young-in-talks-with-CFL-s-Roughriders-10938171.php" data-hdn-analytics="visit|article-10938171|core_headline_list-68587|5">Agent: Vince Young in talks with CFL's Roughriders</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/Le-Veon-Bell-announces-release-of-rap-album-10935991.php" data-hdn-analytics="visit|article-10935991|core_headline_list-68587|6">Le'Veon Bell announces release date of rap album</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/Vince-Young-dreams-of-playing-more-football-10935646.php" data-hdn-analytics="visit|article-10935646|core_headline_list-68587|7">Vince Young "dreams of playing more football," signs with...</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/UH-s-Greg-Ward-invited-to-NFL-combine-as-wide-10934551.php" data-hdn-analytics="visit|article-10934551|core_headline_list-68587|8">UH's Greg Ward invited to NFL combine as wide receiver</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/Texans-unlikely-to-use-franchise-tag-10934353.php" data-hdn-analytics="visit|article-10934353|core_headline_list-68587|9">Texans unlikely to use franchise tag</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+                                                <li class="item"><div class="itemWrapper"><h5><a class="hdn-analytics "  href="/sports/texans/article/J-J-Watt-Charity-Classic-details-go-on-sale-10932201.php" data-hdn-analytics="visit|article-10932201|core_headline_list-68587|10">J.J. Watt Charity Classic tickets go on sale March 4</a><!-- subitem_timestamp.tpl --><!-- e subitem_timestamp.tpl --></h5></div></li>
+    </ul>
+<!-- e hearst/collections/core_headline_list_body.tpl -->    </div>
+  <!-- e design/collection/core_headline_list/single_zone.tpl  --><!-- e hearst/collections/core_headlinelist.tpl -->
+</div><!-- e src/business/widgets/hearst/collection/widget.tpl -->    
+        
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.52390 -->
+    <div class="hst-freeform hdnce-e hdnce-item-52390">
+                <a class="twitter-timeline" href="https://twitter.com/GregRajan/lists/tweeting-the-texans" data-widget-id="694628139306188801">Tweets from https://twitter.com/GregRajan/lists/tweeting-the-texans</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+                  
+                        <!-- business/templates/design/item/single_zone.tpl -->
+  <!-- mid:freeform.65473 -->
+      <div class="hst-freeform hdnce-e hdnce-item-65473">
+        <div class="header clearfix">
+            <!-- widgets/hearst/moduleHeader/widget.tpl -->
+                            <h2><span class="first-word">Latest</span> Sports Video</h2>
+            <!-- e widgets/hearst/moduleHeader/widget.tpl -->        </div>
+        <div style="position: relative; padding-bottom: 75%; height: 0px;"><iframe src="//player.hearstdigitalstudios.com/playlists/57d16f66e694aa77eb2424e7?sdbp=bottom&duration=true" frameborder="0" allowfullscreen="true" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%;"></iframe></div>
+    </div>
+  <!-- e business/templates/design/item/single_zone.tpl -->
+            		<!-- hearst/ads/medium_rectangle_ad_second.tpl -->
+
+<div id="ctpl-mediumrectangle2" class="ctpl-mediumrectangle clearfix">
+            <!-- hmb:b300 b300 ad -->
+        <div id="B300" class="B300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("B300"); /*]]>*/ </script></div>
+    </div>
+<!-- e medium_rectangle_ad_second.tpl -->		<div id="NTV7"></div>
+		    
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.51534 -->
+    <div class="hst-freeform hdnce-e hdnce-item-51534">
+                <!-- INCLUDE THESE STYLESHEET ONCE ON ANY PAGE YOU HAVE A STATS WIDGET -->
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/shsdefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/shs.css">
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/multidefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/multi.css">
+
+<style>
+.hdnce-item-51534 #shsBody { position: static; }
+</style>
+
+<script language="javascript" SRC="http://chron.stats.com/multisport/today-byteam.js.asp?sport=fb&team=34&lang=en&random='+(nowSecsSTATS * Math.Random)+&lang=en"></script>
+
+<!-- 
+<script language="JavaScript">
+	var nowSTATS = new Date();
+	var nowSecsSTATS = nowSTATS.getTime();
+	document.write( '<scr'+'ipt language="javascript" SRC="http://chron.stats.com/multisport/today-byteam.js.asp?sport=fb&team=34&lang=en&random='+(nowSecsSTATS * Math.Random)+'"> <\/scr'+'ipt>' );
+</script>
+-->
+    </div>
+                  
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.51602 -->
+    <div class="hst-freeform hdnce-e hdnce-item-51602">
+                <!-- INCLUDE THESE STYLESHEET ONCE ON ANY PAGE YOU HAVE A STATS WIDGET -->
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/shsdefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/shs.css">
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/multidefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/multi.css">
+
+<script language="javascript" SRC="http://chron.stats.com/multisport/stats.js.asp?sport=fb&type=schedrslt&team=34&lang=en"></script>
+    </div>
+                  
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.51603 -->
+    <div class="hst-freeform hdnce-e hdnce-item-51603">
+                <!-- INCLUDE THESE STYLESHEET ONCE ON ANY PAGE YOU HAVE A STATS WIDGET -->
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/shsdefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/shs.css">
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/multidefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/multi.css">
+
+<script language="javascript" SRC="http://chron.stats.com/multisport/stats.js.asp?sport=fb&type=standings&div=AFCSouth&lang=en"></script>
+    </div>
+                  
+                        <!-- business/templates/design/item/default.tpl -->
+      <!-- mid:freeform.51604 -->
+    <div class="hst-freeform hdnce-e hdnce-item-51604">
+                <!-- INCLUDE THESE STYLESHEET ONCE ON ANY PAGE YOU HAVE A STATS WIDGET -->
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/shsdefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/shs.css">
+<link rel="stylesheet" type="text/css" href="http://hosted.stats.com/config/multidefault.css">
+<link rel="stylesheet" type="text/css" href="http://chron.stats.com/multi.css">
+
+<script language="javascript" SRC="http://chron.stats.com/multisport/stats.js.asp?sport=fb&type=teamstats&team=34&lang=en"></script>
+    </div>
+                                                  <!-- hearst/ads/medium_rectangle_ad_third.tpl -->
+
+<div id="ctpl-mediumrectangle3" class="ctpl-mediumrectangle clearfix">
+            <!-- hmb:s300 s300 ad -->
+        <div id="S300" class="S300 ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("S300"); /*]]>*/ </script></div>
+    </div>
+<!-- e medium_rectangle_ad_third.tpl -->                	</div><!--/article-sidebar-->
+<!-- e hearst/article/types/story_right_r2.tpl  -->
+<div class="article-comments">
+        <div id="comments" class="hdn-comments">
+        <a href="http://www.chron.com/sports/texans/articleComments/Colts-hire-Kansas-City-s-Ballard-as-general-10892758.php" onclick="document.location.href = ($('.hst-resgalleryitem:not(&quot;.hidden&quot;) .img-wrap.outbrainloader').length > 0 ? $(this).attr('href') : document.location.href.replace('/article/','/articleComments/')); return false;" class="comments-btn" rel="nofollow"> View Comments </a>
+    </div>
+    </div>
+
+<div class="print-footer">
+    <span>&copy; 2017 Hearst Communications, Inc.</span>
+    <img src="/img/print-footer-logo.png">
+</div>
+<!-- e hearst/article/types/story_r2.tpl --><!-- e templates/design/article/story_page_r2.tpl -->        </div>
+
+
+<script>
+    var HDN = HDN || {};
+
+    HDN.ping( {
+        "id": 10892758,
+        "site": "chron",
+        "type": "article"
+    });
+    $(document).ready(function () {
+        return hst_get_fprefs(this);
+    });
+</script>
+
+
+
+    <!-- hearst/common/site_footer.tpl -->        <!-- THIRDPARTY FOOTER MARKER --><!-- DONT REMOVE -->
+
+      <!-- hearst/ads/full_banner_B728.tpl -->
+<div id="ctpl-fullbanner2" class="ctpl-fullbanner">
+            <!-- hmb:b728 b728 ad -->
+       <div id="B728" class="ad_deferrable"><script type="text/javascript">/*<![CDATA[*/ hearstPlaceAd("B728"); /*]]>*/</script></div>
+    </div>
+<!-- e hearst/ads/full_banner_B728.tpl -->  
+        </div><!-- /#content -->
+      </article>
+  
+  <footer>
+      
+      <!-- hearst/item/standalone.tpl -->
+<div class="hdnce-e hdnce-item-41834"><!-- mid:freeform.41834 -->
+<div class="header">
+    <span class="logo">Logo</span>
+    <span class="top"><a href="#">Return to Top</a></span>
+</div>
+<div class="body">
+    <div class="about">
+         <h3>About</h3>
+         <ul>
+                 <li><a href="http://www.hearst.com/newspapers/houston-chronicle">Our Company</a></li>
+                 <li><a href="http://www.chron.com/careers">Careers</a></li>
+                 <li><a href="http://marketing.chron.com/home">Advertise with Us</a></li>
+                 <li><a href="http://www.aboutads.info/choices/" class="adchoices">Ad Choices</a></li>
+                 <li><a href="/terms_of_use/">Terms & Conditions</a></li>
+                 <li><a href="/privacy_policy/">Privacy Policy</a></li>
+                 <li><a href="/privacy_policy/#caprivacyrights">Your California Privacy Rights</a></li>
+        </ul>
+    </div>
+    <div class="contact">
+            <h3>Contact</h3>
+            <ul>
+                    <li><a href="https://myaccount.houstonchronicle.com/FAQ.aspx">Customer Service</a></li>
+                    <li><a href="/about/newsroom/">Newsroom Contacts</a></li>
+            </ul>
+    </div>
+    <div class="connect">
+            <h3>Connect</h3>
+            <ul>
+                    <li><a href="/newsletters/">Email Newsletter</a></li>
+                    <li><a href="https://www.facebook.com/chroncom" class="facebook">Facebook</a></li>
+                    <li><a href="https://twitter.com/houstonchron" class="twitter">Twitter</a></li>
+                    <li><a href="https://www.pinterest.com/houstonchron/" class="pinterest">Pinterest</a></li>
+                    <!-- <li><a href="#" class="reddit">Reddit</a></li> -->
+                    <li><a href="https://plus.google.com/+houstonchronicle/posts" class="google">Google</a></li>
+                    <li><a href="https://instagram.com/houstonchron/" class="instagram">Instagram</a></li>
+            </ul>
+    </div>
+    <div class="subscribe">
+            <h3>Subscribe</h3>
+            <ul>
+                    <li><a href="/ipad/">iPad app</a></li>
+                    <!-- <li><a href="/iphone/">iPhone app</a></li> -->
+                    <li><a href="http://www.houstonchronicle.com/">HoustonChronicle.com</a></li>
+                    <li><a href="http://www.houstonchronicle.com/archive">Houston Chronicle Archives</a></li>
+                    <li><a href="http://digital.olivesoftware.com/Olive/ODN/HoustonChronicleDemo/">eEdition Demo</a></li>
+                    <li><a href="http://digital.olivesoftware.com/Olive/ODN/houstonchronicle/Default.aspx">Today's eNewspaper</a></li>
+            </ul>
+    </div>
+</div>
+<div class="footer">
+    <span class="logo">Hearst Newspapers</span>
+    <span class="copyright">&copy; Copyright <script type="text/javascript">document.write(new Date().getFullYear());</script> Hearst Newspapers, LLC</span>
+</div>
+</div><!-- / hdnce-e -->        
+  </footer><!--/footer-->
+  <div id="hst-richmedia" class="hst-richmedia">
+            <!-- hmb:mrm mrm ad -->
+        <div id="MRM" class="ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("MRM"); /*]]>*/ </script></div>
+    </div>  <!-- hearst/ads/mobile_ad_MAD.tpl -->
+<div id="hst-adhesion" class="hst-adhesion clearfix">
+             <!-- hmb:mad mad ad -->
+         <div id="MAD" class="ad_deferrable"><script type="text/javascript"> /*<![CDATA[*/ hearstPlaceAd("MAD"); /*]]>*/ </script></div>
+    </div>
+<!-- e mobile_ad_MAD.tpl -->
+<!-- hmb:isa_bottom  include static asset for group js bottom  -->
+        <script type="text/javascript" src="/external/js/global.bottom.r8.2.0.16.js"></script>
+
+        
+            <!-- templates/hearst/home/viafouraFooterJS.tpl -->
+<script>
+                
+    $(document).ready(function () {
+    
+        
+        var vfDomains = {};
+        $('body').find('div.viafoura span.vf-counter[data-path^="http://"]').each(function () {
+            var matches = $(this).attr('data-path').match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i);
+            var domain = matches && matches[1];
+            if (!!domain) {
+                vfDomains[domain.replace(/^m\./, 'www.')] = 1;
+            }
+        });
+        for (d in vfDomains) {
+            HDN.getVfCommentCount(undefined,d,1);
+        }
+    });
+    
+</script>
+<!-- e templates/hearst/home/viafouraFooterJS.tpl -->
+            
+    
+<!-- hmb:jsperfectmarket js for perfect market pro -->
+                  
+         </body>
+<!-- e hearst/common/site_footer.tpl -->
+</html>
+<!-- e hearst/article/article_main.tpl -->

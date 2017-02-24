@@ -1,0 +1,2471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+	
+
+	<head>
+
+		
+		
+		<script type="text/javascript" src="scripts/bowser.min.js"></script>
+		<script type="text/javascript" src="scripts/swfobject.js"></script>
+
+		<script>
+			var playSessionID = "EA581D76-A8D3-73BF-7A2808C751E6C57C";
+			var mobilePlayer = false;
+			var mobilePlayerNew = false;
+			var privateLabel = false;
+			var centralSvrPrefixURL = "http://radio.securenetsystems.net/";
+			var adnSvrPrefixURL = "http://ssiadnweb.securenetsystems.net/";
+
+			var launchFrom = "";
+			var enableCirrusOmni = true;
+
+			var stationSlogan = "VYZION RADIO";
+			var cdnRfPrefixURL = "http://cdnrf.securenetsystems.net/file_radio/";
+			var playerBgImg = cdnRfPrefixURL + "v5/skins/red.png";
+
+			var geoCTCode = "US";
+			var geoDMACode = "544";
+			var geoLocLat = "36.9312";
+			var geoLocLon = "-76.2397";
+			var cGeoLocationLevel = "1";
+			var clientIPAddr = "128.82.21.127";
+
+			var playerAdvertisingMode = "ADN";
+			var bannerRotationFqcy = 20;
+			var definedBannerTypes = "M,D,N,E";
+			var sLocaFillOnAdnFail = false;
+			var sTerrFillOnLocalFail = true;
+			var sBedFillOnAllFail = false;
+			var sBedFillFileName = "COMMERCIAL-BREAK-BACKGROUNDER.m4a";
+			var sTspStnId = "";
+			var sGenre = "";
+			var logVPAID = false;
+			var vastAbortTimer;
+
+			var royaltyMarkProgram = 30;
+			var royaltyMarkAd = 90;
+
+			var adBlockerPresent = false;
+
+			
+			var prerollApp = new Array();
+
+			
+					
+					prerollApp.push("player-check-ab");
+					
+				
+			
+
+			var checkIEModernUI = false;
+
+			var playerAppOnDemand = true;
+			var playerAppHome = false;
+			var playerAppContact = true;
+			var playerAppFacebook = true;
+			var playerAppTwitter = true;
+			var playerAppYouTube = true;
+			var playerAppsYouTubeUserName = "https://www.youtube.com/user/VyzionEntertainment";
+			var youtubeUserType = "U";
+			var playerAppUstream = false;
+			var playerAppsUstreamCid = "";
+			var playerAppOtherStations = false;
+			var playerAppShareThis = true;
+			var playerAppNews = true;
+			var playerAppNewsSrc = "http://rss.cnn.com/rss/cnn_topstories.rss";
+			var playerAppSports = true;
+			var playerAppSportsSrc = "http://sports.espn.go.com/broadband/ivp/rss";
+			var playerAppStocks = true;
+			var playerAppStocksSrc = "http://online.wsj.com/xml/rss/3_7031.xml";
+			var playerAppEntertainment = true;
+			var playerAppEntertainmentSrc = "http://www.tmz.com/rss.xml";
+			var playerAppWeather = true;
+			var playerAppFlight = true;
+			var playerAppYelp = false;
+			var playerAppDeals = true;
+			var playerAppPolls = false;
+			var playerAppSongRequest = true;
+			var playerAppChat = true;
+			var chatChannel = "3773811246";
+			var playerAppGames = true;
+			var playerAppWobot = false;
+			var playerAppWobotSrc = "http://www.wobot.tv/rss/";
+			var playerAppPlaylist = true;
+			var playerAppLyrics = true;
+			var playerAppSendToMobile = true;
+			var playerAppHelp = true;
+
+			var playerAutoStartApp = "";
+			var listenSessionTimeout = 9999;
+			var playerAppTimeout = true;
+
+			var dspAlbumArt = true;
+			var dftAlbumArt = "http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/album-art-default.png";
+			var dspBuyMediaButton = true;
+			var dspMediaRate = true;
+
+			var dspMenuIcon = true;
+			var playerMenuAutoOpen = false;
+
+			var stationCallSign = "WVYZ";
+
+			var polling = new Object();
+			polling.enabled = true;
+			polling.active = false;
+			polling.adInsert = true;
+			
+			var adnPrebidEnable = true;
+			var adnPrebidFloor = 0.30;			
+			var adnPrebidTimeout = 800;		
+			var adnPrebidObj = new Object();
+
+			
+					adnPrebidObj[0]=new Object();
+					adnPrebidObj[0].externalProvider='ADNADV';
+					adnPrebidObj[0].cID="0D4588C9-A141-A5FE-60DBFCAEC6BD40BE";
+					adnPrebidObj[0].cIDn=24384;
+					adnPrebidObj[0].cType="PBB";
+					adnPrebidObj[0].aType="M";
+					adnPrebidObj[0].aHsize="300";
+					adnPrebidObj[0].aVsize="250";
+					adnPrebidObj[0].caCode="{\"bidder\": \"aol\", \"params\": {\"placement\": \"4001447\", \"network\": \"10068.1\", \"alias\": null, \"server\": \"adserver.adtechus.com\", \"sizeId\": \"170\"}}";
+					adnPrebidObj[0].pC=15.00;
+				
+					adnPrebidObj[1]=new Object();
+					adnPrebidObj[1].externalProvider='ADNCPX';
+					adnPrebidObj[1].cID="7BD9630D-E39D-A142-73BAF5ECB512A4FE";
+					adnPrebidObj[1].cIDn=24541;
+					adnPrebidObj[1].cType="PBB";
+					adnPrebidObj[1].aType="M";
+					adnPrebidObj[1].aHsize="300";
+					adnPrebidObj[1].aVsize="250";
+					adnPrebidObj[1].caCode="{\"bidder\": \"brealtime\", \"params\": {\"placementId\": 7722260}}";
+					adnPrebidObj[1].pC=0.00;
+				
+					adnPrebidObj[2]=new Object();
+					adnPrebidObj[2].externalProvider='ADNLIJ';
+					adnPrebidObj[2].cID="7BFD768B-F1DC-963D-3B7D81111F2840BB";
+					adnPrebidObj[2].cIDn=24542;
+					adnPrebidObj[2].cType="PBB";
+					adnPrebidObj[2].aType="M";
+					adnPrebidObj[2].aHsize="300";
+					adnPrebidObj[2].aVsize="250";
+					adnPrebidObj[2].caCode="{\"bidder\": \"sovrn\",\"params\": {\"tagid\": 402685}}";
+					adnPrebidObj[2].pC=0.00;
+				
+					adnPrebidObj[3]=new Object();
+					adnPrebidObj[3].externalProvider='ADNAPN';
+					adnPrebidObj[3].cID="845CAC5E-B285-F9AA-1ED2BFE45AD4385C";
+					adnPrebidObj[3].cIDn=24657;
+					adnPrebidObj[3].cType="PBB";
+					adnPrebidObj[3].aType="M";
+					adnPrebidObj[3].aHsize="300";
+					adnPrebidObj[3].aVsize="250";
+					adnPrebidObj[3].caCode="{\"bidder\": \"appnexus\",\"params\": {\"placementId\": \"6913509\"}}";
+					adnPrebidObj[3].pC=0.00;
+				
+					adnPrebidObj[4]=new Object();
+					adnPrebidObj[4].externalProvider='ADNAPN';
+					adnPrebidObj[4].cID="8468D9AD-BF80-89E4-BB12DB4FE06A65D6";
+					adnPrebidObj[4].cIDn=24658;
+					adnPrebidObj[4].cType="PBB";
+					adnPrebidObj[4].aType="D";
+					adnPrebidObj[4].aHsize="728";
+					adnPrebidObj[4].aVsize="90";
+					adnPrebidObj[4].caCode="{\"bidder\": \"appnexus\",\"params\": {\"placementId\": \"6913513\"}}";
+					adnPrebidObj[4].pC=0.00;
+				
+					adnPrebidObj[5]=new Object();
+					adnPrebidObj[5].externalProvider='ADNADV';
+					adnPrebidObj[5].cID="83CB3830-98DE-8ECD-C32DAE002B415A59";
+					adnPrebidObj[5].cIDn=24557;
+					adnPrebidObj[5].cType="PBB";
+					adnPrebidObj[5].aType="D";
+					adnPrebidObj[5].aHsize="728";
+					adnPrebidObj[5].aVsize="90";
+					adnPrebidObj[5].caCode="{\"bidder\": \"aol\", \"params\": {\"placement\": \"4001448\", \"network\": \"10068.1\", \"alias\": null, \"server\": \"adserver.adtechus.com\", \"sizeId\": \"225\"}}";
+					adnPrebidObj[5].pC=15.00;
+				
+					adnPrebidObj[6]=new Object();
+					adnPrebidObj[6].externalProvider='ADNLIJ';
+					adnPrebidObj[6].cID="83FC45A3-CF46-DA97-D2EF0D28BF421D7B";
+					adnPrebidObj[6].cIDn=24558;
+					adnPrebidObj[6].cType="PBB";
+					adnPrebidObj[6].aType="D";
+					adnPrebidObj[6].aHsize="728";
+					adnPrebidObj[6].aVsize="90";
+					adnPrebidObj[6].caCode="{\"bidder\": \"sovrn\", \"params\": {\"tagid\": \"402686\"}}";
+					adnPrebidObj[6].pC=0.00;
+				
+					adnPrebidObj[7]=new Object();
+					adnPrebidObj[7].externalProvider='ADNCPX';
+					adnPrebidObj[7].cID="84043680-A792-885E-5BC7946920C85D58";
+					adnPrebidObj[7].cIDn=24559;
+					adnPrebidObj[7].cType="PBB";
+					adnPrebidObj[7].aType="D";
+					adnPrebidObj[7].aHsize="728";
+					adnPrebidObj[7].aVsize="90";
+					adnPrebidObj[7].caCode="{\"bidder\": \"brealtime\", \"params\": {\"placementId\": 7722260}}";
+					adnPrebidObj[7].pC=0.00;
+				
+				// var streamProvider = "http";
+				var streamProvider = "http";
+
+				
+				
+				
+				var streamSRC = "http://ice9.securenetsystems.net/WVYZ?&playSessionID=EA581D76-A8D3-73BF-7A2808C751E6C57C";
+				var encoderType = "ACP";
+				var playlistType = "";
+				primary = "html5";
+				if(encoderType === "ACP"){
+					if((bowser.firefox) || (bowser.msie)){
+						if(swfobject.hasFlashPlayerVersion("1")){
+							if(streamSRC.indexOf(";stream.nsv") <= -1){
+								streamSRC += "&type=.flv";
+							}
+								playlistType = "flv";
+								primary = "flash";
+						}else{
+							if(!mobilePlayer){
+								prerollApp.push("flashRequired");
+							}
+						}
+					}else{
+						playlistType = "aac";
+						primary = "html5";
+					}
+				}else if(encoderType === "MP3"){
+					playlistType = "mp3"
+					primary = "html5";
+				}
+
+				// if(encoderType === "ACP"){
+				// 	if(streamSRC.indexOf(";stream.nsv") > -1){
+				// 		streamSRC += "&type=.flv";
+				// 		playlistType = "aac";
+				// 	}else{
+				// 		streamSRC += "&type=.flv";
+				// 		playlistType = "flv";
+				// 	}
+				// }else if(encoderType === "MP3"){
+				// 	if(streamSRC.indexOf(";stream.nsv") > -1){
+				// 		streamSRC += "&type=.flv";
+				// 		playlistType = "flv";
+				// 	}else{
+				// 		streamSRC += "&type=.flv";
+				// 		playlistType = "flv";
+				// 	}
+				// }
+				
+
+				var liveStreamEnable = true;
+				var streamRoot = "http://ice9.securenetsystems.net/media";
+
+				var blackout = new Object();
+				blackout.active = 0;
+				blackout.type = "";
+				blackout.app = "";
+				blackout.nextCheck = 86464000;
+				blackout.resumeTime = "Saturday, 2/18/2017 12:55 AM ET";
+
+				var rejoinPriority = "SPT";
+				var enforceRejoinPriority = true;
+
+				var persistAlbumArt = true;
+
+				
+				var xmlODUrl = "";
+				var onDemandQueue = new Object();
+
+				var onDemandFileCount = 53;
+				var onDemandAutoStart = false;
+				var onDemandFill = new Object();
+				onDemandFill.enabled = true;
+				onDemandFill.active = false;
+				
+
+						onDemandQueue[0]=new Object();
+						onDemandQueue[0].fileId=344065;
+						// onDemandQueue[0].fileName="The-V-Spot-Devonia-Reed-EP4.m4a";
+						onDemandQueue[0].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"The-V-Spot-Devonia-Reed-EP4.m4a";
+						onDemandQueue[0].fileDsp="The-V-Spot-Devonia-Reed-EP4";
+						onDemandQueue[0].duration="874.070";
+						onDemandQueue[0].video=false;
+						onDemandQueue[0].modal=false;
+					
+
+						onDemandQueue[1]=new Object();
+						onDemandQueue[1].fileId=344066;
+						// onDemandQueue[1].fileName="The-V-Spot-Secure-Culture-Clothing-EP3.m4a";
+						onDemandQueue[1].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"The-V-Spot-Secure-Culture-Clothing-EP3.m4a";
+						onDemandQueue[1].fileDsp="The-V-Spot-Secure-Culture-Clothing-EP3";
+						onDemandQueue[1].duration="916.420";
+						onDemandQueue[1].video=false;
+						onDemandQueue[1].modal=false;
+					
+
+						onDemandQueue[2]=new Object();
+						onDemandQueue[2].fileId=341402;
+						// onDemandQueue[2].fileName="The-Vspot-Chirs-Suggs-EP2.m4a";
+						onDemandQueue[2].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"The-Vspot-Chirs-Suggs-EP2.m4a";
+						onDemandQueue[2].fileDsp="The-Vspot-Chirs-Suggs-EP2";
+						onDemandQueue[2].duration="546.900";
+						onDemandQueue[2].video=false;
+						onDemandQueue[2].modal=false;
+					
+
+						onDemandQueue[3]=new Object();
+						onDemandQueue[3].fileId=335772;
+						// onDemandQueue[3].fileName="The-V-Spot-Jacquie-EP1.m4a";
+						onDemandQueue[3].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"The-V-Spot-Jacquie-EP1.m4a";
+						onDemandQueue[3].fileDsp="The-V-Spot-Jacquie-EP1";
+						onDemandQueue[3].duration="562.920";
+						onDemandQueue[3].video=false;
+						onDemandQueue[3].modal=false;
+					
+
+						onDemandQueue[4]=new Object();
+						onDemandQueue[4].fileId=236025;
+						// onDemandQueue[4].fileName="Rihanna---Work-feat.-Drake.mp4";
+						onDemandQueue[4].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"Rihanna---Work-feat.-Drake.mp4";
+						onDemandQueue[4].fileDsp="Rihanna---Work-feat.-Drake";
+						onDemandQueue[4].duration="220.380";
+						onDemandQueue[4].video=true;
+						onDemandQueue[4].modal=false;
+					
+
+						onDemandQueue[5]=new Object();
+						onDemandQueue[5].fileId=236027;
+						// onDemandQueue[5].fileName="G-Eazy-x-Bebe-Rexha---Me,-Myself---I.mp4";
+						onDemandQueue[5].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"G-Eazy-x-Bebe-Rexha---Me,-Myself---I.mp4";
+						onDemandQueue[5].fileDsp="G-Eazy-x-Bebe-Rexha---Me,-Myself---I";
+						onDemandQueue[5].duration="348.640";
+						onDemandQueue[5].video=true;
+						onDemandQueue[5].modal=false;
+					
+
+						onDemandQueue[6]=new Object();
+						onDemandQueue[6].fileId=236026;
+						// onDemandQueue[6].fileName="Nicki-Minaj---The-Night-Is-Still-Young.mp4";
+						onDemandQueue[6].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"Nicki-Minaj---The-Night-Is-Still-Young.mp4";
+						onDemandQueue[6].fileDsp="Nicki-Minaj---The-Night-Is-Still-Young";
+						onDemandQueue[6].duration="246.850";
+						onDemandQueue[6].video=true;
+						onDemandQueue[6].modal=false;
+					
+
+						onDemandQueue[7]=new Object();
+						onDemandQueue[7].fileId=236024;
+						// onDemandQueue[7].fileName="VssssUp--DaPacage.mp4";
+						onDemandQueue[7].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"VssssUp--DaPacage.mp4";
+						onDemandQueue[7].fileDsp="VssssUp--DaPacage";
+						onDemandQueue[7].duration="166.740";
+						onDemandQueue[7].video=true;
+						onDemandQueue[7].modal=false;
+					
+
+						onDemandQueue[8]=new Object();
+						onDemandQueue[8].fileId=312138;
+						// onDemandQueue[8].fileName="14---Borderline-(An-Ode-to-Self-Care).m4a";
+						onDemandQueue[8].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"14---Borderline-(An-Ode-to-Self-Care).m4a";
+						onDemandQueue[8].fileDsp="14---Borderline-(An-Ode-to-Self-Care)";
+						onDemandQueue[8].duration="182.760";
+						onDemandQueue[8].video=false;
+						onDemandQueue[8].modal=false;
+					
+
+						onDemandQueue[9]=new Object();
+						onDemandQueue[9].fileId=312139;
+						// onDemandQueue[9].fileName="13---Let-Me-Love-You-[feat.-Justin-Bieber].m4a";
+						onDemandQueue[9].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"13---Let-Me-Love-You-[feat.-Justin-Bieber].m4a";
+						onDemandQueue[9].fileDsp="13---Let-Me-Love-You-[feat.-Justin-Bieber]";
+						onDemandQueue[9].duration="205.930";
+						onDemandQueue[9].video=false;
+						onDemandQueue[9].modal=false;
+					
+
+						onDemandQueue[10]=new Object();
+						onDemandQueue[10].fileId=312140;
+						// onDemandQueue[10].fileName="12---My-Beyoncé-[feat.-Dej-Loaf]-[Clean].m4a";
+						onDemandQueue[10].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"12---My-Beyoncé-[feat.-Dej-Loaf]-[Clean].m4a";
+						onDemandQueue[10].fileDsp="12---My-Beyoncé-[feat.-Dej-Loaf]-[Clean]";
+						onDemandQueue[10].duration="279.770";
+						onDemandQueue[10].video=false;
+						onDemandQueue[10].modal=false;
+					
+
+						onDemandQueue[11]=new Object();
+						onDemandQueue[11].fileId=312141;
+						// onDemandQueue[11].fileName="11---Goldmine-[Clean].m4a";
+						onDemandQueue[11].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"11---Goldmine-[Clean].m4a";
+						onDemandQueue[11].fileDsp="11---Goldmine-[Clean]";
+						onDemandQueue[11].duration="212.440";
+						onDemandQueue[11].video=false;
+						onDemandQueue[11].modal=false;
+					
+
+						onDemandQueue[12]=new Object();
+						onDemandQueue[12].fileId=312142;
+						// onDemandQueue[12].fileName="09---Oh-Me-Oh-My-[feat.-Travis-Scott]-[Clean].m4a";
+						onDemandQueue[12].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"09---Oh-Me-Oh-My-[feat.-Travis-Scott]-[Clean].m4a";
+						onDemandQueue[12].fileDsp="09---Oh-Me-Oh-My-[feat.-Travis-Scott]-[Clean]";
+						onDemandQueue[12].duration="256.370";
+						onDemandQueue[12].video=false;
+						onDemandQueue[12].modal=false;
+					
+
+						onDemandQueue[13]=new Object();
+						onDemandQueue[13].fileId=312143;
+						// onDemandQueue[13].fileName="09---All-On-You.m4a";
+						onDemandQueue[13].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"09---All-On-You.m4a";
+						onDemandQueue[13].fileDsp="09---All-On-You";
+						onDemandQueue[13].duration="186.570";
+						onDemandQueue[13].video=false;
+						onDemandQueue[13].modal=false;
+					
+
+						onDemandQueue[14]=new Object();
+						onDemandQueue[14].fileId=312144;
+						// onDemandQueue[14].fileName="07---Bout-That-[feat.-Lil-Wayne]-[Clean].m4a";
+						onDemandQueue[14].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"07---Bout-That-[feat.-Lil-Wayne]-[Clean].m4a";
+						onDemandQueue[14].fileDsp="07---Bout-That-[feat.-Lil-Wayne]-[Clean]";
+						onDemandQueue[14].duration="226.600";
+						onDemandQueue[14].video=false;
+						onDemandQueue[14].modal=false;
+					
+
+						onDemandQueue[15]=new Object();
+						onDemandQueue[15].fileId=312145;
+						// onDemandQueue[15].fileName="06---Stix-and-Stones.m4a";
+						onDemandQueue[15].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"06---Stix-and-Stones.m4a";
+						onDemandQueue[15].fileDsp="06---Stix-and-Stones";
+						onDemandQueue[15].duration="205.330";
+						onDemandQueue[15].video=false;
+						onDemandQueue[15].modal=false;
+					
+
+						onDemandQueue[16]=new Object();
+						onDemandQueue[16].fileId=312146;
+						// onDemandQueue[16].fileName="05---Black-Beatles-[feat.-Gucci-Mane]-[Clean].m4a";
+						onDemandQueue[16].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"05---Black-Beatles-[feat.-Gucci-Mane]-[Clean].m4a";
+						onDemandQueue[16].fileDsp="05---Black-Beatles-[feat.-Gucci-Mane]-[Clean]";
+						onDemandQueue[16].duration="291.890";
+						onDemandQueue[16].video=false;
+						onDemandQueue[16].modal=false;
+					
+
+						onDemandQueue[17]=new Object();
+						onDemandQueue[17].fileId=312147;
+						// onDemandQueue[17].fileName="04---Melt.m4a";
+						onDemandQueue[17].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"04---Melt.m4a";
+						onDemandQueue[17].fileDsp="04---Melt";
+						onDemandQueue[17].duration="214.940";
+						onDemandQueue[17].video=false;
+						onDemandQueue[17].modal=false;
+					
+
+						onDemandQueue[18]=new Object();
+						onDemandQueue[18].fileId=312148;
+						// onDemandQueue[18].fileName="04---FAB.-(feat.-Remy-Ma)-[Clean].m4a";
+						onDemandQueue[18].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"04---FAB.-(feat.-Remy-Ma)-[Clean].m4a";
+						onDemandQueue[18].fileDsp="04---FAB.-(feat.-Remy-Ma)-[Clean]";
+						onDemandQueue[18].duration="215.080";
+						onDemandQueue[18].video=false;
+						onDemandQueue[18].modal=false;
+					
+
+						onDemandQueue[19]=new Object();
+						onDemandQueue[19].fileId=312149;
+						// onDemandQueue[19].fileName="04---Cranes-in-the-Sky.m4a";
+						onDemandQueue[19].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"04---Cranes-in-the-Sky.m4a";
+						onDemandQueue[19].fileDsp="04---Cranes-in-the-Sky";
+						onDemandQueue[19].duration="250.980";
+						onDemandQueue[19].video=false;
+						onDemandQueue[19].modal=false;
+					
+
+						onDemandQueue[20]=new Object();
+						onDemandQueue[20].fileId=312150;
+						// onDemandQueue[20].fileName="03---Want-Her-[feat.-YG]-[Clean].m4a";
+						onDemandQueue[20].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"03---Want-Her-[feat.-YG]-[Clean].m4a";
+						onDemandQueue[20].fileDsp="03---Want-Her-[feat.-YG]-[Clean]";
+						onDemandQueue[20].duration="275.590";
+						onDemandQueue[20].video=false;
+						onDemandQueue[20].modal=false;
+					
+
+						onDemandQueue[21]=new Object();
+						onDemandQueue[21].fileId=312151;
+						// onDemandQueue[21].fileName="03---Step-Up-(feat.-Dej-Loaf---Sha-Sha)-[Clean].m4a";
+						onDemandQueue[21].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"03---Step-Up-(feat.-Dej-Loaf---Sha-Sha)-[Clean].m4a";
+						onDemandQueue[21].fileDsp="03---Step-Up-(feat.-Dej-Loaf---Sha-Sha)-[Clean]";
+						onDemandQueue[21].duration="167.620";
+						onDemandQueue[21].video=false;
+						onDemandQueue[21].modal=false;
+					
+
+						onDemandQueue[22]=new Object();
+						onDemandQueue[22].fileId=312152;
+						// onDemandQueue[22].fileName="03---No-Apologies.-(feat.-Wiz-Khalifa)-[Clean].m4a";
+						onDemandQueue[22].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"03---No-Apologies.-(feat.-Wiz-Khalifa)-[Clean].m4a";
+						onDemandQueue[22].fileDsp="03---No-Apologies.-(feat.-Wiz-Khalifa)-[Clean]";
+						onDemandQueue[22].duration="195.440";
+						onDemandQueue[22].video=false;
+						onDemandQueue[22].modal=false;
+					
+
+						onDemandQueue[23]=new Object();
+						onDemandQueue[23].fileId=312153;
+						// onDemandQueue[23].fileName="03---Love-Me-In-A-Special-Way.m4a";
+						onDemandQueue[23].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"03---Love-Me-In-A-Special-Way.m4a";
+						onDemandQueue[23].fileDsp="03---Love-Me-In-A-Special-Way";
+						onDemandQueue[23].duration="254.090";
+						onDemandQueue[23].video=false;
+						onDemandQueue[23].modal=false;
+					
+
+						onDemandQueue[24]=new Object();
+						onDemandQueue[24].fileId=312154;
+						// onDemandQueue[24].fileName="03---BYB-(Bounce---Break-Your-Back).m4a";
+						onDemandQueue[24].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"03---BYB-(Bounce---Break-Your-Back).m4a";
+						onDemandQueue[24].fileDsp="03---BYB-(Bounce---Break-Your-Back)";
+						onDemandQueue[24].duration="196.000";
+						onDemandQueue[24].video=false;
+						onDemandQueue[24].modal=false;
+					
+
+						onDemandQueue[25]=new Object();
+						onDemandQueue[25].fileId=312155;
+						// onDemandQueue[25].fileName="02---Dancehall-Soldier-(feat.-Beenie-Man).m4a";
+						onDemandQueue[25].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"02---Dancehall-Soldier-(feat.-Beenie-Man).m4a";
+						onDemandQueue[25].fileDsp="02---Dancehall-Soldier-(feat.-Beenie-Man)";
+						onDemandQueue[25].duration="178.860";
+						onDemandQueue[25].video=false;
+						onDemandQueue[25].modal=false;
+					
+
+						onDemandQueue[26]=new Object();
+						onDemandQueue[26].fileId=312156;
+						// onDemandQueue[26].fileName="02---All-This-Love.m4a";
+						onDemandQueue[26].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"02---All-This-Love.m4a";
+						onDemandQueue[26].fileDsp="02---All-This-Love";
+						onDemandQueue[26].duration="353.150";
+						onDemandQueue[26].video=false;
+						onDemandQueue[26].modal=false;
+					
+
+						onDemandQueue[27]=new Object();
+						onDemandQueue[27].fileId=312157;
+						// onDemandQueue[27].fileName="01---You---Me-[feat.-G-Eazy].m4a";
+						onDemandQueue[27].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---You---Me-[feat.-G-Eazy].m4a";
+						onDemandQueue[27].fileDsp="01---You---Me-[feat.-G-Eazy]";
+						onDemandQueue[27].duration="218.520";
+						onDemandQueue[27].video=false;
+						onDemandQueue[27].modal=false;
+					
+
+						onDemandQueue[28]=new Object();
+						onDemandQueue[28].fileId=312158;
+						// onDemandQueue[28].fileName="01---Tru.m4a";
+						onDemandQueue[28].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Tru.m4a";
+						onDemandQueue[28].fileDsp="01---Tru";
+						onDemandQueue[28].duration="255.900";
+						onDemandQueue[28].video=false;
+						onDemandQueue[28].modal=false;
+					
+
+						onDemandQueue[29]=new Object();
+						onDemandQueue[29].fileId=312159;
+						// onDemandQueue[29].fileName="01---Thick-Of-It.m4a";
+						onDemandQueue[29].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Thick-Of-It.m4a";
+						onDemandQueue[29].fileDsp="01---Thick-Of-It";
+						onDemandQueue[29].duration="242.900";
+						onDemandQueue[29].video=false;
+						onDemandQueue[29].modal=false;
+					
+
+						onDemandQueue[30]=new Object();
+						onDemandQueue[30].fileId=312160;
+						// onDemandQueue[30].fileName="01---The-Fix-(feat.-Jeremih)-[Clean].m4a";
+						onDemandQueue[30].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---The-Fix-(feat.-Jeremih)-[Clean].m4a";
+						onDemandQueue[30].fileDsp="01---The-Fix-(feat.-Jeremih)-[Clean]";
+						onDemandQueue[30].duration="173.100";
+						onDemandQueue[30].video=false;
+						onDemandQueue[30].modal=false;
+					
+
+						onDemandQueue[31]=new Object();
+						onDemandQueue[31].fileId=312161;
+						// onDemandQueue[31].fileName="01---Techno-(feat.-Waka-Flocka-Flame).m4a";
+						onDemandQueue[31].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Techno-(feat.-Waka-Flocka-Flame).m4a";
+						onDemandQueue[31].fileDsp="01---Techno-(feat.-Waka-Flocka-Flame)";
+						onDemandQueue[31].duration="208.070";
+						onDemandQueue[31].video=false;
+						onDemandQueue[31].modal=false;
+					
+
+						onDemandQueue[32]=new Object();
+						onDemandQueue[32].fileId=312162;
+						// onDemandQueue[32].fileName="01---Run.m4a";
+						onDemandQueue[32].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Run.m4a";
+						onDemandQueue[32].fileDsp="01---Run";
+						onDemandQueue[32].duration="217.960";
+						onDemandQueue[32].video=false;
+						onDemandQueue[32].modal=false;
+					
+
+						onDemandQueue[33]=new Object();
+						onDemandQueue[33].fileId=312163;
+						// onDemandQueue[33].fileName="01---Move-Ya-Body-(Radio-Edit).m4a";
+						onDemandQueue[33].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Move-Ya-Body-(Radio-Edit).m4a";
+						onDemandQueue[33].fileDsp="01---Move-Ya-Body-(Radio-Edit)";
+						onDemandQueue[33].duration="234.170";
+						onDemandQueue[33].video=false;
+						onDemandQueue[33].modal=false;
+					
+
+						onDemandQueue[34]=new Object();
+						onDemandQueue[34].fileId=312164;
+						// onDemandQueue[34].fileName="01---Love-Me-Now.m4a";
+						onDemandQueue[34].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Love-Me-Now.m4a";
+						onDemandQueue[34].fileDsp="01---Love-Me-Now";
+						onDemandQueue[34].duration="210.350";
+						onDemandQueue[34].video=false;
+						onDemandQueue[34].modal=false;
+					
+
+						onDemandQueue[35]=new Object();
+						onDemandQueue[35].fileId=312165;
+						// onDemandQueue[35].fileName="01---Long-Song-Away.m4a";
+						onDemandQueue[35].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Long-Song-Away.m4a";
+						onDemandQueue[35].fileDsp="01---Long-Song-Away";
+						onDemandQueue[35].duration="272.110";
+						onDemandQueue[35].video=false;
+						onDemandQueue[35].modal=false;
+					
+
+						onDemandQueue[36]=new Object();
+						onDemandQueue[36].fileId=312166;
+						// onDemandQueue[36].fileName="01---Location.m4a";
+						onDemandQueue[36].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Location.m4a";
+						onDemandQueue[36].fileDsp="01---Location";
+						onDemandQueue[36].duration="217.590";
+						onDemandQueue[36].video=false;
+						onDemandQueue[36].modal=false;
+					
+
+						onDemandQueue[37]=new Object();
+						onDemandQueue[37].fileId=312167;
+						// onDemandQueue[37].fileName="01---Life.m4a";
+						onDemandQueue[37].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Life.m4a";
+						onDemandQueue[37].fileDsp="01---Life";
+						onDemandQueue[37].duration="186.200";
+						onDemandQueue[37].video=false;
+						onDemandQueue[37].modal=false;
+					
+
+						onDemandQueue[38]=new Object();
+						onDemandQueue[38].fileId=312168;
+						// onDemandQueue[38].fileName="01---Juju-On-That-Beat-(TZ-Anthem).m4a";
+						onDemandQueue[38].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Juju-On-That-Beat-(TZ-Anthem).m4a";
+						onDemandQueue[38].fileDsp="01---Juju-On-That-Beat-(TZ-Anthem)";
+						onDemandQueue[38].duration="144.260";
+						onDemandQueue[38].video=false;
+						onDemandQueue[38].modal=false;
+					
+
+						onDemandQueue[39]=new Object();
+						onDemandQueue[39].fileId=312169;
+						// onDemandQueue[39].fileName="01---Infamous.m4a";
+						onDemandQueue[39].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Infamous.m4a";
+						onDemandQueue[39].fileDsp="01---Infamous";
+						onDemandQueue[39].duration="215.360";
+						onDemandQueue[39].video=false;
+						onDemandQueue[39].modal=false;
+					
+
+						onDemandQueue[40]=new Object();
+						onDemandQueue[40].fileId=312170;
+						// onDemandQueue[40].fileName="01---I-Like-It.m4a";
+						onDemandQueue[40].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---I-Like-It.m4a";
+						onDemandQueue[40].fileDsp="01---I-Like-It";
+						onDemandQueue[40].duration="279.630";
+						onDemandQueue[40].video=false;
+						onDemandQueue[40].modal=false;
+					
+
+						onDemandQueue[41]=new Object();
+						onDemandQueue[41].fileId=312171;
+						// onDemandQueue[41].fileName="01---Hotter-Than-Hell.m4a";
+						onDemandQueue[41].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Hotter-Than-Hell.m4a";
+						onDemandQueue[41].fileDsp="01---Hotter-Than-Hell";
+						onDemandQueue[41].duration="188.010";
+						onDemandQueue[41].video=false;
+						onDemandQueue[41].modal=false;
+					
+
+						onDemandQueue[42]=new Object();
+						onDemandQueue[42].fileId=312172;
+						// onDemandQueue[42].fileName="01---Here-with-Me.m4a";
+						onDemandQueue[42].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Here-with-Me.m4a";
+						onDemandQueue[42].fileDsp="01---Here-with-Me";
+						onDemandQueue[42].duration="245.130";
+						onDemandQueue[42].video=false;
+						onDemandQueue[42].modal=false;
+					
+
+						onDemandQueue[43]=new Object();
+						onDemandQueue[43].fileId=312173;
+						// onDemandQueue[43].fileName="01---False-Alarm.m4a";
+						onDemandQueue[43].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---False-Alarm.m4a";
+						onDemandQueue[43].fileDsp="01---False-Alarm";
+						onDemandQueue[43].duration="231.010";
+						onDemandQueue[43].video=false;
+						onDemandQueue[43].modal=false;
+					
+
+						onDemandQueue[44]=new Object();
+						onDemandQueue[44].fileId=312174;
+						// onDemandQueue[44].fileName="01---Express-Yourself-(Gent---Jawns-Remix).m4a";
+						onDemandQueue[44].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Express-Yourself-(Gent---Jawns-Remix).m4a";
+						onDemandQueue[44].fileDsp="01---Express-Yourself-(Gent---Jawns-Remix)";
+						onDemandQueue[44].duration="171.620";
+						onDemandQueue[44].video=false;
+						onDemandQueue[44].modal=false;
+					
+
+						onDemandQueue[45]=new Object();
+						onDemandQueue[45].fileId=312175;
+						// onDemandQueue[45].fileName="01---Dust-My-Shoulders-Off-(feat.-Timbaland).m4a";
+						onDemandQueue[45].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Dust-My-Shoulders-Off-(feat.-Timbaland).m4a";
+						onDemandQueue[45].fileDsp="01---Dust-My-Shoulders-Off-(feat.-Timbaland)";
+						onDemandQueue[45].duration="230.220";
+						onDemandQueue[45].video=false;
+						onDemandQueue[45].modal=false;
+					
+
+						onDemandQueue[46]=new Object();
+						onDemandQueue[46].fileId=312176;
+						// onDemandQueue[46].fileName="01---Don-t-Hurt-Me-[Clean].m4a";
+						onDemandQueue[46].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Don-t-Hurt-Me-[Clean].m4a";
+						onDemandQueue[46].fileDsp="01---Don-t-Hurt-Me-[Clean]";
+						onDemandQueue[46].duration="193.020";
+						onDemandQueue[46].video=false;
+						onDemandQueue[46].modal=false;
+					
+
+						onDemandQueue[47]=new Object();
+						onDemandQueue[47].fileId=312177;
+						// onDemandQueue[47].fileName="01---Don-t-Go.m4a";
+						onDemandQueue[47].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Don-t-Go.m4a";
+						onDemandQueue[47].fileDsp="01---Don-t-Go";
+						onDemandQueue[47].duration="220.560";
+						onDemandQueue[47].video=false;
+						onDemandQueue[47].modal=false;
+					
+
+						onDemandQueue[48]=new Object();
+						onDemandQueue[48].fileId=312178;
+						// onDemandQueue[48].fileName="01---Cupid.m4a";
+						onDemandQueue[48].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Cupid.m4a";
+						onDemandQueue[48].fileDsp="01---Cupid";
+						onDemandQueue[48].duration="189.870";
+						onDemandQueue[48].video=false;
+						onDemandQueue[48].modal=false;
+					
+
+						onDemandQueue[49]=new Object();
+						onDemandQueue[49].fileId=312179;
+						// onDemandQueue[49].fileName="01---Circles.m4a";
+						onDemandQueue[49].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Circles.m4a";
+						onDemandQueue[49].fileDsp="01---Circles";
+						onDemandQueue[49].duration="225.160";
+						onDemandQueue[49].video=false;
+						onDemandQueue[49].modal=false;
+					
+
+						onDemandQueue[50]=new Object();
+						onDemandQueue[50].fileId=312180;
+						// onDemandQueue[50].fileName="01---Back-Up-[Clean].m4a";
+						onDemandQueue[50].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---Back-Up-[Clean].m4a";
+						onDemandQueue[50].fileDsp="01---Back-Up-[Clean]";
+						onDemandQueue[50].duration="241.230";
+						onDemandQueue[50].video=false;
+						onDemandQueue[50].modal=false;
+					
+
+						onDemandQueue[51]=new Object();
+						onDemandQueue[51].fileId=312181;
+						// onDemandQueue[51].fileName="01---24K-Magic.m4a";
+						onDemandQueue[51].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"01---24K-Magic.m4a";
+						onDemandQueue[51].fileDsp="01---24K-Magic";
+						onDemandQueue[51].duration="226.000";
+						onDemandQueue[51].video=false;
+						onDemandQueue[51].modal=false;
+					
+
+						onDemandQueue[52]=new Object();
+						onDemandQueue[52].fileId=346586;
+						// onDemandQueue[52].fileName="The-V-Spot-Lamont-Pettiway-EP5.m4a";
+						onDemandQueue[52].fileName=streamRoot+"/"+stationCallSign+"/ondemand/"+"The-V-Spot-Lamont-Pettiway-EP5.m4a";
+						onDemandQueue[52].fileDsp="The-V-Spot-Lamont-Pettiway-EP5";
+						onDemandQueue[52].duration="793.260";
+						onDemandQueue[52].video=false;
+						onDemandQueue[52].modal=false;
+					
+					
+					var d = new Date();
+					var localServerTSoffset = d.getTime()+d.getTimezoneOffset()*60000 - Date.parse("17 Feb 2017 05:54:10");
+				
+
+				
+					var nielsenEnabled = true;
+				
+
+			var enableStream = true;
+
+			
+			var streamSrcDB = 'http://ice9.securenetsystems.net/WVYZ?type=.flv';
+			var streamSrcPlay=streamSrcDB.replace("?type=.flv","")+'?playSessionID=EA581D76-A8D3-73BF-7A2808C751E6C57C';
+			var streamSrcFlv = 'http://ice9.securenetsystems.net/WVYZ?type=.flv';
+			var streamSrcAac = streamSrcDB+(streamSrcDB.indexOf("?")==-1?"?":"&")+"playSessionID=EA581D76-A8D3-73BF-7A2808C751E6C57C";		//streamSrcDB.replace("?type=.flv","");
+			var streamSrcMp3 = streamSrcDB.replace("type=.flv","type=.mp3");
+			var bDRC=false;
+		</script>
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE, NO-STORE, must-revalidate, max-age=0" />
+		<META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+		<META HTTP-EQUIV="EXPIRES" CONTENT="0" />
+		<meta name="distribution" content="Global" />
+		<meta property="og:title" content="WVYZ" />
+		<meta property="og:description" content="Listen to our station on your computer or mobile device!" />
+		<meta property="og:image" content="http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/logo.png" />
+		<link REL="SHORTCUT ICON" HREF="images/ssiicon.ico">
+
+		<title>VYZION RADIO</title>
+
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!--[if lt IE 9]>
+			<link rel="stylesheet" href="css/style_stdres.css" type="text/css" />
+		<![endif]-->
+		<!--[if (!IE)|(gte IE 9)]> -->
+			<link rel="stylesheet" href="css/style_hires.css" type="text/css" />
+		<!-- <![endif]-->
+
+		<style>
+			.bodyDiv {
+				background:url(http://cdnrf.securenetsystems.net/file_radio/v5/skins/red.png) no-repeat top left #1B1B1B;
+				top:50%;
+				left:50%;
+				height:630px;
+				
+					width:940px;
+					margin:-315px 0 0 -470px;
+				
+				position:absolute;
+				display:none;
+			}
+			div {
+				color: #C8D6FB;
+			}
+			a:link, a:visited, a:hover, a:active, .menuHeader, .player-apps-title, #transport-counter, #transport-volume-label {
+				color: #4F7FF7;
+			}
+		</style>
+
+		
+		<meta name="google-site-verification" content="TxQMy1x3Re0ygaJcfI3ZBT9on2G-A6wleAoLWD7zSQU" /> 
+	
+	<script type="text/javascript" src="scripts/prebid.js" async></script> 
+	<script type="text/javascript">
+		/* JUST FOR DIAGNOSTICS - DELETE IN PRODUCTION CODE */
+		/* JUST FOR DIAGNOSTICS - DELETE IN PRODUCTION CODE */
+		/* JUST FOR DIAGNOSTICS - DELETE IN PRODUCTION CODE */
+		var preBidCounter = 0; 
+		var waterfallCounter = 0;
+		/* JUST FOR DIAGNOSTICS - DELETE IN PRODUCTION CODE */
+		/* JUST FOR DIAGNOSTICS - DELETE IN PRODUCTION CODE */
+		/* JUST FOR DIAGNOSTICS - DELETE IN PRODUCTION CODE */
+	</script>
+	
+	<!--script type="text/javascript" src="scripts/jquery-1.8.3.min.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="scripts/jquery.json-2.2.min.js"></script>
+	<script type="text/javascript" src="scripts/ifvisible.min.js"></script>
+	
+	<script src="../cirruscore/cirruscore_v1.js"></script>
+	
+	<script type="text/javascript" src="scripts/ad.js"></script>
+	
+
+	
+	
+		<script type="text/javascript" src="scripts/jquery.qrcode.min.js"></script>
+	
+			<script type="text/javascript" src="scripts/v5.min.js?cb=20170217005410"></script>
+		
+		
+
+	</head>
+
+	<body onClick="cirrusOmni();">
+		
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-67327905-7', 'auto');
+		  ga('send', 'pageview');
+		  if(playerAdvertisingMode === 'ADN'){
+			  ga('send', 'event', 'Player Event', 'Player Launch', '00000010', 1);
+		  }
+		  if(launchFrom.length > 0){
+			  ga('send', 'event', 'Player Event', 'Player Launch', 'Launch From ' + launchFrom, 1);
+		  }
+		</script>
+		
+
+		
+		<script type="text/javascript">
+		_atrk_opts = { atrk_acct:"U4nwg1awAe00qR", domain:"securenetsystems.net",dynamic: true};
+		(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+		</script>
+		<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=U4nwg1awAe00qR" style="display:none" height="1" width="1" alt="" /></noscript>
+		
+
+		
+			<div id="bodyDiv" class="bodyDiv">
+
+				<div id="ajax-loader" class="ajax-loader-container ajax-loader"></div>
+				<img id="stationLogo" src="http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/logo.png" /> 
+<div id="top-menu-wrapper" class="top-menu-wrapper dH tS">
+	
+		
+		<div class="top-menu-button-wrapper" onClick="openURL('https://vyzionradio.com/advertising/');">
+			<div class="top-menu-button-bg" style="background:url(http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/top-menu/Vyzion%2DRadio%2DButton%2DADVERTISE%2Ejpg) no-repeat top center;">
+				<div class="top-menu-button dT top-menu-button-border">
+					<div class="top-menu-button-c1">
+						<div class="top-menu-button-c2 top-menu-text" style="color:#C8D6FB;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="top-menu-button-wrapper" onClick="startApp('on-demand',-1,'');">
+			<div class="top-menu-button-bg" style="background:url(http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/top-menu/Vyzion%2DRadio%2DButton%2DON%2DDEMAND%2Ejpg) no-repeat top center;">
+				<div class="top-menu-button dT top-menu-button-border">
+					<div class="top-menu-button-c1">
+						<div class="top-menu-button-c2 top-menu-text" style="color:#C8D6FB;">TOP SHOWS</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="top-menu-button-wrapper" onClick="openURL('https://vyzionradio.com/newspost/indie-music-power-hour/');">
+			<div class="top-menu-button-bg" style="background:url(http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/top-menu/Indie%2DArtist%2DAirplay%2Ejpg) no-repeat top center;">
+				<div class="top-menu-button dT top-menu-button-border">
+					<div class="top-menu-button-c1">
+						<div class="top-menu-button-c2 top-menu-text" style="color:#C8D6FB;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="top-menu-button-wrapper" onClick="openURL('https://vyzionradio.com/daypart-guide/');">
+			<div class="top-menu-button-bg" style="background:url(http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/top-menu/DAYPART%2DSCHEDULE%2Ejpg) no-repeat top center;">
+				<div class="top-menu-button dT top-menu-button-border">
+					<div class="top-menu-button-c1">
+						<div class="top-menu-button-c2 top-menu-text" style="color:#C8D6FB;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		
+		<div class="top-menu-button-wrapper" onClick="openURL('http://vyzionradio.com/');">
+			<div class="top-menu-button-bg" style="background:url(http://cdnrf.securenetsystems.net/file_radio/stations_large/WVYZ/v5/top-menu/Vyzion%2DRadio%2DButton%2DMain%2DSite%2Ejpg) no-repeat top center;">
+				<div class="top-menu-button dT top-menu-button-border">
+					<div class="top-menu-button-c1">
+						<div class="top-menu-button-c2 top-menu-text" style="color:#C8D6FB;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+</div>
+
+
+
+<div id="menu" class="menu">
+	
+	<div class="menu-close" title="Close menu" onClick="dspMenu();"></div>
+	
+
+	<div class="menu-row">
+		
+			<div class="fL menuIcons">
+				<div class="menuText menuHeader f15em">Station info</div>
+				<img src="images/contact.png" width="60" title="Contact information" onClick="startApp('contact');" /> <img src="images/facebook.png" width="60" title="Facebook feed" onClick="startApp('facebook');" /> <img src="images/twitter.png" width="60" title="Read our twitter feed" onClick="startApp('twitter');" /> <img src="images/youtube.png" width="60" title="Our YouTube channel" onClick="startApp('youtube');" />
+
+			</div>
+		
+			<div class="fL menuIcons">
+				<div class="menuText menuHeader f15em">Streams</div>
+				<img src="images/media-send-to-mobile.png" width="60" title="Send player to mobile phone" onClick="startApp('send-to-mobile');" /> <img src="images/playlist.png" width="60" title="Recently played" onClick="startApp('playlist');" /> <img src="images/on-demand.png" width="60" title="On-demand streaming" onClick="startApp('on-demand');" /> 
+			</div>
+		
+
+	</div>
+	<div class="menu-apps-row dT">
+		<div class="top-menu-button-c1">
+			<div class="top-menu-button-c2">
+				
+					<div class="fL menu-apps mr20">
+						<div class="menuText menuHeader f15em">Player apps</div>
+						<img src="images/news.png" width="60" title="News" onClick="startApp('news');" /> <img src="images/stocks.png" width="60" title="Finance" onClick="startApp('stocks');" /> <img src="images/sports.png" width="60" title="Sports" onClick="startApp('sports');" /> <img src="images/entertainment.png" width="60" title="Entertainment" onClick="startApp('entertainment');" /> <img src="images/weather.png" width="60" title="Weather" onClick="startApp('weather');" /> <img src="images/traffic.png" width="60" title="Traffic map" onClick="startApp('traffic');" /> <img src="images/deals.png" width="60" title="Deals & coupons" onClick="startApp('deals');" /> <img src="images/flight.png" width="60" title="Flight tracker" onClick="startApp('flight');" /> <img src="images/request.png" width="60" title="Song request" onClick="startApp('request');" /> <img src="images/chat.png" width="60" title="Chat with other listeners" onClick="startApp('chat');" /> <img src="images/games.png" width="60" title="Play games" onClick="startApp('games');" /> <img src="images/help.png" width="60" title="Problems streaming? Click here for common answers." onClick="startApp('help');" />
+					</div>
+				
+					<div class="fL menuIcons" style="padding-right:0px;">
+						<div class="menuText menuHeader f15em">Share</div>
+						<!-- AddThis Button BEGIN -->
+						<div class="shareThis addthis_toolbox addthis_default_style addthis_32x32_style">
+						<a class="addthis_button_preferred_1"></a>
+						<a class="addthis_button_preferred_2"></a>
+						<a class="addthis_button_preferred_3"></a>
+						<a class="addthis_button_preferred_4"></a>
+						<a class="addthis_button_compact"></a>
+						<a class="addthis_counter addthis_bubble_style"></a>
+						</div>
+						<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-502552987eaa3f3d"></script>
+						<!-- AddThis Button END -->
+					</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+				
+
+				
+				<div id="updateBrowser">
+					<p>Your browser is out of date. Please upgrade your browser to proceed to the live stream.</p>
+					<p>This player utilizes features that are unavailable in your version of browser. Don't worry - there is an easy solution. Simply upgrade your browser to the latest version and then return to this player to proceed to the live stream. You'll be enjoying your favorite station before you know it!</p>
+				</div>
+				
+
+				
+				
+
+	
+
+		
+		<div id="player-apps-flashRequired" class="player-apps-preroll dH">
+			<div>
+				<div class="player-apps-content papbct dT">
+					<div class="top-menu-button-c1">
+						<p>Adobe Flash Required</p>
+						<br>
+						<p>Adobe Flash is required to listen to this station, but you don't appear to have it installed.</p>
+						<br>
+						<p><a href="https://get.adobe.com/flashplayer/">Click here to install Adobe Flash</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+		
+		
+			<div id="player-apps-player-check-ab" class="player-apps-preroll dH">
+				<div>
+					<div class="player-apps-content papbct dT">
+						<div class="top-menu-button-c1">
+							
+							
+							
+
+							<div id="adblockWrapper"></div>
+							<script>
+								function getQueryVariable(variable){
+							       var query = window.location.search.substring(1);
+							       var vars = query.split("&");
+							       for (var i=0;i<vars.length;i++) {
+							               var pair = vars[i].split("=");
+							               if(pair[0] == variable){return pair[1];}
+							       }
+							       return(false);
+								}
+
+								function aUuqOoP23dnYzVimuVpbod4qqpX1M6GNYPVtGjBwEbNqjs4AU5YRUxkIOGMjzA2JKtNXXS0odL42oky5mW4szLnmfthwF05Z6fmCIiXA56HaeZNlYhotHNYF7mDa9bEwtK4fdwDEjSFc8ifLlu00miMws7eNdceMAzCOchUfvVjeeIQt1UzVZ(){
+									if(window.iExist === undefined){
+										console.log("ad blocker detected");
+										ga('send', 'event', 'Player Event', 'Ad Blocker', 'Ad Blocker Detected', 1);
+
+										adBlockerPresent = true;
+										$("#adblockWrapper").html("<a href=\"abp:subscribe?location=http://streamdb6web.securenetsystems.net/v5/adBlockWhitelist.cfm\"><img id=\"blockImage\" src=\"images/blockdetected.png\" width=\"750\" height=\"92\"></a>");
+										var retryVar = getQueryVariable("retry");
+										if(!retryVar){
+											setTimeout(function(){
+												window.location.replace("http://streamdb6web.securenetsystems.net/v5/index.cfm?stationCallSign=WVYZ&retry=true");
+											}, 5000);
+										}else{
+											$("#blockImage").attr("src", "images/blockgivenup.png");
+										}
+									}else{
+										adBlockerPresent = false;
+										console.log("ad blocker NOT detected");
+										$("#adblockWrapper").hide();
+									}
+								}
+
+								if(playerAdvertisingMode=="ADN" || playerAdvertisingMode=="SEQ"){
+									setTimeout(function(){
+										aUuqOoP23dnYzVimuVpbod4qqpX1M6GNYPVtGjBwEbNqjs4AU5YRUxkIOGMjzA2JKtNXXS0odL42oky5mW4szLnmfthwF05Z6fmCIiXA56HaeZNlYhotHNYF7mDa9bEwtK4fdwDEjSFc8ifLlu00miMws7eNdceMAzCOchUfvVjeeIQt1UzVZ();
+									}, 500);
+								}	
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		
+		
+	
+
+	
+	<div id="player-apps" class="player-apps">
+
+		
+		<div id="player-apps-close-button" class="player-apps-close-button player-apps-close-button-app" title="Close player app" onClick="closeApp();"></div>
+		
+
+		
+		
+			<div id="player-apps-contact" class="dH">
+				<div>
+					<img src="images/contact.png" width="40" height="40" />
+					<div class="player-apps-title">Contact</div>
+					<div class="player-apps-content">
+						<div id="player-apps-contact-icons">
+							<div class="player-apps-contact-phone">704-240-8939</div> <div class="player-apps-contact-web" onClick="openURL('https://vyzionradio.com/');">https://vyzionradio.com/</div> <div class="player-apps-contact-email" onClick="dspContactForm(true);">Click here to send us a message</div> <div class="player-apps-contact-address" onClick="openURL('https://maps.google.com/maps?q=1000%20NC%20Music%20Factory%20Blvd%2C%20Ste%20B%2D3%20%20Charlotte%2C%20North%20Carolina');">1000 NC Music Factory Blvd, Ste B-3<br />Charlotte, North Carolina</div>
+						</div>
+						<div id="player-apps-contact-form">
+							<input type="text" id="contactFormName" value="Your name" size="40" maxlength="64" onClick="fieldDesc(this,'in','Your name',2);" onBlur="fieldDesc(this,'out','Your name',2);">
+							<br /><br />
+							<input type="text" id="contactFormEmail" value="Your email address" size="40" maxlength="64" onClick="fieldDesc(this,'in','Your email address',10);" onBlur="fieldDesc(this,'out','Your email address',10);">
+							<br /><br />
+							<textarea id="contactFormMessage" onClick="fieldDesc(this,'in','Your message',5);" onBlur="fieldDesc(this,'out','Your message',5);">Your message</textarea>
+							<br /><br />
+							<div class="player-apps-contact-back fL" onClick="dspContactForm(false);"></div>
+							<div class="fL"><input type="button" value="Send message" onClick="contactForm();"></div>
+							<div id="contactFormErr" class="fL ml10 red formErrMsg"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-facebook" class="dH">
+				<div>
+					<img src="images/facebook.png" width="40" height="40" />
+					<div class="player-apps-title">Facebook</div>
+					<div class="player-apps-content" id="player-apps-content-facebook">
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=108260835883518";
+						  fjs.parentNode.insertBefore(js, fjs);
+							}(document, 'script', 'facebook-jssdk'));</script>
+						<div class="fb-like-box" data-href="https://www.facebook.com/vyzionradio" data-width="573" data-height="252" data-colorscheme="dark" data-show-faces="false" data-stream="true" data-header="false"></div>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-twitter" class="dH">
+				<div>
+					<img src="images/twitter.png" width="40" height="40" />
+					<div class="player-apps-title">Twitter feed</div>
+					<div class="player-apps-content" id="player-apps-content-twitter">
+						<a class="twitter-timeline" width="520" height="250" href="https://twitter.com/twitterapi" data-widget-id="365511658203910144" data-screen-name="https://twitter.com/VyzionEnt" data-theme="dark"></a>
+						<script>
+							!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];
+								if(!d.getElementById(id)){
+									js=d.createElement(s);
+									js.id=id;
+									js.src="//platform.twitter.com/widgets.js";
+									fjs.parentNode.insertBefore(js,fjs);
+								}
+							}
+							(document,"script","twitter-wjs");
+						</script>						
+					</div>			
+				</div>
+			</div>
+		
+			<div id="player-apps-youtube" class="dH">
+				<div>
+					<img src="images/youtube.png" width="40" height="40" />
+					<div class="player-apps-title">YouTube</div>
+					<script type="text/javascript" src="scripts/youtube.js"></script>
+					<div class="player-apps-content" id="player-apps-content-youtube">
+						<link rel="stylesheet" href="css/youtube.css" type="text/css" />
+						<div id="youtubevideos">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-on-demand" class="dH">
+				<div>
+					<img src="images/on-demand.png" width="40" height="40" />
+					<div class="player-apps-title">On-demand streaming</div>
+					<div id="on-demand-list" class="player-apps-content">
+						<p>Click on any file to start listening</p>
+						
+						
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-0" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(0,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">The-V-Spot-Devonia-Reed-EP4</div>
+												<div>
+													<div>
+														00:14:34
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-1" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(1,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">The-V-Spot-Secure-Culture-Clothing-EP3</div>
+												<div>
+													<div>
+														00:15:16
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-2" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(2,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">The-Vspot-Chirs-Suggs-EP2</div>
+												<div>
+													<div>
+														00:09:06
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-3" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(3,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">The-V-Spot-Jacquie-EP1</div>
+												<div>
+													<div>
+														00:09:22
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-4" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(4,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">Rihanna---Work-feat.-Drake</div>
+												<div>
+													<div>
+														00:03:40
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-5" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(5,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">G-Eazy-x-Bebe-Rexha---Me,-Myself---I</div>
+												<div>
+													<div>
+														00:05:48
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-6" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(6,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">Nicki-Minaj---The-Night-Is-Still-Young</div>
+												<div>
+													<div>
+														00:04:06
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-7" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(7,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">VssssUp--DaPacage</div>
+												<div>
+													<div>
+														00:02:46
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-8" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(8,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">14---Borderline-(An-Ode-to-Self-Care)</div>
+												<div>
+													<div>
+														00:03:02
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-9" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(9,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">13---Let-Me-Love-You-[feat.-Justin-Bieber]</div>
+												<div>
+													<div>
+														00:03:25
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-10" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(10,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">12---My-Beyoncé-[feat.-Dej-Loaf]-[Clean]</div>
+												<div>
+													<div>
+														00:04:39
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-11" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(11,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">11---Goldmine-[Clean]</div>
+												<div>
+													<div>
+														00:03:32
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-12" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(12,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">09---Oh-Me-Oh-My-[feat.-Travis-Scott]-[Clean]</div>
+												<div>
+													<div>
+														00:04:16
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-13" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(13,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">09---All-On-You</div>
+												<div>
+													<div>
+														00:03:06
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-14" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(14,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">07---Bout-That-[feat.-Lil-Wayne]-[Clean]</div>
+												<div>
+													<div>
+														00:03:46
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-15" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(15,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">06---Stix-and-Stones</div>
+												<div>
+													<div>
+														00:03:25
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-16" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(16,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">05---Black-Beatles-[feat.-Gucci-Mane]-[Clean]</div>
+												<div>
+													<div>
+														00:04:51
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-17" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(17,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">04---Melt</div>
+												<div>
+													<div>
+														00:03:34
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-18" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(18,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">04---FAB.-(feat.-Remy-Ma)-[Clean]</div>
+												<div>
+													<div>
+														00:03:35
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-19" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(19,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">04---Cranes-in-the-Sky</div>
+												<div>
+													<div>
+														00:04:10
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-20" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(20,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">03---Want-Her-[feat.-YG]-[Clean]</div>
+												<div>
+													<div>
+														00:04:35
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-21" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(21,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">03---Step-Up-(feat.-Dej-Loaf---Sha-Sha)-[Clean]</div>
+												<div>
+													<div>
+														00:02:47
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-22" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(22,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">03---No-Apologies.-(feat.-Wiz-Khalifa)-[Clean]</div>
+												<div>
+													<div>
+														00:03:15
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-23" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(23,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">03---Love-Me-In-A-Special-Way</div>
+												<div>
+													<div>
+														00:04:14
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-24" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(24,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">03---BYB-(Bounce---Break-Your-Back)</div>
+												<div>
+													<div>
+														00:03:16
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-25" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(25,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">02---Dancehall-Soldier-(feat.-Beenie-Man)</div>
+												<div>
+													<div>
+														00:02:58
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-26" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(26,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">02---All-This-Love</div>
+												<div>
+													<div>
+														00:05:53
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-27" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(27,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---You---Me-[feat.-G-Eazy]</div>
+												<div>
+													<div>
+														00:03:38
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-28" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(28,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Tru</div>
+												<div>
+													<div>
+														00:04:15
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-29" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(29,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Thick-Of-It</div>
+												<div>
+													<div>
+														00:04:02
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-30" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(30,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---The-Fix-(feat.-Jeremih)-[Clean]</div>
+												<div>
+													<div>
+														00:02:53
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-31" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(31,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Techno-(feat.-Waka-Flocka-Flame)</div>
+												<div>
+													<div>
+														00:03:28
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-32" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(32,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Run</div>
+												<div>
+													<div>
+														00:03:37
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-33" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(33,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Move-Ya-Body-(Radio-Edit)</div>
+												<div>
+													<div>
+														00:03:54
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-34" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(34,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Love-Me-Now</div>
+												<div>
+													<div>
+														00:03:30
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-35" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(35,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Long-Song-Away</div>
+												<div>
+													<div>
+														00:04:32
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-36" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(36,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Location</div>
+												<div>
+													<div>
+														00:03:37
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-37" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(37,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Life</div>
+												<div>
+													<div>
+														00:03:06
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-38" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(38,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Juju-On-That-Beat-(TZ-Anthem)</div>
+												<div>
+													<div>
+														00:02:24
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-39" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(39,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Infamous</div>
+												<div>
+													<div>
+														00:03:35
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-40" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(40,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---I-Like-It</div>
+												<div>
+													<div>
+														00:04:39
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-41" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(41,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Hotter-Than-Hell</div>
+												<div>
+													<div>
+														00:03:08
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-42" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(42,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Here-with-Me</div>
+												<div>
+													<div>
+														00:04:05
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-43" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(43,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---False-Alarm</div>
+												<div>
+													<div>
+														00:03:51
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-44" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(44,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Express-Yourself-(Gent---Jawns-Remix)</div>
+												<div>
+													<div>
+														00:02:51
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-45" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(45,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Dust-My-Shoulders-Off-(feat.-Timbaland)</div>
+												<div>
+													<div>
+														00:03:50
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-46" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(46,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Don-t-Hurt-Me-[Clean]</div>
+												<div>
+													<div>
+														00:03:13
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-47" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(47,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Don-t-Go</div>
+												<div>
+													<div>
+														00:03:40
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-48" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(48,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Cupid</div>
+												<div>
+													<div>
+														00:03:09
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-49" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(49,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Circles</div>
+												<div>
+													<div>
+														00:03:45
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-50" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(50,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---Back-Up-[Clean]</div>
+												<div>
+													<div>
+														00:04:01
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-51" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(51,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">01---24K-Magic</div>
+												<div>
+													<div>
+														00:03:46
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+								<div class="on-demand-row">
+									<div id="on-demand-on-air-52" class="on-demand-state fL"></div>
+									<div class="on-demand-media-details dT fL cP" onClick="loadMedia(52,true);">
+										<div class="top-menu-button-c1">
+											<div class="top-menu-button-c2">
+												<div class="menuHeader oE">The-V-Spot-Lamont-Pettiway-EP5</div>
+												<div>
+													<div>
+														00:13:13
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-help" class="dH">
+				<div>
+					<img src="images/help.png" width="40" height="40" />
+					<div class="player-apps-title">Help</div>
+					<div class="player-apps-content">
+						<p><b>If you accessed the player from a desktop computer (PC or Mac)</b></p>
+						<ul>
+							<li>For the best experience, we recommend upgrading to the latest version of your Internet browser</li>
+							<li>If the stream is not audible, or doesn't start, please verify that you have the latest version of Adobe Flash plug-in installed.</li>
+							<li>The player is known to work on Windows, Mac OS and Linux, using Chrome, Firefox, Safari or Internet Explorer</li>
+						</ul>
+						<br />
+						<p><b>If you accessed the player from a mobile device</b></p>
+						<ul>
+							<li>If this station has a mobile app, we recommend installing and using it for the best experience</li>
+							<li>Since Adobe Flash is not supported on most mobile devices, you may not be able to listen to the audio stream; however, you can use most of the interactive features of the player</li>
+						</ul>
+						<br />
+						<p><b>Privacy Policy</b></p>
+						<p>
+							We may allow third-party companies to serve ads and/or collect certain anonymous information when you visit this website. These companies may use non-personally identifiable information (e.g., click stream information, browser type, time and date, subject of advertisements clicked or scrolled over) during your visits to this and other websites in order to provide advertisements about goods and services likely to be of greater interest to you. These companies typically use a cookie or third party web beacon to collect this information. To learn more about this behavioral advertising practice or to opt-out of this type of advertising, you can visit <a href="http://networkadvertising.org/choices" target="_blank">http://networkadvertising.org/choices</a>.
+							<br><br>
+							Our properties may feature Nielsen proprietary measurement software, which will allow you to contribute to market research, such as Nielsen Audio. To learn more about the information that Nielsen software may collect and your choices with regard to it, please see the Nielsen Digital Measurement Privacy Policy at <a href="http://www.nielsen.com/digitalprivacy" target="_blank">http://www.nielsen.com/digitalprivacy</a>.
+						</p>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-news" class="dH">
+				<div>
+					<img src="images/news.png" width="40" height="40" />
+					<div class="player-apps-title">News</div>
+					<div id="player-apps-content-news" class="player-apps-content"></div>
+				</div>
+			</div>
+		
+			<div id="player-apps-stocks" class="dH">
+				<div>
+					<img src="images/stocks.png" width="40" height="40" />
+					<div class="player-apps-title">Stocks</div>
+					<div class="player-apps-content">
+						<div id="player-apps-content-stocks" class="fL"></div>
+						<div class="fL">
+							<iframe name="wsjIndexWidget" id="wsjIndexWidget" src="http://online.wsj.com/marketsdata/widgets/mdcwidget_default_wide.html?title=Markets from WSJ.com&symbols=NCM,SPX,DJI,HKS,STOXX50&hl1=true&hl2=false&hl3=false&qsb=true&style=blue" width="175px" height="250px" marginwidth="0" marginheight="0" frameborder="0" scrolling="no"></iframe>
+						</div>
+					</div>				
+				</div>
+			</div>
+		
+			<div id="player-apps-sports" class="dH">
+				<div>
+					<img src="images/sports.png" width="40" height="40" />
+					<div class="player-apps-title">Sports</div>
+					<div id="player-apps-content-sports" class="player-apps-content"></div>
+				</div>
+			</div>
+		
+			<div id="player-apps-entertainment" class="dH">
+				<div>
+					<img src="images/entertainment.png" width="40" height="40" />
+					<div class="player-apps-title">Entertainment</div>
+					<div id="player-apps-content-entertainment" class="player-apps-content"></div>
+				</div>
+			</div>
+		
+			<div id="player-apps-weather" class="dH">
+				<div>
+					<img src="images/weather.png" width="40" height="40" />
+					<div class="player-apps-title">Weather</div>
+					<div class="player-apps-content" style="background-color:#C8D6FB">
+						<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="http://forecast.io/embed/#lat=36.9312&lon=-76.2397&name=Norfolk,%20Virginia"></iframe>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-traffic" class="dH">
+				<div>
+					<img src="images/traffic.png" width="40" height="40" />
+					<div class="player-apps-title">Traffic map</div>
+					<div class="player-apps-content" id="player-apps-content-traffic"></div>
+				</div>
+			</div>
+		
+			<div id="player-apps-flight" class="dH">
+				<div>
+					<img src="images/flight.png" width="40" height="40" />
+					<div class="player-apps-title">Flight tracker</div>
+					<div class="player-apps-content">
+						<iframe src="http://www.flightstats.com/go/FlightStatus/getFlightStatusWidget.do?guid=34b64945a69b9cac:-3d959db5:13912449d99:-6659" frameborder="0" scrolling="no" width="280" height="240"></iframe>					
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-deals" class="dH">
+				<div>
+					<img src="images/deals.png" width="40" height="40" />
+					<div class="player-apps-title">Deals & coupons</div>
+					<div class="player-apps-content">
+						
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-request" class="dH">
+				<div>
+					<img src="images/request.png" width="40" height="40" />
+					<div class="player-apps-title">Song request</div>
+					<div class="player-apps-content">
+						<p>Is there a particular song you'd like to have us play? Fill out & stay tuned!<br />
+						Your email address will not be used for any other purpose.</p>
+						<input type="text" id="songRequestName" value="Your name" size="40" maxlength="64" onClick="fieldDesc(this,'in','Your name',2);" onBlur="fieldDesc(this,'out','Your name',2);">
+						<br /><br />
+						<input type="text" id="songRequestEmail" value="Your email address" size="40" maxlength="64" onClick="fieldDesc(this,'in','Your email address',10);" onBlur="fieldDesc(this,'out','Your email address',10);">
+						<br /><br />
+						<input type="text" id="songRequestTitle" value="Song request" size="40" maxlength="64" onClick="fieldDesc(this,'in','Song request',5);" onBlur="fieldDesc(this,'out','Song request',5);">
+						<br /><br />
+						<div class="fL"><input type="button" value="Send request" onClick="songRequest();"></div>
+						<div id="songRequestErr" class="fL ml10 red formErrMsg"></div>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-chat" class="dH">
+				<div>
+					<img src="images/chat.png" width="40" height="40" />
+					<div class="player-apps-title">Chat with other listeners</div>
+					<div id="player-apps-chat-wrapper">Loading chat, please wait....</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-games" class="dH">
+				<div>
+					<img src="images/games.png" width="40" height="40" />
+					<div class="player-apps-title">Play games</div>
+					<div class="player-apps-content">
+						Play fun games for free. The games will launch in a new window; to return to this player simply close the games window once you're done beating all
+						the aliens, flying all the spaceships, avoiding all the asteroids... go get'em!
+						<div class="player-apps-content-games cP" onClick="openURL('player_apps_framed.cfm?stationCallSign=WVYZ&playerApp=games&playerLogo=http%3A%2F%2Fcdnrf%2Esecurenetsystems%2Enet%2Ffile%5Fradio%2Fstations%5Flarge%2FWVYZ%2Fv5%2Flogo%2Epng&geoDMACode=544&geoCTCode=US','1350','780');"><img src="images/games-start.jpg" width="385" border="0" title="Click to start playing" /></div>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-playlist" class="dH">
+				<div>
+					<img src="images/media-playlist.png" width="40" height="40" />
+					<div class="player-apps-title">Recently played</div>
+					<div>
+						<iframe id="player-apps-frame-playlist" class="player-apps-frame" frameborder="no" scrolling="no" src="sd/index.cfm?stationCallSign=WVYZ" allowtransparency="true"></iframe>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-media-buy-song" class="dH">
+				<div>
+					<img src="images/media-buy-song.png" width="40" height="40" />
+					<div class="player-apps-title">Buy media</div>
+					<div class="player-apps-content">
+						<p>You can buy & download this track & more from either Apple iTunes or Amazon.com mp3 store. Simply click the icon for the store you wish to access.</p>
+						<div id="mediaBuyTitle" class="menuHeader"></div>
+						<div id="mediaBuyArtist"></div>
+						<div id="mediaBuyAlbum"></div>
+						<br />
+						<div class="fL cP mr20" onClick="goToMediaStore('iTunes');"><img src="images/media-buy-song-itunes.png" width="75" height="75" title="Click here to buy from Apple iTunes" /></div>
+						<div class="fL cP" onClick="goToMediaStore('amazon');"><img src="images/media-buy-song-amazon.png" width="75" height="75" title="Click here to buy from Amazon.com" /></div>
+						<form id="mediaBuyForm" action="http://radio.securenetsystems.net/get_tune_buy_link.cfm" method="post" style="margin:0px;" target="_blank">
+							<input type="hidden" name="stationCallSign" value="WVYZ">
+							<input type="hidden" name="title" id="mFtitle" value="">
+							<input type="hidden" name="artist" id="mFartist" value="">
+							<input type="hidden" name="album" id="mFalbum" value="">
+						</form>				
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-lyrics" class="dH">
+				<div>
+					<img src="images/media-lyrics.png" width="40" height="40" />
+					<div class="player-apps-title">Song lyrics</div>
+					<div class="player-apps-content" id="player-apps-content-lyrics"></div>
+				</div>
+			</div>
+		
+			<div id="player-apps-send-to-mobile" class="dH">
+				<div>
+					<img src="images/media-send-to-mobile.png" width="40" height="40" />
+					<div class="player-apps-title">Send to mobile</div>
+					<div class="player-apps-content">
+						<br /><br />
+						<div class="playerAppSendToMobileQR-wrapper fL mr20">
+							<div id="playerAppSendToMobileQR"></div>
+						</div>
+						<div>
+							<div class="f15em">Scan the QR code to send the player to your compatible mobile device.</div>
+							<div><br />If your mobile device doesn't have a QR scanning app, download a free one from your device's app store.</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-timeout" class="dH">
+				<div>
+					<img src="images/on-air.png" width="40" height="40" />
+					<div class="player-apps-title">Are you still here?</div>
+					<div class="player-apps-content">
+						<div id="playerAppTimeoutIni">
+							<div class="fL">Due to inactivity on the player, the stream will stop in&nbsp;</div><div id="sTO_remTime" class="fL">60 seconds</div>
+							<br /><br />
+							<div onClick="streamTimeoutCancel();" class="cP">Click here to continue listening</div>
+						</div>
+						<div id="playerAppTimeoutOn" class="dH">
+							<p>The audio stream has been stopped due to inactivity on the player.</p>
+							<div onClick="streamTimeoutReset();" class="cP">Click here to resume listening</div>
+						</div>						
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-top-menu-5" class="dH">
+				<div>
+					<img src="images/web.png" width="40" height="40" />
+					<div class="player-apps-title"></div>
+					<div class="player-apps-content">
+						
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-top-menu-4" class="dH">
+				<div>
+					<img src="images/web.png" width="40" height="40" />
+					<div class="player-apps-title">TOP SHOWS</div>
+					<div class="player-apps-content">
+						
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-top-menu-3" class="dH">
+				<div>
+					<img src="images/web.png" width="40" height="40" />
+					<div class="player-apps-title"></div>
+					<div class="player-apps-content">
+						
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-top-menu-2" class="dH">
+				<div>
+					<img src="images/web.png" width="40" height="40" />
+					<div class="player-apps-title"></div>
+					<div class="player-apps-content">
+						
+					</div>
+				</div>
+			</div>
+		
+			<div id="player-apps-top-menu-1" class="dH">
+				<div>
+					<img src="images/web.png" width="40" height="40" />
+					<div class="player-apps-title"></div>
+					<div class="player-apps-content">
+						
+					</div>
+				</div>
+			</div>
+		
+		
+
+	</div>
+	
+	
+<div id="playerDiv" class="player-div">
+
+	
+
+		<div id="transport-icons">
+			<img id="transport-play" src="images/transport-play.png" class="player-div-img dH cP" width="80" height="80" onClick="transportAction('play',true);" title="Start playing media" />
+			<img id="transport-pause" src="images/transport-pause.png" class="player-div-img dH cP" width="80" height="80" onClick="transportAction('pause',true);" title="Pause media" />
+			<img id="transport-buffering" src="images/transport-buffering.gif" class="player-div-img dH cP" width="54" height="55" title="Preparing media, please wait...." />
+		</div>
+
+		<img id="now-playing-album-art" src="images/dot_blank.gif" class="player-div-img cP " width="250" height="250" title="Click for song-related options" />
+
+		<div id="transport-counter-wrapper">
+			<div id="transport-counter" class="now-playing f15em tS">00:00</div>
+			<div id="transport-progress"><div id="transport-progress-bar"></div></div>
+		</div>
+
+		<div id="transport-volume-label" class="now-playing f15em tS">VOL</div>
+		<div id="transport-volume" title="Click to change volume"><div id="transport-volume-bar"></div></div>
+
+		<div id="now-playing" class="now-playing tS ">
+			<div id="now-playing-title" class="menuHeader f15em"></div>
+			<div id="now-playing-artist"></div>
+			<div id="now-playing-album"></div>
+		</div>
+		
+		
+			<div id="media-rate-wrapper" class="media-rate-wrapper tS dH">
+				<div id="media-rate-up" class="media-rate-up cP fL mr20" onClick="mediaRate('up');" title="Like this track"></div>
+				<div id="media-rate-down" class="media-rate-down cP fL mr20" onClick="mediaRate('down');" title="Dislike this track"></div>
+				<div id="media-rate-message" class="fL"></div>
+			</div>
+		
+
+		<div id="media-icons" class="media-icons dH">
+			<img src="images/media-playlist.png" height="30" width="30" border="0" title="View last songs played" onClick="startApp('playlist');" />
+			<img src="images/media-lyrics.png" height="30" width="30" border="0" title="View song lyrics" onClick="startApp('lyrics');getSongLyrics();" /> <img src="images/media-buy-song.png" height="30" width="30" border="0" title="Buy this song" onClick="buyMedia();" /> 
+				<img src="images/media-facebook.png" height="30" width="30" border="0" title="Share this song on Facebook" onClick="socialShare('facebook');" />
+				<img id="media-icons-twitter" src="images/media-twitter.png" height="30" width="30" border="0" title="Tweet this song" onClick="socialShare('twitter');" /></a>
+			
+		</div>
+	
+	
+</div>
+
+					<div id="powered-about" onClick="dspPoweredSSI();">CIRRUS&#174; &nbsp;BY SSI. WE BUILD IMMERSIVE MEDIA PLAYERS FOR TERRESTRIAL AND INTERNET RADIO STATIONS WORLDWIDE.</div>
+					<div id="powered-link" onClick="openURL('http://www.securenetsystems.net');">CLICK HERE TO GET STARTED WITH</div>
+					<div id="powered-ssi" onClick="dspPoweredSSI();"></div>
+				
+					<div id="menu-button-expand" class="menu-button" onClick="dspMenu();" title="Show menu"></div>
+					<div id="menu-button-contract" class="menu-button" onClick="dspMenu();" title="Hide menu"></div>
+				
+				
+
+				
+				<div id="bannerM"></div>
+				<div id="bannerD"></div>
+					
+					<div id="bannerN" class="bannerNotActive"></div>
+					<div id="bannerE" class="bannerNotActive"></div>
+					
+				
+
+				
+				<div id="mediaplayer" class="mediaplayer mediaplayer-audio"></div>
+				<div id="mediaplayerOD" class="mediaplayer videoplayer-hide"></div>
+				<div id="vpaidplayerdiv" class="mediaplayer vpaidplayer vpaidplayer-hide"></div>
+				<div id="mediaplayer-video-shader" class="mediaplayer-video mediaplayer-video-shader"></div>
+				
+
+				
+				<div class="flash-proxy">
+					<object
+						id="swfhttprequest" class="xDomainFlash"
+						classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000"
+						codebase="http://fpdownload.adobe.com/pub/shockwave/cabs/flash/swflash.cab##version=9,0,0,0">
+						<param name="movie" value="assets/swfhttprequest.swf?onload=swfhttprequestready" />
+						<param name="allowScriptAccess" value="always" />
+						<embed
+							class="xDomainFlash"
+							src="assets/swfhttprequest.swf?onload=swfhttprequestready"
+							allowScriptAccess="always"
+							type="application/x-shockwave-flash"
+							pluginspage="http://www.adobe.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash">
+						</embed>
+					</object>
+				</div>
+				
+
+				
+				<div id="impressionDiv" class="impression-div"></div>
+				
+
+				
+
+			</div>
+		
+
+		
+		<div id="debugDiv">
+			
+		</div>
+		
+
+	</body>
+
+</html>

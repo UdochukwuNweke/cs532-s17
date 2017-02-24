@@ -1,0 +1,414 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script language="javascript">
+if(self.location==top.location)self.location="rp_2.php#name=Music&file=songinfo&song_id=764"
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Dr. John - Iko Iko - Radio Paradise - eclectic commercial free Internet radio</title>
+<meta name="description" content="Modern & classic rock, electronica, world music & more - picked & mixed by real humans - high quality sound with no subscription fees or ads.">
+<meta name="keywords" content="radio, rock, progressive, FM, DJ, HD, music, free, high fidelity, high bitrate, 320k, 192k, high resolution">
+<meta name="ROBOTS" content="ALL">
+<meta name="REVISIT-AFTER" content="10 DAYS">
+<meta name="distribution" content="global">
+<meta http-equiv="EXPIRES" content="0">
+<meta name="AUTHOR" content="Radioparadise.com">
+<meta name="COPYRIGHT" content="Copyright (c) 1999-2016 by radioparadise.com">
+<base href="http://www.radioparadise.com"></base>
+
+<link rel="StyleSheet" href="css/rp2-style.1.css?version=1.804" type="text/css">
+
+	
+<link rel="image_src" href="http://www.radioparadise.com/graphics/covers/l/B000002I6P.jpg">
+<meta property="og:image" content="http://www.radioparadise.com/graphics/covers/l/B000002I6P.jpg">
+
+<link type="text/css" href="http://www.radioparadise.com/scripts/themes/base/jquery.ui.all.css?version=1.61" rel="stylesheet" />
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/jquery_1_7_1.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.slider.js"></script>
+	<script type="text/javascript" src="http://www.radioparadise.com/scripts/rp2.js?version=2.001"></script>
+
+<style type="text/css">.ui-slider-horizontal .ui-state-default { height: 12px; width: 6px; }</style>
+
+<style>ul#nav {width:440px;}</style>
+
+<script type="text/javascript">
+
+	function changeHash(hash) {
+		if(history.pushState) {
+			top.history.replaceState(null, top.document.title, '#'+hash);
+		} else {
+			top.document.location.hash = hash;
+		}
+	}	
+	top.document.title = "Dr. John - Iko Iko - Radio Paradise - eclectic commercial free Internet radio";
+	changeHash('name=Music&file=songinfo&song_id=764');
+	
+	var pos = getPos();
+	if (!pos) pos = 70;
+	$(function(){
+		$( "#slider" ).slider({
+			value: pos,
+			min: 0,
+			max: 100,
+			slide: function( event, ui ) {
+				setVolume( ui.value );
+			}
+		});
+	});
+
+	function change_img(div_id,img_id) {
+		$(div_id).css("background-image", "url(graphics/" + img_id + ")");  
+	}
+	function load_topic_content(file) {
+		$('#topic_content').load('content/Music/' + file + '.php');
+		$('html, body').animate({ scrollTop: 0 }, 0);
+	}
+	function load_page_content(name, file) {
+		$('#content').load('content/' + name + '/' + file + '.php');
+	}
+</script>
+
+<script type="text/javascript">
+	window.onload=function(){
+		setTimeout("playlist_update()", 152000);		
+			}
+
+	function setCookie(c_name,value,exdays)
+	{
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+		document.cookie=c_name + "=" + c_value;
+	}
+	function hideHeader(){
+		$('#appeal_header').hide(200);
+		setCookie("C_hide_appeal", "true", 5)
+	}
+	
+
+	
+</script>
+
+
+
+</head>
+<body>
+<div align="center">
+
+
+<div id="container">
+
+
+
+
+<div align="center">
+
+
+<div id="header">
+	<table border="0" width="900" cellpadding="0" cellspacing="0" ><tr><td width="20">&nbsp;</td>
+	<td width="420" class="logo">
+	
+	<a href="rp2-content.php?name=Home">
+	<img src="clear.gif" width="420" height="46" border="0"></a>
+	<div style="font-weight:bold;letter-spacing:1px;margin-left:202px;margin-bottom:20px;">
+	<a class="black" href="https://www.radioparadise.com/rp2s-content.php?name=Support" target="_blank">Listener Supported</a>
+	</div>
+	<div id="controls">
+		<div id="slider" title="Volume">
+		</div>
+		<form action="rp_2.php#name=Music&file=songinfo&song_id=764" target="_top" method="post" style="display:inline">
+		<select name="change_bitrate" onchange="this.form.submit();" style="outline: none" title="Select main stream bitrate">
+		<option value="0">32k</option>
+		<option value="1" selected>128k</option>
+		<option value="2">192k</option>
+		</select></form>&nbsp;&nbsp;
+		<input type="button" class="button" value="Stop" title="Stop Audio" onclick="javacript: doStop(); return false;">
+		<input type="button" class="button" id="play_button"  value="Play >" title="Start or return to main RP stream" onclick="javacript: doReturn(); return false;">
+					<a href="rp2-content.php?name=Members&file=register_psd"><input type="button" title="Log in to activate the Something Different function"  class="button" value="PSD >>" ></a>
+			
+		<script type="text/javascript">
+	
+			if (parent.frames.player_2.playing == "yes") {
+				button_2();
+			}
+			if (parent.frames.player_1.playing == "yes") {
+				button_3();
+			}
+	
+		</script>
+	
+	</div>
+	</td><td align="center" valign="top" width="460" >
+	<form action="javascript: doRating()" id="rating_form_top" style="display:inline">
+	
+		<div id="nowplaying">
+			<div id="playlist_content">	
+			<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="bottom" width="1"></td><td valign="bottom"><div id="pre_list"><a class="song_title"  href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=44486">Delgres &mdash; Lanme La</a><br /><a class="song_title"  href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=460">The Band &mdash; The Shape I'm In</a><br /><a class="song_title"  href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=44529">Sofi Tukker &mdash; Hey Lion</a><br /></div><a class="song_title" href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=32878"><b>Wild Strawberries &mdash; Everyone's Got the Blues on Sunday</b></a></td><td valign="bottom" ><a class="song_title" href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=32878"><img src="http://www.radioparadise.com/graphics/covers/m/B00066IUYG.jpg" class = "cover_art" width="100" height="100" border="0" align="right" style="margin-left:12px;"></a></td></tr></table>			</div>
+		</div>
+		
+	</form>
+	</td></tr></table>
+</div>
+<table border="0" width="800" cellpadding="0" cellspacing="0" ><tr><td>
+<div id="classic" style="text-align:left;height:26px;"><div style="font-size:120%;font-weight:bold;color:#d63;background-color:#222;border:1px solid #d63;border-radius:4px;padding:4px;display:inline;"> NEW: <a class="song_title" href="https://beta.radioparadise.com/" target="_top">Beta Website/Player</a> </div>&nbsp;&nbsp&nbsp[ <a class="login" href="javascript:void();" onclick="javascript: startRPHD(); return false;">Slideshow Player</a> ]&nbsp;&nbsp&nbsp[ <a class="login" href="javascript:void();" onclick="javascript: startPlayer(); return false;">Audio Player</a> ]</div><div id="login">[ <a class="login" href="rp2-content.php?name=Members&file=login&query_n=MusicZZfile=songinfoZZsong_id=764">Log In</a> ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ <a class="login" href="rp2-content.php?name=Members&file=register">Register</a> ]&nbsp;&nbsp;&nbsp;[ <a class="login" href="javascript://" onClick="window.location.reload()">refresh this window</a> ]</div></td></tr></table>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td>
+
+<div id="menu">
+	<table border="0" cellpadding="0" cellspacing="0"><tr><td>
+    <ul id="nav2">
+        <li><a href="rp2-content.php">Home</a></li>
+    	<li><a href="rp2-content.php?name=Forum">Community</a></li>
+    	<li><a href="https://www.radioparadise.com/rp2s-content.php?name=Support&file=support" target="_blank">Support&nbsp;RP</a></li>
+    	<li><a href="rp2-content.php?name=Help">Help&nbsp;&amp;&nbsp;Info</a></li>
+    </ul>
+    </td><td >
+    <ul id="nav">
+        <li><a href="rp2-content.php?name=Playlist">Playlist</a></li>
+        <li class="activelink"><a href="rp2-content.php?name=Music">Music/Artists</a></li>
+        <li><a href="rp2-content.php?name=Favorites">Favorites</a></li>
+                <li><a href="rp2-content.php?name=Submissions">Submissions</a></li>
+            </ul>
+    </td></tr></table>
+</div>
+</td></tr></table>
+<div align="center">
+<div id="content">
+
+<style>
+img{ max-width:660px; }
+.head_active a:link{ color:#432;}
+.head_active a:visited{ color:#432;}
+
+.head_inactive { }
+.lyrics {
+	background-color: #463d3a;
+	border: #666 2px solid;
+	padding: 10px;
+	font-size: 12pt;
+	color: #eee;
+	text-align: center;
+    border-radius: 4px;		
+	
+}
+.links_inactive {
+	filter:alpha(opacity=75);
+	opacity:.75;
+}
+.links_active { }
+
+
+</style>
+
+<script type="text/javascript">
+
+function doRatingSI() {
+	var rating = $("#rating_val").val();
+	var song_id = $("#rating_form").find( 'input[name="song_id"]' ).val();
+	rating_url = "ajax_rating.php";
+	$('#rating').load(rating_url, {  "rating": rating, "song_id": song_id  });
+}
+
+
+function showRating(song_id) {
+	rating_url = "ajax_rating.php";
+	$('#rating').load(rating_url, { "song_id": song_id  });
+}
+
+function showiTunes() {
+	itunes_url = "ajax_itunes.php";
+	$('#itunes').load(itunes_url, { "song_id": 764, "user_id": 0 });
+}
+
+var load_type;
+var override;
+
+
+var offset = 50;
+var remaining_comments = 56 - offset; 
+
+function update_morelink() {
+	if (remaining_comments > 0) {
+		$('#morelink').html('<div class="heading_2"> <a href="javascript:add_comments()">(more)</a></div>');
+	 }else{
+		$('#morelink').html("&nbsp;");
+	 }
+}
+
+function add_comments()
+{
+   $.ajax({
+     type: "GET",
+     url: 'ajax_get_comments.php',
+     data: "song_id=764&content_prefix=rp2-&offset=" + offset, 
+     success: function(data) {
+		$('#maincontent-1').append(data);
+		offset = offset + 50;
+		remaining_comments = remaining_comments - 50;
+		update_morelink();
+     }
+
+   });
+}
+
+
+function showDiv(divID) {
+     $('.contentdivs').each(function(index) {
+          if ($(this).attr("id") == divID) {
+               $(this).show(200);
+          }
+          else {
+               $(this).hide(600);
+          }
+     });
+     if (divID == "maincontent-1") {
+     	update_morelink();
+     	$('#contenthead-1').attr('class', 'head_active');
+     	$('#contenthead-2').attr('class', '');
+     }else{
+     	$('#morelink').html("&nbsp;");
+     	$('#contenthead-1').attr('class', '');
+     	$('#contenthead-2').attr('class', 'head_active');
+     }
+}
+
+function showCover() {
+	if ($('#lg_cover').css('display') == 'none') {
+		$('#lg_cover').show(400);
+		$('#more_info').show(400);
+		$('#rating').hide(200);
+		$('#links').hide(200);
+	}else{
+		$('#rating').show(400);
+		$('#links').show(400);
+		$('#lg_cover').hide(200);
+		$('#more_info').hide(200);
+	}
+}
+
+$(update_morelink);	
+</script>
+<div class="heading_1" style="margin-bottom:12px;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="15%"><a href="rp2-content.php?name=Music&file=songinfo&song_id=32946"><input type="button" class="button" value="<< Prev Song" title="Previous song on RP playlist" ></a></td><td width="70%" style="text-align:center;"><a class="song_title" href="rp2-content.php?name=Music&func=search&type=artist&search=Dr.+John">Dr. John</a> &mdash; <a class="song_title" href="rp2-content.php?name=Music&file=songinfo&song_id=764">Iko Iko</a></div></td><td width="15%"><a href="rp2-content.php?name=Music&file=songinfo&song_id=404"><input type="button" class="button" value="Next Song >>" title="Next song on RP playlist" ></a></td></tr></table></div><div style='margin-bottom:10px;'>
+<table border="0" cellpadding="0" cellspacing="0" width="99%"><tr><td width="200" valign="top" style="text-align:center;font-size: 10pt;"><div id="cover"><a href="javascript:showCover()" title="click for more info & larger cover"><img width="150" height="150" border="0" src="http://www.radioparadise.com/graphics/covers/m/B000002I6P.jpg" ></a></div><div id="more_info" style="display:none;">Album: Dr. John's Gumbo</a> <br />Released: 1972<br />Last play: Jan 29, 2017<br />Plays in last 30 days: 2<br /></div></td><td width="276" valign="top" style="padding-left: 12px;font-size: 10pt;"><div id="lg_cover" style="display:none"><img src="http://www.radioparadise.com/graphics/covers/l/B000002I6P.jpg" width="500" height="500"></div><div id="spotify" style="display:none">&nbsp;</div><div id="rating" ><script type="text/javascript">showRating(764);</script> 
+</div></td><td  valign="top" style="padding-left: 12px;font-size: 10pt;">
+<div id="links"><div class="misc_links"><a class="song_title" href="http://www.facebook.com/sharer/sharer.php?u=http://www.radioparadise.com%2Frp2-content.php%3Fname%3DMusic%26file%3Dsonginfo%26song_id%3D764" target="_blank"><img src="graphics/facebook-logo.png" width="20" height="20" border="0" align="center"> share</a><a class="song_title" href="http://www.radioparadise.com/tweet.php?url=http://www.radioparadise.com%2Frp2-content.php%3Fname%3DMusic%26file%3Dsonginfo%26song_id%3D764&song=Dr.+John+-+Iko+Iko" target="_blank"><img src="graphics/twitter-logo.png" width="20" height="20" border="0"  align="center" style="margin-left:14px"> tweet</a><a class="song_title" href="http://en.wikipedia.org/wiki/Dr._John" target="_blank"><img src="graphics/wikipedia_icon.png" width="20" height="20" border="0" align="center" style="margin-left:14px"> wiki</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="song_title" href="http://www.google.com/search?q=Dr.+John&btnI=lucky" target="_blank">website</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="song_title" href="http://www.google.com/search?q=Dr.+John" target="_blank">search</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="song_title" href="http://www.allmusic.com/search/artist/Dr.+John" target="_blank">amg</a></div><div class="sales_links"><a class="song_links" href="rp2-content.php?name=Music&file=amazon&asin=B000002I6P"><img src="graphics/amazon_trans_100x40.png" style="margin-right:8px;float:left;"></a><div style="margin-bottom:20px;display:inline;" ><form action="rp2-content.php?name=Music&file=songinfo&song_id=764&set_amz=yes" method="post" id="amz_select" style="display:inline;"><select name="amz_loc" onchange="javascript: this.form.submit();" style="margin-top:9px;height:24px;float:left;"><option value="US" selected>US</option><option value="UK">UK</option><option value="CA">CA</option><option value="FR">FR</option><option value="DE">DE</option></select></form></div>
+<div class="amazon_links"><a class="song_title" href="http://www.amazon.com/Dr.-John-Dr.-John%27s-Gumbo/dp/B000002I6P?tag=radioparadise-20" target="_blank">cd</a></div><div class="amazon_links"><a class="song_title" href="http://www.amazon.com/Dr.-John-Dr.-John%27s-Gumbo/dp/B00123IB7S?tag=radioparadise-20" target="_blank">mp3</a></div><div class="amazon_links"><a class="song_title" href="rp2-content.php?name=Music&file=amazon&asin=B000002I6P">more</a></div></div><div class="sales_links"><img src="graphics/itunes_trans_100x40.png" style="margin-right:8px;float:left;" ><div id="itunes" style="display:inline;"><script type="text/javascript">showiTunes();</script></div></div></div></td></tr></table></td></tr></table></div>
+<div class="heading_2" align="center" style="margin-bottom:8px;" id="mojo"><div style="float:left;width:33%;display:inline;" id="contenthead-1" class="head_active"><a href="javascript:showDiv('maincontent-1');">56 comments for this song:</a></div><div style="text-align:center;width:33%;display:inline;" id="contenthead-2" class="head_inactive" ><a href="javascript:showDiv('maincontent-2');">Lyrics:</a></div><div style="float:right;width:33%;display:inline">Log in above to post your comment</div></div>
+<div class="contentdivs lyrics" id="maincontent-2" style="display:none"><br />Hey now (hey now)<br />Hey now (hey now)<br />Iko iko un day<br />Jockomo feeno ah na nay<br />Jockomo feena nay<br />Hey now (hey now)<br />Hey now (hey now)<br />Iko iko un day<br />Jockomo feeno ah na nay<br />Jockomo feena nay<br />My grandma see your grandpa<br />Sitting by the Bayou<br />My grandma see your grandpa<br />Gonna fix your chicken wire<br />Hey now (hey now)<br />Hey now (hey now)<br />Iko iko un day<br />Jockomo feeno ah na nay<br />Jockomo feena nay<br />My spy dog see your spy dog<br />Sitting by the Bayou<br />My spy dog see your spy dog<br />Gonna set your tail on fire<br />Hey now (hey now)<br />Hey now (hey now)<br />Iko iko un day<br />Jockomo feeno ah na nay<br />Jockomo feena nay<br />My little boy see your little boy<br />Sitting by the Bayou<br />My little boy see your little boy<br />Gonna fix your chicken wire<br />Hey now (hey now)<br />Hey now (hey now)<br />Iko iko un day<br />Jockomo feeno ah na nay<br />Jockomo feena nay<br />My grandma see your grandma<br />Sitting by the Bayou<br />My grandma see your grandma<br />Gonna fix your chicken wire<br />Hey now (hey now)<br />Hey now (hey now)<br />Iko iko un day<br />Jockomo feeno ah na nay<br />Jockomo feena nay<br /><br /><br /></div>
+<div class="contentdivs" id="maincontent-1" ><table border="0" cellpadding="8" cellspacing="4" width="100%"><tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Nerubo">Nerubo</a></b><br /><span class="teensy">(Denver, CO)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Nov 22, 2016 - 15:20</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />It's almost impossible to be in a bad mood while listening to this song. Nor am I inclined to try.&nbsp;<img title="{#Laughing}" src="scripts/tiny_mce/plugins/emotions/img/smiley-laughing.gif" alt="{#Laughing}" border="0" /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=ch83575">ch83575</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Sep 21, 2016 - 09:57</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />I can't hear Dr. John without thinking about Curious George.&nbsp;<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=ziggytrix">ziggytrix</a></b><br /><span class="teensy">(Dallas, TX)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 20, 2016 - 08:56</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />At the end where they're singing "what'd I say" I feel like they're taunting my failures to decipher the accents earlier.&nbsp;<img title="{#Cheesygrin}" src="scripts/tiny_mce/plugins/emotions/img/icon_cheesygrin.gif" alt="{#Cheesygrin}" border="0" /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Shmelo">Shmelo</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: May 17, 2016 - 11:37</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />All hail the doctor!&nbsp;<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Skydog">Skydog</a></b><br /><span class="teensy">(The Mitten)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Mar 14, 2016 - 15:15</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />damn! i thought he was going to let it play into "Blow Wind Blow"<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Jelani">Jelani</a></b><br /><span class="teensy">(Home of the freak,  land of the vague)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Mar 14, 2016 - 15:13</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Ah, reminds me of my tragic, horrific, glorious days living in NOLA. <img title="{#Drunk}" src="scripts/tiny_mce/plugins/emotions/img/icon_drunk.gif" alt="{#Drunk}" border="0" /><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=bitbanger">bitbanger</a></b><br /><span class="teensy">(Just South of the Willy B)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: May 09, 2014 - 10:41</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Gotta love Mr&nbsp;Rebennack.<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Businessgypsy">Businessgypsy</a></b><br /><span class="teensy">(Deepest, Darkest Florida)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Mar 07, 2014 - 10:09</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />It was a very special Carnival this year<br /><img src="https://scontent-b-iad.xx.fbcdn.net/hphotos-ash3/t31/1801334_632123050169279_1436887494_o.jpg" alt="" width="900" /><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=lunatic">lunatic</a></b><br /><span class="teensy">(Sigh Town)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 31, 2013 - 14:59</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />This and the original are staples at Mardi Gras.<br />Birh pay tribute to the 'Mardi Gras Indians'.<br />sigh<br />It's a long time until Mardi Gras.&nbsp;<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=rmagg">rmagg</a></b><br /><span class="teensy">(Nashville,Tn.)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 31, 2013 - 14:42</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><p>Thanx Bill for the work break. Went form chair dancing to actually bopping around the office. RP just what i needed. Carry On !!</p><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=aaronm">aaronm</a></b><br /><span class="teensy">(the Cleve!)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 31, 2013 - 14:39</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />This is probably my very least favorite cover of this that I've ever heard, unfortunately. :(<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=AdyMiles">AdyMiles</a></b><br /><span class="teensy">(Wolverhampton, UK)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Sep 27, 2009 - 08:57</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />far prefer the original, but not a bad cover<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=helgigermany">helgigermany</a></b><br /><span class="teensy">(Germany)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Sep 27, 2009 - 08:55</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Yeah, nice rotation!!<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=peyotecoyote">peyotecoyote</a></b><br /><span class="teensy">(London, Ontario)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 24, 2009 - 12:39</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />everybody sing along....<br />My grandma and your grandma,&nbsp; were sittin by the fire,<p style="text-align: left;">My grandma told your grandma, I'm going to set your flag on fire,</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">Takin bout&nbsp; hey now, hey now</p><p style="text-align: left;">Iko! Iko! an de'</p><p style="text-align: left;">Jackomo fe no nan e' , Jackomo fe nan e'</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">Look at my King all dressed in red</p><p style="text-align: left;">Iko! Iko! an de'</p><p style="text-align: left;">I bet you 5 dollars,&nbsp; he kill you dead!&nbsp;</p><p style="text-align: left;">Jackomo fe nan e'</p><p style="text-align: left;">Takin bout .....&nbsp; hey now, hey now</p><p style="text-align: left;">Iko! Iko! an de'</p><p style="text-align: left;">Jackomo fe no an e' , Jackomo fe nan e'</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">My flagboy and your flagboy,&nbsp; sittin by the fire,</p><p style="text-align: left;">My flagboy&nbsp; told your flagboy, I'm going to set your flag on fire,</p><p style="text-align: left;">Takin bout .....&nbsp; hey now, hey now</p><p style="text-align: left;">Iko! Iko! an de'</p><p style="text-align: left;">Jackomo fe no an e' , Jackomo fe nan e'</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">See that guy all dressed in green, Iko! Iko! an de'</p><p style="text-align: left;">He's not a man,&nbsp; he's a lovin machine!</p><p style="text-align: left;">Jackomo fe nan e'</p><p style="text-align: left;">Takin bout&nbsp; hey now, hey now</p><p style="text-align: left;">Iko! Iko! an de'</p><p style="text-align: left;">Jackomo fe no nane' , Jackomo fe nan e'</p><p style="text-align: left;">&nbsp;</p><p style="text-align: left;">Takin bout&nbsp; hey now, hey now</p><p style="text-align: left;">Iko! Iko! an de'</p><p style="text-align: left;">Jackomo fe no ane' , Jackomo fe nan e'</p><p style="text-align: left;">&nbsp;</p><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=orpheus">orpheus</a></b><br /><span class="teensy">(pacific northwest, finally!!!)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: May 23, 2009 - 18:37</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>melissa wrote:</strong><div class="quote"><br /><br />You have OBVIOUSLY never been to Mardi Gras! <br /><img src="graphics/smiles/icon_ass.gif" alt="" /> <img src="graphics/smiles/bananapiano.gif" alt="" /> <img src="graphics/smiles/icon_cheers.gif" alt="" /> <img src="graphics/smiles/icon_moon.gif" alt="" /> <br /></div><em>&nbsp;</em> <br /><br />no i haven't (though would like to) but the song still sucks<img title="{#No}" src="scripts/tiny_mce/plugins/emotions/img/icon_no.gif" border="0" alt="{#No}" /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=nigelr">nigelr</a></b><br /><span class="teensy">(Coffs Harbour, Australia)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Apr 22, 2009 - 02:30</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />The more Mack the better!<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=stkman">stkman</a></b><br /><span class="teensy">(Texas)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 18, 2009 - 01:26</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>Sloggydog wrote:</strong><div class="quote">I love this song but have never known who the original is by. Anyone help? I had thought the grateful dead for some reason but that was probably just the first version i heard.<br /></div><em>&nbsp;</em> <br />Sugar Boy Crawford gets credit but most people in New Orleans say its more a traditional song same as wikipedia suggests. Have family&nbsp; there and everybody in family remembers it so go figure and this isn't Mac's best version fo sho I do neaux dat cher<br /><br /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Sloggydog">Sloggydog</a></b><br /><span class="teensy">(UK)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 18, 2009 - 01:13</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />I love this song but have never known who the original is by. Anyone help? I had thought the grateful dead for some reason but that was probably just the first version i heard.<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Candela">Candela</a></b><br /><span class="teensy">(Trondheim, Norway)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 17, 2009 - 08:18</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <img title="{#Dancingbanana_2}" src="scripts/tiny_mce/plugins/emotions/img/dancingbanana_2.gif" border="0" alt="{#Dancingbanana_2}" /><img title="{#Bananajam}" src="scripts/tiny_mce/plugins/emotions/img/bananajam.gif" border="0" alt="{#Bananajam}" /><img title="{#Dancingbanana}" src="scripts/tiny_mce/plugins/emotions/img/dancingbanana.gif" border="0" alt="{#Dancingbanana}" /></p><br /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=bindi">bindi</a></b><br /><span class="teensy">(North Carolina)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 16, 2008 - 18:09</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>toterola wrote:</strong><div class="quote"><br />It just sounds like "o". It's spelled "-eaux" <img src="graphics/smiles/icon_cheesygrin.gif" alt="" /> <br /></div><em>&nbsp;</em> <br /><br />So it's "Ikeaux Ikeaux"?&nbsp; <img title="{#Smile}" src="scripts/tiny_mce/plugins/emotions/img/icon_smile.gif" border="0" alt="{#Smile}" /><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=toterola">toterola</a></b><br /><span class="teensy">(Somewhere between Shipping and Receiving)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 11, 2008 - 19:45</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>ch83575 wrote:</b><div class="quote">Has anybody else noticed that it sounds much easier to rhyme with a cajun accent?  Damn near every word ends with "o"!</div>
+<br />It just sounds like "o". It's spelled "-eaux"  <img src="graphics/smiles/icon_cheesygrin.gif"> <br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=ch83575">ch83575</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 10, 2008 - 07:15</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Has anybody else noticed that it sounds much easier to rhyme with a cajun accent?  Damn near every word ends with "o"!<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=etwilson">etwilson</a></b><br /><span class="teensy">(Pittsburgh, PA)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 10, 2008 - 07:13</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Hey Now!<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=venus_df">venus_df</a></b><br /><span class="teensy">(Chattanooga, TN)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Apr 08, 2008 - 09:08</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>phillips wrote:</b><div class="quote">Happy Fat Tuesday everyone!  Wish I could be in New Orleans... <img src="graphics/smiles/eusa_dance.gif"> </div>
+<br />Mamou Mardi Gras is much better - take it from the wife of a Cajun boy.  :)  no overpriced drinks and no groping!
+<br />
+<br />there's versions of this song i like better than this one, but can never complain about Dr. John.  ^_^<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Frater_Kork">Frater_Kork</a></b><br /><span class="teensy">(Uppsala, Sweden)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Apr 08, 2008 - 09:03</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>171 wrote:</b><div class="quote">And let's not forget the M:I-2 version by Zap Mama.</div>
+<br />
+<br />Jup, that version pumped along like only Zap Mama can. =)<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=KermitDfrog">KermitDfrog</a></b><br /><span class="teensy">(Los Angeles, CA)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Mar 07, 2008 - 20:41</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />You're kidding me....Stevie Wonder, John Prine and Richard Thompson in the same place and the same day!!  Hmmm....I've got a credit card, it could happen, I might be there too.  <img src="graphics/smiles/icon_yes.gif"> 
+<br />
+<br /><b>DoctorHooey wrote:</b><div class="quote">Ahh yeah ... I wish I were going to JazzFest this year...   If you've never been, you should! 
+<br /><a href="http://www.nojazzfest.com/">(click here)</a> </div><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=DoctorHooey">DoctorHooey</a></b><br /><span class="teensy">(/etc)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 05, 2008 - 10:17</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Ahh yeah ... I wish I were going to JazzFest this year...   If you've never been, you should! 
+<br /><a href="http://www.nojazzfest.com/">(click here)</a><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=jenakle">jenakle</a></b><br /><span class="teensy">(Tallahassee, FL)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 05, 2008 - 10:15</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />MMMMM Zatarans!<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=redtex">redtex</a></b><br /><span class="teensy">(The Third Coast)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 05, 2008 - 10:15</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Happy Mardi Gras (Fat Tuesday)!!!!
+<br />Go out and over-indulge in a little something today!<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=phillips">phillips</a></b><br /><span class="teensy">(a beach near you)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 05, 2008 - 10:14</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Happy Fat Tuesday everyone!  Wish I could be in New Orleans... <img src="graphics/smiles/eusa_dance.gif"> <br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Mina_the_Boo">Mina_the_Boo</a></b><br /><span class="teensy">(Atlanta)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 05, 2008 - 10:14</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Right on! More Mardi Gras goodness!! HAPPY FAT TUESDAY EVERYONE!!!
+<br />
+<br />Wish there were some second line bananas.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=melissa">melissa</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Apr 11, 2006 - 08:30</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>orpheus wrote:</b><div class="quote">
+<br />
+<br />I agree. What is the attraction with this song? It sucked the first time I heard it by other artists and it still sucks! What UP!!!??? <img src="graphics/smiles/eusa_sick.gif">  <img src="graphics/smiles/icon_eek.gif">  <img src="graphics/smiles/icon_ask.gif">  <img src="graphics/smiles/icon_ass.gif">  <img src="graphics/smiles/icon_rolleyes.gif">  <img src="graphics/smiles/eusa_wall.gif"> </div>
+<br />
+<br />You have OBVIOUSLY never been to Mardi Gras! 
+<br /><img src="graphics/smiles/icon_ass.gif">  <img src="graphics/smiles/bananapiano.gif">  <img src="graphics/smiles/icon_cheers.gif">  <img src="graphics/smiles/icon_moon.gif"> <br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=AphidA">AphidA</a></b><br /><span class="teensy">(Alexandria, VA)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Apr 11, 2006 - 08:21</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />All versions of this song are rather "ho-hum" I'd say.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Austin2Florida">Austin2Florida</a></b><br /><span class="teensy">(Hollywood, FL)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Apr 11, 2006 - 08:17</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Nice jazz set. Reminds me of home.  <img src="graphics/smiles/eusa_clap.gif"> <br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=jlind">jlind</a></b><br /><span class="teensy">(Chicago, IL)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Mar 27, 2006 - 16:27</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>Vogelfrei wrote:</b><div class="quote">
+<br />Larry Williams (of "Dizzy, Miss Lizzy" fame) recorded a blazing cool version of it in the late 1950's.  Williams gets songwriting credit on <a href="http://www.amazon.com/gp/product/B000000QLE/sr=8-1/qid=1141151105/ref=pd_bbs_1/002-0122412-6908018?%5Fencoding=UTF8" target="_blank">this fabulous compilation album</a>, but other sources cite James Crawford in 1950. The roots of the song go even further back into folk traditions.</div>
+<br />
+<br />Maybe some of those versions would be better, because this one really doesn't do it for me.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Vogelfrei">Vogelfrei</a></b><br /><span class="teensy">(Western Montana)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 28, 2006 - 10:30</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>macasaurus wrote:</b><div class="quote">
+<br />I think it was originally done in the early 60's by the Dixie Cups. </div>
+<br />Larry Williams (of "Dizzy, Miss Lizzy" fame) recorded a blazing cool version of it in the late 1950's.  Williams gets songwriting credit on <a href="http://www.amazon.com/gp/product/B000000QLE/sr=8-1/qid=1141151105/ref=pd_bbs_1/002-0122412-6908018?%5Fencoding=UTF8" target="_blank">this fabulous compilation album</a>, but other sources cite James Crawford in 1950. The roots of the song go even further back into folk traditions.<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=babygirl614">babygirl614</a></b><br /><span class="teensy">(Green Bay, WI)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 28, 2006 - 10:28</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>technohippybiker wrote:</b><div class="quote">This makes me want to hear some Dr. Professor Longhair.  That'd be cool.  He really plays that piano
+<br /></div>
+<br />
+<br />I agree.  Let's hear some of that fine Irma Thomas as well!<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=technohippybiker">technohippybiker</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 28, 2006 - 10:22</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />This makes me want to hear some Dr. Professor Longhair.  That'd be cool.  He really plays that piano
+<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=GregX59">GregX59</a></b><br /><span class="teensy">(Omaha, NE)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 28, 2006 - 10:21</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />From Koko (Taylor) to Iko Iko.  Pretty cool.
+<br />
+<br />Who wrote it?  I'm only familiar with Dr John's version.
+<br />
+<br /><i>Edited:</i>
+<br />Searched this up:
+<br />
+<br /><div class="quote">This song was written and recorded back in the early 1950's by a New Orleans singer named James Crawford who worked under the name of Sugar Boy & The Cane Cutters. In the original group were Professor Longhair on piano, Jake Myles, Big Boy Myles, Irv Bannister on guitar, and Eugene 'Bones' Jones on drums. This group was also known as the Cipaka Shaweez. The song was originally called 'Jockomo' and it has a lot of Creole patois in it. Jockomo means 'jester' in the old myth. It is Mardi Gras music, and the Shaweez was one of many Mardi Gras groups who dressed up in far out Indian costumes and came on as Indian tribes. The tribes used to hang out on Claiborne Avenue and used to get juiced up there getting ready to perform and 'second time' in their own special style during Mardi Gras. That's dead and gone now because there's a freeway where those grounds used to be. The tribes were like social clubs who lived all year for Mardi Gras. getting their costumes together. Many of them were musicians, gamblers, hustlers and pimps.</div><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Mary_Read">Mary_Read</a></b><br /><span class="teensy">(The Pirate Ship Revenge)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 28, 2006 - 10:21</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Happy Fat Tuesday everyone! <br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=macasaurus">macasaurus</a></b><br /><span class="teensy">(novadc)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 26, 2006 - 07:24</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>olsaltybastard wrote:</b><div class="quote">Didn't Siouxie and the Banshees do a version of this??</div>
+<br />
+<br />I think it was originally done in the early 60's by the Dixie Cups. In '82 it was released by the Belle Stars and charted in the UK, then in US in '89 as it was included on the 'Rain Man' soundtrack. If you want an offbeat version, it was recently remade by Oregon based Glass Candy.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=olsaltybastard">olsaltybastard</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 27, 2006 - 20:45</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Didn't Siouxie and the Banshees do a version of this??<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=ThePoose">ThePoose</a></b><br /></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 15, 2005 - 06:38</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />And the late, great Harry Nillson did a rousing version!<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=rosedraws">rosedraws</a></b><br /><span class="teensy">(never close enough)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 15, 2005 - 06:37</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>orpheus wrote:</b><div class="quote">
+<br />
+<br />I agree. What is the attraction with this song? It sucked the first time I heard it by other artists and it still sucks! What UP!!!??? </div>
+<br />
+<br />It's that rolling beat.  Very fun.  The 80's version is my favorite (that I've heard so far... If I was in a band I'd love to cover this one!)<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=tony620d">tony620d</a></b><br /><span class="teensy">(an office)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 15, 2005 - 06:36</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />say what?<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=MikeCloud">MikeCloud</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Nov 30, 2005 - 17:02</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /> <img src="graphics/smiles/sunny.gif">  <img src="graphics/smiles/icon_bounce.gif">  <img src="graphics/smiles/sunny.gif">  <img src="graphics/smiles/icon_bounce.gif">  <img src="graphics/smiles/sunny.gif">  <img src="graphics/smiles/icon_bounce.gif">  <img src="graphics/smiles/sunny.gif">  <img src="graphics/smiles/icon_bounce.gif">  <img src="graphics/smiles/sunny.gif">  <img src="graphics/smiles/icon_bounce.gif">  <img src="graphics/smiles/sunny.gif">  <img src="graphics/smiles/icon_bounce.gif">  <img src="graphics/smiles/sunny.gif"> <br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=rixtar99">rixtar99</a></b><br /><span class="teensy">(The O.C.)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Nov 30, 2005 - 16:06</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>stickytylertoo wrote:</b><div class="quote">
+<br />
+<br />There was a version of this song that made a bit of a hit in the 80's on the Rain Man soundtrack.</div>
+<br />
+<br />and "The Flamingo Kid"<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=orpheus">orpheus</a></b><br /><span class="teensy">(east coast)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Nov 01, 2005 - 09:17</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>agoston wrote:</b><div class="quote">Make it stop :(((</div>
+<br />
+<br />I agree. What is the attraction with this song? It sucked the first time I heard it by other artists and it still sucks! What UP!!!??? <img src="graphics/smiles/eusa_sick.gif">  <img src="graphics/smiles/icon_eek.gif">  <img src="graphics/smiles/icon_ask.gif">  <img src="graphics/smiles/icon_ass.gif">  <img src="graphics/smiles/icon_rolleyes.gif">  <img src="graphics/smiles/eusa_wall.gif"> <br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=171">171</a></b><br /><span class="teensy">(&quot;Sveeden&quot;)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 17, 2005 - 18:48</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />And let's not forget the M:I-2 version by Zap Mama.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Gnarlito">Gnarlito</a></b><br /><span class="teensy">(northern Idaho)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 17, 2005 - 18:40</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />The Dixie Cups did a nice version<br /></td></tr>
+</table>
+</div><div  id = "morelink" align="center"></div></div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+	
+	
+	
+		

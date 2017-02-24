@@ -1,0 +1,71 @@
+TF-IDF for key: Russia
+https://www.buzzfeed.com/leticiamiranda/mexicans-are-boycotting-us-products-to-protest-trumps-wall-t?utm_term=4ldqpfp&bftw#4ldqpfp
+wordCount: 1
+totalWords: 1538
+tf: 0.0007
+idf: 3.4266
+tfidf: 0.0024
+
+http://100percentfedup.com/embarrassing-nyc-mayor-de-blasio-cant-tell-difference-trump-obamas-immigration-policy-video/
+wordCount: 1
+totalWords: 995
+tf: 0.001
+idf: 3.4266
+tfidf: 0.0034
+
+http://insider.foxnews.com/2017/01/29/judge-jeanine-opening-statement-illegal-immigration-new-york-sanctuary-city-donald-trump
+wordCount: 5
+totalWords: 1135
+tf: 0.0044
+idf: 3.4266
+tfidf: 0.0151
+
+https://www.washingtonpost.com/politics/trump-promised-disruption-thats-exactly-what-hes-delivering/2017/01/29/7d9ae81a-e63e-11e6-acf5-4589ba203144_story.html?postshare=7741485735220475&tid=ss_tw
+wordCount: 1
+totalWords: 1983
+tf: 0.0005
+idf: 3.4266
+tfidf: 0.0017
+
+http://www.latimes.com/sports/lakers/la-sp-lakers-report-20170129-story.html
+wordCount: 1
+totalWords: 1270
+tf: 0.0008
+idf: 3.4266
+tfidf: 0.0027
+
+http://www.ocregister.com/articles/overzealous-742402-coupled-toxic.html
+wordCount: 1
+totalWords: 2551
+tf: 0.0004
+idf: 3.4266
+tfidf: 0.0014
+
+http://www.politico.com/story/2017/01/trump-immigration-senate-democrats-234339
+wordCount: 1
+totalWords: 1232
+tf: 0.0008
+idf: 3.4266
+tfidf: 0.0027
+
+http://variety.com/2017/film/awards/sag-awards-viola-davis-sag-supporting-actress-award-fences-1201972606/?utm_source=dlvr.it&utm_medium=twitter
+wordCount: 1
+totalWords: 858
+tf: 0.0012
+idf: 3.4266
+tfidf: 0.0041
+
+http://www.express.co.uk/news/uk/760339/katie-hopkins-christian-countries-opening-arms-problems-islam-donald-trump-muslim-ban
+wordCount: 2
+totalWords: 1812
+tf: 0.0011
+idf: 3.4266
+tfidf: 0.0038
+
+https://www.theatlantic.com/entertainment/archive/2017/01/1984-george-orwell-alternative-facts-trump-kellyanne-conway/514259/?utm_source=atltw
+wordCount: 1
+totalWords: 1892
+tf: 0.0005
+idf: 3.4266
+tfidf: 0.0017
+

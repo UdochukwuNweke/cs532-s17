@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+var gomez={
+gs: new Date().getTime(),
+acctId:"D3FD89",
+grpId:"Escenic",
+grpId1:"myb",
+grpId2:window.location.hostname,
+grpId3:"prep_athletes",
+pgId:"story-detail",
+wrate:1
+};
+</script>
+<script type='text/javascript'>
+(function(){var a=window;a.dT_?a.console&&a.console.log("Duplicate agent injection detected, turning off redundant initConfig."):window.dT_||(window.dT_={cfg:"cors=1|async=1|tp=500,50,5,1,10|reportUrl=//mcclatchy.dynatracesaas.com/dynaTraceMonitor|agentUri=//mcclatchy.dynatracesaas.com/dtagent_23jpqrstxz_6000500041014.js|auto=#AUTO#|domain=#DOMAIN#|rid=RID_#REQUEST_ID#|rpid=#RESPONSE_ID#"})})();(function(){function s(){var a=0;try{a=window.performance.timing.navigationStart+Math.floor(window.performance.now())}catch(b){}return 0>=a?(new Date).getTime():a}function Z(a,b){return $(a,b)}function l(a,b){for(var c=1;c<arguments.length;c++)a.push(arguments[c])}function v(a,b){return parseInt(a,b||10)}function E(a){try{if(w)return w[a]}catch(b){}return null}function F(a,b){try{window.sessionStorage.setItem(a,b)}catch(c){}}function m(a,b){var c=-1;b&&(a&&a.indexOf)&&(c=a.indexOf(b));return c}function G(a){document.cookie=
+a+'="";path=/'+(d.domain?";domain="+d.domain:"")+"; expires=Thu, 01-Jan-70 00:00:01 GMT;"}function H(a){a=encodeURIComponent(a);var b=[];if(a)for(var c=0;c<a.length;c++){var k=a.charAt(c),d=aa[k];d?l(b,d):l(b,k)}return b.join("")}function x(a,b,c){b||0==b?(b=(""+b).replace(/[;\n\r]/g,"_"),b="DTSA"===a.toUpperCase()?H(b):b,a=a+"="+b+";path=/"+(d.domain?";domain="+d.domain:""),c&&(a+=";expires="+c.toUTCString()),document.cookie=a):G(a)}function r(a){var b,c,k,d=document.cookie.split(";");for(b=0;b<
+d.length;b++)if(c=m(d[b],"="),k=d[b].substring(0,c),c=d[b].substring(c+1),k=k.replace(/^\s+|\s+$/g,""),k===a)return"DTSA"===a.toUpperCase()?decodeURIComponent(c):c;return""}function I(a){return/^[0-9A-Za-z_$\+\/\.\-\*%\|]*$/.test(a)}function J(){var a=r(K);return a&&I(a)?a:""}function L(a){a=a||J();var b={sessionId:null,serverId:null};if(a){var c=m(a,"|"),d=a;-1!==c&&(d=a.substring(0,c));c=m(d,"$");-1!==c?(b.sessionId=d.substring(c+1),b.serverId=d.substring(0,c)):b.sessionId=d}return b}function ba(a){return L(a).serverId}
+function ca(a){if(a)return L(a).sessionId;if(a=e.gSC()){var b=a.indexOf("|");-1!==b&&(a=a.substring(0,b))}return a}function M(a,b){return Math.floor(Math.random()*(b-a+1))+a}function N(a){var b=window.crypto||window.msCrypto,c;if(b)c=new Int8Array(a),b.getRandomValues(c);else{c=[];for(b=0;b<a;b++)c.push(M(0,O))}a=[];for(b=0;b<c.length;b++){var d=Math.abs(c[b]%O),d=9>=d?String.fromCharCode(d+48):String.fromCharCode(d+55);a.push(d)}return a.join("")}function P(a){return document.getElementsByTagName(a)}
+function Q(a){var b=a.length;if("number"===typeof b)a=b;else{for(var b=0,c=2048;a[c-1];)b=c,c+=c;for(var d=7;1<c-b;)d=(c+b)/2,a[d-1]?b=d:c=d;a=a[d]?c:b}return a}function da(){var a=d.csu,a=(a.indexOf("dbg")==a.length-3?a.substr(0,a.length-3):a)+"_"+d.app+"_Store";try{if(y){var b=y.getItem(a);if(b){for(var a={},c=b.split("|"),b=0;b<c.length;b++){var e=c[b].split("=");2==e.length&&(a[e[0]]=decodeURIComponent(e[1]))}if(!d.lastModification||parseInt(a.lastModification.substr(0,13),10)>=parseInt(d.lastModification.substr(0,
+13),10))for(var q in a)a.hasOwnProperty(q)&&("config"==q?z(a[q]):d[q]=a[q])}}}catch(g){}}function z(a){a=a.split("|");for(var b=0;b<a.length;b++){var c=m(a[b],"=");-1===c?d[a[b]]="1":d[a[b].substring(0,c)]=a[b].substring(c+1,a[b].length)}}function ea(a,b){if(a){var c=/([a-zA-Z]*)[0-9]{0,3}_[a-zA-Z_0-9]*_[0-9]+/g.exec(a);if(c&&c.length){var k=c[0];d.csu=c[1];c=k.split("_");d.legacy="1";d.featureHash=c[1];d.dtVersion=e.version[0]+""+e.version[1]}}b&&z(b);c=location.hostname;k=d.domain;c=c&&k?c==k||
+-1!==c.indexOf("."+k,c.length-("."+k).length)?!0:!1:!0;c||(delete d.domain,d.domainOverride="true")}function fa(){return K}function ga(){return ha}function ia(){return ja}function A(a){d[a]=0>m(d[a],"#"+a.toUpperCase())?d[a]:""}function ka(){return t}function R(a,b){for(var c=S(b),d=!1,e=0;e<c.length;e++)c[e].frameId===t&&(c[e].actionId=a,d=!0);d||l(c,{frameId:t,actionId:a});T(c)}function T(a,b){var c="";if(a){for(var c=[],d=0;d<a.length;d++)0<d&&0<c.length&&l(c,"p"),l(c,a[d].frameId),l(c,"h"),l(c,
+a[d].actionId);c=c.join("")}c||(c="-");x(B,c)}function S(a){var b=r(B),c=[];if(b&&"-"!==b)for(var b=b.split("p"),d=0;d<b.length;d++){var e=b[d].split("h");if(2===e.length&&e[0]&&e[1]){var g=e[0],f;if(!(f=a)){f=g.split("_");f=v(f[0]);var h=s()%C;h<f&&(h+=C);f=f+9E5>h}f&&l(c,{frameId:g,actionId:e[1]})}}return c}function U(){var a=r(u);if(!a||""==a||a.length&&a.length!=V)a=E(u),a&&a.length==V||(W=!0,a=s()+N(la));var b=a,c=new Date;c.setFullYear(c.getFullYear()+2);x(u,b,c);F(u,b);return a}function ma(){return W}
+var g=window;if(!g.dT_||!g.dT_.cfg||"string"!=typeof g.dT_.cfg||g.dT_.initialized)g.console&&g.console.log("Initconfig not found or agent already initialized! This is an injection issue.");else{var $=window.setTimeout,w=window.sessionStorage,e={version:[6,5,4,"1014"],cfg:window.dT_&&window.dT_.cfg,ica:1};e.version[3]=parseInt(e.version[3],10);window.dT_=e;e.agentStartTime=s();e.nw=s;e.apush=l;e.st=Z;var O=32,aa={"!":"%21","~":"%7E","*":"%2A","(":"%28",")":"%29","'":"%27",$:"%24",";":"%3B",",":"%2C"};
+e.gSSV=E;e.sSSV=F;e.pn=v;e.iVSC=I;e.io=m;e.dC=G;e.sC=x;e.esc=H;e.gSId=ba;e.gDtc=ca;e.gSC=J;e.gC=r;e.cRN=M;e.cRS=N;e.gEL=Q;e.gEBTN=P;var d={reportUrl:"dynaTraceMonitor",initializedModules:"",csu:"dtagent",domainOverride:"false",dataDtConfig:e.cfg},y;try{y=window.localStorage}catch(na){}if(-1==m(d.dataDtConfig,"#CONFIGSTRING")&&(z(d.dataDtConfig),A("domain"),A("auto"),A("app"),(g=d.agentUri)&&-1<m(g,"_")))g=/([a-zA-Z0-9]*)[0-9]*_([a-zA-Z0-9]*)_[0-9]*/.exec(g),d.csu=g[1],d.featureHash=g[2],d.dtVersion=
+e.version[0]+""+e.version[1];var g=P("script"),X=Q(g);if(0<X)for(var h,Y=d.csu+"_bootstrap.js",D=0;D<X;D++)if(h=g[D],h.attributes){var n=h.attributes.getNamedItem("data-dtconfig");h=h.src;if(n){ea(h,n.value);break}if((n=h&&h.indexOf(Y))&&0<=n)n=n+Y.length+5,d.app=h.length>n?h.substr(n):"Default%20Application"}da();try{var f=d.ign;if(f&&RegExp(f).test(window.location.href)){document.dT_=window.dT_=null;return}}catch(oa){}var B="dtPC",K="dtCookie",ha="x-dtPC",ja="x-dtReferer";e.gSCN=fa;e.gPCHN=ga;e.gRHN=
+ia;e.pageContextCookieName=B;e.latencyCookieName="dtLatC";e.cfg=d;var C=6E8,t=e.agentStartTime%C+"_"+v(1E3*Math.random());e.gFId=ka;e.frameId=t;R(1);e.gPC=S;e.cPC=R;e.sPC=T;var p;try{p=w.getItem("dtDisabled")}catch(pa){}!d.auto&&(!d.legacy&&!p)&&(f=d.agentname||d.csu||"dtagent",f=r("dtUseDebugAgent")?d.debugName||f+"dbg":d.name||f,p=d.agentUri||d.agentLocation+"/"+f+"_"+d.featureHash+"_"+d.buildNumber,d.async?(f=document.createElement("script"),f.setAttribute("src",p),d.async&&f.setAttribute("defer",
+"true"),f.setAttribute("crossorigin","anonymous"),p=document.getElementsByTagName("script")[0],p.parentElement.insertBefore(f,p)):document.write('<script type="text/javascript" src="'+p+'">\x3c/script>'));var u="rxVisitor",la=32,V=45,W=!1;U();e.iNV=ma;e.gVID=U}})();
+</script>
+<!-- paywall disabled -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toast of the Coast: Olivia McGonigal, girls swimming | The Sun News</title>
+<meta name="keywords" content="Toast of the Coast, girls swimming, Olivia McGonigal, Myrtle Beach, Seahawks, SCHSL, Region VII-4A, The Sun News"/>
+<meta name="news_keywords" content="Toast of the Coast, girls swimming, Olivia McGonigal, Myrtle Beach, Seahawks, SCHSL, Region VII-4A, The Sun News"/>
+<meta name="allow-comments" content="true"/>
+<meta name="description" content="Hurricane Matthew couldn’t have come at a worse time for high school swimmers statewide. But Myrtle Beach’s Olivia McGonigal knew she could take on whatever lied ahead — her work ethic had a lot to do with it."/>
+<meta name="title" content="Confidence, work ethic allow Myrtle Beach’s McGonigal to meet lofty goals | The Sun News"/>
+<meta name="googlebot" content="noodp, noarchive"/>
+<meta name="original-source" content="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129491844.html"/>
+<link rel="canonical" href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129491844.html"/>
+<meta name="google-site-verification" content="DGMqtphnFw27U2KuMEMpF_NItKrpCoyO_s2ekw1ia9Q"/>
+<meta property="og:title" content="Confidence, work ethic allow Myrtle Beach’s McGonigal to meet lofty goals"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129491844.html"/>
+<meta property="og:description" content="Hurricane Matthew couldn&rsquo;t have come at a worse time for high school swimmers statewide. But Myrtle Beach&rsquo;s Olivia McGonigal knew she could take on whatever lied ahead &mdash; her work ethic had a lot to do with it."/>
+<meta property="og:image" content="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/LANDSCAPE_1140/McGonigal%20-%20Toast"/>
+<meta property="og:site_name" content="myrtlebeachonline"/>
+<meta property="fb:app_id" content="157469207792228"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="TheSunNews">
+<meta name="twitter:title" content="Confidence, work ethic allow Myrtle Beach’s McGonigal to meet lofty goals">
+<meta name="twitter:description" content="Hurricane Matthew couldn&rsquo;t have come at a worse time for high school swimmers statewide. But Myrtle Beach&rsquo;s Olivia McGonigal knew she could take on whatever lied ahead &mdash; her work ethic had a lot to do with it.">
+<meta name="twitter:image" content="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/LANDSCAPE_1140/McGonigal%20-%20Toast">
+<meta name="msapplication-TileImage" content="http://www.myrtlebeachonline.com/static/theme/myrtlebeachonline/base/ico/windowsmetro-144.png"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.myrtlebeachonline.com/static/theme/myrtlebeachonline/base/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.myrtlebeachonline.com/static/theme/myrtlebeachonline/base/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.myrtlebeachonline.com/static/theme/myrtlebeachonline/base/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://www.myrtlebeachonline.com/static/theme/myrtlebeachonline/base/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="http://www.myrtlebeachonline.com/static/theme/myrtlebeachonline/base/ico/favicon.png">
+<link href="http://www.myrtlebeachonline.com/static/theme/myrtlebeachonline-2020/base/css/main-1.0.99-235b3bc.css?sVer=1.0.99-235b3bc" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://www.myrtlebeachonline.com/static/js/html5shiv.js?sVer=1.0.99-235b3bc"></script>
+<script src="http://www.myrtlebeachonline.com/static/js/respond.min.js?sVer=1.0.99-235b3bc"></script>
+<script type="text/javascript" src="http://www.myrtlebeachonline.com/static/js/mi-scripts/pollyfill.js?sVer=1.0.99-235b3bc"></script>
+<![endif]-->
+<script type="text/javascript" src="http://www.myrtlebeachonline.com/static/js/jquery-1.10.2.min.js?sVer=1.0.99-235b3bc"></script>
+<script type="text/javascript" src="http://www.myrtlebeachonline.com/static/js/mi-wf-site-1.0.99-235b3bc-min.js"></script>
+<script type="text/javascript">
+mi.pageInfo.setConf({
+'marketInfo.pagelevel':'story',
+'marketInfo.careerbuilder.mxjobsrchcriteria_rawwords':'outside+sales',
+'wufoo.formID':'',
+'publication.mediadomain':'media.myrtlebeachonline.com',
+'headerDateDisplay':'false',
+'accuweather.apiKey':'2ce96fe9da724185a27db1e6a3ecf580',
+'marketInfo.application_version':'1.0.99-235b3bc',
+'marketInfo.logoAltText':'The Myrtle Beach Sun News',
+'marketInfo.allow_ads':'true',
+'nativo.story.placements':'840207,767602,844363',
+'marketInfo.pagelevel_informational':'false',
+'marketInfo.addcities':'Conway, Surfside Beach, Carolina Forest, Murrells Inlet, Pawleys Island, Horry, Georgetown, Grand Strand',
+'marketInfo.staticDirectory':'myrtlebeachonline',
+'marketInfo.state_abbreviation':'SC',
+'publication.domain':'MyrtleBeachOnline.com',
+'accuweather.partnerCode':'MCCLATCHY',
+'marketInfo.domain':'myrtlebeachonline',
+'facebook.app.id':'157469207792228',
+'marketInfo.clipped_taxonomy':'Sports/HighSchool/HighSchool',
+'nativo.video.placements':'869354,869353',
+'marketInfo.careerbuilder.lr':'cbcb_mb',
+'marketInfo.CarsSEO':'Search for used and new cars, trucks, SUVs and other vehicles on MyrtleBeachOnline.com. The Sun News also provides Horry and Georgetown counties, and Myrtle Beach, SC with tools to help you buy your car such as comparison, how to negotiate with car dealers, auto loan calculators, financing tips and Blue Book values.',
+'marketInfo.CarsAFF':'myrtleb',
+'accuweather.locationString':'Myrtle Beach',
+'marketInfo.Jobslr':'cbcb_mb',
+'marketInfo.adretargeting.kill_list':["simpli.fi"],
+'marketInfo.webmaster_email':'online@thesunnews.com',
+'marketInfo.phone':'843-626-8555',
+'marketInfo.sourcelevel':'prepathletes',
+'pressPlus.zone':'NZZ77uX5mVVsiw8iUpwjwd',
+'marketInfo.zipcode':'29578',
+'marketInfo.viewsizes':[{"Large":[1200,600]},{"Medium":[992,300]},{"Small":[768,300]},{"Extra-Small":[0,0]}],
+'findnsave.tracking':'findnsave',
+'marketInfo.JobsSEO':'The Sun News and MyrtleBeachOnline.com serves the people of Myrtle Beach, South Carolina and Horry and Georgetown counties with a job-search tool and career resource. You will find full- time and part-time local opportunities in a variety of career fields including banking, retail, medical, construction, restaurant and IT.',
+'accuweather.dev':'false',
+'marketInfo.state':'South Carolina',
+'cs.circ_phone':'1-866-780-0786',
+'marketInfo.siteId':'78',
+'marketInfo.county':'Horry County',
+'marketInfo.allow_nativo':'true',
+'marketInfo.adsizes':{"outofpage":{},"default":{"None":[],"970x90":[970,90],"Billboard Flex":[[960,30],[970,30],[970,90],[970,250]],"960x30":[960,30],"728x90":[728,90],"600x250":[600,250],"500x300":[500,300],"468x60":[468,60],"336x280":[336,280],"320x450":[320,450],"320x50":[320,50],"300x600":[300,600],"Flex Ad":[[300,250],[300,600]],"Welcome Ad":[[300,250],[300,600],[550,480],[600,500]],"300x250":[300,250],"300x100":[300,100],"300x75":[300,75],"300x50":[300,50],"240x400":[240,400],"234x60":[234,60],"216x36":[216,36],"180x150":[180,150],"168x28":[168,28],"160x600":[160,600],"160x90":[160,90],"146x60":[146,60],"120x600":[120,600],"120x240":[120,240],"120x20":[120,20],"Rising Star":[500,300]},"floorboard":{"None":[],"285x70":[285,70]},"wallpaper":{"None":[],"1600x600":[1600,600]}},
+'marketInfo.careerbuilder.s_freshness':'30',
+'marketInfo.name':'The Sun News',
+'marketInfo.location':'Myrtle Beach',
+'marketInfo.region':'the Grand Strand',
+'marketInfo.JobsSiteID':'cb_mb',
+'marketInfo.code':'MYB',
+'cs.circ_url':'http://www.myrtlebeachonline.com/myaccount',
+'marketInfo.market_identifier':'MYB.site_myrtlebeachonline',
+'wf.resource.static.rootUrl':'/static/',
+'marketInfo.JobsQSSTS':'SC,US',
+'marketInfo.followLinks':'true',
+'marketInfo.networkid':'7675',
+'marketInfo.product':'site',
+'marketInfo.JobsQSCTY':'Myrtle Beach',
+'marketInfo.careerbuilder.s_rawwords':'CustomField3:MYRTLEBTJ',
+'marketInfo.street_address':'P.O. Box 406, Myrtle Beach, SC 29578',
+'accuweather.locationKey':'340581',
+'marketInfo.taxonomy':'Sports/HighSchool/HighSchool//',
+});
+</script>
+<script type="text/javascript" >
+mi_Ads.env.create();
+</script>
+<script type="text/javascript" src="http://ad.crwdcntrl.net/5/c=7436/pe=y/callback=extractPid" async></script>
+<script type="text/javascript" src="http://c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+try {
+amznads.getAds('3108'); } catch(e) { /*ignore*/}
+</script>
+<script type="text/javascript">
+try {
+amznads.setTargetingForGPTAsync('amznslots');
+} catch(e) { /*ignore*/}
+</script>
+<script type="text/javascript">
+var _prx = window._prx || [];
+_prx.push(['cfg.SetNoAutoStart']);
+</script>
+<script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
+<script type="text/javascript">
+var mistats = mistats || {};
+mistats.pagelevel="Story";
+mistats.cmsid="Story: 129491844";
+mistats.pagename="Story: 129491844|Confidence work ethic allow Myrtle Beachrsquos McGonigal to meet lofty goals";
+mistats.taxonomy="Sports|HighSchool|HighSchool||";
+mistats.channel="Toast of the Coast";
+mistats.contentsource="MyrtleBeach|By Joe L Hughes IIjhughesthesunnewscom";
+mistats.pubdate="2017/01/29";
+mistats.moddate="2017/01/29 H16";
+mistats.keywords="Toast of the Coast girls swimming Olivia McGonigal Myrtle Beach Seahawks SCHSL Region VII4A The Sun News";
+</script>
+<script type='text/javascript' src='http://media.myrtlebeachonline.com/misites/mbo/myrtlebeachonline.js'></script>
+<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5" async></script>
+</head>
+<body>
+<!-- Powered by Escenic Content Engine and Widget Framework. http://escenic.com -->
+<div class=" " >
+<script type="text/javascript">
+var $window = $window || $(window);
+var $document = $document || $(document);
+function hidePhotoTitle() {
+if( $(document.getElementById("top-galleries")).height() === 0) {
+$(document.getElementById("top-photos-carousel")).hide();
+} if($(document.getElementById("top-galleries-with-counter")).height() === 0) {
+$(document.getElementById("top-photos-carousel")).hide();
+console.log('found');
+}
+}
+$window.on("load", hidePhotoTitle);
+</script>
+</div>
+<div class="">
+<header class=" " role="banner">
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-oop-1" adtype="outofpage" pkg="None" data-ad-policy="onPageLoad"
+articleId="129491844" ></div>
+</div>
+</div>
+<!--
+Widget ID: Feature Master with title feature master masthead top:
+Referenced feature mi.masterConfig.searchBarType, which was empty. Attempting fall-back value.
+-->
+<div id="masthead-container"
+>
+<div class="container">
+<div class="masthead-row">
+<div id="masthead-main"
+>
+<div id="masthead-logo"
+>
+<a href="http://www.myrtlebeachonline.com/" target="_top"><img src="http://www.myrtlebeachonline.com/static/images/myrtlebeachonline/logo-lg.png" alt="The Sun News | MyrtleBeachOnline.com" class="img-responsive center-block"></a>
+</div>
+<div id="quick-nav"
+class="hidden-xs">
+<ul class=" nav navbar-nav">
+<li>
+<a href="/news/local/#navlink=navbar">
+News
+</a>
+</li>
+<li>
+<a href="/sports/#navlink=navbar">
+Sports
+</a>
+</li>
+<li>
+<a href="/entertainment/#navlink=navbar">
+Entertainment
+</a>
+</li>
+<li>
+<a href="/advertise/#navlink=navbar">
+Classifieds
+</a>
+</li>
+</ul>
+<div id="site-search-lg" class="visible-lg">
+<form action="/search/" class="form-inline" id="site-search" role="search">
+<input type="text" name="q" class="form-control" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</div>
+<div id="search-icon-sm-md" class="site-search dropdown visible-md visible-sm">
+<a href="#" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+<li class="input-group">
+<form action="/search/" class="form-inline" id="site-search" role="search">
+<input type="text" name="q" class="form-control" placeholder="Search the site" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Widget ID: Feature Master with title feature master masthead switch:
+Referenced feature mi.masterConfig.masthead-extra, which was empty. Attempting fall-back value.
+-->
+<div id="masthead-ad"
+class="visible-md visible-lg">
+<div>
+<div class="ad-widget" id="div-gpt-ad-2" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="None"
+defaultsize="Large"
+Small = "None"
+Medium = "234x60"
+Extra-Small = "None"
+Large = "234x60"
+articleId="129491844"
+></div>
+</div>
+</div>
+</div>
+<div id="main-nav-container"
+>
+<div class="weather-container hidden-xs">
+<div class="miWeather">
+<a href="/weather">
+<div class="miWeatherCurrent">
+<div class="mi-weather-alert"></div>
+</div>
+</a>
+</div>
+</div>
+<div id="login-subscribe"
+class="hidden-xs">
+<ul class=" paywall-links">
+<li>
+<a href="/activate">
+Sign In
+</a>
+</li>
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-est-01.sh/custservice/web/addrfind.html?siteid=MYB">
+Subscribe
+</a>
+</li>
+</ul>
+</div>
+<div id="main-nav"
+>
+<nav class="navbar navbar-default " role="navigation" >
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div id="navbar-collapse-1" class="navbar-collapse collapse">
+<div id="search-icon-xs" class="site-search dropdown visible-xs">
+<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+<li class="input-group">
+<form action="/search/" class="form-inline" id="site-search" role="search">
+<input type="text" name="q" class="form-control" placeholder="Search the site" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</li>
+</ul>
+</div>
+<div class="weather-container visible-xs">
+<div class="miWeather">
+<a href="/weather">
+<div class="miWeatherCurrent">
+<div class="mi-weather-alert"></div>
+</div>
+</a>
+</div>
+</div>
+<ul class=" paywall-links">
+<li>
+<a href="/activate">
+Sign In
+</a>
+</li>
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-est-01.sh/custservice/web/addrfind.html?siteid=MYB">
+Subscribe
+</a>
+</li>
+</ul>
+<ul class=" nav navbar-nav">
+<li>
+<a href="/#navlink=subnav">
+Home
+</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Customer Service <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/customer-service/#navlink=subnav">Customer Service</a></li>
+<li><a href="/customer-service/plus/#navlink=subnav">Subscribe</a></li>
+<li><a href="/customer-service/plus/#navlink=subnav">Activate Your Account</a></li>
+<li><a href="http://www.mypressplus.com/help#navlink=subnav">Account Support</a></li>
+<li><a href="/customer-service/e-edition/#navlink=subnav">E-Edition</a></li>
+<li><a href="/mobile/#navlink=subnav">Mobile Apps</a></li>
+<li><a href="/customer-service/store/#navlink=subnav">The Sun News Store</a></li>
+<li><a href="/customer-service/faq/#navlink=subnav">FAQ</a></li>
+<li><a href="http://www.myrtlebeachonline.com/customer-service/article60042881.html">Cancel SunValues Delivery</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Tourism Site <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Plan</li>
+<li><a href="http://www.gotomyrtlebeach.com/#navlink=subnav">All Tourist Info</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/#navlink=subnav">Vacation Planner</a></li>
+<li><a href="http://events.myrtlebeachonline.com/#navlink=subnav">Calendar</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/accommodations/#navlink=subnav">Where to Stay</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/ask-a-local/#navlink=subnav">Ask a Local</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/festivals/#navlink=subnav">Festivals Guide</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/best/#navlink=subnav">Best of the Area</a></li>
+<li class="dropdown-header">Play</li>
+<li><a href="http://www.gotomyrtlebeach.com/nightlife/#navlink=subnav">Nightlife</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/golf/#navlink=subnav">Golf</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/shopping/#navlink=subnav">Shopping</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/attractions/shows/#navlink=subnav">Shows</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/blog/#navlink=subnav">Myrtle Beach Blog</a></li>
+<li><a href="http://www.gotomyrtlebeach.com/restaurants/#navlink=subnav">Restaurants</a></li>
+</ul>
+</li>
+<li class="nav-divider"> </li>
+<li>
+<a href="http://www.legacy.com/obituaries/myrtlebeachonline/#navlink=subnav">
+Obituaries
+</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>News <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/news/#navlink=subnav">All News</a></li>
+<li><a href="/news/local/#navlink=subnav">Local News</a></li>
+<li><a href="/news/local/crime/#navlink=subnav">Crime/Courts</a></li>
+<li><a href="/news/business/#navlink=subnav">Business</a></li>
+<li><a href="/news/state/#navlink=subnav">State News</a></li>
+<li><a href="/news/nation-world/#navlink=subnav">Nation/World</a></li>
+<li><a href="/news/weird/#navlink=subnav">Weird News</a></li>
+<li class="dropdown-header">More News</li>
+<li><a href="/news/politics-government/#navlink=subnav">Politics</a></li>
+<li><a href="/news/local/community/#navlink=subnav">Neighbors</a></li>
+<li><a href="/news/local/bike-rallies/#navlink=subnav">Myrtle Beach Bike Rallies</a></li>
+<li><a href="/news/submit-news/#navlink=subnav">Submit A News Tip</a></li>
+<li><a href="/news/local/news-columns-blogs/issac-bailey/#navlink=subnav">Issac Bailey</a></li>
+<li><a href="/news/business/tourism/#navlink=subnav">Tourism News</a></li>
+<li><a href="/news/business/real-estate-news/#navlink=subnav">Real Estate News</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Sports <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/sports/#navlink=subnav">All Sports</a></li>
+<li><a href="/sports/high-school/#navlink=subnav">High Schools</a></li>
+<li><a href="/sports/college/big-south/coastal-carolina-university/#navlink=subnav">Coastal Carolina</a></li>
+<li><a href="/sports/outdoors/#navlink=subnav">Recreation</a></li>
+<li><a href="/sports/golf/#navlink=subnav">Golf</a></li>
+<li><a href="/sports/mlb/myrtle-beach-pelicans/#navlink=subnav">MB Pelicans</a></li>
+<li><a href="/sports/nascar-auto-racing/#navlink=subnav">Auto Racing</a></li>
+<li class="dropdown-header">More Sports</li>
+<li><a href="/sports/college/#navlink=subnav">College Sports</a></li>
+<li><a href="/sports/nfl/#navlink=subnav">NFL</a></li>
+<li><a href="/sports/mlb/#navlink=subnav">MLB</a></li>
+<li><a href="/sports/marathon/#navlink=subnav">MB Marathon</a></li>
+<li><a href="/sports/high-school/prep-athletes/#navlink=subnav">Toast Of The Coast</a></li>
+<li><a href="/sports/golf/green-reading-blog/#navlink=subnav">Green Reading Blog</a></li>
+<li><a href="/sports/college/big-south/coastal-carolina-university/the-roost-blog/#navlink=subnav">The Roost Blog</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Politics <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 240px;">
+<li><a href="/news/politics-government/#navlink=subnav">Politics</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Opinion <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/opinion/#navlink=subnav">All Opinion</a></li>
+<li><a href="/opinion/letters-to-the-editor/#navlink=subnav">Letters To The Editor</a></li>
+<li><a href="/opinion/letters-to-the-editor/submit-letter/#navlink=subnav">Submit A Letter</a></li>
+<li><a href="/opinion/editorials/#navlink=subnav">Editorial</a></li>
+<li><a href="/editorial-cartoons/#navlink=subnav">Cartoons</a></li>
+<li class="dropdown-header">Columns & Blogs</li>
+<li><a href="/opinion/opn-columns-blogs/a-different-world/#navlink=subnav">A Different World</a></li>
+<li><a href="/opinion/opn-columns-blogs/celia-rivenbark/#navlink=subnav">Celia Rivenbark</a></li>
+<li><a href="/opinion/opn-columns-blogs/bob-bestler/#navlink=subnav">Bob Bestler</a></li>
+<li><a href="/opinion/opn-columns-blogs/the-editors-desk/#navlink=subnav">The Editor&#039;s Desk</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Living <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/living/#navlink=subnav">All Living</a></li>
+<li><a href="/living/#navlink=subnav">Coasting</a></li>
+<li><a href="/news/local/community/#navlink=subnav">Neighbors</a></li>
+<li><a href="/living/food-drink/#navlink=subnav">Food</a></li>
+<li><a href="/customer-service/marketing/best-of-the-beach/#navlink=subnav">Best Of The Beach</a></li>
+<li><a href="http://ezads.thesunnews.com/myrtle-adportal/celebrations/index.html#navlink=subnav">Announcements</a></li>
+<li><a href="/living/religion/#navlink=subnav">Religion</a></li>
+<li><a href="/living/travel/#navlink=subnav">Travel</a></li>
+<li><a href="/living/pets/#navlink=subnav">Pets</a></li>
+<li><a href="/living/home-garden/#navlink=subnav">Home &amp; Garden</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Entertainment <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="/entertainment/#navlink=subnav">All Entertainment</a></li>
+<li><a href="/entertainment/#navlink=subnav">Kicks!</a></li>
+<li><a href="/customer-service/marketing/best-of-the-beach/#navlink=subnav">Best Of The Beach</a></li>
+<li><a href="/entertainment/movies-news-reviews/#navlink=subnav">Movies</a></li>
+<li><a href="http://events.myrtlebeachonline.com/#navlink=subnav">Calendar</a></li>
+<li><a href="/customer-service/contests-promotions/#navlink=subnav">Contests</a></li>
+<li class="dropdown-header">More Entertainment</li>
+<li><a href="/entertainment/comics/#navlink=subnav">Comics</a></li>
+<li><a href="http://games.myrtlebeachonline.com/#navlink=subnav">Puzzles &amp; Games</a></li>
+<li><a href="/entertainment/horoscopes/#navlink=subnav">Horoscopes</a></li>
+<li><a href="/entertainment/celebrities/#navlink=subnav">Celebrities</a></li>
+<li><a href="/entertainment/music-news-reviews/#navlink=subnav">Music</a></li>
+<li><a href="/entertainment/tv/#navlink=subnav">TV</a></li>
+</ul>
+</li>
+<li>
+<a href="http://www.myrtlebeachonline.com/entertainment/weekly-surge/#navlink=subnav">
+Surge
+</a>
+</li>
+<li class="nav-divider"> </li>
+<li>
+<a href="http://www.legalnotice.org/pl/myrtlebeach/landing1.aspx#navlink=subnav">
+Legals
+</a>
+</li>
+<li>
+<a href="/cars/#navlink=subnav">
+Cars
+</a>
+</li>
+<li>
+<a href="/jobs/#navlink=subnav">
+Jobs
+</a>
+</li>
+<li>
+<a href="http://www.startmoonlighting.com/mni/The-Sun-News/?utm_source=The-Sun-News&utm_medium=navweblink&utm_campaign=MNI#navlink=subnav">
+Moonlighting
+</a>
+</li>
+<li>
+<a href="/homes/#navlink=subnav">
+Homes
+</a>
+</li>
+<li>
+<a href="/advertise/#navlink=subnav">
+Classifieds
+</a>
+</li>
+<li>
+<a href="/classified-ads/#navlink=navbar">
+Classified Ads
+</a>
+</li>
+<li>
+<a href="http://findnsave.thesunnews.com/#navlink=subnav">
+Shopping
+</a>
+</li>
+<li class="nav-divider"> </li>
+<li>
+<a href="/customer-service/about-us/#navlink=subnav">
+About Us
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var language = "en-us";
+var mast_options = {
+language: language,
+locationKey: mi.pageInfo.getConf('accuweather.locationKey'),
+locationString: mi.pageInfo.getConf('accuweather.locationString'),
+isDevEnv: mi.pageInfo.getConf('accuweather.dev'),
+publicationUrl: 'http://www.myrtlebeachonline.com/',
+iconPath: 'static/images/widgets/weather/2020/',
+detail: 'false'
+};
+var windowSize = jQuery(window).width();
+if (windowSize > 767) {
+jQuery(".mi-weather-alert").populateWeatherAlert("description", mast_options);
+}
+jQuery(".miWeatherCurrent").populateCurrentWeather(mast_options);
+</script>
+<style type="text/css">
+/* Navigation Menu-specific styles */
+/* @media screen and (min-width: 1200px) {
+#masthead-container .dropdown:hover .dropdown-menu {
+display: block; } }
+*/
+</style>
+<script type="text/javascript">
+/*
+var $window = $window || $(window);
+var $nav = $(document.getElementById("main-nav-container"));
+var $toggle = $nav.find(".navbar-header").find(".navbar-toggle");
+var $dropdown = $(".dropdown");
+var $navbarNav = $nav.find(".navbar-nav");
+var $navbarDropdown = $navbarNav.find(".dropdown-menu");
+if ( location.hostname.split('.')[ 1 ] === "elnuevoherald" || language === "es" ) {
+$toggle.prepend('<span class="nav-label hidden-xs">Secciones</span>');
+$dropdown.find(".form-control").attr('placeholder', 'Búsqueda');
+}
+else {
+// add Menu label to nav toggle for small and up
+$toggle.prepend('<span class="nav-label hidden-xs">Full Menu</span>');
+}
+$dropdown.children('a').attr('data-target', '#');
+// Make subnav same height as main nav
+$(document.getElementById('navbar-collapse-1')).on('shown.bs.collapse', function () {
+var navHeight = $navbarNav.height();
+$navbarDropdown.css("min-height", navHeight + "px");
+});
+*/
+if (location.hostname.split('.')[1] == 'elnuevoherald') {
+jQuery('#main-nav-container .navbar-header .navbar-toggle').prepend('<span class="nav-label hidden-xs">Secciones</span>');
+jQuery('.dropdown .form-control').attr('placeholder','Búsqueda');
+} else {
+// add Menu label to nav toggle for small and up
+jQuery('#main-nav-container .navbar-header .navbar-toggle').prepend('<span class="nav-label hidden-xs">Full Menu</span>');
+}
+jQuery('.dropdown > a').attr('data-target','#');
+// Make dropdowns work on hover at large breakpoint
+jQuery(function() {
+jQuery("#masthead-container .dropdown").hover(
+function(){ if ($(window).width() > 1200) { $(this).addClass('open') } },
+function(){ if ($(window).width() > 1200) { $(this).removeClass('open') } }
+);
+});
+// Make subnav same height as main nav
+$('#navbar-collapse-1').on('shown.bs.collapse', function () {
+var nav_height = jQuery("#main-nav .navbar-nav").height();
+jQuery("#main-nav .navbar-nav .dropdown-menu").css( "min-height", nav_height + "px" );
+}); </script>
+</header>
+<div class="container " >
+<div id="leaderboard-ad"
+class="ad border-bottom">
+<div class="visible-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-3" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="b"
+defaultsize="Large"
+Small = "None"
+Medium = "None"
+Extra-Small = "320x50"
+Large = "None"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-4" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="d"
+defaultsize="Large"
+Small = "728x90"
+Medium = "728x90"
+Extra-Small = "None"
+Large = "728x90"
+articleId="129491844"
+></div>
+</div>
+</div>
+</div>
+</div>
+<section class="container story " role="main">
+<div id="story-header"
+>
+<h1 class="heading section-main-heading link">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/">
+Toast of the Coast
+</a>
+</h1>
+<p
+class="published-date">
+January 29, 2017 4:58 PM
+</p>
+<h1
+class="title">
+Confidence, work ethic allow Myrtle Beach&rsquo;s McGonigal to meet lofty goals
+</h1>
+</div>
+<div class="row
+story-rail-wrapper">
+<div class="wide-rail">
+<div class="story-gallery ">
+<div id="slick-gallery-container-29506552"
+class="mi-slick-gallery-container clearfix" style="visibility: hidden;">
+<div class="preroll-container" data-uniqueID="29506552">
+<!--"Gallery pre-roll turned off as page level is: story . Must be: gallery" -->
+<script type="text/javascript">
+$(function () {
+$(document).trigger("slickgallery.init", [
+29506552,
+1,
+{
+}
+]);
+});
+</script>
+<div class="slick-gallery">
+<div class="gallery-item image">
+<span class="test-temp" data-src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/FREE_320/McGonigal%20-%20Toast" data-width-320></span>
+<span class="test-temp" data-src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/FREE_480/McGonigal%20-%20Toast" data-width-480></span>
+<span class="test-temp" data-src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/FREE_640/McGonigal%20-%20Toast" data-width-640></span>
+<span class="test-temp" data-src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/FREE_768/McGonigal%20-%20Toast" data-width-768></span>
+<span class="test-temp" data-src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/FREE_960/McGonigal%20-%20Toast" data-width-960></span>
+<span class="test-temp" data-src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/4n8eti/picture129491829/ALTERNATES/FREE_1140/McGonigal%20-%20Toast" data-width-1140></span>
+<img alt="Myrtle Beach swimmer Olivia McGonigal after claiming a state title at last October’s state swim meet." title="Myrtle Beach swimmer Olivia McGonigal after claiming a state title at last October’s state swim meet." />
+<div class="caption">
+<span class="caption-text">
+Myrtle Beach swimmer Olivia McGonigal after claiming a state title at last October’s state swim meet.
+</span>
+<span class="photographer">Contributed photo</span>
+</div>
+</div>
+</div>
+</div>
+<div class="gallery-counter-container">
+</div>
+<div class="caption-toggle">i</div>
+<div class="current-caption"></div>
+</div>
+</div>
+<div id="story-body-items"
+>
+<div
+class="byline element-spacing-small">
+<p><span class="ng_byline_name">By Joe L. Hughes II</span></p><p><span class="ng_byline_email"><a href="mailto:jhughes@thesunnews.com" title="">jhughes@thesunnews.com</a></span></p>
+</div>
+<div class="share-tools-wrapper">
+<!--
+Widget ID: Feature Master with title feature master share buttons:
+Referenced feature mi.masterConfig.shareButtons, which was empty. Attempting fall-back value.
+-->
+<ul class="share-icons">
+<li class="facebook">
+<a class="facebook-share" title="Share on Facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129491844.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-facebook"></div>
+</li>
+<li class="twitter">
+<a title="Share on Twitter" href="https://twitter.com/share?text=Confidence%2c%20work%20ethic%20allow%20Myrtle%20Beach%e2%80%99s%20McGonigal%20to%20meet%20lofty%20goals&url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-twitter"></div>
+</li>
+<li class="email">
+<a href="mailto:?subject=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals&body=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html"></a>
+<div class="glyphicon glyphicon-envelope"></div>
+</li>
+<li class="more" onClick="return true">
+<ul class="share-options">
+<li class="linked-in"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html&title=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals"><span class="glyphicon glyphicon-linkedin"></span>LinkedIn</a></li>
+<li class="google"><a title="Share on Google Plus" href="https://plus.google.com/share?url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"><span class="glyphicon glyphicon-google-plus"></span>Google+</a></li>
+<li class="pinterest"><a href="http://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html&description=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals&media=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2f4n8eti%2fpicture129491829%2fALTERNATES%2fLANDSCAPE_1140%2fMcGonigal%2520-%2520Toast"><span class="glyphicon glyphicon-pinterest-p"></span>Pinterest</a></li>
+<li class="reddit"><a href="http://www.reddit.com/submit?url=http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129491844.html"><span class="glyphicon glyphicon-reddit"></span>Reddit</a></li>
+<li class="print"><a href="javascript:window.print();"><span class="glyphicon glyphicon-print"></span>Print</a></li>
+<li class="reprints"><a href="http://www.mcclatchyreprints.com">Order Reprint of this Story</a></li>
+</ul>
+<div class="glyphicon glyphicon-share"></div>
+</li>
+</ul>
+</div>
+<div class="ndn_embed" id="ndn-video-player-1" data-config-distributor-id="90988" data-config-width="100%" data-config-height="9/16w"></div>
+<div class="dateline-storybody">
+<div id="story-target" class="clearfix">
+<div id="content-body-16196387-129491844"
+>
+<p>Hurricane Matthew couldn’t have come at a worse time for high school swimmers statewide.</p><p>Not only did the tropical cyclone delay the state meet in Columbia by a week, but more importantly took swimmers out of their respective comfort zones.</p><p>For those on the Grand Strand, schools were closed for nearly two weeks, thus postponing all athletic and extracurricular events. Unable to compete or practice, the onus was on swimmers during that stretch to stay in shape.</p><p>“It was sort of hard,” said Myrtle Beach swimmer Olivia McGonigal. “Not being allowed to practice because school was out, it was my responsibility to do so and push myself.”</p><p>A veteran swimmer on the competitive circuit, her regimen would prove to be enough at October’s Class 4A swim meet. Competing in the 100-yard backstroke event, McGonigal was able to tap the wall first (1:00.07), claiming a state title just ahead of St. James’ Kater Wolff — who just happens to one of her best friends.</p><p>“It was awesome having (Wolff) finish second and me getting first,” she said. “It was pretty cool, because we went in seeded first and second. To finish that way, that’s all we could’ve asked for.”</p><p>The title would be the only one earned by a girls swimmer on the Grand Strand. Add another title to McGonigal’s name, with the Myrtle Beach sophomore earning The Sun News’ Toast of the Coast Girls Swimmer of the Year honor.</p><p>“It is really awesome, truly an honor,” she said. “You practice about five days a week, sometimes two times a day for a season that last two months. I worked really hard to get that far.”</p><p>McGonigal also was second and third in the 200-yard medley and freestyle relay teams, respectively, in addition to a seventh-place result in the 200-yard freestyle event at the state meet. She also earned a Region VII-4A title in three events.</p><p>According to Myrtle Beach swim coach Michael Angwin, it was a season in which she raised the bar for herself, as well as her team.</p><p>“Olivia had a spectacular season,” he said. “Won most of her events this year, crushed the region meet as well as a strong showing at the state meet. For a coach, (McGonigal) dedicated herself to swimming, came to every practice, competed in every meet.</p><p>“The best female swimmer on our team this year.”</p><p>For all the individual accolades, though, McGonigal admits the common bond held among teammates — among them her brother, Sean, on the Seahawks boys swim squad — is what made the season that much sweeter.</p><p>“I love my team, can’t say enough about them,” she said. “It’s special having your brother in the same sport you are. Though he does different events, it is pretty nice having someone who feels your pain in certain circumstances.”</p><div class="ng_endnote_contact"><p>Joe L. Hughes II: <a href="tel:843-444-1702" title="">843-444-1702</a>, <a href="https://twitter.com/thejournalist44" target="_blank" title="">@thejournalist44</a></p><span class="ng-command" data-value="252"> </span></div><div class="ng_factbox"><div class="ng_factbox_head"><p>Editor’s note</p><span class="ng-command" data-value="252"> </span></div><p>This is the third installment in a nine-day series honoring the top athletes from the fall high school sports season. Tuesday: Boys swimming.</p></div><div class="ng_factbox"><div class="ng_factbox_head"><p>Toast of the Coast Girls Swimming Team</p><span class="ng-command" data-value="252"> </span></div><h3>Swimmer of the Year<span class="ng-command" data-value="252"> </span></h3><p><strong>Olivia McGonigal</strong></p><p><strong>School: </strong>Myrtle Beach</p><p><strong>Class: </strong>Sophomore</p><p><strong>Notable: </strong>Claimed the Class 4A state title in the 100-yard backstroke, along with her being on the 200-yard medley and freestyle relay teams that earned second and third, respectively. </p><p><strong>Kennedy Drew</strong></p><p><strong>School: </strong>Myrtle Beach</p><p><strong>Class:</strong> Junior</p><p><strong>Notable: </strong>Region VI-4A champion in four events. Was part of 200-yard medley and freestyle teams, which claimed second and third, respectively. Also was sixth in 100-yard butterfly, and 10th in 100-yard freestyle.</p><p><strong>Danielle Flaherty</strong></p><p><strong>School:</strong> Myrtle Beach</p><p><strong>Class:</strong> Senior</p><p><strong>Notable: </strong>On an individual basis, finished seventh in the 200-yard individual medley and eighth in the 100-yard freestyle at Class 4A swim meet. Was part of the Seahawks’ second-place 200-yard medley relay squad, as well as their third-place 200-yard freestyle relay team.</p><p><strong>Sydney Hardman</strong></p><p><strong>School:</strong> North Myrtle Beach</p><p><strong>Class: </strong>Eighth grade</p><p><strong>Notable: </strong>Region VI-5A champion in the 50-yard freestyle event, and had a second-place result in the 100-yard freestyle. Finished 11th in the 100-yard freestyle and 12th in the 50-yard freestyle event at Class 4A state meet.</p><p><strong>Peyton McWhorter</strong></p><p><strong>School: </strong>Carolina Forest</p><p><strong>Class:</strong> Freshman</p><p><strong>Notable:</strong> Region VI-5A champion in 200- and 500-yard freestyle events. Finished 16th at the Class 5A state meet in the 200-yard freestyle, and 19th overall in the 500-yard freestyle.</p><p><strong>Taylor Steele</strong></p><p><strong>School: </strong>Carolina Forest</p><p><strong>Class:</strong> Junior</p><p><strong>Notable: </strong>Region VI-5A champion in the 200-yard individual medley. Finished fourth in the 100-yard breastroke and 10th in the 200-yard individual medley at the state 5A swim meet.</p><p><strong>Emma Sullivan</strong></p><p><strong>School: </strong>Waccamaw</p><p><strong>Class: </strong>Freshman</p><p><strong>Notable:</strong> Finished second in Class 3A in the 500-yard freestyle event, while claiming fourth in the 200-yard freestyle.</p><p><strong>Ana Wolff</strong></p><p><strong>School:</strong> St. James</p><p><strong>Class:</strong> Senior</p><p><strong>Notable:</strong> Was second in the 50-yard freestyle and fourth in the 100-yard freestyle at the Region VII-4A meet. Finished fourth in the 100-yard freestyle and eighth in the 50-yard freestyle at the Class 4A swim meet.</p><p><strong>Kater Wolff</strong></p><p><strong>School: </strong>St. James</p><p><strong>Class: </strong>Sophomore</p><p><strong>Notable: </strong>Claimed second in the 100-yard backstroke event, in addition to finishing seventh in the 50-yard backstroke at the Class 4A state swim meet.</p><h3>Coach of the Year<span class="ng-command" data-value="252"> </span></h3><p><strong>Michael Angwin</strong></p><p><strong>School:</strong> Myrtle Beach</p><p><strong>Notable: </strong>Led Seahawks to a fifth-place finish at the Class 4A swim meet.</p></div>
+</div>
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+// Removing empty paragraphs first
+$("#content-body-16196387-129491844 p").filter(function () {
+var html = $.trim($(this).html());
+if (html == '' || html == '&nbsp;')
+return true;
+}).remove();
+// Taking a subset of paragraphs using offset and maximum
+var offset = 1;
+var max = -1;
+if (offset > 1) {
+$("#content-body-16196387-129491844").children().slice(0, offset - 1).remove();
+}
+if (max > -1) {
+$("#content-body-16196387-129491844").children().slice(max).remove();
+}
+// Show dateline field at the beginning of the first paragraph
+var showDateline = false;
+var datelineStr = "";
+if (offset <= 1 && showDateline == true && datelineStr != "") {
+var firstChild = $("#content-body-16196387-129491844").children().get(0);
+if ("P" == firstChild.nodeName.toUpperCase()) {
+$(firstChild).prepend("<span>" + datelineStr + " - </span>");
+}
+else {
+$(firstChild).before("<span>" + datelineStr + "</span>");
+}
+}
+});
+</script>
+</div>
+</div>
+<div class="ndn_embed" id="ndn-video-player-2" data-config-distributor-id="90988" data-config-width="100%" data-config-height="9/16w"></div>
+<div id="related-gallery"
+class="reorder_story-target_2 reorder">
+</div>
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-5" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="None"
+defaultsize="Large"
+Small = "336x280"
+Medium = "336x280"
+Extra-Small = "336x280"
+Large = "336x280"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_6 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-6" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="c"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_11 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-7" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="e"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_16 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-8" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="f"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+</div>
+<div id="story-related"
+class="story-related element-spacing-large">
+<h1 >
+Related content
+</h1>
+<div id="related-links" >
+</div>
+</div>
+<script type="text/javascript">
+var $storyRelated = $(document.getElementById('story-related'));
+if ($storyRelated.find('article').length === 0) {
+$storyRelated.hide();
+}
+</script>
+<div class="share-tools-wrapper visible-sm visible-xs element-spacing-medium">
+<!--
+Widget ID: Feature Master with title feature master share buttons:
+Referenced feature mi.masterConfig.shareButtons, which was empty. Attempting fall-back value.
+-->
+<ul class="share-icons">
+<li class="facebook">
+<a class="facebook-share" title="Share on Facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129491844.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-facebook"></div>
+</li>
+<li class="twitter">
+<a title="Share on Twitter" href="https://twitter.com/share?text=Confidence%2c%20work%20ethic%20allow%20Myrtle%20Beach%e2%80%99s%20McGonigal%20to%20meet%20lofty%20goals&url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-twitter"></div>
+</li>
+<li class="email">
+<a href="mailto:?subject=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals&body=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html"></a>
+<div class="glyphicon glyphicon-envelope"></div>
+</li>
+<li class="more" onClick="return true">
+<ul class="share-options">
+<li class="linked-in"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html&title=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals"><span class="glyphicon glyphicon-linkedin"></span>LinkedIn</a></li>
+<li class="google"><a title="Share on Google Plus" href="https://plus.google.com/share?url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"><span class="glyphicon glyphicon-google-plus"></span>Google+</a></li>
+<li class="pinterest"><a href="http://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html&description=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals&media=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2f4n8eti%2fpicture129491829%2fALTERNATES%2fLANDSCAPE_1140%2fMcGonigal%2520-%2520Toast"><span class="glyphicon glyphicon-pinterest-p"></span>Pinterest</a></li>
+<li class="reddit"><a href="http://www.reddit.com/submit?url=http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129491844.html"><span class="glyphicon glyphicon-reddit"></span>Reddit</a></li>
+<li class="print"><a href="javascript:window.print();"><span class="glyphicon glyphicon-print"></span>Print</a></li>
+<li class="reprints"><a href="http://www.mcclatchyreprints.com">Order Reprint of this Story</a></li>
+</ul>
+<div class="glyphicon glyphicon-share"></div>
+</li>
+</ul>
+</div>
+<div class="more-stories-link">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/">
+Toast of the Coast
+</a>
+</div>
+<h2 class='heading'>Suggested for you</h2>
+<div id="exchange-embed-widget-8a401"></div>
+<script>
+$(document).ready(function(){
+var divElem ="exchange-embed-widget-8a401"; 
+var aggr = new Aggrego(document.getElementById(divElem), "8a401e159a3cfed7eff6339eaadbbf99");
+aggr.init();
+});
+</script>
+<div id="commenting-container"
+class="commenting-container
+element-spacing-large">
+<h1 class="heading">
+Comments
+</h1>
+<!--
+Widget ID: Feature Master with title feature master comments:
+Referenced feature mi.masterConfig.comments, which was empty. Attempting fall-back value.
+-->
+<script>
+if($("meta[property='fb:app_id']").length === 1 && $("meta[name='allow-comments']").prop("content") === "true") {
+mi.commenting = new mi.Commenting();
+mi.commenting.setConf( {
+accountName: mi.pageInfo.getConf('marketInfo.domain'),
+fbapp_id: mi.pageInfo.getConf('facebook.app.id'),
+fb_comment_div: {'data-width': '100%'}
+});
+$(document).ready(function() {
+mi.commenting.display();
+});
+} else {
+$(document).ready(function() {
+var disabledText = 'Comments have been disabled for this story.';
+$("#commentingStage").prepend("<p><strong>" + disabledText + "</strong></p>");
+});
+}
+</script>
+<div id="commentingStage"
+>
+</div>
+</div>
+</div>
+<div id="nativoArticlePage"
+>
+</div>
+</div>
+<div class="narrow-rail">
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-9" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="b"
+defaultsize="Large"
+Small = "300x250"
+Medium = "Flex Ad"
+Extra-Small = "None"
+Large = "Flex Ad"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+<div id="video-widget"
+class="headline-list">
+<h1 class="heading link">
+<a href="http://www.myrtlebeachonline.com/video/">
+Videos
+</a>
+</h1>
+<section >
+<div class="teaser ">
+<div class="container-24995251" id="container-24995251"> <script type="text/javascript">
+if ( typeof wpsCSS === 'undefined' ) {
+var wpsCSS = document.createElement('link');
+wpsCSS.href = '/wps/build/wps-css/theme-91d3dcd3ec.myrtlebeachonline.css';
+wpsCSS.rel = 'stylesheet';
+wpsCSS.type = 'text/css';
+document.getElementsByTagName('head')[ 0 ].appendChild(wpsCSS);
+}
+</script> <div class="wf-wps-side-bar"> <div class="mi-video-sidebar-widget" id="video-detail-24995251-1487291904594"> <div id="video-container-24995251-1487291904594"> <div class="video-media" data-id="24995251" data-index> <div id="player-24995251-1487291904594" class="player" data-id="24995251"> <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: url('http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/dwh2o8-Meet-the-Spring-2015-Toast-of-Coast-Athletes/alternates/LANDSCAPE_560/Meet%20the%20Spring%202015%20Toast%20of%20Coast%20Athletes') no-repeat center center; background-size: cover;"> </div> </div> <div class="mi-video-utilty-bar share-icons "> <a class="facebook-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> <span class="utility-text">facebook</span> </a> <a class="twitter-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> <span class="utility-text">twitter</span> </a> <a class="email-share mi-video-utility-item" href="" title="Share by Email"> <span class="jw-icon jw-icon-email"></span> <span class="utility-text">email</span> </a> <a class="mi-video-share-btn mi-video-utility-item" title="Share"> <span class="jw-icon jw-icon-share"></span> <span class="utility-text">Share</span> </a> </div> <div class="clearfix"></div> <div id="mi-video-overlay-24995251-1487291904594" class="mi-video-custom-overlay-wrap" style="display:none;"> <div class="mi-video-eos-wrap"> <h3 class="mi-video-overlay-title">More Videos</h3> <div class="mi-video-eos"> <div class="mi-overlay-item" data-index="0"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/local/wmpdet-Tornado-hits-Conway-Wednesday/alternates/LANDSCAPE_200/Tornado%20hits%20Conway%20Wednesday" alt="Tornado hits Conway Wednesday "> <span class="duration">1:18</span> </div> <div class="media-desc"> <h4 class="video-title">Tornado hits Conway Wednesday </h4> </div> <div class="svg-timer-wrap"> <svg class="svg-timer" viewbox="0 0 34 34"> <g> <circle class="svg-timer-circle" cx="15" cy="17" r="15.9" transform="rotate(-90 16 16)"></circle> <text class="svg-timer-text" x="17" y="24"></text> </g> </svg> <a class="svg-timer-pause" href="javascript:void(0)"> <span class="glyphicon glyphicon-pause"></span> Pause </a> </div> </div> <div class="mi-overlay-item" data-index="1"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/local/crime/b1twdk-Mother-takes-pity-on-sons-killer-Everybody-deserves-a-second-chance/alternates/LANDSCAPE_200/Mother%20takes%20pity%20on%20son%27s%20killer%3A%20%27Everybody%20deserves%20a%20second%20chance%27" alt="Mother takes pity on son's killer: 'Everybody deserves a second chance'"> <span class="duration">1:58</span> </div> <div class="media-desc"> <h4 class="video-title">Mother takes pity on son's killer: 'Everybody deserves a second chance'</h4> </div> </div> <div class="mi-overlay-item" data-index="2"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/local/td5jg5-National-Weather-Service-meteorologist-discusses-damaging-storm/alternates/LANDSCAPE_200/National%20Weather%20Service%20meteorologist%20discusses%20damaging%20storm" alt="National Weather Service meteorologist discusses damaging storm "> <span class="duration">0:52</span> </div> <div class="media-desc"> <h4 class="video-title">National Weather Service meteorologist discusses damaging storm </h4> </div> </div> <div class="mi-overlay-item" data-index="3"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/local/2ghs2b-I-look-free-but-I-aint-free/alternates/LANDSCAPE_200/%22I%20look%20free%2C%20but%20I%20ain%27t%20free%22" alt="'I look free, but I ain't free'"> <span class="duration">0:30</span> </div> <div class="media-desc"> <h4 class="video-title">"I look free, but I ain't free"</h4> </div> </div> <div class="mi-overlay-item" data-index="4"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/sports/high-school/prep-football/x5rm1q-Back-to-Football-in-Myrtle-Beach/alternates/LANDSCAPE_200/Back%20to%20Football%20in%20Myrtle%20Beach" alt="Back to Football in Myrtle Beach"> <span class="duration">1:28</span> </div> <div class="media-desc"> <h4 class="video-title">Back to Football in Myrtle Beach</h4> </div> </div> <div class="mi-overlay-item" data-index="5"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/politics-government/vfoouf-degeneres.jpg/alternates/LANDSCAPE_200/degeneres.jpg" alt="21 recipients honored with Presidential Medal of Freedom"> <span class="duration">3:56</span> </div> <div class="media-desc"> <h4 class="video-title">21 recipients honored with Presidential Medal of Freedom</h4> </div> </div> <div class="mi-overlay-item" data-index="6"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/state/south-carolina/pflsui-Inside-peek-at-the-new-Clemson-Football-Operations-Facility/alternates/LANDSCAPE_200/Inside%20peek%20at%20the%20new%20Clemson%20Football%20Operations%20Facility" alt="Inside peek at the new Clemson Football Operations Facility"> <span class="duration">3:09</span> </div> <div class="media-desc"> <h4 class="video-title">Inside peek at the new Clemson Football Operations Facility</h4> </div> </div> <div class="mi-overlay-item" data-index="7"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/nation-world/national/jzglry-What-you-need-to-know-about-the-massive-Oroville-dam-emergency-in-California/alternates/LANDSCAPE_200/What%20you%20need%20to%20know%20about%20the%20massive%20Oroville%20dam%20emergency%20in%20California" alt="What you need to know about the massive Oroville dam emergency in California"> <span class="duration">4:11</span> </div> <div class="media-desc"> <h4 class="video-title">What you need to know about the massive Oroville dam emergency in California</h4> </div> </div> <div class="mi-overlay-item" data-index="8"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/local/education/m2b1ee-Myrtle-Beach-students-CPR-Buddy-app-up-for-major-award/alternates/LANDSCAPE_200/Myrtle%20Beach%20students%27%20CPR%20Buddy%20app%20up%20for%20major%20award" alt="Myrtle Beach students' CPR Buddy app up for major award"> <span class="duration">1:26</span> </div> <div class="media-desc"> <h4 class="video-title">Myrtle Beach students' CPR Buddy app up for major award</h4> </div> </div> <div class="mi-overlay-item" data-index="9"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.myrtlebeachonline.com/news/local/lpi4dx-Possible-tornado-leaves-some-Conway-residents-with-damaged-homes/alternates/LANDSCAPE_200/Possible%20tornado%20leaves%20some%20Conway%20residents%20with%20damaged%20homes" alt="Possible tornado leaves some Conway residents with damaged homes"> <span class="duration">1:42</span> </div> <div class="media-desc"> <h4 class="video-title">Possible tornado leaves some Conway residents with damaged homes</h4> </div> </div> </div> </div> <div class="mi-video-share-wrap"> <span class="mi-video-close-share jw-icon jw-icon-close"></span> <h3 class="mi-video-overlay-title">Share Video</h3> <ul class="share-icons video"> <li class="embed"> <div class="form-group"> <label>Video link:</label> <input class="mi-share-link" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> <div class="form-group"> <label>Embed code:</label> <input class="overlay-embed-share" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> </li> <li class="facebook"> <a class="facebook-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> facebook </a> </li> <li class="twitter"> <a class="twitter-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> twitter </a> </li> <li class="email"> <a class="email-share" href=""> <span class="jw-icon jw-icon-email"></span> email </a> </li> </ul> </div> </div> </div> <div class="video-details"> <time class="published-date timeago hidden">2 years ago</time> <h2 class="title video-title"> <a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article24995251.html">Meet the Spring 2015 Toast of Coast Athletes</a> </h2> </div> </div> <div id="playlist-24995251-1487291904594"> <div class="mi-playlist-sidebar"> <a class="playlist-item" href="#0" data-index="0"> <div class="media posterframe-wrapper"> <img src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/dwh2o8-Meet-the-Spring-2015-Toast-of-Coast-Athletes/alternates/LANDSCAPE_200/Meet%20the%20Spring%202015%20Toast%20of%20Coast%20Athletes" alt="Meet the Spring 2015 Toast of Coast Athletes"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">3:23</span> </div> <div class="media-desc"> <time class="published-date hidden">2 years ago</time> <h4 class="title video-title">Meet the Spring 2015 Toast of Coast Athletes</h4> </div> </a> <a class="playlist-item" href="#1" data-index="1"> <div class="media posterframe-wrapper"> <img src="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/ndji0x-Desaree-Green--Toast-of-the-Coast-2015-Girls-High-School-Basketball-Player-of-the-Year/alternates/LANDSCAPE_200/Desaree%20Green%20%7C%20Toast%20of%20the%20Coast%202015%20Girls%20High%20School%20Basketball%20Player%20of%20the%20Year" alt="Desaree Green | Toast of the Coast 2015 Girls High School Basketball Player of the Year"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">5:01</span> </div> <div class="media-desc"> <time class="published-date hidden">2 years ago</time> <h4 class="title video-title">Desaree Green | Toast of the Coast 2015 Girls High School Basketball Player of the Year</h4> </div> </a> <a class="playlist-item" href="#2" data-index="2"> <div class="media posterframe-wrapper"> <img src="http://www.myrtlebeachonline.com/news/local/wmpdet-Tornado-hits-Conway-Wednesday/alternates/LANDSCAPE_200/Tornado%20hits%20Conway%20Wednesday" alt="Tornado hits Conway Wednesday "> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">1:18</span> </div> <div class="media-desc"> <time class="published-date hidden">2 hours ago</time> <h4 class="title video-title">Tornado hits Conway Wednesday </h4> </div> </a> </div> </div> </div> </div> <script type="text/javascript">
+if ( typeof allowAds === 'undefined' ) {
+var allowAds = true;
+}
+if ( typeof wpsConfig === 'undefined' ) {
+var wpsConfig = {
+baseUrl: '/wps/source/scripts/src',
+urlArgs: 'misv=2115a9c',
+paths: {
+'fastdom': '../libs/fastdom.min',
+'moment': '../libs/moment.min',
+'jwplayer': ['https://d12j9jiosu7f.cloudfront.net/jwplayer-7.8.7/jwplayer',
+'../libs/jwplayer'],
+'flickity': '../libs/flickity.pkgd.min'
+},
+waitSeconds: 0
+};
+var wpsRequire = requirejs.config(wpsConfig);
+}
+wpsRequire([ 'video' ], function ( video ) {
+return video({"id":"24995251","url":"http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article24995251.html","asset_type":"videoIngest","title":"Meet the Spring 2015 Toast of Coast Athletes","publication":"myrtlebeachonline","home":"/web/v1/sections/15260","modified_date":1434873648,"published_date":1434842668,"credit":"jlee@thesunnews.com and cslate@thesunnews.com","keywords":"toast of the coast, students, athletes, spring, softball, track, baseball","dateline":"","thumbnail":"http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/dwh2o8-Meet-the-Spring-2015-Toast-of-Coast-Athletes/alternates/LANDSCAPE_768/Meet%20the%20Spring%202015%20Toast%20of%20Coast%20Athletes","photographer":"Jason Lee and Charles Slate","duration":203,"href":"/web/v1/content/24995251","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dprep_athletes%26id%3D24995251%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FSports%2FHighSchool%2FHighSchool&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=prep_athletes&id=24995251&eid=24995251&pl="}],"byline":"","template_type":"","leadtext":[{"text":"Toast of the Coast athletes answer three questions: What's your unique talent; what are your superstitions; and what athlete do you look up to?"}],"sources":[{"height":360,"mime_type":"video/mp4","mrid":"binary/2015/6/19/19/1431609627471-vktvj2/Meet the Toast of Coast Athletes-1434873640851.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2015/6/19/19/1431609627471-vktvj2/Meet%20the%20Toast%20of%20Coast%20Athletes-1434873640851.mp4","width":640},{"height":720,"mime_type":"video/mp4","mrid":"binary/2015/6/19/19/1431609699972-ar3p6n/Meet the Toast of Coast Athletes-1434873641887.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2015/6/19/19/1431609699972-ar3p6n/Meet%20the%20Toast%20of%20Coast%20Athletes-1434873641887.mp4","width":1280}],"videos":[{"id":"24995251","url":"http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article24995251.html","duration":"3:23","image":"http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/dwh2o8-Meet-the-Spring-2015-Toast-of-Coast-Athletes/alternates/LANDSCAPE_768/Meet%20the%20Spring%202015%20Toast%20of%20Coast%20Athletes","title":"Meet the Spring 2015 Toast of Coast Athletes","description":"Meet the Spring 2015 Toast of Coast Athletes <span class=\"title-duration\">3:23</span>","displayDescription":"Toast of the Coast athletes answer three questions: What's your unique talent; what are your superstitions; and what athlete do you look up to?","videographer":"Jason Lee and Charles Slate","credit":"jlee@thesunnews.com and cslate@thesunnews.com","published":1434842668,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2015/6/19/19/1431609627471-vktvj2/Meet%20the%20Toast%20of%20Coast%20Athletes-1434873640851.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2015/6/19/19/1431609699972-ar3p6n/Meet%20the%20Toast%20of%20Coast%20Athletes-1434873641887.mp4"}],"mediaid":"","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dprep_athletes%26id%3D24995251%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FSports%2FHighSchool%2FHighSchool&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=prep_athletes&id=24995251&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dprep_athletes%26id%3D24995251%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FSports%2FHighSchool%2FHighSchool&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"20245389","url":"http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article20245389.html","duration":"5:01","image":"http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/ndji0x-Desaree-Green--Toast-of-the-Coast-2015-Girls-High-School-Basketball-Player-of-the-Year/alternates/LANDSCAPE_768/Desaree%20Green%20%7C%20Toast%20of%20the%20Coast%202015%20Girls%20High%20School%20Basketball%20Player%20of%20the%20Year","title":"Desaree Green | Toast of the Coast 2015 Girls High School Basketball Player of the Year","description":"Desaree Green | Toast of the Coast 2015 Girls High School Basketball Player of the Year <span class=\"title-duration\">5:01</span>","displayDescription":"Toast of the Coast Girls Basketball player Desaree Green of Carver's Bay High School during an interview about her season.","videographer":"Jason Lee","credit":"","published":1430827053,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2015/5/5/11/1426823496224-kkh7jd/TOC%20Girls%20Basketball%20Desaree%20Green-1430827047525.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2015/5/5/11/1426816856625-dceyfa/TOC%20Girls%20Basketball%20Desaree%20Green-1430827048818.mp4"}],"mediaid":"","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dprep_athletes%26id%3D20245389%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FSports%2FHighSchool%2FHighSchool&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=prep_athletes&id=20245389&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dprep_athletes%26id%3D20245389%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FSports%2FHighSchool%2FHighSchool&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133214799","url":"http://www.myrtlebeachonline.com/news/local/article133214799.html","duration":"1:18","image":"http://www.myrtlebeachonline.com/news/local/wmpdet-Tornado-hits-Conway-Wednesday/alternates/LANDSCAPE_768/Tornado%20hits%20Conway%20Wednesday","title":"Tornado hits Conway Wednesday ","description":"Tornado hits Conway Wednesday <span class=\"title-duration\">1:18</span>","displayDescription":"A rare February tornado with wind speeds over 100 mph tore through five miles of back-country roads here Wednesday, the National Weather Service confirmed after surveying the damage.","videographer":"Janet Blackmon Morgan","credit":"jblackmon@thesunnews.com","published":1487286329,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437582013143-p5k4ma/twistagain-1487286327871.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437580321678-6bjrso/twistagain-1487286328348.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/art_133214799/twistagain.m3u8"}],"mediaid":"33og89Tc","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133214799%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=local&id=133214799&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133214799%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}}],"endscreen":[{"id":"133214799","url":"http://www.myrtlebeachonline.com/news/local/article133214799.html","duration":"1:18","image":"http://www.myrtlebeachonline.com/news/local/wmpdet-Tornado-hits-Conway-Wednesday/alternates/LANDSCAPE_768/Tornado%20hits%20Conway%20Wednesday","title":"Tornado hits Conway Wednesday ","description":"Tornado hits Conway Wednesday <span class=\"title-duration\">1:18</span>","displayDescription":"A rare February tornado with wind speeds over 100 mph tore through five miles of back-country roads here Wednesday, the National Weather Service confirmed after surveying the damage.","videographer":"Janet Blackmon Morgan","credit":"jblackmon@thesunnews.com","published":1487286329,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437582013143-p5k4ma/twistagain-1487286327871.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437580321678-6bjrso/twistagain-1487286328348.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/art_133214799/twistagain.m3u8"}],"mediaid":"33og89Tc","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133214799%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=local&id=133214799&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133214799%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"132513119","url":"http://www.myrtlebeachonline.com/news/local/crime/article132513119.html","duration":"1:58","image":"http://www.myrtlebeachonline.com/news/local/crime/b1twdk-Mother-takes-pity-on-sons-killer-Everybody-deserves-a-second-chance/alternates/LANDSCAPE_768/Mother%20takes%20pity%20on%20son%27s%20killer%3A%20%27Everybody%20deserves%20a%20second%20chance%27","title":"Mother takes pity on son's killer: 'Everybody deserves a second chance'","description":"Mother takes pity on son's killer: 'Everybody deserves a second chance' <span class=\"title-duration\">1:58</span>","displayDescription":"The victim's mother in the 2015 shooting death of Quentin Reeves pleaded for mercy for her son's killer in court on Monday. Pamela McNeil said she has forgiven Gettie Levon Bellamy III. Bellamy pleaded guilty to a reduced charge of voluntary manslaughter.","videographer":"Jason Lee","credit":"jlee@thesunnews.com","published":1487028941,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/13/23/1437582013143-p5k4ma/VictimsMothersPlea_1-1487028938179.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/13/23/1437580321678-6bjrso/VictimsMothersPlea_1-1487028938812.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/13/23/art_132513119/VictimsMothersPlea_1.m3u8"}],"mediaid":"4HsvTDJk","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dcrime%26id%3D132513119%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=crime&id=132513119&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dcrime%26id%3D132513119%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133088279","url":"http://www.myrtlebeachonline.com/news/local/article133088279.html","duration":"0:52","image":"http://www.myrtlebeachonline.com/news/local/td5jg5-National-Weather-Service-meteorologist-discusses-damaging-storm/alternates/LANDSCAPE_768/National%20Weather%20Service%20meteorologist%20discusses%20damaging%20storm","title":"National Weather Service meteorologist discusses damaging storm ","description":"National Weather Service meteorologist discusses damaging storm <span class=\"title-duration\">0:52</span>","displayDescription":"Steve Pfaff, warning coordination meteorologist, discusses the tornado that tore through a Conway-area community on Wednesday afternoon. ","videographer":"","credit":"","published":1487262496,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/16/1437582013143-p5k4ma/IMG_0718-1487262493543.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/16/1437580321678-6bjrso/IMG_0718-1487262494281.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/16/art_133088279/IMG_0718.m3u8"}],"mediaid":"iFNbWbAn","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133088279%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=local&id=133088279&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133088279%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133182184","url":"http://www.myrtlebeachonline.com/news/local/article133182184.html","duration":"0:30","image":"http://www.myrtlebeachonline.com/news/local/2ghs2b-I-look-free-but-I-aint-free/alternates/LANDSCAPE_768/%22I%20look%20free%2C%20but%20I%20ain%27t%20free%22","title":"\"I look free, but I ain't free\"","description":"\"I look free, but I ain't free\" <span class=\"title-duration\">0:30</span>","displayDescription":"Horry Georgetown Technical College Professor Robyn Causey addresses human trafficking with her class on Tuesday, Feb. 14, 2017.","videographer":"","credit":"eweaver@thesunnews.com","published":1487280704,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/21/1437582013143-p5k4ma/a760bc03-1d0f-4259-bc99-5639dd88a5d8-1487280702962.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/21/1437580321678-6bjrso/a760bc03-1d0f-4259-bc99-5639dd88a5d8-1487280703233.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/21/art_133182184/a760bc03_1d0f_4259_bc99_5639dd88a5d8.m3u8"}],"mediaid":"DP7C0ksz","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133182184%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=local&id=133182184&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133182184%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"96386807","url":"http://www.myrtlebeachonline.com/sports/high-school/prep-football/article96386807.html","duration":"1:28","image":"http://www.myrtlebeachonline.com/sports/high-school/prep-football/x5rm1q-Back-to-Football-in-Myrtle-Beach/alternates/LANDSCAPE_768/Back%20to%20Football%20in%20Myrtle%20Beach","title":"Back to Football in Myrtle Beach","description":"Back to Football in Myrtle Beach <span class=\"title-duration\">1:28</span>","displayDescription":"Football is officially back on the Grand Strand, with the first game of the season kicking off this Friday, Aug. 19","videographer":"","credit":"","published":1471544652,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/8/18/16/1437582013143-p5k4ma/FOOTBALL2-1471544648597.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/8/18/16/1437580321678-6bjrso/FOOTBALL2-1471544650157.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/8/18/16/art_96386807/FOOTBALL2.m3u8"}],"mediaid":"igomLHya","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dprep_football%26id%3D96386807%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FSports%2FFootball%2FHighSchool&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=prep_football&id=96386807&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dprep_football%26id%3D96386807%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FSports%2FFootball%2FHighSchool&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"117045498","url":"http://www.myrtlebeachonline.com/news/politics-government/article117045498.html","duration":"3:56","image":"http://www.myrtlebeachonline.com/news/politics-government/vfoouf-degeneres.jpg/alternates/LANDSCAPE_768/degeneres.jpg","title":"21 recipients honored with Presidential Medal of Freedom","description":"21 recipients honored with Presidential Medal of Freedom <span class=\"title-duration\">3:56</span>","displayDescription":"President Obama honored 21 recipients during his last Presidential Medal of Freedom ceremony at the White House Tuesday. \"Everybody on this stage has touched me in a very powerful, very personal way,\" Obama said. Kareem Abdul-Jabbar, Elouise Cobell, Ellen DeGeneres, Robert De Niro, Richard Garwin, Bill and Melinda Gates, Frank Gehry, Margaret H. Hamilton, Tom Hanks, Grace Hopper, Michael Jordan, Maya Lin, Lorne Michaels, Newt Minow, Eduardo Pardón, Robert Redford, Diana Ross, Vin Scully, Bruce Springsteen and Cicely Tyson received a medal.","videographer":"","credit":"AP","published":1480107932,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/11/25/20/1437582013143-p5k4ma/MedalOfFreedom-1480107923756.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/11/25/20/1437580321678-6bjrso/MedalOfFreedom-1480107925091.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/11/25/20/art_117045498/MedalOfFreedom.m3u8"}],"mediaid":"wPNYwdQk","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D117045498%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=politics_government&id=117045498&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D117045498%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"128791314","url":"http://www.myrtlebeachonline.com/news/state/south-carolina/article128791314.html","duration":"3:09","image":"http://www.myrtlebeachonline.com/news/state/south-carolina/pflsui-Inside-peek-at-the-new-Clemson-Football-Operations-Facility/alternates/LANDSCAPE_768/Inside%20peek%20at%20the%20new%20Clemson%20Football%20Operations%20Facility","title":"Inside peek at the new Clemson Football Operations Facility","description":"Inside peek at the new Clemson Football Operations Facility <span class=\"title-duration\">3:09</span>","displayDescription":"Clemson's new Football Operation's Building features a Death Valley Hill replica, The Paw Journey, a players lounge, golf simulator, bowling alley, barber shop, players' personal laundry room, nap room, locker room, sauna, 60-person cold tub, cleat drying room, largest football-only weight room in nation, nutrition area, cardio balcony, training room, lap pool, four hydrotherapy pools, and more.","videographer":"Tim Dominick","credit":"The State","published":1485393750,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/26/0/1437582013143-p5k4ma/Clemson%20Football%20Operations%20Facility-1485393742713.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/26/0/1437580321678-6bjrso/Clemson%20Football%20Operations%20Facility-1485393747523.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/26/0/art_128791314/Clemson_Football_Operations_Facility.m3u8"}],"mediaid":"7ozaAbqp","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dsouth_carolina%26id%3D128791314%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FState&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=south_carolina&id=128791314&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dsouth_carolina%26id%3D128791314%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FState&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"132773639","url":"http://www.myrtlebeachonline.com/news/nation-world/national/article132773639.html","duration":"4:11","image":"http://www.myrtlebeachonline.com/news/nation-world/national/jzglry-What-you-need-to-know-about-the-massive-Oroville-dam-emergency-in-California/alternates/LANDSCAPE_768/What%20you%20need%20to%20know%20about%20the%20massive%20Oroville%20dam%20emergency%20in%20California","title":"What you need to know about the massive Oroville dam emergency in California","description":"What you need to know about the massive Oroville dam emergency in California <span class=\"title-duration\">4:11</span>","displayDescription":"California is trying to avert disaster at the tallest dam in the United States. With the possibility of more rain on the way, engineers are working as quickly as possible while residents are told to stay vigilant.","videographer":"","credit":"The Sacramento Bee & McClatchy","published":1487123599,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/1/1437582013143-p5k4ma/20170214c_OrovilleDam-1487123594183.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/1/1437580321678-6bjrso/20170214c_OrovilleDam-1487123595439.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/1/art_132773639/20170214c_OrovilleDam.m3u8"}],"mediaid":"CdY4nykG","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D132773639%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=national&id=132773639&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D132773639%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"126758909","url":"http://www.myrtlebeachonline.com/news/local/education/article126758909.html","duration":"1:26","image":"http://www.myrtlebeachonline.com/news/local/education/m2b1ee-Myrtle-Beach-students-CPR-Buddy-app-up-for-major-award/alternates/LANDSCAPE_768/Myrtle%20Beach%20students%27%20CPR%20Buddy%20app%20up%20for%20major%20award","title":"Myrtle Beach students' CPR Buddy app up for major award","description":"Myrtle Beach students' CPR Buddy app up for major award <span class=\"title-duration\">1:26</span>","displayDescription":"A team of freshmen students from the Academy for the Arts Science and Technology in Myrtle Beach has won an award for its life-saving mobile app concept.\n","videographer":"Aria Hangyu Chen, Christian Boschult","credit":"ahchen@mcclatchy.com, cboschult@thesunnews.com","published":1484533452,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/16/1/1437582013143-p5k4ma/aast%20app-1484533450223.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/16/1/1437580321678-6bjrso/aast%20app-1484533451281.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/16/1/art_126758909/aast_app.m3u8"}],"mediaid":"IlkMpUid","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Deducation%26id%3D126758909%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=education&id=126758909&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Deducation%26id%3D126758909%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133009669","url":"http://www.myrtlebeachonline.com/news/local/article133009669.html","duration":"1:42","image":"http://www.myrtlebeachonline.com/news/local/lpi4dx-Possible-tornado-leaves-some-Conway-residents-with-damaged-homes/alternates/LANDSCAPE_768/Possible%20tornado%20leaves%20some%20Conway%20residents%20with%20damaged%20homes","title":"Possible tornado leaves some Conway residents with damaged homes","description":"Possible tornado leaves some Conway residents with damaged homes <span class=\"title-duration\">1:42</span>","displayDescription":"A possible tornado struck a five-mile area near Conway and Loris Wednesday afternoon damaging homes, knocking down trees, blocking roads and ripping up power lines leaving more than 1,000 residents without electricity.","videographer":"Janet Blackmon Morgan","credit":"jblackmon@thesunnews.com","published":1487208835,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/1/1437582013143-p5k4ma/twister-1487208832247.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/1/1437580321678-6bjrso/twister-1487208832821.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/1/art_133009669/twister.m3u8"}],"mediaid":"ttPq2gYj","ads":[{"publication":"myrtlebeachonline","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133009669%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=local&id=133009669&eid=24995251&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dlocal%26id%3D133009669%26eid%3D24995251%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMYB.site_myrtlebeachonline%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}}],"pageType":"detail-page"}, {"wpsInclude":true,"wpsArea":"side_bar","autoPlay":false,"pubName":"myrtlebeachonline","embed":false,"cacheBust":"2115a9c","iterator":1,"uniqueID":"24995251-1487291904594","paywallEnabled":true,"baseTemplate":"video"});
+});
+</script> </div>
+</div>
+</section>
+<div class="clearfix footer element_spacing_large">
+<p class="readmore">
+<a href="http://www.myrtlebeachonline.com/video/">
+View more video
+</a>
+</p>
+</div>
+</div>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-10" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="c"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div id="market-widget-1"
+class="element-spacing-medium">
+</div>
+<div class="element-spacing-medium">
+<!--
+Widget ID: Feature Master with title feature master more stories:
+Referenced feature mi.masterConfig.moreStories, which was empty. Attempting fall-back value.
+-->
+<section id="more-stories-widget"
+class="headline-list element_spacing_large">
+<h1 class="heading link">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/">
+Toast of the Coast
+</a>
+</h1>
+<article class="prep_athletes media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article130830554.html#wgt=trending">
+Derrick fulfills family legacy, rewrites Conway football history books
+</a>
+</h2>
+</div>
+</article>
+<article class="prep_athletes media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article130636449.html#wgt=trending">
+Socastee&rsquo;s Shear uses senior campaign to make doubters believers
+</a>
+</h2>
+</div>
+</article>
+<article class="prep_athletes media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article130457814.html#wgt=trending">
+Myrtle Beach&rsquo;s Davis comes of age, leads team to run at state title
+</a>
+</h2>
+</div>
+</article>
+<article class="prep_athletes media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article130225759.html#wgt=trending">
+Pressure of defending state title no match for resolve of St. James&rsquo; Knaffle
+</a>
+</h2>
+</div>
+</article>
+<article class="prep_athletes media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.myrtlebeachonline.com/sports/high-school/prep-athletes/article129978879.html#wgt=trending">
+Springs leaves Myrtle Beach tennis having seen it all, and done it, too
+</a>
+</h2>
+</div>
+</article>
+</section>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-11" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="e"
+defaultsize="Large"
+Small = "300x250"
+Medium = "Flex Ad"
+Extra-Small = "None"
+Large = "Flex Ad"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+<section class="element_spacing_large ndn">
+<script async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+<h1 class="heading">Sports Videos</h1>
+<div class="center-block ndn_embed text-center" data-config-widget-id="20546" data-config-type="VideoLauncher/Slider300x250" data-config-tracking-group="90988"></div>
+<script async type="text/javascript">var _informq = _informq || []; _informq.push(['embed']);</script>
+</section>
+</div>
+<div >
+</div>
+<!--
+Widget ID: Feature Master with title feature master extra ads story:
+Referenced feature mi.masterConfig.extraAdsStory, which was empty. Attempting fall-back value.
+-->
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-12" adtype="default" data-ad-policy="onPageLoad" atf="n"
+oom="y"
+pkg="None"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-13" adtype="default" data-ad-policy="onPageLoad" atf="n"
+oom="y"
+pkg="None"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="129491844"
+></div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+/*
+look for elements with classes in the format of
+reorder_<id of target container element>_<position>
+e.g. reorder_story-target_3 would be moved after
+the 3rd child element of #story-target.
+If there aren't enough child elements,
+(e.g., targeting the 7th element of a 4-paragraph story)
+jQuery won't move it.
+*/
+var $document = $document || $(document);
+var reorderRegEx = /\breorder_([a-z0-9\-]+)_(\d+)/;
+var reorderFunc = function ( index, element ) {
+var classes = element.className;
+var parts = reorderRegEx.exec(classes);
+$(document.getElementById(parts[1])).find('>div>:nth-child(' + parts[2] + ')').after(element);
+};
+$('.reorder').each(reorderFunc);
+$document.ready(function () {
+// And now actually show the related content, if we should.
+// Except this actually hides it if we should. ¯\_(ツ)_/¯
+if ( $("#related-gallery").children().length == 0 ) {
+$("#related-gallery").hide();
+} });
+</script>
+<script type="text/javascript">
+var $window = $window || $(window);
+var $document = $document || $(document);
+var isSticky = false;
+$document.ready(function() {
+var $shareTools = $('.share-tools-wrapper');
+var $commentingContainer = $(document.getElementById("commenting-container"));
+var $storyBody = $(document.getElementById("story-body-items"));
+var stickyTools = function () {
+var scrollTop = $window.scrollTop(),
+storyBodyTop = $storyBody.offset().top - 50,
+commentingTop = $commentingContainer.offset().top;
+/* Check if user scrolls to the share tools but grab it 50px early
+* to accommodate the top: 50px CSS once sticky'd (this eliminates
+* the slight jump in the beginning).
+*/
+if ( isSticky === false && scrollTop > storyBodyTop && scrollTop < commentingTop ) {
+isSticky = true;
+return $shareTools.toggleClass('sticky-tools');
+}
+if ( isSticky === true && ( scrollTop >= commentingTop || scrollTop < storyBodyTop ) ) {
+isSticky = false;
+return $shareTools.toggleClass('sticky-tools'); }
+};
+stickyTools();
+$window.on("scroll", stickyTools);
+//Story Numberlines
+var rearrangeHighline = function() {
+var $this = $(this);
+var $leadIn = $this.find('.ng_number_leadin').detach();
+$this.wrapInner('<span></span>');
+$this.prepend($leadIn);
+};
+$('.highline-number').find('p').each(rearrangeHighline);
+});
+</script>
+</section>
+<div class="container " >
+<div class="ad ad-sense">
+<div>
+<div class="ad-widget" id="div-gpt-ad-14" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="m"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "300x250"
+Large = "300x250"
+articleId="129491844"
+></div>
+</div>
+</div>
+</div>
+<footer class=" " >
+<div class="container">
+<div class="ad">
+<div>
+<div class="ad-widget" id="div-gpt-ad-15" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="None"
+defaultsize="Large"
+Small = "728x90"
+Medium = "728x90"
+Extra-Small = "300x250"
+Large = "728x90"
+articleId="129491844"
+></div>
+</div>
+</div>
+</div>
+<div id="footer"
+>
+<header id="footer-logo"
+>
+<div class="container text-center">
+<a href="http://www.myrtlebeachonline.com/" target="_top"><img src="http://www.myrtlebeachonline.com/static/images/myrtlebeachonline/logo-sm.png" alt="The Sun News | MyrtleBeachOnline.com" class="img-responsive"></a>
+</div>
+</header>
+<div class="container hidden-xs">
+<div class="row " >
+<div class="col-sm-12 ">
+<div id="footer-columns"
+>
+<div class="row " id="footer-menu-columns">
+<div class="col-sm-3 footer-column border-right border-xs-remove-right">
+<h2 class="heading">
+<a href="http://#collapseOne">
+Subscriptions
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-est-01.sh/custservice/web/addrfind.html?siteid=MYB#navlink=mi_footer">
+Digital Subscriptions
+</a>
+</li>
+<li>
+<a href="/customer-service/e-edition/#navlink=mi_footer">
+e-Edition
+</a>
+</li>
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-est-01.sh/custservice/web/addrfind.html?siteid=MYB#navlink=mi_footer">
+Home Delivery
+</a>
+</li>
+<li>
+<a href="/myaccount#navlink=mi_footer">
+Vacation Hold
+</a>
+</li>
+<li>
+<a href="/myaccount#navlink=mi_footer">
+Report a Delivery Error
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column border-lg-right">
+<h2 class="heading">
+<a href="http://#collapseTwo">
+Site Information
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="/customer-service/#navlink=mi_footer">
+Customer Service
+</a>
+</li>
+<li>
+<a href="/customer-service/about-us/#navlink=mi_footer">
+About Us
+</a>
+</li>
+<li>
+<a href="/customer-service/contact-us/#navlink=mi_footer">
+Contact Us
+</a>
+</li>
+<li>
+<a href="/customer-service/faq/#navlink=mi_footer">
+FAQ
+</a>
+</li>
+<li>
+<a href="/customer-service/rss/#navlink=mi_footer">
+RSS
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column border-right border-xs-remove-right">
+<h2 class="heading">
+<a href="http://#collapseThree">
+Social, Mobile & More
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="https://www.facebook.com/sunnews#navlink=mi_footer">
+Facebook
+</a>
+</li>
+<li>
+<a href="https://twitter.com/thesunnews#navlink=mi_footer">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/MBSunNews#navlink=mi_footer">
+YouTube
+</a>
+</li>
+<li>
+<a href="/mobile/#navlink=mi_footer">
+Mobile Apps &amp; E Reader
+</a>
+</li>
+<li>
+<a href="http://2save.mobi/go/site/offer/signup.jsp?code=91#navlink=mi_footer">
+Text Alerts
+</a>
+</li>
+<li>
+<a href="/customer-service/newsletter-signup/#navlink=mi_footer">
+Newsletters
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column">
+<h2 class="heading">
+<a href="http://#collapseFour">
+Advertising
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="/classifieds/#navlink=mi_footer">
+Place a Classified
+</a>
+</li>
+<li>
+<a href="/advertise/#navlink=mi_footer">
+Advertise
+</a>
+</li>
+<li>
+<a href="/advertise/#navlink=mi_footer">
+Rates
+</a>
+</li>
+<li>
+<a href="/customer-service/contests-promotions/#navlink=mi_footer">
+Contests &amp; Promotions
+</a>
+</li>
+<li>
+<a href="http://findnsave.thesunnews.com/#navlink=mi_footer">
+Shopping
+</a>
+</li>
+<li>
+<a href="http://myrtlebeach.dealsaver.com/deal/myrtle-beach#navlink=mi_footer">
+Local Deals
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row " id="footer-legal">
+<ul class=" footer-menu-legal">
+<li>
+<a href="/customer-service/copyright/#navlink=mi_footer">
+Copyright
+</a>
+</li>
+<li>
+<a href="/customer-service/privacy-policy/#navlink=mi_footer">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="/customer-service/terms-of-service/#navlink=mi_footer">
+Terms of Service
+</a>
+</li>
+</ul>
+<script>
+jQuery('#footer #footer-columns .heading > a').each(function(){ $(this).attr('href',$(this).attr('href').split('//')[1]);})
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordion"
+class="visible-xs panel-group">
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseOne">
+Subscriptions
+</a>
+</h2>
+</div>
+<div id="collapseOne"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-est-01.sh/custservice/web/addrfind.html?siteid=MYB#navlink=mi_footer">
+Digital Subscriptions
+</a>
+</li>
+<li>
+<a href="/customer-service/e-edition/#navlink=mi_footer">
+e-Edition
+</a>
+</li>
+<li>
+<a href="https://mcciservices.newscyclecloud.com/cgi-bin/cmo_mcc-c-cmdb-est-01.sh/custservice/web/addrfind.html?siteid=MYB#navlink=mi_footer">
+Home Delivery
+</a>
+</li>
+<li>
+<a href="/myaccount#navlink=mi_footer">
+Vacation Hold
+</a>
+</li>
+<li>
+<a href="/myaccount#navlink=mi_footer">
+Report a Delivery Error
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseTwo">
+Site Information
+</a>
+</h2>
+</div>
+<div id="collapseTwo"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="/customer-service/#navlink=mi_footer">
+Customer Service
+</a>
+</li>
+<li>
+<a href="/customer-service/about-us/#navlink=mi_footer">
+About Us
+</a>
+</li>
+<li>
+<a href="/customer-service/contact-us/#navlink=mi_footer">
+Contact Us
+</a>
+</li>
+<li>
+<a href="/customer-service/faq/#navlink=mi_footer">
+FAQ
+</a>
+</li>
+<li>
+<a href="/customer-service/rss/#navlink=mi_footer">
+RSS
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseThree">
+Social, Mobile & More
+</a>
+</h2>
+</div>
+<div id="collapseThree"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="https://www.facebook.com/sunnews#navlink=mi_footer">
+Facebook
+</a>
+</li>
+<li>
+<a href="https://twitter.com/thesunnews#navlink=mi_footer">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://www.youtube.com/user/MBSunNews#navlink=mi_footer">
+YouTube
+</a>
+</li>
+<li>
+<a href="/mobile/#navlink=mi_footer">
+Mobile Apps &amp; E Reader
+</a>
+</li>
+<li>
+<a href="http://2save.mobi/go/site/offer/signup.jsp?code=91#navlink=mi_footer">
+Text Alerts
+</a>
+</li>
+<li>
+<a href="/customer-service/newsletter-signup/#navlink=mi_footer">
+Newsletters
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseFour">
+Advertising
+</a>
+</h2>
+</div>
+<div id="collapseFour"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="/classifieds/#navlink=mi_footer">
+Place a Classified
+</a>
+</li>
+<li>
+<a href="/advertise/#navlink=mi_footer">
+Advertise
+</a>
+</li>
+<li>
+<a href="/advertise/#navlink=mi_footer">
+Rates
+</a>
+</li>
+<li>
+<a href="/customer-service/contests-promotions/#navlink=mi_footer">
+Contests &amp; Promotions
+</a>
+</li>
+<li>
+<a href="http://findnsave.thesunnews.com/#navlink=mi_footer">
+Shopping
+</a>
+</li>
+<li>
+<a href="http://myrtlebeach.dealsaver.com/deal/myrtle-beach#navlink=mi_footer">
+Local Deals
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseFive">
+More
+</a>
+</h2>
+</div>
+<div id="collapseFive"
+class="panel-collapse collapse">
+<div class="panel-body">
+<script>
+jQuery('#footer #accordion .heading > a').attr({'data-toggle':'collapse','data-parent':'#accordion'}).each(function(){ $(this).attr('href',$(this).attr('href').split('//')[1]);})
+</script>
+<ul class=" footer-menu-legal">
+<li>
+<a href="/customer-service/copyright/#navlink=mi_footer">
+Copyright
+</a>
+</li>
+<li>
+<a href="/customer-service/privacy-policy/#navlink=mi_footer">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="/customer-service/terms-of-service/#navlink=mi_footer">
+Terms of Service
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968074018;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/968074018/?value=0&guid=ON&script=0"/>
+</div>
+</noscript>
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-16" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="a"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x75"
+Large = "None"
+articleId="129491844"
+></div>
+</div>
+</div>
+<div id="floorboard"
+class="hidden-xs">
+<div>
+<div id="floorboard_outer">
+<div id="floorTagWrapper" style="display:none;">
+<div class="ad-widget" id="div-gpt-ad-17" adtype="floorboard" atf="y" pkg="a"
+defaultsize="Large" data-ad-policy="onPageLoad"
+Small='285x70'
+Medium='285x70'
+Extra-Small='None'
+Large='285x70'
+articleId='129491844'
+></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!-- Render Footer from Escenic or WPS based on switch-->
+<script type="text/javascript">
+/* Front end properties configured in nursery */
+var FrontEndConfig = {"media.jwplayer.script.location":"http://static.mcclatchyinteractive.com/escenic/jwplayer-7.1.4/jwplayer.js","media.jwplayer.hls.mimeTypes":"vnd.apple.mpegURL,application/x-mpegURL","audioPlayer":"mediaelement","media.jwplayer.sharing.enabled":"true","videoPlayer":"jwplayer","media.jwplayer.options.primary":"html5","media.jwplayer.ga.enabled":"true ","media.jwplayer.hls.enabled":"true","media.jwplayer.key":"tTakaWDwaA/5t6sLfLhYBB4EfEa1ETrJDYnTPw=="};
+if (typeof(FrontEndConfig) == 'undefined') {
+FrontEndConfig = {};
+}
+FrontEndConfig.rootURL = "http://www.myrtlebeachonline.com/";
+/* Client-side device detection */
+var WFClientTypeDef = {"extraSmall":"(max-width: 767px)","medium":"(min-width: 992px) and (max-width: 1199px)","large":"(min-width: 1200px)","small":"(min-width: 768px) and (max-width: 991px)"};
+var imageSizes = [80, 160, 200, 320, 400, 480, 560, 640, 720, 768, 960, 1080, 1140];
+$(function(){
+$.each(FrontEndConfig, function(key, value) {
+/* Regular properties other than JW Player setup options
+are being processed here */
+if (key.indexOf('media.jwplayer.options') < 0) {
+FrontEndConfig[key] = WFUtils.parseStringToJSONObject(value);
+}
+});
+});
+</script>
+<script type="text/javascript"
+src="http://www.myrtlebeachonline.com/static/js/wps-wf-site-1.0.99-235b3bc-min.js"></script>
+<script type="text/javascript" >
+mi_Ads.env.init();
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var clientDT = new Date().getTime();
+document.write('<img style="display:none;" src="http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&ctxId=15260&contextPath=7057-15233-15254-15260-&pubId=23&cat=&meta=read-story&objId=129491844&type=article&title=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals&url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html&amp;clientDT=' + clientDT + '" alt="" width="1" height="1"/>');
+//]]>
+</script>
+<noscript>
+<div>
+<img src="http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=15260&amp;contextPath=7057-15233-15254-15260-&amp;pubId=23&amp;cat=&amp;meta=read-story&amp;objId=129491844&amp;type=article&amp;title=Confidence%2c+work+ethic+allow+Myrtle+Beach%e2%80%99s+McGonigal+to+meet+lofty+goals&amp;url=http%3a%2f%2fwww.myrtlebeachonline.com%2fsports%2fhigh-school%2fprep-athletes%2farticle129491844.html" alt="one pixel graphics" width="1" height="1"/>
+</div>
+</noscript>
+<script>
+var trackerConfig = null;
+if (typeof {} != 'object') {
+trackerConfig = '{}';
+trackerSend = 'send';
+}
+else {
+trackerConfig = {};
+if (!trackerConfig.hasOwnProperty('name')) {
+trackerConfig.name = 'wf';
+}
+trackerSend = trackerConfig.name + '.send';
+}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3858463-27', trackerConfig);
+ga(trackerSend, 'pageview');
+</script>
+<script type="text/javascript">
+/*Device width fix for Windows Phone 8 and IE 10*/
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+}
+</script>
+<script type="text/javascript">
+mi.pageInfo.setConf("chartbeat.uid", 62447);
+</script>
+<div id="mistatstag" style="display:none;">
+<script type="text/javascript" src="http://media.myrtlebeachonline.com/mistats/products/escenic_s_code.js"></script>
+<script type="text/javascript" src="http://media.myrtlebeachonline.com/mistats/products/escenic.js"></script>
+<script type="text/javascript" src="http://media.myrtlebeachonline.com/mistats/finalizestats.js"></script>
+</div>
+<!-- Lotame Tracking Tag -->
+<script src="http://tags.crwdcntrl.net/c/7468/cc.js?ns=_cc7468" id="LOTCC_7468"></script>
+<script>_cc7468.bcp();</script>
+</body>
+</html>

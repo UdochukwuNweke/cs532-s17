@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script>
+var gomez={
+gs: new Date().getTime(),
+acctId:"D3FD89",
+grpId:"Escenic",
+grpId1:"mia",
+grpId2:window.location.hostname,
+grpId3:"national",
+pgId:"story-detail",
+wrate:1
+};
+</script>
+<script type='text/javascript'>
+(function(){var a=window;a.dT_?a.console&&a.console.log("Duplicate agent injection detected, turning off redundant initConfig."):window.dT_||(window.dT_={cfg:"cors=1|async=1|tp=500,50,5,1,10|reportUrl=//mcclatchy.dynatracesaas.com/dynaTraceMonitor|agentUri=//mcclatchy.dynatracesaas.com/dtagent_23jpqrstxz_6000500041014.js|auto=#AUTO#|domain=#DOMAIN#|rid=RID_#REQUEST_ID#|rpid=#RESPONSE_ID#"})})();(function(){function s(){var a=0;try{a=window.performance.timing.navigationStart+Math.floor(window.performance.now())}catch(b){}return 0>=a?(new Date).getTime():a}function Z(a,b){return $(a,b)}function l(a,b){for(var c=1;c<arguments.length;c++)a.push(arguments[c])}function v(a,b){return parseInt(a,b||10)}function E(a){try{if(w)return w[a]}catch(b){}return null}function F(a,b){try{window.sessionStorage.setItem(a,b)}catch(c){}}function m(a,b){var c=-1;b&&(a&&a.indexOf)&&(c=a.indexOf(b));return c}function G(a){document.cookie=
+a+'="";path=/'+(d.domain?";domain="+d.domain:"")+"; expires=Thu, 01-Jan-70 00:00:01 GMT;"}function H(a){a=encodeURIComponent(a);var b=[];if(a)for(var c=0;c<a.length;c++){var k=a.charAt(c),d=aa[k];d?l(b,d):l(b,k)}return b.join("")}function x(a,b,c){b||0==b?(b=(""+b).replace(/[;\n\r]/g,"_"),b="DTSA"===a.toUpperCase()?H(b):b,a=a+"="+b+";path=/"+(d.domain?";domain="+d.domain:""),c&&(a+=";expires="+c.toUTCString()),document.cookie=a):G(a)}function r(a){var b,c,k,d=document.cookie.split(";");for(b=0;b<
+d.length;b++)if(c=m(d[b],"="),k=d[b].substring(0,c),c=d[b].substring(c+1),k=k.replace(/^\s+|\s+$/g,""),k===a)return"DTSA"===a.toUpperCase()?decodeURIComponent(c):c;return""}function I(a){return/^[0-9A-Za-z_$\+\/\.\-\*%\|]*$/.test(a)}function J(){var a=r(K);return a&&I(a)?a:""}function L(a){a=a||J();var b={sessionId:null,serverId:null};if(a){var c=m(a,"|"),d=a;-1!==c&&(d=a.substring(0,c));c=m(d,"$");-1!==c?(b.sessionId=d.substring(c+1),b.serverId=d.substring(0,c)):b.sessionId=d}return b}function ba(a){return L(a).serverId}
+function ca(a){if(a)return L(a).sessionId;if(a=e.gSC()){var b=a.indexOf("|");-1!==b&&(a=a.substring(0,b))}return a}function M(a,b){return Math.floor(Math.random()*(b-a+1))+a}function N(a){var b=window.crypto||window.msCrypto,c;if(b)c=new Int8Array(a),b.getRandomValues(c);else{c=[];for(b=0;b<a;b++)c.push(M(0,O))}a=[];for(b=0;b<c.length;b++){var d=Math.abs(c[b]%O),d=9>=d?String.fromCharCode(d+48):String.fromCharCode(d+55);a.push(d)}return a.join("")}function P(a){return document.getElementsByTagName(a)}
+function Q(a){var b=a.length;if("number"===typeof b)a=b;else{for(var b=0,c=2048;a[c-1];)b=c,c+=c;for(var d=7;1<c-b;)d=(c+b)/2,a[d-1]?b=d:c=d;a=a[d]?c:b}return a}function da(){var a=d.csu,a=(a.indexOf("dbg")==a.length-3?a.substr(0,a.length-3):a)+"_"+d.app+"_Store";try{if(y){var b=y.getItem(a);if(b){for(var a={},c=b.split("|"),b=0;b<c.length;b++){var e=c[b].split("=");2==e.length&&(a[e[0]]=decodeURIComponent(e[1]))}if(!d.lastModification||parseInt(a.lastModification.substr(0,13),10)>=parseInt(d.lastModification.substr(0,
+13),10))for(var q in a)a.hasOwnProperty(q)&&("config"==q?z(a[q]):d[q]=a[q])}}}catch(g){}}function z(a){a=a.split("|");for(var b=0;b<a.length;b++){var c=m(a[b],"=");-1===c?d[a[b]]="1":d[a[b].substring(0,c)]=a[b].substring(c+1,a[b].length)}}function ea(a,b){if(a){var c=/([a-zA-Z]*)[0-9]{0,3}_[a-zA-Z_0-9]*_[0-9]+/g.exec(a);if(c&&c.length){var k=c[0];d.csu=c[1];c=k.split("_");d.legacy="1";d.featureHash=c[1];d.dtVersion=e.version[0]+""+e.version[1]}}b&&z(b);c=location.hostname;k=d.domain;c=c&&k?c==k||
+-1!==c.indexOf("."+k,c.length-("."+k).length)?!0:!1:!0;c||(delete d.domain,d.domainOverride="true")}function fa(){return K}function ga(){return ha}function ia(){return ja}function A(a){d[a]=0>m(d[a],"#"+a.toUpperCase())?d[a]:""}function ka(){return t}function R(a,b){for(var c=S(b),d=!1,e=0;e<c.length;e++)c[e].frameId===t&&(c[e].actionId=a,d=!0);d||l(c,{frameId:t,actionId:a});T(c)}function T(a,b){var c="";if(a){for(var c=[],d=0;d<a.length;d++)0<d&&0<c.length&&l(c,"p"),l(c,a[d].frameId),l(c,"h"),l(c,
+a[d].actionId);c=c.join("")}c||(c="-");x(B,c)}function S(a){var b=r(B),c=[];if(b&&"-"!==b)for(var b=b.split("p"),d=0;d<b.length;d++){var e=b[d].split("h");if(2===e.length&&e[0]&&e[1]){var g=e[0],f;if(!(f=a)){f=g.split("_");f=v(f[0]);var h=s()%C;h<f&&(h+=C);f=f+9E5>h}f&&l(c,{frameId:g,actionId:e[1]})}}return c}function U(){var a=r(u);if(!a||""==a||a.length&&a.length!=V)a=E(u),a&&a.length==V||(W=!0,a=s()+N(la));var b=a,c=new Date;c.setFullYear(c.getFullYear()+2);x(u,b,c);F(u,b);return a}function ma(){return W}
+var g=window;if(!g.dT_||!g.dT_.cfg||"string"!=typeof g.dT_.cfg||g.dT_.initialized)g.console&&g.console.log("Initconfig not found or agent already initialized! This is an injection issue.");else{var $=window.setTimeout,w=window.sessionStorage,e={version:[6,5,4,"1014"],cfg:window.dT_&&window.dT_.cfg,ica:1};e.version[3]=parseInt(e.version[3],10);window.dT_=e;e.agentStartTime=s();e.nw=s;e.apush=l;e.st=Z;var O=32,aa={"!":"%21","~":"%7E","*":"%2A","(":"%28",")":"%29","'":"%27",$:"%24",";":"%3B",",":"%2C"};
+e.gSSV=E;e.sSSV=F;e.pn=v;e.iVSC=I;e.io=m;e.dC=G;e.sC=x;e.esc=H;e.gSId=ba;e.gDtc=ca;e.gSC=J;e.gC=r;e.cRN=M;e.cRS=N;e.gEL=Q;e.gEBTN=P;var d={reportUrl:"dynaTraceMonitor",initializedModules:"",csu:"dtagent",domainOverride:"false",dataDtConfig:e.cfg},y;try{y=window.localStorage}catch(na){}if(-1==m(d.dataDtConfig,"#CONFIGSTRING")&&(z(d.dataDtConfig),A("domain"),A("auto"),A("app"),(g=d.agentUri)&&-1<m(g,"_")))g=/([a-zA-Z0-9]*)[0-9]*_([a-zA-Z0-9]*)_[0-9]*/.exec(g),d.csu=g[1],d.featureHash=g[2],d.dtVersion=
+e.version[0]+""+e.version[1];var g=P("script"),X=Q(g);if(0<X)for(var h,Y=d.csu+"_bootstrap.js",D=0;D<X;D++)if(h=g[D],h.attributes){var n=h.attributes.getNamedItem("data-dtconfig");h=h.src;if(n){ea(h,n.value);break}if((n=h&&h.indexOf(Y))&&0<=n)n=n+Y.length+5,d.app=h.length>n?h.substr(n):"Default%20Application"}da();try{var f=d.ign;if(f&&RegExp(f).test(window.location.href)){document.dT_=window.dT_=null;return}}catch(oa){}var B="dtPC",K="dtCookie",ha="x-dtPC",ja="x-dtReferer";e.gSCN=fa;e.gPCHN=ga;e.gRHN=
+ia;e.pageContextCookieName=B;e.latencyCookieName="dtLatC";e.cfg=d;var C=6E8,t=e.agentStartTime%C+"_"+v(1E3*Math.random());e.gFId=ka;e.frameId=t;R(1);e.gPC=S;e.cPC=R;e.sPC=T;var p;try{p=w.getItem("dtDisabled")}catch(pa){}!d.auto&&(!d.legacy&&!p)&&(f=d.agentname||d.csu||"dtagent",f=r("dtUseDebugAgent")?d.debugName||f+"dbg":d.name||f,p=d.agentUri||d.agentLocation+"/"+f+"_"+d.featureHash+"_"+d.buildNumber,d.async?(f=document.createElement("script"),f.setAttribute("src",p),d.async&&f.setAttribute("defer",
+"true"),f.setAttribute("crossorigin","anonymous"),p=document.getElementsByTagName("script")[0],p.parentElement.insertBefore(f,p)):document.write('<script type="text/javascript" src="'+p+'">\x3c/script>'));var u="rxVisitor",la=32,V=45,W=!1;U();e.iNV=ma;e.gVID=U}})();
+</script>
+<!-- paywall disabled -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angry congressional lawmakers erupt, seek ways to curb Trump immigration order | Miami Herald</title>
+<meta name="keywords" content="Donald Trump, executive order, immigrants, Muslims, Paul Ryan, Chuck Schumer, Mitch McConnell, Ben Sasse, Susan Collins, Jeff Flake, Rob Portman"/>
+<meta name="news_keywords" content="Donald Trump, executive order, immigrants, Muslims, Paul Ryan, Chuck Schumer, Mitch McConnell, Ben Sasse, Susan Collins, Jeff Flake, Rob Portman"/>
+<meta name="allow-comments" content="true"/>
+<meta name="description" content="Republicans and Democrats were critical of President Donald Trump’s order temporarily barring immigrants and others from seven nations, and sought answers and action Sunday. But GOP leaders were not inclined to follow their lead."/>
+<meta name="title" content="Angry congressional lawmakers erupt, seek ways to curb Trump immigration order | Miami Herald"/>
+<meta name="googlebot" content="noodp, noarchive"/>
+<meta name="original-source" content="http://pics.mcclatchyinteractive.com/news/nation-world/national/article129457819.html"/>
+<link rel="canonical" href="http://pics.mcclatchyinteractive.com/news/nation-world/national/article129457819.html"/>
+<meta name="google-site-verification" content="CGBP3Njv1HyxLF1VInLHOprjcfJXffMVe5Udr0HQf-U"/>
+<link rel="amphtml" href="https://miamiherald.relaymedia.com/amp/news/politics-government/article129457819.html">
+<meta property="og:title" content="Angry congressional lawmakers erupt, seek ways to curb Trump immigration order"/>
+<meta property="og:type" content="article"/>
+<meta property="og:url" content="http://www.miamiherald.com/news/politics-government/article129457819.html"/>
+<meta property="og:description" content="Republicans and Democrats were critical of President Donald Trump&rsquo;s order temporarily barring immigrants and others from seven nations, and sought answers and action Sunday. But GOP leaders were not inclined to follow their lead."/>
+<meta property="og:image" content="http://www.mcclatchydc.com/news/ee6cou-Screen-Shot-2017-01-29-at-3.38.09-PM.png/ALTERNATES/LANDSCAPE_1140/Screen%20Shot%202017-01-29%20at%203.38.09%20PM.png"/>
+<meta property="og:site_name" content="miamiherald"/>
+<meta property="fb:app_id" content="133847067760"/>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="miamiherald">
+<meta name="twitter:title" content="Angry congressional lawmakers erupt, seek ways to curb Trump immigration order">
+<meta name="twitter:description" content="Republicans and Democrats were critical of President Donald Trump&rsquo;s order temporarily barring immigrants and others from seven nations, and sought answers and action Sunday. But GOP leaders were not inclined to follow their lead.">
+<meta name="twitter:image" content="http://www.mcclatchydc.com/news/ee6cou-Screen-Shot-2017-01-29-at-3.38.09-PM.png/ALTERNATES/LANDSCAPE_1140/Screen%20Shot%202017-01-29%20at%203.38.09%20PM.png">
+<meta name="msapplication-TileImage" content="http://www.miamiherald.com/static/theme/miamiherald/base/ico/windowsmetro-144.png"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.miamiherald.com/static/theme/miamiherald/base/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.miamiherald.com/static/theme/miamiherald/base/ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.miamiherald.com/static/theme/miamiherald/base/ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="http://www.miamiherald.com/static/theme/miamiherald/base/ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="http://www.miamiherald.com/static/theme/miamiherald/base/ico/favicon.png">
+<link href="http://www.miamiherald.com/static/theme/miamiherald-2020/base/css/main-1.0.99-235b3bc.css?sVer=1.0.99-235b3bc" rel="stylesheet">
+<!--[if lt IE 9]>
+<script src="http://www.miamiherald.com/static/js/html5shiv.js?sVer=1.0.99-235b3bc"></script>
+<script src="http://www.miamiherald.com/static/js/respond.min.js?sVer=1.0.99-235b3bc"></script>
+<script type="text/javascript" src="http://www.miamiherald.com/static/js/mi-scripts/pollyfill.js?sVer=1.0.99-235b3bc"></script>
+<![endif]-->
+<script type="text/javascript" src="http://www.miamiherald.com/static/js/jquery-1.10.2.min.js?sVer=1.0.99-235b3bc"></script>
+<script type="text/javascript" src="http://www.miamiherald.com/static/js/mi-wf-site-1.0.99-235b3bc-min.js"></script>
+<script type="text/javascript">
+mi.pageInfo.setConf({
+'marketInfo.pagelevel':'story',
+'marketInfo.careerbuilder.mxjobsrchcriteria_rawwords':'outside+sales',
+'wufoo.formID':'',
+'publication.mediadomain':'media.miamiherald.com',
+'accuweather.apiKey':'2ce96fe9da724185a27db1e6a3ecf580',
+'marketInfo.application_version':'1.0.99-235b3bc',
+'marketInfo.logoAltText':'Miami Herald',
+'marketInfo.allow_ads':'true',
+'nativo.story.placements':'840170,776813,844318',
+'marketInfo.pagelevel_informational':'false',
+'marketInfo.addcities':'South Miami, Coral Gables, Pinecrest, Kendall, Miami Beach, Hialeah, Aventura, Miami Springs, Key Biscayne, Florida Keys, Key West, Coconut Grove, Doral, Cutler Bay, Homestead, Hollywood, Pembroke Pines, Davie, Hallendale, Fort Lauderdale',
+'marketInfo.staticDirectory':'miamiherald',
+'marketInfo.state_abbreviation':'FL',
+'publication.domain':'MiamiHerald.com',
+'accuweather.partnerCode':'MCCLATCHY',
+'marketInfo.domain':'miamiherald',
+'facebook.app.id':'133847067760',
+'marketInfo.clipped_taxonomy':'News/Local/GovtPolitics',
+'nativo.video.placements':'869316,869315',
+'marketInfo.careerbuilder.lr':'CBCB_MH',
+'marketInfo.CarsSEO':'',
+'marketInfo.CarsAFF':'herald',
+'marketInfo.Jobslr':'CBCB_MH',
+'marketInfo.adretargeting.kill_list':["simpli.fi"],
+'marketInfo.webmaster_email':'webmaster@miamiherald.com',
+'marketInfo.phone':'1 (800) THE HERALD (1-800-843-4372)',
+'marketInfo.sourcelevel':'national',
+'pressPlus.zone':'dH8ogmYVh7n4wEfMoZ1r08',
+'olive.localBrand':'',
+'marketInfo.shortURL':'front',
+'legacy.siteName':'herald',
+'marketInfo.viewsizes':[{"Large":[1200,600]},{"Medium":[992,300]},{"Small":[768,300]},{"Extra-Small":[0,0]}],
+'findnsave.tracking':'findnsave',
+'classads.homefinderUrl':'http://www.homefinder.com/FL/Miami',
+'legacy.affiliateId':'mi000150',
+'marketInfo.JobsSEO':'',
+'accuweather.dev':'false',
+'marketInfo.state':'Florida',
+'marketInfo.siteId':'56',
+'marketInfo.county':'Miami-Dade County',
+'marketInfo.allow_nativo':'true',
+'marketInfo.adsizes':{"outofpage":{},"default":{"None":[],"970x90":[970,90],"Billboard Flex":[[960,30],[970,30],[970,90],[970,250]],"960x30":[960,30],"728x90":[728,90],"600x250":[600,250],"500x300":[500,300],"468x60":[468,60],"336x280":[336,280],"320x450":[320,450],"320x50":[320,50],"300x600":[300,600],"Flex Ad":[[300,250],[300,600]],"Welcome Ad":[[300,250],[300,600],[550,480],[600,500]],"300x250":[300,250],"300x100":[300,100],"300x75":[300,75],"300x50":[300,50],"240x400":[240,400],"234x60":[234,60],"216x36":[216,36],"180x150":[180,150],"168x28":[168,28],"160x600":[160,600],"160x90":[160,90],"146x60":[146,60],"120x600":[120,600],"120x240":[120,240],"120x20":[120,20],"Rising Star":[500,300]},"floorboard":{"None":[],"285x70":[285,70]},"wallpaper":{"None":[],"1600x600":[1600,600]}},
+'marketInfo.careerbuilder.s_freshness':'30',
+'wishabi.bodyId':'861',
+'classads.carsUrl':'http://www.cars.com/?aff=miami',
+'marketInfo.name':'Miami Herald',
+'marketInfo.location':'Miami',
+'marketInfo.region':'South Florida',
+'marketInfo.JobsSiteID':'cbcb_mh',
+'classads.apartmentsUrl':'http://www.apartments.com/Florida/Miami',
+'marketInfo.careerbuilder.dmc_id':'1048',
+'marketInfo.code':'MIA',
+'marketInfo.careerbuilder.dmc_code':'mia',
+'marketInfo.market_identifier':'MIA.site_miamiherald',
+'wf.resource.static.rootUrl':'http://www.miamiherald.com/static/',
+'marketInfo.JobsQSSTS':'FL,US',
+'financialContent.account':'miamiherald',
+'marketInfo.followLinks':'0',
+'marketInfo.networkid':'7675',
+'marketInfo.product':'site',
+'wishabi.navId':'1058',
+'marketInfo.JobsQSCTY':'Miami',
+'marketInfo.classads.apartmentsUrl':'http://www.apartments.com/Florida/Miami',
+'marketInfo.careerbuilder.s_rawwords':'CustomField3:MIAMITJ',
+'marketInfo.street_address':'3511 NW 91 Ave., Miami, FL 33172',
+'accuweather.locationKey':'347936',
+'marketInfo.taxonomy':'News/Local/GovtPolitics//',
+'marketInfo.city':'Miami',
+});
+</script>
+<script type="text/javascript" >
+mi_Ads.env.create();
+</script>
+<script type="text/javascript" src="http://ad.crwdcntrl.net/5/c=7436/pe=y/callback=extractPid" async></script>
+<script type="text/javascript" src="http://c.amazon-adsystem.com/aax2/amzn_ads.js"></script>
+<script type="text/javascript">
+try {
+amznads.getAds('3108'); } catch(e) { /*ignore*/}
+</script>
+<script type="text/javascript">
+try {
+amznads.setTargetingForGPTAsync('amznslots');
+} catch(e) { /*ignore*/}
+</script>
+<script type="text/javascript">
+var _prx = window._prx || [];
+_prx.push(['cfg.SetNoAutoStart']);
+</script>
+<script type="text/javascript" src="//s.ntv.io/serve/load.js" async></script>
+<script type="text/javascript">
+var mistats = mistats || {};
+mistats.pagelevel="Story";
+mistats.cmsid="Story: 129457819";
+mistats.pagename="Story: 129457819|Angry congressional lawmakers erupt seek ways to curb Trump immigration order";
+mistats.taxonomy="News|Local|GovtPolitics||";
+mistats.channel="National";
+mistats.contentsource="DCBureau|By David Lightmandlightmanmcclatchydccom";
+mistats.pubdate="2017/01/29";
+mistats.moddate="2017/01/30 H21";
+mistats.keywords="Donald Trump executive order immigrants Muslims Paul Ryan Chuck Schumer Mitch McConnell Ben Sasse Susan Collins Jeff Flake Rob Portman";
+</script>
+<script type='text/javascript' src='http://media.miamiherald.com/misites/mia/miamiherald.js'></script>
+<script src="//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5" async></script>
+</head>
+<body>
+<!-- Powered by Escenic Content Engine and Widget Framework. http://escenic.com -->
+<div class=" " >
+<script type="text/javascript">
+var $window = $window || $(window);
+var $document = $document || $(document);
+function hidePhotoTitle() {
+if( $(document.getElementById("top-galleries")).height() === 0) {
+$(document.getElementById("top-photos-carousel")).hide();
+} if($(document.getElementById("top-galleries-with-counter")).height() === 0) {
+$(document.getElementById("top-photos-carousel")).hide();
+console.log('found');
+}
+}
+$window.on("load", hidePhotoTitle);
+</script>
+</div>
+<div class="">
+<header class=" " role="banner">
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-oop-1" adtype="outofpage" pkg="None" data-ad-policy="onPageLoad"
+articleId="129457819" ></div>
+</div>
+</div>
+<div id="masthead-container"
+>
+<div class="container">
+<div class="masthead-row">
+<div id="masthead-main"
+>
+<div id="masthead-logo"
+>
+<a href="http://www.miamiherald.com/" target="_top"><img src="http://www.miamiherald.com/static/images/miamiherald/logo-lg.png" alt="Miami Herald | MiamiHerald.com" class="img-responsive center-block"></a>
+</div>
+<div id="quick-nav"
+class="hidden-xs">
+<ul class=" nav navbar-nav">
+<li>
+<a href="/news/#navlink=navbar">
+News
+</a>
+</li>
+<li>
+<a href="/sports/#navlink=navbar">
+Sports
+</a>
+</li>
+<li>
+<a href="/news/business/#navlink=navbar">
+Business
+</a>
+</li>
+<li>
+<a href="/news/business/real-estate-news/#navlink=navbar">
+Real Estate
+</a>
+</li>
+</ul>
+<div id="site-search-lg" class="visible-lg">
+<form action="/search/" id="cse-search-box" class="form-inline google-searchform" role="search">
+<input type="hidden" name="cx" value="partner-pub-7642884967523832:9709061890" />
+<input type="hidden" name="cof" value="FORID:10" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" class="form-control" placeholder="Search the site" />
+<input type="hidden" name="sa" value="Search" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</div>
+<div id="search-icon-sm-md" class="site-search dropdown visible-md visible-sm">
+<a href="#" class="btn btn-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+<li class="input-group">
+<form action="/search/" id="cse-search-box" class="form-inline google-searchform" role="search">
+<input type="hidden" name="cx" value="partner-pub-7642884967523832:9709061890" />
+<input type="hidden" name="cof" value="FORID:10" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" class="form-control" placeholder="Search the site" />
+<input type="hidden" name="sa" value="Search" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Widget ID: Feature Master with title feature master masthead switch:
+Referenced feature mi.masterConfig.masthead-extra, which was empty. Attempting fall-back value.
+-->
+<div id="masthead-ad"
+class="visible-md visible-lg">
+<div>
+<div class="ad-widget" id="div-gpt-ad-2" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="None"
+defaultsize="Large"
+Small = "None"
+Medium = "234x60"
+Extra-Small = "None"
+Large = "234x60"
+articleId="129457819"
+></div>
+</div>
+</div>
+</div>
+<div id="main-nav-container"
+>
+<div class="weather-container hidden-xs">
+<div class="miWeather">
+<a href="/weather">
+<div class="miWeatherCurrent">
+<div class="mi-weather-alert"></div>
+</div>
+</a>
+</div>
+</div>
+<div id="login-subscribe"
+class="hidden-xs">
+<ul class=" paywall-links">
+<li>
+<a href="/activate">
+Sign In
+</a>
+</li>
+<li>
+<a href="http://media.miamiherald.com/static/subscriptions/subscribe/?promo=WPLV">
+Subscribe
+</a>
+</li>
+</ul>
+</div>
+<div id="main-nav"
+>
+<nav class="navbar navbar-default " role="navigation" >
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+<div id="navbar-collapse-1" class="navbar-collapse collapse">
+<div id="search-icon-xs" class="site-search dropdown visible-xs">
+<a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-search"></span></a>
+<ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+<li class="input-group">
+<form action="/search/" id="cse-search-box" class="form-inline google-searchform" role="search">
+<input type="hidden" name="cx" value="partner-pub-7642884967523832:9709061890" />
+<input type="hidden" name="cof" value="FORID:10" />
+<input type="hidden" name="ie" value="UTF-8" />
+<input type="text" name="q" class="form-control" placeholder="Search the site" />
+<input type="hidden" name="sa" value="Search" />
+<button class="input-group-addon" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+</form>
+</li>
+</ul>
+</div>
+<div class="weather-container visible-xs">
+<div class="miWeather">
+<a href="/weather">
+<div class="miWeatherCurrent">
+<div class="mi-weather-alert"></div>
+</div>
+</a>
+</div>
+</div>
+<ul class=" paywall-links">
+<li>
+<a href="/activate">
+Sign In
+</a>
+</li>
+<li>
+<a href="http://media.miamiherald.com/static/subscriptions/subscribe/?promo=WPLV">
+Subscribe
+</a>
+</li>
+</ul>
+<ul class=" nav navbar-nav">
+<li>
+<a href="/#navlink=subnav">
+Home
+</a>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Customer Service <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Site Information</li>
+<li><a href="/customer-service/#navlink=subnav">Contact Us</a></li>
+<li><a href="/customer-service/about-us/#navlink=subnav">About Us</a></li>
+<li><a href="/site-services/store/#navlink=subnav">Herald Store</a></li>
+<li><a href="/rss/#navlink=subnav">RSS Feeds</a></li>
+<li><a href="http://newspaperads.miami.com/SS/Tiles.aspx#navlink=subnav">Special Sections</a></li>
+<li class="dropdown-header">Advertise</li>
+<li><a href="/advertise/#navlink=subnav">Advertise with Us</a></li>
+<li><a href="http://www.miamiheraldmedia.com/#navlink=subnav">Media Kit</a></li>
+<li class="dropdown-header">Mobile</li>
+<li><a href="/mobile/#navlink=subnav">Mobile Apps &amp; eReaders</a></li>
+<li><a href="http://hrld.us/txtalerts#navlink=subnav">Mobile Alerts</a></li>
+<li><a href="/site-services/newsletters/newsletter-signup/#navlink=subnav">Newsletters</a></li>
+<li class="dropdown-header">Social</li>
+<li><a href="https://www.facebook.com/pages/Miami-Herald/38925837299#navlink=subnav">Facebook</a></li>
+<li><a href="https://twitter.com/miamiherald/#navlink=subnav">Twitter</a></li>
+<li><a href="https://plus.google.com/109936907321316291240#navlink=subnav">Google+</a></li>
+<li><a href="https://instagram.com/miamiherald/#navlink=subnav">Instagram</a></li>
+<li><a href="https://www.youtube.com/user/miamiherald#navlink=subnav">YouTube</a></li>
+</ul>
+</li>
+<li>
+<a href="/digital/#navlink=subnav">
+Digital Edition
+</a>
+</li>
+<li class="nav-divider"> </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>News <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Sections</li>
+<li><a href="/news/#navlink=subnav">News</a></li>
+<li><a href="/news/local/#navlink=subnav">South Florida</a></li>
+<li><a href="/news/local/community/miami-dade/#navlink=subnav">Miami-Dade</a></li>
+<li><a href="/news/local/community/broward/#navlink=subnav">Broward</a></li>
+<li><a href="/news/local/community/florida-keys/#navlink=subnav">Florida Keys</a></li>
+<li><a href="/news/state/florida/#navlink=subnav">Florida</a></li>
+<li><a href="/news/politics-government/#navlink=subnav">Politics</a></li>
+<li><a href="/news/weird/#navlink=subnav">Weird News</a></li>
+<li><a href="http://weather.herald.com/US/FL/South_Florida.html/#navlink=subnav">Weather</a></li>
+<li class="dropdown-header">National & World</li>
+<li><a href="/news/nation-world/national/#navlink=subnav">National</a></li>
+<li><a href="/news/nation-world/world/#navlink=subnav">World</a></li>
+<li><a href="/news/nation-world/world/americas/#navlink=subnav">Americas</a></li>
+<li><a href="/news/nation-world/world/americas/cuba/#navlink=subnav">Cuba</a></li>
+<li><a href="/news/nation-world/world/americas/guantanamo/#navlink=subnav">Guantánamo</a></li>
+<li><a href="/news/nation-world/world/americas/haiti/#navlink=subnav">Haiti</a></li>
+<li><a href="/news/nation-world/world/americas/venezuela/#navlink=subnav">Venezuela</a></li>
+<li class="dropdown-header">Local Issues</li>
+<li><a href="/news/local/crime/#navlink=subnav">Crime</a></li>
+<li><a href="/news/local/education/#navlink=subnav">Education</a></li>
+<li><a href="/news/local/environment/#navlink=subnav">Environment</a></li>
+<li><a href="/health-care/#navlink=subnav">Health Care</a></li>
+<li><a href="/news/local/in-depth/#navlink=subnav">In Depth</a></li>
+<li><a href="/opinion/issues-ideas/#navlink=subnav">Issues &amp; Ideas</a></li>
+<li><a href="/news/traffic/#navlink=subnav">Traffic</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Sports <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Sections</li>
+<li><a href="/sports/#navlink=subnav">Sports</a></li>
+<li><a href="/sports/spt-columns-blogs/#navlink=subnav">Blogs &amp; Columnists</a></li>
+<li class="dropdown-header">Pro & College</li>
+<li><a href="/sports/nfl/miami-dolphins/#navlink=subnav">Miami Dolphins</a></li>
+<li><a href="/sports/nba/miami-heat/#navlink=subnav">Miami Heat</a></li>
+<li><a href="/sports/mlb/miami-marlins/#navlink=subnav">Miami Marlins</a></li>
+<li><a href="/sports/nhl/florida-panthers/#navlink=subnav">Florida Panthers</a></li>
+<li><a href="/sports/college/#navlink=subnav">College Sports</a></li>
+<li><a href="/sports/college/acc/university-of-miami/#navlink=subnav">University of Miami</a></li>
+<li><a href="/sports/college/conference-usa/florida-international-univeristy/#navlink=subnav">Florida International</a></li>
+<li><a href="/sports/college/sec/university-of-florida/#navlink=subnav">University of Florida</a></li>
+<li><a href="/sports/college/acc/florida-state-university/#navlink=subnav">Florida State University</a></li>
+<li class="dropdown-header">More Sports</li>
+<li><a href="/sports/high-school/#navlink=subnav">High School Sports</a></li>
+<li><a href="/sports/nascar-auto-racing/#navlink=subnav">Auto Racing</a></li>
+<li><a href="/sports/fighting/#navlink=subnav">Fighting</a></li>
+<li><a href="/sports/golf/#navlink=subnav">Golf</a></li>
+<li><a href="/sports/horse-racing/#navlink=subnav">Horse Racing</a></li>
+<li><a href="/sports/outdoors/#navlink=subnav">Outdoors</a></li>
+<li><a href="/sports/mls/#navlink=subnav">Soccer</a></li>
+<li><a href="/sports/tennis/#navlink=subnav">Tennis</a></li>
+<li><a href="/sports/youth-sports/#navlink=subnav">Youth Sports</a></li>
+<li><a href="/sports/other-sports/#navlink=subnav">Other Sports</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Politics <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 200px;">
+<li><a href="/news/politics-government/#navlink=subnav">Politics</a></li>
+<li><a href="/news/politics-government/election/#navlink=subnav">Elections 2016</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Business <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Sections</li>
+<li><a href="/news/business/#navlink=subnav">Business</a></li>
+<li><a href="/news/business/biz-monday/#navlink=subnav">Business Monday</a></li>
+<li><a href="/news/business/banking/#navlink=subnav">Banking</a></li>
+<li><a href="/news/business/international-business/#navlink=subnav">International Business</a></li>
+<li><a href="/news/business/national-business/#navlink=subnav">National Business</a></li>
+<li><a href="/news/business/personal-finance/#navlink=subnav">Personal Finance</a></li>
+<li><a href="/news/business/real-estate/#navlink=subnav">Real Estate News</a></li>
+<li><a href="/news/business/small-business/#navlink=subnav">Small Business</a></li>
+<li><a href="/news/business/technology/#navlink=subnav">Technology</a></li>
+<li><a href="/news/business/tourism-cruises/#navlink=subnav">Tourism &amp; Cruises</a></li>
+<li><a href="/news/business/workplace/#navlink=subnav">Workplace</a></li>
+<li><a href="http://www.miamiherald.com/news/business/business-plan-challenge/#navlink=subnav">Business Plan Challenge</a></li>
+<li class="dropdown-header">Blogs & Columnists</li>
+<li><a href="/news/business/biz-columns-blogs/cindy-krischer-goodman/#navlink=subnav">Cindy Krischer Goodman</a></li>
+<li><a href="http://miamiherald.typepad.com/the-starting-gate/#navlink=subnav">The Starting Gate</a></li>
+<li><a href="http://miamiherald.typepad.com/worklifebalancingact/#navlink=subnav">Work/Life Balancing Act</a></li>
+<li><a href="/news/business/biz-columns-blogs/movers/#navlink=subnav">Movers</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Living <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Sections</li>
+<li><a href="/living/#navlink=subnav">Living</a></li>
+<li><a href="/living/advice/#navlink=subnav">Advice</a></li>
+<li><a href="/living/fashion/#navlink=subnav">Fashion</a></li>
+<li><a href="/living/food-drink/#navlink=subnav">Food &amp; Drink</a></li>
+<li><a href="/living/health-fitness/#navlink=subnav">Health &amp; Fitness</a></li>
+<li><a href="/living/home-garden/#navlink=subnav">Home &amp; Garden</a></li>
+<li><a href="/living/pets/#navlink=subnav">Pets</a></li>
+<li><a href="/living/food-drink/recipes/#navlink=subnav">Recipes</a></li>
+<li><a href="/living/travel/#navlink=subnav">Travel</a></li>
+<li><a href="/living/food-drink/wine/#navlink=subnav">Wine</a></li>
+<li class="dropdown-header">Blogs & Columnists</li>
+<li><a href="/living/liv-columns-blogs/dave-barry/#navlink=subnav">Dave Barry</a></li>
+<li><a href="/living/liv-columns-blogs/ana-veciana-suarez/#navlink=subnav">Ana Veciana-Suarez</a></li>
+<li><a href="http://www.flashbackmiami.com/#navlink=subnav">Flashback Miami</a></li>
+<li class="dropdown-header">More Living</li>
+<li><a href="/news/local/community/gay-south-florida/#navlink=subnav">LGBTQ South Florida</a></li>
+<li><a href="/news/local/community/gay-south-florida/palette-magazine/#navlink=subnav">Palette Magazine</a></li>
+<li><a href="http://www.miamiindulge.com/#navlink=subnav">Indulge Magazine</a></li>
+<li><a href="http://newspaperads.miami.com/SS/Tiles.aspx?ptype=SS_TILE&type=south#navlink=subnav">South Florida Album</a></li>
+<li><a href="http://newspaperads.miami.com/SS/Tiles.aspx?ptype=SS_TILE&type=broward#navlink=subnav">Broward Album</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Entertainment <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Sections</li>
+<li><a href="/entertainment/#navlink=subnav">Entertainment</a></li>
+<li><a href="/entertainment/books/#navlink=subnav">Books</a></li>
+<li><a href="/entertainment/comics/#navlink=subnav">Comics</a></li>
+<li><a href="http://games.miamiherald.com/#navlink=subnav">Games &amp; Puzzles</a></li>
+<li><a href="/entertainment/horoscopes/#navlink=subnav">Horoscopes</a></li>
+<li><a href="/entertainment/movies-news-reviews/#navlink=subnav">Movies</a></li>
+<li><a href="/entertainment/music-news-reviews/#navlink=subnav">Music &amp; Nightlife</a></li>
+<li><a href="/entertainment/celebrities/#navlink=subnav">People</a></li>
+<li><a href="/entertainment/performing-arts/#navlink=subnav">Performing Arts</a></li>
+<li><a href="/entertainment/restaurants/#navlink=subnav">Restaurants</a></li>
+<li><a href="/entertainment/tv/#navlink=subnav">TV</a></li>
+<li><a href="/entertainment/visual-arts/#navlink=subnav">Visual Arts</a></li>
+<li class="dropdown-header">Blogs & Columnists</li>
+<li><a href="/entertainment/ent-columns-blogs/christine-dolen/#navlink=subnav">Christine Dolen</a></li>
+<li><a href="/entertainment/ent-columns-blogs/jordan-levin/#navlink=subnav">Jordan Levin</a></li>
+<li><a href="/entertainment/ent-columns-blogs/jose-lambiet/#navlink=subnav">Jose Lambiet</a></li>
+<li><a href="/entertainment/ent-columns-blogs/scene-in-the-tropics/#navlink=subnav">Lesley Abravanel</a></li>
+<li><a href="/entertainment/movies-news-reviews/reeling-with-rene-rodriguez/#navlink=subnav">Rene Rodriguez</a></li>
+<li class="dropdown-header">More Entertainment</li>
+<li><a href="http://events.miamiherald.com/#navlink=subnav">Events Calendar</a></li>
+<li><a href="http://www.miami.com/#navlink=subnav">Miami.com</a></li>
+<li><a href="/contests/#navlink=subnav">Contests &amp; Promotions</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Opinion <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li class="dropdown-header">Sections</li>
+<li><a href="/opinion/#navlink=subnav">All Opinion</a></li>
+<li><a href="/opinion/editorials/#navlink=subnav">Editorials</a></li>
+<li><a href="/opinion/op-ed/#navlink=subnav">Op-Ed</a></li>
+<li><a href="/opinion/editorial-cartoons/#navlink=subnav">Editorial Cartoons</a></li>
+<li><a href="/opinion/editorial-cartoons/jim-morin/#navlink=subnav">Jim Morin</a></li>
+<li><a href="/opinion/letters-to-the-editor/#navlink=subnav">Letters to the Editor</a></li>
+<li><a href="/opinion/op-ed/from-our-inbox/#navlink=subnav">From Our Inbox</a></li>
+<li><a href="/opinion/op-ed/speak-up/#navlink=subnav">Speak Up</a></li>
+<li><a href="/opinion/letters-to-the-editor/submit-letter/#navlink=subnav">Submit a Letter</a></li>
+<li><a href="/opinion/editorial-board/#navlink=subnav">Meet the Editorial Board</a></li>
+<li class="dropdown-header">Blogs & Columnists</li>
+<li><a href="/site-services/blog-directory/#navlink=subnav">Blog Directory</a></li>
+<li><a href="/site-services/columnist-directory/#navlink=subnav">Columnist Directory</a></li>
+<li><a href="/news/local/news-columns-blogs/andres-oppenheimer/#navlink=subnav">Andres Oppenheimer</a></li>
+<li><a href="/opinion/opn-columns-blogs/carl-hiaasen/#navlink=subnav">Carl Hiaasen</a></li>
+<li><a href="/opinion/opn-columns-blogs/glenn-garvin/#navlink=subnav">Glenn Garvin</a></li>
+<li><a href="/opinion/opn-columns-blogs/leonard-pitts-jr/#navlink=subnav">Leonard Pitts Jr.</a></li>
+<li><a href="/news/local/news-columns-blogs/fred-grimm/#navlink=subnav">Fred Grimm</a></li>
+<li><a href="/news/local/news-columns-blogs/fabiola-santiago/#navlink=subnav">Fabiola Santiago</a></li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Obituaries <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 400px;">
+<li><a href="http://www.legacy.com/obituaries/herald/#navlink=subnav">Obituaries</a></li>
+<li><a href="http://www.miamiherald.com/news/local/obituaries/#navlink=subnav">Obituaries in the News</a></li>
+<li><a href="http://miamiherald.adperfect.com/default.html?pubid=C0A801CE0802819AAFprs2AF9E03&catid=471">Place an Obituary</a></li>
+</ul>
+</li>
+<li class="nav-divider"> </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" target=""><span class="glyphicon glyphicon-chevron-left"></span>Classifieds <span class="glyphicon glyphicon-chevron-right"></span><b class="caret"></b></a>
+<ul class="dropdown-menu" style="padding-top: 0px;">
+<li><a href="http://miamiherald.adperfect.com/#navlink=subnav">Place an ad</a></li>
+<li><a href="/classified-ads/#navlink=subnav">All Classifieds</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/announcements/search">Announcements</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/rentals/search">Apartments</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/auctions-sales/search#navlink=subnav">Auctions/Sales</a></li>
+<li><a href="/cars/#navlink=subnav">Automotive</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/commercial-real-estate-for-sale/search">Commercial Real Estate</a></li>
+<li><a href="http://www.careerbuilder.com/intl/partnerlandingpage.aspx?lr=CBCB_MH&siteID=CBCB_MH//#navlink=subnav">Employment</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/garage-sales/search">Garage Sales</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/legals/search">Legals</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/merchandise/search">Merchandise</a></li>
+<li><a href="http://www.legacy.com/obituaries/herald/#navlink=subnav">Obituaries</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/pets-animals/search">Pets</a></li>
+<li><a href="http://floridapublicnotices.com/#navlink=subnav">Public Notices</a></li>
+<li><a href="/real-estate/#navlink=subnav">Real Estate</a></li>
+<li><a href="http://classifieds.miamiherald.com/fl/business-services/search">Services</a></li>
+</ul>
+</li>
+<li>
+<a href="http://floridapublicnotices.com/#navlink=subnav">
+Public Notices
+</a>
+</li>
+<li>
+<a href="/cars/#navlink=subnav">
+Cars
+</a>
+</li>
+<li>
+<a href="http://www.careerbuilder.com/intl/partnerlandingpage.aspx?lr=CBCB_MH&siteID=CBCB_MH/#navlink=subnav">
+Jobs
+</a>
+</li>
+<li>
+<a href="http://www.startmoonlighting.com/mni/Miami-Herald/?utm_source=Miami-Herald&utm_medium=navweblink&utm_campaign=MNI#navlink=subnav">
+Moonlighting
+</a>
+</li>
+<li>
+<a href="/real-estate/#navlink=subnav">
+Real Estate
+</a>
+</li>
+<li>
+<a href="http://findnsave.miamiherald.com/#navlink=subnav">
+Shopping
+</a>
+</li>
+<li class="nav-divider"> </li>
+<li>
+<a href="http://www.elnuevoherald.com/#navlink=subnav">
+el Nuevo Herald
+</a>
+</li>
+<li>
+<a href="http://www.miami.com/#navlink=subnav">
+Miami.com
+</a>
+</li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var language = "en-us";
+var mast_options = {
+language: language,
+locationKey: mi.pageInfo.getConf('accuweather.locationKey'),
+locationString: mi.pageInfo.getConf('accuweather.locationString'),
+isDevEnv: mi.pageInfo.getConf('accuweather.dev'),
+publicationUrl: 'http://www.miamiherald.com/',
+iconPath: 'static/images/widgets/weather/2020/',
+detail: 'false'
+};
+var windowSize = jQuery(window).width();
+if (windowSize > 767) {
+jQuery(".mi-weather-alert").populateWeatherAlert("description", mast_options);
+}
+jQuery(".miWeatherCurrent").populateCurrentWeather(mast_options);
+</script>
+<style type="text/css">
+/* Navigation Menu-specific styles */
+/* @media screen and (min-width: 1200px) {
+#masthead-container .dropdown:hover .dropdown-menu {
+display: block; } }
+*/
+</style>
+<script type="text/javascript">
+/*
+var $window = $window || $(window);
+var $nav = $(document.getElementById("main-nav-container"));
+var $toggle = $nav.find(".navbar-header").find(".navbar-toggle");
+var $dropdown = $(".dropdown");
+var $navbarNav = $nav.find(".navbar-nav");
+var $navbarDropdown = $navbarNav.find(".dropdown-menu");
+if ( location.hostname.split('.')[ 1 ] === "elnuevoherald" || language === "es" ) {
+$toggle.prepend('<span class="nav-label hidden-xs">Secciones</span>');
+$dropdown.find(".form-control").attr('placeholder', 'Búsqueda');
+}
+else {
+// add Menu label to nav toggle for small and up
+$toggle.prepend('<span class="nav-label hidden-xs">Full Menu</span>');
+}
+$dropdown.children('a').attr('data-target', '#');
+// Make subnav same height as main nav
+$(document.getElementById('navbar-collapse-1')).on('shown.bs.collapse', function () {
+var navHeight = $navbarNav.height();
+$navbarDropdown.css("min-height", navHeight + "px");
+});
+*/
+if (location.hostname.split('.')[1] == 'elnuevoherald') {
+jQuery('#main-nav-container .navbar-header .navbar-toggle').prepend('<span class="nav-label hidden-xs">Secciones</span>');
+jQuery('.dropdown .form-control').attr('placeholder','Búsqueda');
+} else {
+// add Menu label to nav toggle for small and up
+jQuery('#main-nav-container .navbar-header .navbar-toggle').prepend('<span class="nav-label hidden-xs">Full Menu</span>');
+}
+jQuery('.dropdown > a').attr('data-target','#');
+// Make dropdowns work on hover at large breakpoint
+jQuery(function() {
+jQuery("#masthead-container .dropdown").hover(
+function(){ if ($(window).width() > 1200) { $(this).addClass('open') } },
+function(){ if ($(window).width() > 1200) { $(this).removeClass('open') } }
+);
+});
+// Make subnav same height as main nav
+$('#navbar-collapse-1').on('shown.bs.collapse', function () {
+var nav_height = jQuery("#main-nav .navbar-nav").height();
+jQuery("#main-nav .navbar-nav .dropdown-menu").css( "min-height", nav_height + "px" );
+}); </script>
+</header>
+<div class="container " >
+<div id="leaderboard-ad"
+class="ad border-bottom">
+<div class="visible-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-3" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="b"
+defaultsize="Large"
+Small = "None"
+Medium = "None"
+Extra-Small = "320x50"
+Large = "None"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-4" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="d"
+defaultsize="Large"
+Small = "728x90"
+Medium = "728x90"
+Extra-Small = "None"
+Large = "728x90"
+articleId="129457819"
+></div>
+</div>
+</div>
+</div>
+</div>
+<section class="container story " role="main">
+<div id="story-header"
+>
+<h1 class="heading section-main-heading link">
+<a href="http://www.miamiherald.com/news/nation-world/national/">
+National
+</a>
+</h1>
+<p
+class="published-date">
+January 29, 2017 11:26 AM
+</p>
+<h1
+class="title">
+Angry congressional lawmakers erupt, seek ways to curb Trump immigration order
+</h1>
+</div>
+<div class="row
+story-rail-wrapper">
+<div class="wide-rail">
+<div class="story-gallery ">
+<div id="slick-gallery-container-29504737"
+class="mi-slick-gallery-container clearfix" style="visibility: hidden;">
+<div class="preroll-container" data-uniqueID="29504737">
+<!--"Gallery pre-roll turned off as page level is: story . Must be: gallery" -->
+<script type="text/javascript">
+$(function () {
+$(document).trigger("slickgallery.init", [
+29504737,
+2,
+{
+}
+]);
+});
+</script>
+<div class="slick-gallery">
+<div class="gallery-item video">
+<div class="container-129477944" id="container-129477944"> <script type="text/javascript">
+if ( typeof wpsCSS === 'undefined' ) {
+var wpsCSS = document.createElement('link');
+wpsCSS.href = '/wps/build/wps-css/theme-8018419e99.miamiherald.css';
+wpsCSS.rel = 'stylesheet';
+wpsCSS.type = 'text/css';
+document.getElementsByTagName('head')[ 0 ].appendChild(wpsCSS);
+}
+</script> <div id="video-detail-129477944-1487309401418" class="media-wrap"> <div class="video-media" data-id="129477944" data-index> <div id="player-129477944-1487309401418" class="player" data-id="129477944"> <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: url('http://www.mcclatchydc.com/news/ee6cou-Screen-Shot-2017-01-29-at-3.38.09-PM.png/alternates/LANDSCAPE_560/Screen%20Shot%202017-01-29%20at%203.38.09%20PM.png') no-repeat center center; background-size: cover;"> </div> </div> <div class="mi-video-utilty-bar share-icons "> <a class="facebook-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> <span class="utility-text">facebook</span> </a> <a class="twitter-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> <span class="utility-text">twitter</span> </a> <a class="email-share mi-video-utility-item" href="" title="Share by Email"> <span class="jw-icon jw-icon-email"></span> <span class="utility-text">email</span> </a> <a class="mi-video-share-btn mi-video-utility-item" title="Share"> <span class="jw-icon jw-icon-share"></span> <span class="utility-text">Share</span> </a> </div> <div class="clearfix"></div> <div id="mi-video-overlay-129477944-1487309401418" class="mi-video-custom-overlay-wrap" style="display:none;"> <div class="mi-video-eos-wrap"> <h3 class="mi-video-overlay-title">More Videos</h3> <div class="mi-video-eos"> <div class="mi-overlay-item" data-index="0"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/news/local/community/miami-dade/qoyeq9-A-father-still-grieves-one-year-after-losing-his-son-to-gun-violence/alternates/LANDSCAPE_200/A%20father%20still%20grieves%2C%20one%20year%20after%20losing%20his%20son%20to%20gun%20violence" alt="A father still grieves, one year after losing his son to gun violence"> <span class="duration">2:28</span> </div> <div class="media-desc"> <h4 class="video-title">A father still grieves, one year after losing his son to gun violence</h4> </div> <div class="svg-timer-wrap"> <svg class="svg-timer" viewbox="0 0 34 34"> <g> <circle class="svg-timer-circle" cx="15" cy="17" r="15.9" transform="rotate(-90 16 16)"></circle> <text class="svg-timer-text" x="17" y="24"></text> </g> </svg> <a class="svg-timer-pause" href="javascript:void(0)"> <span class="glyphicon glyphicon-pause"></span> Pause </a> </div> </div> <div class="mi-overlay-item" data-index="1"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.elnuevoherald.com/noticias/sur-de-la-florida/9psuwf-Sequence-04.00_01_50_20.Still001.jpg/alternates/LANDSCAPE_200/Sequence%2004.00_01_50_20.Still001.jpg" alt="Violent North Miami armed robbery caught on video"> <span class="duration">5:18</span> </div> <div class="media-desc"> <h4 class="video-title">Violent North Miami armed robbery caught on video</h4> </div> </div> <div class="mi-overlay-item" data-index="2"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.elnuevoherald.com/noticias/sur-de-la-florida/2luv9r-Sequence-03.00_00_30_29.Still001.jpg/alternates/LANDSCAPE_200/Sequence%2003.00_00_30_29.Still001.jpg" alt="Massive python caught by Davie police "> <span class="duration">0:34</span> </div> <div class="media-desc"> <h4 class="video-title">Massive python caught by Davie police </h4> </div> </div> <div class="mi-overlay-item" data-index="3"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/news/nm5adx-Drunk/alternates/LANDSCAPE_200/Drunk" alt="Miami doctor 'removed from all clinical duties' following attack on Uber driver"> <span class="duration">5:03</span> </div> <div class="media-desc"> <h4 class="video-title">Miami doctor 'removed from all clinical duties' following attack on Uber driver</h4> </div> </div> <div class="mi-overlay-item" data-index="4"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/news/politics-government/rjahyk-clash.jpg/alternates/LANDSCAPE_200/clash.jpg" alt="Protesters, supporters clash at President Donald Trump protest in Tampa"> <span class="duration">2:04</span> </div> <div class="media-desc"> <h4 class="video-title">Protesters, supporters clash at President Donald Trump protest in Tampa</h4> </div> </div> <div class="mi-overlay-item" data-index="5"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/sports/mlb/miami-marlins/lw25yq-MARLINS0216UNDERCTJ.JPG/alternates/LANDSCAPE_200/MARLINS0216%2BUNDER%2BCTJ.JPG" alt="Marlins' submariner Ziegler on his pitching style"> <span class="duration">1:19</span> </div> <div class="media-desc"> <h4 class="video-title">Marlins' submariner Ziegler on his pitching style</h4> </div> </div> <div class="mi-overlay-item" data-index="6"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/news/politics-government/c0cdsy-trump_japan_pm_key.jpg/alternates/LANDSCAPE_200/trump_japan_pm_key.jpg" alt="Trump says he gets along well with Japanese prime minister"> <span class="duration">1:19</span> </div> <div class="media-desc"> <h4 class="video-title">Trump says he gets along well with Japanese prime minister</h4> </div> </div> <div class="mi-overlay-item" data-index="7"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/entertainment/celebrities/9spsmu-geenadavis.jpg/alternates/LANDSCAPE_200/geenadavis.jpg" alt="Geena Davis encourages others to push for gender equality in Hollywood"> <span class="duration">1:37</span> </div> <div class="media-desc"> <h4 class="video-title">Geena Davis encourages others to push for gender equality in Hollywood</h4> </div> </div> <div class="mi-overlay-item" data-index="8"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/news/politics-government/igrumh-acosta-new-key.jpg/alternates/LANDSCAPE_200/acosta%20new%20key.jpg" alt="Trump names Alexander Acosta as pick for Labor Secretary"> <span class="duration">0:49</span> </div> <div class="media-desc"> <h4 class="video-title">Trump names Alexander Acosta as pick for Labor Secretary</h4> </div> </div> <div class="mi-overlay-item" data-index="9"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/news/business/tourism-cruises/je41v7-Annual-Miami-boat-show-kicks-off-on-Virginia-Key/alternates/LANDSCAPE_200/Annual%20Miami%20boat%20show%20kicks%20off%20on%20Virginia%20Key" alt="Annual Miami boat show kicks off on Virginia Key"> <span class="duration">0:59</span> </div> <div class="media-desc"> <h4 class="video-title">Annual Miami boat show kicks off on Virginia Key</h4> </div> </div> </div> </div> <div class="mi-video-share-wrap"> <span class="mi-video-close-share jw-icon jw-icon-close"></span> <h3 class="mi-video-overlay-title">Share Video</h3> <ul class="share-icons video"> <li class="embed"> <div class="form-group"> <label>Video link:</label> <input class="mi-share-link" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> <div class="form-group"> <label>Embed code:</label> <input class="overlay-embed-share" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> </li> <li class="facebook"> <a class="facebook-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> facebook </a> </li> <li class="twitter"> <a class="twitter-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> twitter </a> </li> <li class="email"> <a class="email-share" href=""> <span class="jw-icon jw-icon-email"></span> email </a> </li> </ul> </div> </div> </div> </div> <script type="text/javascript">
+if ( typeof allowAds === 'undefined' ) {
+var allowAds = true;
+}
+if ( typeof wpsConfig === 'undefined' ) {
+var wpsConfig = {
+baseUrl: '/wps/source/scripts/src',
+urlArgs: 'misv=2115a9c',
+paths: {
+'fastdom': '../libs/fastdom.min',
+'moment': '../libs/moment.min',
+'jwplayer': ['https://d12j9jiosu7f.cloudfront.net/jwplayer-7.8.7/jwplayer',
+'../libs/jwplayer'],
+'flickity': '../libs/flickity.pkgd.min'
+},
+waitSeconds: 0
+};
+var wpsRequire = requirejs.config(wpsConfig);
+}
+wpsRequire([ 'video' ], function ( video ) {
+return video({"id":"129477944","url":"http://www.mcclatchydc.com/news/article129477944.html","asset_type":"videoIngest","title":"The world reacts to Trump's refugee ban","publication":"mcclatchydc","home":"/web/v1/sections/23109","modified_date":1487031704,"published_date":1485722835,"credit":"The New York Times","dateline":"","thumbnail":"http://www.mcclatchydc.com/news/ee6cou-Screen-Shot-2017-01-29-at-3.38.09-PM.png/alternates/LANDSCAPE_768/Screen%20Shot%202017-01-29%20at%203.38.09%20PM.png","duration":195,"media_id":"2UsTuGVF","href":"/web/v1/content/129477944","byline":"","template_type":"","leadtext":[{"text":"Foreign leaders, aid groups, refugees and their families' response to President Trump's hard line on immigration and his order closing the nation’s borders to seven, majority-Muslim countries. "}],"sources":[{"height":360,"mime_type":"video/mp4","mrid":"binary/2017/1/29/20/1437582013143-p5k4ma/Condemning_Trump_s_R_enUS_h264_18df.-1485722830539.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/29/20/1437582013143-p5k4ma/Condemning_Trump_s_R_enUS_h264_18df.-1485722830539.mp4","width":640},{"height":720,"mime_type":"video/mp4","mrid":"binary/2017/1/29/20/1437580321678-6bjrso/Condemning_Trump_s_R_enUS_h264_18df.-1485722832792.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/29/20/1437580321678-6bjrso/Condemning_Trump_s_R_enUS_h264_18df.-1485722832792.mp4","width":1280},{"height":0,"mime_type":"application/x-mpegURL","mrid":"binary/2017/1/29/20/art_129477944/Condemning_Trump_s_R_enUS_h264_18df..m3u8","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/29/20/art_129477944/Condemning_Trump_s_R_enUS_h264_18df..m3u8","width":0}],"videos":[{"id":"129477944","url":"http://www.mcclatchydc.com/news/article129477944.html","duration":"3:15","image":"http://www.mcclatchydc.com/news/ee6cou-Screen-Shot-2017-01-29-at-3.38.09-PM.png/alternates/LANDSCAPE_768/Screen%20Shot%202017-01-29%20at%203.38.09%20PM.png","title":"The world reacts to Trump's refugee ban","description":"The world reacts to Trump's refugee ban <span class=\"title-duration\">3:15</span>","displayDescription":"Foreign leaders, aid groups, refugees and their families' response to President Trump's hard line on immigration and his order closing the nation’s borders to seven, majority-Muslim countries. ","videographer":"","credit":"The New York Times","published":1485722835,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/29/20/1437582013143-p5k4ma/Condemning_Trump_s_R_enUS_h264_18df.-1485722830539.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/29/20/1437580321678-6bjrso/Condemning_Trump_s_R_enUS_h264_18df.-1485722832792.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/1/29/20/art_129477944/Condemning_Trump_s_R_enUS_h264_18df..m3u8"}],"mediaid":"2UsTuGVF","ads":[]}],"endscreen":[{"id":"133263474","url":"http://www.miamiherald.com/news/local/community/miami-dade/article133263474.html","duration":"2:28","image":"http://www.miamiherald.com/news/local/community/miami-dade/qoyeq9-A-father-still-grieves-one-year-after-losing-his-son-to-gun-violence/alternates/LANDSCAPE_768/A%20father%20still%20grieves%2C%20one%20year%20after%20losing%20his%20son%20to%20gun%20violence","title":"A father still grieves, one year after losing his son to gun violence","description":"A father still grieves, one year after losing his son to gun violence <span class=\"title-duration\">2:28</span>","displayDescription":"Santonio Carter describes the difficulties of moving on one year after his son, 6-year-old King Carter, was killed by a stray bullet while playing outside his Northwest Miami-Dade apartment.","videographer":"Jose A. Iglesias","credit":"jiglesias@miamiherald.com","published":1487297142,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/17/1/1437582013143-p5k4ma/UPDATED_Santonio%20CARTER-1487297137527.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/17/1/1437580321678-6bjrso/UPDATED_Santonio%20CARTER-1487297138204.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/17/1/art_133263474/UPDATED_Santonio_CARTER.m3u8"}],"mediaid":"ZOKi3Pqj","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dmiami_dade%26id%3D133263474%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=miami_dade&id=133263474&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dmiami_dade%26id%3D133263474%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133245654","url":"http://www.miamiherald.com/news/local/crime/article133245654.html","duration":"5:18","image":"http://www.elnuevoherald.com/noticias/sur-de-la-florida/9psuwf-Sequence-04.00_01_50_20.Still001.jpg/alternates/LANDSCAPE_768/Sequence%2004.00_01_50_20.Still001.jpg","title":"Violent North Miami armed robbery caught on video","description":"Violent North Miami armed robbery caught on video <span class=\"title-duration\">5:18</span>","displayDescription":"Police are asking the publics' help in identifying a group of crooks who stormed a North Miami urgent care armed with pistols on Feb. 10, 2017. The three suspects beat and shot at employees in the clinic. One of the suspects Zion K. Smith has been arrested by police. Two others are still at large. ","videographer":"","credit":"North Miami Police Department","published":1487292379,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/17/0/1437582013143-p5k4ma/urgent%20care%20robbery_1-1487292372656.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/17/0/1437580321678-6bjrso/urgent%20care%20robbery_1-1487292373665.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/17/0/art_133245654/urgent_care_robbery_1.m3u8"}],"mediaid":"YWUzdT5P","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dcrime%26id%3D133245654%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=crime&id=133245654&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dcrime%26id%3D133245654%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133234629","url":"http://www.miamiherald.com/news/local/environment/article133234629.html","duration":"0:34","image":"http://www.elnuevoherald.com/noticias/sur-de-la-florida/2luv9r-Sequence-03.00_00_30_29.Still001.jpg/alternates/LANDSCAPE_768/Sequence%2003.00_00_30_29.Still001.jpg","title":"Massive python caught by Davie police ","description":"Massive python caught by Davie police <span class=\"title-duration\">0:34</span>","displayDescription":"Davie Police officers were dispatched to a residence off of Nova Dr and University Dr. A resident spotted this large snake under his vehicle that moved into the engine compartment just prior to officers arriving. It took three officers to remove the 11 foot Reticulated Python. ","videographer":"","credit":"Davie Police Department","published":1487290111,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/23/1437582013143-p5k4ma/Davie%20python-1487290109737.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/23/1437580321678-6bjrso/Davie%20python-1487290110103.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/23/art_133234629/Davie_python.m3u8"}],"mediaid":"oLBrmzTx","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Denvironment%26id%3D133234629%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FScience%2FEnvironment&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=environment&id=133234629&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Denvironment%26id%3D133234629%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FScience%2FEnvironment&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"56095365","url":"http://www.miamiherald.com/news/article56095365.html","duration":"5:03","image":"http://www.miamiherald.com/news/nm5adx-Drunk/alternates/LANDSCAPE_768/Drunk","title":"Miami doctor 'removed from all clinical duties' following attack on Uber driver","description":"Miami doctor 'removed from all clinical duties' following attack on Uber driver <span class=\"title-duration\">5:03</span>","displayDescription":"Fourth-year neurology resident, Anjali Ramkissoon, is on administrative leave after hitting and screaming profanities at an Uber driver in the Brickell area. ","videographer":"","credit":"Courtesy of break.com ","published":1453493773,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/1/22/19/1437582013143-p5k4ma/DrunkGirlDone-1453493765181.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/1/22/19/1437580321678-6bjrso/DrunkGirlDone-1453493766867.mp4"}],"mediaid":"EAo8epfv","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnews%26id%3D56095365%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=news&id=56095365&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnews%26id%3D56095365%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"131035624","url":"http://www.miamiherald.com/news/politics-government/article131035624.html","duration":"2:04","image":"http://www.miamiherald.com/news/politics-government/rjahyk-clash.jpg/alternates/LANDSCAPE_768/clash.jpg","title":"Protesters, supporters clash at President Donald Trump protest in Tampa","description":"Protesters, supporters clash at President Donald Trump protest in Tampa <span class=\"title-duration\">2:04</span>","displayDescription":"As President Donald Trump arrived at MacDill AFB in Tampa, Trump protesters and supporters clashed on Dale Mabry Highway outside the base.","videographer":"","credit":"Claire Aronson/Bradenton Herald","published":1486409817,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/6/19/1437582013143-p5k4ma/protesterssupportersclash-1486409814484.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/6/19/1437580321678-6bjrso/protesterssupportersclash-1486409815008.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/6/19/art_131035624/protesterssupportersclash.m3u8"}],"mediaid":"WLKn3Udp","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D131035624%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=politics_government&id=131035624&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D131035624%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"132877474","url":"http://www.miamiherald.com/sports/mlb/miami-marlins/article132877474.html","duration":"1:19","image":"http://www.miamiherald.com/sports/mlb/miami-marlins/lw25yq-MARLINS0216UNDERCTJ.JPG/alternates/LANDSCAPE_768/MARLINS0216%2BUNDER%2BCTJ.JPG","title":"Marlins' submariner Ziegler on his pitching style","description":"Marlins' submariner Ziegler on his pitching style <span class=\"title-duration\">1:19</span>","displayDescription":"Brad Ziegler, Miami Marlins' pitcher, talks about his underhand pitching style on the second day of spring training.","videographer":"Charlie Trainor Jr.","credit":"The Miami Herald","published":1487181522,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/17/1437582013143-p5k4ma/MARLINS%20ZIEGLER%20CTJ%202.15-1487181520182.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/17/1437580321678-6bjrso/MARLINS%20ZIEGLER%20CTJ%202.15-1487181520652.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/17/art_132877474/MARLINS_ZIEGLER_CTJ_2.15.m3u8"}],"mediaid":"fH2xVBbl","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dmiami_marlins%26id%3D132877474%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=miami_marlins&id=132877474&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dmiami_marlins%26id%3D132877474%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"132387754","url":"http://www.miamiherald.com/news/politics-government/article132387754.html","duration":"1:19","image":"http://www.miamiherald.com/news/politics-government/c0cdsy-trump_japan_pm_key.jpg/alternates/LANDSCAPE_768/trump_japan_pm_key.jpg","title":"Trump says he gets along well with Japanese prime minister","description":"Trump says he gets along well with Japanese prime minister <span class=\"title-duration\">1:19</span>","displayDescription":"Japan's prime minister described the U.S. as the \"champion of democracy,\" and President Donald Trump spoke highly of the \"great friendship\" that has formed between the two of them at a White House news conference Friday.","videographer":"","credit":"Alexa Ard / McClatchy","published":1486998683,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/13/14/1437582013143-p5k4ma/Japan%20pm%20trump%20feb%2010_2017-1486998680691.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/13/14/1437580321678-6bjrso/Japan%20pm%20trump%20feb%2010_2017-1486998681559.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/13/14/art_132387754/Japan_pm_trump_feb_10_2017.m3u8"}],"mediaid":"3mY7l1J0","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D132387754%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=politics_government&id=132387754&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D132387754%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"132583334","url":"http://www.miamiherald.com/entertainment/celebrities/article132583334.html","duration":"1:37","image":"http://www.miamiherald.com/entertainment/celebrities/9spsmu-geenadavis.jpg/alternates/LANDSCAPE_768/geenadavis.jpg","title":"Geena Davis encourages others to push for gender equality in Hollywood","description":"Geena Davis encourages others to push for gender equality in Hollywood <span class=\"title-duration\">1:37</span>","displayDescription":"Academy Award-winning actor talked about gender in movies and TV backstage before a Monday lecture at Van Wezel Performing Arts Hall in Sarasota, Florida.","videographer":"","credit":"Marty Clear/Bradenton Herald","published":1487081923,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/14/14/1437582013143-p5k4ma/geenadavis-1487081919965.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/14/14/1437580321678-6bjrso/geenadavis-1487081921131.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/14/14/art_132583334/geenadavis.m3u8"}],"mediaid":"vCpTHWme","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dcelebrities%26id%3D132583334%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FEntertainment%2FPeople%2FCelebrityNews&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=celebrities&id=132583334&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dcelebrities%26id%3D132583334%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FEntertainment%2FPeople%2FCelebrityNews&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133144619","url":"http://www.miamiherald.com/news/politics-government/article133144619.html","duration":"0:49","image":"http://www.miamiherald.com/news/politics-government/igrumh-acosta-new-key.jpg/alternates/LANDSCAPE_768/acosta%20new%20key.jpg","title":"Trump names Alexander Acosta as pick for Labor Secretary","description":"Trump names Alexander Acosta as pick for Labor Secretary <span class=\"title-duration\">0:49</span>","displayDescription":"President Donald Trump announced Alexander Acosta as his new pick for secretary of labor during a news conference on Thursday at the White House. Acosta's nomination follows Andrew Puzder’s decision to withdraw his nomination. Acosta is the dean of Florida International University's law school and is a former U.S. attorney for the southern district of Florida. He would be Trump's first and only Hispanic Cabinet member.","videographer":"","credit":"C-SPAN","published":1487274160,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/19/1437582013143-p5k4ma/AlexanderAcosta_1-1487274158935.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/19/1437580321678-6bjrso/AlexanderAcosta_1-1487274159272.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/19/art_133144619/AlexanderAcosta_1.m3u8"}],"mediaid":"oPs1uG7U","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D133144619%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=politics_government&id=133144619&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpolitics_government%26id%3D133144619%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FLocal%2FGovtPolitics&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133204659","url":"http://www.miamiherald.com/news/business/tourism-cruises/article133204659.html","duration":"0:59","image":"http://www.miamiherald.com/news/business/tourism-cruises/je41v7-Annual-Miami-boat-show-kicks-off-on-Virginia-Key/alternates/LANDSCAPE_768/Annual%20Miami%20boat%20show%20kicks%20off%20on%20Virginia%20Key","title":"Annual Miami boat show kicks off on Virginia Key","description":"Annual Miami boat show kicks off on Virginia Key <span class=\"title-duration\">0:59</span>","displayDescription":"The Miami International boat show kicked off on Virginia Key on Feb. 16, 2016. ","videographer":"Pat Farrell ","credit":"Miami Herald","published":1487284557,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437582013143-p5k4ma/BoatShow-1487284555563.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437580321678-6bjrso/BoatShow-1487284555889.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/art_133204659/BoatShow.m3u8"}],"mediaid":"DcKcx9LY","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dtourism_cruises%26id%3D133204659%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FTravel%2FLocal%2FLeisure%2FCruise&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=tourism_cruises&id=133204659&eid=129477944&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dtourism_cruises%26id%3D133204659%26eid%3D129477944%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FTravel%2FLocal%2FLeisure%2FCruise&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}}],"pageType":"detail-page"}, {"wpsInclude":true,"wpsArea":"video_inline","autoPlay":false,"pubName":"miamiherald","embed":false,"cacheBust":"2115a9c","iterator":1,"uniqueID":"129477944-1487309401418","paywallEnabled":true,"baseTemplate":"video"});
+});
+</script> </div>
+<div class="caption">
+<span class="caption-text">
+Foreign leaders, aid groups, refugees and their families&#39; response to President Trump&#39;s hard line on immigration and his order closing the nation’s borders to seven, majority-Muslim countries.
+</span>
+<span class="credits">The New York Times</span>
+</div>
+</div>
+<div class="gallery-item image">
+<span class="test-temp" data-src="http://pics.mcclatchyinteractive.com/news/nation-world/national/lc8ixm/picture129457814/ALTERNATES/FREE_320/Trump" data-width-320></span>
+<span class="test-temp" data-src="http://pics.mcclatchyinteractive.com/news/nation-world/national/lc8ixm/picture129457814/ALTERNATES/FREE_480/Trump" data-width-480></span>
+<span class="test-temp" data-src="http://pics.mcclatchyinteractive.com/news/nation-world/national/lc8ixm/picture129457814/ALTERNATES/FREE_640/Trump" data-width-640></span>
+<span class="test-temp" data-src="http://pics.mcclatchyinteractive.com/news/nation-world/national/lc8ixm/picture129457814/ALTERNATES/FREE_768/Trump" data-width-768></span>
+<span class="test-temp" data-src="http://pics.mcclatchyinteractive.com/news/nation-world/national/lc8ixm/picture129457814/ALTERNATES/FREE_960/Trump" data-width-960></span>
+<span class="test-temp" data-src="http://pics.mcclatchyinteractive.com/news/nation-world/national/lc8ixm/picture129457814/ALTERNATES/FREE_1140/Trump" data-width-1140></span>
+<img alt="President Donald Trump, left, talks with House Speaker Paul Ryan of Wis., center, and Senate Minority Leader Charles Schumer of N.Y." title="President Donald Trump, left, talks with House Speaker Paul Ryan of Wis., center, and Senate Minority Leader Charles Schumer of N.Y." />
+<div class="caption">
+<span class="caption-text">
+President Donald Trump, left, talks with House Speaker Paul Ryan of Wis., center, and Senate Minority Leader Charles Schumer of N.Y.
+</span>
+<span class="photographer">Susan Walsh</span>
+<span class="credits">AP</span>
+</div>
+</div>
+</div>
+</div>
+<div class="gallery-counter-container">
+<div class="gallery-counter">
+<span class="current-slide-number">1</span> of 2
+</div>
+</div>
+<div class="caption-toggle">i</div>
+<div class="current-caption"></div>
+</div>
+</div>
+<div id="story-body-items"
+>
+<div
+class="byline element-spacing-small">
+<p><span class="ng_byline_name">By David Lightman</span></p><p><span class="ng_byline_email"><a href="mailto:dlightman@mcclatchydc.com" title="">dlightman@mcclatchydc.com</a></span></p>
+</div>
+<div class="share-tools-wrapper">
+<!--
+Widget ID: Feature Master with title feature master share buttons:
+Referenced feature mi.masterConfig.shareButtons, which was empty. Attempting fall-back value.
+-->
+<ul class="share-icons">
+<li class="facebook">
+<a class="facebook-share" title="Share on Facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.miamiherald.com/news/politics-government/article129457819.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-facebook"></div>
+</li>
+<li class="twitter">
+<a title="Share on Twitter" href="https://twitter.com/share?text=Angry%20congressional%20lawmakers%20erupt%2c%20seek%20ways%20to%20curb%20Trump%20immigration%20order&url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-twitter"></div>
+</li>
+<li class="email">
+<a href="mailto:?subject=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order&body=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html"></a>
+<div class="glyphicon glyphicon-envelope"></div>
+</li>
+<li class="more" onClick="return true">
+<ul class="share-options">
+<li class="linked-in"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html&title=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order"><span class="glyphicon glyphicon-linkedin"></span>LinkedIn</a></li>
+<li class="google"><a title="Share on Google Plus" href="https://plus.google.com/share?url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"><span class="glyphicon glyphicon-google-plus"></span>Google+</a></li>
+<li class="pinterest"><a href="http://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html&description=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order&media=http%3a%2f%2fwww.mcclatchydc.com%2fnews%2fee6cou-Screen-Shot-2017-01-29-at-3.38.09-PM.png%2fALTERNATES%2fLANDSCAPE_1140%2fScreen%2520Shot%25202017-01-29%2520at%25203.38.09%2520PM.png"><span class="glyphicon glyphicon-pinterest-p"></span>Pinterest</a></li>
+<li class="reddit"><a href="http://www.reddit.com/submit?url=http://www.miamiherald.com/news/politics-government/article129457819.html"><span class="glyphicon glyphicon-reddit"></span>Reddit</a></li>
+<li class="print"><a href="javascript:window.print();"><span class="glyphicon glyphicon-print"></span>Print</a></li>
+<li class="reprints"><a href="http://www.mcclatchyreprints.com">Order Reprint of this Story</a></li>
+</ul>
+<div class="glyphicon glyphicon-share"></div>
+</li>
+</ul>
+</div>
+<div class="ndn_embed" id="ndn-video-player-1" data-config-distributor-id="90045" data-config-width="100%" data-config-height="9/16w"></div>
+<div class="dateline-storybody">
+<span
+class="dateline">
+WASHINGTON
+</span>
+<div id="story-target" class="clearfix">
+<div id="content-body-16194140-129457819"
+>
+<p>Members of Congress in both parties erupted with anger and concern Sunday over President Donald Trump’s order temporarily barring immigrants and others from seven Muslim countries from entering the United States.</p><p>But whether Congress will take action to overturn the order, or at least be able to get swift answers about how thoroughly the administration has considered its implications, was unclear.</p><p>The Senate is scheduled to vote Monday night on limiting debate on the nomination of ExxonMobil Chief Executive Officer <a href="http://www.cbsnews.com/news/rex-tillerson-secretary-of-state-nomination-senate-foreign-relations-committee-vote/" target="_blank" title="">Rex Tillerson </a> as secretary of state, a vote and debate that could become an instant opportunity for upset lawmakers to protest Trump’s action.</p><p>“Mr. Tillerson should tell the full Senate where he stands on these anti-immigrant, anti-refugee executive orders,” said Senate Democratic Leader Chuck Schumer, D-N.Y. “Was Mr. Tillerson consulted by the administration on these executive orders? Does he support them? Does he agree they are lawful and constitutional? Will he direct the State Department to enforce them if he is confirmed?”</p><p>Senate Majority Leader <a href="https://www.washingtonpost.com/powerpost/paul-ryan-trumps-refugee-ban-does-not-target-muslims/2017/01/28/e0cf1fe4-e56e-11e6-a547-5fb9411d332c_story.html?utm_term=.7b9d11ee3de2" target="_blank" title="">Mitch McConnell, R-Ky</a>., was circumspect about what could happen next, saying the next chapter in the executive order drama would come in the courts.</p><p>Asked if the order would have blowback in the world, McConnell told ABC’s “This Week,” “We’ll see. And it's important, however, to emphasize it's important to keep America as secure as possible and we'll see how it plays out.”</p><p>He said of the immigrant ban, “I think it's a good idea to tighten the vetting process. But I also think it's important to remember that some of our best sources in the war against radical Islamic terrorism are Muslims, both in this country and overseas.”</p><p>Republicans have 52 of the Senate’s 100 seats, and need 51 to limit debate. Republicans did not seem inclined early Sunday to stop Tillerson, but there were hints of turmoil ahead. At least four Republican senators – Ben Sasse of Nebraska, Susan Collins of Maine, Jeff Flake of Arizona and Rob Portman of Ohio – have said the order is extreme.</p><p>“It’s unacceptable when even legal permanent residents are being detained or turned away at airports and ports of entry,” Flake said <a href="https://medium.com/@JeffFlake/president-trump-and-his-administration-are-right-to-be-concerned-about-national-security-but-its-ebc9d0f71c45#.26smmg4gf" target="_blank" title="">in a Medium post</a>.</p><p>“A lot of people think that this is just a smaller version of a Muslim ban, finding seven Muslim majority countries. By the way, none of the 9/11 hijackers came from any of these seven countries,” Portman told CNN’s “State of the Union.”</p><p>“I think it was not properly vetted. So, you have an extreme vetting proposal that didn't get the vetting it should have had,” he said. “And as the result, in the implementation, we've seen some problems.” </p><p>He wants Congress to have a closer look. “We ought to be part of this. We have been working on this,” he said.</p><p>In the House, House Speaker Paul Ryan, R-Wis., who in the past was opposed to any Muslim ban, supported Trump’s action. But Rep. Mark Sanford, R-S.C., is troubled by what he is seeing. &quot;One of this country's greatest strengths has been our connection and engagement with the rest of the world,&quot; he said Sunday. </p><p>Beyond putting the United States at an economic disadvantage, he said there was a greater threat to consider in the nature of Trump's orders.</p><p>&quot;Another of our country's greatest strengths has been that we have always been seen as predictable....that we were a nation of laws and not men,&quot; Sanford said. &quot;Our founding fathers believed that man could be fickle and subject to whim and that kings and despots well illustrated this. Our system of checks and balances was designed to check this.”</p><p>McConnell was careful not to criticize the administration harshly.</p><p>“Look, the president has a lot of latitude to try to secure the country,” he said. “And I'm not going to make a blanket criticism of this effort. However, I think it's important to remember, as I said, a lot of Muslims are our best sources in the war against terror.”</p><p>But he’s been wary of any Muslim ban. </p><p>“If they're looking to tighten the vetting process, I mean who would be against that? But I am opposed to a religious tests. The courts are going to determine whether this is too broad,” he said Sunday.</p><div class="ng_endnote_contrib"><p>Matt Schofield, Lindsay Wise, Sean Cockerham, William Douglas and Curtis Tate of McClatchy’s Washington Bureau contributed</p><span class="ng-command" data-value="252"> </span></div><div class="ng_endnote_contact"><p>David Lightman: <a href="tel:202-383-6101" title="">202-383-6101</a>, <a href="https://twitter.com/lightmandavid" target="_blank" title="">@lightmandavid</a></p><span class="ng-command" data-value="252"> </span></div>
+</div>
+<script type="text/javascript" language="javascript">
+$(document).ready(function () {
+// Removing empty paragraphs first
+$("#content-body-16194140-129457819 p").filter(function () {
+var html = $.trim($(this).html());
+if (html == '' || html == '&nbsp;')
+return true;
+}).remove();
+// Taking a subset of paragraphs using offset and maximum
+var offset = 1;
+var max = -1;
+if (offset > 1) {
+$("#content-body-16194140-129457819").children().slice(0, offset - 1).remove();
+}
+if (max > -1) {
+$("#content-body-16194140-129457819").children().slice(max).remove();
+}
+// Show dateline field at the beginning of the first paragraph
+var showDateline = false;
+var datelineStr = "WASHINGTON";
+if (offset <= 1 && showDateline == true && datelineStr != "") {
+var firstChild = $("#content-body-16194140-129457819").children().get(0);
+if ("P" == firstChild.nodeName.toUpperCase()) {
+$(firstChild).prepend("<span>" + datelineStr + " - </span>");
+}
+else {
+$(firstChild).before("<span>" + datelineStr + "</span>");
+}
+}
+});
+</script>
+</div>
+</div>
+<div class="ndn_embed" id="ndn-video-player-2" data-config-distributor-id="90045" data-config-width="100%" data-config-height="9/16w"></div>
+<div id="related-gallery"
+class="reorder_story-target_2 reorder">
+</div>
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-5" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="None"
+defaultsize="Large"
+Small = "336x280"
+Medium = "336x280"
+Extra-Small = "336x280"
+Large = "336x280"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_6 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-6" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="c"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_11 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-7" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="e"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="ad visible-xs reorder_story-target_16 reorder">
+<div>
+<div class="ad-widget" id="div-gpt-ad-8" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="f"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x250"
+Large = "None"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+</div>
+<div id="story-related"
+class="story-related element-spacing-large">
+<h1 >
+Related content
+</h1>
+<div id="related-links" >
+<article class="news ">
+<div class="teaser ">
+<h4 class="title ">
+<a href="http://www.mcclatchydc.com/news/article129477944.html">
+The world reacts to Trump's refugee ban
+</a>
+</h4>
+</div>
+</article>
+</div>
+</div>
+<script type="text/javascript">
+var $storyRelated = $(document.getElementById('story-related'));
+if ($storyRelated.find('article').length === 0) {
+$storyRelated.hide();
+}
+</script>
+<div class="share-tools-wrapper visible-sm visible-xs element-spacing-medium">
+<!--
+Widget ID: Feature Master with title feature master share buttons:
+Referenced feature mi.masterConfig.shareButtons, which was empty. Attempting fall-back value.
+-->
+<ul class="share-icons">
+<li class="facebook">
+<a class="facebook-share" title="Share on Facebook" href="http://www.facebook.com/sharer/sharer.php?u=http://www.miamiherald.com/news/politics-government/article129457819.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-facebook"></div>
+</li>
+<li class="twitter">
+<a title="Share on Twitter" href="https://twitter.com/share?text=Angry%20congressional%20lawmakers%20erupt%2c%20seek%20ways%20to%20curb%20Trump%20immigration%20order&url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"></a>
+<div class="glyphicon glyphicon-twitter"></div>
+</li>
+<li class="email">
+<a href="mailto:?subject=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order&body=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html"></a>
+<div class="glyphicon glyphicon-envelope"></div>
+</li>
+<li class="more" onClick="return true">
+<ul class="share-options">
+<li class="linked-in"><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html&title=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order"><span class="glyphicon glyphicon-linkedin"></span>LinkedIn</a></li>
+<li class="google"><a title="Share on Google Plus" href="https://plus.google.com/share?url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;"><span class="glyphicon glyphicon-google-plus"></span>Google+</a></li>
+<li class="pinterest"><a href="http://www.pinterest.com/pin/create/button/?url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html&description=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order&media=http%3a%2f%2fwww.mcclatchydc.com%2fnews%2fee6cou-Screen-Shot-2017-01-29-at-3.38.09-PM.png%2fALTERNATES%2fLANDSCAPE_1140%2fScreen%2520Shot%25202017-01-29%2520at%25203.38.09%2520PM.png"><span class="glyphicon glyphicon-pinterest-p"></span>Pinterest</a></li>
+<li class="reddit"><a href="http://www.reddit.com/submit?url=http://www.miamiherald.com/news/politics-government/article129457819.html"><span class="glyphicon glyphicon-reddit"></span>Reddit</a></li>
+<li class="print"><a href="javascript:window.print();"><span class="glyphicon glyphicon-print"></span>Print</a></li>
+<li class="reprints"><a href="http://www.mcclatchyreprints.com">Order Reprint of this Story</a></li>
+</ul>
+<div class="glyphicon glyphicon-share"></div>
+</li>
+</ul>
+</div>
+<div class="more-stories-link">
+<a href="http://www.miamiherald.com/news/nation-world/national/">
+National
+</a>
+</div>
+<h2 class='heading'>Suggested for you</h2>
+<div id="exchange-embed-widget-9f141"></div>
+<script>
+$(document).ready(function(){
+var divElem ="exchange-embed-widget-9f141"; 
+var aggr = new Aggrego(document.getElementById(divElem), "9f14139814506f9cce0146c8d11588c6");
+aggr.init();
+});
+</script>
+<div id="commenting-container"
+class="commenting-container
+element-spacing-large">
+<h1 class="heading">
+Comments
+</h1>
+<!--
+Widget ID: Feature Master with title feature master comments:
+Referenced feature mi.masterConfig.comments, which was empty. Attempting fall-back value.
+-->
+<script>
+if($("meta[property='fb:app_id']").length === 1 && $("meta[name='allow-comments']").prop("content") === "true") {
+mi.commenting = new mi.Commenting();
+mi.commenting.setConf( {
+accountName: mi.pageInfo.getConf('marketInfo.domain'),
+fbapp_id: mi.pageInfo.getConf('facebook.app.id'),
+fb_comment_div: {'data-width': '100%'}
+});
+$(document).ready(function() {
+mi.commenting.display();
+});
+} else {
+$(document).ready(function() {
+var disabledText = 'Comments have been disabled for this story.';
+$("#commentingStage").prepend("<p><strong>" + disabledText + "</strong></p>");
+});
+}
+</script>
+<div id="commentingStage"
+>
+</div>
+</div>
+</div>
+<div id="nativoArticlePage"
+>
+</div>
+</div>
+<div class="narrow-rail">
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-9" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="b"
+defaultsize="Large"
+Small = "300x250"
+Medium = "Flex Ad"
+Extra-Small = "None"
+Large = "Flex Ad"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+<div id="video-widget"
+class="headline-list">
+<h1 class="heading link">
+<a href="http://www.miamiherald.com/video/">
+Videos
+</a>
+</h1>
+<section >
+<div class="teaser ">
+<div class="container-133176689" id="container-133176689"> <script type="text/javascript">
+if ( typeof wpsCSS === 'undefined' ) {
+var wpsCSS = document.createElement('link');
+wpsCSS.href = '/wps/build/wps-css/theme-8018419e99.miamiherald.css';
+wpsCSS.rel = 'stylesheet';
+wpsCSS.type = 'text/css';
+document.getElementsByTagName('head')[ 0 ].appendChild(wpsCSS);
+}
+</script> <div class="wf-wps-side-bar"> <div class="mi-video-sidebar-widget" id="video-detail-133176689-1487309401957"> <div id="video-container-133176689-1487309401957"> <div class="video-media" data-id="133176689" data-index> <div id="player-133176689-1487309401957" class="player" data-id="133176689"> <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; background: url('http://www.miamiherald.com/news/nation-world/national/h5rtcq-Snapshot_52.png/alternates/LANDSCAPE_560/Snapshot_52.png') no-repeat center center; background-size: cover;"> </div> </div> <div class="mi-video-utilty-bar share-icons "> <a class="facebook-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> <span class="utility-text">facebook</span> </a> <a class="twitter-share mi-video-utility-item" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> <span class="utility-text">twitter</span> </a> <a class="email-share mi-video-utility-item" href="" title="Share by Email"> <span class="jw-icon jw-icon-email"></span> <span class="utility-text">email</span> </a> <a class="mi-video-share-btn mi-video-utility-item" title="Share"> <span class="jw-icon jw-icon-share"></span> <span class="utility-text">Share</span> </a> </div> <div class="clearfix"></div> <div id="mi-video-overlay-133176689-1487309401957" class="mi-video-custom-overlay-wrap" style="display:none;"> <div class="mi-video-eos-wrap"> <h3 class="mi-video-overlay-title">More Videos</h3> <div class="mi-video-eos"> <div class="mi-overlay-item" data-index="0"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/sports/mlb/miami-marlins/lw25yq-MARLINS0216UNDERCTJ.JPG/alternates/LANDSCAPE_200/MARLINS0216%2BUNDER%2BCTJ.JPG" alt="Marlins' submariner Ziegler on his pitching style"> <span class="duration">1:19</span> </div> <div class="media-desc"> <h4 class="video-title">Marlins' submariner Ziegler on his pitching style</h4> </div> <div class="svg-timer-wrap"> <svg class="svg-timer" viewbox="0 0 34 34"> <g> <circle class="svg-timer-circle" cx="15" cy="17" r="15.9" transform="rotate(-90 16 16)"></circle> <text class="svg-timer-text" x="17" y="24"></text> </g> </svg> <a class="svg-timer-pause" href="javascript:void(0)"> <span class="glyphicon glyphicon-pause"></span> Pause </a> </div> </div> <div class="mi-overlay-item" data-index="1"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/latest-news/vffuwo-pumi.jpg/alternates/LANDSCAPE_200/pumi.jpg" alt="Westminster Dog Show features new breeds"> <span class="duration">1:17</span> </div> <div class="media-desc"> <h4 class="video-title">Westminster Dog Show features new breeds</h4> </div> </div> <div class="mi-overlay-item" data-index="2"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.islandpacket.com/news/politics-government/za1olz-BecomingACitizen.png/alternates/LANDSCAPE_200/BecomingACitizen.png" alt="Becoming a U.S. citizen: What you need to know"> <span class="duration">2:15</span> </div> <div class="media-desc"> <h4 class="video-title">Becoming a U.S. citizen: What you need to know</h4> </div> </div> <div class="mi-overlay-item" data-index="3"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.miamiherald.com/news/nation-world/national/lz0hiv-LimboQueen.png/alternates/LANDSCAPE_200/LimboQueen.png" alt="Watch Guinness World Record holder Shemika Charles limbo under a truck"> <span class="duration">0:38</span> </div> <div class="media-desc"> <h4 class="video-title">Watch Guinness World Record holder Shemika Charles limbo under a truck</h4> </div> </div> <div class="mi-overlay-item" data-index="4"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.mcclatchydc.com/news/nation-world/national/jrzctv-Transgender.png/alternates/LANDSCAPE_200/Transgender.png" alt="Rebirth of a Transgender Teenager"> <span class="duration">4:45</span> </div> <div class="media-desc"> <h4 class="video-title">Rebirth of a Transgender Teenager</h4> </div> </div> <div class="mi-overlay-item" data-index="5"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.islandpacket.com/news/local/community/beaufort-news/s81mns-Immigration-Rally-Enough-is-enough./alternates/LANDSCAPE_200/Immigration%20Rally%3A%20%27Enough%20is%20enough.%27" alt="Immigration Rally: 'Enough is enough.'"> <span class="duration">0:47</span> </div> <div class="media-desc"> <h4 class="video-title">Immigration Rally: 'Enough is enough.'</h4> </div> </div> <div class="mi-overlay-item" data-index="6"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.mcclatchydc.com/news/iqihdd-SeanSpicerFeb1.jpg/alternates/LANDSCAPE_200/SeanSpicerFeb1.jpg" alt="White House: Updates to immigration ban to allow permanent residents into U.S. without waiver"> <span class="duration">1:17</span> </div> <div class="media-desc"> <h4 class="video-title">White House: Updates to immigration ban to allow permanent residents into U.S. without waiver</h4> </div> </div> <div class="mi-overlay-item" data-index="7"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.islandpacket.com/news/local/m62nja-Know-your-rights-keyframe/alternates/LANDSCAPE_200/Know%20your%20rights%20keyframe" alt="Your rights when confronted by immigration enforcement officials"> <span class="duration">2:09</span> </div> <div class="media-desc"> <h4 class="video-title">Your rights when confronted by immigration enforcement officials</h4> </div> </div> <div class="mi-overlay-item" data-index="8"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.mcclatchydc.com/news/politics-government/pz4zsl-hb2-B.jpg/alternates/LANDSCAPE_200/hb2%20B.jpg" alt="HB2: A timeline for North Carolina's newest law"> <span class="duration">3:27</span> </div> <div class="media-desc"> <h4 class="video-title">HB2: A timeline for North Carolina's newest law</h4> </div> </div> <div class="mi-overlay-item" data-index="9"> <div class="media-wrap"> <img data-flickity-lazyload="http://www.islandpacket.com/news/local/qggwge-Aimee-Deverall-keyframe/alternates/LANDSCAPE_200/Aimee%20Deverall%20keyframe" alt="Attorney on possible illegal immigration enforcement activity in Beaufort County"> <span class="duration">1:00</span> </div> <div class="media-desc"> <h4 class="video-title">Attorney on possible illegal immigration enforcement activity in Beaufort County</h4> </div> </div> </div> </div> <div class="mi-video-share-wrap"> <span class="mi-video-close-share jw-icon jw-icon-close"></span> <h3 class="mi-video-overlay-title">Share Video</h3> <ul class="share-icons video"> <li class="embed"> <div class="form-group"> <label>Video link:</label> <input class="mi-share-link" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> <div class="form-group"> <label>Embed code:</label> <input class="overlay-embed-share" type="text" readonly value=""> <div class="btn btn-primary select-btn">
+Select
+</div> </div> </li> <li class="facebook"> <a class="facebook-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Facebook"> <span class="glyphicon glyphicon-facebook"></span> facebook </a> </li> <li class="twitter"> <a class="twitter-share" href="" onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=600');return false;" title="Share on Twitter"> <span class="glyphicon glyphicon-twitter"></span> twitter </a> </li> <li class="email"> <a class="email-share" href=""> <span class="jw-icon jw-icon-email"></span> email </a> </li> </ul> </div> </div> </div> <div class="video-details"> <time class="published-date timeago hidden">8 hours ago</time> <h2 class="title video-title"> <a href="http://www.miamiherald.com/news/nation-world/national/article133176689.html">Video shows deputies fighting at detention center</a> </h2> </div> </div> <div id="playlist-133176689-1487309401957"> <div class="mi-playlist-sidebar"> <a class="playlist-item" href="#0" data-index="0"> <div class="media posterframe-wrapper"> <img src="http://www.miamiherald.com/news/nation-world/national/h5rtcq-Snapshot_52.png/alternates/LANDSCAPE_200/Snapshot_52.png" alt="Video shows deputies fighting at detention center"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">0:55</span> </div> <div class="media-desc"> <time class="published-date hidden">8 hours ago</time> <h4 class="title video-title">Video shows deputies fighting at detention center</h4> </div> </a> <a class="playlist-item" href="#1" data-index="1"> <div class="media posterframe-wrapper"> <img src="http://www.miamiherald.com/news/nation-world/national/lz0hiv-LimboQueen.png/alternates/LANDSCAPE_200/LimboQueen.png" alt="Watch Guinness World Record holder Shemika Charles limbo under a truck"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">0:38</span> </div> <div class="media-desc"> <time class="published-date hidden">14 hours ago</time> <h4 class="title video-title">Watch Guinness World Record holder Shemika Charles limbo under a truck</h4> </div> </a> <a class="playlist-item" href="#2" data-index="2"> <div class="media posterframe-wrapper"> <img src="http://www.miamiherald.com/news/nation-world/national/23mowm-BecomingACitizen.png/alternates/LANDSCAPE_200/BecomingACitizen.png" alt="Becoming a U.S. citizen: What you need to know"> <span class="glyphicon glyphicon-play-circle"></span> <span class="duration">2:15</span> </div> <div class="media-desc"> <time class="published-date hidden">15 hours ago</time> <h4 class="title video-title">Becoming a U.S. citizen: What you need to know</h4> </div> </a> </div> </div> </div> </div> <script type="text/javascript">
+if ( typeof allowAds === 'undefined' ) {
+var allowAds = true;
+}
+if ( typeof wpsConfig === 'undefined' ) {
+var wpsConfig = {
+baseUrl: '/wps/source/scripts/src',
+urlArgs: 'misv=2115a9c',
+paths: {
+'fastdom': '../libs/fastdom.min',
+'moment': '../libs/moment.min',
+'jwplayer': ['https://d12j9jiosu7f.cloudfront.net/jwplayer-7.8.7/jwplayer',
+'../libs/jwplayer'],
+'flickity': '../libs/flickity.pkgd.min'
+},
+waitSeconds: 0
+};
+var wpsRequire = requirejs.config(wpsConfig);
+}
+wpsRequire([ 'video' ], function ( video ) {
+return video({"id":"133176689","url":"http://www.miamiherald.com/news/nation-world/national/article133176689.html","asset_type":"videoIngest","title":"Video shows deputies fighting at detention center","publication":"miamiherald","home":"/web/v1/sections/5092","modified_date":1487283472,"published_date":1487280172,"credit":"Hardin County Detention Center","dateline":"","thumbnail":"http://www.miamiherald.com/news/nation-world/national/h5rtcq-Snapshot_52.png/alternates/LANDSCAPE_768/Snapshot_52.png","duration":55,"media_id":"CcZbE6cl","href":"/web/v1/content/133176689","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133176689%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=national&id=133176689&eid=133176689&pl="}],"byline":"","template_type":"","leadtext":[{"text":"A fight between a sheriff's deputy and a deputy jailer broke out last week in front of inmates at a detention center in Elizabethtown, Kentucky. The brawl was captured on camera, and the security video was released by the Hardin County Sheriff's Office. The detention center employee was arrested and suspended with pay."}],"sources":[{"height":360,"mime_type":"video/mp4","mrid":"binary/2017/2/16/22/1437582013143-p5k4ma/Hardin_County_Detention_Center_Edit-1487283453637.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437582013143-p5k4ma/Hardin_County_Detention_Center_Edit-1487283453637.mp4","width":640},{"height":720,"mime_type":"video/mp4","mrid":"binary/2017/2/16/22/1437580321678-6bjrso/Hardin_County_Detention_Center_Edit-1487283454032.mp4","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437580321678-6bjrso/Hardin_County_Detention_Center_Edit-1487283454032.mp4","width":1280},{"height":0,"mime_type":"application/x-mpegURL","mrid":"binary/2017/2/16/22/art_133176689/Hardin_County_Detention_Center_Edit.m3u8","uri":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/art_133176689/Hardin_County_Detention_Center_Edit.m3u8","width":0}],"videos":[{"id":"133176689","url":"http://www.miamiherald.com/news/nation-world/national/article133176689.html","duration":"0:55","image":"http://www.miamiherald.com/news/nation-world/national/h5rtcq-Snapshot_52.png/alternates/LANDSCAPE_768/Snapshot_52.png","title":"Video shows deputies fighting at detention center","description":"Video shows deputies fighting at detention center <span class=\"title-duration\">0:55</span>","displayDescription":"A fight between a sheriff's deputy and a deputy jailer broke out last week in front of inmates at a detention center in Elizabethtown, Kentucky. The brawl was captured on camera, and the security video was released by the Hardin County Sheriff's Office. The detention center employee was arrested and suspended with pay.","videographer":"","credit":"Hardin County Detention Center","published":1487280172,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437582013143-p5k4ma/Hardin_County_Detention_Center_Edit-1487283453637.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/1437580321678-6bjrso/Hardin_County_Detention_Center_Edit-1487283454032.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/22/art_133176689/Hardin_County_Detention_Center_Edit.m3u8"}],"mediaid":"CcZbE6cl","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133176689%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=national&id=133176689&eid=133176689&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133176689%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133075559","url":"http://www.miamiherald.com/news/nation-world/national/article133075559.html","duration":"0:38","image":"http://www.miamiherald.com/news/nation-world/national/lz0hiv-LimboQueen.png/alternates/LANDSCAPE_768/LimboQueen.png","title":"Watch Guinness World Record holder Shemika Charles limbo under a truck","description":"Watch Guinness World Record holder Shemika Charles limbo under a truck <span class=\"title-duration\">0:38</span>","displayDescription":"Shemika Charles, who also goes by 'Limbo Queen,' shimmies under an Toyota Tacoma truck while balancing trays of liquid. In less than 30 seconds she makes it to the other side and never spills a drop. Charles is a two-time Guinness World Record holder for limbo dancing.","videographer":"","credit":"Shemika Charles / Facebook","published":1487257887,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/15/1437582013143-p5k4ma/LimboQueen-1487257886571.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/15/1437580321678-6bjrso/LimboQueen-1487257886941.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/15/art_133075559/LimboQueen.m3u8"}],"mediaid":"GktFcWbD","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133075559%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=national&id=133075559&eid=133176689&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133075559%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133071209","url":"http://www.miamiherald.com/news/nation-world/national/article133071209.html","duration":"2:15","image":"http://www.miamiherald.com/news/nation-world/national/23mowm-BecomingACitizen.png/alternates/LANDSCAPE_768/BecomingACitizen.png","title":"Becoming a U.S. citizen: What you need to know","description":"Becoming a U.S. citizen: What you need to know <span class=\"title-duration\">2:15</span>","displayDescription":"Learn the basics of becoming a U.S. citizen and find out more about other important requirements, including being able to read, write and speak English.","videographer":"","credit":"USA.gov","published":1487256596,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/14/1437582013143-p5k4ma/BecomingACitizen-1487256592641.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/14/1437580321678-6bjrso/BecomingACitizen-1487256594394.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/14/art_133071209/BecomingACitizen.m3u8"}],"mediaid":"BToHeVpQ","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133071209%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=national&id=133071209&eid=133176689&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133071209%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}}],"endscreen":[{"id":"132877474","url":"http://www.miamiherald.com/sports/mlb/miami-marlins/article132877474.html","duration":"1:19","image":"http://www.miamiherald.com/sports/mlb/miami-marlins/lw25yq-MARLINS0216UNDERCTJ.JPG/alternates/LANDSCAPE_768/MARLINS0216%2BUNDER%2BCTJ.JPG","title":"Marlins' submariner Ziegler on his pitching style","description":"Marlins' submariner Ziegler on his pitching style <span class=\"title-duration\">1:19</span>","displayDescription":"Brad Ziegler, Miami Marlins' pitcher, talks about his underhand pitching style on the second day of spring training.","videographer":"Charlie Trainor Jr.","credit":"The Miami Herald","published":1487181522,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/17/1437582013143-p5k4ma/MARLINS%20ZIEGLER%20CTJ%202.15-1487181520182.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/17/1437580321678-6bjrso/MARLINS%20ZIEGLER%20CTJ%202.15-1487181520652.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/15/17/art_132877474/MARLINS_ZIEGLER_CTJ_2.15.m3u8"}],"mediaid":"fH2xVBbl","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dmiami_marlins%26id%3D132877474%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=miami_marlins&id=132877474&eid=133176689&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dmiami_marlins%26id%3D132877474%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FSports%2FBaseball%2FPro%2FMLB&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"132622154","url":"http://www.miamiherald.com/living/pets/article132622154.html","duration":"1:17","image":"http://www.miamiherald.com/latest-news/vffuwo-pumi.jpg/alternates/LANDSCAPE_768/pumi.jpg","title":"Westminster Dog Show features new breeds","description":"Westminster Dog Show features new breeds <span class=\"title-duration\">1:17</span>","displayDescription":"This year, three breeds are competing for the first time in the Westminster Kennel Club dog show: The American Hairless Terrier, Pumi and the Sloughi. Meet people who are showing two of the breeds.","videographer":"","credit":"AP","published":1487094360,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/14/17/1437582013143-p5k4ma/2breedswestminster_2-1487094357813.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/14/17/1437580321678-6bjrso/2breedswestminster_2-1487094358322.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/14/17/art_132622154/2breedswestminster_2.m3u8"}],"mediaid":"7GwROeJT","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpets%26id%3D132622154%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FLifestyle%2FPets&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=pets&id=132622154&eid=133176689&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dpets%26id%3D132622154%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FLifestyle%2FPets&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"133072009","url":"http://www.islandpacket.com/news/politics-government/article133072009.html","duration":"2:15","image":"http://www.islandpacket.com/news/politics-government/za1olz-BecomingACitizen.png/alternates/LANDSCAPE_768/BecomingACitizen.png","title":"Becoming a U.S. citizen: What you need to know","description":"Becoming a U.S. citizen: What you need to know <span class=\"title-duration\">2:15</span>","displayDescription":"Learn the basics of becoming a U.S. citizen and find out more about other important requirements, including being able to read, write and speak English.","videographer":"","credit":"USA.gov","published":1487256759,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/14/1437582013143-p5k4ma/BecomingACitizen_1-1487256756757.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/14/1437580321678-6bjrso/BecomingACitizen_1-1487256757332.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/14/art_133072009/BecomingACitizen_1.m3u8"}],"mediaid":"LI9hkpRd","ads":[]},{"id":"133075559","url":"http://www.miamiherald.com/news/nation-world/national/article133075559.html","duration":"0:38","image":"http://www.miamiherald.com/news/nation-world/national/lz0hiv-LimboQueen.png/alternates/LANDSCAPE_768/LimboQueen.png","title":"Watch Guinness World Record holder Shemika Charles limbo under a truck","description":"Watch Guinness World Record holder Shemika Charles limbo under a truck <span class=\"title-duration\">0:38</span>","displayDescription":"Shemika Charles, who also goes by 'Limbo Queen,' shimmies under an Toyota Tacoma truck while balancing trays of liquid. In less than 30 seconds she makes it to the other side and never spills a drop. Charles is a two-time Guinness World Record holder for limbo dancing.","videographer":"","credit":"Shemika Charles / Facebook","published":1487257887,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/15/1437582013143-p5k4ma/LimboQueen-1487257886571.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/15/1437580321678-6bjrso/LimboQueen-1487257886941.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/16/15/art_133075559/LimboQueen.m3u8"}],"mediaid":"GktFcWbD","ads":[{"publication":"miamiherald","tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133075559%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll","lang":"en","sz":"400x300","vpos":"preroll","cust_params":"sect=national&id=133075559&eid=133176689&pl="}],"adschedule":{"adbreak":{"tag":"http://pubads.g.doubleclick.net/gampad/ads?ciu_szs=300x250&correlator=%5Btimestamp%5D&cust_params=sect%3Dnational%26id%3D133075559%26eid%3D133176689%26pl%3D&env=vp&gdfp_req=1&hl=en&impl=s&iu=%2F7675%2FMIA.site_miamiherald%2FNews%2FNational&output=vast&sz=400x300&unviewed_position_start=1&url=%5Breferrer_url%5D&vpos=preroll"}}},{"id":"62747912","url":"http://www.mcclatchydc.com/news/nation-world/national/article62747912.html","duration":"4:45","image":"http://www.mcclatchydc.com/news/nation-world/national/jrzctv-Transgender.png/alternates/LANDSCAPE_768/Transgender.png","title":"Rebirth of a Transgender Teenager","description":"Rebirth of a Transgender Teenager <span class=\"title-duration\">4:45</span>","displayDescription":"As Katherine Boone, 18, recovered from the surgery that changed her into a female, she and her family talked about what they all went through.","videographer":"","credit":"The New York Times","published":1456527354,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/2/26/22/1437582013143-p5k4ma/Transgender-1456527344419.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/2/26/22/1437580321678-6bjrso/Transgender-1456527346212.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/2/26/22/art_62747912/Transgender.m3u8"}],"mediaid":"TWrI1s7x","ads":[]},{"id":"131314059","url":"http://www.islandpacket.com/news/local/community/beaufort-news/article131314059.html","duration":"0:47","image":"http://www.islandpacket.com/news/local/community/beaufort-news/s81mns-Immigration-Rally-Enough-is-enough./alternates/LANDSCAPE_768/Immigration%20Rally%3A%20%27Enough%20is%20enough.%27","title":"Immigration Rally: 'Enough is enough.'","description":"Immigration Rally: 'Enough is enough.' <span class=\"title-duration\">0:47</span>","displayDescription":"Eric Esquivel, president and publisher of La Isla Magazine, talks about the purpose behind the immigration rally held at Congressman Mark Sanford's office on Tuesday, Feb. 7, 2017, in Beaufort.","videographer":"Delayna Earley","credit":"dearley@islandpacket.com","published":1486509478,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/7/22/1437582013143-p5k4ma/Immigration%20Rally%3A%20%27Enough%20is%20enough.%27-1486509476640.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/7/22/1437580321678-6bjrso/Immigration%20Rally%3A%20%27Enough%20is%20enough.%27-1486509477399.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/7/22/art_131314059/Immigration_Rally___Enough_is_enough._.m3u8"}],"mediaid":"voakCxDj","ads":[]},{"id":"130128834","url":"http://www.mcclatchydc.com/news/article130128834.html","duration":"1:17","image":"http://www.mcclatchydc.com/news/iqihdd-SeanSpicerFeb1.jpg/alternates/LANDSCAPE_768/SeanSpicerFeb1.jpg","title":"White House: Updates to immigration ban to allow permanent residents into U.S. without waiver","description":"White House: Updates to immigration ban to allow permanent residents into U.S. without waiver <span class=\"title-duration\">1:17</span>","displayDescription":"White House Press Secretary Sean Spicer talked about updates to President Donald Trump's immigration executive order during Wednesday's press briefing. According to Spicer, legal permanent residents will now be allowed to enter the United States without a waiver. ","videographer":"","credit":"The White House","published":1485983804,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/1/21/1437582013143-p5k4ma/ImmigrationBan_Updates-1485983802756.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/1/21/1437580321678-6bjrso/ImmigrationBan_Updates-1485983803183.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/1/21/art_130128834/ImmigrationBan_Updates.m3u8"}],"mediaid":"k4uHg2fj","ads":[]},{"id":"132005304","url":"http://www.islandpacket.com/news/local/crime/article132005304.html","duration":"2:09","image":"http://www.islandpacket.com/news/local/m62nja-Know-your-rights-keyframe/alternates/LANDSCAPE_768/Know%20your%20rights%20keyframe","title":"Your rights when confronted by immigration enforcement officials","description":"Your rights when confronted by immigration enforcement officials <span class=\"title-duration\">2:09</span>","displayDescription":"With Immigration and Customs Enforcement agents reported to be in the area, Bluffton immigration lawyer Aimee Deverall describes, in English and Spanish on Feb. 10, 2017, the rights a person has when confronted by immigration enforcement officials.","videographer":"Jay Karr","credit":"The Island Packet","published":1486761296,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/10/21/1437582013143-p5k4ma/Know%20your%20rights-1486761293886.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/10/21/1437580321678-6bjrso/Know%20your%20rights-1486761294373.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/10/21/art_132005304/Know_your_rights.m3u8"}],"mediaid":"2Bn4cx3y","ads":[]},{"id":"72016572","url":"http://www.mcclatchydc.com/news/politics-government/article72016572.html","duration":"3:27","image":"http://www.mcclatchydc.com/news/politics-government/pz4zsl-hb2-B.jpg/alternates/LANDSCAPE_768/hb2%20B.jpg","title":"HB2: A timeline for North Carolina's newest law","description":"HB2: A timeline for North Carolina's newest law <span class=\"title-duration\">3:27</span>","displayDescription":"North Carolina’s legislature recently passed a law that prevents transgender people from using government-run bathrooms corresponding to the gender with which they identify. The law — House Bill 2 (HB2) — has incited a state-wide civil liberties battle. Here is the timeline of the so-called \"bathroom bill.\"","videographer":"","credit":"CREDIT: Ali Rizvi, Nicole L. Cvetnic and Sohail Al-Jamea / McClatchy","published":1460733340,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/12/19/23/1437582013143-p5k4ma/HB2%20Dec%20Update_1219_4-1482192200093.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/12/19/23/1437580321678-6bjrso/HB2%20Dec%20Update_1219_4-1482192201723.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2016/12/19/23/art_72016572/HB2_Dec_Update_1219_4.m3u8"}],"mediaid":"xYVpnJfQ","ads":[]},{"id":"131956859","url":"http://www.islandpacket.com/news/local/crime/article131956859.html","duration":"1:00","image":"http://www.islandpacket.com/news/local/qggwge-Aimee-Deverall-keyframe/alternates/LANDSCAPE_768/Aimee%20Deverall%20keyframe","title":"Attorney on possible illegal immigration enforcement activity in Beaufort County","description":"Attorney on possible illegal immigration enforcement activity in Beaufort County <span class=\"title-duration\">1:00</span>","displayDescription":"Bluffton immigration lawyer Aimee Deverall speaks, on Feb. 10, 2017, on rumored enforcement activity by Immigration and Customs Enforcement agents in Beaufort County.","videographer":"Jay Karr","credit":"The Island Packet","published":1486760396,"sources":[{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/10/18/1437582013143-p5k4ma/Aimee%20Deverall%20on%20possible%20illegal%20immegration%20enforcement%20activity%20in%20Beaufort%20County-1486760394022.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/10/18/1437580321678-6bjrso/Aimee%20Deverall%20on%20possible%20illegal%20immegration%20enforcement%20activity%20in%20Beaufort%20County-1486760394477.mp4"},{"file":"http://dr6lcqo3bxtwa.cloudfront.net/binary/2017/2/10/18/art_131956859/Aimee_Deverall_on_possible_illegal_immegration_enforcement_activity_in_Beaufort_County.m3u8"}],"mediaid":"BsehdQJO","ads":[]}],"pageType":"detail-page"}, {"wpsInclude":true,"wpsArea":"side_bar","autoPlay":false,"pubName":"miamiherald","embed":false,"cacheBust":"2115a9c","iterator":1,"uniqueID":"133176689-1487309401957","paywallEnabled":true,"baseTemplate":"video"});
+});
+</script> </div>
+</div>
+</section>
+<div class="clearfix footer element_spacing_large">
+<p class="readmore">
+<a href="http://www.miamiherald.com/video/">
+View more video
+</a>
+</p>
+</div>
+</div>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-10" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="c"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div id="market-widget-1"
+class="element-spacing-medium">
+</div>
+<div class="element-spacing-medium">
+<!--
+Widget ID: Feature Master with title feature master more stories:
+Referenced feature mi.masterConfig.moreStories, which was empty. Attempting fall-back value.
+-->
+<section id="more-stories-widget"
+class="headline-list element_spacing_large">
+<h1 class="heading link">
+<a href="http://www.miamiherald.com/news/nation-world/national/">
+National
+</a>
+</h1>
+<article class="business media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.miamiherald.com/news/business/article133048294.html#wgt=trending">
+'Day Without Immigrants': Protest closes restaurants in US
+</a>
+</h2>
+</div>
+</article>
+<article class="ece_incoming media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.miamiherald.com/latest-news/article133141334.html#wgt=trending">
+Trump seeks pause in legal fight with revised travel ban
+</a>
+</h2>
+</div>
+</article>
+<article class="traffic media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.miamiherald.com/news/traffic/article132823874.html#wgt=trending">
+They speed, run red lights, text while driving. No wonder they&rsquo;re No. 1 on the list
+</a>
+</h2>
+</div>
+</article>
+<article class="business media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.miamiherald.com/news/business/article133078684.html#wgt=trending">
+Asian shares slip after Wall Street fall and Samsung arrest
+</a>
+</h2>
+</div>
+</article>
+<article class="national media ">
+<div class="teaser ">
+<h2 class="title ">
+<a href="http://www.miamiherald.com/news/nation-world/national/article133270249.html#wgt=trending">
+Man crashes his Tesla to save another driver&rsquo;s life. Elon Musk is paying for repairs.
+</a>
+</h2>
+</div>
+</article>
+</section>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-11" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="e"
+defaultsize="Large"
+Small = "300x250"
+Medium = "Flex Ad"
+Extra-Small = "None"
+Large = "Flex Ad"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="element-spacing-medium">
+<section class="element_spacing_large ndn">
+<script async src="http://launch.newsinc.com/js/embed.js" id="_nw2e-js"></script>
+<h1 class="heading">Nation & World Videos</h1>
+<div class="center-block ndn_embed text-center" data-config-widget-id="28656" data-config-type="VideoLauncher/Slider300x250" data-config-tracking-group="90045"></div>
+<script async type="text/javascript">var _informq = _informq || []; _informq.push(['embed']);</script>
+</section>
+</div>
+<div >
+</div>
+<!--
+Widget ID: Feature Master with title feature master extra ads story:
+Referenced feature mi.masterConfig.extraAdsStory, which was empty. Attempting fall-back value.
+-->
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-12" adtype="default" data-ad-policy="onPageLoad" atf="n"
+oom="y"
+pkg="None"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div class="ad hidden-xs">
+<div>
+<div class="ad-widget" id="div-gpt-ad-13" adtype="default" data-ad-policy="onPageLoad" atf="n"
+oom="y"
+pkg="None"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "None"
+Large = "300x250"
+articleId="129457819"
+></div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+/*
+look for elements with classes in the format of
+reorder_<id of target container element>_<position>
+e.g. reorder_story-target_3 would be moved after
+the 3rd child element of #story-target.
+If there aren't enough child elements,
+(e.g., targeting the 7th element of a 4-paragraph story)
+jQuery won't move it.
+*/
+var $document = $document || $(document);
+var reorderRegEx = /\breorder_([a-z0-9\-]+)_(\d+)/;
+var reorderFunc = function ( index, element ) {
+var classes = element.className;
+var parts = reorderRegEx.exec(classes);
+$(document.getElementById(parts[1])).find('>div>:nth-child(' + parts[2] + ')').after(element);
+};
+$('.reorder').each(reorderFunc);
+$document.ready(function () {
+// And now actually show the related content, if we should.
+// Except this actually hides it if we should. ¯\_(ツ)_/¯
+if ( $("#related-gallery").children().length == 0 ) {
+$("#related-gallery").hide();
+} });
+</script>
+<script type="text/javascript">
+var $window = $window || $(window);
+var $document = $document || $(document);
+var isSticky = false;
+$document.ready(function() {
+var $shareTools = $('.share-tools-wrapper');
+var $commentingContainer = $(document.getElementById("commenting-container"));
+var $storyBody = $(document.getElementById("story-body-items"));
+var stickyTools = function () {
+var scrollTop = $window.scrollTop(),
+storyBodyTop = $storyBody.offset().top - 50,
+commentingTop = $commentingContainer.offset().top;
+/* Check if user scrolls to the share tools but grab it 50px early
+* to accommodate the top: 50px CSS once sticky'd (this eliminates
+* the slight jump in the beginning).
+*/
+if ( isSticky === false && scrollTop > storyBodyTop && scrollTop < commentingTop ) {
+isSticky = true;
+return $shareTools.toggleClass('sticky-tools');
+}
+if ( isSticky === true && ( scrollTop >= commentingTop || scrollTop < storyBodyTop ) ) {
+isSticky = false;
+return $shareTools.toggleClass('sticky-tools'); }
+};
+stickyTools();
+$window.on("scroll", stickyTools);
+//Story Numberlines
+var rearrangeHighline = function() {
+var $this = $(this);
+var $leadIn = $this.find('.ng_number_leadin').detach();
+$this.wrapInner('<span></span>');
+$this.prepend($leadIn);
+};
+$('.highline-number').find('p').each(rearrangeHighline);
+});
+</script>
+</section>
+<div class="container " >
+<div class="ad ad-sense">
+<div>
+<div class="ad-widget" id="div-gpt-ad-14" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="m"
+defaultsize="Large"
+Small = "300x250"
+Medium = "300x250"
+Extra-Small = "300x250"
+Large = "300x250"
+articleId="129457819"
+></div>
+</div>
+</div>
+</div>
+<footer class=" " >
+<div class="container">
+<div class="ad">
+<div>
+<div class="ad-widget" id="div-gpt-ad-15" adtype="default" data-ad-policy="onPageLoad" atf="n"
+pkg="None"
+defaultsize="Large"
+Small = "728x90"
+Medium = "728x90"
+Extra-Small = "300x250"
+Large = "728x90"
+articleId="129457819"
+></div>
+</div>
+</div>
+</div>
+<div id="footer"
+>
+<header id="footer-logo"
+>
+<div class="container text-center">
+<a href="http://www.miamiherald.com/" target="_top"><img src="http://www.miamiherald.com/static/images/miamiherald/logo-sm.png" alt="Miami Herald | MiamiHerald.com" class="img-responsive"></a>
+</div>
+</header>
+<div class="container hidden-xs">
+<div class="row " >
+<div class="col-sm-12 ">
+<div id="footer-columns"
+>
+<div class="row " id="footer-menu-columns">
+<div class="col-sm-3 footer-column border-right border-xs-remove-right">
+<h2 class="heading">
+<a href="http://#collapseOne">
+Subscriptions
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="http://media.miamiherald.com/static/subscriptions/subscribe/?promo=WPLV/#navlink=mi_footer">
+Digital Subscriptions
+</a>
+</li>
+<li>
+<a href="/digital/#navlink=mi_footer">
+Digital Edition
+</a>
+</li>
+<li>
+<a href="/plus/#navlink=mi_footer">
+Home Delivery
+</a>
+</li>
+<li>
+<a href="http://pubsys.miamiherald.com/static/subscriptions/subscribe/service.html#navlink=mi_footer">
+Vacation Hold
+</a>
+</li>
+<li>
+<a href="http://pubsys.miamiherald.com/static/subscriptions/subscribe/service.html#navlink=mi_footer">
+Report a Delivery Error
+</a>
+</li>
+<li>
+<a href="/site-services/rewards/#navlink=mi_footer">
+Miami Herald Rewards
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column border-lg-right">
+<h2 class="heading">
+<a href="http://#collapseTwo">
+Site Information
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="/customer-service/#navlink=mi_footer">
+Customer Service
+</a>
+</li>
+<li>
+<a href="/customer-service/about-us/#navlink=mi_footer">
+About Us
+</a>
+</li>
+<li>
+<a href="/customer-service/contact-us/#navlink=mi_footer">
+Contact Us
+</a>
+</li>
+<li>
+<a href="http://www.nieonline.com/miami/#navlink=mi_footer">
+NewsMedia in Education
+</a>
+</li>
+<li>
+<a href="/site-services/public-insight-network/#navlink=mi_footer">
+Public Insight Network
+</a>
+</li>
+<li>
+<a href="/site-services/reader-panel/#navlink=mi_footer">
+Reader Panel
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column border-right border-xs-remove-right">
+<h2 class="heading">
+<a href="http://#collapseThree">
+Social, Mobile & More
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="https://www.facebook.com/pages/Miami-Herald/38925837299#navlink=mi_footer" target="_blank">
+Facebook
+</a>
+</li>
+<li>
+<a href="https://twitter.com/miamiherald/#navlink=mi_footer" target="_blank">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://plus.google.com/109936907321316291240" target="_blank">
+Google+
+</a>
+</li>
+<li>
+<a href="/mobile/#navlink=mi_footer" target="_blank">
+Mobile Apps &amp; eReaders
+</a>
+</li>
+<li>
+<a href="http://hrld.us/txtalerts#navlink=mi_footer" target="_blank">
+Mobile Alerts
+</a>
+</li>
+<li>
+<a href="/site-services/newsletters/newsletter-signup/#navlink=mi_footer">
+Newsletters
+</a>
+</li>
+</ul>
+</div>
+<div class="col-sm-3 footer-column">
+<h2 class="heading">
+<a href="http://#collapseFour">
+Advertising
+</a>
+</h2>
+<ul class=" footer-menu">
+<li>
+<a href="/advertise/place-an-ad/#navlink=mi_footer">
+Place a Classified
+</a>
+</li>
+<li>
+<a href="http://www.miamiheraldadvertising.com/#navlink=mi_footer">
+Media Kit
+</a>
+</li>
+<li>
+<a href="http://www.miamiheraldadvertising.com/services-comprint.html#navlink=mi_footer">
+Commercial Printing
+</a>
+</li>
+<li>
+<a href="http://floridapublicnotices.com/">
+Public Notices
+</a>
+</li>
+<li>
+<a href="http://www.findnsave.com/#navlink=mi_footer" target="_blank">
+Shopping
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="row " id="footer-legal">
+<ul class=" footer-menu-legal">
+<li>
+<a href="/site-services/copyright/#navlinks=footer" target="_top">
+Copyright
+</a>
+</li>
+<li>
+<a href="/site-services/commenting-policy/#navlinks=footer" target="_top">
+Commenting Policy
+</a>
+</li>
+<li>
+<a href="/site-services/privacy-policy/#navlink=mi_footer" target="_top">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="/site-services/terms-of-service/#navlink=mi_footer" target="_top">
+Terms of Service
+</a>
+</li>
+</ul>
+<script>
+jQuery('#footer #footer-columns .heading > a').each(function(){ $(this).attr('href',$(this).attr('href').split('//')[1]);})
+</script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="accordion"
+class="visible-xs panel-group">
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseOne">
+Subscriptions
+</a>
+</h2>
+</div>
+<div id="collapseOne"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="http://media.miamiherald.com/static/subscriptions/subscribe/?promo=WPLV/#navlink=mi_footer">
+Digital Subscriptions
+</a>
+</li>
+<li>
+<a href="/digital/#navlink=mi_footer">
+Digital Edition
+</a>
+</li>
+<li>
+<a href="/plus/#navlink=mi_footer">
+Home Delivery
+</a>
+</li>
+<li>
+<a href="http://pubsys.miamiherald.com/static/subscriptions/subscribe/service.html#navlink=mi_footer">
+Vacation Hold
+</a>
+</li>
+<li>
+<a href="http://pubsys.miamiherald.com/static/subscriptions/subscribe/service.html#navlink=mi_footer">
+Report a Delivery Error
+</a>
+</li>
+<li>
+<a href="/site-services/rewards/#navlink=mi_footer">
+Miami Herald Rewards
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseTwo">
+Site Information
+</a>
+</h2>
+</div>
+<div id="collapseTwo"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="/customer-service/#navlink=mi_footer">
+Customer Service
+</a>
+</li>
+<li>
+<a href="/customer-service/about-us/#navlink=mi_footer">
+About Us
+</a>
+</li>
+<li>
+<a href="/customer-service/contact-us/#navlink=mi_footer">
+Contact Us
+</a>
+</li>
+<li>
+<a href="http://www.nieonline.com/miami/#navlink=mi_footer">
+NewsMedia in Education
+</a>
+</li>
+<li>
+<a href="/site-services/public-insight-network/#navlink=mi_footer">
+Public Insight Network
+</a>
+</li>
+<li>
+<a href="/site-services/reader-panel/#navlink=mi_footer">
+Reader Panel
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseThree">
+Social, Mobile & More
+</a>
+</h2>
+</div>
+<div id="collapseThree"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="https://www.facebook.com/pages/Miami-Herald/38925837299#navlink=mi_footer" target="_blank">
+Facebook
+</a>
+</li>
+<li>
+<a href="https://twitter.com/miamiherald/#navlink=mi_footer" target="_blank">
+Twitter
+</a>
+</li>
+<li>
+<a href="https://plus.google.com/109936907321316291240" target="_blank">
+Google+
+</a>
+</li>
+<li>
+<a href="/mobile/#navlink=mi_footer" target="_blank">
+Mobile Apps &amp; eReaders
+</a>
+</li>
+<li>
+<a href="http://hrld.us/txtalerts#navlink=mi_footer" target="_blank">
+Mobile Alerts
+</a>
+</li>
+<li>
+<a href="/site-services/newsletters/newsletter-signup/#navlink=mi_footer">
+Newsletters
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseFour">
+Advertising
+</a>
+</h2>
+</div>
+<div id="collapseFour"
+class="panel-collapse collapse">
+<div class="panel-body">
+<ul class=" footer-menu">
+<li>
+<a href="/advertise/place-an-ad/#navlink=mi_footer">
+Place a Classified
+</a>
+</li>
+<li>
+<a href="http://www.miamiheraldadvertising.com/#navlink=mi_footer">
+Media Kit
+</a>
+</li>
+<li>
+<a href="http://www.miamiheraldadvertising.com/services-comprint.html#navlink=mi_footer">
+Commercial Printing
+</a>
+</li>
+<li>
+<a href="http://floridapublicnotices.com/">
+Public Notices
+</a>
+</li>
+<li>
+<a href="http://www.findnsave.com/#navlink=mi_footer" target="_blank">
+Shopping
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="panel">
+<div class="panel-heading">
+<h2 class="heading">
+<a href="http://#collapseFive">
+More
+</a>
+</h2>
+</div>
+<div id="collapseFive"
+class="panel-collapse collapse">
+<div class="panel-body">
+<script>
+jQuery('#footer #accordion .heading > a').attr({'data-toggle':'collapse','data-parent':'#accordion'}).each(function(){ $(this).attr('href',$(this).attr('href').split('//')[1]);})
+</script>
+<ul class=" footer-menu-legal">
+<li>
+<a href="/site-services/copyright/#navlinks=footer" target="_top">
+Copyright
+</a>
+</li>
+<li>
+<a href="/site-services/commenting-policy/#navlinks=footer" target="_top">
+Commenting Policy
+</a>
+</li>
+<li>
+<a href="/site-services/privacy-policy/#navlink=mi_footer" target="_top">
+Privacy Policy
+</a>
+</li>
+<li>
+<a href="/site-services/terms-of-service/#navlink=mi_footer" target="_top">
+Terms of Service
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 968074018;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/968074018/?value=0&guid=ON&script=0"/>
+</div>
+</noscript>
+<div class="hidden">
+<div>
+<div class="ad-widget" id="div-gpt-ad-16" adtype="default" data-ad-policy="onPageLoad" atf="y"
+pkg="a"
+defaultsize="Extra-Small"
+Small = "None"
+Medium = "None"
+Extra-Small = "300x75"
+Large = "None"
+articleId="129457819"
+></div>
+</div>
+</div>
+<div id="floorboard"
+class="hidden-xs">
+<div>
+<div id="floorboard_outer">
+<div id="floorTagWrapper" style="display:none;">
+<div class="ad-widget" id="div-gpt-ad-17" adtype="floorboard" atf="y" pkg="a"
+defaultsize="Large" data-ad-policy="onPageLoad"
+Small='285x70'
+Medium='285x70'
+Extra-Small='None'
+Large='285x70'
+articleId='129457819'
+></div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<!-- Render Footer from Escenic or WPS based on switch-->
+<script type="text/javascript">
+/* Front end properties configured in nursery */
+var FrontEndConfig = {"media.jwplayer.script.location":"http://static.mcclatchyinteractive.com/escenic/jwplayer-7.1.4/jwplayer.js","media.jwplayer.hls.mimeTypes":"vnd.apple.mpegURL,application/x-mpegURL","audioPlayer":"mediaelement","media.jwplayer.sharing.enabled":"true","videoPlayer":"jwplayer","media.jwplayer.options.primary":"html5","media.jwplayer.ga.enabled":"true ","media.jwplayer.hls.enabled":"true","media.jwplayer.key":"tTakaWDwaA/5t6sLfLhYBB4EfEa1ETrJDYnTPw=="};
+if (typeof(FrontEndConfig) == 'undefined') {
+FrontEndConfig = {};
+}
+FrontEndConfig.rootURL = "http://www.miamiherald.com/";
+/* Client-side device detection */
+var WFClientTypeDef = {"extraSmall":"(max-width: 767px)","medium":"(min-width: 992px) and (max-width: 1199px)","large":"(min-width: 1200px)","small":"(min-width: 768px) and (max-width: 991px)"};
+var imageSizes = [80, 160, 200, 320, 400, 480, 560, 640, 720, 768, 960, 1080, 1140];
+$(function(){
+$.each(FrontEndConfig, function(key, value) {
+/* Regular properties other than JW Player setup options
+are being processed here */
+if (key.indexOf('media.jwplayer.options') < 0) {
+FrontEndConfig[key] = WFUtils.parseStringToJSONObject(value);
+}
+});
+});
+</script>
+<script type="text/javascript"
+src="http://www.miamiherald.com/static/js/wps-wf-site-1.0.99-235b3bc-min.js"></script>
+<script type="text/javascript" >
+mi_Ads.env.init();
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var clientDT = new Date().getTime();
+document.write('<img style="display:none;" src="http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&ctxId=5039&contextPath=3179-5019-5039-&pubId=7&cat=&meta=read-story&objId=129457819&type=article&title=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order&url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html&amp;clientDT=' + clientDT + '" alt="" width="1" height="1"/>');
+//]]>
+</script>
+<noscript>
+<div>
+<img src="http://ece-logger.nandomedia.com:8083/analysis-logger/Logger?rt=1&amp;ctxId=5039&amp;contextPath=3179-5019-5039-&amp;pubId=7&amp;cat=&amp;meta=read-story&amp;objId=129457819&amp;type=article&amp;title=Angry+congressional+lawmakers+erupt%2c+seek+ways+to+curb+Trump+immigration+order&amp;url=http%3a%2f%2fwww.miamiherald.com%2fnews%2fpolitics-government%2farticle129457819.html" alt="one pixel graphics" width="1" height="1"/>
+</div>
+</noscript>
+<script>
+var trackerConfig = null;
+if (typeof {} != 'object') {
+trackerConfig = '{}';
+trackerSend = 'send';
+}
+else {
+trackerConfig = {};
+if (!trackerConfig.hasOwnProperty('name')) {
+trackerConfig.name = 'wf';
+}
+trackerSend = trackerConfig.name + '.send';
+}
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-3858463-1', trackerConfig);
+ga(trackerSend, 'pageview');
+</script>
+<script type="text/javascript">
+/*Device width fix for Windows Phone 8 and IE 10*/
+if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+var msViewportStyle = document.createElement("style");
+msViewportStyle.appendChild(
+document.createTextNode(
+"@-ms-viewport{width:auto!important}"
+)
+);
+document.getElementsByTagName("head")[0].appendChild(msViewportStyle)
+}
+</script>
+<script type="text/javascript">
+mi.pageInfo.setConf("chartbeat.uid", 62447);
+</script>
+<div id="mistatstag" style="display:none;">
+<script type="text/javascript" src="http://media.miamiherald.com/mistats/products/escenic_s_code.js"></script>
+<script type="text/javascript" src="http://media.miamiherald.com/mistats/products/escenic.js"></script>
+<script type="text/javascript" src="http://media.miamiherald.com/mistats/finalizestats.js"></script>
+</div>
+<!-- Lotame Tracking Tag -->
+<script src="http://tags.crwdcntrl.net/c/7441/cc.js?ns=_cc7441" id="LOTCC_7441"></script>
+<script>_cc7441.bcp();</script>
+</body>
+</html>

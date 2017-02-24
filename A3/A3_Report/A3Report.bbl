@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{RTutorial1}
+{C}alculating {K}endall’s {T}au {R}ank {C}orrelation {C}oefficient.
+\newblock
+  http://stamash.org/calculating-kendalls-tau-rank-correlation-coefficient/.
+\newblock Accessed: 2014-10-01.
+
+\bibitem{RTutorial2}
+R tutorial.
+\newblock http://www.r-tutor.com/gpu-computing/correlation/kendall-tau-b/.
+\newblock Accessed: 2014-10-01.
+
+\bibitem{adamic1999small}
+Lada~A Adamic.
+\newblock The small world web.
+\newblock In {\em International Conference on Theory and Practice of Digital
+  Libraries}, pages 443--452. Springer, 1999.
+
+\end{thebibliography}

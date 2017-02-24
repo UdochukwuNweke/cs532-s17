@@ -1,0 +1,2671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+
+
+
+
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UA8DVFJACgUCU1VQDgA="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<!-- begin meta block --><meta charset="UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	
+	
+<!-- Show viewport when in mobile -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	
+	<meta name="apple-mobile-web-app-title"
+			content="wngc-fm" />
+	<!-- end meta block --><!-- begin title_full_tag block --><title>Super Bowl 2017: 5 things to know before heading to Houston | 106.1 WNGC</title>
+<!-- end title_full_tag block --><!-- begin meta_description block --><meta name="description" content="It's time for fans to prepare if they are heading to Houston for the Super Bowl. The Falcons and the New England Patriots will face off at 6 p." />
+	<!-- end meta_description block --><!-- begin meta_keywords block --><meta name="keywords" content="super bowl, jj_stub, cox_stub, cox_shared, cox_irresistible, ajc_stub, super bowl, jj_stub, cox_stub, cox_shared, cox_irresistible, ajc_stub" />
+		<meta name="news_keywords" content="super bowl, jj_stub, cox_stub, cox_shared, cox_irresistible, ajc_stub, super bowl, jj_stub, cox_stub, cox_shared, cox_irresistible, ajc_stub" />
+	<!-- end meta_keywords block --><!-- begin favicon block --><link rel="shortcut icon" href="//www.yourgeorgiacountry.com/rw/Pub/Web/YourGeorgiaCountry/Special%20Contents/Themes/www.yourgeorgiacountry.com_9b86c7224d50446081e52ae5478b1f9f.ico" />
+	
+	<link rel="apple-touch-icon"
+		href="//www.yourgeorgiacountry.com/rw/Pub/Web/YourGeorgiaCountry/Special%20Contents/Themes/Images/apple%20touch%20icon%20ygc.png" />
+<!-- end favicon block --><!-- begin image_src block --><link rel="image_src" href="//www.yourgeorgiacountry.com/rw/Pub/Web/YourGeorgiaCountry/Special%20Contents/Themes/Images/Logo%20ygc.png" />
+<!-- end image_src block --><!-- begin canonical block --><meta property="vr:canonical" content="http://www.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/" />
+	<link rel="canonical" href="http://www.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/" />
+<!-- end canonical block --><!-- begin og_tags block --><meta property="og:title" content="Super Bowl 2017: 5 things to know before heading to Houston" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://www.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/" />
+	<meta name="og:description" content="It's time for fans to prepare if they are heading to Houston for the Super Bowl. The Falcons and the New England Patriots will face off at 6 p." />
+
+	<meta property="og:image" content="http://www.yourgeorgiacountry.com/rf/image/Pub/p8/Kiss104FM/2017/01/23/Videos/5293625422001.vpx" />
+		<!-- end og_tags block --><!-- begin meta_twitter block --><meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="http://www.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/" />
+<!-- end meta_twitter block --><!-- begin cmg_revpath block --><meta name="cmg_revpath" content="/" />
+<!-- end cmg_revpath block --><meta name="web_type" content="story" />
+<!-- !!!!!! END GET SITE META !!!!!!!! -->
+<script
+	src="//www.yourgeorgiacountry.com/r/PortalConfig/common/assets/js/pubsubcutioner.min.js"></script>
+<script>localStorage.setItem("sdsat_debug", true);</script>
+
+<script src='//assets.adobedtm.com/20d5deb47c9e7fe47a9f969db01578a739d7179d/satelliteLib-d60f9d10de420c68ca2387b68df3c9f20e1c6022.js'></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- begin metrics_complete_override block -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- METRIC TAG -->
+
+
+
+
+
+
+
+
+<!-- Primary Category -->
+
+
+
+
+<!-- Setting originating site Start-->
+
+
+
+
+
+	
+	
+		
+	
+
+
+
+
+ 
+
+
+
+	
+
+<!-- Setting originating site End-->
+
+<!-- Setting Site Domain and Site ID Start-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Setting Site Domain and Site ID End-->
+
+<!-- Setting Provide Name -->
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	
+		
+			
+			
+			
+		
+		
+			
+	
+	
+
+
+
+
+
+
+
+
+
+		
+		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+	
+
+
+<!--Standalone -->
+
+
+
+
+<!-- Setting video proxy and video proxy play list vendor names -->
+
+
+<!-- Setting providername for NCD stories -->
+
+		
+
+ 
+<script>
+var DDO = DDO || {};
+
+/*<!-- begin metrics_dtm_library_override block -->
+	DDO.DTMLibraryURL = '//assets.adobedtm.com/20d5deb47c9e7fe47a9f969db01578a739d7179d/satelliteLib-d60f9d10de420c68ca2387b68df3c9f20e1c6022.js'; 
+<!-- end metrics_dtm_library_override block -->*/
+
+
+DDO.hasLocalStorage = function(){
+	return typeof(localStorage) != "undefined" && localStorage.setItem("test","test") &&
+		localStorage.getItem("test") && localStorage.removeItem("test");
+}
+</script>
+
+<script src="//www.yourgeorgiacountry.com/r//PortalConfig/common/metrics/js/dtm-ddo-utilities.js"></script>
+
+
+
+
+<script>
+DDO.init = function(pubsub, dependentEvents) {
+	// 	SITE DATA
+	
+	DDO.siteData = {
+		siteID: 'wngc-fm',
+	    siteDomain: 'www.yourgeorgiacountry.com',
+	    siteVersion: 'non-mobile site',
+	    siteFormat: 'country',
+	    siteMetro: 'ga: athens',
+	    siteMedium: 'radio',
+	    siteType: 'main: music',
+	    siteCMS: 'methode'
+	};
+    // PAGE DATA
+	var isDwp = false;
+	console.log("isDwp: ", isDwp);
+	var isHome = isDwp && false;
+	console.log("page Title:" + 'Super Bowl 2017: 5 things to know before heading to Houston');
+	var trimPageNameUrl = removeExtracharFromUrl('/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/');
+		
+	DDO.pageData = {
+		pageFlow : "",
+		pageNumber : '1',
+		pageType : 'standalone page',
+		pageIsDwp: isDwp // Necessary for bookmarklet purposes.
+	};
+	if(isDwp) {
+	    DDO.pageData.pageContentType = (isHome) ? 'homepage' : 'section front';
+		DDO.pageData.pageMainSection = (isHome) ? '/'+'homepage' : '/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/';
+		DDO.pageData.pageName = (isHome) ? '/' + 'homepage' + '/' : '/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/';
+	} else {
+	    DDO.pageData.pageContentType = 'article';
+		DDO.pageData.pageMainSection ='/';
+		DDO.pageData.pageName = trimPageNameUrl;
+	}
+	
+	DDO.pageData.pageTitle = 'Super Bowl 2017: 5 things to know before heading to Houston';
+	DDO.pageData.pageSiteSection = (isHome) ? 'home' : 'Sports';
+	 
+	if (DDO.pageData.pageContentType == '') {
+		var pageName = DDO.pageData.pageName;
+		var pageNameSplit = pageName.split('/');
+		DDO.pageData.pageContentType = pageNameSplit[1];
+	} 
+	
+	DDO.pageData.pageCategory = 'Football';
+	if (DDO.pageData.pageCategory == 'Error') {
+		DDO.pageData.pageContentType = "Page not found";
+	}
+	DDO.pageData.pageSubCategory = '';
+	
+	// CONTENT DATA (contentViewType is set in access meter metrics)
+	DDO.contentData = DDO.contentData || {};
+	var contentTopics ='';
+	
+		contentTopics += false ? 'super bowl' : 'super bowl' + ',';
+	
+		contentTopics += false ? 'jj_stub' : 'jj_stub' + ',';
+	
+		contentTopics += false ? 'cox_stub' : 'cox_stub' + ',';
+	
+		contentTopics += false ? 'cox_shared' : 'cox_shared' + ',';
+	
+		contentTopics += false ? 'cox_irresistible' : 'cox_irresistible' + ',';
+	
+		contentTopics += true ? 'ajc_stub' : 'ajc_stub' + ',';
+	
+	DDO.contentData.contentTopics = contentTopics;
+	var contentByline = '';
+	
+		contentByline += true ? 'Stephanie Toone' : 'Stephanie Toone' + ',';
+	
+	DDO.contentData.contentByline = contentByline + " " + 'The Atlanta Journal-Constitution';
+	
+	DDO.contentData.contentOriginatingSite =  'wngc-fm';
+	DDO.contentData.contentID = 'f225a30c-300b-4d61-a7ab-8cd86b833f4d';
+	DDO.contentData.contentVendor = 'ncd';
+	DDO.contentData.contentViewType = DDO.contentData.contentViewType || '';
+	DDO.contentData.contentPublishDate = '20170127162006';
+	DDO.contentData.blogName = '';
+	DDO.contentData.galleryName = '';
+	var pageSubContentType = '';
+	if(pageSubContentType == 'Post') {
+		DDO.contentData.blogName = 'Super Bowl 2017: 5 things to know before heading to Houston';
+	}else if(DDO.pageData.pageContentType == 'gallery') {
+		DDO.contentData.galleryName = 'Super Bowl 2017: 5 things to know before heading to Houston';
+	}
+	
+	//We need to set this one only for imported stories.
+	DDO.contentData.contentOriginatingCMS='Medley';
+	DDO.contentData.contentOriginatingID='3578950';
+	DDO.contentData.melvilID='news.medleystory.3578950';
+	
+	//SEARCH DATA PAGE CONTENT
+	
+		
+   
+  
+   DDO.pageData.pageNumber = location.search.split('page=')[1] ? location.search.split('page=')[1] : location.search.split('offset=')[1] ? location.search.split('offset=')[1] : '1';
+   
+<!-- begin metrics_elements_override block -->
+
+
+<!-- end metrics_elements_override block -->	
+	
+	// The following code defers loading the DTM library until after certain events have been fired,
+	// namely janrain, mg2, and access meter.
+	// Note: we need to add access meter to list of dependent events etc!
+	DDO.dependentEvents = dependentEvents;// e.g. ['authn', 'authz'];
+	  setTimeout(function(){
+		DDO.dependentEventCheck("TIMED OUT");
+	}, 10000); 
+	if(dependentEvents.length == 0){
+		DDO.utilities.triggerDTMPageView();//DDO.utilities.loadDTMLibrary();
+	}
+	
+	pubsub.publish("DDO-initialized");
+	console.log('DDO: ', DDO);
+}
+
+//Function to remove last alphanumeric chars from DDO.pageData.pageName url
+function removeExtracharFromUrl(urlPath){
+    var urlArr = urlPath.split('/');
+    if (urlArr.length > 3) {
+    	var urlArr_new = [];
+		for (var i=0; i<urlArr.length-2;i++) {
+			urlArr_new.push(urlArr[i]);
+		}
+		return urlArr_new.join('/') + '/';
+    } 
+    else {
+    	return urlPath;	
+    }
+}
+</script>
+
+<!-- end metrics_complete_override block -->
+
+
+
+
+
+
+
+
+
+<script>
+DDO.authn = {
+	init: function(pubsub, $){
+		var hasLocalStorage = DDO.hasLocalStorage();
+		DDO.userData = DDO.userData || {};
+		if(hasLocalStorage){
+			DDO.userData.userStatus = localStorage.getItem("metricsUserStatus")||"";
+			DDO.userData.userActive = localStorage.getItem("metricsUserActive")||"";
+			DDO.userData.userType = localStorage.getItem("metricsUserType")||"";
+			if(localStorage.getItem("janrainCaptureReturnExperienceData")){
+				DDO.userData.userProfileID = JSON.parse(localStorage.getItem("janrainCaptureReturnExperienceData"))["uuid"] ||"";
+			}
+		}
+		pubsub.subscribe("authn-login", function(event, data){
+			DDO.userData.userStatus = 'registered';
+			DDO.userData.userActive = 'logged-in';
+			DDO.userData.userType = 'standard';
+			if(hasLocalStorage){
+				localStorage.setItem("metricsUserStatus", DDO.userData.userStatus);
+				localStorage.setItem("metricsUserActive", DDO.userData.userActive);
+				localStorage.setItem("metricsUserType", DDO.userData.userType);
+			}
+			DDO.userData.userProfileID = data.uuid;
+			DDO.dependentEventCheck('authn');
+		});
+		pubsub.subscribe("authn-anonymous", function(event, data){
+			DDO.userData.userStatus = 'not registered';
+			DDO.userData.userActive = 'not logged-in';
+			DDO.userData.userType = 'anonymous';
+			delete DDO.userData.userProfileID;
+			if(hasLocalStorage){
+				localStorage.setItem("metricsUserStatus", DDO.userData.userStatus);
+				localStorage.setItem("metricsUserActive", DDO.userData.userActive);
+				localStorage.setItem("metricsUserType", DDO.userData.userType);
+			}
+			DDO.dependentEventCheck('authn');
+			DDO.dependentEventCheck('authz');
+		});
+		pubsub.subscribe("authn-modal-open", function(event, data){
+			if(typeof(window.janrainClickTracker)!="undefined"){
+				if(typeof(DDO.loginEventClickNumber)!="undefined"){
+					if(window.janrainClickTracker == DDO.loginEventClickNumber){
+						return;
+					}
+				}
+				DDO.loginEventClickNumber = window.janrainClickTracker;
+			}
+			DDO.action('loginEvent_start');
+		});
+ 		pubsub.subscribe("login-complete", function(event, data){
+			DDO.action('loginEvent_complete');
+		});
+		pubsub.subscribe("authn-logout", function(event, data){
+			DDO.userData.userStatus = 'not registered';
+			DDO.userData.userActive = 'not logged-in';
+			DDO.userData.userType = 'anonymous';
+			delete DDO.userData.userProfileID;
+			if(hasLocalStorage){
+				localStorage.setItem("metricsUserStatus", DDO.userData.userStatus);
+				localStorage.setItem("metricsUserActive", DDO.userData.userActive);
+				localStorage.setItem("metricsUserType", DDO.userData.userType);
+			}
+			DDO.action('loginEvent_logout');
+		});		
+		// When user is auto-logged in.
+		pubsub.subscribe("authn-login-return", function(event, data) {
+			 DDO.action('loginEvent_return-user');
+			 DDO.dependentEventCheck("authz");
+		});
+		pubsub.subscribe("registration-success", function(event, data) {
+			DDO.action('loginEvent_new-user-register');
+			
+		});
+		pubsub.subscribe("login-error", function(event, data) {
+			DDO.action('loginEvent_error');
+		});
+	}
+};
+</script>
+
+
+
+
+
+
+<script>
+DDO.comment = {
+	init: function(pubsub, $){
+		pubsub.subscribe('comment-submit', function(event, data){
+			DDO.action('commentSubmitted');
+			// data should be like: {element:"[widget clicked]",action:"click"}
+			DDO.action('interaction-click', data);
+		});
+		
+		pubsub.subscribe('additional-comments', function(event, data){
+			DDO.action('additionalComments', data);
+		});
+	}
+};
+</script>
+
+
+
+
+
+
+<script>
+DDO.gallery = {
+	init: function(pubsub, $){
+		pubsub.subscribe("gallery-secondary", function(event, data){
+			DDO.action('gallerySecondaryPhotoView');
+		});
+		pubsub.subscribe("gallery-opened", function(event, data){
+			DDO.action('galleryOpened');
+		});
+	}
+};
+</script>
+
+
+
+
+
+
+<script>
+DDO.interaction = {
+	init: function(pubsub, $){
+		// pubsubcutioner can use regex for event names, thus all interaction type events
+		// can be listened to assuming the data is correct.
+		pubsub.subscribe("site-interaction", function(event, data){
+			// data should be like: {element:"[widget clicked]",action: "[button clicked]"}
+			DDO.action(event, data);
+		});
+	}
+};
+</script>
+
+
+
+
+
+
+<script>
+DDO.breakingNews = {
+	init: function(pubsub, $){
+		pubsub.subscribe("breaking-news-banner", function(event, data){
+			DDO.action("breakingNews", {contentType:DDO.pageData.pageContentType});
+		});
+		
+		pubsub.subscribe("breaking-news-story", function(event, data){
+			DDO.action('breakingNewsStory');
+		});
+	}
+};
+</script>
+
+
+
+
+
+
+
+<script>
+DDO.socialShare = {
+	init: function(pubsub, $){
+		pubsub.subscribe("authn-social-share", function(event, data){
+			DDO.action("socialClick", data);			
+		});
+	}
+};
+</script><script>
+	//window.pubsub = window.pubsubcutioner || window.PubSub;
+	DDO.init(pubsubcutioner, [ 'authn', 'comment' ]);
+
+	var items = [ 'authn', 'interaction', 'breakingNews', 'socialShare',
+			'gallery', 'comment' ];
+	for (var i = 0; i < items.length; i++) {
+		DDO[items[i]].init(pubsubcutioner);
+	}
+</script>
+
+
+<meta name="eomportal-instanceid" content="230236"/>
+<meta name="eomportal-id" content="7789"/>
+<meta name="eomportal-loid" content="2.0.1985811529"/>
+<meta name="eomportal-uuid" content="f225a30c-300b-4d61-a7ab-8cd86b833f4d"/>
+<meta name="eomportal-lastUpdate" content="Fri Feb 17 00:50:13 EST 2017"/>
+<meta name="web_type" content="jpc"/>
+<link rel="alternate" media="only screen and (max-width: 640px)"
+	href="http:///" />
+
+
+<script type="text/javascript">
+	// Global domain references from current environment used by libs on Wraps 
+	var current_env_domain = 'www.yourgeorgiacountry.com';
+</script>
+
+
+
+
+<!-- begin styles block --><!-- CSS and styling -->
+<!-- CSS -->
+<link
+	href="//www.yourgeorgiacountry.com/_css_core_wired/
+	core.css,
+	layout.css,
+	utility.css,
+	modules.css,
+	font-settings.css,
+	typography.css,
+	widgets.css,
+	font-awesome.min.css,
+	janrain.css,
+	weathersprite.css,
+	methode-text-styles.css,
+	weather.css,
+	jquery.oembed.css?last_updated=2016-07-08"
+	type="text/css" rel="stylesheet" media="screen" charset="utf-8" />
+
+<link href="//www.yourgeorgiacountry.com/_css_core_wired/
+	print.css"
+	type="text/css" rel="stylesheet" media="print" charset="utf-8" />
+
+
+<!--  Link to the active Theme using Methode Theme Tool -->
+<link href="//www.yourgeorgiacountry.com/sept-2016-ygc-theme/OYEMWGHotbRX22ooOywBCM/" type="text/css"
+	rel="stylesheet" media="screen" charset="utf-8" />
+
+
+<style type="text/css">
+.cmHeaderWrap, .cmNavigation, .cmSubHeaderWrap, .cmBodyWrap,
+	.cmInnerFooterWrap, .cmOuterFooterWrap {
+	min-width: 970px
+}
+
+.cmContainer9 {
+	width: 970px
+}
+</style>
+
+<link
+	href="//www.yourgeorgiacountry.com/_css_music_wired/
+	sticky.css,
+	header.css,
+	musicsiterefresh.css?last_updated=2016-04-21"
+	type="text/css" rel="stylesheet" />
+
+<style type="text/css">
+.cmRadioHeaderNowPlayingCurveRect {
+	mask: url(/#np_curve);
+}
+
+.cmRadioHeaderSticky .cmRadioHeaderNowPlayingCurveRect {
+	mask: url(/#np_curve_sticky);
+}
+
+.cmRadioHeaderListenLiveCurveRect {
+	mask: url(/#ll_curve_sticky);
+}
+</style>
+
+<!-- Music Core CSS -->
+<link
+	href="//www.yourgeorgiacountry.com/_css_music_core/
+		rangeslider.css,
+		podcast_player.css,
+		closings.css"
+	type="text/css" rel="stylesheet" media="screen" /><!-- end styles block --><!-- begin extended_styles block --><!-- extended_styles -->
+<!-- end extended_styles block --><!-- begin header_javascript block --><script>
+	var flipper = new Object();
+	flipper.active_flags = {
+		"active_flags" : [ "Jump2GoUrl", "GoogleAnalytics_Enable", "CMSTC-969",
+				"CMSAP-1119-visible", "CMSSAI-858", "twitter_card",
+				"disable_auth_recovery", "mobile_image_slider",
+				"radio-v3-mobile-header", "JANUS-141", "CMSTC-1011",
+				"new_event_urls", "B-09076", "MaxMapRadar_Enable",
+				"JANUS-1244", "CMSPD-415", "CMSSAI-1343", "Chartbeat_Enable",
+				"HYBRID_LISTS", "JANUS-4777", "CMSAM-408", "ComScore_Enable",
+				"image_slider", "CMSWTA-416", "CMSTSBC-169",
+				"qualtrics_enable", "Quantcast_Enable", "VisualRevenue_Enable",
+				"CMSIMPG-409", "JANUS-4778", "CMSTSBC-165", "JANUS-4779",
+				"CMSTSBC-163", "CMSTSBC-166",
+				"SchoolClosingsKeywordSearch_Disable", "B-08627", "jquery-2",
+				"B-10108", "AppMeasurement_Enable", "radio-redesign-mobile",
+				"radio-redesign-wired", "MaxMapRadarWired_Enable",
+				"Jump2GoMakesongs", "B-11042", "livefyre-global-auth",
+				"livefyre-comments", "music-site-refresh",
+				"radio-v2-mobile-body", "B-06796",
+				"janrain_socialshare_enable", "CMSWTA-417", "CMSWTA-443" ]
+	};
+	flipper.is_active = function(key) {
+		for (var i = 0; i < flipper.active_flags.length; i++) {
+			if (flipper.active_flags[i] == key)
+				return true;
+		}
+		return false;
+	}
+</script>
+
+<!-- Music Core JS -->
+<script type="text/javascript"
+	src="//www.yourgeorgiacountry.com/_js_music_core/
+	pii-scrubber.js,
+	jquery-1.7.1.js,
+	modernizr.js,
+	es5-shim.js,
+	json2.js,
+	lumberjack.min.js,
+	harmony.min.js,
+	underscore.js,
+	v8-promise.js,
+	jquery-cmg-plugins.min.js,
+	jquery.cookie.js,
+	jquery-beacons.min.js,
+	jquery.truncate.js,
+	cmg.js,
+	cmg-utility.js,
+	ad-util.min.js,
+	cmg-mobile-util.js,
+	jquery.oembed.js?last_updated=2017-01-06"></script>
+
+<script type="text/javascript"
+	src="//www.yourgeorgiacountry.com/_js_radio_common/
+	image_slider.js,
+	cmtooltip.js
+	?last_updated=2016-04-05"></script>
+
+
+<script>
+	cmg.mediaurl = '/assets/';
+	cmg.site_meta = {
+		domain : 'www.yourgeorgiacountry.com',
+		media_type : 'radio',
+		site_name : 'wngc-fm',
+		premium_status : ''
+	};
+	var site_domain = 'www.yourgeorgiacountry.com';
+</script>
+
+<script type="text/javascript"
+	src="//www.yourgeorgiacountry.com/_js_radio_common/
+		jquery.cmfullwidth.js,
+		cmnav.js,
+		jquery.ui.core.min.js,
+		jquery.ui.widget.min.js,
+		jquery.ui.mouse.min.js,
+		jquery.ui.position.min.js,
+		jquery.ui.datepicker.min.js,
+		writeCapture.js,
+		jquery.writeCapture.js,
+		mustache.js?last_updated=2016-07-07"></script>
+
+
+<style id="cm-adutil-styles"></style>
+<script>
+	(function() {
+		var $jsi = {};
+	}());
+</script>
+<script src="//www.googletagservices.com/tag/js/gpt.js"></script>
+<script>
+	window.googletag = window.googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	googletag.cmd.push(function () {
+	     googletag.pubads().set('page_url', location.href);
+	     googletag.pubads().collapseEmptyDivs();
+	     googletag.pubads().setCentering(true);
+	});
+	window.cmg = window.cmg || {};
+	cmg.harmony = Harmony();
+</script>
+<script>
+	cmg.query(document).ready(function() {
+		cmg.query(document).on('click', 'a.cmNeedsNext', function(e) {
+			e.preventDefault();
+			var new_url = url_with_next(cmg.query(this).attr('href'));
+			window.location = new_url;
+		});
+		cmg.query(document).on('submit', 'form.cmNeedsNext', function(e) {
+			add_next_params(cmg.query(this));
+		});
+	});
+
+	function add_next_params(el) {
+		var attr = el.attr('action') ? 'action' : 'href';
+		var existing_url = el.attr(attr);
+		el.attr(attr, url_with_next(existing_url));
+	}
+	function url_with_next(url) {
+		url = url.replace(/\\?next=?&/, '?').replace(/&next=?&/, '&').replace(
+				/[?&]next=?$/, '').replace(/[?&]next=?#/, '#');
+		var next_param = get_param('next', url);
+		if (next_param) // Johnny 5
+			return url;
+		var connector = (url.match(/\\?/)) ? "&" : "?";
+		var next_val = window.location.pathname + window.location.search
+				+ window.location.hash;
+		return url + connector + 'next=' + encodeURIComponent(next_val);
+	}
+	function get_param(name, url) {
+		var m = RegExp('[?&]' + name + '=([^&^#]*)').exec(url);
+		return m && decodeURIComponent(m[1].replace(/\\+/g, ' '));
+	}
+</script>
+<script>
+	cmg.query(function() {
+		var NUM_RETRIES = 3;
+		var URL_ATTR = 'data-href';
+		var REPLACE_SELECTOR = 'span.cmAjaxInclude';
+		var urls = [];
+		cmg.query(REPLACE_SELECTOR).each(function() {
+			url = cmg.query(this).attr(URL_ATTR);
+			if (url) {
+				urls.push(url);
+			}
+		});
+		if (urls.length > 0) {
+			var retriesLeft = NUM_RETRIES;
+			var settings = {
+				type : "GET",
+				url : cmg.ajax_include_url,
+				cache : false,
+				data : {
+					urls : JSON.stringify(urls)
+				},
+				dataType : 'json',
+				success : function(data, textStatus, xhr) {
+					errorUrls = [];
+					cmg.query.each(data, function(url, response) {
+						if (response.status === 200) {
+							var span = cmg.query(REPLACE_SELECTOR + '['
+									+ URL_ATTR + '="' + url + '"]');
+							span.replaceWith(response.content);
+						} else {
+							errorUrls.push(url);
+						}
+					});
+					if (errorUrls.length > 0) {
+						settings.data.urls = JSON.stringify(errorUrls);
+						settings.error();
+					}
+					if (errorUrls.length === 0 || retriesLeft === 0) {
+						cmg.query(document).trigger('ajax_includes');
+					}
+				},
+				error : function(xhr, textStatus, errorThrown) {
+					if (retriesLeft > 0) {
+						retriesLeft -= 1;
+						cmg.query.ajax(settings);
+					}
+				}
+			};
+			cmg.query.ajax(settings);
+		}
+	});
+</script>
+<script>
+	cmg.query(function () {
+       cmg.query('.oembed').each(function(){
+    	   cmg.query(this).oembed(); 
+        }) 
+	});
+</script>
+<script
+	src="//www.yourgeorgiacountry.com/assets/js/wired/common/ndn_script_injector.js"></script>
+
+
+<script type="text/javascript"
+	src="//www.yourgeorgiacountry.com/_js_radio_common/
+	rotator.js,
+	jquery.ui.dialog.min.js,
+	jquery.cmlightbox.js,
+	cmwidgets.js,
+	canvases.js,
+	browserfix.js,
+	cmg.video.js?last_updated=2016-06-24"></script>
+
+<script type="text/javascript"
+	src="//www.yourgeorgiacountry.com/_js_music_wired/
+	sticky.js,
+	menu.js,
+	main.js,
+	header-onair.js,
+	header-lsp.js?last_updated=2016-04-14"></script>
+
+<!-- delayed scripts -->
+<script type="text/javascript" src="//cdn-social.janrain.com/social/janrain-social.min.js"></script>
+<script type="text/javascript" src="//www.yourgeorgiacountry.com/r//PortalConfig/common/widgets/janrain_social_share/js/socialshare.js"></script>
+<script type="text/javascript">
+
+
+// Initialise Janrain social-share
+
+	
+	
+		function janrainSocialInit(){
+		
+			janrain.settings.social = {
+			    providers: [
+			        "facebook",
+			        "twitter",
+			        "native-googleplus",
+			        "email-googleplus",
+			        "email-mailto"
+			    ],
+			    orientation: "horizontal",
+			    formFactor: "bar",
+			    shareCountMode: "none"
+			};
+		}
+
+if(!window.janrainSocialDeferInit){
+	janrainSocialInit();
+}
+
+// Idempotency, and we want to make sure this can be included in any order.
+// This is pure javascript, no dependencies (e.g. jQuery) necessary.
+// Get or initialize namespaces.
+window.janrain = window.janrain || {};
+janrain.settings = janrain.settings || {};
+janrain.settings.capture = janrain.settings.capture || {}; 
+janrain.settings.capture.stylesheets = janrain.settings.capture.stylesheets || [];
+janrain.settings.capture.stylesheets.push(
+	"//www.yourgeorgiacountry.com/r//PortalConfig/common/widgets/janrain_social_share/css/socialshare.css"
+);
+
+var _janrainSocialOnLoadLoaded = false;
+function janrainSocialOnLoad() {
+	
+	if(!_janrainSocialOnLoadLoaded){
+		_janrainSocialOnLoadLoaded = true;
+	    // Janrain provided social-share hooks/event-handlers.	    
+		janrain.social.on({
+		
+			// Run script for UX improvements when tweet sharing.
+			// cmg.monitorTweetShares() is defined in: /janrain_social_share/js/socialshare.js
+			provider_select: function(data) {
+				if (data.provider == 'twitter') {
+					janrain.cmg.monitorTweetShares();	
+				}
+			},
+			
+			// Fire social-share metric when share is successful.
+	 		share_done:  function(data) {  
+	 			var pubsub = window.pubsub || window.pubsubcutioner;
+	 			var payload = {
+	 				site: data.provider, 
+	 				type: "share", 
+	 				contentType: DDO.pageData.pageContentType
+	 			};
+	 			pubsub.publish('authn-social-share', payload);
+	 			console.log('publish("authn-social-share") 2');
+	  		}
+		});	
+		pubsub.publish('authn-social-load');
+	} 
+}
+
+</script>
+<!-- END delayed scripts -->
+<!-- end header_javascript block --></head>
+
+
+<!-- begin body_tag_begin block --><body id="cmBaseBody" class="cmBody theme-background-color theme-background-image">
+	<!-- header_include_override  -->
+    <!-- end body_tag_begin block --><!-- begin janrain_common block --><!-- Import Radio Janrain Configuration: DO NOT TOUCH THIS IMPORT !!!! -->
+			<script>
+	window.janrain = window.janrain || {};
+	window.janrain.settings = window.janrain.settings || {};
+	window.janrain.settings.capture = window.janrain.settings.capture || {};
+	janrain.settings.appUrl = 'https://login.cmgdigital.com';
+	janrain.settings.capture.appId = '6z4jnndkpe6dmfx7vdg4c7hkmz';
+	janrain.settings.capture.captureServer = 'https://cmg.janraincapture.com';
+	janrain.settings.capture.redirectUri = 'http://www.yourgeorgiacountry.com';
+	janrain.settings.capture.clientId = '3gxj9nj9m9dbznx7btdznyxpe9u475pt';
+	janrain.settings.capture.federateServer = 'https://sso.cmgdigital.com';
+	janrain.settings.capture.federateXdReceiver = 'http://www.yourgeorgiacountry.com/auth/federate_xd';
+
+	janrain.settings.format = "one row";
+	janrain.settings.width = "147";
+
+	janrain.settings.capture.flowName = 'signIn';
+
+	// Backplane needed for LiveFyre commenting
+	janrain.settings.capture.backplane = true;
+	janrain.settings.capture.backplaneBusName = 'coxmediagroup.com';
+	
+	janrain.settings.social.shareCountMode = "combined";
+</script>
+
+
+<!-- Common Janrain Include -->
+
+
+
+
+
+
+
+
+
+	<script>
+var pubsub = window.pubsubcutioner || window.amplify || window.pubsub;
+if(typeof(pubsub)=="undefined"){
+	pubsub={
+			subscribe:function(){
+				if(window.pubsubcutioner || window.amplify){
+					var pubsubProxy = window.pubsubcutioner || window.amplify;
+					pubsubProxy.subscribe.apply(pubsubProxy, arguments);
+					return;
+				}
+				if(typeof(DDO.deferredSubscribe) == "undefined"){
+					DDO.deferredSubscribe = [];
+				}
+				DDO.deferredSubscribe.push(arguments);
+			},
+			publish:function(){
+				if(window.pubsubcutioner || window.amplify){
+					var pubsubProxy = window.pubsubcutioner || window.amplify;
+					pubsubProxy.publish.apply(pubsubProxy, arguments);
+					return;
+				}
+				if(typeof(DDO.deferredPublish) == "undefined"){
+					DDO.deferredPublish = [];
+				}
+				DDO.deferredPublish.push(arguments);
+			}
+	};
+	
+}
+</script>
+	
+	<script type="text/javascript" src="//www.yourgeorgiacountry.com/r//PortalConfig/common/widgets/janrain/js/janrain.js"></script>
+
+
+
+
+
+
+
+
+<!-- END Common Janrain Include -->
+
+
+<!-- Radio Janrain Modals -->
+<div style="display: none;" id="signIn">
+	<div class="capture_header">
+		<h1>Sign In / Register</h1>
+	</div>
+	<div class="capture_signin">
+		<h2>Sign in with your existing account</h2>
+		{* loginWidget *} <br />
+	</div>
+	<div class="capture_backgroundColor">
+		<div class="capture_signin">
+			<h2>Sign in with your email</h2>
+			{* #userInformationForm *}
+			<div>{* traditionalSignIn_emailAddress *}</div>
+			<div>{* traditionalSignIn_password *}</div>
+			<div class="capture_form_item">
+				{* traditionalSignIn_signInButton *} <a href="#"
+					data-capturescreen="forgotPassword" id="forgotPasswordLink">Forgot
+					your password?</a>
+			</div>
+			{* /userInformationForm *}
+		</div>
+	</div>
+	<div class="capture_newUser capture_signin">
+		<h2>New User?</h2>
+		<a href="#" class="capture_btn capture_primary"
+			data-capturescreen="traditionalRegistration">Create a New Account</a>
+	</div>
+</div>
+<div style="display: none;" id="returnSocial">
+	<div class="capture_header">
+		<h1>Sign In / Register</h1>
+	</div>
+	<div class="capture_signin">
+		<h2>Welcome Back {* welcomeName *}</h2>
+		{* loginWidget *}
+		<div class="capture_centerText switchLink">
+			<a href="#" data-cancelcapturereturnexperience="true">Use another
+				account</a>
+		</div>
+	</div>
+</div>
+<div style="display: none;" id="returnTraditional">
+	<div class="capture_header">
+		<h1>Sign In / Register</h1>
+	</div>
+	<div class="capture_backgroundColor">
+		<div class="capture_signin">
+			<h2>Welcome back. Please sign in</h2>
+			{* #userInformationForm *}
+			<div>{* traditionalSignIn_emailAddress *}</div>
+			<div>{* traditionalSignIn_password *}</div>
+			<div class="capture_form_item">
+				<div>{* traditionalSignIn_signInButton *}</div>
+				<a href="#" data-capturescreen="forgotPassword"
+					id="forgotPasswordLink">Forgot your password?</a>
+			</div>
+			<div class="capture_centerText switchLink">
+				<a href="#" data-cancelcapturereturnexperience="true">Use
+					another account</a>
+			</div>
+			{* /userInformationForm *}
+		</div>
+	</div>
+</div>
+<div style="display: none;" id="socialRegistration"
+	class="capture_lrg_footer">
+	<div class="capture_header">
+		<h1>You're Almost Done!</h1>
+	</div>
+	<div class="capture_signup">
+		<h2>Select a display name and password</h2>
+		{* #socialRegistrationForm *}
+		<div>{* socialRegistration_displayName *}</div>
+		<div>{* socialRegistration_emailAddress *}</div>
+		<div>{* traditionalRegistration_password *}</div>
+		<div>{* traditionalRegistration_passwordConfirm *}</div>
+		<h2>Tell us about yourself</h2>
+		<div>{* registration_firstName *}</div>
+		<div>{* registration_lastName *}</div>
+		<div>{* registration_postalZip *}</div>
+		<div>{* registration_birthday *}</div>
+		<div>{* registration_gender *}</div>
+		<div class="capture_form_item">
+			<label>*Indicates Required Field</label>
+		</div>
+		{* agreeToTerms *}
+		<div class="capture_footer">
+			<div class="capture_left">{* backButton *}</div>
+			<div class="capture_right">
+				<div>{* socialRegistration_signInButton *}</div>
+			</div>
+		</div>
+		{* /socialRegistrationForm *}
+	</div>
+</div>
+
+<div style="display: none;" id="traditionalRegistration">
+	<div class="capture_header">
+		<h1>Create a New Account</h1>
+	</div>
+	<div class="capture_signup">
+		<h2>Select a display name and password</h2>
+		<p>
+			Already have an account? <a href="#" data-capturescreen="signIn">Sign
+				In</a>
+		</p>
+		{* #registrationForm *}
+		<div>{* traditionalRegistration_displayName *}</div>
+		<div>{* traditionalRegistration_emailAddress *}</div>
+		<div>{* traditionalRegistration_password *}</div>
+		<div>{* traditionalRegistration_passwordConfirm *}</div>
+		<h2>Tell us about yourself</h2>
+		<div>{* registration_firstName *}</div>
+		<div>{* registration_lastName *}</div>
+		<div>{* registration_postalZip *}</div>
+		<div>{* registration_birthday *}</div>
+		<div>{* registration_gender *}</div>
+		<div class="capture_form_item">
+			<label>*Indicates Required Field</label>
+		</div>
+		{* agreeToTerms *}
+		<div class="capture_footer">
+			<div class="capture_left">{* createAccountButton *}</div>
+		</div>
+		{* /registrationForm *}
+	</div>
+</div>
+<div style="display: none;" id="traditionalRegistrationBlank">
+	<div class="capture_header">
+		<h1>Create a New Account</h1>
+	</div>
+	<div class="capture_signup">
+		<p>
+			Already have an account? <a href="#" data-capturescreen="signIn">Sign
+				In</a>
+		</p>
+		{* #registrationFormBlank *}
+		<div>{* registration_firstName *}</div>
+		<div>{* registration_lastName *}</div>
+		<div>{* traditionalRegistration_displayName *}</div>
+		<div>{* traditionalRegistration_emailAddressBlank *}</div>
+		<div>{* registration_birthday *}</div>
+		<div>{* registration_gender *}</div>
+		<div>{* registration_postalZip *}</div>
+		<div>{* traditionalRegistration_passwordBlank *}</div>
+		<div>{* traditionalRegistration_passwordConfirmBlank *}</div>
+		<div class="capture_form_item">
+			<label>*Indicates Required Field</label>
+		</div>
+		{* agreeToTerms *}
+		<div class="capture_footer">
+			<div class="capture_left">{* backButton *}</div>
+			<div class="capture_right">{* createAccountButton *}</div>
+		</div>
+		{* /registrationForm *}
+	</div>
+</div>
+
+<div style="display: none;" id="registrationSuccess">
+	<div class="capture_header">
+		<h1>Thank you for registering!</h1>
+	</div>
+	<div class="capture_success">
+		<p>We have sent you a confirmation email. Please check your email
+			and click on the link to activate your account.</p>
+		<div class="capture_footer">
+			<span onclick="janrain.capture.ui.modal.close()"
+				class="capture_btn capture_primary">Close</span>
+		</div>
+	</div>
+</div>
+
+<div style="display: none;" id="registrationSuccessConfirmed">
+	<div class="capture_header">
+		<h1>Thank you for registering!</h1>
+	</div>
+	<div class="capture_success">
+		<p>We look forward to seeing you frequently. Visit us and sign in
+			to update your profile, receive the latest news and keep up to date
+			with mobile alerts.</p>
+		<div class="capture_footer">
+			<span onclick="janrain.capture.ui.modal.close()"
+				class="capture_btn capture_primary">Close</span>
+		</div>
+	</div>
+</div>
+
+<div style="display: none;" id="forgotPassword">
+	<div class="capture_header">
+		<h1>Create a new password</h1>
+	</div>
+	<div class="retrieve_password">
+		<p>Don't worry, it happens. We'll send you a link to create a new
+			password.</p>
+		{* #forgotPasswordForm *}
+		<div>{* forgotPassword_emailAddress *}</div>
+		<div class="capture_footer">
+			<div class="capture_left">{* backButton *}</div>
+			<div class="capture_right">{* forgotPassword_sendButton *}</div>
+		</div>
+		{* /forgotPasswordForm *}
+	</div>
+</div>
+
+<div style="display: none;" id="forgotPasswordSuccess">
+	<div class="capture_header">
+		<h1>Email sent</h1>
+	</div>
+	<div class="retrieve_password">
+		<p>We have sent you an email with a link to change your password.</p>
+		<div class="capture_footer">
+			<a href="#" onclick="janrain.capture.ui.modal.close()"
+				class="capture_btn capture_primary">Close</a>
+		</div>
+	</div>
+</div>
+
+<div style="display: none;" id="forgotPasswordSuccess">
+	<div class="capture_header">
+		<h1>Create a new password</h1>
+	</div>
+	<div class="retrieve_password">
+		<p>We've sent an email with instructions to create a new password.
+			Your existing password has not been changed.</p>
+		<div class="capture_footer">
+			<a href="#" onclick="janrain.capture.ui.modal.close()"
+				class="capture_btn capture_primary">Close</a>
+		</div>
+	</div>
+</div>
+<div style="display: none;" id="mergeAccounts">{* mergeAccounts *}
+</div>
+<div style="display: none;" id="traditionalAuthenticateMerge">
+	<div class="capture_header">
+		<h1>Sign in to complete account merge</h1>
+	</div>
+	<div class="capture_signin">
+		{* #tradAuthenticateMergeForm *}
+		<div>{* traditionalSignIn_emailAddress *}</div>
+		<div>{* mergePassword *}</div>
+		<div class="capture_footer">
+			<div class="capture_left">{* backButton *}</div>
+			<div class="capture_right">{* traditionalSignIn_signInButton *}
+			</div>
+		</div>
+		{* /tradAuthenticateMergeForm *}
+	</div>
+</div>
+
+<div style="display: none;" id="resendVerification">
+	<div class="capture_header">
+		<h1>Resend Email Verification</h1>
+	</div>
+	<div class="retrieve_password">
+		<p>To sign in you must verify your email address. Fill out the
+			form below and we'll send you an email to verify.</p>
+		{* #resendVerificationForm *}
+		<div>{* traditionalSignIn_emailAddress *}</div>
+		<div class="capture_fox_buttoncol">{* newPasswordFormButton *}</div>
+		{* /resendVerificationForm *}
+	</div>
+</div>
+
+<div style="display: none;" id="resendVerificationSuccess">
+	<div class="capture_header">
+		<h1>Your Verification Email Has Been Sent</h1>
+	</div>
+	<div class="retrieve_password">
+		<p>Check your email for a link to verify your email address.</p>
+		<div class="capture_footer">
+			<a href="#" data-capturescreen="signIn"
+				class="capture_btn capture_primary">Sign in</a>
+		</div>
+	</div>
+</div>
+<!-- END Radio Janrain Modals -->
+
+<script>
+	// Event listeners for broadcasts from shared widget
+	pubsub.subscribe('authn-login', function(event, data) {
+		
+		// Testing found that 'authn-login' can be fired with data from cookies
+		// when there's no active sesssion. This followed Social Acct unlinking then
+		// sign-out, then click sign-in and the header updates behind the sign-in modal
+		if (janrain.capture.ui.hasActiveSession()) {
+			var welcome_msg = data.name ? "Hi, " + data.name : "Hello";
+			cmg.query('.cmUserAuthed > #cmHeaderUserRegistrationLink').text(
+					welcome_msg);
+	
+			cmg.query('#cmJanrainAuthLinks > .cmUserAnonymous').hide();
+			cmg.query('#cmJanrainAuthLinks > .cmUserAuthed').show();
+	
+			janrain.settings.capture.flowName = 'standard_newspaper';
+		}
+	});
+
+	// can be broadcast by local click listeners or shared common widget (ex: livefyre)
+	pubsub.subscribe('authn-logout', function(event, data) {
+
+		// C&P from Medley after session sticking past Social Unlinks in MC
+		var cookies = [ 'ur_name', 'ur_metrics', 'ur_views_total_count',
+				'medley_id', 'DDO_user_data', 'DDO_user_data', 'session_id',
+				'sessionid', 'welcome_info_name'];
+        for (var i = 0; i < cookies.length; i++) {
+            jQuery.cookie(cookies[i], '', {expires:-2, path:'/'});
+        }
+
+		radio_music_logout_dom_update();
+	});
+
+
+	//This is unneeded. Broadcasting happens from Janrain.
+	/*cmg.query(document).ready(function() {
+		cmg.query(".cmLogout").on("click", function(evt) {
+			evt.preventDefault();
+			pubsub.publish('authn-logout');
+		});
+	});*/
+
+	function radio_music_logout_dom_update() {
+		// For now this simply reloads the page, in the future we may want to 
+		// manipulate DOM elements instead
+		location.reload();
+	}
+</script><!-- end janrain_common block -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="cmBaseBodyOverflowFix">
+
+		<!-- begin outer_header_wrapper block --><div class="cmV2HeaderBackgroundImage"></div>
+		<div id="fb-root"></div>
+		<script type="text/javascript">
+			window.fbAsyncInit = function() {
+				cmg.query(document).ready(function() {
+					cmg.query(document).trigger("fb_loaded");
+				});
+			};
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id))
+					return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<!-- begin ad_rp06 block --><div id="adslot_div_RP06_0px_infinity" class="cmAd RP06" ad_slot="true" ad_sizes="[[1,1]]" ad_name="RP06" ad_group="0px-infinity"></div>
+			<!-- end ad_rp06 block --><!-- begin ad_rp07 block --><div id="adslot_div_RP07_0px_infinity" class="cmAd RP07" ad_slot="true" ad_sizes="[[1,1]]" ad_name="RP07" ad_group="0px-infinity"></div>
+			<!-- end ad_rp07 block --><script type="text/javascript">
+			var mobUserAgentPttn = new RegExp(
+					"iphone|ipod|android|blackberry|symbian|nokia|sonyericsson|sie-|opera\\ mini|portalmmm/|windows\ ce|windows\ phone|iemobile|up.browser|up.link|802sh|alcatel-|amoi-|attws|au-mic|audiovox|avantgo|benq|cdm-|ericsson|ericy-|gs308|hitachi-p300|htc-|i-2100|kwc-|lg-|lg/u|lge-|lge/u|lowestcd|mo0|mobilephone|mot-|motorola|n5-10|nec-|opwv|owg1|palm|panasonic|pg-c|philips|pls|pm-|pn-215|profile/midp|qci-|rl-|rpt-httpclient|sagem|samsung|sanyo|sch-a|sch-n|scp-|sec-|sendox|sgh|sharp|smartphone|spha|v60t|vi600|vk530|vm4050|vodafone|wapper|wildseed|winwap-pro"
+							.replace(/ /g, "\\s"), "i");
+			var mobBlacklistPttn = new RegExp(
+					"^/(ads|alerts|answers|audioclips|bands|categories|categories|events|documents|drinkspecials|events|features|forums|instruments|maps|mp3|lsp|onthestreet|places|playlists|podcasts|polls|pr|qa|questionnaires|recipes|restaurants|restaurants|specials|search|songs|special_coverage|staff|stories|traffic|tumble)"
+							.replace(/ /g, "\\\s"), "i");
+
+			console.log('USER AGENT MOBILE'
+					+ mobUserAgentPttn.test(navigator.userAgent));
+			console.log('PATH IN BLACKLIST'
+					+ mobBlacklistPttn.test(location.pathname));
+
+			if (mobUserAgentPttn.test(navigator.userAgent)
+					&& !mobBlacklistPttn.test(location.pathname)) {
+				document.getElementById('cmSiteSwitchHead').style.display = "block";
+			}
+		</script>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	
+				
+	
+	
+
+
+
+<div id="cmSiteSwitchHead" class="cmSiteSwitch" style="display: none;">
+			<a href="//m.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/" class="cmMobileSiteLink">
+						<p>
+							<span>View mobile site</span>
+						</p>
+					</a>		
+				</div>
+
+		<script type="text/javascript">
+			(function($) {
+				$(function() {
+					// Read a page's GET URL variables and return them as an associative array.
+					function getUrlVars() {
+						var vars = [], hash;
+						var hashes = window.location.href.slice(
+								window.location.href.indexOf('?') + 1).split(
+								'&');
+						for (var i = 0; i < hashes.length; i++) {
+							hash = hashes[i].split('=');
+							vars.push(hash[0]);
+							vars[hash[0]] = hash[1];
+						}
+						return vars;
+					}
+
+					var came_from_mobile = getUrlVars()['nmredir'];
+					console.log('came_from_mobile: ' + came_from_mobile)
+					if (came_from_mobile == 'true') {
+						$('#cmSiteSwitchHead').show();
+					}
+
+				});
+			})(jQuery);
+		</script>
+
+		<!-- end outer_header_wrapper block --><div class="cmMainContainer music-site-refresh">
+			<div class="cmContainer9">
+			
+				<!-- begin inner_header_wrapper block --><!-- begin cmHeaderWraps block-->
+<div class="cmHeaderWrap cmCol9">
+	<!-- begin cmHeaderWrap block-->
+	<div class="cmRadioHeader">
+		<div class="cmRadioHeaderTopBar">
+			<ul class="cmRadioHeaderNavTwoTop">
+	<li>
+			<a href="http://beta.yourgeorgiacountry.com" target="_self"> Home</a></li>
+	<li>
+			<a href="http://www.yourgeorgiacountry.com/lsp/" target="_self" title=""> Last						Songs Played</a>
+				</li>
+	<li>
+			<a href="http://events.yourgeorgiacountry.com.eventful.com/" target="_self">Community Calendar</a></li>
+	<li>
+			<a href="http://www.yourgeorgiacountry.com/entertainment/personalities/air/87ct2KJSZT4ODErr6uUW5N/" target="_self" title="">On-Air</a>
+				</li>
+	<li>
+						<a href="http://www.yourgeorgiacountry.com/online/inside-your-georgia-country/O673oldJlLDrOFRqcCf8AL/" target="_self" title="">Inside</a>
+				<svg height="7px" width="8px">
+							<polygon class="cmRadioHeaderNavDropdownCaret" points="0,0 8,0 4,7" />
+						</svg>
+						
+						<ul class="cmRadioHeaderNavTwoInner" style="display: none;">
+							<li><a href="http://www.yourgeorgiacountry.com/entertainment/your-georgia-country-artist-interviews-and-sound-clips/Gi7qF4fGw3jGDrzvbisGoK/" target="_self" title="">Your Georgia Country Interviews</a>
+				</li>
+				<li><a href="http://preview.yourgeorgiacountry.com/entertainment/prime-time-roundup/4Nhb8S62Tx5PrQtc7Qh2CN/" target="_self">Prime Time Roundup Podcast</a></li>
+				<li><a href="http://www.yourgeorgiacountry.com/online/finding-cures-saving-children/Etv70pscESlekEkatAOZyN/" target="_self" title="">St. Jude</a>
+				</li>
+				<li><a href="http://www.yourgeorgiacountry.com/online/contact-your-georgia-country/gZmn2g8ufY71ki1D5SbGJK/" target="_self" title="">Contact Us</a>
+				</li>
+				<li><a href="http://www.yourgeorgiacountry.com/online/job-openings-cox-media-group-athens/VDUGgkIUpzBEvuDglzcdVN/" target="_self" title="">Work With Us</a>
+				</li>
+				</ul>
+</li>
+<li>Search <svg height="7px" width="8px">
+						<polygon class="cmRadioHeaderNavDropdownCaret"
+			points="0,0 8,0 4,7" />
+					</svg>
+	<div class="cmRadioHeaderSearchBox cmRadioHeaderNavTwoInner"
+		style="display: none;">
+		<div class="cmRadioHeaderSearchArea">
+			<form class="site-search" action="//www.yourgeorgiacountry.com/search" method="get">
+				<table>
+					<tr>
+						<td class="search-input">
+							<!-- <label for="site-search" class="accessibility-field-label">Search</label> -->
+							<input type="text" class="form-control" id="site-search"
+							name="search" placeholder="">
+						</td>
+						<td>
+							<button type="submit" name="submit"
+								class="form-control btn btn-search"></button>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</li>
+
+
+<!-- begin janrain_menu_links block --><li class="cmHeaderUserRegistration" id="cmHeaderUserRegistration" style="visibility: visible;">
+		<div id="cmJanrainAuthLinks">
+			<span class="cmUserAuthed" style="display: none;">
+				<a id="cmHeaderUserRegistrationLink" class="cmUserAuthed__welcome" href="//www.yourgeorgiacountry.com/member-center/"></a>
+	
+	            <ul class="cmRadioHeaderNavTwoInner" style="display: none;">
+	            	<li><a href="//www.yourgeorgiacountry.com/member-center/"><span>Member Center</span></a></li>
+	            	<li><a class="cmLogout" href="#"><span>Is this not you?</span></a></li>
+	            	<li><a class="cmLogout" href="#"><span>Sign Out</span></a></li>
+	            </ul>
+	         </span>
+	         <span class="cmUserAnonymous" style="display: inline;">
+	         	<a href="#" class="cmOpenJanrainModal capture_modal_open"><span>Sign In | Register</span></a>
+	         </span>
+	    </div>
+	</li>
+
+<!-- end janrain_menu_links block --></ul></div>
+		<div class="cmRadioHeaderLogoBar">
+			<a href="//www.yourgeorgiacountry.com/" title="http://www.yourgeorgiacountry.com"><img id="cmRadioHeaderLogo"
+				src="//www.yourgeorgiacountry.com/rw/Pub/Web/YourGeorgiaCountry/Special%20Contents/Themes/Images/Logo%20ygc.png"
+				name="cmHeaderLogo" alt="http://www.yourgeorgiacountry.com Logo"
+				class="cmRadioHeaderLogo" /></a>
+		</div>
+		<div class="cmRadioHeaderWidgetBar">
+	<div class="cmRadioHeaderSocial">
+			<ul>
+	<li class="cmRadioHeaderSocialItem"><a
+			href="https://www.facebook.com/YourGeorgiaCountry" target="_blank"><div
+					class="cmRadioHeaderSocialIcon cmRadioHeaderSocialIconFacebook" 
+					onclick="DDO.action('socialClick',{site:'facebook',type:'www.yourgeorgiacountry.com_fb_homepage'})"></div></a></li>
+	<li class="cmRadioHeaderSocialItem"><a
+			href="https://twitter.com/YourGACountry" target="_blank"><div
+					class="cmRadioHeaderSocialIcon cmRadioHeaderSocialIconTwitter"
+					onclick="DDO.action('socialClick',{site:'twitter',type:'www.yourgeorgiacountry.com_tw_homepage'})"></div></a></li>
+	</ul></div>
+	<div class="cmRadioHeaderWidgets">
+		<ul>
+			<li id="cmRadioHeaderWeatherWidget"
+	class="cmRadioHeaderWidgetItem cmHeaderWeatherWidget"><a
+	href="//www.yourgeorgiacountry.com/weather/">
+		<div class="spriteWeatherRadio _21"></div>
+		<div class="cmHeaderWeatherWidgetTemperature">44&deg;</div>
+</a></li>
+
+
+
+
+
+<li class="cmRadioHeaderWidgetItem">
+				<a href="http://www.yourgeorgiacountry.com/entertainment/contests/your-georgia-country-contests/IrhRjGsKnuu6bIC5I1uV5N/" target="_self" title="">Contests</a>
+				</li>
+		<li class="cmRadioHeaderWidgetItem">
+				<a href="http://www.yourgeorgiacountry.com/events/station-events/your-georgia-country-live-lounge/srqmKUPWk19D4prW3zASRL/" target="_self" title="">Live Lounge</a>
+				</li>
+		<li class="cmRadioHeaderWidgetItem">
+				<a href="http://www.yourgeorgiacountry.com/events/station-events/your-georgia-country-photos/WgoXJ5LYQV0z8GByw9AauN/" target="_self" title="">Event Pics</a>
+				</li>
+		</ul>
+	</div>
+</div><!-- DEFAULT NOW PLAYING HEADER  = false -->
+				<div class="cmRadioHeaderPlayingBar">
+	<canvas id="curve-desktop" width="242" height="48"></canvas>
+
+
+	<div class="cmRadioHeaderListenLive">
+		<script type="text/javascript">
+			cmg
+					.query(function() {
+						cmg
+								.query('.cmListenLiveButton')
+								.click(
+										function() {
+											window
+													.open(
+															this.href,
+															'playerlivepopup',
+															'width=974,height=450,location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0');
+											return false;
+										});
+					});
+		</script>
+		<a href="//www.yourgeorgiacountry.com/stream/" class="cmListenLiveButton"></a>
+	</div>
+
+	<script>
+		// Poll LSP API and update DOM header with station history
+		cmg.query(document).ready(function() {
+			LSPHeader.init("http://api.lsp.yourgeorgiacountry.com/api/v1/station/now-playing/");
+		});
+	</script>
+
+	<div class="cmRadioHeaderNowPlaying">
+		<a href="#"
+			class="cmRadioNowPlayingArtistImage cmRadioHeaderNowPlayingArtistLink deactivated"></a><a
+			href="#"
+			class="cmRadioHeaderNowPlayingSongLink cmRadioHeaderNowPlayingCarrot deactivated">
+			<svg class="cmRadioHeaderNowPlayingButton"> <polygon
+					points="0,0 9,5 0,10" class="cmRadioHeaderNowPlayingPlayButton"></polygon> </svg>
+		</a>
+		<div class="cmRadioHeaderNowPlayingInner">
+			<div class="cmRadioHeaderNowPlayingHeader header">Now Playing</div>
+			<a href="#"
+				data-default="Your Georgia Country"
+				class="cmRadioHeaderNowPlayingSong cmRadioHeaderNowPlayingSongLink deactivated">Your Georgia Country</a><a
+				href="#"
+				class="cmRadioHeaderNowPlayingArtist cmRadioHeaderNowPlayingArtistLink deactivated"></a><a
+				href="#"
+				class="cmRadioHeaderNowPlayingArrow cmRadioHeaderNowPlayingSongLink deactivated"></a>
+		</div>
+	</div>
+
+
+	<div class="cmRadioHeaderLSP">
+		<div class="cmRadioHeaderLSPInner">
+			<div class="cmRadioHeaderLSPHeader header">Last Song Played</div>
+			<a href="#"
+				data-default="North Georgia's Country"
+				class="cmRadioHeaderLSPSong cmRadioHeaderLSPSongLink deactivated">North Georgia's Country</a>
+			<a href="#"
+				class="cmRadioHeaderLSPArtist cmRadioHeaderLSPArtistLink deactivated"></a><a
+				href="#"
+				class="cmRadioHeaderLSPArrow cmRadioHeaderLSPSongLink deactivated"></a>
+		</div>
+	</div>
+
+
+
+	<script>
+			// Call OnAir Api polling and dom updating, send full URL so this works on Wraps
+			OnAirHeader.init('http://www.yourgeorgiacountry.com/primaryschedule/SXgsY3mWSGlXmS8OF6LZZM/page.json');
+		</script>
+	<div class="cmRadioHeaderOnAir">
+		<a href="#"
+					class="cmRadioHeaderOnAirImage deactivated microphone"></a>
+			<div class="cmRadioHeaderOnAirInner">
+			<div class="cmRadioHeaderOnAirHeader header">On Air</div>
+			<a href="#"
+				class="cmRadioHeaderOnAirShow cmRadioHeaderOnAirShowLink deactivated"
+				data-default="No Program">No Program</a><a href="#"
+				class="cmRadioHeaderOnAirArrow cmRadioHeaderOnAirShowLink deactivated"></a>
+		</div>
+	</div>
+</div>
+
+<div class="cmRadioHeaderSticky">
+	<canvas id="curve-sticky" width="970" height="48"></canvas>
+	<div class="cmRadioHeaderStickyLogoBar"></div>
+	<div class="cmRadioHeaderListenLive">
+		<script type="text/javascript">
+			cmg
+					.query(function() {
+						cmg
+								.query('.cmListenLiveButton')
+								.click(
+										function() {
+											window
+													.open(
+															this.href,
+															'playerlivepopup',
+															'width=974,height=450,location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0');
+											return false;
+										});
+					});
+		</script>
+		<a href="//www.yourgeorgiacountry.com/stream/" class="cmListenLiveButton"></a>
+	</div>
+	<div class="cmRadioHeaderNowPlaying">
+		<a href="#"
+			class="cmRadioNowPlayingArtistImage cmRadioHeaderNowPlayingArtistLink deactivated"></a>
+		<a href="#"
+			class="cmRadioHeaderNowPlayingSongLink cmRadioHeaderNowPlayingCarrot deactivated">
+			<svg class="cmRadioHeaderNowPlayingButton">
+				<polygon points="0,0 9,5 0,10"
+					class="cmRadioHeaderNowPlayingPlayButton"></polygon></svg>
+		</a>
+		<div class="cmRadioHeaderNowPlayingInner">
+			<div class="cmRadioHeaderNowPlayingHeader header">Now Playing</div>
+			<a href="#"
+				data-default="Your Georgia Country"
+				class="cmRadioHeaderNowPlayingSong cmRadioHeaderNowPlayingSongLink deactivated">Your Georgia Country</a>
+			<a href="#"
+				class="cmRadioHeaderNowPlayingArrow cmRadioHeaderNowPlayingSongLink deactivated"></a>
+		</div>
+	</div>
+	<div class="cmRadioHeaderLSP">
+		<div class="cmRadioHeaderLSPInner">
+			<div class="cmRadioHeaderLSPHeader header">Last Song Played</div>
+			<a href="#"
+				data-default="North Georgia's Country"
+				class="cmRadioHeaderLSPSong cmRadioHeaderLSPSongLink deactivated">North Georgia's Country</a>
+			<a href="#"
+				class="cmRadioHeaderLSPArrow cmRadioHeaderLSPSongLink deactivated"></a>
+		</div>
+	</div>
+
+	<div class="cmRadioHeaderStickyWidgets">
+	<ul>
+		<li id="cmRadioHeaderWeatherWidget"
+	class="cmRadioHeaderWidgetItem cmHeaderWeatherWidget"><a
+	href="//www.yourgeorgiacountry.com/weather/">
+		<div class="spriteWeatherRadio _21"></div>
+		<div class="cmHeaderWeatherWidgetTemperature">44&deg;</div>
+</a></li>
+
+
+
+
+
+<li class="cmRadioHeaderWidgetItem"><a href="/entertainment/contests/your-georgia-country-contests/IrhRjGsKnuu6bIC5I1uV5N/" target="_self">Contests</a></li>
+		<li class="cmRadioHeaderWidgetItem"><a href="/events/station-events/your-georgia-country-live-lounge/srqmKUPWk19D4prW3zASRL/" target="_self">Live Lounge</a></li>
+		</ul>
+</div>
+
+<div class="cmRadioHeaderStickySocial">
+		<ul>
+	<li class="cmRadioHeaderSocialItem"><a
+			href="https://www.facebook.com/YourGeorgiaCountry" target="_blank"><div
+					class="cmRadioHeaderSocialIcon cmRadioHeaderSocialIconFacebook" 
+					onclick="DDO.action('socialClick',{site:'facebook',type:'www.yourgeorgiacountry.com_fb_homepage'})"></div></a></li>
+	<li class="cmRadioHeaderSocialItem"><a
+			href="https://twitter.com/YourGACountry" target="_blank"><div
+					class="cmRadioHeaderSocialIcon cmRadioHeaderSocialIconTwitter"
+					onclick="DDO.action('socialClick',{site:'twitter',type:'www.yourgeorgiacountry.com_tw_homepage'})"></div></a></li>
+	</ul></div>
+</div><!-- end cmHeaderWrap block-->
+	</div>
+</div><!-- begin cmSubHeaderWrap block-->
+						<div class="cmSubHeaderWrap cmCol9">
+						
+							<!-- begin breaking_news_alert_box block --><!-- end breaking_news_alert_box block --><!-- begin ad_pb01 block --><div id="adslot_div_PB01_0px_infinity" class="cmAd PB01" ad_slot="true" ad_sizes="[[970,90]]" ad_name="PB01" ad_group="0px-infinity"></div>
+			<!-- end ad_pb01 block --><div class="adgeletti-center_ad-table">
+								<div class="adgeletti-center_ad-table-column">
+									<!-- begin ad_hp00 block --><!-- end ad_hp00 block --></div>
+								<div class="adgeletti-center_ad-table-column">
+									<!-- begin ad_hp01 block --><div id="adslot_div_HP01_0px_infinity" class="cmAd HP01" ad_slot="true" ad_sizes="[[728,90],[950,30],[970,30]]" ad_name="HP01" ad_group="0px-infinity"></div>
+			<!-- end ad_hp01 block --></div>
+							</div>
+						</div>
+						<!-- end cmSubHeaderWrap block-->
+
+					<!-- end inner_header_wrapper block --><div class="cmBodyWrap cmCol9">
+
+					<!-- begin centerContent block --><div class="cmCol6">
+
+	<div class="cmBreadcrumb">
+
+	<!-- begin breadcrumbs block --><ul>
+			<li>
+				<a href="//www.yourgeorgiacountry.com/">Home</a>
+			</li>
+			<li>
+						<a href="//www.yourgeorgiacountry.com/categories/sports/">
+							Sports</a>
+					</li>
+				<li>
+						<a href="//www.yourgeorgiacountry.com/categories/sports/football/">
+							Football</a>
+					</li>
+				</ul>
+	<!-- end breadcrumbs block --><!-- begin ad_hp00 block --><!-- end ad_hp00 block --></div><!-- Loid: 2.0.1985811529 -->
+	<div class="cmTimeStamp">
+			<p>
+				
+					Posted: January 27, 2017</p>
+		</div>
+	<h1 class="cmLargerH1">
+            Super Bowl 2017: 5 things to know before heading to Houston
+         </h1>
+	<h2 class="cmLargerH2">
+            
+         </h2>
+
+	<div class="cmToolBox">
+		<a href="#livefyre-comments" class="lfcomment_anchor lfcount">Comments</a>
+		
+
+
+
+
+
+
+
+
+	
+	
+		
+		<div class="janrainSocialPlaceholder" align="left"
+		    data-janrain-url="http://www.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/"
+		    data-janrain-title="Super Bowl 2017: 5 things to know before heading to Houston "
+		    data-janrain-description="It's time for fans to prepare if they are heading to Houston for the Super Bowl. The Falcons and the New England Patriots will face off at 6 p."></div>
+	
+	</div>
+
+	<div id="cmArticleWell">
+
+		<!-- Brightcove Player -->
+<!-- account_id = 1786731354 -->
+	<div class=" brightcovePlayer" style="width: 610;height: 343.125px; margin: 0 auto;">
+				<div style="display: block; position: relative; width: 100%; height: 100%;">
+					<video
+						id="video-a680714ca9ed4cb588a19917544df885"
+						data-video-id="ref:ANV_3869379" 
+						data-account="1786731354" 
+						data-player="default" 
+						data-embed="default" 
+						class="video-js" 
+						controls 
+						style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;">
+					</video>
+					<script src="//players.brightcove.net/1786731354/default_default/index.min.js"></script>
+				</div>
+			</div><div class="cmCaption">The Most Memorable Super Bowl Halftime Performances</div>
+</br><div class="cmRelated ">
+			<h3 class="cmRelatedHeader">Related</h3>
+			<div class="cmModule">
+							<!-- MediaGroup image -->
+							<!-- 2.0.1985643250 -->
+							<div class="cmElementEnlarge" style="float:right; margin-bottom: 5px;">
+										<a id="lba1_201985643250" data-asset_id="201985643250" 
+											href="/rf/image_large/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg" title="Click To View Larger" class="dtm-event--nongalleryphoto"
+											data-content-type="">
+											View Larger
+										</a>
+										<span class="sprite sharing iconIncrease">&nbsp;</span>
+									</div>
+									<span class="cmImage  cmImage--native-landscape" >
+				<img src="/rf/image_lowres/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg"srcset="/rf/image_lowres/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg 1000w,
+			   /rf/image_thumbnail/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg 120w,
+			   /rf/image_compact/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg 150w,
+			   /rf/image_md/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg 400w,
+			   /rf/image_large/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg 800w"
+				sizes="100vmin"style="max-width:100%;"alt="
+            Super Bowl 2017: 5 things to know before heading to Houston
+         "title="
+            Super Bowl 2017: 5 things to know before heading to Houston
+         "/>
+			</span><div class="cmCaption">
+								NRG Stadium, which will host Super Bowl LI, is shown Tuesday, Jan. 24, 2017, in Houston. The New England Patriots will play the Atlanta Falcons in NFL football's Super Bowl LI on Sunday, Feb. 5, 2017, at NRG Stadium. (AP Photo/David J. Phillip)<span class="cmSpriteContentType photo"></span>
+								</div>
+						</div>
+					<script id="cmRelatedPhotoData" type="text/javascript">
+				has_related_photos = true;
+						num_photos = 1;
+						related_photos_ids = ["photo_201985643250"];
+						related_photos = { photo_201985643250: {
+										id: 201985643250,
+										prev_ptr:-1,
+										next_ptr:0,
+										title: "NRG Stadium, which will host Super Bowl LI, is shown Tuesday, Jan. 24,...",
+										source_url: "/sports/football/super-bowl/OWh7Yx9WzLAFmPYs32yk5H/",
+										credit_photographer: "",
+										credit_source: "",
+										caption: "NRG Stadium, which will host Super Bowl LI, is shown Tuesday, Jan. 24, 2017, in Houston. The New England Patriots will play the Atlanta Falcons in NFL football's Super Bowl LI on Sunday, Feb. 5, 2017, at NRG Stadium. (AP Photo/David J. Phillip)",
+										photo_url: "/rf/image_large/Pub/p8/CmgSharedContent/2017/01/27/Images/photos.medleyphoto.12991151.jpg", 
+										photo_width: 800,
+										comment_block: "",
+										get_mycapture_url: ""
+									}};</script>
+			
+			</div>
+		<p class="cm_mobCredit">
+				By
+				Stephanie Toone</p>
+		<p class="cmSource">The Atlanta Journal-Constitution</p>
+		<p class="cmDateline">
+         HOUSTON
+      &#8212;</p>
+		<div class="cmArticle cmOembedContainer">
+			<p>It's time for fans to prepare if they are heading to&nbsp;Houston for the Super Bowl.</p> <p>The Falcons and the New England Patriots will face off at 6 p.m. Feb. 5 for Super Bowl LI at NRG Stadium, only the second Super Bowl appearance for the Falcons and the 10th appearance for the Patriots.</p> <p>According to StubHub, as of Monday, about 8 percent of sales for Super Bowl tickets had come from Georgia, and 3 percent from Massachusetts.&nbsp;</p> <p>
+<a href="/news/news/national/super-bowl-2017-6-stats-falcons-patriots-matchup/ntcKH/" target="_blank">&gt;&gt;Super Bowl 2017: 6 stats from Falcons-Patriots matchup</a>
+</p> <p>
+<a href="/news/news/national/super-bowl-li-what-time-what-channel-live-stream-l/ntcG4/" target="_blank">&gt;&gt;Super Bowl 2017: What time, what channel, livestream options</a>
+</p> <p>
+<a href=" /list/news/national/more-news-headlines/aJz4/" target="_blank">&gt;&gt; Read more trending stories&nbsp;</a>
+</p> <p>Before making the trek to root for your favorite team, here are a few things to note about Houston.</p> <p>
+<b>1. How much are tickets to the Super Bowl?</b>
+</p> <p>As of Thursday, tickets to the big game were listed between $3,000 and $5,500 on StubHub&rsquo;s website.</p> <p>TickPick, another secondary-market ticket site, listed its cheapest ticket for the game available on Thursday at $3,169.</p> <p>&ldquo;Since the Falcons weren&rsquo;t really an expected Super Bowl team, it&rsquo;s tough to forecast the direction of prices,&rdquo; TickPick CEO Brett Goldberg said earlier this week. &ldquo;Atlanta is close to Houston, and if the fan base travels in numbers, that very well can keep prices stable.&rdquo;</p> <p>
+<b>2. What are airfare prices like to the Super Bowl?</b>
+</p> <p>The prices are similar to tickets for the game - they&rsquo;re not cheap. To cater to eager Falcons and Patriots fans, Southwest Airlines is adding flights from Atlanta and Boston into Houston on Feb. 3 and Feb. 6. The Dallas-based airline is adding two additional flights between Houston and Atlanta the day after the game. Southwest, as of Thursday, was listing fares as low as $445 for a round trip.</p> <p>Delta Air Lines listed air fares from Boston as low as $1,226 round trip and as low as $978 from Atlanta as of Thursday.<br>
+<br>Nationally, flights to Houston will be in high demand across the country during the period before and after the Super Bowl, so be prepared to pay a premium price.</p> <p>
+<b>3. Is Houston an easy city to navigate?</b>
+</p> <p>Short answer: no. Houston is the fourth largest city in the country, and with a big city comes big traffic. Houston is also the epitome of urban sprawl, so traveling by car will not be an easy feat. A knowledgeable Uber or Lyft driver will likely be the best friend a Patriots or Falcons fan can have in town.</p> <p>If ride-hailing apps are not your thing, free circulator shuttles will run downtown during Super Bowl week. Three Greenlink routes will take guests from parking lots on the west side of downtown to the entrance to Super Bowl Live and in and around Discovery Green.&nbsp;</p> <p>
+<b>4. Where can you enjoy Houston like a native?</b>
+</p> <p>Houston has an array of seafood and Mexican restaurants that locals love to frequent. But the go-to spot near NRG is&nbsp;<a href="https://www.facebook.com/pages/Mamas-Oven/113595065339218" target="_blank"><b>Mama&rsquo;s Oven</b></a>, a soul food restaurant that&rsquo;s light on the grandeur but heavy on the taste. The hole-in-the-wall spot is known for its meat loaf, oxtails and pork chops.</p> <p>After chowing down on an official Houston dinner, it&rsquo;ll be time for dessert.&nbsp;<a href="http://hanksicecream.com/" target="_blank">Hank&rsquo;s Ice Crea</a><a href="http://hanksicecream.com/" target="_blank">m</a>&nbsp;has you covered. The homemade ice cream parlor has been an institution in the city for more than 20 years. Beyonc&eacute;, a Houston native, particularly likes the banana pudding, according to Hank&rsquo;s website.</p> <p>If enjoying craft beer is your thing,&nbsp;<a href="http://www.saintarnold.com/" target="_blank">Saint Arnold</a>&nbsp;Brewing Co. dubbed &ldquo;Texas&rsquo; oldest craft brewery,&rdquo; would be a fitting night on the town. Customers can enjoy full-flavored beers, and on Super Bowl Sunday Saint Arnold will host its fourth annual&nbsp;<a href="http://www.saintarnold.com/super-beef-sunday/" target="_blank">Super Beef Sunday</a>, which includes legendary barbecue from Louie Mueller BBQ, Pinkerton&rsquo;s Barbecue and Harlem Road Texas BBQ.</p> <p>
+<b>5. Where can you celebrate the game?</b>
+</p> <p>The better question is: Where can&rsquo;t you celebrate? The weekend will be full of activities, but here are some of the&nbsp; top events to catch on Super Bowl weekend:</p> <p>A traveling nightclub: Club Nomadic, dubbed a &ldquo;traveling nightclub experience,&rdquo; will be open during the weekend of the Super Bowl. The 62,500-square foot, three-story nightclub holds 9,000 people with special areas for celebrities and VIPs. The venue, at 2121 Edwards St., hosts the EA Sports Bowl with a performance by Sam Hunt and the Chainsmokers on Feb. 2, welcomes Bruno Mars on Feb. 3 and ends with a performance by Taylor Swift on Feb. 4. Tickets are pricey, but can be purchased through&nbsp;<a href="http://www.ticketmaster.com/Club-Nomadic-tickets-Houston/venue/476158" target="_blank">Ticketmaster</a>.</p> <p>Super Bowl opening night: Fans can get a peek Jan. 30 at the teams in the Super Bowl at Super Bowl Opening Night downtown at Minute Maid Park, home of the Houston Astros. The event is the first time during Super Bowl week that players in the big game will meet with media as fans watch from the bleachers. It features a performance by rock band X Ambassadors and an appearance by Hall of Fame quarterback Warren Moon.</p> <p>Those attending the event will get gift bags with a radio that they can tune to NFL Network coverage to listen in on player interviews. Doors open at 5:30 p.m., and interviews are from 7:15-8:15 p.m. and 9-10 p.m. Tickets start at $20 and can be purchased through&nbsp;<a href="https://www.vividseats.com/concerts/super-bowl-opening-night-tickets.html?utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=Concerts+ST&amp;utm_term=super+bowl+opening+night+tickets&amp;vkid=14436387&amp;gclid=CjwKEAiA8JbEBRCz2szzhqrx7H8SJAC6FjXXz4P3-lztgB9k3EPCduZzEmhyyYTHGiBPrEg4w5aXWxoCeUHw_wcB" target="_blank">Vividseats.com</a>.</p> <p>Super Bowl Live:&nbsp;A free fan festival that stretches from Discovery Green across from the George R. Brown Convention Center to Root Park near the Toyota Center, where the Houston Rockets play. The festival, which runs from Jan. 28-Feb. 5, will include artists, exhibits and games. An area called Houston Live will showcase the city and its history. Super Bowl Live will also include a virtual reality experience, Future Flight, created with help from NASA, which will take fans on a 90-foot drop tower ride mimicking a space flight to Mars.</p></div>
+		<div class="cmInfoBox">
+			<hr/>
+			</div>
+		
+		</div>
+
+	<div class="cmClear"></div>
+
+	<script>
+		var pm_pgtp = "desktop-article";
+	</script>
+	<script type="text/javascript"
+		src="http://widget.perfectmarket.com/cox-network/load.js"></script>
+
+	<div class="cmClear"></div>
+
+	<div class="cmToolBox">
+		<a href="#livefyre-comments" class="lfcomment_anchor lfcount">Comments</a>
+		
+
+
+
+
+
+
+
+
+	
+	
+		
+		<div class="janrainSocialPlaceholder" align="left"
+		    data-janrain-url="http://www.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/"
+		    data-janrain-title="Super Bowl 2017: 5 things to know before heading to Houston "
+		    data-janrain-description="It's time for fans to prepare if they are heading to Houston for the Super Bowl. The Falcons and the New England Patriots will face off at 6 p."></div>
+	
+	</div>
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- This is the final comments enable flag -->
+
+
+
+
+    
+    
+		
+		   
+		   
+		   
+		   
+		   
+		
+		   
+		   
+		   
+		   
+		   
+		
+		
+		
+		    
+				
+    
+
+
+
+	
+
+
+
+
+
+<style>
+.fyre-mention {
+	pointer-events: none;
+   	cursor: default;
+   	text-decoration: none;
+}
+.fyre-modal {
+	/* Fixes bug with share comment modal incorrectly calculating center of page */
+	top: 50% !important;
+}
+</style>
+
+<!-- Basic comment widget markup: default no comments -->
+<div class="cm-lc-container">
+    <div class="cm-lc-widget-container">
+        <div class="cm-lc-view" id="livefyre-comments"></div>
+        <div class="cm-lc-nocontent">
+            <p>There are no comments yet.  Be the first to post your thoughts.
+            <span class="cm-lc-not-logged-in">
+            	<a href="#" class="cm-lc-login" title="Sign in">Sign in</a> or <a href="#" class="cm-lc-register">Register</a>.
+            </span>
+            </p>
+        </div>
+    </div>
+    <div class="cm-lc-footer"></div>
+</div>
+
+<script>
+    (function($) {
+        var janrain_timeout_int = 500,
+            livefyre_livecomments = null,
+            $comment_count_display = $('.lfcount'),
+            set_comment_count = function() {
+                var comment_count = $('.fyre-stream-stats .fyre-comment-count').text().replace(/[^0-9]+/g, '');
+                $comment_count_display.text('Comments');
+                cmg.query('.fyre-stream-stats .fyre-comment-count').css('visibility', 'visible');
+            },
+            update_comment_count = function(count) {
+                cmg.query('.fyre-stream-stats .fyre-comment-count').css('visibility', 'visible');
+            },
+            livefyre_commenting_init = function() {
+                var $ = $,
+                    lf_conv_config = [{
+                        siteId: '305826',
+                        collectionMeta: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcnRpY2xlSWQiOiJmMjI1YTMwYy0zMDBiLTRkNjEtYTdhYi04Y2Q4NmI4MzNmNGQiLCJpc3MiOiJ1cm46bGl2ZWZ5cmU6Y294cmFkaW8taW50LTAuZnlyZS5jbzpzaXRlXHUwMDNkMzA1ODI2IiwidGFncyI6InRhZ3MiLCJ0aXRsZSI6IlN1cGVyIEJvd2wgMjAxNzogNSB0aGluZ3MgdG8ga25vdyBiZWZvcmUgaGVhZGluZyB0byBIb3VzdG9uIiwidHlwZSI6ImxpdmVjb21tZW50cyIsInVybCI6Imh0dHA6Ly93d3cueW91cmdlb3JnaWFjb3VudHJ5LmNvbS9zcG9ydHMvZm9vdGJhbGwvc3VwZXItYm93bC0yMDE3LXRoaW5ncy1rbm93LWJlZm9yZS1oZWFkaW5nLWhvdXN0b24vbDZQV1AzaTI5UHQ2ZDRQRnJlWDlKUC8ifQ.PlDeBEPBXhJcqkRuJOa8nujVgyL6lJlOWvkhl5g_Lcs',
+                        checkSum: '5ffde2870d85abdff819c13756231323',
+                        articleId: 'f225a30c-300b-4d61-a7ab-8cd86b833f4d',
+                        el: 'livefyre-comments',
+                        initialNumVisible: 10,
+                        maxVisible: 10,
+                        browserType: 'web'
+                    }];
+                Livefyre.require(['fyre.conv#3', 'auth', 'backplane-auth-plugin#0'], function(Conv, auth, backplanePluginFactory){
+                    new Conv({
+                        "network": 'coxradio-int-0.fyre.co'
+                        },
+                        lf_conv_config,
+                        function (widget) {
+                            // Wideget change/event callbacks
+                            widget.on('commentCountUpdated', function(data){
+                                if (data > 0) {
+                                    cmg.query('.cm-lc-nocontent').hide();
+                                    update_comment_count(data);
+                                }
+                            });
+                            widget.on('initialRenderComplete', function() {
+                                set_comment_count($);
+                                $comment_count_display.attr("href", "#livefyre-comments");
+                                if (cmg.query('.fyre-auth .fyre-user-loggedin').length) {
+                                    cmg.query('.cm-lc-nocontent .cm-lc-not-logged-in').hide();
+                                }
+                                
+                                if(cmg.query('div.fyre-stream-more').length){
+                                    cmg.query('div.fyre-stream-more').find('*').on('click',function(e){
+                                    	cmg.query(document).trigger('analytics-additional-comments');                                        
+                                    });
+                                }
+                                
+                            });
+                            widget.on('userLoggedIn', function(data){
+                            	cmg.query('.cm-lc-not-logged-in').hide();
+                            });
+                            // Fire metrics
+                            widget.on('commentPosted', function(data){
+                            	pubsub.publish('comment-submit', {'element': 'div.fyre-post-button', 'action': 'click' });
+                            });
+                            // Fire metrics
+                            widget.on('showMore', function(data){
+                            	pubsub.publish('additional-comments', {'element': 'div', 'action': 'click'});
+                            });
+                        });
+                    });
+                };
+
+        $(document).ready(function(e) {
+
+            $(window).on('livefyre.load_failure', function() {
+                $('.cm-lc-container').hide();
+            });
+            $(window).on('livefyre.auth_initialized', function() {
+                livefyre_commenting_init();
+            });
+
+        });
+    })(cmg.query);
+</script>
+
+<!-- comments enabled or frozen-->
+	<a id="cmCommentAnchor"></a>
+
+	<div id="medley_comments_341789" class="marimo class"></div>
+	<div class="cmClear">&nbsp;</div>
+	<div class="cmAd cmAdContextual"></div>
+	<div class="cmClear">&nbsp;</div>
+
+
+	<script id="cmRelatedPhotoData" type="text/javascript" charset="utf-8">
+
+		</script>
+	</div>
+
+<!-- Inserting a right rail -->
+
+
+
+
+
+
+
+<div class="cmCol3">
+	<div class="cmCol3 cmFirst cmRightRail">
+		
+			
+			
+				
+					
+						<!-- get the rightrail object from the homepage -->
+		
+						
+							
+								<!-- Inserting a right rail ads -->
+
+
+
+
+
+<div class="cmFeedUtilities cmModule">
+	<ul>
+		<li class="sprite iconEmail"><a href="//www.yourgeorgiacountry.com/newsletters/signup/">Newsletters</a></li>
+	</ul>
+</div>
+<!-- begin ad_rp01 block -->
+	<div id="adslot_div_RP01_0px_infinity" class="cmAd RP01" ad_slot="true" ad_sizes="[[300,250],[300,600],[300,1050]]" ad_name="RP01" ad_group="0px-infinity"></div>
+			
+<!-- end ad_rp01 block -->
+
+<!-- begin ad_rp02 block -->
+	<div id="adslot_div_RP02_0px_infinity" class="cmAd RP02" ad_slot="true" ad_sizes="[[300,100]]" ad_name="RP02" ad_group="0px-infinity"></div>
+			
+<!-- end ad_rp02 block -->
+
+<!-- begin ad_rp09 block -->
+	
+<!-- end ad_rp09 block -->
+
+
+<!-- facebook friends widget right rail -->
+<div class="cmModule cmCenter">
+	<div class="fb-like-box"
+		data-href="https://www.facebook.com/YourGeorgiaCountry" data-width="293"
+		data-height="255" data-show-faces="true" data-stream="false"
+		data-header="false"></div>
+</div>
+
+<!-- begin ad_rp03 block -->
+	<div id="adslot_div_RP03_0px_infinity" class="cmAd RP03" ad_slot="true" ad_sizes="[[300,250]]" ad_name="RP03" ad_group="0px-infinity"></div>
+			
+<!-- end ad_rp03 block -->
+
+<!-- begin ad_rp04 block -->
+	<div id="adslot_div_RP04_0px_infinity" class="cmAd RP04" ad_slot="true" ad_sizes="[[300,100]]" ad_name="RP04" ad_group="0px-infinity"></div>
+			
+<!-- end ad_rp04 block -->
+
+<!-- begin ad_rp05 block -->
+	<div id="adslot_div_RP05_0px_infinity" class="cmAd RP05" ad_slot="true" ad_sizes="[[300,100]]" ad_name="RP05" ad_group="0px-infinity"></div>
+			
+<!-- end ad_rp05 block -->
+
+<!-- begin ad_rp08 block -->
+	
+<!-- end ad_rp08 block -->
+							
+							
+						
+					
+					
+				
+			
+		
+	</div>
+</div>
+<div class="cmClear">&nbsp;</div><!-- end centerContent block --></div>
+				<div class="cmClear"></div>
+
+				<!-- begin inner_footer_wrapper_002 block --><div class="cmInnerFooterWrap cmCol9">
+		<div id="cmFooterContainer">
+			<div
+				class="cmOuterFooterWrap theme-footer-background theme-footer-color">
+				<div id="cmFooterSiteMap" class="cmClearFix">
+					<div class="cmSiteMapColumn cmLeftFloat cmFirst">
+						<h4>AUDIO</h4>
+									<ul class="cmSiteMapList">
+								<li><a href="http://www.yourgeorgiacountry.com/lsp/" target="_self" title="search recently played music">Last Songs Played</a>
+				</li>
+										</ul>
+										<br />
+									<h4>EVENT GUIDE</h4>
+									<ul class="cmSiteMapList">
+								<li><a href="http://events.yourgeorgiacountry.com.eventful.com/" target="_self" title="find local events">Events</a></li>
+										</ul>
+										<br />
+									<h4></h4>
+									<ul class="cmSiteMapList">
+								</div>
+					<!-- /footer column1-->
+					<div class="cmSiteMapColumn cmLeftFloat">
+						<h4>About Us</h4>
+									<ul class="cmSiteMapList">
+								<li>
+												<a href="http://www.yourgeorgiacountry.com/online/contact-your-georgia-country/gZmn2g8ufY71ki1D5SbGJK//" target="_self" title="contact information">Contact Us</a>
+				</li>
+										<li>
+												<a href="http://www.yourgeorgiacountry.com/online/job-openings-cox-media-group-athens/VDUGgkIUpzBEvuDglzcdVN/" target="_self" title="employment opportunities">Work With Us</a>
+				</li>
+										<li>
+												<a href="http://www.yourgeorgiacountry.com/eeoc/" target="_self" title="Equal Employment Opportunity Commission statement">EEOC Statement</a>
+				</li>
+										</ul>
+									</div>
+					<!-- /footer column2-->
+					<div class="cmSiteMapColumn cmLeftFloat">
+						<h4>Advertisers and Sponsors</h4>
+									<ul class="cmSiteMapList">
+								<li>
+												<a href="http://cmgohio.com/?q=node/43" target="_self" title="become a featured advertiser">How to Advertise</a></li>
+										<li>
+												<a href="http://www.autotrader.com" target="_blank" title="Cars at Autotrader">Cars at Autotrader</a></li>
+										<li>
+												<a href="http://www.kudzu.com" target="_blank" title="Local Services at Kudzu">Local Services at Kudzu</a></li>
+										</ul>
+									</div>
+					<!-- /footer column3-->
+					<div class="cmSiteMapColumn cmLeftFloat">
+						<h4>Help</h4>
+									<ul class="cmSiteMapList">
+								<li>
+												<a href="http://www.yourgeorgiacountry.com/online/audio-help/" target="_self" title="audio help / FAQ">Audio Help</a>
+				</li>
+										<li>
+												<a href="http://www.yourgeorgiacountry.com/online/video-help/" target="_self" title="video help / FAQ">Video Help</a>
+				</li>
+										<li>
+												<a href="http://www.yourgeorgiacountry.com/online/search-help/" target="_self" title="Search help / FAQ">Search Help</a>
+				</li>
+										</ul>
+									</div>
+					<!-- /footer column4-->
+				</div>
+				<!-- /cmFooterSiteMap-->
+				<div class="cmClear">
+					<br />
+				</div>
+				<div class="cmFooterTerms">
+					<p>
+						© 2017 <a href="http://www.coxmediagroup.com">Cox Media Group</a>.
+						By using this website, you accept the terms of our <a
+							href="/visitor_agreement/">Visitor Agreement</a> and <a
+							href="/privacy_policy/">Privacy Policy</a>, and understand your
+						options regarding <a href="/privacy_policy/#ad-choices">Ad
+							Choices</a><img border="0"
+							src="http://media.cmgdigital.com/shared/img/photos/2012/02/29/d3/da/ad_choices_logo.png"
+							alt="AdChoices" style="margin: 0 0 -4px 4px;" />.<br />Learn
+						about <a href="http://www.coxmediagroup.com/careers/"
+							target="_blank">careers at Cox Media Group</a><br />
+					</p>
+					<p>
+						<img
+							src="http://media.cmgdigital.com/shared/img/photos/2011/03/29/rovi_logo.jpg"
+							height="16" width="30" align="middle" alt="Rovi" /> Portions of
+						Content Provided by Rovi Corporation. © 2017 Rovi Corporation<br />
+					</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+<!-- end inner_footer_wrapper_002 block --><div class="cmClear"></div></div>
+		</div>
+
+		<!-- begin outer_footer_wrapper_001 block --><div id="cmSiteSwitchFoot" style="display: none" class="cmSiteSwitch">
+				
+				<a href="//m.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/" class="cmMobileSiteLink">
+							<p>
+								<span>View mobile site</span>
+							</p>
+						</a>		
+					</div>
+			
+			<noscript>				
+				<div id="cmSiteSwitchFootNS" class="cmSiteSwitch">
+					<a href="//m.yourgeorgiacountry.com/sports/football/super-bowl-2017-things-know-before-heading-houston/l6PWP3i29Pt6d4PFreX9JP/" class="cmMobileSiteLink">
+								<p>
+									<span>View mobile site</span>
+								</p>
+							</a>		
+						</div>
+			</noscript>
+			<script type="text/javascript">
+				var mobUserAgentPttn = new RegExp(
+						"iphone|ipod|android|blackberry|symbian|nokia|sonyericsson|sie-|opera\\ mini|portalmmm/|windows\ ce|windows\ phone|iemobile|up.browser|up.link|802sh|alcatel-|amoi-|attws|au-mic|audiovox|avantgo|benq|cdm-|ericsson|ericy-|gs308|hitachi-p300|htc-|i-2100|kwc-|lg-|lg/u|lge-|lge/u|lowestcd|mo0|mobilephone|mot-|motorola|n5-10|nec-|opwv|owg1|palm|panasonic|pg-c|philips|pls|pm-|pn-215|profile/midp|qci-|rl-|rpt-httpclient|sagem|samsung|sanyo|sch-a|sch-n|scp-|sec-|sendox|sgh|sharp|smartphone|spha|v60t|vi600|vk530|vm4050|vodafone|wapper|wildseed|winwap-pro"
+								.replace(/ /g, "\\s"), "i");
+				var mobBlacklistPttn = new RegExp(
+						"^/(ads|alerts|answers|audioclips|bands|categories|categories|events|documents|drinkspecials|events|features|forums|instruments|maps|mp3|lsp|onthestreet|places|playlists|podcasts|polls|pr|qa|questionnaires|recipes|restaurants|restaurants|specials|search|songs|special_coverage|staff|stories|traffic|tumble)"
+								.replace(/ /g, "\\\s"), "i");
+				if (mobUserAgentPttn.test(navigator.userAgent)
+						&& !mobBlacklistPttn.test(location.pathname)) {
+					document.getElementById('cmSiteSwitchFoot').style.display = "block";
+					document.getElementById('cmSiteSwitchHead').style.display = "block";
+				}
+			</script>
+	
+			<!-- end body_wrap_outer block-->
+
+			<script>
+				cmg.harmony.slot('PB00').on('slotRenderEnded', function (event) {
+					if (!event.isEmpty) {
+						cmg.query(function() {
+							cmg.query('#adgeletti-ad-div-PB00-0px-infinity').prepend(
+								'<span>Sponsored By:</span>');
+						});
+					}
+				});
+			</script>
+		<!-- end outer_footer_wrapper_001 block --></div>
+
+	<!-- begin livefyre_auth block -->
+<script type="text/javascript">
+    cmg.query(document).ready(function() {
+        var $ = cmg.query,        
+        	// Synchronises user data between Janrain and Livefyre
+            cmg_ping_to_pull = function() {
+                if (typeof janrain !== 'undefined' && localStorage && localStorage.getItem('janrainCaptureReturnExperienceData')) {
+                    var profileData = localStorage.getItem('janrainCaptureReturnExperienceData'),
+                        baseUrl = 'http://www.yourgeorgiacountry.com',
+                        syncEndpoint = baseUrl + '/eom/PortalConfig/common/widgets/livefyre/livefyreJanrainSync.jsp';
+                    profileData = typeof profileData == "string" ? JSON.parse(profileData) : profileData;
+                    if (profileData.uuid) {
+                        jQuery.get(syncEndpoint + '?uuid=' + profileData.uuid, function(data) {
+                            if (JSON.parse(data).code === 202) {
+                                // Do nothing; the request kicks off a sync on livefyre's side.
+                                console.log('Syncing Janrain and Livefyre...');
+                            } else {
+                                console.error(data);
+                            }
+                        });
+                    } else {
+                        console.error('Problem with uuid/profileData: ', profileData);
+                    }
+                }
+            },
+            // Livefyre auth functionality
+            clear_livefyre_creds = function() {
+                var yesterday = new Date();
+                yesterday.setTime(yesterday.getTime() + (-1 * 24 * 60 * 60 * 1000));
+                document.cookie = 'backplane-channel' + '=; expires=' + yesterday.toUTCString() + '; path=/';
+                localStorage.removeItem('fyre-auth');
+            },
+            check_janrain_loggedin_status = function() {
+                var cookie_ur_name = cmg.query.cookie('ur_name', {path: '/'});
+                if (!janrain.capture.ui.hasActiveSession() && typeof cookie_ur_name !== 'string') {
+                    // Not signed in but livefyre thinks we are
+                    // delete the backplane-channel cookie and
+                    // remove the fyre-auth entry from localstorage.
+                    clear_livefyre_creds();
+                }
+            },
+            initLivefyreAuth = function() {
+                if (typeof window.Backplane === 'function') {
+                    Livefyre.require(['auth', 'backplane-auth-plugin#0'], function(auth, backplanePluginFactory){          
+                        auth.plugin(backplanePluginFactory('coxradio-int-0.fyre.co'));
+                        auth.delegate({
+                            login: function(callback) {
+                                // Setup a login successful callback to attach to janrain events.
+                                var successCallback = function(e) {
+                                    janrain.events.onCaptureLoginSuccess.removeHandler(successCallback);
+                                    cmg_ping_to_pull(); // Synchronise Janrain and Livefyre
+                                    callback(e);
+                                };
+                                // Setup a modal close callback to attach to janrain events.
+                                var modalCloseCallback = function(e) {
+                                    janrain.events.onModalClose.removeHandler(modalCloseCallback);
+                                    janrain.events.onCaptureLoginSuccess.removeHandler(successCallback);
+                                    callback(e);
+                                };
+                                // Setup a logout callback to attach to janrain events.
+                                var logoutCallback = function(e) {
+                                    auth.logout();
+                                };
+                                // Attach callbacks to janrain event handlers.
+                                janrain.events.onCaptureLoginSuccess.addHandler(successCallback);
+                                janrain.events.onCaptureSessionEnded.addHandler(logoutCallback);
+                                cmg.query(document).on('click', '.janrain-close-modal', modalCloseCallback);
+                                janrain.capture.ui.modal.open();
+                                window.Backplane.expectMessages('identity/login');
+                                janrain.events.onCaptureLoginFailed.addHandler(check_janrain_loggedin_status);
+                            },
+                            editProfile: function(delegate, author) {
+                                location.href = '/member-center/';
+                            },
+                            viewProfile: function(delegate, author) {
+                                cmg_ping_to_pull(); // Synchronise Janrain and Livefyre
+                            },
+                            logout: function(delegate) {
+                                clear_livefyre_creds();
+                                delegate();
+                            }
+                        });
+                        window.livefyre_auth = auth;
+                        $(window).trigger('livefyre.auth_initialized');        
+                    });   
+                } else {
+                    setTimeout(initLivefyreAuth, 500);
+                }
+            };
+
+        $.getScript('//cdn.livefyre.com/Livefyre.js')
+            .done(initLivefyreAuth)
+            .fail(function() {
+                $(window).trigger('livefyre.load_failure');
+                if (typeof console !== 'undefined') {
+                    console.error('Fetch of //cdn.livefyre.com/Livefyre.js failed.  Hiding commenting.');
+                }
+            });
+
+        // make sure to logout out of livefyre AND janrain
+        $(document).on('click', '.cmLogout, .fyre-logout-link', function(event) {
+        	event.preventDefault();
+        	pubsub.publish('authn-logout');
+            window.livefyre_auth.logout();
+        });
+        // Bind livefyre `sign in` to janrain
+        $(document).on('click', 'a.fyre-user-loggedout, .cm-lc-login, .cm-lc-register', function(event) {
+        	event.preventDefault();
+        	janrain.capture.ui.modal.open();
+        });
+    });
+</script><!-- end livefyre_auth block --><script
+		src="//www.yourgeorgiacountry.com/r/PortalConfig/common/analytics/js/radio-analytics.js"></script>
+	<!-- Brightcove stuff -->
+<script>
+	(function(jQuery){
+		function loadPlaylists() {
+			jQuery.when(
+					jQuery.getScript( "/_js_brightcove_common/custom-playlist.js" ),
+					jQuery.Deferred( function(deferred) {
+						jQuery(deferred.resolve );
+					})
+				).done(function(){
+					window.brightcovePlaylists.forEach(function(item){
+						if(item.playlistType.localeCompare('brightcove-playlist') == 0) {
+							var videoWidth = jQuery('#'+item.id).parent().width();
+							videojs(item.id).customPlaylist({ 
+								width: videoWidth
+							});
+						}
+					});
+					setTimeout(function() {
+						jQuery('.brightcovePlaylist').each(function(index, item) {
+							var el = jQuery(this);
+							var newHeight = parseInt(el.css('width'), 10) * 6 / 11 + 10 + 130;
+							el.css('height', newHeight);
+						});
+					}, 1000);
+				});
+		};
+		
+		function resizeLegacyPlaylist(brightcoveManager) {
+			var contentWidth = document.getElementsByClassName('cm_mobBodyContent')[0] && document.getElementsByClassName('cm_mobBodyContent')[0].clientWidth;
+			var legacyInlinePlayers = document.getElementsByClassName('xsm-blockstyle-align-fullwidth legacyPlayer');
+			if(legacyInlinePlayers && contentWidth) {
+				[].forEach.call(legacyInlinePlayers, function(el) {
+					if(el.style && contentWidth) {
+						var width = contentWidth > 600 ? '600' : contentWidth;
+						el.style.width = width + 'px';
+						el.style.height = width + 'px';
+					}
+				});
+			}
+			var legacyPlayers = document.getElementsByClassName('provider-brightcove legacyPlayer');
+			if(legacyPlayers) {
+				[].forEach.call(legacyPlayers, function(el) {
+					var parentWidth = el.parentElement.clientWidth;
+					if(el.style && parentWidth) {
+						var width = parentWidth > 600 ? '600' : parentWidth;
+						el.style.width = width + 'px';
+						el.style.height = width + 'px';
+					}
+				});
+			}
+			brightcovevideos = window.brightcovevideos || [];
+			brightcoveManager.init(cmg, brightcovevideos);
+			cmg.query(brightcove.createExperiences);
+		}
+		
+		
+		jQuery(document).one('ready',function(){
+			if (jQuery('.brightcovePlaylist').length) 
+			{
+				loadPlaylists();
+			}
+			
+			if (jQuery('.BrightcoveExperience').length) 
+			{
+				jQuery.when(
+						jQuery.getScript( "http://admin.brightcove.com/js/BrightcoveExperiences.js" ),
+						jQuery.getScript( "/_js_brightcove_common/ExternalAd_BC_Prod.js,cmgPlayerModule.js" ),
+						jQuery.Deferred( function(deferred) {
+							jQuery(deferred.resolve );
+						})
+					).done(function(){
+						var brightcoveManager = new brightcovePlayerManager();
+						resizeLegacyPlaylist(brightcoveManager);
+					});
+			}
+		});
+	}(jQuery));
+	//# sourceURL=brightcove-dependencies-loading.js
+</script><!-- begin adcollector block -->
+
+
+
+
+
+
+
+
+
+	
+	
+
+
+<script type="text/javascript">
+	(function($) {
+		$(document).ready(function() {
+			var slotList = [];
+		window.adunit = "12523293/athens_ra/wngc_web_default/sports/football";
+		var adunit = window.adunit;
+		$("div[ad_slot]").each(function() {
+			var curSlot = JSON.parse($(this).attr("ad_sizes"));
+			var slot = {
+				id: $(this).attr("id"),
+				adunit: adunit,
+				group: "cmg",
+				breakpoint: $(this).attr("ad_group"),
+				name: $(this).attr("ad_name"),
+				//companion: $(this).attr("companion"),
+				//interstitial: $(this).attr("interstitial"),
+				sizes: curSlot,
+				targeting: {
+					ad_slot: $(this).attr("ad_name"),
+					breakpoint: $(this).data("ad_gorup")
+				},
+				number: 1
+
+			};
+			for (var i=0; i < slotList.length; i++) {
+				if (slotList[i].name === slot.name) {
+					console.log("same name => number++");
+					slot.number += 1;
+				}
+			}
+			console.log(slot.name +" => "+ slot.number);
+			slotList.push(slot);
+		});
+
+		var jsonString = JSON.stringify(slotList);
+		var skyJsonStr = JSON.stringify("Clear");
+		var weatherJsonStr = JSON.stringify("");
+		weatherJsonStr = weatherJsonStr.replace(/["]+/g, '');
+		skyJsonStr = skyJsonStr.replace(/["]+/g, '');
+		var tempRangeArr = ["-10 to -6","-15 to -11","-20 to -16","-25 to -21","-30 to -26","-35 to -31","-40 to -36","-45 to -41","-5 to -1","-50 to -46","-55 to -51","-60 to -56","0 to 4","10 to 14","100 to 104","105 to 109","110 to 114","115 to 119","120 to 124","125 to 129","130 to 134","135 to 139","140 to 144","145 to 149","15 to 19","150 to 154","155 to 159","20 to 24","25 to 29","30 to 34","35 to 39","40 to 44","45 to 49","5 to 9","50 to 54","55 to 59","60 to 64","65 to 69","70 to 74","75 to 79","80 to 84","85 to 89","90 to 94","95 to 99"];
+		var curtempF ='44';
+		var tempRange;
+		for (var i = 0;i < tempRangeArr.length;i++) {
+			var tempR = tempRangeArr[i].split('to');
+ 			if ((curtempF >= parseInt(tempR[0])) && (curtempF <= parseInt(tempR[1]))) { 
+     			tempRange = tempRangeArr[i];
+    		}
+    	}
+			
+			var adconfJson = {
+			"slots": slotList,
+			"targeting": {
+				"weather" : weatherJsonStr,
+				"sky"	  : skyJsonStr,
+				"temp_range": tempRange,
+				"obj_type": "story",
+				"uuid"  : "f225a30c-300b-4d61-a7ab-8cd86b833f4d",
+				"topics"  : ["super bowl","jj_stub","cox_stub","cox_shared","cox_irresistible","ajc_stub"],
+				"environ" : ( (window.location.href.indexOf('?testads') != -1) ? "debug" : "prod" )
+			}
+		};
+		window.adConfiguration = adconfJson;
+
+		cmg.harmony = Harmony();
+		cmg.harmony.load(adconfJson);
+		googletag.enableServices();
+		cmg.harmony.show.breakpoint("0px-infinity");
+
+		var adString = "\n";
+		adString += "/* -----===== Begin Ad Logs (v1) =====----- */\n";
+		adString += "\n";
+		adString += "Taxonomy\n";
+		adString += "----------\n";
+		adString += "/sports/football\n";
+		adString += "\n";
+
+		adString += "Targeting\n";
+		adString += "----------\n";
+		adString += JSON.stringify(adconfJson.targeting) +"\n";
+		adString += "\n";
+
+		adString += "Ad slots in this page\n";
+		adString += "----------\n";
+		var allAdName = [];
+		for (var i=0, j=slotList.length; i < j; i++) {
+			allAdName[i] = "'"+ slotList[i].name + "'";
+		}
+		adString += "["+ allAdName.join(",") +"]\n";
+		adString += "\n";
+
+		adString += "Slot size and breakpoint configuration\n";
+		adString += "----------\n";
+		for (var i=0, j=slotList.length; i < j; i++) {
+			adString += "Slot "+ slotList[i].name +" ("+ slotList[i].number +") displays sizes "+ JSON.stringify(slotList[i].sizes) +" at "+ slotList[i].breakpoint +"\n";
+		}
+		adString += "\n";
+
+		adString += "System Messages\n";
+		adString += "----------\n";
+		adString += "Harmony version 2.0.0\n";
+		adString += "\n";
+		adString += "/* -----====== End Ad Logs ======----- */\n";
+		console.log(adString);
+		});
+	})(jQuery);
+	//# sourceURL=adcollector.js
+	</script>
+	<!-- end adcollector block --><!-- begin footer_scripts block --><!-- end footer_scripts block --><script>
+		_satellite.pageBottom();
+	</script>
+	
+	
+
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"applicationID":"26274291","applicationTime":176,"beacon":"bam.nr-data.net","queueTime":0,"licenseKey":"aaf23b031f","transactionName":"MQYHNRZYCkZVBxcKVghMLzI0FgFaWUszDEsSAgkiC1cCXFNLEQJdDww6UVQLAFhBFwoAZlZTVwUTUBZQUEsJE01JBRcACVwXUEA7CRNN","agent":"","errorBeacon":"bam.nr-data.net"}</script>
+
+</body>
+</html>

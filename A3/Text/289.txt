@@ -1,0 +1,120 @@
+Pokemon GO now lets Android users play music while hunting - SlashGear 
+CONTENT 
+Reviews 
+Columns 
+Buyer's Guide 
+POPULAR TOPICS 
+Android 	   
+Apple 
+Cars 
+Phones 
+Tablets 
+Gaming 
+Computing  
+Photography 
+Apps                 
+Software                 
+Wearable 
+Entertainment 
+Science 
+Reviews 
+Columns 
+Buyer's Guide 
+Popular Topics  
+Android 	   
+Apple 
+Cars 
+Phones 
+Tablets 
+Gaming 
+Computing 
+Photography                 
+Apps 	                          
+Software        
+Wearable 
+Entertainment 
+Science         
+Twitter 
+Google+ 
+Facebook 
+Youtube 
+RSS 
+Search SlashGear 
+Search 
+Pokemon GO now lets Android users play music while hunting 
+JC Torres - Jan 29, 2017   			   
+3  
+Facebook  Twitter  Google  Reddit   
+Android users now no longer run the risk of burning the Pokemon GO music theme in theirs ears and subconscious or bear the eerie silence when hunting for Pokemon or battling it out in gyms. Niantic Labs just pushed out an update to both iOS and Android versions but seems to have not mentioned an especially important change for Android users. Users are reporting that the game no longer pauses their current music or podcast when they startup Pokemon GO, allowing them to listen to their choice of tunes. 
+This is something that iOS users have already enjoyed for quite a while, around since version 1.23.x. Now Android users are also getting in on the fun. Previously, Pokemon GO would pause any and all currently playing music when it starts up, forcing players to listen to the game’s looping music or none at all. As you can imagine, it did not sit well with players. 
+To be fair to Niantic, the problem wasn’t exactly theirs but was caused by a bug in the Unity 3D game engine. Being a game engine, Unity most likely works on the presumption that it is the only thing you’ll want to listen to. Obviously not the case. Unity apparently put out the fix a few weeks back, but, as is normal in game development cycles, those didn’t trickle down to Pokemon GO players until recently. 
+There is a catch, however. There is always a catch. While Pokemon GO now lets you listen to music or podcasts while playing, it lowers the volume down to a considerable degree. Some players report it to be well below an acceptable level, leading them to increase the phone’s volume. But once Pokemon GO is closed and its volume-decreasing effect is undone, boom goes your eardrums. It hasn’t been established yet whether this is another Unity bug or if Niantic Labs intentionally designed it that way. 
+Officially, the update, version 0.55.0 for Android and 1.25.0 for iOS, brings the following changes: 
+• Reduced the starting load time on Android devices. 
+• Resolved Android connectivity issues for the Pokémon GO Plus accessory. 
+• Integrated iOS wheelchair support for use with Apple Watch. 
+• Minor text fixes. 
+SOURCE: Pokemon GO , Reddit 
+Story Timeline 
+Pokemon GO update: Gen 2 event plus celebration incoming 
+Pokemon GO's "Poke Bank" update revealed for transfer plus trading 
+Pokemon GO update: Gen 2 event transfer plus Valentine's Day 
+Tags Android Gaming Niantic Labs pokemon Pokemon GO  			  
+Must Read Bits &amp; Bytes 
+2017 Lincoln Continental AWD Reserve Review: American Cheese 
+See our Gen 2 Pokemon GO 1st-wave list and release date timing 
+PlayStation Now support is ending for many devices later this year 
+Apple patents bezel-less iPhone tech to put Touch ID in display 
+Fix self-driving car rules or face needless deaths, GM warns government 
+Latest Headlines 
+Google Home and Google Express now make shopping a breeze 
+Feb 16, 2017 
+Pokemon GO update live! Plus how Eevee evolves into Umbreon and Espeon 
+Feb 16, 2017 
+This is what the Nintendo Switch OS (supposedly) looks like 
+Feb 16, 2017 
+Researchers: dwarf planet Ceres has &#8216;key ingredients for life&#8217; 
+Feb 16, 2017 
+YouTube gets machine-generated automatic captions 
+Feb 16, 2017 
+Latest Reviews 		
+2017 Lincoln Continental AWD Reserve Review: American Cheese 
+Feb 16, 2017 
+2017 Ford Fusion Sport Review: Blue Oval Q ship cancels mid-size family sedan boredom 
+Feb 15, 2017 
+Lenovo ThinkCentre X1 All-in-One Windows 10 PC Review 
+Feb 12, 2017 
+ROLI BLOCKS Review: Modular music system has room to grow 
+Feb 11, 2017 
+2017 Dodge Durango R/T Review: No SRT required for this V8-powered SUV 
+Feb 9, 2017 
+Search 
+© 2005-2016 SlashGear, All Rights Reserved. 
+Site Information 
+About 
+Advertise 
+Tip Us 
+Contact 
+Ethics Statement 
+Privacy Policy 
+Terms of Use 
+Archives   
+Social and Media 
+Google+ 
+Facebook 
+Twitter 
+YouTube 
+RSS Feed 
+Popular Topics 
+Android 	   
+Apple 
+Cars 
+Phones 
+Tablets 
+Gaming 
+Computing         
+Apps  
+Software                 
+Wearable 
+Entertainment 
+Science

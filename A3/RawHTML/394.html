@@ -1,0 +1,127 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Barock Music</title>
+
+	<link href="css/disposition_droite.css" rel="stylesheet" type="text/css" media="screen" />
+
+<link href="css/structure.css?v1" rel="stylesheet" type="text/css" media="screen" />
+<link href="classic_02_d/couleurs.css" rel="stylesheet" type="text/css" media="screen" />
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+ $(document).ready(function() {
+ 	 $("#responsecontainer").load("playlistws.cfm?test=oui&radiowsid=15845");
+   var refreshId = setInterval(function() {
+      $("#responsecontainer").load('playlistws.cfm?test=oui&radiowsid=15845&randval='+ Math.random());
+   }, 45000);
+});
+
+(function (win, doc, script, source, objectName) { (win.RadionomyPlayerObject = win.RadionomyPlayerObject || []).push(objectName); win[objectName] = win[objectName] || function (k, v) { (win[objectName].parameters = win[objectName].parameters || { src: source, version: '1.1' })[k] = v; }; var js, rjs = doc.getElementsByTagName(script)[0]; js = doc.createElement(script); js.async = 1; js.src = source; rjs.parentNode.insertBefore(js, rjs); }(window, document, 'script', 'https://www.radionomy.com/js/radionomy.player.js', 'radplayer'));
+radplayer('url', 'Barock-Music');
+radplayer('type', 'medium');
+radplayer('autoplay', '0');
+radplayer('volume', '50');
+radplayer('color1', '#000000');
+radplayer('color2', '#ffffff');
+
+</script>
+</head>
+
+<body>
+<div id="conteneur">
+	<div id="element_graphique"></div>
+	<div id="colonne_identite">
+    	<div id="bloc_logo_info">
+	    	<div id="bloc_logo">
+				<div id="logo">
+                	<img src="http://i.radionomy.com/radio/110/e7427c6f-c075-4b79-8242-4ca41fa92e2a.jpg" width="110" height="110" border="0" alt="" />
+                </div>
+			</div>
+	        <div id="bloc_info_radio">
+    	   		<h1>Barock Music</h1>
+        	    <h2>Non-stop Barock Music
+Musique baroque sans interruption</h2>
+    	        <p>
+Genres musicaux : Baroque - Classic </p>
+       	  </div>
+        </div>
+        <div id="bloc_image">
+       		<div id="image"><img src="http://imageshack.us/photo/my-images/263/barockmusic512x512twibb.jpg/" border="0" alt="" /></div>
+		</div>
+    </div>
+    <div id="colonne_contenu">
+    			<div id="bloc_navigation">
+           	<ul id="navigation">
+               	<li><a href="index.cfm" title="Home">Home</a></li>
+                <li><a href="news.cfm" title="News">News</a></li>
+                <li><a href="comments.cfm" title="Comments">Commentaires</a></li>
+                <li><a href="contact.cfm" title="NewComment">Contact</a></li>
+        	</ul>
+	   	</div>
+		<div id="bloc_player_playlist">
+			<div id="player">
+           		<div class="radionomy-player"></div>
+            </div>
+            <div id="bloc_playlist">
+	        	<h3>Derniers Morceaux Joués</h3>
+				
+<div id="responsecontainer">
+</div>
+
+			</div>
+        </div>
+        <div id="bloc_teaser_news">
+        	<h3>Dernières News</h3>
+			
+<div class="news_preview">
+               	<div class="datecal">
+                	<div class="mm">Aug</div>
+                    <div class="dd">24</div>
+                </div>
+                <p><a href="news.cfm" title="">Twitter</a></p>
+   	        </div>
+
+<div class="news_preview">
+               	<div class="datecal">
+                	<div class="mm">May</div>
+                    <div class="dd">31</div>
+                </div>
+                <p><a href="news.cfm" title="">Site web de Barock Music - Barock website</a></p>
+   	        </div>
+
+            <a class="voir_plus" href="news.cfm" title="Voir toutes les news">Voir toutes les news</a>
+	    </div>
+        <div id="bloc_teaser_comments">
+        	<h3>Derniers Commentaires</h3>
+			
+<div class="comments_preview">
+               	<img src="/images/avatar.jpg" width="31" height="31" border="0" alt="" />
+                <p><a href="comments.cfm" title=""> hélas,des jingles incessants et tres ennuyeux
+Les memes morceaux reviennent trop souvent...Les 4 saisons,le canon de Pachelbel,domage!!</a></p>
+   	        </div>
+
+
+<div class="comments_preview">
+               	<img src="/images/avatar.jpg" width="31" height="31" border="0" alt="" />
+                <p><a href="comments.cfm" title=""> J'adore votre radio,mais,intermèdes musicaux trop longs et répétitifs.  Dommage!</a></p>
+   	        </div>
+
+
+           	<a class="voir_plus" href="comments.cfm" title="Voir tous les commentaires">Voir tous les commentaires</a>
+    	</div>
+        
+<div id="bloc_copyright">
+      		&copy; <a href="http://www.radionomy.com" title="" target="_new">Radionomy</a> | <a href="#" title="">Conditions Générales d'Utilisation</a>
+        </div>
+        <div id="bloc_logos_radionomy_sabam">
+        	<img src="/images/logo_radionomy.png" border="0" width="120" height="21" alt="" /><img src="/images/logo_sabam.jpg" border="0" width="62" height="17" alt="" />
+    	</div>
+        
+    </div>
+    <div id="footer"></div>
+    <div id="element_graphique_bas"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+Super Bowl 2017: 5 things to know before heading to Houston | 106.1 WNGC 
+Sign In / Register 
+Sign in with your existing account 
+{* loginWidget *} 
+Sign in with your email 
+{* #userInformationForm *}
+{* traditionalSignIn_emailAddress *} 
+{* traditionalSignIn_password *} 
+{* traditionalSignIn_signInButton *} Forgot
+your password? 
+{* /userInformationForm *}
+New User? 
+Create a New Account 
+Sign In / Register 
+Welcome Back {* welcomeName *} 
+{* loginWidget *}
+Use another
+account 
+Sign In / Register 
+Welcome back. Please sign in 
+{* #userInformationForm *}
+{* traditionalSignIn_emailAddress *} 
+{* traditionalSignIn_password *} 
+{* traditionalSignIn_signInButton *} 
+Forgot your password? 
+Use
+another account 
+{* /userInformationForm *}
+You're Almost Done! 
+Select a display name and password 
+{* #socialRegistrationForm *}
+{* socialRegistration_displayName *} 
+{* socialRegistration_emailAddress *} 
+{* traditionalRegistration_password *} 
+{* traditionalRegistration_passwordConfirm *} 
+Tell us about yourself 
+{* registration_firstName *} 
+{* registration_lastName *} 
+{* registration_postalZip *} 
+{* registration_birthday *} 
+{* registration_gender *} 
+*Indicates Required Field 
+{* agreeToTerms *}
+{* backButton *} 
+{* socialRegistration_signInButton *} 
+{* /socialRegistrationForm *}
+Create a New Account 
+Select a display name and password 
+Already have an account? Sign
+In 
+{* #registrationForm *}
+{* traditionalRegistration_displayName *} 
+{* traditionalRegistration_emailAddress *} 
+{* traditionalRegistration_password *} 
+{* traditionalRegistration_passwordConfirm *} 
+Tell us about yourself 
+{* registration_firstName *} 
+{* registration_lastName *} 
+{* registration_postalZip *} 
+{* registration_birthday *} 
+{* registration_gender *} 
+*Indicates Required Field 
+{* agreeToTerms *}
+{* createAccountButton *} 
+{* /registrationForm *}
+Create a New Account 
+Already have an account? Sign
+In 
+{* #registrationFormBlank *}
+{* registration_firstName *} 
+{* registration_lastName *} 
+{* traditionalRegistration_displayName *} 
+{* traditionalRegistration_emailAddressBlank *} 
+{* registration_birthday *} 
+{* registration_gender *} 
+{* registration_postalZip *} 
+{* traditionalRegistration_passwordBlank *} 
+{* traditionalRegistration_passwordConfirmBlank *} 
+*Indicates Required Field 
+{* agreeToTerms *}
+{* backButton *} 
+{* createAccountButton *} 
+{* /registrationForm *}
+Thank you for registering! 
+We have sent you a confirmation email. Please check your email
+and click on the link to activate your account. 
+Close 
+Thank you for registering! 
+We look forward to seeing you frequently. Visit us and sign in
+to update your profile, receive the latest news and keep up to date
+with mobile alerts. 
+Close 
+Create a new password 
+Don't worry, it happens. We'll send you a link to create a new
+password. 
+{* #forgotPasswordForm *}
+{* forgotPassword_emailAddress *} 
+{* backButton *} 
+{* forgotPassword_sendButton *} 
+{* /forgotPasswordForm *}
+Email sent 
+We have sent you an email with a link to change your password. 
+Close 
+Create a new password 
+We've sent an email with instructions to create a new password.
+Your existing password has not been changed. 
+Close 
+{* mergeAccounts *}
+Sign in to complete account merge 
+{* #tradAuthenticateMergeForm *}
+{* traditionalSignIn_emailAddress *} 
+{* mergePassword *} 
+{* backButton *} 
+{* traditionalSignIn_signInButton *}
+{* /tradAuthenticateMergeForm *}
+Resend Email Verification 
+To sign in you must verify your email address. Fill out the
+form below and we'll send you an email to verify. 
+{* #resendVerificationForm *}
+{* traditionalSignIn_emailAddress *} 
+{* newPasswordFormButton *} 
+{* /resendVerificationForm *}
+Your Verification Email Has Been Sent 
+Check your email for a link to verify your email address. 
+Sign in 
+View mobile site 
+Home 
+Last						Songs Played 
+Community Calendar 
+On-Air 
+Inside 
+Your Georgia Country Interviews 
+Prime Time Roundup Podcast 
+St. Jude 
+Contact Us 
+Work With Us 
+Search 
+Member Center 
+Is this not you? 
+Sign Out 
+Sign In | Register 
+44&deg; 
+Contests 
+Live Lounge 
+Event Pics 
+Now Playing 
+Your Georgia Country  
+Last Song Played 
+North Georgia's Country 
+On Air 
+No Program 
+Now Playing 
+Your Georgia Country 
+Last Song Played 
+North Georgia's Country 
+44&deg; 
+Contests 
+Live Lounge 
+Home 
+Sports 
+Football 
+Posted: January 27, 2017 
+Super Bowl 2017: 5 things to know before heading to Houston
+Comments 
+The Most Memorable Super Bowl Halftime Performances 
+Related 
+View Larger
+NRG Stadium, which will host Super Bowl LI, is shown Tuesday, Jan. 24, 2017, in Houston. The New England Patriots will play the Atlanta Falcons in NFL football's Super Bowl LI on Sunday, Feb. 5, 2017, at NRG Stadium. (AP Photo/David J. Phillip) 
+By
+Stephanie Toone 
+The Atlanta Journal-Constitution 
+HOUSTON
+&#8212; 
+It's time for fans to prepare if they are heading to Houston for the Super Bowl. The Falcons and the New England Patriots will face off at 6 p.m. Feb. 5 for Super Bowl LI at NRG Stadium, only the second Super Bowl appearance for the Falcons and the 10th appearance for the Patriots. According to StubHub, as of Monday, about 8 percent of sales for Super Bowl tickets had come from Georgia, and 3 percent from Massachusetts. 
+&gt;&gt;Super Bowl 2017: 6 stats from Falcons-Patriots matchup 
+&gt;&gt;Super Bowl 2017: What time, what channel, livestream options 
+&gt;&gt; Read more trending stories 
+Before making the trek to root for your favorite team, here are a few things to note about Houston. 
+1. How much are tickets to the Super Bowl? 
+As of Thursday, tickets to the big game were listed between $3,000 and $5,500 on StubHub&rsquo;s website. TickPick, another secondary-market ticket site, listed its cheapest ticket for the game available on Thursday at $3,169. &ldquo;Since the Falcons weren&rsquo;t really an expected Super Bowl team, it&rsquo;s tough to forecast the direction of prices,&rdquo; TickPick CEO Brett Goldberg said earlier this week. &ldquo;Atlanta is close to Houston, and if the fan base travels in numbers, that very well can keep prices stable.&rdquo; 
+2. What are airfare prices like to the Super Bowl? 
+The prices are similar to tickets for the game - they&rsquo;re not cheap. To cater to eager Falcons and Patriots fans, Southwest Airlines is adding flights from Atlanta and Boston into Houston on Feb. 3 and Feb. 6. The Dallas-based airline is adding two additional flights between Houston and Atlanta the day after the game. Southwest, as of Thursday, was listing fares as low as $445 for a round trip. Delta Air Lines listed air fares from Boston as low as $1,226 round trip and as low as $978 from Atlanta as of Thursday. 
+Nationally, flights to Houston will be in high demand across the country during the period before and after the Super Bowl, so be prepared to pay a premium price. 
+3. Is Houston an easy city to navigate? 
+Short answer: no. Houston is the fourth largest city in the country, and with a big city comes big traffic. Houston is also the epitome of urban sprawl, so traveling by car will not be an easy feat. A knowledgeable Uber or Lyft driver will likely be the best friend a Patriots or Falcons fan can have in town. If ride-hailing apps are not your thing, free circulator shuttles will run downtown during Super Bowl week. Three Greenlink routes will take guests from parking lots on the west side of downtown to the entrance to Super Bowl Live and in and around Discovery Green. 
+4. Where can you enjoy Houston like a native? 
+Houston has an array of seafood and Mexican restaurants that locals love to frequent. But the go-to spot near NRG is Mama&rsquo;s Oven , a soul food restaurant that&rsquo;s light on the grandeur but heavy on the taste. The hole-in-the-wall spot is known for its meat loaf, oxtails and pork chops. After chowing down on an official Houston dinner, it&rsquo;ll be time for dessert. Hank&rsquo;s Ice Crea m has you covered. The homemade ice cream parlor has been an institution in the city for more than 20 years. Beyonc&eacute;, a Houston native, particularly likes the banana pudding, according to Hank&rsquo;s website. If enjoying craft beer is your thing, Saint Arnold Brewing Co. dubbed &ldquo;Texas&rsquo; oldest craft brewery,&rdquo; would be a fitting night on the town. Customers can enjoy full-flavored beers, and on Super Bowl Sunday Saint Arnold will host its fourth annual Super Beef Sunday , which includes legendary barbecue from Louie Mueller BBQ, Pinkerton&rsquo;s Barbecue and Harlem Road Texas BBQ. 
+5. Where can you celebrate the game? 
+The better question is: Where can&rsquo;t you celebrate? The weekend will be full of activities, but here are some of the top events to catch on Super Bowl weekend: A traveling nightclub: Club Nomadic, dubbed a &ldquo;traveling nightclub experience,&rdquo; will be open during the weekend of the Super Bowl. The 62,500-square foot, three-story nightclub holds 9,000 people with special areas for celebrities and VIPs. The venue, at 2121 Edwards St., hosts the EA Sports Bowl with a performance by Sam Hunt and the Chainsmokers on Feb. 2, welcomes Bruno Mars on Feb. 3 and ends with a performance by Taylor Swift on Feb. 4. Tickets are pricey, but can be purchased through Ticketmaster . Super Bowl opening night: Fans can get a peek Jan. 30 at the teams in the Super Bowl at Super Bowl Opening Night downtown at Minute Maid Park, home of the Houston Astros. The event is the first time during Super Bowl week that players in the big game will meet with media as fans watch from the bleachers. It features a performance by rock band X Ambassadors and an appearance by Hall of Fame quarterback Warren Moon. Those attending the event will get gift bags with a radio that they can tune to NFL Network coverage to listen in on player interviews. Doors open at 5:30 p.m., and interviews are from 7:15-8:15 p.m. and 9-10 p.m. Tickets start at $20 and can be purchased through Vividseats.com . Super Bowl Live: A free fan festival that stretches from Discovery Green across from the George R. Brown Convention Center to Root Park near the Toyota Center, where the Houston Rockets play. The festival, which runs from Jan. 28-Feb. 5, will include artists, exhibits and games. An area called Houston Live will showcase the city and its history. Super Bowl Live will also include a virtual reality experience, Future Flight, created with help from NASA, which will take fans on a 90-foot drop tower ride mimicking a space flight to Mars. 
+Comments 
+There are no comments yet. Be the first to post your thoughts.
+Sign in or Register .
+Newsletters 
+AUDIO 
+Last Songs Played 
+EVENT GUIDE 
+Events 
+About Us 
+Contact Us 
+Work With Us 
+EEOC Statement 
+Advertisers and Sponsors 
+How to Advertise 
+Cars at Autotrader 
+Local Services at Kudzu 
+Help 
+Audio Help 
+Video Help 
+Search Help 
+© 2017 Cox Media Group .
+By using this website, you accept the terms of our Visitor Agreement and Privacy Policy , and understand your
+options regarding Ad
+Choices . Learn
+about careers at Cox Media Group 
+Portions of
+Content Provided by Rovi Corporation. © 2017 Rovi Corporation 
+View mobile site 
+View mobile site

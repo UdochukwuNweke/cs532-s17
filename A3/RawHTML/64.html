@@ -1,0 +1,393 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<script language="javascript">
+if(self.location==top.location)self.location="rp_2.php#name=Music&file=songinfo&song_id=33160"
+</script>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Damon Albarn & Friends - Spoons - Radio Paradise - eclectic commercial free Internet radio</title>
+<meta name="description" content="Modern & classic rock, electronica, world music & more - picked & mixed by real humans - high quality sound with no subscription fees or ads.">
+<meta name="keywords" content="radio, rock, progressive, FM, DJ, HD, music, free, high fidelity, high bitrate, 320k, 192k, high resolution">
+<meta name="ROBOTS" content="ALL">
+<meta name="REVISIT-AFTER" content="10 DAYS">
+<meta name="distribution" content="global">
+<meta http-equiv="EXPIRES" content="0">
+<meta name="AUTHOR" content="Radioparadise.com">
+<meta name="COPYRIGHT" content="Copyright (c) 1999-2016 by radioparadise.com">
+<base href="http://www.radioparadise.com"></base>
+
+<link rel="StyleSheet" href="css/rp2-style.1.css?version=1.804" type="text/css">
+
+	
+<link rel="image_src" href="http://www.radioparadise.com/graphics/covers/l/B00006EXE0.jpg">
+<meta property="og:image" content="http://www.radioparadise.com/graphics/covers/l/B00006EXE0.jpg">
+
+<link type="text/css" href="http://www.radioparadise.com/scripts/themes/base/jquery.ui.all.css?version=1.61" rel="stylesheet" />
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/jquery_1_7_1.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.core.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.widget.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.mouse.js"></script>
+<script type="text/javascript" src="http://www.radioparadise.com/scripts/ui/jquery.ui.slider.js"></script>
+	<script type="text/javascript" src="http://www.radioparadise.com/scripts/rp2.js?version=2.001"></script>
+
+<style type="text/css">.ui-slider-horizontal .ui-state-default { height: 12px; width: 6px; }</style>
+
+<style>ul#nav {width:440px;}</style>
+
+<script type="text/javascript">
+
+	function changeHash(hash) {
+		if(history.pushState) {
+			top.history.replaceState(null, top.document.title, '#'+hash);
+		} else {
+			top.document.location.hash = hash;
+		}
+	}	
+	top.document.title = "Damon Albarn & Friends - Spoons - Radio Paradise - eclectic commercial free Internet radio";
+	changeHash('name=Music&file=songinfo&song_id=33160');
+	
+	var pos = getPos();
+	if (!pos) pos = 70;
+	$(function(){
+		$( "#slider" ).slider({
+			value: pos,
+			min: 0,
+			max: 100,
+			slide: function( event, ui ) {
+				setVolume( ui.value );
+			}
+		});
+	});
+
+	function change_img(div_id,img_id) {
+		$(div_id).css("background-image", "url(graphics/" + img_id + ")");  
+	}
+	function load_topic_content(file) {
+		$('#topic_content').load('content/Music/' + file + '.php');
+		$('html, body').animate({ scrollTop: 0 }, 0);
+	}
+	function load_page_content(name, file) {
+		$('#content').load('content/' + name + '/' + file + '.php');
+	}
+</script>
+
+<script type="text/javascript">
+	window.onload=function(){
+		setTimeout("playlist_update()", 87000);		
+			}
+
+	function setCookie(c_name,value,exdays)
+	{
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+		document.cookie=c_name + "=" + c_value;
+	}
+	function hideHeader(){
+		$('#appeal_header').hide(200);
+		setCookie("C_hide_appeal", "true", 5)
+	}
+	
+
+	
+</script>
+
+
+
+</head>
+<body>
+<div align="center">
+
+
+<div id="container">
+
+
+
+
+<div align="center">
+
+
+<div id="header">
+	<table border="0" width="900" cellpadding="0" cellspacing="0" ><tr><td width="20">&nbsp;</td>
+	<td width="420" class="logo">
+	
+	<a href="rp2-content.php?name=Home">
+	<img src="clear.gif" width="420" height="46" border="0"></a>
+	<div style="font-weight:bold;letter-spacing:1px;margin-left:202px;margin-bottom:20px;">
+	<a class="black" href="https://www.radioparadise.com/rp2s-content.php?name=Support" target="_blank">Listener Supported</a>
+	</div>
+	<div id="controls">
+		<div id="slider" title="Volume">
+		</div>
+		<form action="rp_2.php#name=Music&file=songinfo&song_id=33160" target="_top" method="post" style="display:inline">
+		<select name="change_bitrate" onchange="this.form.submit();" style="outline: none" title="Select main stream bitrate">
+		<option value="0">32k</option>
+		<option value="1" selected>128k</option>
+		<option value="2">192k</option>
+		</select></form>&nbsp;&nbsp;
+		<input type="button" class="button" value="Stop" title="Stop Audio" onclick="javacript: doStop(); return false;">
+		<input type="button" class="button" id="play_button"  value="Play >" title="Start or return to main RP stream" onclick="javacript: doReturn(); return false;">
+					<a href="rp2-content.php?name=Members&file=register_psd"><input type="button" title="Log in to activate the Something Different function"  class="button" value="PSD >>" ></a>
+			
+		<script type="text/javascript">
+	
+			if (parent.frames.player_2.playing == "yes") {
+				button_2();
+			}
+			if (parent.frames.player_1.playing == "yes") {
+				button_3();
+			}
+	
+		</script>
+	
+	</div>
+	</td><td align="center" valign="top" width="460" >
+	<form action="javascript: doRating()" id="rating_form_top" style="display:inline">
+	
+		<div id="nowplaying">
+			<div id="playlist_content">	
+			<table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td valign="bottom" width="1"></td><td valign="bottom"><div id="pre_list"><a class="song_title"  href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=41169">Eilen Jewell &mdash; Dusty Boxcar Wall</a><br /><a class="song_title"  href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=2662">Johnny Cash &mdash; Rusty Cage</a><br /><a class="song_title"  href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=44486">Delgres &mdash; Lanme La</a><br /></div><a class="song_title" href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=460"><b>The Band &mdash; The Shape I'm In</b></a></td><td valign="bottom" ><a class="song_title" href="http://www.radioparadise.com/rp2-content.php?name=Music&file=songinfo&song_id=460"><img src="http://www.radioparadise.com/graphics/covers/m/0.jpg" class = "cover_art" width="100" height="100" border="0" align="right" style="margin-left:12px;"></a></td></tr></table>			</div>
+		</div>
+		
+	</form>
+	</td></tr></table>
+</div>
+<table border="0" width="800" cellpadding="0" cellspacing="0" ><tr><td>
+<div id="classic" style="text-align:left;height:26px;"><div style="font-size:120%;font-weight:bold;color:#d63;background-color:#222;border:1px solid #d63;border-radius:4px;padding:4px;display:inline;"> NEW: <a class="song_title" href="https://beta.radioparadise.com/" target="_top">Beta Website/Player</a> </div>&nbsp;&nbsp&nbsp[ <a class="login" href="javascript:void();" onclick="javascript: startRPHD(); return false;">Slideshow Player</a> ]&nbsp;&nbsp&nbsp[ <a class="login" href="javascript:void();" onclick="javascript: startPlayer(); return false;">Audio Player</a> ]</div><div id="login">[ <a class="login" href="rp2-content.php?name=Members&file=login&query_n=MusicZZfile=songinfoZZsong_id=33160">Log In</a> ]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[ <a class="login" href="rp2-content.php?name=Members&file=register">Register</a> ]&nbsp;&nbsp;&nbsp;[ <a class="login" href="javascript://" onClick="window.location.reload()">refresh this window</a> ]</div></td></tr></table>
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0"><tr><td>
+
+<div id="menu">
+	<table border="0" cellpadding="0" cellspacing="0"><tr><td>
+    <ul id="nav2">
+        <li><a href="rp2-content.php">Home</a></li>
+    	<li><a href="rp2-content.php?name=Forum">Community</a></li>
+    	<li><a href="https://www.radioparadise.com/rp2s-content.php?name=Support&file=support" target="_blank">Support&nbsp;RP</a></li>
+    	<li><a href="rp2-content.php?name=Help">Help&nbsp;&amp;&nbsp;Info</a></li>
+    </ul>
+    </td><td >
+    <ul id="nav">
+        <li><a href="rp2-content.php?name=Playlist">Playlist</a></li>
+        <li class="activelink"><a href="rp2-content.php?name=Music">Music/Artists</a></li>
+        <li><a href="rp2-content.php?name=Favorites">Favorites</a></li>
+                <li><a href="rp2-content.php?name=Submissions">Submissions</a></li>
+            </ul>
+    </td></tr></table>
+</div>
+</td></tr></table>
+<div align="center">
+<div id="content">
+
+<style>
+img{ max-width:660px; }
+.head_active a:link{ color:#432;}
+.head_active a:visited{ color:#432;}
+
+.head_inactive { }
+.lyrics {
+	background-color: #463d3a;
+	border: #666 2px solid;
+	padding: 10px;
+	font-size: 12pt;
+	color: #eee;
+	text-align: center;
+    border-radius: 4px;		
+	
+}
+.links_inactive {
+	filter:alpha(opacity=75);
+	opacity:.75;
+}
+.links_active { }
+
+
+</style>
+
+<script type="text/javascript">
+
+function doRatingSI() {
+	var rating = $("#rating_val").val();
+	var song_id = $("#rating_form").find( 'input[name="song_id"]' ).val();
+	rating_url = "ajax_rating.php";
+	$('#rating').load(rating_url, {  "rating": rating, "song_id": song_id  });
+}
+
+
+function showRating(song_id) {
+	rating_url = "ajax_rating.php";
+	$('#rating').load(rating_url, { "song_id": song_id  });
+}
+
+function showiTunes() {
+	itunes_url = "ajax_itunes.php";
+	$('#itunes').load(itunes_url, { "song_id": 33160, "user_id": 0 });
+}
+
+var load_type;
+var override;
+
+
+var offset = 50;
+var remaining_comments = 81 - offset; 
+
+function update_morelink() {
+	if (remaining_comments > 0) {
+		$('#morelink').html('<div class="heading_2"> <a href="javascript:add_comments()">(more)</a></div>');
+	 }else{
+		$('#morelink').html("&nbsp;");
+	 }
+}
+
+function add_comments()
+{
+   $.ajax({
+     type: "GET",
+     url: 'ajax_get_comments.php',
+     data: "song_id=33160&content_prefix=rp2-&offset=" + offset, 
+     success: function(data) {
+		$('#maincontent-1').append(data);
+		offset = offset + 50;
+		remaining_comments = remaining_comments - 50;
+		update_morelink();
+     }
+
+   });
+}
+
+
+function showDiv(divID) {
+     $('.contentdivs').each(function(index) {
+          if ($(this).attr("id") == divID) {
+               $(this).show(200);
+          }
+          else {
+               $(this).hide(600);
+          }
+     });
+     if (divID == "maincontent-1") {
+     	update_morelink();
+     	$('#contenthead-1').attr('class', 'head_active');
+     	$('#contenthead-2').attr('class', '');
+     }else{
+     	$('#morelink').html("&nbsp;");
+     	$('#contenthead-1').attr('class', '');
+     	$('#contenthead-2').attr('class', 'head_active');
+     }
+}
+
+function showCover() {
+	if ($('#lg_cover').css('display') == 'none') {
+		$('#lg_cover').show(400);
+		$('#more_info').show(400);
+		$('#rating').hide(200);
+		$('#links').hide(200);
+	}else{
+		$('#rating').show(400);
+		$('#links').show(400);
+		$('#lg_cover').hide(200);
+		$('#more_info').hide(200);
+	}
+}
+
+$(update_morelink);	
+</script>
+<div class="heading_1" style="margin-bottom:12px;"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr><td width="15%"><a href="rp2-content.php?name=Music&file=songinfo&song_id=44409"><input type="button" class="button" value="<< Prev Song" title="Previous song on RP playlist" ></a></td><td width="70%" style="text-align:center;"><a class="song_title" href="rp2-content.php?name=Music&func=search&type=artist&search=Damon+Albarn+%26+Friends">Damon Albarn & Friends</a> &mdash; <a class="song_title" href="rp2-content.php?name=Music&file=songinfo&song_id=33160">Spoons</a></div></td><td width="15%"><a href="rp2-content.php?name=Music&file=songinfo&song_id=31405"><input type="button" class="button" value="Next Song >>" title="Next song on RP playlist" ></a></td></tr></table></div><div style='margin-bottom:10px;'>
+<table border="0" cellpadding="0" cellspacing="0" width="99%"><tr><td width="200" valign="top" style="text-align:center;font-size: 10pt;"><div id="cover"><a href="javascript:showCover()" title="click for more info & larger cover"><img width="150" height="150" border="0" src="http://www.radioparadise.com/graphics/covers/m/B00006EXE0.jpg" ></a></div><div id="more_info" style="display:none;">Album: Mali Music</a> <br />Released: 2002<br />Last play: Jan 29, 2017<br />Plays in last 30 days: 1<br /></div></td><td width="276" valign="top" style="padding-left: 12px;font-size: 10pt;"><div id="lg_cover" style="display:none"><img src="http://www.radioparadise.com/graphics/covers/l/B00006EXE0.jpg" width="500" height="500"></div><div id="spotify" style="display:none">&nbsp;</div><div id="rating" ><script type="text/javascript">showRating(33160);</script> 
+</div></td><td  valign="top" style="padding-left: 12px;font-size: 10pt;">
+<div id="links"><div class="misc_links"><a class="song_title" href="http://www.facebook.com/sharer/sharer.php?u=http://www.radioparadise.com%2Frp2-content.php%3Fname%3DMusic%26file%3Dsonginfo%26song_id%3D33160" target="_blank"><img src="graphics/facebook-logo.png" width="20" height="20" border="0" align="center"> share</a><a class="song_title" href="http://www.radioparadise.com/tweet.php?url=http://www.radioparadise.com%2Frp2-content.php%3Fname%3DMusic%26file%3Dsonginfo%26song_id%3D33160&song=Damon+Albarn+%26+Friends+-+Spoons" target="_blank"><img src="graphics/twitter-logo.png" width="20" height="20" border="0"  align="center" style="margin-left:14px"> tweet</a><a class="song_title" href="http://en.wikipedia.org/wiki/Damon_Albarn_&_Friends" target="_blank"><img src="graphics/wikipedia_icon.png" width="20" height="20" border="0" align="center" style="margin-left:14px"> wiki</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="song_title" href="http://www.google.com/search?q=Damon+Albarn+%26+Friends&btnI=lucky" target="_blank">website</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="song_title" href="http://www.google.com/search?q=Damon+Albarn+%26+Friends" target="_blank">search</a>&nbsp;&nbsp;&nbsp;&nbsp;<a class="song_title" href="http://www.allmusic.com/search/artist/Damon+Albarn+&+Friends" target="_blank">amg</a></div><div class="sales_links"><a class="song_links" href="rp2-content.php?name=Music&file=amazon&asin=B00006EXE0"><img src="graphics/amazon_trans_100x40.png" style="margin-right:8px;float:left;"></a><div style="margin-bottom:20px;display:inline;" ><form action="rp2-content.php?name=Music&file=songinfo&song_id=33160&set_amz=yes" method="post" id="amz_select" style="display:inline;"><select name="amz_loc" onchange="javascript: this.form.submit();" style="margin-top:9px;height:24px;float:left;"><option value="US" selected>US</option><option value="UK">UK</option><option value="CA">CA</option><option value="FR">FR</option><option value="DE">DE</option></select></form></div>
+<div class="amazon_links"><a class="song_title" href="http://www.amazon.com/Damon-Albarn-%26-Friends-Mali-Music/dp/B00006EXE0?tag=radioparadise-20" target="_blank">cd</a></div><div class="amazon_links"><a class="song_title" href="http://www.amazon.com/Damon-Albarn-%26-Friends-Mali-Music/dp/B000SZBIJY?tag=radioparadise-20" target="_blank">mp3</a></div><div class="amazon_links"><a class="song_title" href="rp2-content.php?name=Music&file=amazon&asin=B00006EXE0">more</a></div></div><div class="sales_links"><img src="graphics/itunes_trans_100x40.png" style="margin-right:8px;float:left;" ><div id="itunes" style="display:inline;"><script type="text/javascript">showiTunes();</script></div></div></div></td></tr></table></td></tr></table></div>
+<div class="heading_2" align="center" style="margin-bottom:8px;" id="mojo"><div style="float:left;width:33%;display:inline;" id="contenthead-1" class="head_active"><a href="javascript:showDiv('maincontent-1');">81 comments for this song:</a></div><div style="text-align:center;width:33%;display:inline;" id="contenthead-2" class="head_inactive" ><a href="javascript:showDiv('maincontent-2');">Lyrics:</a></div><div style="float:right;width:33%;display:inline">Log in above to post your comment</div></div>
+<div class="contentdivs lyrics" id="maincontent-2" style="display:none">(Instrumental)<br /><br /></div>
+<div class="contentdivs" id="maincontent-1" ><table border="0" cellpadding="8" cellspacing="4" width="100%"><tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=jhorton">jhorton</a></b><br /><span class="teensy">(Trailer Park on Cape Cod)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 29, 2016 - 15:09</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Everyone in my trailer park thinks this track is dreamy.<br /><br />I'll bet it sounds even better if you live in one of them states where weed is legal.&nbsp;<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=mgkiwi">mgkiwi</a></b><br /><span class="teensy">(North of South and a little East of West)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 27, 2016 - 07:51</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />YEAH YEAH YEAH! <img title="{#Ask}" src="scripts/tiny_mce/plugins/emotions/img/icon_ask.gif" alt="{#Ask}" border="0" /><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=hayduke2">hayduke2</a></b><br /><span class="teensy">(Southampton, NY)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Apr 22, 2016 - 09:06</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>SquiddlyDiddly wrote:</strong><div class="quote"><br />Well. . . I like this review.<br /><br /><em>Mali Music</em>&nbsp;is based on the recordings made by Damon Albarn on an Oxfam-organised trip to Mali a couple of years ago. Rather than take the usual rushed celebrity approach, the Blur and Gorillaz man stayed for a few weeks and with his melodica in hand, played wherever he could (clubs gigs, village jams, on riverboats and in musicians' compounds) with anyone who would let him join in: Toumani Diabate, Lobi Traore and Kasse Mady to name but a few. The tapes were taken back to his West London studio, things were mixed and added and then it was back to Mali for further additions from the excellent Afel Bocoum. Perhaps surprisingly, this doesn't result in a self-indulgent mess. Albarn is clearly motivated by a love of Malian music but he's not afraid to mess with it when he feels the need. So that while some tracks (the self explanatory 4am At Toumani's for example) are pretty much unmucked around with, others feature twangy guitars, muted synth lines or the deep dubby bass of Junior Dan. Apparently the aim was to create a musical travelogue of Mali, but it's one filtered through a particular laid-back West London sensibility. Albarn mainly contents himself with orchestrating the whole thing and playing simple melodica melodies, with just the occasional understated vocal thrown in. The decision to involve Bocoum is a definite plus and all in all,&nbsp;<em>Mali Music</em>&nbsp;is pulled off with just the right mix of respect and inventiveness.&nbsp;<em>&mdash;Jamie Renton</em>&nbsp;<br /><br />As for the track. I believe it is about a . . . spoon&nbsp;<br /><br /></div><em>&nbsp;</em> <br />Thank you for this Squid! I was almost getting sleepy and not sure where to place consideration for this : )<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=jablan">jablan</a></b><br /><span class="teensy">(Belgrade, Serbia)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 11, 2014 - 02:21</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>Proclivities wrote:</strong><div class="quote"><br />...about five minutes.<br /><br /></div><em>&nbsp;</em> <br />about five minutes too long, you mean.<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=_Donna">_Donna</a></b><br /><span class="teensy">(Colorado)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 09, 2013 - 11:24</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>twcarlin wrote:</strong><div class="quote"><br />Yep, my first thought too.<br /><br /><br /></div><em>&nbsp;</em> <br />I concur.<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Proclivities">Proclivities</a></b><br /><span class="teensy">(Paris of the Piedmont)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Sep 06, 2013 - 03:50</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>blotto wrote:</strong><div class="quote">what is this song about?<br /><br /></div><em>&nbsp;</em> <br />...about five minutes.<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=ziakut">ziakut</a></b><br /><span class="teensy">(Slightly North of Obvlivion)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: May 02, 2013 - 10:39</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>1wolfy wrote:</strong><div class="quote">suddenly it sounds like the cotton on the cassette tape fell off and lost contact with the recording head ! &nbsp;..and then the tape twisted and played the other side backwards..<br /><br /></div><em>&nbsp;</em> <br />Perfect description! I kinda like this...but must agree with what you said.<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=1wolfy">1wolfy</a></b><br /><span class="teensy">(Mission Viejo California)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: May 02, 2013 - 10:37</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />suddenly it sounds like the cotton on the cassette tape fell off and lost contact with the play head ! &nbsp;..and then the tape twisted and played the other side backwards..<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=haretic">haretic</a></b><br /><span class="teensy">(toward Abad, just south of Maitri)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 26, 2012 - 11:43</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Hmm.&nbsp; I will have to reconsider the subject of "spoons." I suppose they really are quite unique.&nbsp; Very different from, say, forks.&nbsp; And a world apart from, let us say for example, pebbles.&nbsp; <br /><br />Hey, pass that over to me, will you?<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=petesoper">petesoper</a></b><br /><span class="teensy">(Apex, NC)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 26, 2012 - 11:33</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />To quote the RP rating system: S U C K O&nbsp; B A R F O<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=aelfheld">aelfheld</a></b><br /></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 10, 2011 - 07:38</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />This gets tedious fast.<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=SquiddlyDiddly">SquiddlyDiddly</a></b><br /><span class="teensy">(Brighton, UK)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 10, 2011 - 07:38</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>blotto wrote:</strong><div class="quote">what is this song about?</div><em>&nbsp;</em> <br />Well. . . I like this review.<br /><br /><em>Mali Music</em>&nbsp;is based on the recordings made by Damon Albarn on an Oxfam-organised trip to Mali a couple of years ago. Rather than take the usual rushed celebrity approach, the Blur and Gorillaz man stayed for a few weeks and with his melodica in hand, played wherever he could (clubs gigs, village jams, on riverboats and in musicians' compounds) with anyone who would let him join in: Toumani Diabate, Lobi Traore and Kasse Mady to name but a few. The tapes were taken back to his West London studio, things were mixed and added and then it was back to Mali for further additions from the excellent Afel Bocoum. Perhaps surprisingly, this doesn't result in a self-indulgent mess. Albarn is clearly motivated by a love of Malian music but he's not afraid to mess with it when he feels the need. So that while some tracks (the self explanatory 4am At Toumani's for example) are pretty much unmucked around with, others feature twangy guitars, muted synth lines or the deep dubby bass of Junior Dan. Apparently the aim was to create a musical travelogue of Mali, but it's one filtered through a particular laid-back West London sensibility. Albarn mainly contents himself with orchestrating the whole thing and playing simple melodica melodies, with just the occasional understated vocal thrown in. The decision to involve Bocoum is a definite plus and all in all,&nbsp;<em>Mali Music</em>&nbsp;is pulled off with just the right mix of respect and inventiveness.&nbsp;<em>&mdash;Jamie Renton</em>&nbsp;<br /><br />As for the track. I believe it is about a . . . spoon&nbsp;<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=blotto">blotto</a></b><br /><span class="teensy">(here, at the moment)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 07, 2010 - 10:16</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />what is this song about?<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=DaveInVA">DaveInVA</a></b><br /><span class="teensy">(In a hovel in effluent Damnville, VA)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Sep 05, 2010 - 10:06</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />I like it also kinda creepy carnival sounding.., <img title="{#Music}" src="scripts/tiny_mce/plugins/emotions/img/icon_music.gif" border="0" alt="{#Music}" /><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=iw3gtf">iw3gtf</a></b><br /></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 03, 2010 - 12:59</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />I like this one, and I don't think I'm in the minority (but I don't even mind, by the way) .<br /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=jkhandy">jkhandy</a></b><br /><span class="teensy">(Near the ocean (in my mind))</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 01, 2010 - 16:59</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>twcarlin wrote:</strong><div class="quote">I must be in the minority- I love this- of course I've always been a sucker for mood music-   <img src="graphics/smiles/meditate.gif" alt="" /> <br /></div><em>&nbsp;</em> <br />I'm right there with you.&nbsp; Nice to have variety.&nbsp; <img title="{#Cheers}" src="scripts/tiny_mce/plugins/emotions/img/icon_cheers.gif" border="0" alt="{#Cheers}" /><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=twcarlin">twcarlin</a></b><br /><span class="teensy">(too far, and not far enough)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 01, 2010 - 16:56</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><strong>&nbsp;</strong><strong>ScottFromWyoming wrote:</strong><div class="quote">This makes me want to hear the Stranglers. Golden Brown maybe?  Hmm. Looks like one I'll have to upload.Edited By ScottFromWyoming at 5:32 pm on 1/16/2003<br /></div><em>&nbsp;</em> <br />Yep, my first thought too.<br /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Businessgypsy">Businessgypsy</a></b><br /><span class="teensy">(Deepest, Darkest Florida)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Mar 30, 2010 - 08:15</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><span style="font-size: small;"><strong> </strong><strong>Lexapro_Headrush wrote:</strong></span><div class="quote"><span style="font-size: small;">this is my mind after 1 Jameson's too many<br /></span></div><span style="font-size: small;"><em> </em>One too many is a value that can, unfortunately, only be quantified in hindsight.</span><br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=DaveInVA">DaveInVA</a></b><br /><span class="teensy">(In a hovel in effluent Damnville, VA)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 26, 2010 - 07:15</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />I happen to like this though I thought I wouldn't at first...<img title="{#Music}" src="scripts/tiny_mce/plugins/emotions/img/icon_music.gif" border="0" alt="{#Music}" /><br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Lexapro_Headrush">Lexapro_Headrush</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 25, 2009 - 20:56</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />this is my mind after 1 Jameson's too many<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=themotion">themotion</a></b><br /><span class="teensy">(somewhere between infinity)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Nov 24, 2009 - 10:39</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />That intro really caught my attention<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=giacondadevito">giacondadevito</a></b><br /><span class="teensy">(Singapore)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Feb 16, 2005 - 17:28</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Michael Nyman always suxxx...so what do you expect? Tranquilizer music!<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=twcarlin">twcarlin</a></b><br /><span class="teensy">(Upstate NY  - Where being cool means you need a sweater)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 18, 2005 - 06:04</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />I must be in the minority- I love this- of course I've always been a sucker for mood music-   <img src="graphics/smiles/meditate.gif"> <br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=saturnine">saturnine</a></b><br /><span class="teensy">(Turku, Finland)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 03, 2005 - 12:41</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Usually when people accuse a song of being "boring", I completely disagree.
+<br />But this time I have to say that this song really _was_ utterly boring and it felt like it was going nowhere. Maybe it needs another listen..<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Beanie">Beanie</a></b><br /><span class="teensy">(the edge of reason)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 03, 2005 - 12:40</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>trekhead wrote:</b><div class="quote">...........ifishwithspoonsalotgoodfortoothycrittersinshallowweedybaysinearlyspring.......</div>
+<br />
+<br />.......andthecritterseatcornchipsandrinkmilkshakes
+<br />andwhatkindofmushroomsdidyousaythosewereagain............<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Zukiwi">Zukiwi</a></b><br /><span class="teensy">(Montreal)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 19, 2004 - 17:06</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /> <img src="graphics/smiles/sunny.gif"> Very nice<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=bluedot">bluedot</a></b><br /><span class="teensy">(Long Beach, CA)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 04, 2004 - 23:16</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />hmmm. maybe if it had mellotron...
+<br />
+<br /> <img src="graphics/smiles/icon_sleep.gif"> <br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=trekhead">trekhead</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Nov 05, 2004 - 09:44</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />...........ifishwithspoonsalotgoodfortoothycrittersinshallowweedybaysinearlyspring.......<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Angloray">Angloray</a></b><br /><span class="teensy">(Los Angeles)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 21, 2004 - 15:17</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />ewww, I hate seeing my weak-willed defense of Damon Albarn. It's not true at all!!! He's written many <i>many </i>great songs (with witty lyrics) on some of the newer albums too. This just isn't one of them (although I do find it nice as background music).<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=ladyj">ladyj</a></b><br /><span class="teensy">(Owosso, MI)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 21, 2004 - 15:16</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>Oussar wrote:</b><div class="quote">Stranglers??????</div>
+<br />my thought exactly<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Angloray">Angloray</a></b><br /><span class="teensy">(Los Angeles)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Aug 23, 2004 - 15:34</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>timojuhala wrote:</b><div class="quote">Damon Albarn is blah.</div>
+<br />not entirely true...there are a lot of great Blur songs out there (yes, some of them are on the older albums, but still...)<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Pyro">Pyro</a></b><br /><span class="teensy">(Between a rock and a hard place)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 12, 2004 - 07:31</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Background music for work.  Nice, but not an attention getter.<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=saturdays">saturdays</a></b><br /></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 12, 2004 - 07:31</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />There's really no need to  continue to play this song.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=GolfRomeo">GolfRomeo</a></b><br /><span class="teensy">(The Beach, South Carolina)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 12, 2004 - 07:28</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>Rampant_Gecko wrote:</b><div class="quote">I am stoned, and inside an aquarium, watching belugas watch me. I like it - its an odd song. For some reason it has an Amelie kind of ring to it too, d'ya think?</div>
+<br />
+<br />Might be the drunken frenchman playing the accordian in it.
+<br /><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=timojuhala">timojuhala</a></b><br /><span class="teensy">(Pori)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 15, 2004 - 12:10</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Damon Albarn is blah.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=saturdays">saturdays</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 02, 2004 - 06:54</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />What da f*@k????<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=GolfRomeo">GolfRomeo</a></b><br /><span class="teensy">(The Beach, South Carolina)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jun 02, 2004 - 06:54</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>billca42 wrote:</b><div class="quote">Every time he mumbles "Yeah, yeah, yeah," I find myself mumbling, "No, no, no."
+<br /> :(</div>
+<br />
+<br />yep.  concur.
+<br /><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Hawkhaven">Hawkhaven</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Mar 05, 2004 - 08:13</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />In the la-la-land of subtle green genius ~ Aaaalbarn & Maaark...
+<br />hammock-cocktail tune.
+<br /> <img src="graphics/smiles/icon_cheers.gif"><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Oussar">Oussar</a></b><br /></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 11, 2004 - 23:33</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />This is a song for late night after losing a poker game<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Oussar">Oussar</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jan 11, 2004 - 23:31</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Stranglers??????<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=pdhski">pdhski</a></b><br /><span class="teensy">(NY Metro)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 22, 2003 - 11:31</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />sort of David Sylvian like - but I still don't know if that is a good thing...<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=DrFoo">DrFoo</a></b><br /></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Dec 22, 2003 - 11:29</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Time to walk down to the coffee shop.<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=gaucha">gaucha</a></b><br /><span class="teensy">(Washington, DC)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Nov 21, 2003 - 13:48</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />This is working for me.<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=stickytylertoo">stickytylertoo</a></b><br /><span class="teensy">(Houston, TX)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 11, 2003 - 10:29</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><b>Red_Dog wrote:</b><div class="quote">Does anyone know if this artist contributed to (or is otherwise genetically connected to...) The Vapors ('80's)?</div>
+<br />
+<br />There is no mention on AMG, however, Damon Albarn is the lead singer of Blur.<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=cdanthony">cdanthony</a></b><br /><span class="teensy">(exit 135 New Jersey)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Oct 11, 2003 - 10:26</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />this is so dull it hurts<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=stripes">stripes</a></b><br /><span class="teensy">(Altadena, CA)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Aug 21, 2003 - 08:58</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />lame.... <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_rolleyes.gif">  <img src="graphics/smiles/icon_rolleyes.gif">  <img src="graphics/smiles/icon_rolleyes.gif"><br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Lupin_III">Lupin_III</a></b><br /><span class="teensy">(Lake Ronkonkoma, NY)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Aug 21, 2003 - 08:56</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><div class="quote">Originally Posted by beelzebubba:
+<br />Songs like this just make me glad I never went to art school....</div>
+<br />Songs like this make me regret GOING to art  school...<br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=Lupin_III">Lupin_III</a></b><br /><span class="teensy">(Lake Ronkonkoma, NY)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Aug 21, 2003 - 08:55</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />Yah, yah, yah... yah, yah, yahhhhh...
+<br />
+<br />I love this song for no reason other than to read the comments it invariably gets.
+<br />
+<br />Gitchee gitchee yah yahs here...<br /></td></tr>
+<tr><td class="row1" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=harlock52">harlock52</a></b><br /><span class="teensy">(Haddonfield, NJ)</span></td><td class="row1" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 11, 2003 - 12:41</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr /><img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_frustrated.gif">  <img src="graphics/smiles/icon_cry.gif"><br /></td></tr>
+<tr><td class="row2" valign="top" style="width:120px;overflow:hidden"><b><a href="rp2-content.php?name=Members&file=userinfo&uname=tjdfw">tjdfw</a></b><br /><span class="teensy">(Charleston, SC)</span></td><td class="row2" valign="top" style="max-width:720px;overflow:hidden"><div class="teensy" style="display:inline;">Posted: Jul 11, 2003 - 12:41</div><div class="teensy" style="display:inline;float:right;">&nbsp;</div><hr />i think i like it... maybe if it where dark outside and i was just getting home from a really loud party.<br /></td></tr>
+</table>
+</div><div  id = "morelink" align="center"></div></div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
+
+	
+	
+	
+		

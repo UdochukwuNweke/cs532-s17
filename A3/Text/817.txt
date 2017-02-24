@@ -1,0 +1,317 @@
+Super Bowl | WSB-TV 
+WSB Atlanta 
+LIVE 
+http://www.wsbtv.com/cmg-main-theme/css 
+WSB Atlanta 
+SIGN IN 
+REGISTER 
+MEMBER CENTER 
+SIGN OUT 
+SIGN IN 
+Sign in using your wsbtv profile 
+Need a profile? Register now. 
+{* #userInformationForm *}
+{* traditionalSignIn_emailAddress *}
+{* traditionalSignIn_password *}
+Remember Me 
+Forgot password? 
+{* traditionalSignIn_signInButton *}
+{* /userInformationForm *}
+OR 
+Sign in using you account with: 
+{* loginWidget *} 
+Sign Up / Sign In 
+Welcome Back {* welcomeName *} 
+{* loginWidget *} 
+Use another account 
+Sign Up / Sign In 
+Welcome back. Please sign in 
+{* #userInformationForm *}
+{* traditionalSignIn_emailAddress *}
+{* traditionalSignIn_password *}
+{* traditionalSignIn_signInButton *}
+{* /userInformationForm *}
+Use another account 
+You're Almost Done! 
+Please confirm the information below before signing in. 
+{* #socialRegistrationForm *}
+{* socialRegistration_displayName *}
+{* socialRegistration_emailAddress *}
+*Indicates Required Field 
+{* socialRegistration_signInButton *}
+{* /socialRegistrationForm *}
+REGISTER 
+Already have an account? 
+Sign In 
+* Required fields 
+{* #registrationForm *}
+{* traditionalRegistration_emailAddress *}
+{* traditionalRegistration_password *}
+{* traditionalRegistration_passwordConfirm *}
+{* traditionalRegistration_displayName *}
+{* registration_firstName *}
+{* registration_lastName *}
+{* registration_birthday *}
+{* registration_postalZip *}
+By submitting your registration information, you agree to our Terms of Service and Privacy Policy . 
+{* createAccountButton *}
+{* /registrationForm *}
+Why are we asking this? 
+We collect zip code so that we may deliver news, weather, special offers and other content related to your specific geographic area. 
+Thank you for registering! 
+We have sent a confirmation email to {* data_emailAddress *}. Please check your email and click on the link to activate your account. 
+Thank you for registering! 
+We look forward to seeing you on [website] frequently. Visit us and sign in to update your profile, receive the latest news and keep up to date with mobile alerts. 
+Click here to return to the page you were visiting. 
+Reset your password 
+Don't worry, it happens. We'll send you a link to create a new password. 
+{* #forgotPasswordForm *}
+{* forgotPassword_emailAddress *}
+{* forgotPassword_sendButton *}
+{* /forgotPasswordForm *}
+Email sent 
+We have sent you an email with a link to change your password. 
+{* mergeAccounts *}
+Sign in to complete account merge 
+{* #tradAuthenticateMergeForm *}
+{* traditionalSignIn_emailAddress *}
+{* mergePassword *}
+{* traditionalSignIn_signInButton *}
+{* /tradAuthenticateMergeForm *}
+Thanks for verifying your email address 
+Edit your profile 
+Resend Email Verification 
+Sorry we could not verify that email address. Enter your email below and we'll send you another email. 
+{* #resendVerificationForm *}
+{* traditionalSignIn_emailAddress *}
+{* submitButton *}
+{* /resendVerificationForm *}
+Resend Email Verification 
+Click submit to receive another verification email 
+{* #resendVerificationForm *}
+{* traditionalSignIn_emailAddress *}
+{* submitButton *}
+{* /resendVerificationForm *}
+Your Verification Email Has Been Sent 
+Check your email for a verification link 
+Close 
+Live 
+12224389 
+Home
+12224395 
+Weather 
+School Closings 
+Current Conditions 
+5 Day Forecast 
+Interactive Radar 
+Video Forecast 
+Hour by Hour 
+Pollen Count 
+Fish &amp; Game 
+Free Weather App 
+12224425 
+News
+Ross Harris Trial 
+County By County 
+2 Investigates 
+National News 
+Politics 
+Crime Stoppers 
+Download News App 
+Black History Month 
+185204032 
+Live
+Watch Newscasts 
+Breaking News 1 
+Breaking News 2 
+Breaking News 3 
+Live Tower Cams 
+12224521 
+Video
+12224461 
+Traffic
+12224467 
+Sports
+High School Football 
+Falcons 
+HS Football Scores 
+Braves 
+Hawks 
+University Of Georgia 
+Georgia Tech 
+183900194 
+Trending
+Around Atlanta 
+Hot Topics 
+Entertainment 
+What&#039;s On WSB-TV 
+Contests 
+Lottery Results 
+12224599 
+Consumer
+Clark Howard 
+Restaurant Inspections 
+Gas Prices 
+Recalls 
+The Daily 2 
+12224545 
+Community
+Family 2 Family 
+People 2 People 
+High Q 
+Cox Conserves 
+12224671 
+More
+Contact Us 
+Action News Staff 
+Tour WSB-TV 
+Speakers Bureau 
+Careers at Cox 
+Advertise With Us 
+Internships 
+WSB-TV Programming 
+More 
+BREAKING NEWS 
+Loading... 
+Mardi Gras float mocks 'ringless' Falcons 
+Leave it to Saints fans to make the Super Bowl loss even harder on Falcons fans...    
+Falcons announce several additional coaching changes
+Falcons make another coaching change
+Matt Ryan's message to Atlanta Falcons fans
+5 reasons the Falcons collapsed in Super Bowl
+Student writes 'failed to rise up' as reason for being late
+Headed 2 Houston videos 
+Trending Now 
+Flight Attendants Training To Spot Human Trafficking 
+Local Video 
+UGA product David Andrews help Patriots to Super Bowl win 
+Trending 
+Tom Brady Celebrates Win With Sick Mom As Details Emerge About Her Health 
+Trending Now 
+Super Bowl champs shirts are hot off the press 
+Trending Now 
+Who Is Angie Macuga Blank? 
+Trending Now 
+WATCH: Patriots On Field Celebration 
+Trending Now 
+WATCH: Crowds React To Patriots Win 
+Local Video 
+Falcons fans disappointed by Super Bowl loss 
+Headed 2 Houston galleries 
+PHOTOS: The Atlanta Falcons take on the New England Patriots in Super Bowl LI
+15 unique photos of Falcons QB Matt Ryan
+PHOTOS: Celebrities and athletes spotted at Super Bowl LI
+PHOTOS: Atlanta Falcons mascot Freddie Falcon
+PHOTOS: Top 10 athletes in Atlanta sports history
+Locals rising up for 'Falcons Friday'
+PHOTOS: Falcons players, NFL commissioner speak to media at Super Bowl
+PHOTOS: Take a look at past Super Bowl rings
+PHOTOS: Opening night for Super Bowl LI
+PHOTOS: Get to know the Atlanta Falcons starters
+More Headed 2 Houston headlines 
+The most comforting tweets Atlanta Falcons fans need to get through the day
+Falcons players thank fans for supporting them
+Heartbreaking collapse, but a super future within reach for Falcons
+Falcons return to Atlanta after devastating Super Bowl loss
+Falcons coach Quinn: ‘We ran out of gas'
+What Matt Ryan had to say after historic Super Bowl collapse
+Super Bowl 2017: Ludacris, T.I., Usher, others take to social media
+SUPER BOWL LI: Patriots defeat Falcons 34-28 in overtime
+Which Super Bowl ads scored, which ones fumbled
+Super Bowl 2017: Five things that changed the outcome of the game
+Heartbreak in Houston: Falcons fall to Patriots in Super Bowl LI
+APD says few disturbances following Falcons' Super Bowl loss
+Sports Videos 
+RAW: This Falcons fan is really excited about Super Bowl 
+Anticipation almost over for Falcons fans ready for Super Bowl 
+11 reasons Matt Ryan is a lock for NFL MVP 
+DeKalb County employees hold major Falcons pep rally 
+Stranger steps in to help stranded Falcons fan get to Super Bowl 
+How official NFL game balls are made 
+Fans get chance to question NFL commissioner, players 
+Atlanta leaders in Houston gain insight for hosting Super Bowl 
+Falcons fans piling into Houston for Super Bowl 
+More Sports Headlines 
+Win Super Bowl bet? Get date with Bouchard at Nets game
+Clippers beat Hawks 99-84, win 4th in a row
+Leigh Steinberg: Talking to Saskatchewan about Vince Young
+Atlanta Braves Headlines 
+New 
+Old starters among new faces as Braves remake rotation 
+3:52 PM 
+MUST-WATCH: Greg Maddux pulls off epic prank 
+4:25 PM 
+Braves' infielder Sean Rodriguez has shoulder surgery 
+Braves start spring with 3 new pitchers, new outlook 
+Braves' Rodriguez to have shoulder surgery, may miss season 
+More Headlines &#187 
+Georgia Bulldog Headlines 
+New 
+75 UGA student-athletes named to fall SEC Academic Honor Roll 
+Indoor athletic facility dedicated at UGA 
+UGA planning $63 million renovation to Sanford Stadium 
+Four UGA greats set for Circle of Honor induction 
+Georgia women drop 66-56 decision to Kentucky 
+More Headlines &#187 
+Atlanta Falcons Headlines 
+New 
+Roddy White sounds off on Super Bowl 
+Mardi Gras float mocks 'ringless' Falcons 
+Falcons announce several additional coaching changes 
+Falcons make another coaching change 
+Falcons fire 2 coaches days after Super Bowl loss 
+Atlanta Hawks Headlines 
+New 
+Clippers beat Hawks 99-84, win 4th in a row 
+1:47 AM 
+Hawks-Clippers, Box 
+Hawks prevail 109-104 over Trail Blazers in overtime 
+Hawks-Trail Blazers, Box 
+More Headlines &#187 
+Georgia Tech Headlines 
+New 
+Reed scores 21, Miami tops Georgia Tech 70-61 
+Mabrey shoots No. 7 Notre Dame past Georgia Tech 
+Jackson, Lammers, Okogie power Jackets past Boston College 
+Georgia Tech blows out Division II Tusculum 96-58 
+Collins scores 20 as Wake Forest beats Georgia Tech 81-69 
+More Headlines &#187 
+Download Podcast 
+Latest Photos 
+NEW PHOTOS: Cooper Harris 
+PHOTOS: 2017 Westminster Dog Show 
+Valentine's Day at Waffle House! 
+Photos: 'Hot Felon' Jeremy Meeks makes modelling debut at New York Fashion Week 
+PHOTOS: Renderings of Sanford Stadium after $63 million renovation 
+Latest News Headlines 
+Man accused of killing mistress' son, confessing to co-workers
+2 killed in plane crash at Barrow County airport
+Drivers say faded lane markings pose danger
+Police chief wants to improve communication after officer-involved shooting
+Leanna Taylor Exclusive: Life after her ex-husband killed their son in a hot car
+51 Atlanta homicides from 2016 unsolved
+More Headlines &#187 
+2 Investigates 
+High-end cars, trucks disappearing from dealerships
+Family's new home turns out to be former meth lab
+Families push for lifesaving AEDs in all schools after child's death
+More Investigations &#187 
+Hot Topics 
+Hot Topics 
+SweetWater unveils Patriots beer after losing Super Bowl Bet 
+Hot Topics 
+Teen gives chocolates to all 537 girls in school on Valentine's Day 
+Hot Topics 
+Russian spy ship 30 miles from US Navy sub base 
+Hot Topics 
+SCAD student comes up with 'bee' drone 
+Trending Now 
+Lance Bass says NSYNC is reuniting, re-releasing album on vinyl 
+Sports 
+MUST-WATCH: Greg Maddux pulls off epic prank 
+Trending Now 
+Facebook comments on domestic abuse land Oklahoma deputy in hot water 
+Trending Now 
+Cancer-stricken woman a new mom when sister serves as surrogate 
+News Local News National/World News Video Traffic  WSBTV Weather Weather Storm Tracker HD  Advertisers &amp; Sponsors Cars at Autotrader Local Services at Kudzu  About Us About WSBTV What&#39;s on WSBTV EEO Statement WSBTV Public File  
+&copy; 2017 Cox Media Group . By using this website, you accept the terms of our Visitor Agreement and Privacy Policy , and understand your options regarding Ad Choices . This station is part of Cox Media Group Television. Learn about careers at Cox Media Group .

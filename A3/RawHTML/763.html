@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<link rel="stylesheet" href="/res/css/style.min.css" />
+<link rel="stylesheet" href="/res/css/bootstrap2.min.css" />
+<link rel="shortcut icon" href="/img/affinitweet-favicon.png" />
+<link rel="icon" type="image/gif" href="/img/affinitweet-favicon.png" />
+<link rel="apple-touch-icon" href="/img/affinitweet-favicon.png" />
+<meta name="description" content="Compare your Twitter profile with your friends to know your #affinitwees!">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="/res/js/jquery.js"></script>
+<script type="text/javascript">
+	$(window).load(function(){
+		$('#container').on('click', '#submitFormColorMatching', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/colormatching_ajax.php',{user_from:$('#first').val(), user_to:$('#prependedInput').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormFriendships', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/friendships_ajax.php',{user_from:$('#first').val(), user_to:$('#prependedInput').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormCommonFriends', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/commonfriends_ajax.php',{user_from:$('#first').val(), user_to:$('#prependedInput').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormCommonSources', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/commonsources_ajax.php',{user_from:$('#first').val(), user_to:$('#prependedInput').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormMentions', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/mentions_ajax.php',{user_from:$('#first').val(), user_to:$('#prependedInput').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormAllInOne', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/allinone_ajax.php',{user_from:$('#first').val(), user_to:$('#prependedInput').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormAffinitweesGlobalRank', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/affinitweesglobalrank_ajax.php',{user_from:$('#first').val(), user_to:$('#second').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormTopFriends', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/topfriends_ajax.php',{user_from:$('#first').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormValentine', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/valentine_ajax.php',{user_from:$('#first').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormTweetRate', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/tweetrate_ajax.php',{user_from:$('#first').val(), user_to:$('#prependedInput').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+		$('#container').on('click', '#submitFormSecretCrush', function(e){
+			e.preventDefault();
+		    $('#parent').slideUp();
+			setTimeout(function() { $('#loading').slideDown(); }, 400);
+			$.post('inc/ajax/secretcrush_ajax.php',{user_from:$('#first').val(), token:$('#token').val()},
+			function(data){
+				if(data.success){
+			        setTimeout(function() { $('#parent').empty(); }, 400);
+					setTimeout(function() { $('#parent').append(data.contents).slideDown(); }, 400);
+				    setTimeout(function() { $('#loading').slideUp(0); }, 400);
+				}
+			},'json'
+			);
+		});
+	});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-37446125-4', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+
+</script>
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@affinitweet_" />
+		<meta name="twitter:title" content="Affinitweet" />
+		<meta name="twitter:image" content="https://pbs.twimg.com/profile_banners/2976777999/1422566699/1500x500" />
+		<meta name="twitter:image:width" content="1500" />
+		<meta name="twitter:image:height" content="500" />
+		<meta name="twitter:description" content="Compare your Twitter profile with your friends to know your #affinitwees!">
+		<meta name="twitter:url" content="https://www.affinitweet.com/" />
+		<!-- <script type="text/javascript" src="//go.pub2srv.com/apu.php?zoneid=622414"></script> -->
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+		<title>Affinitweet | Home</title>
+
+	</head>
+
+	<body>
+
+		<header>
+	<a href="/"><img src="/img/affinitweet.png" style="position:absolute; margin-top:-15px; margin-left:-30px; height:50px;" /></a>
+	<a href="/inc/twitter/redirect" class="btn btn-default" style="float:right; margin-top:-6px; margin-right:-15px;">Log in with Twitter</a></header>
+
+
+		<div id="container">
+
+			<div class="dark-block" style="background-color: #ffd16f;">
+				<u>HOT UPDATE</u>: A brand new Twitter game is available! Are you the best follower ever? Check it now on <a href="https://blindtwest.com" target="_blank">blindtwest.com</a>! 100% FUN 100% FREE
+			</div>
+
+		    <div id="introducing">
+		        <div class="title">Welcome to affinitweet.com!</div>
+    			<div style="display:inline-block; width:686px; height:100px; vertical-align:top;">
+			        <p>
+			            <span class="pre">What's affinitweet?</span><br/>
+			            Affinitweet is based on the Twitter API and used public information from two
+			            users (you and another Twitter user) to check their <a href="https://twitter.com/search?f=realtime&q=%23affinitwees&src=typd" target="_blank">#affinitwees</a>.
+						Statistics and common points are calculated from these accounts in order to show you your results.
+			            You can easily check your <a href="https://twitter.com/search?f=realtime&q=%23affinitwees&src=typd" target="_blank">#affinitwees</a> with anyone on Twitter (except private accounts).
+			            Share and follow us on Twitter to know all new features at <a href="https://twitter.com/affinitweet_" target="_blank">@affinitweet_</a>!<br/>
+			        </p>
+			    </div>
+			    <div style="display:inline-block; width:320px; height:100px; vertical-align:top;">
+			    	<a href="https://blindtwest.com/" style="float:right;" class="img-introducing" target="_blank"><img src="https://affinitweet.com/img/blindtwest-promo.png" width="255" alt="Blind Twest" title="Blind Twest" /></a>
+				</div>
+		    </div><br/>
+
+		    <div id="introducing">
+		        <div class="title">Let's start with our main features!</div>
+    		    <div align="center" style="font-size:0px;">
+					<!-- <a href="/halloweenDuo" class="img-introducing"><img src="img/halloweenduo-promo.png" style="padding:0; margin:1px 0 1px 0; width:1008px;" alt="Halloween Duo" title="Halloween Duo" /></a> -->
+					<a href="/valentine" class="img-introducing"><img src="img/valentine-banner.png" style="padding:0; margin:1px 0 1px 0; width:1008px;" alt="Valentine" title="Valentine" /></a>
+					<!-- <a href="https://en.buddyward.com/" target="_blank" class="img-introducing"><img src="img/promo-buddyward.png" style="padding:0; margin:1px 0 1px 0; width:1008px;" alt="Buddyward" title="Buddyward" /></a> -->
+        		    <a href="/all-in-one" class="img-introducing"><img src="img/allinone-thumb.png" style="padding:0; margin:1px 0 1px 0; width:1008px;" alt="ALL-IN-ONE" title="ALL-IN-ONE" /></a>
+        		    <a href="/colorMatching" class="img-introducing"><img src="img/colormatching-thumb.png" width="200" style="padding:0; margin:1px;" alt="Color Matching" title="Color Matching" /></a>
+        		    <a href="/friendships" class="img-introducing"><img src="img/friendships-thumb.png" width="200" style="padding:0; margin:1px;" alt="Friendships" title="Friendships" /></a>
+        		    <a href="/mentions" class="img-introducing"><img src="img/mentions-thumb.png" width="200" style="padding:0; margin:1px;" alt="Mentions" title="Mentions" /></a>
+        		    <a href="/commonSources" class="img-introducing"><img src="img/commonsources-thumb.png" width="200" style="padding:0; margin:1px;" alt="Common Sources" title="Common Sources" /></a>
+        		    <a href="/commonFriends" class="img-introducing"><img src="img/commonfriends-thumb.png" width="200" style="padding:0; margin:1px;" alt="Common Friends" title="Common Friends" /></a>
+        		</div>
+    		</div>
+
+    		<div align="center">
+				<!-- affinitweet - index1 ---->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-6333488538003627"
+				     data-ad-slot="1237624095"></ins>
+					 <script>
+	 					(adsbygoogle = window.adsbygoogle || []).push({});
+	 				</script>
+			</div>
+
+    		<div id="introducing">
+		        <div class="title">And try our other features...</div>
+		        <div align="left" style="font-size:0px;">
+		        	<a href="/affinitweesGlobalRank" class="img-introducing"><img src="img/affinitweesglobalrank-thumb.png" width="200" style="padding:0; margin:1px;" alt="Affinitwees Global Rank" title="Affinitwees Global Rank" /></a>
+		        	<a href="/topFriends" class="img-introducing"><img src="img/topfriends-thumb.png" width="200" style="padding:0; margin:1px;" alt="Top Friends" title="Top Friends" /></a>
+					<a href="/valentine" class="img-introducing"><img src="img/valentine-thumb.png" width="200" style="padding:0; margin:1px;" alt="Valentine" title="Valentine" /></a>
+					<a href="/tweetRate" class="img-introducing"><img src="img/tweetrate-thumb.png" width="200" style="padding:0; margin:1px;" alt="Tweet Rate" title="Tweet Rate" /></a>
+					<a href="/secretCrush" class="img-introducing"><img src="img/secretcrush-thumb.png" width="200" style="padding:0; margin:1px;" alt="Secret Crush" title="Secret Crush" /></a>
+					<a href="/bunbuntransform" class="img-introducing"><img src="img/bunbun-thumb.png" width="200" style="padding:0; margin:1px;" alt="Bun Bun Transform" title="Bun Bun Transform" /></a>
+					<a href="/stolenKiss" class="img-introducing"><img src="img/stolenkiss-thumb.png" width="200" style="padding:0; margin:1px;" alt="Stolen Kiss" title="Stolen Kiss" /></a>
+					<a href="/hiddenTwin" class="img-introducing"><img src="img/hiddentwin-thumb.png" width="200" style="padding:0; margin:1px;" alt="Hidden Twin" title="Hidden Twin" /></a>
+					<a href="/mayDay" class="img-introducing"><img src="img/mayday-thumb.png" width="200" style="padding:0; margin:1px;" alt="May Day" title="May Day" /></a>
+					<a href="/whatPokemonGo" class="img-introducing"><img src="img/pokemongo-thumb.png" width="200" style="padding:0; margin:1px;" alt="Pokémon Go" title="Pokémon Go" /></a>
+					<a href="/halloweenDuo" class="img-introducing"><img src="img/halloweenduo-thumb.png" width="200" style="padding:0; margin:1px;" alt="Halloween Duo" title="Halloween Duo" /></a>
+				</div>
+    		</div>
+
+    		<div align="center">
+				<!-- affinitweet - index2 -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-6333488538003627"
+				     data-ad-slot="4191090497"></ins>
+			</div>
+
+			<div id="introducing">
+		        <div class="title">Popular features</div>
+		        <div align="left" style="font-size:0px;">
+					<a href="/valentine" class="img-introducing"><img src="img/valentine-thumb.png" width="200" style="padding:0; margin:1px;" alt="Valentine" title="Valentine" /></a>
+					<a href="/friendships" class="img-introducing"><img src="img/friendships-thumb.png" width="200" style="padding:0; margin:1px;" alt="Friendships" title="Friendships" /></a>
+					<a href="/topFriends" class="img-introducing"><img src="img/topfriends-thumb.png" width="200" style="padding:0; margin:1px;" alt="Top Friends" title="Top Friends" /></a>
+					<a href="/stolenKiss" class="img-introducing"><img src="img/stolenkiss-thumb.png" width="200" style="padding:0; margin:1px;" alt="Stolen Kiss" title="Stolen Kiss" /></a>
+					<a href="/hiddenTwin" class="img-introducing"><img src="img/hiddentwin-thumb.png" width="200" style="padding:0; margin:1px;" alt="Hidden Twin" title="Hidden Twin" /></a>
+				</div>
+    		</div>
+
+			<div align="center">
+				<!-- affinitweet - index3 -->
+				<ins class="adsbygoogle"
+				     style="display:inline-block;width:728px;height:90px"
+				     data-ad-client="ca-pub-6333488538003627"
+				     data-ad-slot="5397866897"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+			</div>
+		</div>
+
+		<footer>
+
+	
+	<div id="foo">
+
+		<div class="foo-title">MAIN FEATURES</div>
+
+		<ul>
+			<li><a href="/all-in-one">ALL-IN-ONE</a></li>
+			<ul>
+				<li><a href="/colorMatching">Color Matching</a></li>
+				<li><a href="/friendships">Friendships</a></li>
+				<li><a href="/commonSources">Common Sources</a></li>
+				<li><a href="/mentions">Mentions</a></li>
+				<li><a href="/commonFriends">Common Friends</a></li>
+			</ul>
+			<li><a href="/affinitweesGlobalRank">Affinitwees Global Rank</a></li>
+		</ul>
+
+	</div>
+
+	<div id="foo">
+
+		<div class="foo-title">OTHER FEATURES</div>
+
+		<ul>
+			<li><a href="/topFriends">Top Friends</a></li>
+			<li><a href="/valentine">Valentine</a></li>
+			<li><a href="/tweetRate">Tweet Rate</a></li>
+			<li><a href="/secretCrush">Secret Crush</a></li>
+			<li><a href="https://wooorthy.com/" target="_blank">Wooorthy</a></li>
+			<li><a href="https://blindtwest.com/" target="_blank">Blind Twest</a></li>
+			<li><a href="https://buddyward.com/" target="_blank">Buddyward</a></li>
+		</ul>
+
+	</div>
+
+	<div id="separator"></div>
+
+	<div id="foo" align="center">
+
+		<div class="foo-title">SUPPORT</div>
+
+		<br/>
+
+		<a href="https://twitter.com/share" class="btn btn-primary" data-via="affinitweet_" data-size="large">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p='https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		<br/><br/>
+		<a href="https://twitter.com/affinitweet_" class="btn btn-primary" data-show-count="false" data-size="large">Follow @affinitweet_</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p='https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+<br/><br/>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="YNKVVRSUVXSSU">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/fr_FR/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+	</div>
+
+	<div id="foo">
+
+		<div class="foo-title">CREDITS</div>
+
+		<p>
+			<br/>affinitweet.com © 2015 - 2017<br/>
+			<center>All rights reserved.</center>
+		</p>
+
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- affinitweet - footer -->
+		<ins class="adsbygoogle"
+		     style="display:inline-block;width:200px;height:90px"
+		     data-ad-client="ca-pub-6333488538003627"
+		     data-ad-slot="7979148491"></ins>
+		<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+
+	</div>
+
+
+
+
+</footer>
+
+	</body>
+
+</html>

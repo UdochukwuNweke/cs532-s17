@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="http://www.makinitmag.com/sites/default/files/android-icon-72x72.png" type="image/png" />
+<meta name="description" content="We understand that when you&#039;re doing things independently almost every dollar invested into your career is coming out of your own pocket. Sometimes a little extra cash can go a long way toward helping you accomplish your goals, or securing a much-needed resource.If you had an extra $1,000 to put toward your music or brand, how would you spend it?Let us know in 50 words or less, and If you make the best case we&#039;ll Cut the Check!" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://www.makinitmag.com/opportunity/submit-now-get-1000-sponsorship-your-music" />
+<link rel="shortlink" href="http://www.makinitmag.com/node/2288" />
+<meta property="og:site_name" content="Makin&#039; It Magazine" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.makinitmag.com/opportunity/submit-now-get-1000-sponsorship-your-music" />
+<meta property="og:title" content="Submit Now to Get a $1,000 Sponsorship for Your MUSIC!" />
+<meta property="og:description" content="We understand that when you&#039;re doing things independently almost every dollar invested into your career is coming out of your own pocket. Sometimes a little extra cash can go a long way toward helping you accomplish your goals, or securing a much-needed resource.If you had an extra $1,000 to put toward your music or brand, how would you spend it?Let us know in 50 words or less, and If you make the best case we&#039;ll Cut the Check!" />
+<meta property="og:updated_time" content="2017-01-17T14:40:50-05:00" />
+<meta property="og:image" content="http://www.makinitmag.com/sites/default/files/opportunity/images/Cut%20the%20Check.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@MakinItMag" />
+<meta name="twitter:url" content="http://www.makinitmag.com/opportunity/submit-now-get-1000-sponsorship-your-music" />
+<meta name="twitter:title" content="Submit Now to Get a $1,000 Sponsorship for Your MUSIC!" />
+<meta name="twitter:description" content="We understand that when you&#039;re doing things independently almost every dollar invested into your career is coming out of your own pocket. Sometimes a little extra cash can go a long way toward helping you accomplish your goals, or securing a much-needed resource.If you had an extra $1,000 to put toward your music or brand, how would you spend it?Let us know in 50 words or less, and If you make the best case we&#039;ll Cut the Check!" />
+<meta name="twitter:image" content="http://www.makinitmag.com/sites/default/files/opportunity/images/Cut%20the%20Check.jpg" />
+<meta property="article:published_time" content="2016-04-28T13:11:49-04:00" />
+<meta property="article:modified_time" content="2017-01-17T14:40:50-05:00" />
+<meta itemprop="name" content="Submit Now to Get a $1,000 Sponsorship for Your MUSIC!" />
+<meta itemprop="description" content="We understand that when you&#039;re doing things independently almost every dollar invested into your career is coming out of your own pocket. Sometimes a little extra cash can go a long way toward helping you accomplish your goals, or securing a much-needed resource.If you had an extra $1,000 to put toward your music or brand, how would you spend it?Let us know in 50 words or less, and If you make the best case we&#039;ll Cut the Check!" />
+  <title>Submit Now to Get a $1,000 Sponsorship for Your MUSIC! | Makin' It Magazine</title>
+  <link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/default/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/default/files/css/css_-2Pn5C1lYdWd6eUBNVZ7t-qFgfQ-n2_N0FZV129Jv3Y.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/default/files/css/css_GCZYewdqnIAwQ4xRHap6Rj7MMO7LHbjwNndI4m7_vBU.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/default/files/css/css_Wye2LcLUjd1WtgBMBmPOAHCPPzHF2ymCIP_MmJBmpk8.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/default/files/css/css_yUdG9V2LWR20StHW2jHXG7bJ4eIPDoa5BzexaaV4r6s.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/default/files/css/css_880ZY8w-S5-iqswIerQ4vxE1NOVkv-XQ3tyKsPJGwic.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/default/files/css/css_2THG1eGiBIizsWFeexsNe1iDifJ00QRS9uSd03rY9co.css" media="print" />
+
+<!--[if lte IE 7]>
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/all/themes/mimp1/css/ie.css?olh7pv" media="all" />
+<![endif]-->
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://www.makinitmag.com/sites/all/themes/mimp1/css/ie6.css?olh7pv" media="all" />
+<![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-1681465-6";
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.makinitmag.com/sites/default/files/js/js_ri60QNjcazMKdlAmWmDsmRb0iKaVkkXUQxH2MsgpmVo.js"></script>
+<script type="text/javascript" src="http://www.makinitmag.com/sites/all/libraries/mediaelement/build/mediaelement-and-player.min.js?v=2.1.6"></script>
+<script type="text/javascript" src="http://www.makinitmag.com/sites/default/files/js/js_NpX2cwCeepkWZZ194B6-ViyVBHleaYLOx5R9EWBOMRU.js"></script>
+<script type="text/javascript" src="http://www.makinitmag.com/sites/default/files/js/js_YMfIl8-CGXdG-vmkktlURG60fQ85EztjWI7i3Aat3FA.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function($) { Drupal.behaviors.views_ticker_vTicker = { attach: function (context) { $("#views-ticker-vTicker-the_wire_ticker").vTicker({mousePause: true , speed:700 , pause:5000 , showItems:4 , direction: "up"}); } };})(jQuery);
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.makinitmag.com/sites/default/files/js/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.makinitmag.com/sites/default/files/googleanalytics/analytics.js?olh7pv","ga");ga("create", "UA-1681465-6", {"cookieDomain":"auto"});ga("require", "linkid", "linkid.js");ga("require", "displayfeatures");ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.makinitmag.com/sites/default/files/js/js_kfUVo9862BFyaL94dX_i46wDZFv1h_awoYX4A5_zgL4.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mimp1","theme_token":"dRTWtVOJH2o24ttNEYrHBwzkE4cUIHVgn2pq6MVIDIk","js":{"0":1,"modules\/statistics\/statistics.js":1,"1":1,"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/mediaelement\/build\/mediaelement-and-player.min.js":1,"sites\/all\/modules\/extlink\/extlink.js":1,"sites\/all\/modules\/mediaelement\/mediaelement.js":1,"sites\/all\/modules\/views_ticker\/js\/jquery.vticker-min.js":1,"2":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"3":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/mediaelement\/build\/mediaelementplayer.min.css":1,"sites\/all\/modules\/affiliate_ng\/theme\/affiliate_ng_ui.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/workflow\/workflow_admin_ui\/workflow_admin_ui.css":1,"sites\/all\/modules\/extlink\/extlink.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/wysiwyg_linebreaks\/wysiwyg_linebreaks.css":1,"sites\/all\/modules\/commerce\/modules\/cart\/theme\/commerce_cart.theme.css":1,"sites\/all\/modules\/views_ticker\/views.ticker.scroller.css":1,"sites\/all\/themes\/mimp1\/css\/layout.css":1,"sites\/all\/themes\/mimp1\/css\/style.css":1,"sites\/all\/themes\/mimp1\/css\/colors.css":1,"sites\/all\/themes\/mimp1\/css\/print.css":1,"sites\/all\/themes\/mimp1\/css\/ie.css":1,"sites\/all\/themes\/mimp1\/css\/ie6.css":1}},"mediaelementAll":true,"extlink":{"extTarget":"_blank","extClass":0,"extLabel":"(link is external)","extImgClass":true,"extSubdomains":1,"extExclude":"","extInclude":"","extCssExclude":"","extCssExplicit":"","extAlert":0,"extAlertText":"This link will take you to an external web site.","mailtoClass":"mailto","mailtoLabel":"(link sends e-mail)"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"urlIsAjaxTrusted":{"\/opportunity\/submit-now-get-1000-sponsorship-your-music?destination=node\/2288":true},"statistics":{"data":{"nid":"2288"},"url":"\/modules\/statistics\/statistics.php"}});
+//--><!]]>
+</script>
+<!-- Start of makinitmag Zendesk Widget script -->
+<script>/*<![CDATA[*/window.zEmbed||function(e,t){var n,o,d,i,s,a=[],r=document.createElement("iframe");window.zEmbed=function(){a.push(arguments)},window.zE=window.zE||window.zEmbed,r.src="javascript:false",r.title="",r.role="presentation",(r.frameElement||r).style.cssText="display: none",d=document.getElementsByTagName("script"),d=d[d.length-1],d.parentNode.insertBefore(r,d),i=r.contentWindow,s=i.document;try{o=s}catch(c){n=document.domain,r.src='javascript:var d=document.open();d.domain="'+n+'";void(0);',o=s}o.open()._l=function(){var o=this.createElement("script");n&&(this.domain=n),o.id="js-iframe-async",o.src=e,this.t=+new Date,this.zendeskHost=t,this.zEQueue=a,this.body.appendChild(o)},o.write('<body onload="document._l();">'),o.close()}("https://assets.zendesk.com/embeddable_framework/main.js","makinitmag.zendesk.com");
+/*]]>*/</script>
+<!-- End of makinitmag Zendesk Widget script -->
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1064760013572027');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1064760013572027&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','nvke3');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+<!-- Mailchimp Goal Tracking -->
+<script type="text/javascript">
+	var $mcGoal = {'settings':{'uuid':'2b04378831e76aea1ec5b8277','dc':'us1'}};
+	(function() {
+		 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+		sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+	})(); 
+</script>
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-second page-node page-node- page-node-2288 node-type-opportunity" >
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div id="page-wrapper"><div id="page">
+
+  <div id="header" class="without-secondary-menu"><div class="section clearfix">
+
+    
+          <div id="name-and-slogan">
+
+                              <div id="site-name">
+              <strong>
+                <a href="/" title="Home" rel="home"><span>Makin' It Magazine</span></a>
+              </strong>
+            </div>
+                  
+                  <div id="site-slogan">
+            Get Exposure &amp; Connect with the Music Industry Tastemakers.          </div>
+        
+      </div> <!-- /#name-and-slogan -->
+    
+      <div class="region region-header">
+    <div id="block-user-login" class="block block-user">
+
+    <h2 class="element-invisible">User login</h2>
+  
+  <div class="content">
+    <form action="/opportunity/submit-now-get-1000-sponsorship-your-music?destination=node/2288" method="post" id="user-login-form" accept-charset="UTF-8"><div><div id="toboggan-container" class="toboggan-container"><div id="toboggan-login-link-container" class="toboggan-login-link-container"><a href="/user/login?destination=node/2288" id="toboggan-login-link" class="toboggan-login-link">Log in/Register</a></div><div id="toboggan-login" class="user-login-block"><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Username or e-mail <span class="form-required" title="This field is required.">*</span></label>
+ <input type="text" id="edit-name" name="name" value="" size="15" maxlength="60" class="form-text required" />
+</div>
+<div class="form-item form-type-password form-item-pass">
+  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
+ <input type="password" id="edit-pass" name="pass" size="15" maxlength="128" class="form-text required" />
+</div>
+<div class="item-list"><ul><li class="first"><a href="/user/register" title="Create a new user account.">Create new account</a></li>
+<li class="last"><a href="/user/password" title="Request new password via e-mail.">Request new password</a></li>
+</ul></div><input type="hidden" name="form_build_id" value="form-_iwPjaLgYICFKJIrVXYyd37R-sQXqPK-65Yhr04hb6g" />
+<input type="hidden" name="form_id" value="user_login_block" />
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></div></div></form>  </div>
+</div>
+  </div>
+
+          <div id="main-menu" class="navigation">
+        <h2 class="element-invisible">Main menu</h2><ul id="main-menu-links" class="links clearfix"><li class="menu-2138 first"><a href="/updates" title="Keep up to date with our top members.">The Wire</a></li>
+<li class="menu-638"><a href="/events" title="List of latest industry events!">Events</a></li>
+<li class="menu-1537"><a href="/opportunity" title="">Perks</a></li>
+<li class="menu-3040"><a href="/success" title="See how we&#039;ve helped other members and Clients!">Success Stories</a></li>
+<li class="menu-1566"><a href="/members">Members</a></li>
+<li class="menu-452"><a href="/magazine">Magazine</a></li>
+<li class="menu-4065 last"><a href="/join">Become a Member!</a></li>
+</ul>      </div> <!-- /#main-menu -->
+    
+    
+  </div></div> <!-- /.section, /#header -->
+
+  
+  
+  <div id="main-wrapper" class="clearfix"><div id="main" class="clearfix">
+
+          <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a></div></div>
+    
+    
+    <div id="content" class="column"><div class="section">
+            <a id="main-content"></a>
+                    <h1 class="title" id="page-title">
+          Submit Now to Get a $1,000 Sponsorship for Your MUSIC!        </h1>
+                          <div class="tabs">
+                  </div>
+                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    
+
+
+
+		<!--TEASER-->
+		 
+ <div id="node-2288" class="node node-opportunity node-promoted node-full clearfix">
+	<div class="content clearfix">       
+            <!--Header-->
+            <div style="width:640px; border: 1px solid; margin-bottom: 10px;">
+            	<!--CATEGORY-->
+                <div style="font-size:medium; color:white; background-color:#900; padding: 5px; font-family:">
+					GIVEAWAY                </div>
+        
+                <!-- Main Image-->
+                <div style="background:url(http://www.makinitmag.com/sites/default/files/opportunity/images/Cut%20the%20Check.jpg); width:100%; height: 320px; background-size: 100% 100%;">
+                </div>
+            
+                <!-- Display Time-->    
+                <div style="color: white; background-color: red; padding: 5px; text-align: center; font-size:3em;">
+                    Ended 2 weeks ago!                </div>
+            </div>
+            <div>
+				<div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"> <p>We understand that when you're doing things independently almost every dollar invested into your career is coming out of your own pocket. Sometimes a little extra cash can go a long way toward helping you accomplish your goals, or securing a much-needed resource.</p><blockquote><p>If you had an extra $1,000 to put toward your music or brand, how would you spend it?</p></blockquote><p>Let us know in 50 words or less, and If you make the best case we'll Cut the Check!</p><p>Here's our last winner, <a href="http://www.makinitmag.com/users/jirja">J.Irja</a> who received $500 in funding to press up her latest promotional cd.</p><blockquote class="instagram-media" data-instgrm-version="7" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/BMYFq9sBVyW/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A video posted by Makin' It Magazine (@makinitmag)</a> on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2016-11-04T05:24:18+00:00">Nov 3, 2016 at 10:24pm PDT</time></p></div></blockquote> <script async="" defer="defer" src="//platform.instagram.com/en_US/embeds.js"></script><p> </p><p> </p><p><strong>DEADLINE:</strong><br />Submit your answer by 11:59PM on Tuesday, January 31 st.</p><p><strong>WHAT YOU GET:</strong><br />If your submission is picked We'll cut the check for $1000 and feature you in upcoming Email Blast, Magazine and Social Media Campaign!</p><p><strong>REQUIREMENTS:</strong><br />Must have at least a Basic Membership to submit.</p> </div></div></div>            </div>
+			<div style="text-align:center;">
+				<p style="color:red; font-size:2em;">This Opportunity has already ended but check out some of the other great opportunities available below!</p>        	</div>
+	</div>
+</div>
+        
+
+  </div>
+</div>
+<div id="block-views-opportunity-block-1" class="block block-views">
+
+    <h2>Other Opportunities...</h2>
+  
+  <div class="content">
+    <div class="view view-opportunity view-id-opportunity view-display-id-block_1 view-dom-id-8e36499710231d9ba1cff544fb93c494">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    
+
+
+
+		<!--TEASER-->
+		            <div style="width:310px; float:left; margin: 0px 20px 20px 0px; border: 3px solid; position:relative; box-shadow: 5px 5px 5px #888888;">
+            	<!-- Graphic -->
+                <div style="background:url(http://www.makinitmag.com/sites/default/files/opportunity/images/RTS%20Musik%20Matters.jpg) ; width:310px; height: 150px; background-size: 310px 155px;">
+                </div>
+                <!-- category -->
+                <div style="font-size:small; color:white; background-color:#900; padding: 5px;">
+                    Competition                </div>
+                <!-- Title -->
+                <div style="font-size:1.2em; padding:5px; min-height:6em;">
+                    <p style="text-align:center;">
+                        Perform for Atlantic Records A&amp;R on Musik Matters Tour, Atlanta                    </p>
+                </div>
+                <!-- Button -->
+                <div style="text-align:center; margin: 0px 0px 15px 0px;">
+                    <a class="opp-button" href="/opportunity/perform-atlantic-records-ar-musik-matters-tour-atlanta">Learn&nbsp;More!</a>
+                </div>
+                <!-- Time -->
+                <div style="color: white; background-color: black; padding: 5px;">
+                    Ends in 3 days!                </div>
+			</div>           
+        <!--PAGE-->
+        
+
+  </div>
+  <div class="views-row views-row-2 views-row-even">
+    
+
+
+
+		<!--TEASER-->
+		            <div style="width:310px; float:left; margin: 0px 20px 20px 0px; border: 3px solid; position:relative; box-shadow: 5px 5px 5px #888888;">
+            	<!-- Graphic -->
+                <div style="background:url(http://www.makinitmag.com/sites/default/files/opportunity/images/SxSWPic.jpg) ; width:310px; height: 150px; background-size: 310px 155px;">
+                </div>
+                <!-- category -->
+                <div style="font-size:small; color:white; background-color:#900; padding: 5px;">
+                    Service                </div>
+                <!-- Title -->
+                <div style="font-size:1.2em; padding:5px; min-height:6em;">
+                    <p style="text-align:center;">
+                        Submit Info to Book Performances in Austin During SxSW 2017                    </p>
+                </div>
+                <!-- Button -->
+                <div style="text-align:center; margin: 0px 0px 15px 0px;">
+                    <a class="opp-button" href="/opportunity/submit-info-book-performances-austin-during-sxsw-2017">Learn&nbsp;More!</a>
+                </div>
+                <!-- Time -->
+                <div style="color: white; background-color: black; padding: 5px;">
+                    Ends in 4 days!                </div>
+			</div>           
+        <!--PAGE-->
+        
+
+  </div>
+  <div class="views-row views-row-3 views-row-odd">
+    
+
+
+
+		<!--TEASER-->
+		            <div style="width:310px; float:left; margin: 0px 20px 20px 0px; border: 3px solid; position:relative; box-shadow: 5px 5px 5px #888888;">
+            	<!-- Graphic -->
+                <div style="background:url(http://www.makinitmag.com/sites/default/files/opportunity/images/WendyDayPowerLunch.png) ; width:310px; height: 150px; background-size: 310px 155px;">
+                </div>
+                <!-- category -->
+                <div style="font-size:small; color:white; background-color:#900; padding: 5px;">
+                    Giveaway                </div>
+                <!-- Title -->
+                <div style="font-size:1.2em; padding:5px; min-height:6em;">
+                    <p style="text-align:center;">
+                        Submit for #ThePowerLunch with Industry Veteran Wendy Day (Eminem, Cash Money, No Limit, David Banner, Trouble, etc)                    </p>
+                </div>
+                <!-- Button -->
+                <div style="text-align:center; margin: 0px 0px 15px 0px;">
+                    <a class="opp-button" href="/opportunity/submit-thepowerlunch-industry-veteran-wendy-day-eminem-cash-money-no-limit-david-banner">Learn&nbsp;More!</a>
+                </div>
+                <!-- Time -->
+                <div style="color: white; background-color: black; padding: 5px;">
+                    Ends in 4 days!                </div>
+			</div>           
+        <!--PAGE-->
+        
+
+  </div>
+  <div class="views-row views-row-4 views-row-even">
+    
+
+
+
+		<!--TEASER-->
+		            <div style="width:310px; float:left; margin: 0px 20px 20px 0px; border: 3px solid; position:relative; box-shadow: 5px 5px 5px #888888;">
+            	<!-- Graphic -->
+                <div style="background:url(http://www.makinitmag.com/sites/default/files/opportunity/images/DSRO%20Banner.jpg) ; width:310px; height: 150px; background-size: 310px 155px;">
+                </div>
+                <!-- category -->
+                <div style="font-size:small; color:white; background-color:#900; padding: 5px;">
+                    Deal                </div>
+                <!-- Title -->
+                <div style="font-size:1.2em; padding:5px; min-height:6em;">
+                    <p style="text-align:center;">
+                        Get 25% OFF Your 3 Month Radio Campaign with @DirtySouthRadio                    </p>
+                </div>
+                <!-- Button -->
+                <div style="text-align:center; margin: 0px 0px 15px 0px;">
+                    <a class="opp-button" href="/opportunity/get-25-your-3-month-radio-campaign-dirtysouthradio">Learn&nbsp;More!</a>
+                </div>
+                <!-- Time -->
+                <div style="color: white; background-color: black; padding: 5px;">
+                    Ends in 1 week!                </div>
+			</div>           
+        <!--PAGE-->
+        
+
+  </div>
+  <div class="views-row views-row-5 views-row-odd views-row-last">
+    
+
+
+
+		<!--TEASER-->
+		            <div style="width:310px; float:left; margin: 0px 20px 20px 0px; border: 3px solid; position:relative; box-shadow: 5px 5px 5px #888888;">
+            	<!-- Graphic -->
+                <div style="background:url(http://www.makinitmag.com/sites/default/files/opportunity/images/SBeck-Industry%20VIP%20List_0.jpg) ; width:310px; height: 150px; background-size: 310px 155px;">
+                </div>
+                <!-- category -->
+                <div style="font-size:small; color:white; background-color:#900; padding: 5px;">
+                    Service                </div>
+                <!-- Title -->
+                <div style="font-size:1.2em; padding:5px; min-height:6em;">
+                    <p style="text-align:center;">
+                        RSVP for FREE Entry to @Schweinbeck Industry Mixer! [March]                    </p>
+                </div>
+                <!-- Button -->
+                <div style="text-align:center; margin: 0px 0px 15px 0px;">
+                    <a class="opp-button" href="/opportunity/rsvp-free-entry-schweinbeck-industry-mixer-march">Learn&nbsp;More!</a>
+                </div>
+                <!-- Time -->
+                <div style="color: white; background-color: black; padding: 5px;">
+                    Ends in 3 weeks!                </div>
+			</div>           
+        <!--PAGE-->
+        
+
+  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+      
+    </div></div> <!-- /.section, /#content -->
+
+          <div id="sidebar-second" class="column sidebar"><div class="section">
+          <div class="region region-sidebar-second">
+    <div id="block-menu-menu-business" class="block block-menu">
+
+    <h2>Business</h2>
+  
+  <div class="content">
+    <ul class="menu clearfix"><li class="first leaf"><a href="/about-us" title="What is Makin&#039; It Magazine?">About us</a></li>
+<li class="leaf"><a href="/node/512" title="">Advertise</a></li>
+<li class="leaf"><a href="/getfeatured">Get Featured</a></li>
+<li class="leaf"><a href="/get-media-coverage-exposure-for-your-music.html">Submit Music</a></li>
+<li class="leaf"><a href="/form/professional-editing-revision-service" title="Get one of our Publicists to Writer/Revise your update~">Need PR?</a></li>
+<li class="leaf"><a href="/buy/other-service/cd-duplication-special" title="100 CDs w/ Print, Duplication, FREE Disc Design &amp; Clear Sleeves as low as $35">CD Duplication</a></li>
+<li class="leaf"><a href="/lp/mixtape-dj-hosting.html" title="Submit NOW for  a FREE Email Blast to 600+ Mixtape DJs">Find Mixtape Host</a></li>
+<li class="leaf"><a href="/lp/get-beats.html" title="Submit NOW for a FREE Email Blast to 1,500+ Producers!">Get Beats</a></li>
+<li class="leaf"><a href="/team">Join the Team</a></li>
+<li class="last leaf"><a href="/contact-us" title="Need to reach us?">Contact us</a></li>
+</ul>  </div>
+</div>
+<div id="block-views-magazines-block" class="block block-views">
+
+    <h2>Read Latest Issue!</h2>
+  
+  <div class="content">
+    <div class="view view-magazines view-id-magazines view-display-id-block view-dom-id-cab1f73a955b1af67d05a475f779e187">
+        
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first views-row-last">
+      
+  <div class="views-field views-field-field-cover">        <div class="field-content"><a href="https://issuu.com/makinitmag/docs/makin__it_magazine_-_issue_30__digi?e=1002146/40131354" target="_blank"><img src="http://www.makinitmag.com/sites/default/files/styles/medium/public/magazine/covers/Makin%27%20It%20Magazine%20-%20Issue%2030%20COVER%20.jpg?itok=py-OH1wm" width="169" height="220" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+       Click cover to read the latest Makin' It Magazine online or <a href="/getfeatured">Click Here!</a> to get featured in an upcoming issue.     </div>
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-the-wire-ticker-block" class="block block-views">
+
+    <h2>Feature Updates</h2>
+  
+  <div class="content">
+    <div class="view view-the-wire-ticker view-id-the_wire_ticker view-display-id-block view-dom-id-481d444dc849ed17752c3bf846a59df5">
+        
+  
+  
+      <div class="view-content">
+      <!-- start scroll -->
+<div class='view view-the_wire_ticker'><div class='view-content view-content-the_wire_ticker'><div id='views-ticker-vTicker-the_wire_ticker'><ul id='views-ticker-vTicker-list-the_wire_ticker'><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/mehkavelli/2017/02/smoke-visual-mixtape-inspired-thecolorgreenmovie">Up In Smoke: Visual mixtape inspired by @theColorGreenMovie</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/mehkavelli/2017/02/smoke-visual-mixtape-inspired-thecolorgreenmovie"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/FB_IMG_1486863741826.jpg?itok=tFQWXgO6" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/deonnevasleep/2017/02/scrimmages">Scrimmages</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/deonnevasleep/2017/02/scrimmages"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/Screenshot_20170214-070251.jpg?itok=cLrkR7rW" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/koolmodee/2017/01/rasta-b-and-mike-rhodes-tell-us-about-girl-new-record">Rasta B and Mike Rhodes Tell Us about &quot;That Girl&quot; on New Record</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/koolmodee/2017/01/rasta-b-and-mike-rhodes-tell-us-about-girl-new-record"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/IMG_1821.PNG?itok=s-bNOnd6" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/imckinson/2017/02/singersongwriter-ishmael-ep-single-room-102">Singer/Songwriter - Ishmael EP Single - Room 102</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/imckinson/2017/02/singersongwriter-ishmael-ep-single-room-102"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/IMG_0202.jpg?itok=5LhAKAYu" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/tympeace/2017/02/be-part-beingrealcomeseasy-promo-tour">Be a part of the #BeingRealComesEasy Promo Tour </a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/tympeace/2017/02/be-part-beingrealcomeseasy-promo-tour"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/20140416_143914.jpg?itok=-dKPlgYg" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/bigmackiegstar/2017/02/official-video-who-got-juice-bigmackiegstar-hoodroachtv">Official Video &quot;Who Got The Juice&quot; #BigMackieGStar #HoodRoachTv</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/bigmackiegstar/2017/02/official-video-who-got-juice-bigmackiegstar-hoodroachtv"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/PicsArt_04-06-09.30.25_0.jpg?itok=vGR0FXP3" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/motormouthmusic/2017/02/action3mg-who-was-mentored-john-legend-itunesspotify">@Action3MG who was Mentored by John Legend is on iTunes/Spotify </a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/motormouthmusic/2017/02/action3mg-who-was-mentored-john-legend-itunesspotify"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/Real%20Love%20pic.png?itok=S9qVsdC3" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/psychoboi187/2017/02/mersinaries-presents-daraynged-x-young-trizolet-me-grind">The Mersinaries Presents Daraynged x Young Trizo&quot;Let Me Grind&quot;</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/psychoboi187/2017/02/mersinaries-presents-daraynged-x-young-trizolet-me-grind"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/Clean%20Cover.jpg?itok=JpAto-ez" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/fleamarketflip/2017/02/flipsyde-connects-fred-b-showyouhowtogrind">FlipSyde Connects With Fred B. To #ShowYouHowToGrind</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/fleamarketflip/2017/02/flipsyde-connects-fred-b-showyouhowtogrind"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/Show%20You%20How%20To%20Grind2.png?itok=7g0g7UZZ" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/bigmikemic/2017/02/big-mike-mic-goes-pop-noo-pop-goes-big-mike-mic">Big Mike Mic  Goes POP! NOO!! POP Goes To  Big Mike  Mic!</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/bigmikemic/2017/02/big-mike-mic-goes-pop-noo-pop-goes-big-mike-mic"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/20170207_133709.png?itok=kaZwAAPE" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/rappleberry/2017/02/ap-appleberry-featured-artist-gmsh-tour-2017">A.P. Appleberry: Featured Artist on GMSH Tour 2017 </a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/rappleberry/2017/02/ap-appleberry-featured-artist-gmsh-tour-2017"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/APGMSH.jpg?itok=ldhVx7Wo" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/jaye-valentine/2017/02/jaye-valentine-delivers-houston-comedy-bowl-explosion">Jaye Valentine Delivers at Houston Comedy Bowl Explosion </a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/jaye-valentine/2017/02/jaye-valentine-delivers-houston-comedy-bowl-explosion"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/thejayevalentine-1486499303360.jpg?itok=VO9GHO7E" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/nexgod/2017/02/nexgod-new-single-baby-momma-missing">Nexgod | New Single &quot;Baby Momma Missing&quot;</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/nexgod/2017/02/nexgod-new-single-baby-momma-missing"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/BABY%20MOMMA%20MISSING%20COVER.jpg?itok=MU14S_TE" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/tgb/2017/02/tgb-release-new-single-kisses-roadsong-summer">TGB to release new single &quot;Kisses For The Road&quot;(Song of Summer)</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/tgb/2017/02/tgb-release-new-single-kisses-roadsong-summer"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/TGB%20Kisses%20for%20the%20Road%20Cover2%20copy%20%281%29.jpg?itok=p2n5sNcF" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/aikofinesse/2017/01/aiko-set-return-coast2coast-stage-charlotte-feb-18th">Aiko Set to Return to Coast2Coast Stage in Charlotte on Feb 18th</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/aikofinesse/2017/01/aiko-set-return-coast2coast-stage-charlotte-feb-18th"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/mak.jpg?itok=F27ans-J" width="180" height="180" alt="" /></a></div>  </div></span></li><li class='views-vTicker-item views-vTicker-item-the_wire_ticker'><span class='views-vTicker-tick-field'>  
+  <div class="views-field views-field-title">        <a href="/updates/mrr3ye5/2017/02/february-show-down-lil-debbie-show-hip-hop-showcase">February Show Down! (Lil Debbie Show &amp; Hip Hop Showcase)</a>  </div>  
+  <div class="views-field views-field-field-press-update-image">        <div class="field-content"><a href="/updates/mrr3ye5/2017/02/february-show-down-lil-debbie-show-hip-hop-showcase"><img src="http://www.makinitmag.com/sites/default/files/styles/square_thumbnail/public/press_update_images/CAKES%20BY%20THE%20POUND%20%28LANNY%20FLYER%29.jpg?itok=gRPmpuuX" width="180" height="180" alt="" /></a></div>  </div></span></li></ul></div></div></div>
+<!-- end scroll -->
+    </div>
+  
+  
+  
+  
+      <div class="view-footer">
+       <p style="margin-top:10px;">Post updates about your Music or Career to shared throughout the Makin It Magazine network and considered for free Magazine, Blog and Email Blast placement. <a href="/services/pr-engine.html">LEARN MORE</a>.</p><p> </p>    </div>
+  
+  
+</div>  </div>
+</div>
+<div id="block-views-blog-posts-block" class="block block-views">
+
+    <h2>Recent Posts</h2>
+  
+  <div class="content">
+    <div class="view view-blog-posts view-id-blog_posts view-display-id-block view-dom-id-88e5f7c875e6cdc8beccf9d4ca35c514">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog/features/check-out-these-officially-unofficial-events-during-sxsw">Check out These Officially Unofficial Events During SxSW</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog/features/dope-music-hip-hop-drug-culture">Dope Music: Hip Hop &amp; Drug Culture</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog/features/diddy-hip-hops-steve-jobs">Is Diddy Hip Hop&#039;s Steve Jobs?</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog/features/6-reasons-tidal-will-fail">6 Reasons Tidal Will Fail!</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/blog/music-101/2-reasons-most-dope-artists-dont-make-money">The 2 Reasons Most DOPE Artists DON&#039;T Make Money!</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+</div>
+  </div>
+      </div></div> <!-- /.section, /#sidebar-second -->
+    
+  </div></div> <!-- /#main, /#main-wrapper -->
+
+  
+  <div id="footer-wrapper"><div class="section">
+
+    
+          <div id="footer" class="clearfix">
+          <div class="region region-footer">
+    <div id="block-block-7" class="block block-block">
+
+    
+  <div class="content">
+     <p style="text-align:center"><strong>©</strong> 2007-2016 Makin'It Magazine, <em>All Rights Reserved. </em></p>   </div>
+</div>
+  </div>
+      </div> <!-- /#footer -->
+    
+  </div></div> <!-- /.section, /#footer-wrapper -->
+
+</div></div> <!-- /#page, /#page-wrapper -->
+    <div class="region region-page-bottom">
+    <noscript><div style="display:none;"><img src="//pixel.quantserve.com/pixel/p-74njs9J2hMc6Q.gif" border="0" height="1" width="1" alt="Quantcast"/></div></noscript>  </div>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _qevents = _qevents || [];(function() {var elem = document.createElement("script");elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName("script")[0];scpt.parentNode.insertBefore(elem, scpt);})();_qevents.push({qacct:"p-74njs9J2hMc6Q"});
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.makinitmag.com/sites/default/files/js/js_VU7P4CTgUZdF2SyFko5LLAg9ZK0OSVjXVaAFnTLgVt0.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0f8ac32e93","applicationID":"3898041","transactionName":"ZV1TbUVXDUIAWkFYWlwXcFpDXwxfTldaVVBtSFBeUmkVWARO","queueTime":0,"applicationTime":436,"atts":"SRpQGw1NHkw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

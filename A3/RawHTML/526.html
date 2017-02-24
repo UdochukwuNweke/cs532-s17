@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UwEPUFdACQEAXFNUAwI="};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(15),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,e,n)])}catch(c){try{i("ierr",[c,(new Date).getTime(),!0])}catch(s){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t){i("err",[t,(new Date).getTime()])}var i=t("handle"),a=t(16),c=t("ee"),s=t("loader"),f=window.onerror,u=!1,d=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),s.xhrWrappable&&t(9),u=!0)}c.on("fn-start",function(t,e,n){u&&(d+=1)}),c.on("fn-err",function(t,e,n){u&&(this.thrown=!0,o(n))}),c.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),c.on("internal-error",function(t){i("ierr",[t,(new Date).getTime(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),c=t(7),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState";t("loader").features.stn=!0,t(6);var g=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof g&&(this.bstStart=Date.now())}),o.on(w,function(t,e){var n=t[0];n instanceof g&&i("bst",[n,e,this.bstStart,Date.now()])}),a.on(m,function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),a.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),this.bstType])}),c.on(m,function(){this.bstStart=Date.now()}),c.on(w,function(t,e){i(v,[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=Date.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t(17)(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,e,n){var r=t("ee").get("history"),o=t(17)(r);e.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,e,n){var r=t("ee").get("raf"),o=t(17)(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t(17)(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],9:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,w,"fn-",c)}function i(t){v.push(t),h&&(g=-g,b.data=g)}function a(){for(var t=0;t<v.length;t++)r([],v[t]);v.length&&(v=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(5);var f=t("ee"),u=f.get("xhr"),d=t(17)(u),l=NREUM.o,p=l.XHR,h=l.MO,m="readystatechange",w=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],v=[];e.exports=u;var y=window.XMLHttpRequest=function(t){var e=new p(t);try{u.emit("new-xhr",[e],e),e.addEventListener(m,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(p,y),y.prototype=p.prototype,d.inPlace(y.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var g=1,b=document.createTextNode(g);new h(a).observe(b,{characterData:!0})}else f.on("fn-end",function(t){t[0]&&t[0].type===m||a()})},{}],10:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!e.aborted){if(n.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=o(t,this.lastSize);if(i&&(n.rxSize=i),this.sameOrigin){var a=t.getResponseHeader("X-NewRelic-App-Data");a&&(e.cat=a.split(", ").pop())}}else e.status=0;n.cbTime=this.cbTime,f.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime])}}}function o(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var r="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return h(r)}function i(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=h(r);i&&(n.txSize=i)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{f.emit("internal-error",[n])}catch(r){}}};for(var a=0;a<d;a++)e.addEventListener(u[a],this.listener,!1)}),f.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),f.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],e)}),f.on("removeEventListener-end",function(t,e){e instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],e)}),f.on("fn-start",function(t,e,n){e instanceof m&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),f.on("fn-end",function(t,e){this.xhrCbStart&&f.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{}],11:[function(t,e,n){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],12:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(15),c=t(16),s=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var u=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(u,function(t,e){f[e]=o(d+e,!0,"api")}),f.addPageAction=o(d+"addPageAction",!0),f.setCurrentRouteName=o(d+"routeName",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var p=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{s.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){p[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],13:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],14:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],15:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],16:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],17:[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){l([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o)}catch(a){l([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){l([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function l(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o){if(!l.aborted){t&&t(n,r,o);for(var i=e(o),a=h(n),c=a.length,s=0;s<c;s++)a[s].apply(i,r);var f=u[y[n]];return f&&f.push([g,n,r,i]),i}}function p(t,e){v[t]=h(t).concat(e)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var v={},y={},g={on:p,emit:n,get:m,listeners:h,context:e,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var c="nr@context",s=t("gos"),f=t(15),u={},d={},l=e.exports=o();l.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=g.info=NREUM.info,e=d.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(v,function(e,n){t[e]||(t[e]=n)}),c("mark",["onload",a()],null,"api");var n=d.createElement("script");n.src="https://"+t.agent,e.parentNode.insertBefore(n,e)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var c=t("handle"),s=t(15),f=t("ee"),u=window,d=u.document,l="addEventListener",p="attachEvent",h=u.XMLHttpRequest,m=h&&h.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:h,REQ:u.Request,EV:u.Event,PR:u.Promise,MO:u.MutationObserver},t(12);var w=""+location,v={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},y=h&&m&&m[l]&&!/CriOS/.test(navigator.userAgent),g=e.exports={offset:a(),origin:w,features:{},xhrWrappable:y};d[l]?(d[l]("DOMContentLoaded",i,!1),u[l]("load",r,!1)):(d[p]("onreadystatechange",o),u[p]("onload",r)),c("mark",["firstbyte",a()],null,"api");var b=0},{}]},{},["loader",2,10,4,3]);</script>
+<meta property="twitter:title" content="Tillman&#039;s widow disappointed in Trump&#039;s immigration ban" />
+<meta property="twitter:description" content="The widow of Pat Tillman has expressed disappointment over President Donald Trump after the administration imposed a temporary ban on travel to the United States from seven majority Muslim countries. Marie Tillman posted…" />
+<meta property="twitter:url" content="http://pro32.ap.org/article/tillmans-widow-disappointed-trumps-immigration-ban?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP_NFL" />
+<meta property="twitter:site" content="@ap" />
+<meta property="article:publisher" content="https://www.facebook.com/APNews" />
+<meta property="fb:app_id" content="118162278248556" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:app:name:iphone" content="AP Mobile" />
+<meta property="twitter:card" content="summary_large_image" />
+<meta name="twitter:app:id:iphone" content="284901416" />
+<meta name="twitter:app:id:googleplay" content="mnn.Android" />
+<meta name="twitter:app:url:googleplay" content="apmobile://article/e87751fd892e4ad5843c609e45c45785" />
+<link href="http://pro32.ap.org/profiles/ap/themes/ap_pro32/touch-icon.png" rel="apple-touch-icon" />
+<meta name="twitter:app:name:googleplay" content="AP Mobile" />
+<meta name="twitter:app:url:ipad" content="apmobile://article/e87751fd892e4ad5843c609e45c45785" />
+<meta name="twitter:app:url:iphone" content="apmobile://article/e87751fd892e4ad5843c609e45c45785" />
+<meta name="twitter:app:name:ipad" content="AP Mobile" />
+<meta name="twitter:app:id:ipad" content="284901416" />
+<meta property="al:web:url" content="http://pro32.ap.org/article/tillmans-widow-disappointed-trumps-immigration-ban?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP_NFL" />
+<meta property="al:android:app_name" content="AP Mobile" />
+<link rel="shortcut icon" href="http://pro32.ap.org/profiles/ap/themes/ap_pro32/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta property="al:android:package" content="mnn.Android" />
+<meta property="al:ios:url" content="apmobile://article/e87751fd892e4ad5843c609e45c45785" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta property="al:ios:app_name" content="AP Mobile" />
+<meta property="al:android:url" content="apmobile://article/e87751fd892e4ad5843c609e45c45785" />
+<meta property="al:ios:app_store_id" content="284901416" />
+<meta name="description" content="The widow of Pat Tillman has expressed disappointment over President Donald Trump after the administration imposed a temporary ban on travel to the" />
+<meta name="generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://pro32.ap.org/article/tillmans-widow-disappointed-trumps-immigration-ban" />
+<link rel="shortlink" href="http://pro32.ap.org/node/704935" />
+<meta property="og:site_name" content="Pro32: Head to Head" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://pro32.ap.org/article/tillmans-widow-disappointed-trumps-immigration-ban" />
+<meta property="og:title" content="Tillman&#039;s widow disappointed in Trump&#039;s immigration ban" />
+<meta property="og:description" content="The widow of Pat Tillman has expressed disappointment over President Donald Trump after the administration imposed a temporary ban on travel to the" />
+<meta property="og:updated_time" content="2017-01-29T20:00:00-05:00" />
+<meta property="article:published_time" content="2017-01-29T19:58:52-05:00" />
+<meta property="article:modified_time" content="2017-01-29T20:00:00-05:00" />
+  <title>Tillman's widow disappointed in Trump's immigration ban | Pro32: Head to Head</title>
+    <link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_oMbXc7k1lztVmWIZmJx0DLukZ3iBp1nckbHvyT91Shs.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_N97TX6yJ8keQdGkbKhHE1_E0_iT4t5YlDCJIxhl0aGE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_DAfCg_Fat93dv3lSQDud9dY1vv0u181WxX_GpFwUPFQ.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_04ju4VYBME7nXFVMJFKeap5pt1uNU1QxUKJAg8GO9RM.css" media="screen" />
+<link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_GDyPfWxLYAGs0EZ7rrEyCcTUwCza-o_8EwsSKvDXab0.css" media="print" />
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_JLIl9V67ouNtlttRcLBPDFjZOHQYOvodUb9RTFnrC9g.css" media="all" />
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<link type="text/css" rel="stylesheet" href="http://pro32.ap.org/sites/pro32/files/css/css_EwOD4QuIqpWCdsdbOUJLGD_Sbd0_zJrtm3C6bAEDoQI.css" media="all" />
+<!--<![endif]-->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.google_analytics_uacct = "UA-27590430-5";
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/jquery.js?v=1.4.4"></script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+var gads = document.createElement('script');
+gads.async = true;
+gads.type = 'text/javascript';
+var useSSL = 'https:' == document.location.protocol;
+gads.src = (useSSL ? 'https:' : 'http:') + 
+'//www.googletagservices.com/tag/js/gpt.js';
+var node = document.getElementsByTagName('script')[0];
+node.parentNode.insertBefore(gads, node);
+})();
+googletag.slots = googletag.slots || {};
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://pro32.ap.org/misc/drupal.js?olh3i5"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["leaderboard"] = googletag.defineSlot("/15786418/Pro32/AP/site/node/704935", [728, 90], "dfp-ad-leaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["mobileleaderboard"] = googletag.defineSlot("/15786418/Pro32/AP/site/node/704935", [[300, 50], [320, 50]], "dfp-ad-mobileleaderboard")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["special_ad_unit"] = googletag.defineSlot("/15786418/Pro32/ap/Pro32_promo_unit", [300, 250], "dfp-ad-special_ad_unit")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["mediumrectangle2"] = googletag.defineSlot("/15786418/Pro32/AP/site/node/704935", [300, 250], "dfp-ad-mediumrectangle2")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.slots["half_page"] = googletag.defineSlot("/15786418/Pro32/AP/site/node/704935", [[300, 600], [300, 250]], "dfp-ad-half_page")
+  .addService(googletag.pubads());
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _comscore = _comscore || [];
+_comscore.push({ c1: "2", c2: "11304492" });(function() { var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true; s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js"; el.parentNode.insertBefore(s, el); })();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.hoverIntent.minified.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/jquery.masonry.min.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_masonry.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_boxes/js/ap_boxes_flyout.js?olh3i5"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().enableSingleRequest();
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_article/js/dynamic-carousel.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_article/js/jquery.wmuslider.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/core/ap_article/js/ap_carousel.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/custom/optional/responsive_dfp_box/js/responsive_dfp.js?olh3i5"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.CKEDITOR_BASEPATH = '/profiles/ap/libraries/ckeditor/'
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/contrib/google_analytics/googleanalytics.js?olh3i5"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-27590430-5"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="https://use.typekit.com/uta3cck.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+try{Typekit.load();}catch(e){}
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/modules/contrib/disqus/disqus.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/themes/ap_pro32/js/mondernizr.custom.min.js?olh3i5"></script>
+<script type="text/javascript" src="http://pro32.ap.org/profiles/ap/themes/omega/omega/js/omega-mediaqueries.js?olh3i5"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"ap_pro32","theme_token":"J0SeG9RhotimOP5KvUdJQIiIf5CfR05qMduyXbUa9xY","js":{"0":1,"misc\/jquery.js":1,"misc\/jquery.once.js":1,"1":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"misc\/drupal.js":1,"2":1,"3":1,"4":1,"5":1,"6":1,"7":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.hoverIntent.minified.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/jquery.masonry.min.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_masonry.js":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/js\/ap_boxes_flyout.js":1,"8":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/dynamic-carousel.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/jquery.wmuslider.js":1,"profiles\/ap\/modules\/custom\/core\/ap_article\/js\/ap_carousel.js":1,"profiles\/ap\/modules\/custom\/optional\/responsive_dfp_box\/js\/responsive_dfp.js":1,"9":1,"profiles\/ap\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"10":1,"11":1,"https:\/\/use.typekit.com\/uta3cck.js":1,"12":1,"profiles\/ap\/modules\/contrib\/disqus\/disqus.js":1,"profiles\/ap\/themes\/ap_pro32\/js\/mondernizr.custom.min.js":1,"profiles\/ap\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"profiles\/ap\/modules\/custom\/core\/ap_boxes\/css\/flyout.css":1,"profiles\/ap\/modules\/contrib\/date\/date_api\/date.css":1,"profiles\/ap\/modules\/contrib\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"profiles\/ap\/modules\/contrib\/views\/css\/views.css":1,"profiles\/ap\/modules\/contrib\/ctools\/css\/ctools.css":1,"profiles\/ap\/modules\/custom\/core\/ap_microformats\/ap_microformats.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-text.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-branding.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-menu.css":1,"profiles\/ap\/themes\/omega\/omega\/css\/omega-visuals.css":1,"profiles\/ap\/themes\/ap_pro32\/css\/global.css":1,"profiles\/ap\/themes\/ap_pro32\/css\/print.css":1,"ie::normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"ie::normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-normal.css":1,"ie::normal::profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1,"narrow::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"narrow::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-narrow.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-12.css":1,"normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default.css":1,"normal::profiles\/ap\/themes\/ap_pro32\/css\/ap-pro32-alpha-default-normal.css":1,"profiles\/ap\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-12.css":1}},"responsive_dfp_box":{"responsive_leaderboard":{"desktop":"\n\u003Cdiv  id=\u0022dfp-ad-leaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n    \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-leaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n","mobile":"\n\u003Cdiv  id=\u0022dfp-ad-mobileleaderboard\u0022 class=\u0022dfp-tag-wrapper\u0022\u003E\n    \u003Cscript type=\u0022text\/javascript\u0022\u003E\n    googletag.cmd.push(function() {\n      googletag.display(\u0022dfp-ad-mobileleaderboard\u0022);\n    });\n  \u003C\/script\u003E\n\u003C\/div\u003E\n"}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"urlIsAjaxTrusted":{"\/article\/tillmans-widow-disappointed-trumps-immigration-ban?utm_campaign=SocialFlow\u0026utm_source=Twitter\u0026utm_medium=AP_NFL":true},"disqus":{"domain":"appro32headtohead","url":"http:\/\/www.pro32.ap.org\/sedaliademocrat\/article\/tillmans-widow-disappointed-trumps-immigration-ban","title":"Tillman\u0026#039;s widow disappointed in Trump\u0026#039;s immigration ban","identifier":"node\/704935"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal"],"queries":{"narrow":"screen and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"screen and (min-width: 1040px) and (min-device-width: 1040px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in page-node page-node- page-node-704935 node-type-ap-article context-article">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>  
+  <div class="region region-page-top" id="region-page-top">
+  <div class="region-inner region-page-top-inner">
+      </div>
+</div>  <div class="page clearfix" id="page">
+      <header id="section-header" class="section section-header">
+  <div id="zone-user-wrapper" class="zone-wrapper zone-user-wrapper clearfix">  
+  <div id="zone-user" class="zone zone-user clearfix container-12">
+    <div class="grid-12 region region-branding" id="region-branding">
+  <div class="region-inner region-branding-inner">
+    <div class="clearfix logo-ad">
+                <div class="logo-img">
+                  <img border="0" src="http://pro32.ap.org/sites/pro32/files/aplogo_png.png" alt="Pro32: Head to Head" title="Pro32: Head to Head" />              </div>
+              <div class="block block-boxes block-boxes-responsive-dfp block-responsive-leaderboard block-boxes-responsive-leaderboard odd block-without-title" id="block-boxes-responsive-leaderboard">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id='boxes-box-responsive_leaderboard' class='boxes-box'><div class="boxes-box-content"><div id="responsive_leaderboard-responsive-ad" class="responsive-ad"></div></div></div>    </div>
+  </div>
+</div>    </div>
+  </div>
+</div>  </div>
+</div><div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">  
+  <div id="zone-branding" class="zone zone-branding clearfix container-12">
+    <div class="grid-12 region region-vertical-branding" id="region-vertical-branding">
+  <div class="region-inner region-vertical-branding-inner">
+    
+        <div class="branding-data clearfix">
+                        <hgroup class="site-name-slogan">        
+                        <h1 class="site-name"><a href="/" rel="home" title="Home">Pro32: Head to Head</a></h1>
+              </hgroup>
+          </div>
+        
+      </div>
+</div>
+  </div>
+</div><div id="zone-menu-wrapper" class="zone-wrapper zone-menu-wrapper clearfix">    <div class="menu-zone-inner-wrapper">
+	  <div id="zone-menu" class="zone zone-menu clearfix container-12">
+	    <div class="grid-12 region region-menu" id="region-menu">
+  <div class="region-inner region-menu-inner">
+    <nav class="navigation">
+      <div class="block block-search block-form block-search-form odd block-without-title" id="block-search-form">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <form action="/article/tillmans-widow-disappointed-trumps-immigration-ban?utm_campaign=SocialFlow&amp;utm_source=Twitter&amp;utm_medium=AP_NFL" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search " type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-1qQCXnNHBbvlqOTth-IqjQB3S35VrhiOa3_Lpzf_4aM" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>    </div>
+  </div>
+</div><h4 class="sections-menu"><a href="#">Sections</a></h4><ul class="menu"><li class="first leaf"><a href="/" title="">Home</a></li>
+<li class="leaf"><a href="/matchups" title="">Matchups</a><div class="matchup-flyout clearfix"><a href="/matchups/week-2-jets-1-0-packers-0-1">Week 2: Jets (1-0) at Packers (0-1)</a><a href="/matchups/week-2-falcons-1-0-bengals-1-0">Week 2: Falcons (1-0) at Bengals (1-0)</a><a href="/matchups/week-2-patriots-0-1-vikings-1-0">Week 2: Patriots (0-1) at Vikings (1-0)</a><a href="/matchups/week-2-eagles-1-0-colts-0-1-monday">Week 2: Eagles (1-0) at Colts (0-1), Monday</a><a href="/matchups/week-3-redskins-1-1-eagles-2-0">Week 3: Redskins (1-1) at Eagles (2-0)</a><a href="/matchups/week-3-ravens-1-1-browns-1-1">Week 3: Ravens (1-1) at Browns (1-1)</a><a href="/matchups/week-3-broncos-2-0-seahawks-1-1">Week 3: Broncos (2-0) at Seahawks (1-1)</a><a href="/matchups/week-3-bears-1-1-jets-1-1-monday">Week 3: Bears (1-1) at Jets (1-1), Monday</a><a href="/matchups/week-4-giants-1-2-redskins-1-2">Week 4: Giants (1-2) at Redskins (1-2)</a><a href="/matchups/week-4-eagles-3-0-49ers-1-2">Week 4: Eagles (3-0) at 49ers (1-2)</a><a href="/matchups/week-4-packers-1-2-bears-2-1">Week 4: Packers (1-2) at Bears (2-1)</a><a href="/matchups/week-4-bills-2-1-texans-2-1">Week 4: Bills (2-1) at Texans (2-1)</a><a href="/matchups/week-4-patriots-2-1-chiefs-1-2-monday-night">Week 4: Patriots (2-1) at Chiefs (1-2), Monday night</a><a href="/matchups/week-5-texans-3-1-cowboys-3-1">Week 5: Texans (3-1) at Cowboys (3-1)</a><a href="/matchups/week-5-ravens-3-1-colts-2-2">Week 5: Ravens (3-1) at Colts (2-2)</a><a href="/matchups/week-5-cardinals-3-0-broncos-2-1">Week 5: Cardinals (3-0) at Broncos (2-1)</a><a href="/matchups/week-5-seahawks-2-1-redskins-1-3-monday">Week 5: Seahawks (2-1) at Redskins (1-3), Monday </a><a href="/matchups/week-6-cowboys-4-1-seahawks-3-1">Week 6: Cowboys (4-1) at Seahawks (3-1)</a><a href="/matchups/week-6-giants-3-2-eagles-4-1">Week 6: Giants (3-2) at Eagles (4-1)</a><a href="/matchups/week-6-49ers-3-2-rams-1-3-monday-night">Week 6: 49ers (3-2) at Rams (1-3), Monday night</a><a href="/matchups/week-7-49ers-4-2-broncos-4-1">Week 7: 49ers (4-2) at Broncos (4-1)</a><a href="/matchups/week-7-giants-3-3-cowboys-5-1">Week 7: Giants (3-3) at Cowboys (5-1)</a><a href="/matchups/week-7-bengals-3-1-1-colts-4-2">Week 7: Bengals (3-1-1) at Colts (4-2)</a><a href="/matchups/week-8-eagles-5-1-cardinals-5-1">Week 8: Eagles (5-1) at Cardinals (5-1)</a><a href="/matchups/week-8-colts-5-2-steelers-4-3">Week 8: Colts (5-2) at Steelers (4-3)</a><a href="/matchups/week-8-packers-5-2-saints-2-4">Week 8: Packers (5-2) at Saints (2-4)</a><a href="/matchups/week-8-redskins-2-5-cowboys-6-1-monday">Week 8: Redskins (2-5) at Cowboys (6-1), Monday</a><a href="/matchups/week-9-cardinals-6-1-cowboys-6-2">Week 9: Cardinals (6-1) at Cowboys (6-2)</a><a href="/matchups/week-9-broncos-6-1-patriots-6-2">Week 9: Broncos (6-1) at Patriots (6-2)</a><a href="/matchups/week-9-colts-5-3-giants-3-4-monday">Week 9: Colts (5-3) at Giants (3-4), Monday </a><a href="/matchups/week-10-dolphins-5-3-lions-6-2">Week 10: Dolphins (5-3) at Lions (6-2)</a><a href="/matchups/week-11-patriots-7-2-colts-6-3">Week 11: Patriots (7-2) at Colts (6-3)</a><a href="/matchups/week-11-patriots-7-2-colts-6-3-0">Week 11: Patriots (7-2) at Colts (6-3)</a><a href="/matchups/week-12-cardinals-9-1-seahawks-6-4">Week 12: Cardinals (9-1) at Seahawks (6-4)</a><a href="/matchups/week-13-eagles-8-3-cowboys-8-3">Week 13: Eagles (8-3) at Cowboys (8-3)</a><a href="/matchups/week-13-patriots-9-2-packers-8-3">Week 13: Patriots (9-2) at Packers (8-3)</a><a href="/matchups/week-14-seahawks-8-4-eagles-9-3">Week 14: Seahawks (8-4) at Eagles (9-3)</a><a href="/matchups/week-15-cardinals-10-3-rams-6-7">Week 15: Cardinals (10-3) at Rams (6-7)</a><a href="/matchups/week-15-cowboys-9-4-eagles-9-4">Week 15: Cowboys (9-4) at Eagles (9-4)</a><a href="/matchups/week-16-broncos-11-3-bengals-9-4-1">Week 16: Broncos (11-3) at Bengals (9-4-1)</a><a href="/matchups/week-17-lions-11-4-packers-11-4">Week 17: Lions (11-4) at Packers (11-4)</a><a href="/matchups/wild-card-cardinals-11-5-panthers-7-8-1">Wild Card: Cardinals (11-5) at Panthers (7-8-1)</a><a href="/matchups/wild-card-ravens-10-6-steelers-11-5">Wild Card: Ravens (10-6) at Steelers (11-5)</a><a href="/matchups/wild-card-bengals-10-5-1-colts-11-5">Wild Card: Bengals (10-5-1) at Colts (11-5)</a><a href="/matchups/wild-card-lions-11-5-cowboys-12-4">Wild Card: Lions (11-5) at Cowboys (12-4)</a><a href="/matchups/divisional-playoff-cowboys-13-5-packers-12-4">Divisional Playoff: Cowboys (13-5) at Packers (12-4)</a><a href="/matchups/divisional-playoffs-ravens-11-6-patriots-12-4">Divisional Playoffs: Ravens (11-6) at Patriots (12-4)</a><a href="/matchups/divisional-playoffs-panthers-8-8-1-seahawks-12-4">Divisional Playoffs: Panthers (8-8-1) at Seahawks (12-4)</a><a href="/matchups/divisional-playoffs-colts-12-5-broncos-12-4">Divisional Playoffs: Colts (12-5) at Broncos (12-4)</a><a href="/matchups/conference-playoffs-13-4-packers-seahawks-13-4">Conference Playoffs: (13-4) Packers at Seahawks (13-4)</a><a href="/matchups/conference-playoffs-colts-13-5-patriots-13-4">Conference Playoffs: Colts (13-5) at Patriots (13-4)</a><a href="/matchups/super-bowl-patriots-14-4-vs-seahawks-14-4">Super Bowl: Patriots (14-4)  vs. Seahawks (14-4)</a><a href="/matchups/week-1-steelers-patriots">Week 1: Steelers at Patriots</a><a href="/matchups/week-1-giants-cowboys">Week 1: Giants at Cowboys</a><a href="/matchups/week-1-colts-bills">Week 1: Colts at Bills</a><a href="/matchups/week-1-eagles-falcons">Week 1: Eagles at Falcons</a><a href="/matchups/week-1-vikings-49ers">Week 1: Vikings at 49ers</a><a href="/matchups/week-2-broncos-1-0-chiefs-1-0">Week 2: Broncos (1-0) at Chiefs (1-0)</a><a href="/matchups/week-2-seahawks-0-1-packers-1-0">Week 2: Seahawks (0-1 at Packers (1-0)</a><a href="/matchups/week-2-patriots-1-0-bills-1-0">Week 2: Patriots (1-0) at Bills (1-0)</a><a href="/matchups/week-2-cowboys-1-0-eagles-0-1">Week 2: Cowboys (1-0) at Eagles (0-1)</a><a href="/matchups/week-3-redskins-1-1-giants-0-2-thursday-night">Week 3: Redskins (1-1) at Giants (0-2), Thursday night</a><a href="/matchups/week-3-falcons-2-0-cowboys-2-0">Week 3: Falcons (2-0) at Cowboys (2-0)</a><a href="/matchups/week-3-colts-0-2-titans-1-1">Week 3: Colts (0-2) at Titans (1-1)</a><a href="/matchups/week-3-bills-1-1-dolphins-1-1">Week 3: Bills (1-1) at Dolphins (1-1)</a><a href="/matchups/chiefs-1-1-packers-2-0">Chiefs (1-1) at Packers (2-0)</a><a href="/matchups/week-4-ravens-0-3-steelers-2-1-thursday-night">Week 4: Ravens (0-3) at Steelers (2-1), Thursday night</a><a href="/matchups/week-4-packers-3-0-49ers-1-2">Week 4: Packers (3-0) at 49ers (1-2)</a><a href="/matchups/week-4-jets-2-1-vs-dolphins-1-2-london">Week 4: Jets (2-1) vs. Dolphins (1-2) in London</a><a href="/matchups/week-4-chiefs-1-2-bengals-3-0">Week 4: Chiefs (1-2) at Bengals (3-0)</a><a href="/matchups/week-4-lions-0-3-seahawks-1-2">Week 4: Lions (0-3) at Seahawks (1-2)</a><a href="/matchups/week-5-patriots-3-0-cowboys-2-2">Week 5: Patriots (3-0) at Cowboys (2-2)</a><a href="/matchups/week-5-broncos-4-0-raiders-2-2">Week 5: Broncos (4-0) at Raiders (2-2)</a><a href="/matchups/week-5-seahawks-2-2-bengals-4-0">Week 5: Seahawks (2-2) at Bengals (4-0)</a><a href="/matchups/week-6-falcons-5-0-saints-1-4">Week 6: Falcons (5-0) at Saints (1-4)</a><a href="/matchups/week-6-steelers-3-2-cardinals-4-1">Week 6: Steelers (3-2) at Cardinals (4-1)</a><a href="/matchups/week-6-patriots-4-0-colts-3-2">Week 6: Patriots (4-0) at Colts (3-2)</a><a href="/matchups/week-6-panthers-4-0-seahawks-2-3">Week 6: Panthers (4-0) at Seahawks (2-3)</a><a href="/matchups/week-7-jets-4-1-patriots-5-0">Week 7: Jets (4-1) at Patriots (5-0)</a><a href="/matchups/week-7-eagles-3-3-panthers-5-0">Week 7: Eagles (3-3) at Panthers (5-0)</a><a href="/matchups/week-7-cowboys-2-3-giants-3-3">Week 7: Cowboys (2-3) at Giants (3-3)</a><a href="/matchups/week-7-ravens-1-5-cardinals-4-2-monday-night">Week 7: Ravens (1-5) at Cardinals (4-2), Monday night</a><a href="/matchups/week-8-dolphins-3-3-patriots-6-0-thursday-night">Week 8: Dolphins (3-3) at Patriots (6-0), Thursday night</a><a href="/matchups/week-8-packers-6-0-broncos-6-0">Week 8: Packers (6-0) at Broncos (6-0)</a><a href="/matchups/week-8-seahawks-3-4-cowboys-2-4">Week 8: Seahawks (3-4) at Cowboys (2-4)</a><a href="/matchups/week-8-bengals-6-0-steelers-4-3">Week 8: Bengals (6-0) at Steelers (4-3)</a><a href="/matchups/week-9-browns-2-6-bengals-7-0-thursday">Week 9: Browns (2-6) at Bengals (7-0) Thursday</a><a href="/matchups/week-9-redskins-3-4-patriots-7-0">Week 9: Redskins (3-4) at Patriots (7-0)</a><a href="/matchups/week-9-broncos-7-0-colts-3-5">Week 9: Broncos (7-0) at Colts (3-5)</a><a href="/matchups/week-9-packers-6-1-panthers-7-0">Week 9: Packers (6-1) at Panthers (7-0)</a><a href="/matchups/week-9-rams-4-3-vikings-5-2">Week 9: Rams (4-3) at Vikings (5-2)</a><a href="/matchups/week-10-bills-4-4-jets-5-3-thursday">Week 10: Bills (4-4) at Jets (5-3), Thursday</a><a href="/matchups/week-10-cardinals-6-2-seahawks-4-4">Week 10: Cardinals (6-2) at Seahawks (4-4)</a><a href="/matchups/week-10-patriots-8-0-giants-5-4">Week 10: Patriots (8-0) at Giants (5-4)</a><a href="/matchups/week-10-chiefs-3-5-broncos-7-1">Week 10: Chiefs (3-5) at Broncos (7-1)</a><a href="/matchups/week-10-texans-3-5-bengals-8-0-monday-night">Week 10: Texans (3-5) at Bengals (8-0), Monday night</a><a href="/matchups/week-11-titans-2-7-jaguars-3-6">Week 11: Titans (2-7) at Jaguars (3-6)</a><a href="/matchups/week-11-bengals-9-0-cardinals-7-2">Week 11: Bengals (9-0) at Cardinals (7-2)</a><a href="/matchups/week-11-jets-5-4-texans-4-5">Week 11: Jets (5-4) at Texans (4-5)</a><a href="/matchups/week-11-bills-5-4-patriots-9-0-monday-night">Week 11: Bills (5-4) at Patriots (9-0), Monday night</a><a href="/matchups/week-12-patriots-10-0-broncos-8-2">Week 12: Patriots (10-0) at Broncos (8-2)</a><a href="/matchups/week-12-dolphins-4-6-jets-5-5">Week 12: Dolphins (4-6) at Jets (5-5)</a><a href="/matchups/week-12-steelers-6-4-seahawks-5-5">Week 12: Steelers (6-4) at Seahawks (5-5)</a><a href="/matchups/week-13-packers-7-4-lions-4-7-thursday-night">Week 13: Packers (7-4) at Lions (4-7), Thursday night</a><a href="/matchups/week-13-colts-6-5-vs-steelers-6-5">Week 13: Colts (6-5) vs. Steelers (6-5)</a><a href="/matchups/week-13-cowboys-3-8-redskins-5-6">Week 13: Cowboys (3-8) at Redskins (5-6)</a><a href="/matchups/week-14-vikings-8-4-cardinals-10-2-thursday">Week 14: Vikings (8-4) at Cardinals (10-2), Thursday</a><a href="/matchups/week-14-patriots-10-2-texans-6-6">Week 14: Patriots (10-2) at Texans (6-6)</a><a href="/matchups/week-14-seahawks-7-5-ravens-4-8">Week 14: Seahawks (7-5) at Ravens (4-8)</a><a href="/matchups/week-14-steelers-7-5-bengals-10-2">Week 14: Steelers (7-5) at Bengals (10-2)</a><a href="/matchups/week-14-giants-5-7-dolphins-5-7-monday-night">Week 14: Giants (5-7) at Dolphins (5-7) Monday night</a><a href="/matchups/week-15-panthers-13-0-giants-6-7">Week 15: Panthers (13-0) at Giants (6-7)</a><a href="/matchups/week-15-broncos-10-3-steelers-8-5">Week 15: Broncos (10-3) at Steelers (8-5)</a><a href="/matchups/week-16-patriots-12-2-jets-9-5">Week 16: Patriots (12-2) at Jets (9-5)</a><a href="/matchups/week-16-panthers-14-0-falcons-7-7">Week 16: Panthers (14-0) at Falcons (7-7)</a><a href="/matchups/week-16-packers-10-4-cardinals-12-2">Week 16: Packers (10-4) at Cardinals (12-2)</a><a href="/matchups/week-17-vikings-10-5-packers-10-5">Week 17: Vikings (10-5) at Packers (10-5)</a><a href="/matchups/week-17-jets-10-5-bills-7-8">Week 17: Jets (10-5) at Bills (7-8)</a><a href="/matchups/week-17-seahawks-9-6-cardinals-13-2">Week 17: Seahawks (9-6) at Cardinals (13-2)</a><a href="/matchups/week-17-vikings-10-5-packers-10-5-0">Week 17: Vikings (10-5) at Packers (10-5)</a><a href="/matchups/afc-wild-card-chiefs-11-5-texans-9-7">AFC Wild Card: Chiefs (11-5) at Texans (9-7)</a><a href="/matchups/afc-wild-card-steelers-10-6-bengals-12-4">AFC Wild Card: Steelers (10-6) at Bengals (12-4)</a><a href="/matchups/nfc-wild-card-seahawks-10-6-vikings-11-5">NFC Wild Card: Seahawks (10-6) at Vikings (11-5)</a><a href="/matchups/nfc-wild-card-packers-10-6-redskins-9-7">NFC Wild Card: Packers (10-6) at Redskins (9-7)</a><a href="/matchups/nfc-divisional-playoffs-packers-10-6-cardinals-13-3">NFC Divisional Playoffs: Packers (10-6) at Cardinals (13-3)</a><a href="/matchups/nfc-divisional-playoffs-seahawks-10-6-panthers-15-1">NFC Divisional Playoffs: Seahawks (10-6) at Panthers (15-1)</a><a href="/matchups/afc-divisional-playoffs-chiefs-11-5-patriots-12-4">AFC Divisional Playoffs: Chiefs (11-5) at Patriots (12-4)</a><a href="/matchups/afc-divisional-playoffs-steelers-10-6-broncos-12-4">AFC Divisional Playoffs: Steelers (10-6) at Broncos (12-4)</a><a href="/matchups/afc-conference-playoffs-patriots-broncos">AFC Conference Playoffs: Patriots at Broncos</a><a href="/matchups/nfc-conference-playoffs-cardinals-panthers">NFC Conference Playoffs: Cardinals at Panthers</a><a href="/matchups/super-bowl-50-broncos-14-4-vs-panthers-17-1">Super Bowl 50: Broncos (14-4) vs. Panthers (17-1) </a><a href="/matchups/week-1-panthers-broncos">Week 1: Panthers at Broncos</a><a href="/matchups/week-1-patriots-cardinals">Week 1: Patriots at Cardinals</a><a href="/matchups/week-1-bengals-jets">Week 1: Bengals at Jets</a><a href="/matchups/week-2-jets-0-1-bills-0-1">Week 2: Jets (0-1) at Bills (0-1)</a><a href="/matchups/week-2-bengals-1-0-steelers-1-0">Week 2: Bengals (1-0) at Steelers (1-0)</a><a href="/matchups/week-3-texans-2-0-patriots-2-0">Week 3: Texans (2-0) at Patriots (2-0)</a><a href="/matchups/week-3-steelers-2-0-eagles-2-0">Week 3: Steelers (2-0) at Eagles (2-0)</a><a href="/matchups/week-3-vikings-2-0-panthers-1-1">Week 3: Vikings (2-0) at Panthers (1-1)</a><a href="/matchups/week-4-dolphins-1-2-bengals-1-2-thurs-night">Week 4: Dolphins (1-2) at Bengals (1-2), Thurs. night</a><a href="/matchups/week-4-titans-1-2-texans-2-1">Week 4: Titans (1-2) at Texans (2-1)</a><a href="/matchups/week-4-seahawks-2-1-jets-1-2">Week 4: Seahawks (2-1) at Jets (1-2)</a><a href="/matchups/week-4-bills-1-2-patriots-3-0">Week 4: Bills (1-2) at Patriots (3-0)</a><a href="/matchups/week-4-giants-2-1-vikings-3-0-monday-night">Week 4: Giants (2-1) at Vikings (3-0), Monday night</a><a href="/matchups/week-5-cardinals-1-3-49ers-1-3-thurs-night">Week 5: Cardinals (1-3) at 49ers (1-3), Thurs. night</a><a href="/matchups/week-5-falcons-3-1-broncos-4-0">Week 5: Falcons (3-1) at Broncos (4-0)</a><a href="/matchups/week-5-patriots-3-1-browns-0-4">Week 5: Patriots (3-1) at Browns (0-4)</a><a href="/matchups/week-5-eagles-3-0-lions-1-3">Week 5: Eagles (3-0) at Lions (1-3)</a><a href="/matchups/week-6-broncos-4-1-chargers-1-4-thurs-night">Week 6: Broncos (4-1) at Chargers (1-4), Thurs. night</a><a href="/matchups/week-6-49ers-1-4-bills-3-2">Week 6: 49ers (1-4) at Bills (3-2)</a><a href="/matchups/week-6-bengals-2-3-patriots-4-1">Week 6: Bengals (2-3) at Patriots (4-1)</a><a href="/matchups/week-6-cowboys-4-1-packers-3-2">Week 6: Cowboys (4-1) at Packers (3-2)</a><a href="/matchups/week-7-bears-1-5-packers-3-2">Week 7: Bears (1-5) at Packers (3-2)</a><a href="/matchups/week-7-patriots-5-1-steelers-4-2">Week 7: Patriots (5-1) at Steelers (4-2)</a><a href="/matchups/week-7-seahawks-4-1-cardinals-3-3">Week 7: Seahawks (4-1) at Cardinals (3-3)</a><a href="/matchups/week-7-texans-4-2-broncos-4-2-mon-night">Week 7: Texans (4-2) at Broncos (4-2), Mon. night</a><a href="/matchups/week-8-jaguars-2-4-titans-3-4-thurs-night">Week 8: Jaguars (2-4) at Titans (3-4), Thurs. night</a><a href="/matchups/week-8-patriots-6-1-bills-4-3">Week 8: Patriots (6-1) at Bills (4-3)</a><a href="/matchups/week-8-eagles-4-2-cowboys-5-1">Week 8: Eagles (4-2) at Cowboys (5-1)</a><a href="/matchups/week-9-falcons-5-3-buccaneers-3-4-thurs-night">Week 9: Falcons (5-3) at Buccaneers (3-4), Thurs. night</a><a href="/matchups/week-9-broncos-6-2-raiders-6-2">Week 9: Broncos (6-2) at Raiders (6-2)</a><a href="/matchups/week-9-bills-4-4-seahawks-4-2-1-mon-night">Week 9: Bills (4-4) at Seahawks (4-2-1), Mon. night</a><a href="/matchups/week-10-browns-0-9-ravens-4-4-thurs-night">Week 10: Browns (0-9) at Ravens (4-4), Thurs. night</a><a href="/matchups/week-10-seahawks-5-2-1-patriots-7-1">Week 10: Seahawks (5-2-1) at Patriots (7-1)</a><a href="/matchups/week-10-cowboys-7-1-steelers-4-4">Week 10: Cowboys (7-1) at Steelers (4-4)</a><a href="/matchups/week-11-saints-4-5-panthers-3-6">Week 11: Saints (4-5) at Panthers (3-6)</a><a href="/matchups/week-11-eagles-5-4-seahawks-6-2">Week 11: Eagles (5-4) at Seahawks (6-2)</a><a href="/matchups/week-11-ravens-5-4-cowboys-8-1">Week 11: Ravens (5-4) at Cowboys (8-1)</a><a href="/matchups/week-12-redskins-6-3-1-cowboys-9-1">Week 12: Redskins (6-3-1) at Cowboys (9-1)</a><a href="/matchups/week-12-packers-4-6-eagles-5-5-monday-night">Week 12: Packers (4-6) at Eagles (5-5), Monday night</a><a href="/matchups/week-12-chiefs-7-3-broncos-7-3">Week 12: Chiefs (7-3) at Broncos (7-3)</a><a href="/matchups/week-13-cowboys-10-1-vikings-6-5-thurs-night">Week 13: Cowboys (10-1) at Vikings (6-5), Thurs. night</a><a href="/matchups/week-13-giants-8-3-steelers-6-5">Week 13: Giants (8-3) at Steelers (6-5)</a><a href="/matchups/week-14-raiders-10-2-chiefs-9-3-thurs-night">Week 14: Raiders (10-2) at Chiefs (9-3), Thurs. night</a><a href="/matchups/week-14-cowboys-11-1-giants-8-4">Week 14: Cowboys (11-1) at Giants (8-4)</a><a href="/matchups/week-14-ravens-7-5-patriots-10-2-mon-night">Week 14: Ravens (7-5) at Patriots (10-2), Mon. night</a><a href="/matchups/week-15-rams-4-9-seahawks-8-4-1-thurs-night">Week 15: Rams (4-9) at Seahawks (8-4-1), Thurs. night</a><a href="/matchups/week-15-patriots-11-2-broncos-8-5">Week 15: Patriots (11-2) at Broncos (8-5)</a><a href="/matchups/week-15-bucs-8-5-cowboys-11-2">Week 15: Bucs (8-5) at Cowboys (11-2)</a><a href="/matchups/week-16-giants-10-4-eagles-5-9">Week 16: Giants (10-4) at Eagles (5-9)</a><a href="/matchups/week-17-patriots-13-2-dolphins-10-5">Week 17: Patriots (13-2) at Dolphins (10-5)</a><a href="/matchups/week-17-packers-9-6-lions-9-6">Week 17: Packers (9-6) at Lions (9-6)</a><a href="/matchups/nfc-wild-card-giants-11-5-packers-10-6">NFC Wild Card: Giants (11-5) at Packers (10-6)</a><a href="/matchups/nfc-wild-card-lions-9-7-seahawks-10-5-1">NFC Wild Card: Lions (9-7) at Seahawks (10-5-1)</a><a href="/node/702493">AFC Wild Card: Dolphins (10-6) at Steelers (11-5)</a><a href="/node/702495">AFC Wild Card: Raiders (12-4) at Texans (9-7)</a><a href="/matchups/nfc-divisional-playoffs-packers-10-6-cowboys-13-3">NFC Divisional Playoffs: Packers (10-6) at Cowboys (13-3)</a><a href="/matchups/nfc-divisional-playoffs-seahawks-10-5-1-falcons-11-5">NFC Divisional Playoffs: Seahawks (10-5-1) at Falcons (11-5)</a><a href="/matchups/afc-divisional-playoffs-texans-9-7-patriots-14-2">AFC Divisional Playoffs: Texans (9-7) at Patriots (14-2)</a><a href="/matchups/afc-divisional-playoffs-steelers-11-5-chiefs-12-4">AFC Divisional Playoffs: Steelers (11-5) at Chiefs (12-4)</a><a href="/matchups/nfc-championship-packers-falcons">NFC Championship: Packers at Falcons</a><a href="/matchups/afc-championship-steelers-patriots">AFC Championship: Steelers at Patriots</a><a href="/matchups/super-bowl-51-falcons-13-5-vs-patriots-16-2">SUPER BOWL 51: Falcons (13-5) vs. Patriots (16-2)</a><div></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Pro32</a></li>
+<li class="leaf"><a href="/divisions" title="">Divisions</a><div class="conference-flyout clearfix">
+      <a href="/conferences/afc-east">AFC East</a>      <a href="/conferences/afc-north">AFC North</a>      <a href="/conferences/afc-south">AFC South</a>      <a href="/conferences/afc-west">AFC West</a>      <a href="/conferences/nfc-east">NFC East</a>      <a href="/conferences/nfc-north">NFC North</a>      <a href="/conferences/nfc-south">NFC South</a>      <a href="/conferences/nfc-west">NFC West</a>  </div></li>
+<li class="leaf"><a href="/photo-galleries" title="">Photos</a></li>
+<li class="last leaf"><a href="/schedule" title="">Schedule</a></li>
+</ul>    </nav>
+  </div>
+</div>
+	  </div>
+  </div>
+</div></header>    
+      <section id="section-content" class="section section-content">
+  <div id="zone-content-wrapper" class="zone-wrapper zone-content-wrapper clearfix">  
+  <div id="zone-content" class="zone zone-content clearfix container-12">    
+        
+        <div class="grid-8 region region-content" id="region-content">
+  <div class="region-inner region-content-inner">
+    <a id="main-content"></a>
+                <div class="tabs clearfix"></div>        <div class="block block-system block-main block-system-main even block-without-title" id="block-system-main">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-704935" rel="wicked dudes">
+  <header>
+        <h1 class="entry-title node-title title" rel="bookmark" id="page-title">Tillman&#039;s widow disappointed in Trump&#039;s immigration ban</h1>
+      <div class="article-data">
+    <div class="field field-name-field-byline-original field-type-text field-label-hidden"><div class="field-items"><div class="field-item even">By <a href="/content/associated-press">The Associated Press</a></div></div></div>     &mdash; <span  class="updated" title="2017-01-29T19:58:52-05:00">Jan. 29, 2017 7:58 PM EST</span>  </div>
+  </header>
+  <h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a> &raquo; <a href="/tags/pat-tillman">Pat Tillman</a> &raquo; Tillman&#039;s widow disappointed in Trump&#039;s immigration ban</div>  <div class="node-body clearfix">
+	  <div class="block block-ap-misc block-ap-social-media block-ap-misc-ap-social-media odd block-without-title" id="block-ap-misc-ap-social-media">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div class="ap-article-social clearfix">
+	<h3>Share</h3>
+	<div class="social-widgets clearfix">
+
+		<div class="social-fbook social-share">
+			<div class="_li">
+			<div class="pluginSkinLight pluginFontLucida">
+				<div>
+					<table class="_51mz" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr class="_51mx">
+								<td class="_51mw">
+									<div>
+										<div class="pluginCountBox">
+											<div>
+												<i class="pluginCountBoxIcon" style="display: none"></i>
+												<span>
+													<span class="pluginCountTextConnected">1</span>
+													<span class="pluginCountTextDisconnected">0</span>
+												</span>
+											</div>
+										</div>
+										<div class="pluginCountBoxNub">
+											<s></s>
+											<i></i>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="_51mx">
+								<td class="_51m- hCent _51mw">
+									<div>
+										<div class="pluginButton pluginButtonSmall pluginConnectButtonDisconnected" title="Share">
+											<div>
+												<div class="pluginButtonContainer" onclick="open_window()">
+													<i class="pluginButtonIcon img sp_plugin-button sx_plugin-button_favblue"></i>
+													<span class="pluginButtonLabel">Share</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function open_window(){
+
+		var location_url=window.location.protocol+"//"+window.location.host+window.location.pathname;
+
+		var first_paragraph = false;
+
+		jQuery('div.field-item').find('p').each(function(index, elem){
+			if(jQuery(elem).text().length > 0){
+
+				if(first_paragraph == false && jQuery(elem).text().length > 0)
+					first_paragraph = jQuery(elem).text();
+			}
+		});
+
+		var data={
+			url:encodeURIComponent(location_url),
+			title:encodeURIComponent(jQuery('h1.entry-title').text()),
+			excerpt:encodeURIComponent(first_paragraph)};
+
+			var timestamp=new Date().getTime();
+			var url_no_cache=data.url+encodeURIComponent('?nc='+timestamp);
+
+			window.open('http://www.facebook.com/sharer/sharer.php?m2w=1&s=100&p[url]='+url_no_cache+'&p[title]='+data.title+'&p[summary]='+data.excerpt,this.target,'width=600,height=400,resizable=1,scrollbars=1');
+			return false;
+		}</script>	
+		<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery.ajax({
+				type:"GET",
+				url:"http://graph.facebook.com/",
+				data:{id: window.location.href},
+				success: function(response){
+
+					var qty = 0;
+
+					if(response.shares == undefined) {
+
+						response.shares = 0;
+					}
+
+					qty = response.shares;
+
+					if(qty>999999) {
+
+						qty=Math.round(qty/100000)/10+'M';
+					}
+
+					if(qty>999) {
+
+						qty=Math.round(qty/100)/10+'k';
+					}
+
+					jQuery('.pluginCountTextDisconnected')
+						.hide('fast',function(){
+							jQuery('.pluginCountTextConnected').text(qty).show();
+						});
+					}
+			})
+		});
+		</script>    </div>
+  </div>
+</div>	  <div class="node-content">
+		  		  
+      		  
+		  
+		  <div class="content clearfix article-body">
+		    <div  class="hnews-hidden"><div  class="hnews-author-org">By: <span  class="author vcard"><a href="/content/associated-press" class="fn">The Associated Press</a></span> (<span  class="source-org vcard"><span  class="org fn">AP</span></span>)</div><a  rel="item-license" id="license-53684fc650ef5a6c7ea7bbc2b1e0504c" href="#license-53684fc650ef5a6c7ea7bbc2b1e0504c">Copyright 2017 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a></div><div class="field field-name-body field-type-text-with-summary field-label-hidden entry-content"><div class="field-items"><div class="field-item even"><p><block><p>The widow of Pat Tillman has expressed disappointment over President Donald Trump after the administration imposed a temporary ban on travel to the United States from seven majority Muslim countries.</p>
+<p>Marie Tillman posted a <a href="https://www.facebook.com/marie.tillman.100/posts/10210928865193055">message on Facebook</a> saying she was saddened by the executive order, adding that this was "not the country he dreamed of, not what he served for and not what he died for."</p>
+<p>Tillman left a multimillion NFL contract with the Arizona Cardinals at 25 to join the Army, eight months after the Sept. 11, 2001, terrorist attacks. He was killed by friendly fire in Afghanistan in 2004.</p>
+<p>Marie Tillman has carried on his name and spirit through the Pat Tillman Foundation, which provides scholarships to military personnel and their families.</p>
+</block></p></div></div></div><div class="field field-name-field-cinesport field-type-text-long field-label-hidden"><div class="field-items"><div class="field-item even"><div id="cinesport">
+<!--SELECT YOUR PARAGRAPH NUMBER IMMEDIATELY BELOW--><script>
+<!--//--><![CDATA[// ><!--
+
+jQuery("#cinesport").insertAfter(".field-name-body p:eq(3)");
+
+//--><!]]>
+</script><!--ENTER YOUR CINESPORT CODE IMMEDIATELY FOLLOWING THIS ARROW--></div>
+</div></div></div>		    		  </div>
+		  
+		  
+
+		  <div class="clearfix share-block">
+		    <div class="ap-article-social clearfix">
+	<h3>Share</h3>
+	<div class="social-widgets clearfix">
+
+		<div class="social-fbook social-share">
+			<div class="_li">
+			<div class="pluginSkinLight pluginFontLucida">
+				<div>
+					<table class="_51mz" cellspacing="0" cellpadding="0">
+						<tbody>
+							<tr class="_51mx">
+								<td class="_51mw">
+									<div>
+										<div class="pluginCountBox">
+											<div>
+												<i class="pluginCountBoxIcon" style="display: none"></i>
+												<span>
+													<span class="pluginCountTextConnected">1</span>
+													<span class="pluginCountTextDisconnected">0</span>
+												</span>
+											</div>
+										</div>
+										<div class="pluginCountBoxNub">
+											<s></s>
+											<i></i>
+										</div>
+									</div>
+								</td>
+							</tr>
+							<tr class="_51mx">
+								<td class="_51m- hCent _51mw">
+									<div>
+										<div class="pluginButton pluginButtonSmall pluginConnectButtonDisconnected" title="Share">
+											<div>
+												<div class="pluginButtonContainer" onclick="open_window()">
+													<i class="pluginButtonIcon img sp_plugin-button sx_plugin-button_favblue"></i>
+													<span class="pluginButtonLabel">Share</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+
+				</div>
+			</div>
+		</div>
+		</div>
+		
+				<div class="social-twitter social-share">
+		<a href="https://twitter.com/share" class="twitter-share-button" data-count="vertical">Tweet</a><script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+		</div>
+		
+				<div class="social-linkedin social-share">
+		<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+		<script type="IN/Share" data-counter="top"></script>
+		</div>
+				<div class="social-gplus social-share">
+		<!-- Place this tag where you want the +1 button to render -->
+		<g:plusone size="tall"></g:plusone>
+		<!-- Place this render call where appropriate -->
+		<script type="text/javascript">
+		  (function() {
+		    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+		    po.src = 'https://apis.google.com/js/plusone.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+		  })();
+		</script>
+		</div>
+				<div class="social-reddit social-share-wide">
+		<script type="text/javascript">reddit_newwindow='1'</script>
+		<script type="text/javascript" src="http://www.reddit.com/static/button/button1.js"></script>
+		</div>
+				<div class="social-tumblr social-share-wide">
+		<a href="http://www.tumblr.com/share" title="Share on Tumblr" style="display:inline-block; text-indent:-9999px; overflow:hidden; width:129px; height:20px; background:url('http://platform.tumblr.com/v1/share_3.png') top left no-repeat transparent;">Tumblr</a>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	function open_window(){
+
+		var location_url=window.location.protocol+"//"+window.location.host+window.location.pathname;
+
+		var first_paragraph = false;
+
+		jQuery('div.field-item').find('p').each(function(index, elem){
+			if(jQuery(elem).text().length > 0){
+
+				if(first_paragraph == false && jQuery(elem).text().length > 0)
+					first_paragraph = jQuery(elem).text();
+			}
+		});
+
+		var data={
+			url:encodeURIComponent(location_url),
+			title:encodeURIComponent(jQuery('h1.entry-title').text()),
+			excerpt:encodeURIComponent(first_paragraph)};
+
+			var timestamp=new Date().getTime();
+			var url_no_cache=data.url+encodeURIComponent('?nc='+timestamp);
+
+			window.open('http://www.facebook.com/sharer/sharer.php?m2w=1&s=100&p[url]='+url_no_cache+'&p[title]='+data.title+'&p[summary]='+data.excerpt,this.target,'width=600,height=400,resizable=1,scrollbars=1');
+			return false;
+		}</script>	
+		<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery.ajax({
+				type:"GET",
+				url:"http://graph.facebook.com/",
+				data:{id: window.location.href},
+				success: function(response){
+
+					var qty = 0;
+
+					if(response.shares == undefined) {
+
+						response.shares = 0;
+					}
+
+					qty = response.shares;
+
+					if(qty>999999) {
+
+						qty=Math.round(qty/100000)/10+'M';
+					}
+
+					if(qty>999) {
+
+						qty=Math.round(qty/100)/10+'k';
+					}
+
+					jQuery('.pluginCountTextDisconnected')
+						.hide('fast',function(){
+							jQuery('.pluginCountTextConnected').text(qty).show();
+						});
+					}
+			})
+		});
+		</script>		  </div>
+		  
+		  <div class="clearfix tags-block">
+		    <div  class="ap-article-tags categories">
+    
+    
+    
+<h3 class="h3_tags">Tags</h3>
+<div class="tags">
+<a href="/tags/general-news" rel="tag">General news</a>, <a href="/tags/government-and-politics" rel="tag">Government and politics</a>, <a href="/tags/business" rel="tag">Business</a>, <a href="/tags/government-business-and-finance" rel="tag">Government business and finance</a>, <a href="/tags/government-regulations" rel="tag">Government regulations</a>, <a href="/tags/social-issues" rel="tag">Social issues</a>, <a href="/tags/social-affairs" rel="tag">Social affairs</a>, <a href="/tags/corporate-news" rel="tag">Corporate news</a>, <a href="/tags/immigration" rel="tag">Immigration</a>, <a href="/tags/religion" rel="tag">Religion</a>, <a href="/tags/donald-trump" rel="tag">Donald Trump</a>, <a href="/tags/military-and-defense" rel="tag">Military and defense</a>, <a href="/tags/contracts-and-orders" rel="tag">Contracts and orders</a>, <a href="/tags/defense-contracts" rel="tag">Defense contracts</a>, <a href="/tags/government-contracts" rel="tag">Government contracts</a>, <a href="/tags/pat-tillman" rel="tag">Pat Tillman</a>, <a href="/tags/religion-and-politics" rel="tag">Religion and politics</a>, <a href="/tags/religious-issues" rel="tag">Religious issues</a>, <a href="/tags/sports-0" rel="tag">Sports</a>, <a href="/tags/nfl-football-0" rel="tag">NFL football</a>, <a href="/tags/professional-football-0" rel="tag">Professional football</a>, <a href="/tags/football-0" rel="tag">Football</a>, <a href="/tags/travel-laws-and-regulations" rel="tag">Travel laws and regulations</a></div>
+</div>		  </div>  
+		  <a name="comments"></a>
+		  <div class="clearfix comment-block">
+		    <h2 class="block-title">Comments</h2>
+		    <div id="disqus_thread"><noscript><p><a href="http://appro32headtohead.disqus.com/?url=http%3A%2F%2Fwww.pro32.ap.org%2Fsedaliademocrat%2Farticle%2Ftillmans-widow-disappointed-trumps-immigration-ban">View the discussion thread.</a></p></noscript></div>		  </div>
+	  </div> 
+  </div>
+</article>
+    </div>
+  </div>
+</div><div class="block block-block block-31 block-block-31 odd block-without-title" id="block-block-31">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <script>
+<!--//--><![CDATA[// ><!--
+
+jQuery("#block-block-31").insertBefore(".comment-block");
+
+//--><!]]>
+</script><div id="taboola-below-article-thumbnails"> </div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-a',
+    container: 'taboola-below-article-thumbnails',
+    placement: 'Below Article Thumbnails',
+    target_type: 'mix'
+  });
+
+//--><!]]>
+</script><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+
+//--><!]]>
+</script>    </div>
+  </div>
+</div>      </div>
+</div><aside class="grid-4 region region-sidebar-first" id="region-sidebar-first">
+  <div class="region-inner region-sidebar-first-inner">
+    <div class="block block-block block-26 block-block-26 odd block-without-title" id="block-block-26">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="taboola-right-rail-thumbnails"> </div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  window._taboola = window._taboola || [];
+  _taboola.push({
+    mode: 'thumbnails-b',
+    container: 'taboola-right-rail-thumbnails',
+    placement: 'Right Rail Article Thumbnails',
+    target_type: 'mix'
+  });
+
+//--><!]]>
+</script><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  window._taboola = window._taboola || [];
+  _taboola.push({flush: true});
+
+//--><!]]>
+</script>    </div>
+  </div>
+</div><div class="ap-recent-articles"><section class="block block-ap-misc block-ap-recent-articles block-ap-misc-ap-recent-articles even" id="block-ap-misc-ap-recent-articles">
+  <div class="block-inner clearfix">
+              <h2 class="block-title">Latest News</h2>
+            
+    <div class="content clearfix">
+      
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-707146">
+  <div class="article-list-node-content clearfix">
+	  <div class="field field-name-field-ap-photo-ref field-type-ap-photo-ref field-label-hidden"><div class="field-items"><div class="field-item even"><div class="field-name-field-thumbnail"><a href="/article/jets-revis-charged-after-fight-pittsburgh-last-weekend"><img src="http://binaryapi.ap.org/2f55c813deef43988242d7589718729a/60x.jpg" alt="Jets Revis Fight Football" title="Jets Revis Fight Football" /></a></div></div></div></div>	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/jets-revis-charged-after-fight-pittsburgh-last-weekend" title="Jets&#039; Revis charged after fight in Pittsburgh last weekend"><a href="/article/jets-revis-charged-after-fight-pittsburgh-last-weekend">Jets&#039; Revis charged after fight in Pittsburgh last weekend</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PITTSBURGH</span><a  rel="item-license" id="license-e570a3a050812455f4af51072487e903" href="#license-e570a3a050812455f4af51072487e903">Copyright 2017 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.4406</span><span  class="longitude">-79.9959</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2017-02-17T00:20:00-05:00">Feb. 17, 2017 12:20 AM EST</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-707149">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/new-york-jets-cornerback-darrelle-revis-charged-four-felonies-and-one-misdemeanor-after" title="New York Jets cornerback Darrelle Revis charged with four felonies and one misdemeanor after alleged fight last weekend"><a href="/article/new-york-jets-cornerback-darrelle-revis-charged-four-felonies-and-one-misdemeanor-after">New York Jets cornerback Darrelle Revis charged with four felonies and one misdemeanor after alleged fight last weekend</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">PITTSBURGH</span><a  rel="item-license" id="license-10a1ed1a312170402528e9ba11e82fbc" href="#license-10a1ed1a312170402528e9ba11e82fbc">Copyright 2017 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">40.4406</span><span  class="longitude">-79.9959</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2017-02-17T00:04:23-05:00">Feb. 17, 2017 12:04 AM EST</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-707148">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/lafleurs-aim-turn-lowly-rams-high-flying-falcons" title="LaFleur&#039;s aim is to turn lowly Rams into high-flying Falcons"><a href="/article/lafleurs-aim-turn-lowly-rams-high-flying-falcons">LaFleur&#039;s aim is to turn lowly Rams into high-flying Falcons</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">THOUSAND OAKS, Calif.</span><a  rel="item-license" id="license-5c55cb1dbd74cde9328fc09dd61ab479" href="#license-5c55cb1dbd74cde9328fc09dd61ab479">Copyright 2017 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">34.1706</span><span  class="longitude">-118.838</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2017-02-16T22:20:36-05:00">Feb. 16, 2017 10:20 PM EST</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin odd clearfix" id="node-ap-article-707143">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/ap-source-nfl-bars-kelly-combine-due-past-troubles" title="AP Source: NFL bars Kelly from combine due to past troubles"><a href="/article/ap-source-nfl-bars-kelly-combine-due-past-troubles">AP Source: NFL bars Kelly from combine due to past troubles</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">BUFFALO, N.Y.</span><a  rel="item-license" id="license-f3ec6e65d6b62d3d3f478398e3180c1d" href="#license-f3ec6e65d6b62d3d3f478398e3180c1d">Copyright 2017 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">42.8865</span><span  class="longitude">-78.8784</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2017-02-16T19:56:41-05:00">Feb. 16, 2017 7:56 PM EST</span>		  </div>
+	  </footer>
+  </div>
+</article>
+<article class="node node-ap-article hnews hentry item node-published node-not-promoted node-not-sticky author-admin even clearfix" id="node-ap-article-707145">
+  <div class="article-list-node-content clearfix">
+	  	  <div class="article-list-header">
+	    		    <h4 class="entry-title node-title title" rel="bookmark"><a href="/article/mike-walden-former-voice-usc-and-ucla-sports-dies-89" title="Mike Walden, former voice of USC and UCLA sports, dies at 89"><a href="/article/mike-walden-former-voice-usc-and-ucla-sports-dies-89">Mike Walden, former voice of USC and UCLA sports, dies at 89</a></a></h4>
+		  		</div>  
+	  
+	  <div class="article-list-body">
+	    <div  class="hnews-hidden"><span  class="dateline">LOS ANGELES</span><a  rel="item-license" id="license-699033e771a2c043a4968d611eadfa9f" href="#license-699033e771a2c043a4968d611eadfa9f">Copyright 2017 The Associated Press. All rights reserved. This material may not be published, broadcast, rewritten or redistributed.</a><div  class="geo hnews-geo"><span  class="latitude">34.0522</span><span  class="longitude">-118.244</span></div></div>	  </div>
+		
+		<footer>
+		  <div class="article-data">
+		    <span  class="updated" title="2017-02-16T19:25:08-05:00">Feb. 16, 2017 7:25 PM EST</span>		  </div>
+	  </footer>
+  </div>
+</article>    </div>
+  </div>
+</section></div><div class="block block-dfp block-special-ad-unit block-dfp-special-ad-unit odd block-without-title" id="block-dfp-special-ad-unit">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-special_ad_unit-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-special_ad_unit" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-special_ad_unit");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div><div class="block block-dfp block-mediumrectangle2 block-dfp-mediumrectangle2 even block-without-title" id="block-dfp-mediumrectangle2">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-mediumrectangle2-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-mediumrectangle2" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-mediumrectangle2");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div><div class="block block-block block-11 block-block-11 odd block-without-title" id="block-block-11">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <style type="text/css">
+<!--/*--><![CDATA[/* ><!--*/
+
+#block-block-6
+{
+margin-top: 15px;
+}
+
+#block-block-6 .slug
+{
+position: relative;
+}
+/*--><!]]>*/
+</style><div class="slug">Advertisement</div>
+<div id="ap_widget_container_1e69b0e153d9eaeaa6a722345a9e84df"></div>
+<script src="http://dne.ap.org/widget-content/1e69b0e153d9eaeaa6a722345a9e84df"></script>    </div>
+  </div>
+</div><div class="block block-ap-poll block-top-25-right-rail block-ap-poll-top-25-right-rail even block-without-title" id="block-ap-poll-top-25-right-rail">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <h2 class="block-title">The AP Pro32</h2>  <div class="poll-header-info clearfix">
+    Poll Released: Jan 3  </div>
+  <table>
+<caption></caption>
+ <thead><tr><th class="trank">Rank</th><th class="tname">team</th><th class="tprev">PV Rank</th> </tr></thead>
+<tbody>
+ <tr class="1 new-england-patriots odd"><td class="trank">1</td><td class="tname"><a href="/teams/new-england-patriots">New England Patriots</a> (12)</td><td class="tprev">1</td> </tr>
+ <tr class="2 dallas-cowboys even"><td class="trank">2</td><td class="tname"><a href="/teams/dallas-cowboys">Dallas Cowboys</a></td><td class="tprev">2</td> </tr>
+ <tr class="3 kansas-city-chiefs odd"><td class="trank">3</td><td class="tname"><a href="/teams/kansas-city-chiefs">Kansas City Chiefs</a></td><td class="tprev">3</td> </tr>
+ <tr class="4 atlanta-falcons even"><td class="trank">4</td><td class="tname"><a href="/teams/atlanta-falcons">Atlanta Falcons</a></td><td class="tprev">5</td> </tr>
+ <tr class="5 pittsburgh-steelers odd"><td class="trank">5</td><td class="tname"><a href="/teams/pittsburgh-steelers">Pittsburgh Steelers</a></td><td class="tprev">6</td> </tr>
+ <tr class="6 new-york-giants even"><td class="trank">6</td><td class="tname"><a href="/teams/new-york-giants">New York Giants</a></td><td class="tprev">7</td> </tr>
+ <tr class="6 green-bay-packers odd"><td class="trank">6</td><td class="tname"><a href="/teams/green-bay-packers">Green Bay Packers</a></td><td class="tprev">8</td> </tr>
+ <tr class="8 seattle-seahawks even"><td class="trank">8</td><td class="tname"><a href="/teams/seattle-seahawks">Seattle Seahawks</a></td><td class="tprev">9</td> </tr>
+ <tr class="9 oakland-raiders odd"><td class="trank">9</td><td class="tname"><a href="/teams/oakland-raiders">Oakland Raiders</a></td><td class="tprev">4</td> </tr>
+ <tr class="10 miami-dolphins even"><td class="trank">10</td><td class="tname"><a href="/teams/miami-dolphins">Miami Dolphins</a></td><td class="tprev">10</td> </tr>
+</tbody>
+</table>
+<div class="poll-footer-info clearfix"><h4><a href="/poll">View Full Poll</a></h4></div>    </div>
+  </div>
+</div><div class="block block-dfp block-half-page block-dfp-half-page odd block-without-title" id="block-dfp-half-page">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id="dfp-ad-half_page-wrapper" class="dfp-tag-wrapper"><div class="slug">Advertisement</div>
+<div  id="dfp-ad-half_page" class="dfp-tag-wrapper">
+    <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-half_page");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div>
+</div><div class="block block-block block-43 block-block-43 even block-without-title" id="block-block-43">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <p></p>
+<div class="sr-widget" data-sr-season-id="2016" data-sr-widget="nfl.season.standings"> </div>
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+(function(a,b,c,d,e,f,g,h,i){a[e]||(i=a[e]=function(){(a[e].q=a[e].q||[]).push(arguments)},i.l=1*new Date,i.o=f,
+g=b.createElement(c),h=b.getElementsByTagName(c)[0],g.async=1,g.src=d,g.setAttribute("n",e),h.parentNode.insertBefore(g,h)
+)})(window,document,"script","https://widgets.sir.sportradar.com/5fdcff0a280b5779d19da39250aec82a/widgetloader","SIR", {
+    language: "en",
+    theme: "sportradar"
+});
+
+//--><!]]>
+</script>    </div>
+  </div>
+</div>  </div>
+</aside>  </div>
+</div></section>    
+  
+      <footer id="section-footer" class="section section-footer">
+  <div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">  
+  <div id="zone-footer" class="zone zone-footer clearfix container-12">
+    <div class="grid-12 region region-footer-first" id="region-footer-first">
+  <div class="region-inner region-footer-first-inner">
+    <h4 class="sections-menu"><a href="#">Sections</a></h4><div class="bottom-menu-frame"><ul class="menu"><li class="first leaf"><a href="/" title="">Home</a></li>
+<li class="leaf"><a href="/matchups" title="">Matchups</a></li>
+<li class="leaf"><a href="/articles" title="">News</a></li>
+<li class="leaf"><a href="/poll" title="">The AP Pro32</a></li>
+<li class="leaf"><a href="/divisions" title="">Divisions</a></li>
+<li class="leaf"><a href="/photo-galleries" title="">Photos</a></li>
+<li class="last leaf"><a href="/schedule" title="">Schedule</a></li>
+</ul></div>  </div>
+</div><div class="grid-12 region region-footer-second" id="region-footer-second">
+  <div class="region-inner region-footer-second-inner">
+    <div id="copyright">AP Sports <span class="pipe">|</span> &#169; 2017 Associated Press</div><ul class="menu"><li class="leaf"><a href="/privacy-policy" title="">Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-use" title="">Terms of Use</a></li>
+<li class="leaf"><a href="http://www.apimages.com">AP Images</a></li>
+<li class="last leaf"><a href="http://www.ap.org" title="">ap.org</a></li>
+</ul>  </div>
+</div>  </div>
+</div></footer>  </div>  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=11304492&cv=2.0&cj=1" /></noscript>  </div>
+</div>  <script type="text/javascript" src="https://platform.tumblr.com/v1/share.js"></script>
+  <script type="text/javascript" src="http://c.jsrdn.com/s/cs.js?p=22349"></script>
+
+<!-- Taboola script goes here 
+<script src="http://hosted.ap.org/specials/jquery-1.11.2.min.js"></script> -->
+<script type="text/javascript">
+  window._taboola = window._taboola || [];
+  _taboola.push({article:'auto'});
+  !function (e, f, u) {
+    e.async = 1;
+    e.src = u;
+    f.parentNode.insertBefore(e, f);
+  }(document.createElement('script'),
+  document.getElementsByTagName('script')[0],
+  'https://cdn.taboola.com/libtrc/associatedpress-pro32/loader.js');
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"560baa128a","applicationID":"12082643","transactionName":"MlRTYkFSWkNUU0EKDQsecFVHWlteGl5aBwc6QVBRVmxCWVBH","queueTime":0,"applicationTime":813,"atts":"HhNQFAlISU0=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

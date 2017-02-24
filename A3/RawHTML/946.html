@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6 ie oldie" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 ie oldie" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 ie oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" version="XHTML+RDFa 1.1"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"> <!--<![endif]-->
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta charset="utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//files.cato.org" />
+<!--[if IE 9]>
+<link rel="prefetch" href="//files.cato.org" />
+<![endif]-->
+<link rel="shortcut icon" href="https://object.cato.org/sites/cato.org/files/favicon_1.ico" type="image/vnd.microsoft.icon" />
+<meta name="node_creation_date" content="2017/1/28" />
+<meta name="publication_date" content="2017/1/27" />
+<meta name="site" content="Cato Institute" />
+<meta name="description" content="More than 50 years ago, Congress outlawed such discrimination against immigrants based on national origin." />
+<meta name="robots" content="noodp" />
+<link rel="image_src" href="https://object.cato.org/sites/cato.org/files/logos/cato-logo.jpg" />
+<link rel="canonical" href="https://www.cato.org/publications/commentary/trumps-immigration-ban-illegal" />
+<link rel="shortlink" href="https://www.cato.org/node/68301" />
+<meta property="fb:admins" content="5311211" />
+<meta property="fb:app_id" content="158687980817033" />
+<meta property="fb:pages" content="26668999076" />
+<meta property="og:site_name" content="Cato Institute" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Trump’s Immigration Ban Is Illegal" />
+<meta property="og:url" content="https://www.cato.org/publications/commentary/trumps-immigration-ban-illegal" />
+<meta property="og:description" content="More than 50 years ago, Congress outlawed such discrimination against immigrants based on national origin." />
+<meta property="og:image" content="https://object.cato.org/sites/cato.org/files/default-social-images/catocommentary_fb_5.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@CatoInstitute" />
+<meta name="twitter:url" content="https://www.cato.org/publications/commentary/trumps-immigration-ban-illegal" />
+<meta name="twitter:title" content="Trump’s Immigration Ban Is Illegal" />
+<meta name="twitter:description" content="More than 50 years ago, Congress outlawed such discrimination against immigrants based on national origin." />
+<meta property="article:published_time" content="2017-01-27T21:04:00-05:00" />
+  <title>Trump’s Immigration Ban Is Illegal | Cato Institute</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0">
+  <script>
+    WebFontConfig = {
+      google: { families: ['Droid Serif:400,700,400italic,700italic', 'Shadows Into Light Two'] },
+      custom: { families: ['Hoefler'],
+        urls: ['https://cloud.typography.com/684222/756420/css/fonts.css?2'] }
+    };
+    (function () {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+  <script src="https://use.fontawesome.com/8f74555eb5.js"></script>
+  <style media="all">
+@import url("//files.cato.org/modules/system/system.base.css?olhlpc");
+@import url("//files.cato.org/modules/system/system.messages.css?olhlpc");
+</style>
+<style media="all">
+@import url("//files.cato.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.button.min.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.resizable.min.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/jquery_update/replace/ui/themes/base/minified/jquery.ui.dialog.min.css?olhlpc");
+</style>
+<style media="all">
+@import url("//files.cato.org/sites/all/modules/date/date_api/date.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/date/date_repeat_field/date_repeat_field.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/fences/field.css?olhlpc");
+@import url("//files.cato.org/modules/node/node.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/picture/picture_wysiwyg.css?olhlpc");
+@import url("//files.cato.org/modules/user/user.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/calendar/css/calendar_multiday.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/views/css/views.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/caption_filter/caption-filter.css?olhlpc");
+</style>
+<style media="all">
+@import url("//files.cato.org/sites/all/modules/colorbox/styles/default/colorbox_style.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/ctools/css/ctools.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/custompage/custompage.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/oembed/oembed.base.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/oembed/oembed.theme.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/panels/css/panels.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/cato_institute/responsivevideo/responsivevideo.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/typogrify/typogrify.css?olhlpc");
+@import url("//files.cato.org/sites/all/modules/wysiwyg_linebreaks/wysiwyg_linebreaks.css?olhlpc");
+</style>
+<style media="all">
+@import url("//files.cato.org/sites/all/themes/cato/styles/stylesheets/screen.css?olhlpc");
+</style>
+  <!-- Do you want IE to work? -->
+  <!--[if lt IE 9 ]>
+  <script src="https://files.cato.org/sites/all/themes/cato/_js/libs/ieshiv.js"></script>
+  <script src="https://files.cato.org/sites/all/themes/cato/_js/browser-update.js"></script>
+  <![endif]-->
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-68301 node-type-publications pub-page" >
+<div id="skip-link">
+  <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+</div>
+<header id="header" class="header">
+  <div class="wrapper">
+
+        <a href="/" title="Home" rel="home" id="logo" class="hdr-logo">
+      <img src="https://object.cato.org/sites/cato.org/files/cato-logo_0.png" alt="Home"/>
+    </a>
+    
+    <div id="block-system-main-menu-trigger"><i class="fa fa-bars"></i></div>
+    <div id="main-search-trigger"><i class="fa fa-search"></i></div>
+
+    <!--googleoff: index-->
+      <div class="region region-menu">
+    <div id="block-catomegamenu-catomegamenu" class="block block-catomegamenu main-nav">
+
+      
+  <div class="content">
+    <div class="item-list"><ul class="menu"><li class="expanded level-1 mega-top-link catomegamenu-research first"><a href="/research">Research</a></li>
+<li class="expanded level-1 mega-top-link catomegamenu-events"><a href="/events">Events</a></li>
+<li class="expanded level-1 mega-top-link catomegamenu-publications"><a href="/publications">Publications</a></li>
+<li class="expanded reverse-flyout level-1 mega-top-link catomegamenu-commentary"><a href="/commentary">Commentary</a></li>
+<li class="expanded reverse-flyout level-1 mega-top-link catomegamenu-store"><a href="http://www.cato.org/store/">Store</a></li>
+<li class="expanded reverse-flyout level-1 mega-top-link catomegamenu-support last"><a href="/support">Support</a></li>
+</ul></div>  </div>
+</div>
+<nav id="block-menu-menu-submenu" class="block block-menu nav-sub">
+  <div class="content">
+    <ul class="menu"><li class="first leaf level-1"><a href="/about">About Cato</a></li>
+<li class="leaf level-1"><a href="/blog">Blog</a></li>
+<li class="leaf level-1"><a href="/people/policy-scholars">Our Experts</a></li>
+<li class="leaf level-1"><a href="/projects">Our Centers</a></li>
+<li class="leaf level-1"><a href="https://www.facebook.com/CatoInstitute" rel="me" target="_blank"><i class="fa fa-facebook-square"></i>Facebook</a></li>
+<li class="last leaf level-1"><a href="https://twitter.com/catoinstitute" rel="me" target="_blank"><i class="fa fa-twitter"></i>Twitter</a></li>
+</ul>  </div>
+</nav><div id="block-block-57" class="block block-block hdr-search">
+
+      
+  <div class="content">
+    <form class="search-form" action="https://find.cato.org/search" method="get" id="search-block-form" accept-charset="UTF-8" target="_self"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-searchfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search this site </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text form-search" placeholder="Search" type="search" id="edit-search-block-form--2" name="q" value="" size="15" maxlength="128" /></div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div>
+<input type="hidden" name="client" value="default_frontend" /><input type="hidden" name="output" value="xml_no_dtd" /><input type="hidden" name="proxystylesheet" value="default_frontend" /><input type="hidden" name="sort" value="date:D:L:d1" /><input type="hidden" name="entsp" value="a__cato_policy_drew0115" /><input type="hidden" name="wc" value="200" /><input type="hidden" name="wc_mc" value="1" /><input type="hidden" name="oe" value="UTF-8" /><input type="hidden" name="ie" value="UTF-8" /><input type="hidden" name="ud" value="1" /><input type="hidden" name="exclude_apps" value="1" /><input type="hidden" name="site" value="web_collection" /></div>
+</div></form>  </div>
+</div>
+  </div>
+        <!--googleon: index-->
+
+  </div>
+</header> <!-- /#header -->
+
+<div class="wrapper">
+  <div id="content" role="main">
+
+    
+    <section id="page-area">
+      <a id="main-content"></a>
+                              <div class="tabs"></div>                          <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+    <div class="pub-section-head">
+  Commentary  </div>
+
+<h1 class="page-h1">Trump’s Immigration Ban Is Illegal</h1>
+
+<article about="/publications/commentary/trumps-immigration-ban-illegal" typeof="sioc:Item foaf:Document">
+
+  <footer class="byline">
+          <div id="pub-authors">By 
+  <a href="/people/david-bier" typeof="foaf:Person" property="foaf:name" rel="foaf:publications" html="1">David Bier</a></div>
+        
+  <div class="field-source-info">
+    This article appeared in <a href="https://www.nytimes.com/2017/01/27/opinion/trumps-immigration-ban-is-illegal.html"><em>The New York Times<em></em></em></a> on January 27, 2017.  </div>
+  </footer>
+
+  
+  <div class="article-body body-text dropcap-detail-text">
+    
+  <div class="field-body">
+    <p>President Trump signed an executive order on Friday that purports to bar for at least 90 days almost all permanent immigration from seven majority-Muslim countries, including Syria and Iraq, and asserts the power to extend the ban indefinitely.</p>
+<p>But the order is illegal. More than 50 years ago, Congress outlawed such discrimination against immigrants based on national origin.</p>
+<p>That decision came after a long and shameful history in this country of barring immigrants based on where they came from. Starting in the late 19th century, laws <a href="https://ourdocuments.gov/doc_large_image.php?flash=true&amp;doc=47">excluded</a> all Chinese, <a href="https://history.state.gov/milestones/1899-1913/japanese-relations">almost</a> all Japanese, <a href="http://library.uwb.edu/Static/USimmigration/1917_immigration_act.html">then</a> all Asians in the so-called Asiatic Barred Zone. Finally, in 1924, Congress <a href="https://history.state.gov/milestones/1921-1936/immigration-act">created</a> a comprehensive “national-origins system,” skewing immigration quotas to benefit Western Europeans and to exclude most Eastern Europeans, almost all Asians, and Africans.</p>
+<p>Mr. Trump appears to want to reinstate a new type of Asiatic Barred Zone by executive order, but there is just one problem: The Immigration and Nationality Act of 1965 <a href="http://library.uwb.edu/Static/USimmigration/1965_immigration_and_nationality_act.html">banned</a> all discrimination against immigrants on the basis of national origin, replacing the old prejudicial system and giving each country an equal shot at the quotas. In signing the new law, President Lyndon B. Johnson <a href="http://www.lbjlibrary.org/lyndon-baines-johnson/timeline/lbj-on-immigration">said</a> that “the harsh injustice” of the national-origins quota system had been “abolished.”</p>
+<p>Nonetheless, Mr. Trump asserts that he still has the power to discriminate, pointing to <a href="https://www.law.cornell.edu/uscode/text/8/1182">a 1952 law</a> that allows the president the ability to “suspend the entry” of “any class of aliens” that he finds are detrimental to the interest of the United States.</p>
+<p>But the president ignores the fact that Congress then restricted this power in 1965, <a href="https://www.law.cornell.edu/uscode/text/8/1152">stating</a> plainly that no person could be “discriminated against in the issuance of an immigrant visa because of the person’s race, sex, nationality, place of birth or place of residence.” The only exceptions are those provided for by Congress (such as the preference for Cuban asylum seekers).</p>
+<p>When Congress passed the 1965 law, it wished to protect not just immigrants, but also American citizens, who should have the right to sponsor their family members or to marry a foreign-born spouse without being subject to pointless discrimination.</p>
+<p>Mr. Trump may want to revive discrimination based on national origin by asserting a distinction between “the issuance of a visa” and the “entry” of the immigrant. But this is nonsense. Immigrants <a href="https://www.uscis.gov/green-card/green-card-processes-and-procedures/green-card-eligibility">cannot legally</a> be issued a visa if they are barred from entry. Thus, all orders under the 1952 law apply equally to entry and visa issuance, as his executive order acknowledges.</p>
+<p>Note that the discrimination ban applies only to immigrants. Legally speaking, immigrants are those who are given permanent United States residency. By contrast, temporary visitors like guest workers, students and tourists, as well as refugees, could still be barred. The 1965 law does not ban discrimination based on religion — which <a href="https://www.donaldjtrump.com/press-releases/donald-j.-trump-statement-on-preventing-muslim-immigration">was</a> Mr. Trump’s original proposal.</p>
+<p>While presidents have used their power dozens of times to keep out certain groups of foreigners under the 1952 law, no president has ever barred an entire nationality of immigrants without exception. In the most commonly cited case, President Jimmy Carter <a href="http://www.presidency.ucsb.edu/ws/?pid=33233">barred</a> certain Iranians during the 1980 hostage crisis, but the targets <a href="https://timesmachine.nytimes.com/timesmachine/1980/04/10/issue.html">were</a> mainly students, tourists and temporary visitors. Even then, the policy <a href="https://www.washingtonpost.com/archive/politics/1980/04/09/carters-visa-crackdown-wont-hurt-immediately/2d181230-dcf9-4fe7-958c-947b7626213e/?utm_term=.ea60cd6ca5ec">had</a> many humanitarian exceptions. Immigrants <a href="https://catalog.hathitrust.org/Record/002973860">continued</a> to be admitted in 1980.</p>
+<p>While courts rarely interfere in immigration matters, they have affirmed the discrimination ban. In the 1990s, for example, the government created a policy that required Vietnamese who had fled to Hong Kong to return to Vietnam if they wanted to apply for United States immigrant visas, while it allowed applicants from other countries to apply for visas wherever they wanted. A federal appeals court <a href="http://openjurist.org/45/f3d/469/legal-assistance-for-vietnamese-asylum-seekers-v-department-of-state-bureau-of-consular-affairs">blocked</a> the policy.</p>
+<p>The government in that case did not even bother arguing that the 1952 law permitted discrimination. The court rejected its defense that a “rational link” with a temporary foreign policy measure could justify ignoring the law — an argument the Trump administration is sure to make. The court wrote, “We cannot rewrite a statutory provision which by its own terms provides no exceptions or qualifications.”</p>
+<p>To resolve this case, Congress amended the law in 1996 to <a href="https://www.law.cornell.edu/uscode/text/8/1152">state</a> that “procedures” and “locations” for processing immigration applications cannot count as discrimination. While there is plenty of room for executive mischief there, the amendment made clear that Congress still wanted the discrimination ban to hold <em>some</em> force. A blanket immigration prohibition on a nationality by the president would still be illegal.</p>
+<p>Even if courts do find wiggle room here, discretion can be taken too far. If Mr. Trump can legally ban an entire region of the world, he would render Congress’s vision of unbiased legal immigration a dead letter. An appeals court <a href="https://www.documentcloud.org/documents/1668197-hanen-opinion.html">stopped</a> President Barack Obama’s executive actions to spare millions of undocumented immigrants from deportations for the similar reason that he was circumventing Congress. Some discretion? Sure. Discretion to rewrite the law? Not in America’s constitutional system.</p>
+  </div>
+
+      </div>
+
+  
+  <a name="full"></a>
+  </article>
+
+<div class="pub-page-share-tools"><div class="pub-page-share-tools-rel"><ul class="pub-page-share-list"><li class="twitter first"><a href="http://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.cato.org%2Fpublications%2Fcommentary%2Ftrumps-immigration-ban-illegal&amp;text=Trump%E2%80%99s%20Immigration%20Ban%20Is%20Illegal&amp;via=CatoInstitute&amp;related=Libertarianism" target="_blank" rel="nofollow"><i class="fa fa-fw fa-twitter"></i>Tweet</a></li>
+<li class="facebook"><a href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.cato.org%2Fpublications%2Fcommentary%2Ftrumps-immigration-ban-illegal" target="_blank" rel="nofollow"><i class="fa fa-fw fa-facebook-square"></i>Like</a></li>
+<li class="reddit"><a href="http://reddit.com/https%3A%2F%2Fwww.cato.org%2Fpublications%2Fcommentary%2Ftrumps-immigration-ban-illegal" target="_blank" rel="nofollow"><i class="fa fa-fw fa-reddit"></i>Submit</a></li>
+<li class="google last"><a href="https://plus.google.com/share?url=https%3A%2F%2Fwww.cato.org%2Fpublications%2Fcommentary%2Ftrumps-immigration-ban-illegal" target="_blank" rel="nofollow"><i class="fa fa-fw fa-google-plus"></i>Plus</a></li>
+</ul></div></div><!-- share-tools -->
+
+<div class="expert-attribution clearfix">
+      <div class="expert-attribution-link">
+  <div class="field-cropped-picture">
+    <a href="/people/david-bier"><picture >
+<!--[if IE 9]><video style="display: none;"><![endif]-->
+<source srcset="https://object.cato.org/sites/cato.org/files/styles/resp__img__pubauthor-15x/public/authors/crops/david-bier-cropped.jpg?itok=hQseDbkb&amp;timestamp=1469041731 1.5x, https://object.cato.org/sites/cato.org/files/styles/resp__img__pubauthor/public/authors/crops/david-bier-cropped.jpg?itok=AKf9OKxA&amp;timestamp=1469041731 1x, https://object.cato.org/sites/cato.org/files/styles/resp__img__pubauthor-2x/public/authors/crops/david-bier-cropped.jpg?itok=fnezk0oR&amp;timestamp=1469041731 2x" media="(min-width: 0px)" />
+<!--[if IE 9]></video><![endif]-->
+<img  src="https://object.cato.org/sites/cato.org/files/styles/resp__img__pubauthor-2x/public/authors/crops/david-bier-cropped.jpg?itok=fnezk0oR&amp;timestamp=1469041731" alt="" title="" />
+</picture></a>  </div>
+</div>
+      <div class="expert-attribution-text quote">
+      
+  <div class="field-auth-bio">
+    <a href="/people/david-bier">David J. Bier</a> is an immigration policy analyst at the Cato Institute’s Center for Global Liberty and Prosperity.  </div>
+    </div>
+</div><!-- expert-atribution -->
+  </div>
+</div>
+  </div>
+            <!--googleoff: index-->
+                        <!--googleon: index-->
+    </section>
+    <!-- /#content -->
+
+  </div>
+</div> <!-- /#main -->
+
+<!--googleoff: index-->
+<footer class="main-footer">
+  <div class="wrapper">
+      <aside class="region region-footer-fourth col-1">
+    <div id="block-block-27" class="block block-block ftr-signup">
+
+      <h3 class="section-h3">Sign Up</h3>
+    
+  <div class="content">
+        <p class="ftr-txt">Receive periodic updates on Cato research, events, and publications.</p>
+	      <!-- Begin MailChimp Signup Form -->
+	      
+	      
+	      <div id="mc_embed_signup">
+	      <form action="//cato.us1.list-manage.com/subscribe/post?u=98c97f42691d5de57bc944822&amp;id=395878584c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="ftr-signup-form form-basic" target="_blank" novalidate="">
+	      
+	      
+	      <div class="mc-field-group">
+	      
+	      	<input type="email" value="" name="EMAIL" placeholder="Email" class="text-input ftr-text-input" id="mce-EMAIL" /></div>
+	      
+	      <div id="mce-responses" class="clear">
+	      		<div class="response" id="mce-error-response" style="display:none"></div>
+	      		<div class="response" id="mce-success-response" style="display:none"></div>
+	      	</div>
+	      
+	      
+	      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-input ftr-submit-input" /></div>
+	      
+	      <div class="mc-field-group input-group">
+	      
+	      <input type="hidden" value="512" name="group[214][512]" id="mce-group[214]-214-0" /><input type="hidden" value="128" name="group[214][128]" id="mce-group[214]-214-8" /></div>
+	      
+	      
+	      
+	      <div id="mce-responses" class="clear">
+	      		<div class="response" id="mce-error-response" style="display:none"></div>
+	      		<div class="response" id="mce-success-response" style="display:none"></div>
+	      	</div>	
+	      </form>
+	      </div>
+	      
+	      <!--End mc_embed_signup-->
+	      
+<p class="ftr-txt"><a href="/ecommunity?utm_source=mailchimp-signup&amp;utm_medium=banner&amp;utm_campaign=ecommunity-mailchimp-signup" target="_blank">See our full list of email newsletters</a></p>
+
+
+<!-- GOALS TRACKING WITH MAILCHIMP AND GA -->
+
+<script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+	var $mcGoal = {'settings':{'uuid':'98c97f42691d5de57bc944822','dc':'us1'}};
+	(function() {
+		 var sp = document.createElement('script'); sp.type = 'text/javascript'; sp.async = true; sp.defer = true;
+		sp.src = ('https:' == document.location.protocol ? 'https://s3.amazonaws.com/downloads.mailchimp.com' : 'http://downloads.mailchimp.com') + '/js/goal.min.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sp, s);
+	})(); 
+
+//--><!]]>
+</script><!-- END GOALS TRACKING WITH MAILCHIMP AND GA -->  </div>
+</div>
+  </aside>
+      <aside class="region region-footer-third col-2">
+    <div id="block-menu-menu-also-from-cato" class="block block-menu ftr-list">
+
+      <h3 class="section-h3">Also from Cato</h3>
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf level-1"><a href="/students" rel="me">Internships and Student Programs</a></li>
+<li class="leaf level-1"><a href="https://www.downsizinggovernment.org" rel="me" target="_blank">DownsizingGovernment.org</a></li>
+<li class="leaf level-1"><a href="https://www.libertarianism.org" rel="me" target="_blank">Libertarianism.org</a></li>
+<li class="leaf level-1"><a href="http://humanprogress.org/" rel="me" target="_blank">HumanProgress.org</a></li>
+<li class="leaf level-1"><a href="https://www.cato-unbound.org" rel="me" target="_blank">Cato Unbound</a></li>
+<li class="leaf level-1"><a href="http://www.policemisconduct.net" rel="me" target="_blank">PoliceMisconduct.net</a></li>
+<li class="leaf level-1"><a href="http://www.freedominthe50states.org/" rel="me" target="_blank">Freedom in the 50 States</a></li>
+<li class="leaf level-1"><a href="http://overlawyered.com/" rel="me" target="_blank">Overlawyered</a></li>
+<li class="leaf level-1"><a href="http://www.elcato.org" rel="me" target="_blank">ElCato.org</a></li>
+<li class="last leaf level-1"><a href="http://www.alt-m.org/" rel="me" target="_blank">Alt-M</a></li>
+</ul>  </div>
+</div>
+  </aside>
+      <aside class="region region-footer-second col-3">
+    <div id="block-menu-menu-social-media" class="block block-menu ftr-list">
+
+      <h3 class="section-h3">Social Media</h3>
+    
+  <div class="content">
+    <ul class="menu"><li class="first leaf level-1"><a href="https://www.facebook.com/CatoInstitute" rel="me" class="link-facebook" target="_blank"><i class="fa fa-facebook-square fa-fw"></i> Facebook</a></li>
+<li class="leaf level-1"><a href="https://twitter.com/catoinstitute" rel="me" class="link-twitter" target="_blank"><i class="fa fa-twitter fa-fw"></i> Twitter</a></li>
+<li class="leaf level-1"><a href="https://plus.google.com/+TheCatoInstitute" rel="me publisher" class="link-googleplus" target="_blank"><i class="fa fa-google-plus fa-fw"></i> Google+</a></li>
+<li class="leaf level-1"><a href="https://www.youtube.com/catoinstitutevideo" rel="me" class="link-youtube" target="_blank"><i class="fa fa-youtube-play fa-fw"></i> YouTube</a></li>
+<li class="leaf level-1"><a href="https://www.linkedin.com/company/cato-institute" rel="me" class="link-linkedin" target="_blank"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a></li>
+<li class="leaf level-1"><a href="https://instagram.com/catoinstitute" rel="me" class="link-instagram" target="_blank"><i class="fa fa-instagram fa-fw"></i> Instagram</a></li>
+<li class="leaf level-1"><a href="https://catoinstitute.tumblr.com" rel="me" class="link-tumblr" target="_blank"><i class="fa fa-tumblr fa-fw"></i> Tumblr</a></li>
+<li class="last leaf level-1"><a href="https://www.cato.org/ecommunity/rss" class="link-rss"><i class="fa fa-rss fa-fw"></i> RSS</a></li>
+</ul>  </div>
+</div>
+  </aside>
+      <aside class="region region-footer-first col-4">
+    <div id="block-block-1" class="block block-block ftr-info">
+
+      
+  <div class="content">
+    <a href="/" class="ftr-logo"><img src="https://object.cato.org/sites/cato.org/files/cato-logo_0.png" /></a>
+<p class="ftr-address">Cato Institute<br />
+1000 Massachusetts Ave, NW<br />
+Washington, DC 20001-5403</p>
+<ul class="ftr-phone"><li>Phone (202) 842 0200</li>
+</ul><p class="ftr-txt"><a href="/contact-us">Contact Us</a></p>
+<p class="ftr-txt"><a href="/for-media">Media Contact</a></p>  </div>
+</div>
+  </aside>
+  </div>
+</footer> <!-- /#footer -->
+<!--googleon: index-->
+<script src="//files.cato.org/sites/all/modules/picture/picturefill2/picturefill.min.js?v=2.3.1"></script>
+<script src="//files.cato.org/sites/all/modules/picture/picture.min.js?v=7.54"></script>
+<script src="//files.cato.org/sites/all/libraries/modernizr/modernizr-latest.js?olhlpc"></script>
+<script src="//code.jquery.com/jquery-1.7.2.min.js"></script>
+<script>
+window.jQuery || document.write("<script src='/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js'>\x3C/script>")
+</script>
+<script src="//files.cato.org/misc/jquery.once.js?v=1.2"></script>
+<script src="//files.cato.org/misc/drupal.js?olhlpc"></script>
+<script src="//code.jquery.com/ui/1.10.2/jquery-ui.min.js"></script>
+<script>
+window.jQuery.ui || document.write("<script src='/sites/all/modules/jquery_update/replace/ui/ui/minified/jquery-ui.min.js'>\x3C/script>")
+</script>
+<script src="//files.cato.org/sites/all/libraries/scrollTo/jquery.scrollTo-min.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/libraries/smooth-scroll/jquery.localscroll.min.js?olhlpc"></script>
+<script>
+document.createElement( "picture" );
+</script>
+<script src="//files.cato.org/sites/all/modules/apachesolr_sort/apachesolr_sort.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/modules/spamspan/spamspan.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/modules/caption_filter/js/caption-filter.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/libraries/colorbox/jquery.colorbox-min.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/modules/colorbox/js/colorbox.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/modules/colorbox/styles/default/colorbox_style.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/modules/custom_search/js/custom_search.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/modules/google_analytics/googleanalytics.js?olhlpc"></script>
+<script>
+catoGoogleAnalytics =  {"cookieDomain": "auto"};
+if (Modernizr.localstorage) {
+  queryString = location.search;
+  mcId = queryString.match('mc_eid=(.*)');
+  if(mcId){
+    localStorage['mcId'] = mcId[1];
+  }
+  if (localStorage['mcId']) {
+    catoGoogleAnalytics.userId = localStorage['mcId'];
+  }
+}
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create", "UA-1677831-1", catoGoogleAnalytics);ga("set", "dimension1", "David Bier");ga("set", "dimension2", "Immigration");if(typeof catoGoogleAnalytics != 'undefined' && catoGoogleAnalytics.hasOwnProperty('userId')){
+  ga('set', 'dimension3', localStorage['mcId']);
+}ga("send", "pageview");
+</script>
+<script src="//files.cato.org/sites/all/modules/cato_institute/catomegamenu/catomegamenu.js?olhlpc"></script>
+<script src="//files.cato.org/misc/form.js?olhlpc"></script>
+<script src="//files.cato.org/misc/collapse.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/libs/jquery.sticky.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/libs/jquery.fixed-scroll.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/libs/wilto-carousel.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/libs/jquery.masonry.min.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/libs/jquery.imagesloaded.min.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/libs/jquery.hoverIntent.minified.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/libs/jquery.getUrlVar.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/script.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/smoothScroll.js?olhlpc"></script>
+<script src="//files.cato.org/sites/all/themes/cato/_js/dialog.js?olhlpc"></script>
+<script>
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"cato","theme_token":"6BSExik13H7As_qaBCAsliaSYnw4qUD8lnCg9lD1BkA","js":{"sites\/all\/modules\/picture\/picturefill2\/picturefill.min.js":1,"sites\/all\/modules\/picture\/picture.min.js":1,"sites\/all\/libraries\/modernizr\/modernizr-latest.js":1,"\/\/code.jquery.com\/jquery-1.7.2.min.js":1,"0":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"\/\/code.jquery.com\/ui\/1.10.2\/jquery-ui.min.js":1,"1":1,"sites\/all\/libraries\/scrollTo\/jquery.scrollTo-min.js":1,"sites\/all\/libraries\/smooth-scroll\/jquery.localscroll.min.js":1,"2":1,"sites\/all\/modules\/apachesolr_sort\/apachesolr_sort.js":1,"sites\/all\/modules\/spamspan\/spamspan.js":1,"sites\/all\/modules\/caption_filter\/js\/caption-filter.js":1,"sites\/all\/libraries\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.js":1,"sites\/all\/modules\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"3":1,"sites\/all\/modules\/cato_institute\/catomegamenu\/catomegamenu.js":1,"misc\/form.js":1,"misc\/collapse.js":1,"sites\/all\/themes\/cato\/_js\/libs\/jquery.sticky.js":1,"sites\/all\/themes\/cato\/_js\/libs\/jquery.fixed-scroll.js":1,"sites\/all\/themes\/cato\/_js\/libs\/wilto-carousel.js":1,"sites\/all\/themes\/cato\/_js\/libs\/jquery.masonry.min.js":1,"sites\/all\/themes\/cato\/_js\/libs\/jquery.imagesloaded.min.js":1,"sites\/all\/themes\/cato\/_js\/libs\/jquery.hoverIntent.minified.js":1,"sites\/all\/themes\/cato\/_js\/libs\/jquery.getUrlVar.js":1,"sites\/all\/themes\/cato\/_js\/script.js":1,"sites\/all\/themes\/cato\/_js\/smoothScroll.js":1,"sites\/all\/themes\/cato\/_js\/dialog.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.button.css":1,"misc\/ui\/jquery.ui.resizable.css":1,"misc\/ui\/jquery.ui.dialog.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"sites\/all\/modules\/picture\/picture_wysiwyg.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/caption_filter\/caption-filter.css":1,"sites\/all\/modules\/colorbox\/styles\/default\/colorbox_style.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/custompage\/custompage.css":1,"sites\/all\/modules\/oembed\/oembed.base.css":1,"sites\/all\/modules\/oembed\/oembed.theme.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/cato_institute\/responsivevideo\/responsivevideo.css":1,"sites\/all\/modules\/typogrify\/typogrify.css":1,"sites\/all\/modules\/wysiwyg_linebreaks\/wysiwyg_linebreaks.css":1,"sites\/all\/themes\/cato\/styles\/stylesheets\/screen.css":1}},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"98%","maxHeight":"98%","fixed":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"custom_search":{"form_target":"_self","solr":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip|epub|mobi","trackColorbox":1},"js":{"tokens":[]}});
+</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"a0fc03e915","applicationID":"7801710","transactionName":"ZF1SYUNRWkQCBkdZCV0XcVZFWVtZTAtcVANsSFFSVG9CXgYS","queueTime":0,"applicationTime":255,"atts":"SBpRFwtLSUo=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

@@ -1,0 +1,1365 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js ie6 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js ie7 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js ie8 lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#" class="no-js"> <!--<![endif]-->
+<head>
+
+<!-- utf-8 -->
+<meta charset="UTF-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+
+<!-- set mobile viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- wp_head -->
+<title>Skepta and Adele named among the 500 &#039;most influential&#039; people in Britain - NME</title>
+<style type="text/css">
+@font-face {
+	font-family: "keystone";
+	font-weight: normal;
+	font-style: normal;
+	src:	url("//www.nme.com/wp-content/themes/keystone-theme/assets/fonts/euclid.woff2?v=1487239467") format("woff2"),
+	url("//www.nme.com/wp-content/themes/keystone-theme/assets/fonts/euclid.woff?v=1487239467") format("woff");
+}
+.icon-spinner {
+	background-image: url("//www.nme.com/wp-content/themes/keystone-theme/assets/images/spinner.gif");
+}
+.ie7 input {
+	behavior:url("//www.nme.com/wp-content/themes/keystone-theme/assets/js/ext/boxsizing.htc");
+}
+</style>		<script type="text/javascript">
+		window.ipcTags = {"site":"nme","section":"news","type":"article","cplatform":"keystone","dfp_config":{"required_tags":["type","section","site","subsection","tagging","pub","author","contentId","subtype"],"available_criteria":{"mobile":{"criteria":{"window_greater_than":{"width_minimum":0},"window_less_than_equal_to":{"width_maximum":689}},"display_mode":"mobile"},"tablet":{"criteria":{"window_greater_than":{"width_minimum":690},"window_less_than_equal_to":{"width_maximum":1019}},"display_mode":"mobile"},"desktop":{"criteria":{"window_greater_than":{"width_minimum":1020}},"display_mode":"desktop"}},"slots":{"col-3-plus":{"name":"billboard01","inview":true,"criteria":["desktop"],"sizes":[[970,250],[970,90],[728,90],[728,1]]},"col-2":{"name":"leaderboard01","inview":true,"criteria":["tablet"],"sizes":[[320,50],[320,1]]},"col-1":{"criteria":["mobile"],"inview":true,"name":"mobilebanner01","sizes":[[320,50],[320,1]]},"dfpad-mpu-1":{"name":"mpu01","inview":true,"criteria":["desktop","tablet","mobile"],"sizes":[[300,250],[300,600],[300,1050],[300,1]]},"dfpad-mpu-2":{"name":"mpu02","inview":true,"criteria":["desktop","tablet","mobile"],"sizes":[[300,250],[300,600],[300,1050],[300,1]]},"instream-1":{"name":"instream01","inview":true,"criteria":["mobile"],"sizes":[300,250]},"instream-2":{"name":"instream02","inview":true,"criteria":["mobile"],"sizes":[300,250]},"dfpad-overlay":{"name":"overlay","sizes":[1,1]},"sharethrough-article-page":{"name":"sharethrougharticlepage","targeting":{"strnativekey":"aK3mV8AhNHZKf68W5zDSa5kG"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,1],[6,1]]},"sharethrough-right-rail":{"name":"sharethroughrightrail","targeting":{"strnativekey":"Rp2mjrWsKPCSed9QcQwSwRQ4"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,5],[6,5]]},"sharethrough-listing-small":{"name":"sharethroughlistingsmall","targeting":{"strnativekey":"hhivQmiRBgsFKxkhGaEfETrs"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,2],[6,2]]},"sharethrough-listing-large":{"name":"sharethroughlistinglarge","targeting":{"strnativekey":"VaR59gF3BsAHjidsgQqtRD7M"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,3],[6,3]]},"sharethrough-listing-grid":{"name":"sharethroughlistinggrid","targeting":{"strnativekey":"cuuPpvbA7xzWqTYsDwZf6q7r"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,4],[6,4]]},"sharethrough-listing-generic":{"name":"sharethroughlistinggeneric","targeting":{"strnativekey":"HsnoD3Mbrb8pSA9v3bUsbhfz"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,7],[6,7]]},"sharethrough-listing-generic-2":{"name":"sharethroughlistinggeneric2","targeting":{"strnativekey":"PhR6n5H8tCMhWVZWxbSwv6it"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,8],[6,8]]},"sharethrough-listing-generic-3":{"name":"sharethroughlistinggeneric3","targeting":{"strnativekey":"mP1W4xpV9MXUNmetQYsTKesi"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,9],[6,9]]},"sharethrough-listing-generic-4":{"name":"sharethroughlistinggeneric4","targeting":{"strnativekey":"iKsEe8qKpinhSHCzems5KYvy"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,10],[6,10]]},"sharethrough-listing-generic-5":{"name":"sharethroughlistinggeneric5","targeting":{"strnativekey":"MpYWJgNJbMyLdjKByrQTgFpx"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,11],[6,11]]},"sharethrough-home-generic":{"name":"sharethroughhomegeneric","targeting":{"strnativekey":"7KVqEZzoa9GDCacjhtXpLrc1"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,12],[6,12]]},"sharethrough-home-generic-2":{"name":"sharethroughhomegeneric2","targeting":{"strnativekey":"WTpXtAG1R3Bfgvtenbphrzph"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,13],[6,13]]},"sharethrough-home-generic-3":{"name":"sharethroughhomegeneric3","targeting":{"strnativekey":"fqDTzQcdXFXJBRrrCfgmUaEQ"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,14],[6,14]]},"sharethrough-home-generic-4":{"name":"sharethroughhomegeneric4","targeting":{"strnativekey":"2hcXm8BrUBnfB3uhArn8w4C3"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,15],[6,15]]},"sharethrough-home-generic-5":{"name":"sharethroughhomegeneric5","targeting":{"strnativekey":"EFqsDHPY7kZguRghpg7JM9Mb"},"criteria":["desktop","mobile"],"inview":true,"sizes":[[6,16],[6,16]]},"gumgum":{"name":"gumgum","inview":false,"criteria":["desktop","tablet","mobile"],"sizes":[8,2]},"vibrant":{"name":"vibrant","inview":false,"criteria":["desktop","tablet","mobile"],"sizes":[9,2]}}},"env":"prod","skimlinks_enabled":true,"contentId":1956655,"subtype":"image","tagging":["category:music","category:news","person_category:adele","person_category:skepta","publication_name:nme","author:sam_moore"],"author":"sam_moore","authorName":"Sam Moore","datePublished":"20170123","hourPublished":"20","minPublished":"31","dateUpdated":"20170123","hourUpdated":"20","minUpdated":"31","subsection":"music","pub":"nme","template":"single-post"};
+		</script>
+
+<!-- This site is optimized with the Yoast SEO plugin v3.9 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="The annual list has been compiled by experts at Debrett&#039;s, which has &#039;identified&#039; people of influence in Britain for nearly 250 years"/>
+<meta name="robots" content="noodp"/>
+<link rel="canonical" href="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Skepta and Adele named among the 500 &#039;most influential&#039; people in Britain - NME" />
+<meta property="og:description" content="The annual list has been compiled by experts at Debrett&#039;s, which has &#039;identified&#039; people of influence in Britain for nearly 250 years" />
+<meta property="og:url" content="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655" />
+<meta property="og:site_name" content="NME" />
+<meta property="article:publisher" content="https://www.facebook.com/nmemagazine" />
+<meta property="article:section" content="Music News" />
+<meta property="article:published_time" content="2017-01-23T20:31:40+00:00" />
+<meta property="fb:app_id" content="208195102528120" />
+<meta property="og:image" content="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/skeptaadele.png" />
+<meta property="og:image:width" content="630" />
+<meta property="og:image:height" content="400" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:description" content="The annual list has been compiled by experts at Debrett&#039;s, which has &#039;identified&#039; people of influence in Britain for nearly 250 years" />
+<meta name="twitter:title" content="Skepta and Adele named among the 500 &#039;most influential&#039; people in Britain - NME" />
+<meta name="twitter:site" content="@NME" />
+<meta name="twitter:image" content="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/skeptaadele.png" />
+<meta name="twitter:creator" content="@NME" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//ksassets.timeincuk.net' />
+<link rel='dns-prefetch' href='//assets.ipcdigital.co.uk' />
+<link rel="alternate" type="application/rss+xml" title="NME &raquo; Feed" href="http://www.nme.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="NME &raquo; Comments Feed" href="http://www.nme.com/comments/feed" />
+		<script>
+			(function(){
+				var n='scr'+'ipt',p=document.getElementsByTagName(n)[0],s=document.createElement(n);
+				s.async=true;
+				s.src=(('https:'==document.location.protocol)?'https://secure.':'http://')+'assets.ipcdigital.co.uk/js/ipccore/ipccore.1.11.2.min.js';
+				p.parentNode.insertBefore(s,p);
+			})();
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			window.IPCCoreQueue = window.IPCCoreQueue || [];
+			window.IPCCoreQueue.push(function(){
+				IPCCore.promise (IPCCore.P_ADMANAGER_CONFIG_IS_DEFINED).resolve ({
+					revsci      : {
+						placements : ["wL98l3","8U90Lq","qq4g5z"]					},
+					accountId   : '18711560',
+					environment : 'live',
+					googleTag   : googletag,
+					ipcTags     : window.ipcTags
+				});
+			});
+		</script>
+				<script type="text/javascript">
+			(function() {
+				/* Include required screen size functions right here */
+				var getDisplayWidth=function(){var e=0;if(typeof window.innerWidth!="undefined"){e=window.innerWidth}else if(typeof document.documentElement!="undefined"&&typeof document.documentElement.clientWidth!="undefined"&&document.documentElement.clientWidth!=0){e=document.documentElement.clientWidth}else{e=document.getElementsByTagName("body")[0].clientWidth}return Number(e)};
+				var getWindowSize = getDisplayWidth();
+				window.ipcTags = window.ipcTags || {};
+				/* Pageskin targeting stuff */
+				if(getWindowSize >= 1350) {
+					window.ipcTags['pageskin'] = 'yes';
+				} else {
+					window.ipcTags['pageskin'] = 'no';
+				}
+
+				
+				if(getWindowSize >= 690) {
+					window.ipcTags.platform = 'desktop';
+				} else {
+					window.ipcTags.platform = 'mobile';
+				}
+
+				
+				window.ipcTags['dfp_config']['required_tags'].push('pageskin');
+			})();
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="NME &raquo; Skepta and Adele named among the 500 &#8216;most influential&#8217; people in Britain Comments Feed" href="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655/feed" />
+<style type='text/css' media='screen'>.echo-loading{ background: #fff url('http://www.nme.com/wp-content/plugins/echo-js-lazy-load/img/ajax.gif') no-repeat center center; } </style><style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='brightcove-public-css'  href='http://www.nme.com/wp-content/plugins/media-explorer-brightcove/css/mexp-brightcove-public.css?ver=NC43LjI' type='text/css' media='all' />
+<link rel='stylesheet' id='ipc-digital-edition-plugin-styles-css'  href='http://www.nme.com/wp-content/plugins/ipc-wordpress-digital-editions/public/assets/css/public.css?ver=2.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='google-fonts-css'  href='//fonts.googleapis.com/css?family=Roboto%3A500%7CRoboto%3Anormal&#038;ver=860611725124042752' type='text/css' media='all' />
+<link rel='stylesheet' id='keystone-css'  href='https://ksassets.timeincuk.net/wp/uploads/sites/55/a2270c6971fb9ed2fd08740649ba0c85/keystone.css' type='text/css' media='all' />
+<!-- IE icons  -->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='keystone-ie-icons-css'  href='http://www.nme.com/wp-content/themes/keystone-theme/assets/less/keystone-ie-icons.css?ver=860611725124042752' type='text/css' media='screen' />
+<![endif]-->
+<script type='text/javascript' src='http://www.nme.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<link rel='https://api.w.org/' href='http://www.nme.com/wp-json/' />
+<link rel='shortlink' href='http://www.nme.com/?p=1956655' />
+<link rel="alternate" type="application/json+oembed" href="http://www.nme.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.nme.com%2Fnews%2Fmusic%2Fskepta-adele-500-most-influential-people-in-britain-1956655" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.nme.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.nme.com%2Fnews%2Fmusic%2Fskepta-adele-500-most-influential-people-in-britain-1956655&#038;format=xml" />
+<link rel="amphtml" href="http://amp.timeinc.net/nme/news/music/skepta-adele-500-most-influential-people-in-britain-1956655?source=dam" /><meta property="fb:pages" content="158577044196953" />		<script type="text/javascript" charset="utf-8">
+		(function(a,b,c,d){
+		    var protocol =  ("https:" == document.location.protocol) ? "https://" : "http://";
+		    a=("https:" == document.location.protocol) ? "secure.assets.ipcdigital.co.uk/js/e1462451750_b339eb7/min/tealium/utils-min.js" : "assets.ipcdigital.co.uk/js/e1462451750_b339eb7/min/tealium/utils-min.js";
+		    b=document;c='script';d=b.createElement(c);d.src=protocol+a;d.type='text/java'+c;
+		    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+		 })();
+		</script>
+	<style type="text/css"> body.custom-background { -webkit-background-size: auto; -moz-background-size: auto; background-size: auto; } </style>
+
+		<!-- allow pinned app in ie9+ / windows 8 -->
+		<meta name="application-name" content="NME" />
+		<meta name="msapplication-tooltip" content="NME Music News, Reviews, Videos, Galleries, Tickets and Blogs"/>
+		<meta name="msapplication-starturl" content="http://www.nme.com"/>
+				<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; background-image: url("http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/bg-px.jpg"); background-position: left top; background-size: auto; background-repeat: no-repeat; background-attachment: fixed; }
+</style>
+<link rel="icon" href="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/cropped-nme-site-icon-150x150.jpg" sizes="32x32" />
+<link rel="icon" href="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/cropped-nme-site-icon-300x300.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/cropped-nme-site-icon-300x300.jpg" />
+<meta name="msapplication-TileImage" content="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/cropped-nme-site-icon-300x300.jpg" />
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://www.nme.com/wp-content/themes/keystone-theme/assets/js/ext/respond.js'></script>
+<![endif]-->
+<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+
+</head>
+
+<body class="post-template-default single single-post postid-1956655 single-format-standard custom-background has-adverts site-55 child-site y2017 m02 d17 h05 skepta-adele-500-most-influential-people-in-britain euclid slim-header">
+	<!-- Start keystone_after_body -->
+			<!-- Loading script asynchronously -->
+		<script type="text/javascript">
+			(function (a, b, c, d) {
+				a = '//tags.tiqcdn.com/utag/ipc/nme/prod/utag.js';
+				b = document;
+				c = 'script';
+				d = b.createElement(c);
+				d.src = a;
+				d.type = 'text/java' + c;
+				d.async = true;
+				a = b.getElementsByTagName(c)[0];
+				a.parentNode.insertBefore(d, a);
+			})();
+		</script>
+		<!-- Loading tealum for nme -->
+		<!-- end keystone after body -->
+	
+	<div id="accessibility" class="sr-only">
+		<a href="#content" class="skip-link">Skip to content &raquo;</a>
+	</div><!-- #accessibility -->
+	<div id="wrapper" class="hfeed container palette-a">
+
+		<header id="header" role="banner" class="style-strong-underline">
+			
+<div class="row branding palette-a">
+	<div class="col-xs-12 hidden-sm hidden-md hidden-lg">
+		<h1 itemtype="http://schema.org/Organization" class="vcard site-title-new mobile-template ">
+				  <a itemprop="url" href="http://www.nme.com" title="NME" class="url">
+				    <span class="sr-only fn org nickname" itemprop="name">NME</span>
+				    <img itemprop="logo" class="logo photo non-retina" src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/REV.NME_.WEB_.40px.png?v=860611725124042752" alt="NME" />
+				    <img src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/REV.NME_.WEB_.80px.png?v=860611725124042752" alt="NME" class="retina"/>
+				  </a>
+				</h1>	</div>
+</div>
+
+			<nav id="navigation" role="navigation" class="row">
+
+				<div class="menu-tools menu-item-has-children">
+					<a href="#" class="menu-toggle menu-icon-link">
+						<span class="icon-menu"></span>
+					</a>
+					<ul class="menu-stash hidden-xs main-menu sub-menu"></ul>
+				</div>
+
+				<div class="menu-search menu-item-has-children">
+					<a href="#" class="menu-toggle-search menu-icon-link">
+						<span class="icon-search"></span>
+					</a>
+					<div class="sub-menu">
+						<form role="search" method="get" class="search-form form-inline" action="http://www.nme.com/">
+	<div class="input-group">
+		<input type="search" value="" name="s" class="input-sm search-field form-control" placeholder="Search NME">
+		<label class="sr-only">Search for:</label>
+		<span class="input-group-btn">
+			<button type="submit" class="search-submit btn btn-primary btn-sm">Search</button>
+		</span>
+	</div>
+</form>					</div>
+				</div>
+
+				<div class="menu-navigation"><ul id="menu-navigation" class="main-menu"><li id="menu-item-22" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-icon-home first-menu-item menu-item-22"><a href="http://www.nme.com/"><span class="menu-icon-item icon-home"></span></a></li>
+<li id="menu-item-1790032" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children no-icon menu-item-1790032"><a href="/news/music"><span>Music</span><span class="mobile-drop-down icon-down"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-20" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent no-icon menu-item-20"><a href="http://www.nme.com/news/music"><span>Music News</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-8"><a href="http://www.nme.com/blogs/nme-blogs"><span>Music Blogs</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-23" class="menu-item menu-item-type-taxonomy menu-item-object-review_category no-icon menu-item-23"><a href="http://www.nme.com/reviews/album"><span>Album Reviews</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1936513" class="menu-item menu-item-type-post_type menu-item-object-page no-icon menu-item-1936513"><a href="http://www.nme.com/new-album-releases"><span>Album Release Dates</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-10"><a href="http://www.nme.com/blogs/nme-radar"><span>New Music</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-15" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-15"><a href="http://www.nme.com/photos"><span>Photos</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-14" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-14"><a href="http://www.nme.com/features"><span>Features</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1047104" class="menu-item menu-item-type-post_type menu-item-object-page no-icon menu-item-1047104"><a href="http://www.nme.com/festivals"><span>Festivals</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1041731" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1041731"><a href="/artists"><span>Artists</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-16"><a href="http://www.nme.com/list"><span>Lists</span><span class="mobile-drop-down icon-down"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-30" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children no-icon menu-item-30"><a href="http://www.nme.com/news/film"><span>Film</span><span class="mobile-drop-down icon-down"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-19" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-19"><a href="http://www.nme.com/news/film"><span>Film News</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-25" class="menu-item menu-item-type-taxonomy menu-item-object-review_category no-icon menu-item-25"><a href="http://www.nme.com/reviews/movie"><span>Film Reviews</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-12"><a href="http://www.nme.com/blogs/the-movies-blog"><span>Film Blogs</span><span class="mobile-drop-down icon-down"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-1790036" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children no-icon menu-item-1790036"><a href="/news/tv"><span>TV</span><span class="mobile-drop-down icon-down"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-21" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-21"><a href="http://www.nme.com/news/tv"><span>TV News</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1790038" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-1790038"><a href="http://www.nme.com/blogs/tv-blogs"><span>TV Blogs</span><span class="mobile-drop-down icon-down"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-1790035" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-1790035"><a href="http://www.nme.com/eats-and-beats"><span>Food</span><span class="mobile-drop-down icon-down"></span></a></li>
+<li id="menu-item-583225" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children no-icon menu-item-583225"><a href="/videos"><span>Video</span><span class="mobile-drop-down icon-down"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-1759695" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1759695"><a href="/videos/song-stories"><span>Song Stories</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1759698" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1759698"><a href="/videos/basement-sessions"><span>Basement Sessions</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1759696" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1759696"><a href="/videos/90-second-interview"><span>90 Second Interviews</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1857934" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1857934"><a href="/videos/eats-beats"><span>Eats &#038; Beats</span><span class="mobile-drop-down icon-down"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-1639396" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1639396"><a href="http://www.nme.com/tickets"><span>Tickets</span><span class="mobile-drop-down icon-down"></span></a></li>
+<li id="menu-item-13" class="menu-item menu-item-type-taxonomy menu-item-object-category no-icon menu-item-13"><a href="http://www.nme.com/win"><span>Win</span><span class="mobile-drop-down icon-down"></span></a></li>
+<li id="menu-item-1878290" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children no-icon menu-item-1878290"><a href="http://www.nme.com/awards"><span>VO5 NME Awards</span><span class="mobile-drop-down icon-down"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-1878291" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1878291"><a href="http://awards.nme.com/"><span>Vote Now</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1943860" class="menu-item menu-item-type-post_type menu-item-object-page no-icon menu-item-1943860"><a href="http://www.nme.com/awards/tour"><span>NME Awards Tour 2017</span><span class="mobile-drop-down icon-down"></span></a></li>
+</ul>
+</li>
+<li id="menu-item-1884877" class="menu-item menu-item-type-post_type menu-item-object-page no-icon menu-item-1884877"><a href="http://www.nme.com/lifehacks"><span>LifeHacks</span><span class="mobile-drop-down icon-down"></span></a></li>
+<li id="menu-item-1918171" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children no-icon menu-item-1918171"><a href="http://www.nmemerch.com"><span>Shop</span><span class="mobile-drop-down icon-down"></span></a>
+<ul class="sub-menu">
+	<li id="menu-item-1842695" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1842695"><a href="http://www.nmemerch.com"><span>Merch</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1918172" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1918172"><a href="http://nme.backstreetmerch.com/artist/nme/magazines"><span>NME Special Issues</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1918173" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-1918173"><a href="http://nme.backstreetmerch.com/search?search=uncut+ultimate+music+guide"><span>Ultimate Music Guides</span><span class="mobile-drop-down icon-down"></span></a></li>
+	<li id="menu-item-1918174" class="menu-item menu-item-type-custom menu-item-object-custom no-icon last-menu-item menu-item-1918174"><a href="http://nme.backstreetmerch.com/artist/uncut-history-of-rock/magazines"><span>History Of Rock</span><span class="mobile-drop-down icon-down"></span></a></li>
+</ul>
+</li>
+</ul></div>
+			</nav><!--  #navigation -->
+		
+		</header><!-- #header -->
+		<aside class="row advert header-advert">
+			<div class="section-content">
+				<div class="hidden-xs hidden-sm">
+					<div id="col-3-plus" class="ipc-advert"></div>				</div>
+				<div class="hidden-xs hidden-md hidden-lg">
+					<div id="col-2" class="ipc-advert"></div>				</div>
+				<div class="hidden-md hidden-lg">
+					<div id="col-1" class="ipc-advert"></div>				</div>
+			</div>
+		</aside>
+				
+		<div id="content" role="main">
+	<div class="row">		
+
+		<div class="primary col-xs-12 col-md-8 col-lg-6">
+			
+			
+				<div class="crumb-tags">
+					<nav class="breadcrumbs" role="navigation"><ul xmlns:v="http://rdf.data-vocabulary.org/#"><li typeof="v:Breadcrumb"><a href="http://www.nme.com/" rel="v:url" property="v:title">Home</a></li>  <li rel="v:child" typeof="v:Breadcrumb"><a href="http://www.nme.com/news" rel="v:url" property="v:title">News</a></li>  <li rel="v:child" typeof="v:Breadcrumb"><a href="http://www.nme.com/news/music">Music News</a></li></ul></nav>				</div>
+				
+				
+				
+<article class="single post-1956655 post type-post status-publish format-standard has-post-thumbnail hentry category-music category-news person_category-adele person_category-skepta publication_name-nme featured-image" role="article" itemscope itemtype="http://schema.org/Article">
+
+	<meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655"/>
+	<header class="page-header">
+
+		<h1 class="entry-title sub-heading" itemprop="headline">Skepta and Adele named among the 500 &#8216;most influential&#8217; people in Britain</h1>
+
+		<div class="row author-share-wrapper">
+	<div class="col-xs-7 col-sm-6 col-author">
+					<div class="author-image col-author pull-left">
+				<a class="url fn n" href="http://www.nme.com/author/sammoore">
+					<div class="author-image-wrapper"><img alt='Sam Moore' src='http://1.gravatar.com/avatar/?s=96&d=mm&r=g' data-echo='http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/Qo0ejHCv-150x150.jpg' data-echo-srcset='http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/Qo0ejHCv-150x150.jpg 2x' class='echo-image echo-loading avatar avatar-40 photo img-circle' height='40' width='40' /></div>
+				</a>
+			</div>
+				<div>
+			<ul class="entry-meta">
+				<li class="author entry-author" itemprop="author"><!-- Author Start --><span class="author vcard"><a href="http://www.nme.com/author/sammoore" title="Sam Moore&#039;s Profile" class="url fn" rel="author">Sam Moore</a></span><!-- Author End --></li>
+				<li class="entry-date"><span>8:31 pm - Jan 23, 2017</span><meta itemprop="datePublished" content="2017-01-23T20:31:40+00:00"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-xs-5 col-sm-6 col-author social-container">
+				<div class="pw-widget keystone-social-author  hidden-xs pull-right">
+							<a class="share-button pw-button-facebook " target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655"><span></span></a>
+							<a class="share-button pw-button-twitter " target="_blank" href="https://twitter.com/intent/tweet?url=http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655&text=Skepta and Adele named among the 500 &#8216;most influential&#8217; people in Britain" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655"><span></span></a>
+							<a class="share-button pw-button-pinterest last" target="_blank" href="http://pinterest.com/pin/create/button/?url=http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655&description=Skepta and Adele named among the 500 &#8216;most influential&#8217; people in Britain" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655"><span></span></a>
+						<span class="share-count"><span class="pw-box-counter" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655">0</span>shares</span>
+			<div class="clearfix"></div>
+		</div>
+			<div class="pw-widget keystone-social-author  visible-xs pull-right">
+							<a class="share-button pw-button-facebook " target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655"><span></span></a>
+							<a class="share-button pw-button-twitter " target="_blank" href="https://twitter.com/intent/tweet?url=http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655&text=Skepta and Adele named among the 500 &#8216;most influential&#8217; people in Britain" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655"><span></span></a>
+							<a class="share-button pw-button-pinterest last" target="_blank" href="http://pinterest.com/pin/create/button/?url=http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655&description=Skepta and Adele named among the 500 &#8216;most influential&#8217; people in Britain" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655"><span></span></a>
+						<span class="share-count"><span class="pw-box-counter" data-url="http://www.nme.com/news/music/skepta-adele-500-most-influential-people-in-britain-1956655">0</span>shares</span>
+			<div class="clearfix"></div>
+		</div>
+		</div>
+
+</div>
+
+	</header>
+
+	<a class="btn btn-primary ticket-buy-button" href="/tickets/search/artist/Adele" role="button">Buy Tickets</a>
+	<div class="entry-content">
+
+		<!-- Article Start -->
+
+		         <p class="entry-lead-paragraph"><strong>The annual list has been compiled by experts at Debrett's, which has "identified people of influence in Britain" for nearly 250 years</strong></p>
+
+		<div class="featured-media hide-secondary-pages">
+	<div id="attachment_1956659" class="featured-image wp-caption" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+	<div class="image-wrap"><img width="630" height="400" src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/skeptaadele.png" class="attachment-large size-large" alt="Skepta and Adele" srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/skeptaadele.png 630w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/skeptaadele-300x190.png 300w" sizes="(max-width: 630px) 100vw, 630px" /><span class="image-credit">Olivia Rose / Getty</span></div>		<p class="wp-caption-text">Skepta and Adele		Credit: Olivia Rose / Getty	</p>
+		<meta itemprop="url" content="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/skeptaadele.png">
+	<meta itemprop="width" content="630">
+	<meta itemprop="height" content="400">
+</div>
+</div>
+
+		<div class="crumb-tags tags-container">
+					</div>
+
+		<div itemprop="articleBody">
+			<p><a href="http://www.nme.com/artists/skepta">Skepta</a> and <a href="http://www.nme.com/artists/adele">Adele</a> have been recognised as being among the 500 &#8216;most influential&#8217; people in Britain.</p>
+<p>The list of people, which highlights notable figures from backgrounds ranging from philanthropy to engineering, has been compiled by &#8220;independent specialists&#8221; and experts at <a href="https://www.debretts.com/debretts-500-2017/" target="_blank">Debrett&#8217;s</a>, which has &#8220;identified people of influence in Britain&#8221; for nearly 250 years. All candidates on the list either live or work in the UK, and have been selected &#8220;on the basis of their level of influence over the lives, choices and ideas of others.&#8221;</p>
+<p>In music, Tottenham is represented by its two most famous artists in Skepta and Adele. The two join the likes of <a href="http://www.nme.com/artists/calvin-harris">Calvin Harris</a>, <a href="http://www.nme.com/artists/little-mix">Little Mix</a> and <a href="http://www.nme.com/artists/ed-sheeran">Ed Sheeran</a> as the leading musicians on the list, while music broadcasting is represented by Lauren Laverne, Radio 1 and 1xtra Head of Music Chris Price and Beats 1 DJ Julie Adenuga &#8211; Skepta&#8217;s sister.</p>
+<div class="image-wrap"><img class="echo-image echo-loading alignnone wp-image-757368" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/09/2016JulieAdenuga_Beats1_150916.hero_-300x168.jpg" width="630" height="353" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/09/2016JulieAdenuga_Beats1_150916.hero_-300x168.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/09/2016JulieAdenuga_Beats1_150916.hero_-768x430.jpg 768w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/09/2016JulieAdenuga_Beats1_150916.hero_-630x353.jpg 630w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/09/2016JulieAdenuga_Beats1_150916.hero_.jpg 955w" sizes="(max-width: 630px) 100vw, 630px" /><span class="image-credit">Press</span></div>
+<p>From the stage and screen, <em>Rogue One</em> actor Riz Ahmed features alongside fellow thespians Benedict Cumberbatch, Olivia Coleman and Keira Knightley.</p>
+<p>See a selection of Debrett&#8217;s list of the 500 most influential people in Britain below.</p><aside class="col-xs-12 sidebar sidebar-inline sidebar-double sidebar-primary-inline">
+	<div class="row">
+		<section id="ipc-advert-id-12" class=" no-hr text-center widget widget-area-2-col ipc-advert-class"><div id="instream-1" class="ipc-advert"></div></section><!-- .widget -->	</div>
+</aside>
+
+<p><strong>Music</strong></p>
+<p>Adele<br />
+Julie Adenuga<br />
+James Bay<br />
+Simon Cowell<br />
+Calvin Harris<br />
+Will &#8216;Status&#8217; Kennard (from Chase &amp; Status)<br />
+Lauren Laverne<br />
+Little Mix<br />
+Chris Martin<br />
+Chris Price<br />
+Mark Ronson<br />
+Ed Sheeran<br />
+Skepta<br />
+Louis Tomlinson</p>
+<p><strong>Stage and screen</strong></p>
+<p>Riz Ahmed<br />
+Emily Blunt<br />
+Benedict Cumberbatch<br />
+Olivia Coleman<br />
+Dame Judi Dench<br />
+Chiwetel Ejiofor<br />
+Tom Hiddleston<br />
+Sharon Horgan<br />
+Keira Knightley<br />
+Dame Helen Mirren<br />
+Eddie Redmayne<br />
+Sir Ridley Scott<br />
+Jack Thorne</p><aside class="col-xs-12 sidebar sidebar-inline sidebar-double sidebar-secondary-inline">
+	<div class="row">
+		<section id="ipc-advert-id-13" class=" no-hr text-center widget widget-area-2-col ipc-advert-class"><div id="sharethrough-article-page" class="ipc-advert"></div></section><!-- .widget -->	</div>
+</aside>
+
+<div id="brightcove-5071460734001" class="brightcove-outer-container"></div>
+</p>		</div>
+
+		
+<div itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+	<div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+		<meta itemprop="url" content="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/REV.NME_.WEB_.100px.png">
+		<meta itemprop="width" content="260">
+		<meta itemprop="height" content="100">
+	</div>
+	<meta itemprop="name" content="NME">
+</div>
+
+		<meta itemprop="datePublished" content="2017-01-23T20:31:40+00:00"/>
+<meta itemprop="dateModified" content="2017-01-23T20:31:40+00:00"/>
+		
+	</div>
+
+	<footer></footer>
+
+</article>				
+								
+				<!-- Start outbrain -->
+
+		<div id="ob-widget-content"></div>
+		
+<!-- End outbrain -->
+				
+<div id="disqus_thread">
+    </div>
+
+
+					
+		</div><!-- .primary -->
+		
+		<aside class="secondary col-xs-12 col-md-4 col-lg-6">
+
+	<div class="row">
+
+				<div class="col-xs-12 col-sm-6 col-md-12 col-lg-6 sidebar sidebar-secondary">
+			<section id="ipc-advert-id-2" class=" no-hr text-center widget widget-area-1-col ipc-advert-class"><div id="dfpad-mpu-1" class="ipc-advert"></div></section><!-- .widget --><section id="keystone_outbrain_widget-2" class=" text-center widget widget-area-1-col keystone_outbrain_widget-class"><!-- This file is used to markup the public-facing widget. -->
+<div id="ob-widget-sidebar"></div></section><!-- .widget --><section id="ipc-advert-id-14" class=" no-hr text-center widget widget-area-1-col ipc-advert-class"><div id="sharethrough-right-rail" class="ipc-advert"></div></section><!-- .widget --><section id="keystone-query-widget-id-26" class="palette-a  panel panel-default widget widget-area-1-col keystone-query-widget"><div class="palette-a panel-body"><h1 class="widgettitle heading">Song Stories</h1><div class="sections"><div class="section section-style-list-large">
+
+				<article class="loop post-1759810 video type-video status-publish has-post-thumbnail hentry category-nme-blogs tag-song-stories video_category-song-stories publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/videos/song-stories/song-stories-big-narstie-wrote-bdl-skank" rel="bookmark"><img width="300" height="189" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/BigNarstieSS-300x189.png" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/BigNarstieSS-300x188.png 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/BigNarstieSS.png 323w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/videos/song-stories/song-stories-big-narstie-wrote-bdl-skank" rel="bookmark">Song Stories: Big Narstie On How He Wrote &#8216;BDL Skank&#8217;</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1759817 video type-video status-publish has-post-thumbnail hentry category-nme-blogs tag-song-stories video_category-song-stories publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/videos/song-stories/song-stories-girli-wrote-girl-met-internet" rel="bookmark"><img width="300" height="189" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/GirliSS-300x189.png" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/GirliSS-300x188.png 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/GirliSS.png 323w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/videos/song-stories/song-stories-girli-wrote-girl-met-internet" rel="bookmark">Song Stories: Girli On How She Wrote &#8216;Girl I Met On The Internet&#8217;</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1401036 video type-video status-publish has-post-thumbnail hentry tag-song-stories video_category-song-stories publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/videos/song-stories/slaves-consume-or-be-consumed-nme-song-stories" rel="bookmark"><img width="300" height="189" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/SlavesSS-1-300x189.png" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/SlavesSS-1-300x188.png 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/SlavesSS-1.png 323w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/videos/song-stories/slaves-consume-or-be-consumed-nme-song-stories" rel="bookmark">Slaves, &#8216;Consume Or Be Consumed&#8217; &#8211; NME Song Stories</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-583468 video type-video status-publish has-post-thumbnail hentry tag-song-stories video_category-song-stories publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/videos/song-stories/black-grape-kelly-s-heroes-nme-song-stories" rel="bookmark"><img width="300" height="189" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/08/BlackGrape-300x189.png" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/08/BlackGrape-300x188.png 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/08/BlackGrape.png 323w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/videos/song-stories/black-grape-kelly-s-heroes-nme-song-stories" rel="bookmark">Black Grape, &#8216;Kelly&#8217;s Heroes&#8217; &#8211; NME Song Stories</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-583472 video type-video status-publish has-post-thumbnail hentry tag-song-stories video_category-song-stories publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/videos/song-stories/blossoms-charlemagne-nme-song-stories" rel="bookmark"><img width="300" height="189" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/07/Blossoms-300x189.png" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/07/Blossoms-300x188.png 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/07/Blossoms.png 323w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/videos/song-stories/blossoms-charlemagne-nme-song-stories" rel="bookmark">Blossoms, &#8216;Charlemagne&#8217; &#8211; NME Song Stories</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-583482 video type-video status-publish has-post-thumbnail hentry tag-song-stories video_category-song-stories publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/videos/song-stories/banks-steelz-love-war-nme-song-stories" rel="bookmark"><img width="300" height="169" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/07/463898949_5048576378001_Sequence-02-00-04-44-00-Still002-300x169.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/07/463898949_5048576378001_Sequence-02-00-04-44-00-Still002-300x169.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/07/463898949_5048576378001_Sequence-02-00-04-44-00-Still002.jpg 480w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/videos/song-stories/banks-steelz-love-war-nme-song-stories" rel="bookmark">Banks &amp; Steelz, &#8216;Love + War&#8217; &#8211; NME Song Stories</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+		</div></div></div></section><!-- .widget --><!-- Served from object-cache in 0.00897 seconds. Generated at 2017-02-16 23:13:48 --><section id="keystone_shopify_widget-2" class="palette-a  panel panel-default widget widget-area-1-col widget_keystone_shopify_widget"><div class="palette-a panel-body"><h1 class="widgettitle heading">NME Merch</h1>
+<div class="keystone-shop-wrapper keystone-shop-1-col">
+		<article class="keystone-shop-item col-xs-12" role="article" itemscope itemtype="http://schema.org/Product">
+		<div class="col-xs-6 entry-media">
+			<div class="keystone-shop-image entry-media">
+				<a href="https://www.nmemerchstand.com/products/green-day-mask-mens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various"><img itemprop="image" src="https://cdn.shopify.com/s/files/1/1159/6154/products/GDTS05MB_medium.jpg?v=1475494457" /></a>
+			</div>
+		</div>
+		<div class="col-xs-6 entry-content-container">
+			<header class="entry-header">
+				<h4 class="entry-title sub-heading"><a href="https://www.nmemerchstand.com/products/green-day-mask-mens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" rel="bookmark"><span itemprop="name">Green Day Green Mask Men's T-Shirt</span></a></h4>
+			</header>
+			<div class="entry-content">
+				<ul class="keystone-shop-meta entry-meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<li class="keystone-shop-meta entry-price">
+						<div class="col-xs-12 row">
+							<meta itemprop="priceCurrency" content="GBP" />
+							<strong>&pound;<span itemprop="price">14.95</span></strong>
+						</div>
+					</li>
+				</ul>
+							</div>
+			<div class="keystone-shop-button col-xs-12 row">
+                <span class="input-group-btn">
+                    <a href="https://www.nmemerchstand.com/products/green-day-mask-mens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" class="btn btn-primary btn-sm cta-button" target="_blank">Buy now</a>
+                </span>
+			</div>
+		</div>
+	</article>
+		<article class="keystone-shop-item col-xs-12" role="article" itemscope itemtype="http://schema.org/Product">
+		<div class="col-xs-6 entry-media">
+			<div class="keystone-shop-image entry-media">
+				<a href="https://www.nmemerchstand.com/products/muppets-fozzie-bear-mens-sweatshirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various"><img itemprop="image" src="https://cdn.shopify.com/s/files/1/1159/6154/products/BILMU00007-MEN-SWT-NVY_medium.jpg?v=1476200643" /></a>
+			</div>
+		</div>
+		<div class="col-xs-6 entry-content-container">
+			<header class="entry-header">
+				<h4 class="entry-title sub-heading"><a href="https://www.nmemerchstand.com/products/muppets-fozzie-bear-mens-sweatshirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" rel="bookmark"><span itemprop="name">Muppets Fozzie Bear Men's Sweatshirt</span></a></h4>
+			</header>
+			<div class="entry-content">
+				<ul class="keystone-shop-meta entry-meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<li class="keystone-shop-meta entry-price">
+						<div class="col-xs-12 row">
+							<meta itemprop="priceCurrency" content="GBP" />
+							<strong>&pound;<span itemprop="price">24.95</span></strong>
+						</div>
+					</li>
+				</ul>
+							</div>
+			<div class="keystone-shop-button col-xs-12 row">
+                <span class="input-group-btn">
+                    <a href="https://www.nmemerchstand.com/products/muppets-fozzie-bear-mens-sweatshirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" class="btn btn-primary btn-sm cta-button" target="_blank">Buy now</a>
+                </span>
+			</div>
+		</div>
+	</article>
+		<article class="keystone-shop-item col-xs-12" role="article" itemscope itemtype="http://schema.org/Product">
+		<div class="col-xs-6 entry-media">
+			<div class="keystone-shop-image entry-media">
+				<a href="https://www.nmemerchstand.com/products/dr-strange-silhouette-mens-baseball-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various"><img itemprop="image" src="https://cdn.shopify.com/s/files/1/1159/6154/products/BILDRS00004-MEN-BASL-WHTBLK_medium.png?v=1477062293" /></a>
+			</div>
+		</div>
+		<div class="col-xs-6 entry-content-container">
+			<header class="entry-header">
+				<h4 class="entry-title sub-heading"><a href="https://www.nmemerchstand.com/products/dr-strange-silhouette-mens-baseball-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" rel="bookmark"><span itemprop="name">Marvel Dr Strange Silhouette Men's Baseball T-Shirt</span></a></h4>
+			</header>
+			<div class="entry-content">
+				<ul class="keystone-shop-meta entry-meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<li class="keystone-shop-meta entry-price">
+						<div class="col-xs-12 row">
+							<meta itemprop="priceCurrency" content="GBP" />
+							<strong>&pound;<span itemprop="price">17.95</span></strong>
+						</div>
+					</li>
+				</ul>
+							</div>
+			<div class="keystone-shop-button col-xs-12 row">
+                <span class="input-group-btn">
+                    <a href="https://www.nmemerchstand.com/products/dr-strange-silhouette-mens-baseball-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" class="btn btn-primary btn-sm cta-button" target="_blank">Buy now</a>
+                </span>
+			</div>
+		</div>
+	</article>
+		<article class="keystone-shop-item col-xs-12" role="article" itemscope itemtype="http://schema.org/Product">
+		<div class="col-xs-6 entry-media">
+			<div class="keystone-shop-image entry-media">
+				<a href="https://www.nmemerchstand.com/products/rolling-stones-neon-lips-mens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various"><img itemprop="image" src="https://cdn.shopify.com/s/files/1/1159/6154/products/RSTS49MB_medium.jpg?v=1476187806" /></a>
+			</div>
+		</div>
+		<div class="col-xs-6 entry-content-container">
+			<header class="entry-header">
+				<h4 class="entry-title sub-heading"><a href="https://www.nmemerchstand.com/products/rolling-stones-neon-lips-mens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" rel="bookmark"><span itemprop="name">Rolling Stones Neon Lips Men's T-Shirt</span></a></h4>
+			</header>
+			<div class="entry-content">
+				<ul class="keystone-shop-meta entry-meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<li class="keystone-shop-meta entry-price">
+						<div class="col-xs-12 row">
+							<meta itemprop="priceCurrency" content="GBP" />
+							<strong>&pound;<span itemprop="price">14.95</span></strong>
+						</div>
+					</li>
+				</ul>
+							</div>
+			<div class="keystone-shop-button col-xs-12 row">
+                <span class="input-group-btn">
+                    <a href="https://www.nmemerchstand.com/products/rolling-stones-neon-lips-mens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" class="btn btn-primary btn-sm cta-button" target="_blank">Buy now</a>
+                </span>
+			</div>
+		</div>
+	</article>
+		<article class="keystone-shop-item col-xs-12" role="article" itemscope itemtype="http://schema.org/Product">
+		<div class="col-xs-6 entry-media">
+			<div class="keystone-shop-image entry-media">
+				<a href="https://www.nmemerchstand.com/products/mia-bird-song-black-womens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various"><img itemprop="image" src="https://cdn.shopify.com/s/files/1/1159/6154/products/C000004501-WOM-TEE-PAR_medium.jpg?v=1480698814" /></a>
+			</div>
+		</div>
+		<div class="col-xs-6 entry-content-container">
+			<header class="entry-header">
+				<h4 class="entry-title sub-heading"><a href="https://www.nmemerchstand.com/products/mia-bird-song-black-womens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" rel="bookmark"><span itemprop="name">MIA Bird Song Black Women's T-Shirt</span></a></h4>
+			</header>
+			<div class="entry-content">
+				<ul class="keystone-shop-meta entry-meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<li class="keystone-shop-meta entry-price">
+						<div class="col-xs-12 row">
+							<meta itemprop="priceCurrency" content="GBP" />
+							<strong>&pound;<span itemprop="price">14.95</span></strong>
+						</div>
+					</li>
+				</ul>
+							</div>
+			<div class="keystone-shop-button col-xs-12 row">
+                <span class="input-group-btn">
+                    <a href="https://www.nmemerchstand.com/products/mia-bird-song-black-womens-t-shirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" class="btn btn-primary btn-sm cta-button" target="_blank">Buy now</a>
+                </span>
+			</div>
+		</div>
+	</article>
+		<article class="keystone-shop-item col-xs-12" role="article" itemscope itemtype="http://schema.org/Product">
+		<div class="col-xs-6 entry-media">
+			<div class="keystone-shop-image entry-media">
+				<a href="https://www.nmemerchstand.com/products/wonder-woman-crackle-logo-womens-sweatshirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various"><img itemprop="image" src="https://cdn.shopify.com/s/files/1/1159/6154/products/BILWW00007-WOM-SWT-DC_Wonder_Woman_Logo_Crackle-DKH-CADF_2_medium.jpg?v=1480506634" /></a>
+			</div>
+		</div>
+		<div class="col-xs-6 entry-content-container">
+			<header class="entry-header">
+				<h4 class="entry-title sub-heading"><a href="https://www.nmemerchstand.com/products/wonder-woman-crackle-logo-womens-sweatshirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" rel="bookmark"><span itemprop="name">Wonder Woman Crackle Logo Women's Sweatshirt</span></a></h4>
+			</header>
+			<div class="entry-content">
+				<ul class="keystone-shop-meta entry-meta" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<li class="keystone-shop-meta entry-price">
+						<div class="col-xs-12 row">
+							<meta itemprop="priceCurrency" content="GBP" />
+							<strong>&pound;<span itemprop="price">24.95</span></strong>
+						</div>
+					</li>
+				</ul>
+							</div>
+			<div class="keystone-shop-button col-xs-12 row">
+                <span class="input-group-btn">
+                    <a href="https://www.nmemerchstand.com/products/wonder-woman-crackle-logo-womens-sweatshirt?utm_source=nmearticle&amp;utm_medium=widget&amp;utm_campaign=various" class="btn btn-primary btn-sm cta-button" target="_blank">Buy now</a>
+                </span>
+			</div>
+		</div>
+	</article>
+	</div>
+</div></section><!-- .widget --><section id="keystone-query-widget-id-14" class="palette-a  panel panel-default  text-left widget widget-area-1-col keystone-query-widget"><div class="palette-a panel-body"><h1 class="widgettitle heading">This Week's Magazine</h1><div class="sections"><div class="section section-style-list-large">
+
+				<article class="loop post-1978675 issue type-issue status-publish has-post-thumbnail hentry issue_type-nme-weekly publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/publication/nme/exclusive-interview-nmes-2017-godlike-geniuses-pet-shop-boys" rel="bookmark"><img width="220" height="300" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/NME_17thFeb_PetShopBoys_SteveNeaves-220x300.jpeg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/NME_17thFeb_PetShopBoys_SteveNeaves-220x300.jpeg 220w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/NME_17thFeb_PetShopBoys_SteveNeaves-366x500.jpeg 366w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/NME_17thFeb_PetShopBoys_SteveNeaves.jpeg 581w" sizes="(max-width: 220px) 100vw, 220px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/publication/nme/exclusive-interview-nmes-2017-godlike-geniuses-pet-shop-boys" rel="bookmark">Exclusive Interview With NME&#8217;s 2017 Godlike Geniuses Pet Shop Boys</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+		</div></div></div></section><!-- .widget --><!-- Served from object-cache in 0.00021 seconds. Generated at 2017-02-16 23:13:49 --><section id="nav_menu-6" class=" panel panel-default  text-left widget widget-area-1-col widget_nav_menu"><div class="panel-body"><h1 class="widgettitle heading">Connect With Us</h1><div class="menu-social-container"><ul id="menu-social" class="menu list-inline list-menu-icon"><li id="menu-item-405763" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-facebook first-menu-item menu-item-405763"><a target="_blank" href="https://www.facebook.com/nmemagazine"><span class="menu-icon-item icon-facebook"></span></a></li>
+<li id="menu-item-405764" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-twitter menu-item-405764"><a target="_blank" href="https://twitter.com/nme"><span class="menu-icon-item icon-twitter"></span></a></li>
+<li id="menu-item-405765" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-google menu-item-405765"><a target="_blank" href="https://plus.google.com/+NME"><span class="menu-icon-item icon-google"></span></a></li>
+<li id="menu-item-405766" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-instagram menu-item-405766"><a target="_blank" href="https://www.instagram.com/nmemagazine/"><span class="menu-icon-item icon-instagram"></span></a></li>
+<li id="menu-item-405767" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-pinterest last-menu-item menu-item-405767"><a target="_blank" href="https://uk.pinterest.com/nmemagazine/"><span class="menu-icon-item icon-pinterest"></span></a></li>
+</ul></div></div></section><!-- .widget --><section id="keystone-newsletter-3" class="palette-a  panel panel-default  text-left widget widget-area-1-col keystone-newsletter-class"><div class="palette-a panel-body"><div class="widget_newsletter"><h1 class="widgettitle heading">NME Newsletter</h1>
+<div class="newsletter-container">
+	<div class="widget-intro-text clearfix">
+			</div>
+	<form method="post" target="ipcsignup" class="newsletter-form exacttarget-form form-inline" id="newsletter-form_keystone_newsletter_-3" name="newsletter-form_keystone_newsletter_-3" action="https://pages.email.timeincuk.co.uk/page.aspx?QS=5c591a8916642e7386e8f5ecd7ba9ccce4c874c4cc6af747" >
+		<div class="newsletter-form-container">
+			<input type="hidden" name="Magazine_Code" value="XME">
+			<input type="hidden" name="Newsletter_Code" value="XME-D">
+			<input type="hidden" name="Source_Code" value="RRL"/>
+			<input type="hidden" name="RedirectURL" value="http://pages.email.timeincuk.co.uk/nme/thankyou/"/>
+			<input type="hidden" name="IPC_Email_Opt_In_mc" value="TUK" />
+			<input type="hidden" name="IPC_Email_Opt_In_nc" value="TUK-M" />
+			<input type="hidden" name="3rdParty_Email_Opt_In_mc" value="TUK" />
+			<input type="hidden" name="3rdParty_Email_Opt_In_nc" value="TUK-T" />
+
+			<div class="input-group">
+				<input type="email" class="input-sm form-control signup-email-address" id="keystone_newsletter_-3_input_email" placeholder="Your email address" name="EmailAddress" required />
+				<label class="sr-only">Your email address:</label>
+				<span class="input-group-btn">
+					<button type="submit" class="btn btn-primary btn-sm signup-submit" id="keystone_newsletter_-3_submit">Go</button>
+				</span>
+			</div>
+		</div>
+
+		<div class="widget-footer-text">
+			
+							<div class="terms-container">
+					<div class="collapse terms-container-collapsible" id="keystone_newsletter_-3_collapseTerms">
+						<p>By submitting your details, you will also receive emails from <a href="http://www.timeincuk.com/" target="_blank">Time Inc. UK</a>, publisher of NME and other <a href="http://www.timeincuk.com/brands/" target="_blank">iconic brands</a> about its goods and services, and those of its carefully selected third parties. Please tick here if you’d prefer not to hear about:</p>
+						<div class="row checkbox-newsletter">
+							<input class="col-xs-1" type="checkbox" id="keystone_newsletter_-3_byemail" name="byemail"/>
+							<label class="col-xs-11" for="keystone_newsletter_-3_byemail">Time Inc.'s goods &amp; services, including all the latest news, great deals and offers</label>
+						</div>
+						<div class="row checkbox-newsletter">
+							<input class="col-xs-1" type="checkbox" id="keystone_newsletter_-3_thirdparty" name="thirdparty"/>
+							<label class="col-xs-11" for="keystone_newsletter_-3_thirdparty">Third party goods &amp; services</label>
+						</div>
+						<p><a href='http://www.timeincuk.com/terms-and-conditions/' target='_blank'>Terms &#038; Conditions</a> and <a href='http://www.timeincuk.com/privacy/' target='_blank'>Privacy &#038; Cookies Policy</a></p>
+					</div>
+					<a class="icon-down collapse-terms newsletter-show-more" data-text-open="Show Less" data-text-close="Show More" data-toggle="collapse" href="#keystone_newsletter_-3_collapseTerms" aria-expanded="false" aria-controls="keystone_newsletter_-3_collapseTerms">
+						Show More					</a>
+				</div>
+					</div>
+	</form>
+</div></div></div></section><!-- .widget -->					
+		</div>
+				
+				<div class="col-xs-12 col-sm-6 col-md-12 col-lg-6 sidebar sidebar-tertiary">
+			<section id="text-5" class=" no-hr widget widget-area-1-col widget_text">			<div class="textwidget"><div class="palette-b panel-body"><div class="sections"><div class="section section-style-list-large">
+
+				<article class="loop post-1906040 post type-post status-publish format-standard has-post-thumbnail hentry category-music category-news  publication_name-nme loop-even loop-0 featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/blogs/nme-radar/nme-100-best-new-bands-2017-1911614" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/2016_TheNME100_151216.jpg" class="echo-image echo-loading echo-image wp-post-image echo-loaded" alt="The NME 100: essential new music for 2017"></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/blogs/nme-radar/nme-100-best-new-bands-2017-1911614" rel="bookmark">The NME 100: essential new music for 2017</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+		</div></div></div></div>
+		</section><!-- .widget --><section id="keystone-query-widget-id-15" class="palette-b visible-lg panel panel-default  widget widget-area-1-col keystone-query-widget"><div class="palette-b panel-body"><h1 class="widgettitle heading">Reviews</h1><div class="sections"><div class="section section-style-list-large">
+
+				<article class="loop post-1978745 review type-review status-publish has-post-thumbnail hentry review_category-album publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/maggie-rogers-now-light-fading-ep-review" rel="bookmark"><img width="300" height="191" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_MaggieRogers_Press_160217-300x191.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_MaggieRogers_Press_160217-300x191.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_MaggieRogers_Press_160217-768x488.jpg 768w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_MaggieRogers_Press_160217-630x400.jpg 630w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_MaggieRogers_Press_160217.jpg 1000w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/maggie-rogers-now-light-fading-ep-review" rel="bookmark">Maggie Rogers &#8211; &#8216;Now That The Light Is Fading&#8217; EP Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1976654 review type-review status-publish has-post-thumbnail hentry review_category-movie publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/john-wick-chapter-2-film-review" rel="bookmark"><img width="300" height="191" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_JohnWick21_Press_150217-300x191.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_JohnWick21_Press_150217-300x191.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_JohnWick21_Press_150217-768x488.jpg 768w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_JohnWick21_Press_150217-630x400.jpg 630w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_JohnWick21_Press_150217.jpg 1000w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/john-wick-chapter-2-film-review" rel="bookmark">&#8216;John Wick: Chapter 2&#8217; &#8211; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1976595 review type-review status-publish has-post-thumbnail hentry review_category-movie publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/moonlight-film-review" rel="bookmark"><img width="300" height="191" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Moonlight_Press_150217-300x191.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Moonlight_Press_150217-300x191.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Moonlight_Press_150217-768x488.jpg 768w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Moonlight_Press_150217-630x400.jpg 630w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Moonlight_Press_150217.jpg 1000w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/moonlight-film-review" rel="bookmark">&#8216;Moonlight&#8217; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1976589 review type-review status-publish has-post-thumbnail hentry review_category-album person_category-ryan-adams publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/ryan-adams-prisoner-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/GettyImages-474735212_RYAN_ADAMS_NOS_ALIVE_630-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="Ryan Adams" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/GettyImages-474735212_RYAN_ADAMS_NOS_ALIVE_630-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/GettyImages-474735212_RYAN_ADAMS_NOS_ALIVE_630.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/ryan-adams-prisoner-review" rel="bookmark">Ryan Adams &#8211; &#8216;Prisoner&#8217; Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1971367 review type-review status-publish has-post-thumbnail hentry review_category-movie publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/founder-film-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_TheFounder_press_090217-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_TheFounder_press_090217-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_TheFounder_press_090217.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/founder-film-review" rel="bookmark">&#8216;The Founder&#8217; &#8211; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1971490 review type-review status-publish has-post-thumbnail hentry review_category-movie publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/fences-film-review-nme" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_fences_press_090217-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_fences_press_090217-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_fences_press_090217.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/fences-film-review-nme" rel="bookmark">&#8216;Fences&#8217; &#8211; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1971358 review type-review status-publish has-post-thumbnail hentry review_category-movie publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/lego-batman-movie-film-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_LegoBatman_Press_020217-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_LegoBatman_Press_020217-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_LegoBatman_Press_020217.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/lego-batman-movie-film-review" rel="bookmark">&#8216;The Lego Batman Movie&#8217; &#8211; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1971345 review type-review status-publish has-post-thumbnail hentry review_category-album publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/ten-fe-hit-light-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/2016_TenFe_Press_311016-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="Ten Fé are made up of Ben Moorhouse and Leo Duncan" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/2016_TenFe_Press_311016-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/2016_TenFe_Press_311016.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/ten-fe-hit-light-review" rel="bookmark">Ten Fé &#8211; &#8216;Hit The Light&#8217; Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1971326 review type-review status-publish has-post-thumbnail hentry review_category-album person_category-rag-n-bone-man publication_name-nme featured-image featured-video" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/ragnbone-man-human-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/NME-3rd-Feb_ragandboneman6_Perou-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/NME-3rd-Feb_ragandboneman6_Perou-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/NME-3rd-Feb_ragandboneman6_Perou.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/ragnbone-man-human-review" rel="bookmark">Rag&#8217;n&#8217;Bone Man &#8211; &#8216;Human&#8217; Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1966447 review type-review status-publish has-post-thumbnail hentry review_category-album person_category-pet-shop-boys publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/pet-shop-boys-super-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/GettyImages-627062978-2-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/GettyImages-627062978-2-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/GettyImages-627062978-2.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/pet-shop-boys-super-review" rel="bookmark">Pet Shop Boys &#8211; &#8216;Super&#8217; Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1966328 review type-review status-publish has-post-thumbnail hentry review_category-movie publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/loving-film-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Loving_Press_030217-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Loving_Press_030217-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_Loving_Press_030217.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/loving-film-review" rel="bookmark">&#8216;Loving&#8217; &#8211; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1964865 review type-review status-publish has-post-thumbnail hentry review_category-movie publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/toni-erdmann-film-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_ToniErdmann_Press_010217-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_ToniErdmann_Press_010217-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_ToniErdmann_Press_010217.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/toni-erdmann-film-review" rel="bookmark">&#8216;Toni Erdmann&#8217; &#8211; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1964861 review type-review status-publish has-post-thumbnail hentry review_category-album publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/kehlani-sweetsexysavage-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/Kehlani_Credit-James-McCloud-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/Kehlani_Credit-James-McCloud-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/01/Kehlani_Credit-James-McCloud.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/kehlani-sweetsexysavage-review" rel="bookmark">Kehlani &#8211; &#8216;SweetSexySavage&#8217; Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1964840 review type-review status-publish has-post-thumbnail hentry review_category-album person_category-elbow publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/elbow-little-fictions-review" rel="bookmark"><img width="300" height="190" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/elbow_new_album_tour_2017-300x190.jpg" class="echo-image echo-loading  wp-post-image" alt="Elbow" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/elbow_new_album_tour_2017-300x190.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/12/elbow_new_album_tour_2017.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/elbow-little-fictions-review" rel="bookmark">Elbow &#8211; &#8216;Little Fictions&#8217; Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1964828 review type-review status-publish has-post-thumbnail hentry review_category-album publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/album/sampha-process-album-review" rel="bookmark"><img width="300" height="200" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_sampha_JamieJames_010217-300x200.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_sampha_JamieJames_010217-300x200.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2017/02/2017_sampha_JamieJames_010217.jpg 600w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/album/sampha-process-album-review" rel="bookmark">Sampha &#8211; &#8216;Process&#8217; Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+					<article class="loop post-1860453 review type-review status-publish has-post-thumbnail hentry review_category-movie person_category-iggy-and-the-stooges person_category-iggy-pop publication_name-nme featured-image" role="article">
+
+				<header class="entry-header">
+
+					<div class="entry-media">
+
+						<a href="http://www.nme.com/reviews/movie/gimme-danger-review" rel="bookmark"><img width="300" height="210" src="http://ks-aws2-uat.assets.timeincuk.net/wp/uat/wp-content/uploads/sites/55/2016/07/hero.jpg" data-echo="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/11/2016_gimmedanger_press_171116-300x210.jpg" class="echo-image echo-loading  wp-post-image" alt="" data-echo-srcset="https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/11/2016_gimmedanger_press_171116-300x210.jpg 300w, https://ksassets.timeincuk.net/wp/uploads/sites/55/2016/11/2016_gimmedanger_press_171116.jpg 630w" sizes="(max-width: 300px) 100vw, 300px" /></a>
+					</div>
+
+					<h2 class="entry-title sub-heading media-heading"><a href="http://www.nme.com/reviews/movie/gimme-danger-review" rel="bookmark">&#8216;Gimme Danger&#8217; &#8211; Film Review</a></h2>
+
+					<ul class="entry-meta">
+																													</ul>
+
+					
+				</header>
+				
+				<div class="entry-content">
+
+					
+									</div>
+
+			</article>
+		</div></div></div></section><!-- .widget --><!-- Served from object-cache in 0.00020 seconds. Generated at 2017-02-16 23:13:51 --><section id="ipc-advert-id-4" class=" no-hr text-center widget widget-area-1-col ipc-advert-class"><div id="dfpad-mpu-1" class="ipc-advert"></div></section><!-- .widget -->					
+		</div>
+				
+	</div>
+
+</aside>
+
+
+		
+	</div><!-- .row -->
+
+				
+		</div><!-- #content -->
+
+		<footer id="footer" role="contentinfo" class="row palette-b">
+
+			<aside class="col-xs-12 col-sm-6 col-md-4 col-lg-3 sidebar sidebar-footer" role="complementary">
+							</aside>
+			
+			<aside class="hidden-xs col-sm-6 col-md-4 col-lg-3 sidebar sidebar-footer" role="complementary">
+							</aside>
+
+			<aside class="hidden-xs hidden-sm col-md-4 col-lg-3 sidebar sidebar-footer" role="complementary">
+							</aside>
+
+			<aside class="hidden-xs hidden-sm hidden-md col-lg-3 sidebar sidebar-footer" role="complementary">
+							</aside>
+
+			<div class="clearfix"></div>
+
+			<aside class="col-xs-12 sidebar sidebar-footer-required" role="complementary">
+				<section id="keystone_logo_widget-4" class=" text-center widget widget-area-4-col keystone_logo_widget-class"><h1 itemtype="http://schema.org/Organization" class="vcard site-title-new mobile-template text-center">
+				  <a itemprop="url" href="http://www.nme.com" title="NME" class="url">
+				    <span class="sr-only fn org nickname" itemprop="name">NME</span>
+				    <img itemprop="logo" class="logo photo non-retina" src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/REV.NME_.WEB_.40px.png?v=860611725124042752" alt="NME" />
+				    <img src="http://ksassets.timeincuk.net/wp/uploads/sites/55/2016/10/REV.NME_.WEB_.80px.png?v=860611725124042752" alt="NME" class="retina"/>
+				  </a>
+				</h1></section><!-- .widget --><section id="nav_menu-8" class=" no-hr text-center widget widget-area-4-col widget_nav_menu"><div class="menu-footer-container"><ul id="menu-footer" class="menu list-inline"><li id="menu-item-419762" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home no-icon first-menu-item menu-item-419762"><a href="http://www.nme.com/"><span>Home</span></a><span class="menu-divider">|</span></li>
+<li id="menu-item-592212" class="menu-item menu-item-type-post_type menu-item-object-page no-icon menu-item-592212"><a href="http://www.nme.com/contact"><span>Contact</span></a><span class="menu-divider">|</span></li>
+<li id="menu-item-419763" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-419763"><a href="http://www.timeincuk.com/advertise/"><span>Advertise</span></a><span class="menu-divider">|</span></li>
+<li id="menu-item-419764" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-419764"><a href="https://www.timeincukcontent.com/page/syndcation%20service"><span>Buy Our Content</span></a><span class="menu-divider">|</span></li>
+<li id="menu-item-419765" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-419765"><a href="http://www.timeincuk.com/terms-and-conditions/"><span>Site User Terms</span></a><span class="menu-divider">|</span></li>
+<li id="menu-item-419766" class="menu-item menu-item-type-custom menu-item-object-custom no-icon menu-item-419766"><a href="http://www.timeincuk.com/privacy/"><span>Privacy Policy</span></a><span class="menu-divider">|</span></li>
+<li id="menu-item-419767" class="menu-item menu-item-type-custom menu-item-object-custom no-icon last-menu-item menu-item-419767"><a href="http://www.timeincuk.com/privacy/#cookies"><span>Cookie Information</span></a></li>
+</ul></div></section><!-- .widget --><section id="nav_menu-5" class=" text-center widget widget-area-4-col widget_nav_menu"><div class="menu-social-container"><ul id="menu-social" class="menu list-inline list-menu-icon"><li id="menu-item-405763" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-facebook first-menu-item menu-item-405763"><a target="_blank" href="https://www.facebook.com/nmemagazine"><span class="menu-icon-item icon-facebook"></span></a></li>
+<li id="menu-item-405764" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-twitter menu-item-405764"><a target="_blank" href="https://twitter.com/nme"><span class="menu-icon-item icon-twitter"></span></a></li>
+<li id="menu-item-405765" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-google menu-item-405765"><a target="_blank" href="https://plus.google.com/+NME"><span class="menu-icon-item icon-google"></span></a></li>
+<li id="menu-item-405766" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-instagram menu-item-405766"><a target="_blank" href="https://www.instagram.com/nmemagazine/"><span class="menu-icon-item icon-instagram"></span></a></li>
+<li id="menu-item-405767" class="menu-item menu-item-type-custom menu-item-object-custom menu-icon-pinterest last-menu-item menu-item-405767"><a target="_blank" href="https://uk.pinterest.com/nmemagazine/"><span class="menu-icon-item icon-pinterest"></span></a></li>
+</ul></div></section><!-- .widget --><section id="text-2" class=" text-center widget widget-area-4-col widget_text">			<div class="textwidget"><p style="font-size:10px">©1996-2016 Time Inc. (UK) Ltd. <br />All rights reserved NME is part of the Time Inc. (UK) Ltd Entertainment Network</p></div>
+		</section><!-- .widget -->			</aside>
+
+		</footer><!-- #footer -->
+		
+	</div><!-- #wrapper .hfeed -->
+
+	<div id="wp-footer">
+				<script src="http://assets.ipcdigital.co.uk/brightcove/versions/1.52/bcore.js"></script>
+		<script type="text/javascript">
+			var brightcoveVideos = [{"id":"brightcove-5071460734001","account_id":"463898949","player_id":"default","load_type":"visibleview","auto_advance":false,"volume":0.8,"featured":false,"dom":{"player":"#brightcove-5071460734001"},"overlay":{"image":false},"video_id":"5071460734001"}];
+			(function(videos) {
+				function bcoreInit() {
+					$bcore.init( 'nme', {}, function() {
+						var conf = {};
+						for (var i = 0; i < videos.length; i++) {
+							if ('undefined' === typeof videos[i].bcove) {
+								videos[i].bcove = new $bcove();
+								conf = videos[i];
+								videos[i].bcove.load.video(conf);
+							}
+						}
+					});
+				}
+				if (videos.length > 0) {
+					var tries = 0;
+					var interval = setInterval(function(){
+						tries += 1;
+						if (tries === 100) {
+							clearInterval(interval);
+						}
+						if ('undefined' !== typeof $bcore) {
+							bcoreInit();
+							clearInterval(interval);
+						}
+					}, 100);
+				}
+			})(brightcoveVideos);
+		</script>
+		<script type='text/javascript'>
+/* <![CDATA[ */
+var echo_js_lazy_load = {"offset":"500","throttle":"250","debounce":"false","unload":"false"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.nme.com/wp-content/plugins/echo-js-lazy-load/js/echo.min.js?ver=1.1.0'></script>
+<script type='text/javascript' src='http://www.nme.com/wp-content/plugins/ipc-wordpress-digital-editions/public/assets/js/public.js?ver=2.2.2'></script>
+<script type='text/javascript' src='http://www.nme.com/wp-includes/js/comment-reply.min.js?ver=NC43LjI'></script>
+<script type='text/javascript' src='http://www.nme.com/wp-content/themes/keystone-theme/assets/js/scripts.min.js?ver=1487239467'></script>
+<script type='text/javascript' src='http://www.nme.com/wp-content/plugins/keystone-newsletter/widget/js/widget.js?ver=1.1.2'></script>
+<script type='text/javascript' src='http://www.nme.com/wp-includes/js/wp-embed.min.js?ver=NC43LjI'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"platform":"wordpress@4.7.2","language":""},"disqusIdentifier":"1956655 https:\/\/www.nme.com\/?p=1956655","disqusShortname":"nmemagazine","disqusTitle":"Skepta and Adele named among the 500 \u2018most influential\u2019 people in Britain","disqusUrl":"http:\/\/www.nme.com\/news\/music\/skepta-adele-500-most-influential-people-in-britain-1956655","options":{"manualSync":false},"postId":"1956655"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.nme.com/wp-content/plugins/disqus-comment-system/media/js/disqus.js?ver=NC43LjI'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"nmemagazine"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.nme.com/wp-content/plugins/disqus-comment-system/media/js/count.js?ver=NC43LjI'></script>
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.2.1\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.nme.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=NC43LjI"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<script type="text/javascript">
+				echo_js_lazy_load.debounce = (echo_js_lazy_load.debounce === "true");
+				echo_js_lazy_load.unload = (echo_js_lazy_load.unload === "true");
+				echo_js_lazy_load.callback = function ( elem, op ) {
+						   if( op === "load" ) {
+						        if ( elem.getAttribute("data-echo-srcset") !== null ) {
+						            elem.setAttribute("srcset", elem.getAttribute("data-echo-srcset"));
+						            elem.removeAttribute("data-echo-srcset");
+						        }
+								elem.classList.remove("echo-loading");
+								elem.classList.add("echo-loaded");
+						   }
+						}
+				echo.init(echo_js_lazy_load);
+			  </script>
+<div id="dfpad-overlay" class="ipc-advert"></div><div id="gumgum" class="ipc-advert"></div><div id="vibrant" class="ipc-advert"></div>	</div><!-- #wp-footer -->
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"aaccaa7fff","applicationID":"22537819,9562757,26939178","transactionName":"YgNVYEcAXhJYBUQNXFtJdldBCF8PFhVZClRZAw==","queueTime":0,"applicationTime":440,"atts":"TkRCFg8aTU0bBxJeSEgb","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

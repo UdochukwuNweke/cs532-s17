@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<!--[if lte IE 9]> <html lang="en" class="no-js old-ie" style="background-color:#000000;"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js non-ie" style="background-color:#000000;"> <!--<![endif]-->
+<head>
+  <script>
+      var b = document.documentElement;
+      b.className = b.className.replace('no-js', 'js');
+      b.setAttribute("data-useragent", navigator.userAgent);
+      b.setAttribute("data-platform", navigator.platform);
+  </script>
+  <meta charset="utf-8">
+  <meta name="google" value="notranslate">
+  <meta property="og:type" content="website"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1e083e1800","applicationID":"13119952","transactionName":"c1pdRBALVVUDRR5EXFdbRkARS1NWD1k=","queueTime":0,"applicationTime":150,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1016.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <script src="https://d1lggihq2bt4jo.cloudfront.net/assets/scripts/modernizr.min-da65a6872dcf580912aeba456f271dd299b2f3b779dbbef154538a799690d793.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/img/favicons/madmimi/apple-touch-icon-57x57.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/img/favicons/madmimi/apple-touch-icon-60x60.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/img/favicons/madmimi/apple-touch-icon-72x72.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/img/favicons/madmimi/apple-touch-icon-76x76.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/img/favicons/madmimi/apple-touch-icon-114x114.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicons/madmimi/apple-touch-icon-120x120.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/img/favicons/madmimi/apple-touch-icon-144x144.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/img/favicons/madmimi/apple-touch-icon-152x152.png?v=000OqxB0p6">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/madmimi/apple-touch-icon-180x180.png?v=000OqxB0p6">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/madmimi/favicon-32x32.png?v=000OqxB0p6" sizes="32x32">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/madmimi/favicon-194x194.png?v=000OqxB0p6" sizes="194x194">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/madmimi/favicon-96x96.png?v=000OqxB0p6" sizes="96x96">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/madmimi/android-chrome-192x192.png?v=000OqxB0p6" sizes="192x192">
+  <link rel="icon" type="image/png" href="/assets/img/favicons/madmimi/favicon-16x16.png?v=000OqxB0p6" sizes="16x16">
+  <link rel="manifest" href="/assets/img/favicons/madmimi/manifest.json?v=000OqxB0p6">
+  <link rel="mask-icon" href="/assets/img/favicons/madmimi/safari-pinned-tab.svg?v=000OqxB0p6" color="#54ade3">
+  <link rel="shortcut icon" href="/assets/img/favicons/madmimi/favicon.ico?v=000OqxB0p6">
+  <meta name="msapplication-TileColor" content="#54ade3">
+  <meta name="msapplication-TileImage" content="/assets/img/favicons/madmimi/mstile-144x144.png?v=000OqxB0p6">
+  <meta name="msapplication-config" content="/assets/img/favicons/madmimi/browserconfig.xml?v=000OqxB0p6">
+  <meta name="theme-color" content="#54ade3">
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="OTDFSAX85lLSD7P7pneX4y2awYUT7W7cutsMu3q3jfbEtNBsJXFTgkAv4aCgI72myrWKdV59JG4XV4IlUxgFsw==" />
+  <link rel="stylesheet" media="screen" href="https://d2vnkn0bfhsarv.cloudfront.net/assets/theme/theme_madmimi-78a1933f3fc250cd974bf078cf914764f5106960d7a7e62cc368cf4132b41c8d.css" />
+<link rel="stylesheet" media="screen" href="https://d2vnkn0bfhsarv.cloudfront.net/assets/self_service-ac81399c3711f50359a3b622d7b0be772513f1332d701d00ebe886663d00064e.css" />
+  <title>Mad Mimi</title>
+    <link rel="stylesheet" media="screen" href="https://d2vnkn0bfhsarv.cloudfront.net/assets/webform_madly_animation-629d8691527b48d5505bdf692383b30fd962dc603d2ef86cafc4092c7d0ca0cf.css" />
+<link rel="stylesheet" media="screen" href="https://d2vnkn0bfhsarv.cloudfront.net/assets/mimio-539fe913bb1dd725ca5fcc72c2621d44a9260496376d79ecb56538f01fa14c20.css" />
+  <script src="https://d1lggihq2bt4jo.cloudfront.net/assets/scripts/modernizr.min-da65a6872dcf580912aeba456f271dd299b2f3b779dbbef154538a799690d793.js"></script>
+  <script src="https://d1lggihq2bt4jo.cloudfront.net/assets/scripts/basic_dropdown-75137041ad614166d9af184e62a380f4aaf3503aae3053508f69219823b7bbdf.js"></script>
+  <meta property="og:title" content="Free Music Submission"/>
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://madmimi.com/signups/160342/join"/>
+  <meta property="og:image" content="https://snaps.madmimi.com/v2/thumbs.php?size=l&amp;url=https%3A%2F%2Fmadmimi.com%2Fsignups%2F160342%2Fjoin"/>
+  <meta property="og:site_name" content="DaIndieSpot Promotions"/>
+
+</head>
+<body class="mimi_webform_bg ema ui_dark" style='background-color:#000000;'>
+<div class="mimi_webform_container" style='width:400px; max-width: 95%;'>
+  <div class="mimi_webform with_bg">
+    <section >
+      <div class="mimi_webform_header mimi_container_logo no_webform_theme_logo ui_light" style='background-color:#DDDDDD;display:none;'>
+        <h1>Submit Information For Free Music Promotion</h1>
+      </div>
+      <div class="mimi_webform_header mimi_container_logo has_webform_theme_logo" style='background-color:#DDDDDD;'>
+        <img src='https://cascade.madmimi.com/logos/0011/0608/free-music-flyer_1484787245.jpg'>
+      </div>
+    </section>
+    <div class="inner">
+      
+
+
+<form id="ema_signup_form" action="https://madmimi.com/signups/subscribe/160342" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="obaH+k/wLbvHTzIWZUde6eafiMb7ZnjKz57qE/Wmh5JcMpLeb32Ya1VvYE1jE3SsAbDDNrb2MnhiEmSN3AkP1w==" />
+  
+  <fieldset>
+        <div class='mimi_field text required'>
+  <label for='signup_email'>Email</label>
+  <input id='signup_email' name='signup[email]' type='text' placeholder='you@example.com'>
+  <div class='mimi_field_feedback' data-invalid-email='This field is invalid'></div>
+  <span class='mimi_funk'></span>
+</div>
+
+          <div class='mimi_field text required'>
+  <label for='signup_artist_name'>Artist Name</label>
+
+  <input id='signup_artist_name' name='signup[artist_name]' type='text'>
+
+
+  <input class='field_type' type='hidden' data-field-type=text_field>
+  <div class='mimi_field_feedback' data-required-field='This field is required'></div>
+  <span class='mimi_funk'></span>
+</div>
+
+          <div class='mimi_field text required'>
+  <label for='signup_song_title'>Song Title</label>
+
+  <input id='signup_song_title' name='signup[song_title]' type='text'>
+
+
+  <input class='field_type' type='hidden' data-field-type=text_field>
+  <div class='mimi_field_feedback' data-required-field='This field is required'></div>
+  <span class='mimi_funk'></span>
+</div>
+
+          <div class='mimi_field text required'>
+  <label for='signup_song_url_link'>Song URL Link</label>
+
+  <input id='signup_song_url_link' name='signup[song_url_link]' type='text'>
+
+
+  <input class='field_type' type='hidden' data-field-type=text_field>
+  <div class='mimi_field_feedback' data-required-field='This field is required'></div>
+  <span class='mimi_funk'></span>
+</div>
+
+          <div class='mimi_field text required'>
+  <label for='signup_twitter_username'>Twitter Username</label>
+
+  <input id='signup_twitter_username' name='signup[twitter_username]' type='text'>
+
+
+  <input class='field_type' type='hidden' data-field-type=text_field>
+  <div class='mimi_field_feedback' data-required-field='This field is required'></div>
+  <span class='mimi_funk'></span>
+</div>
+
+
+    
+    <div style="background: white; font-size:1px; height: 0; overflow: hidden">
+  
+        <input type="hidden" name="spinner" value="c6c7a7f4a0e66ac088468723287dfee76d78d0849ec9823d2c6d9d910b0baf12" />
+        <input type="text" name="8b54ba45cd2c5bc7a31d56436d67d9c1" style="font-size: 1px; width: 1px !important; height:1px !important; border:0 !important; line-height: 1px !important; padding: 0 0; min-height:1px !important;"/>
+        <input class="checkbox" type="checkbox" name="beacon" />
+      
+</div>
+
+    <div class='mimi_field action'>
+  <input type='submit' class='submit' value='Register Music Now!' id='webform_submit_button' data-default-text='Register Music Now!' data-submitting-text='Sending...' data-invalid-text='↑ You forgot some required fields' data-thanks='Thank you!'>
+</div>
+
+  </fieldset>
+</form>
+
+    <div class="mimi_webform_share">
+      <span id="facebook" title="Like this on Facebook">Like</span>
+      <span id="twitter" title="Share this on Twitter">Tweet</span>
+      <span id="pinterest" title="Pin to Pinterest">Pin</span>
+      <span id="plusone" title="Share this on Google+">+1</span>
+      <span id="linked_in" title="Share this on LinkedIn">in</span>
+    </div>
+
+<script type="text/javascript">
+(function(global) {
+  function serialize(form){if(!form||form.nodeName!=="FORM"){return }var i,j,q=[];for(i=form.elements.length-1;i>=0;i=i-1){if(form.elements[i].name===""){continue}switch(form.elements[i].nodeName){case"INPUT":switch(form.elements[i].type){case"text":case"hidden":case"password":case"button":case"reset":case"submit":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"checkbox":case"radio":if(form.elements[i].checked){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value))}break;case"file":break}break;case"TEXTAREA":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"SELECT":switch(form.elements[i].type){case"select-one":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break;case"select-multiple":for(j=form.elements[i].options.length-1;j>=0;j=j-1){if(form.elements[i].options[j].selected){q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].options[j].value))}}break}break;case"BUTTON":switch(form.elements[i].type){case"reset":case"submit":case"button":q.push(form.elements[i].name+"="+encodeURIComponent(form.elements[i].value));break}break}}return q.join("&")};
+
+
+  function extend(destination, source) {
+    for (var prop in source) {
+      destination[prop] = source[prop];
+    }
+  }
+
+  if (!Mimi) var Mimi = {};
+  if (!Mimi.Signups) Mimi.Signups = {};
+
+  Mimi.Signups.StandardValidation = function() {
+    this.initialize();
+
+    var _this = this;
+    if (document.addEventListener) {
+      this.form.addEventListener('submit', function(e){
+        _this.onFormSubmit(e);
+      });
+    } else {
+      this.form.attachEvent('onsubmit', function(e){
+        _this.onFormSubmit(e);
+      });
+    }
+  };
+
+  extend(Mimi.Signups.StandardValidation.prototype, {
+    initialize: function() {
+      this.form         = document.getElementById("ema_signup_form");
+      this.callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
+      this.validEmail   = /[_a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9.-]+/;
+    },
+
+    onFormSubmit: function(e) {
+      this.validate();
+      if(this.isValid) {
+        this.submitForm(e);
+      } else {
+        e.preventDefault();
+        this.revalidateOnChange();
+      }
+    },
+
+    validate: function() {
+      this.isValid = true;
+      this.emailValidation();
+      this.fieldAndListValidation();
+      this.updateFormAfterValidation();
+    },
+
+    emailValidation: function() {
+      var email      = document.getElementById('signup_email'),
+          errorElem  = email.parentNode.querySelectorAll('.mimi_field_feedback')[0];
+
+      if (this.validEmail.test(email.value)) {
+        errorElem.innerHTML = '';
+      } else {
+        errorElem.innerHTML = errorElem.getAttribute('data-invalid-email');
+        this.isValid = false;
+      }
+    },
+
+    fieldAndListValidation: function() {
+      var fields = this.form.querySelectorAll('.mimi_field.required');
+
+      for(var i = 0; i < fields.length; ++i) {
+        var field = fields[i];
+        var type  = this.fieldType(field);
+
+        if (type === 'checkboxes' || type === 'radio_buttons') {
+          this.checkboxAndRadioValidation(field);
+        } else {
+          this.textAndDropdownValidation(field, type);
+        }
+      }
+    },
+
+    fieldType: function(field) {
+      var type = field.querySelectorAll('.field_type');
+
+      if (type.length) {
+        return type[0].getAttribute('data-field-type');
+      } else if (field.className.indexOf('checkgroup') >= 0) {
+        return "checkboxes";
+      } else {
+        return "text_field";
+      }
+    },
+
+    checkboxAndRadioValidation: function(field) {
+      var inputs     = field.getElementsByTagName('input'),
+          feedback   = field.querySelectorAll('.mimi_field_feedback')[0],
+          fieldError = feedback.getAttribute('data-required-field'),
+          listError  = feedback.getAttribute('data-lists-required'),
+          selected   = false;
+
+      for (var i = 0; i < inputs.length; ++i) {
+        var input = inputs[i];
+        if ((input.type === 'checkbox' || input.type === 'radio') && input.checked) {
+          selected = true;
+        }
+      }
+
+      if (selected) {
+        feedback.innerHTML = '';
+        feedback.style['marginTop'] = '0px';
+      } else {
+        feedback.innerHTML = fieldError || listError;
+        feedback.style['marginTop'] = '10px';
+        this.isValid = false;
+      }
+    },
+
+    textAndDropdownValidation: function(field, type) {
+      var inputs   = field.getElementsByTagName('input'),
+          feedback = field.querySelectorAll('.mimi_field_feedback')[0];
+
+      for (var i = 0; i < inputs.length; ++i) {
+        var input = inputs[i];
+
+        if (input.name.indexOf('signup') === -1) continue;
+        if (input.id === 'signup_email') continue;
+
+        if (input.value) {
+          feedback.innerHTML = '';
+        } else {
+          feedback.innerHTML = feedback.getAttribute('data-required-field');
+
+          if (type === 'dropdown' || type === 'date') {
+            this.onSelectCallback(input);
+          }
+
+          this.isValid = false;
+        }
+      }
+    },
+
+    onSelectCallback: function(input) {
+      if (!Widget.BasicDropdown) return;
+
+      var dropdownEl = input.parentNode,
+          instances  = Widget.BasicDropdown.instances,
+          _this = this;
+
+      for (var i = 0; i < instances.length; ++i) {
+        var instance = instances[i];
+        if (instance.wrapperEl === dropdownEl) {
+          instance.onSelect = function(){ _this.validate() };
+        }
+      }
+    },
+
+    updateFormAfterValidation: function() {
+      var submitButton       = document.getElementById('webform_submit_button');
+      this.form.className    = this.setFormClassName();
+      submitButton.value     = this.submitButtonText(submitButton);
+      submitButton.disabled  = !this.isValid;
+      submitButton.className = this.isValid ? 'submit' : 'disabled';
+    },
+
+    setFormClassName: function() {
+      var name = this.form.className;
+
+      if (this.isValid) {
+        return name.replace(/\s?mimi_invalid/, '');
+      } else {
+        if (name.indexOf('mimi_invalid') === -1) {
+          return name += ' mimi_invalid';
+        } else {
+          return name;
+        }
+      }
+    },
+
+    submitButtonText: function(submitButton) {
+      if (this.isValid) {
+        return submitButton.getAttribute("data-default-text");
+      } else {
+        return submitButton.getAttribute("data-invalid-text");
+      }
+    },
+
+    revalidateOnChange: function() {
+      var fields = this.form.querySelectorAll('.mimi_field.required'),
+          _this = this;
+
+      for (var i = 0; i < fields.length; ++i) {
+        var inputs = fields[i].getElementsByTagName('input');
+        for (var j = 0; j < inputs.length; ++j) {
+          if (this.fieldType(fields[i]) === 'text_field') {
+            inputs[j].onkeyup = function() {
+              if (this.getAttribute('name') === 'signup[email]') {
+                if (_this.validEmail.test(this.value)) _this.validate();
+              } else {
+                if (this.value.length === 1) _this.validate();
+              }
+            }
+          } else {
+            inputs[j].onchange = function(){ _this.validate() };
+          }
+        }
+      }
+    },
+
+    submitForm: function(e) {
+      this.formSubmitting();
+
+      if (false) {
+        this.standardSubmit();
+      } else {
+        this.ajaxSubmit(e);
+      }
+    },
+
+    standardSubmit: function() {
+      /* if there's no redirect, then there's nothing to do. */
+      if (false) return;
+
+      window.open('https://madmimi.com/p/b4bf69');
+      this.updateSubmitButtonText();
+    },
+
+    ajaxSubmit: function(e) {
+      e.preventDefault();
+
+      var _this = this;
+      window[this.callbackName] = function(response) {
+        document.body.removeChild(script);
+        _this.onSubmitCallback(response);
+      };
+
+      var script = document.createElement('script');
+      script.src = this.formUrl('json');
+      document.body.appendChild(script);
+    },
+
+    formUrl: function(format) {
+      var action  = this.form.action;
+      if (format === 'json') action += '.json';
+      return action + '?callback=' + this.callbackName + '&' + serialize(this.form);
+    },
+
+    formSubmitting: function() {
+      var submitButton       = document.getElementById("webform_submit_button");
+      this.form.className   += ' mimi_submitting';
+      submitButton.value     = submitButton.getAttribute('data-submitting-text');
+      submitButton.disabled  = true;
+      submitButton.className = 'disabled';
+    },
+
+    onSubmitCallback: function(response) {
+      if (response.success) {
+        this.onSubmitSuccess(response.result);
+      } else {
+        top.location.href = this.formUrl('html');
+      }
+    },
+
+    onSubmitSuccess: function(result) {
+      this.removeErrors();
+
+      if (result.has_redirect) {
+        top.location.href = result.redirect;
+      } else if (result.single_opt_in || !result.confirmation_html) {
+        this.disableForm();
+        this.updateSubmitButtonText();
+      } else {
+        this.showConfirmationText(result.confirmation_html);
+      }
+    },
+
+    removeErrors: function() {
+      var errorElem = document.getElementById('errorExplanation');
+      if (errorElem) errorElem.style['display'] = 'none';
+    },
+
+    showConfirmationText: function(html) {
+      var fields = this.form.querySelectorAll('.mimi_field');
+
+      for (var i = 0; i < fields.length; ++i) {
+        fields[i].style['display'] = 'none';
+      }
+
+      (this.form.querySelectorAll('fieldset')[0] || this.form).innerHTML = html;
+    },
+
+    disableForm: function() {
+      var elements = this.form.elements;
+      for (var i = 0; i < elements.length; ++i) {
+        elements[i].disabled = true;
+      }
+    },
+
+    updateSubmitButtonText: function(text) {
+      var submitButton   = document.getElementById('webform_submit_button');
+      submitButton.value = submitButton.getAttribute('data-thanks');
+    }
+  });
+
+  if (document.addEventListener) {
+    document.addEventListener("DOMContentLoaded",
+      new Mimi.Signups.StandardValidation);
+  }
+  else {
+    window.attachEvent('onload', function() {
+      new Mimi.Signups.StandardValidation();
+    });
+  }
+})(this);
+</script>
+
+<script type="text/javascript">
+(function() {
+  function getElementsByClassName(node, classname) {
+    var a = [];
+    var re = new RegExp('(^| )'+classname+'( |$)');
+    var els = node.getElementsByTagName("*");
+    for(var i=0,j=els.length; i < j; i++)
+        if(re.test(els[i].className)){
+          a.push(els[i]);
+        }
+    return a;
+  };
+
+	document.onclick = function(e) {
+    if (!e) {
+      e = window.event;
+    }
+
+    var focus = getElementsByClassName(document.body, 'focus');
+
+    if(focus.length > 0) {
+      for(var i = 0; i < focus.length; ++i) {
+        focus[i].className = focus[i].className.replace(/ focus/g, '');
+      }
+    }
+
+    var mimiField = findMimiField(e.target || e.srcElement);
+    if(mimiField) {
+    	if(getElementsByClassName(mimiField, '.combo_input').length == 0) { /* skip if editing options */
+      	mimiField.className += ' focus';
+      }
+    }
+  };
+
+  function findMimiField(elem) {
+    var mimiField = elem.parentNode;
+    while(mimiField && mimiField.className != undefined && mimiField.className.toString().indexOf('mimi_field') == -1) {
+      mimiField = mimiField.parentNode;
+    }
+    if(mimiField.nodeType == 1 /* element */) {
+      return mimiField;
+    } else {
+      return null;
+    }
+  }
+ })();
+</script>
+
+<script type="text/javascript">
+  window.onload = function(event) {
+    var webform = document.querySelectorAll(".mimi_webform_container")[0];
+    webform.className = "mimi_webform_container animation";
+  }
+</script>
+<div id="overlay_block" style="display:none;"></div>
+
+
+  <div id="mimio_share_facebook" class="mimio_share facebook" style="display:none;">
+    <div class="content">
+
+      <!--[if (gt IE 9)|!(IE)]><!-->
+       <svg class='iconsvg svg_facebook' viewBox='0 0 16 16' aria-hidden='true'>    <path class="facebook" d="M6.362 16.006v-7.31h-2.362v-2.842h2.362v-2.168c0-2.273 1.351-3.686 3.479-3.686 1.281 0 2.143.105 2.143.105v2.563h-1.443c-.915 0-1.344.336-1.344 1.347v1.84h2.693l-.346 2.842h-2.346v7.31h-2.835z"></path>
+</svg>
+      <!--<![endif]-->
+
+      <h1>Like this on Facebook</h1>
+
+      <div class="share_bar">
+        <div id="fb-root"></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=152926008054123"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script><div class="fb-like" data-href="https://madmimi.com/signups/160342/join" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+      </div>
+      <a class="close" href="#" data-share="facebook">&times;</a>
+
+
+      <span class="funk"></span>
+    </div>
+  </div>
+  <div id="mimio_share_twitter" class="mimio_share twitter" style="display:none;">
+    <div class="content">
+
+      <!--[if (gt IE 9)|!(IE)]><!-->
+       <svg class='iconsvg svg_twitter' viewBox='0 0 16 16' aria-hidden='true'>    <path class="twitter" d="M13.35 3.898c.593-.375 1.048-.969 1.263-1.676-.555.347-1.17.599-1.824.735-.524-.589-1.27-.957-2.097-.957-1.586 0-2.872 1.356-2.872 3.029 0 .237.025.469.074.69-2.387-.126-4.504-1.332-5.92-3.165-.247.447-.389.968-.389 1.523 0 1.051.507 1.978 1.278 2.522-.471-.016-.914-.152-1.301-.379v.038c0 1.468.99 2.692 2.304 2.971-.241.069-.495.106-.757.106-.185 0-.365-.019-.54-.054.366 1.203 1.426 2.079 2.683 2.104-.983.813-2.221 1.297-3.567 1.297-.232 0-.46-.014-.685-.042 1.271.86 2.781 1.361 4.403 1.361 5.283 0 8.172-4.616 8.172-8.619l-.008-.392c.561-.427 1.048-.961 1.433-1.568-.515.241-1.069.404-1.65.477z"></path>
+</svg>
+      <!--<![endif]-->
+
+      <h1>Share this mailing on Twitter</h1>
+
+      <div class="share_bar">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://madmimi.com/signups/160342/join" data-count="none" data-via="madmimi" data-related="madmimi" data-text="Join this great email list:">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <a class="close" href="#" data-share="twitter">&times;</a>
+
+
+      <span class="funk"></span>
+    </div>
+  </div>
+  <div id="mimio_share_plusone" class="mimio_share plusone" style="display:none;">
+    <div class="content">
+
+      <!--[if (gt IE 9)|!(IE)]><!-->
+       <svg class='iconsvg svg_plusone' viewBox='0 0 16 16' aria-hidden='true'>    <path fill="#000" class="gplus" d="M8.127 8.987l-.652-.509c-.198-.166-.47-.384-.47-.785 0-.402.271-.658.507-.894.759-.602 1.518-1.242 1.518-2.591 0-1.387-.867-2.117-1.283-2.463h1.121l1.176-.744h-3.564c-.978 0-2.387.233-3.419 1.09-.778.675-1.157 1.606-1.157 2.445 0 1.423 1.085 2.865 3.002 2.865.181 0 .379-.018.578-.037-.09.219-.18.402-.18.712 0 .565.288.912.543 1.24-.814.056-2.335.147-3.456.84-1.067.639-1.392 1.569-1.392 2.225 0 1.351 1.265 2.609 3.888 2.609 3.111 0 4.758-1.733 4.758-3.448 0-1.26-.723-1.88-1.519-2.555zm-2.369-2.098c-1.556 0-2.261-2.025-2.261-3.247 0-.476.09-.967.397-1.35.29-.365.795-.602 1.267-.602 1.5 0 2.278 2.043 2.278 3.357 0 .329-.036.911-.452 1.332-.291.292-.778.51-1.23.51zm.018 7.336c-1.935 0-3.183-.932-3.183-2.227s1.157-1.733 1.555-1.878c.759-.257 1.736-.293 1.899-.293l.415.018c1.376.985 1.973 1.477 1.973 2.409 0 1.13-.923 1.971-2.66 1.971zM13.951 6.978v-1.978h-.977v1.978h-1.974v.988h1.974v1.99h.977v-1.99h1.984v-.988h-1.984z"></path>
+</svg>
+      <!--<![endif]-->
+
+      <h1>Share on Google+</h1>
+
+      <div class="share_bar">
+        <g:plusone size="medium" width="32" height="20" data-url="https%3A%2F%2Fmadmimi.com%2Fsignups%2F160342%2Fjoin" class="plusone-share-button" annotation="none" data-text="Join this great email list: https://madmimi.com/signups/160342/join"></g:plusone><script type="text/javascript">(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
+      </div>
+      <a class="close" href="#" data-share="plusone">&times;</a>
+
+
+      <span class="funk"></span>
+    </div>
+  </div>
+  <div id="mimio_share_pinterest" class="mimio_share pinterest" style="display:none;">
+    <div class="content">
+
+      <!--[if (gt IE 9)|!(IE)]><!-->
+       <svg class='iconsvg svg_pinterest' viewBox='0 0 16 16' aria-hidden='true'>    <path class="pinterest" d="M8.302 2c-3.525 0-5.302 2.527-5.302 4.634 0 1.276.483 2.411 1.519 2.834.17.069.322.002.371-.186l.152-.595c.05-.186.03-.251-.107-.414-.299-.352-.49-.809-.49-1.455 0-1.875 1.403-3.553 3.653-3.553 1.992 0 3.087 1.217 3.087 2.843 0 2.139-.947 3.944-2.352 3.944-.776 0-1.357-.642-1.171-1.429.223-.94.655-1.954.655-2.632 0-.607-.326-1.114-1.001-1.114-.793 0-1.431.821-1.431 1.92 0 .7.237 1.174.237 1.174l-.954 4.042c-.283 1.2-.043 2.671-.022 2.819.012.088.125.109.176.042.073-.096 1.018-1.262 1.339-2.428.091-.33.522-2.039.522-2.039.258.492 1.011.925 1.812.925 2.385 0 4.003-2.174 4.003-5.084 0-2.201-1.864-4.25-4.697-4.25z"></path>
+</svg>
+      <!--<![endif]-->
+
+      <h1>Pin to Pinterest</h1>
+
+      <div class="share_bar">
+        <a href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fmadmimi.com%2Fsignups%2F160342%2Fjoin&media=https%3A%2F%2Fsnaps.madmimi.com%2Fv2%2Fthumbs.php%3Fsize%3Dl%26url%3Dhttps%253A%252F%252Fmadmimi.com%252Fsignups%252F160342%252Fjoin&description=Join+this+great+email+list%21" class="pin-it-button" count-layout="none" style="position:relative;top:1px"><img border="0" src="//assets.pinterest.com/images/PinExt.png" title="Pin It" /></a>
+      </div>
+      <a class="close" href="#" data-share="pinterest">&times;</a>
+
+
+      <span class="funk"></span>
+    </div>
+  </div>
+  <div id="mimio_share_linked_in" class="mimio_share linked_in" style="display:none;">
+    <div class="content">
+
+      <!--[if (gt IE 9)|!(IE)]><!-->
+       <svg class='iconsvg svg_linked_in' viewBox='0 0 16 16' aria-hidden='true'>    <path class="linked_in" d="M3 12v-6.231h2.143v6.231h-2.143zm1.078-6.923c-.664 0-1.078-.462-1.078-1.038.012-.59.413-1.039 1.065-1.039.652 0 1.078.449 1.078 1.039 0 .577-.413 1.038-1.053 1.038h-.012zm2.494 6.923h2.106v-3.4c0-.182.014-.364.069-.494.152-.364.499-.74 1.081-.74.762 0 1.067.558 1.067 1.377v3.257h2.106v-3.491c0-1.87-1.039-2.74-2.425-2.74-1.136 0-1.635.61-1.912 1.026h.014v-.883h-2.106c.028.571 0 6.088 0 6.088z"></path>
+</svg>
+      <!--<![endif]-->
+
+      <h1>Share on LinkedIn</h1>
+
+      <div class="share_bar">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fmadmimi.com%2Fsignups%2F160342%2Fjoin&amp;title=Join+this+email+list%21&amp;summary=I+recommend+signning+up+for+this+email+list." target=_"blank"><img src="https://madmimi.com/assets/linked_in_share.gif"></a>
+      </div>
+      <a class="close" href="#" data-share="linked_in">&times;</a>
+
+
+      <span class="funk"></span>
+    </div>
+  </div>
+<script type="text/javascript">
+	(function() {
+		var shares = ["facebook", "twitter", "pinterest", "plusone", "linked_in"];
+
+		for(var i = 0; i < shares.length; ++i) {
+			var share = shares[i];
+			document.getElementById(share).onclick = showShare;
+		}
+
+		var closeButtons = document.querySelectorAll(".close");
+		for(var i = 0; i < closeButtons.length; ++i) {
+			var button = closeButtons[i];
+			button.onclick = hideShare;
+		}
+
+		function showShare(e) {
+			document.getElementById("overlay_block").style.display = "block";
+			var overlay = document.getElementById("mimio_share_" + e.target.id);
+			overlay.style.display = "block";
+			overlay.className += " animation";
+		}
+
+		function hideShare(e) {
+	    document.getElementById("mimio_share_" + e.target.getAttribute("data-share")).style.display = "none";
+	    document.getElementById("overlay_block").style.display = "none";
+	    return false;
+	  }
+	})();
+</script>
+
+
+
+    </div>
+    <div class="mimi_webform_footer">
+          <a href="https://madmimi.com" title="Mad Mimi®. Simple. Lovely. Email Marketing." class="mimi_webform_powered_by
+    ui_dark    ">Powered by <em>Mad Mimi</em>&reg;<span>A GoDaddy&reg; company</span></a>
+    </div>
+  </div>
+</div>
+<script src="https://d1lggihq2bt4jo.cloudfront.net/assets/vendor/jquery-23a79485ab5898a608db617cd7ab074b08527a7982cc35b447e48324f3047315.js"></script>
+<script src="https://d2vnkn0bfhsarv.cloudfront.net/assets/gsap-a88d7e8ca3f88d6b794c6f0ef4d8ae8a13329dfd1dceb0e2b76970f4cb902aaf.js"></script>
+<script src="https://d1lggihq2bt4jo.cloudfront.net/assets/i18n-base-81f2cfc67338814065c586ca0b0993f699da2b96a27a85cb8971121e4dddddcb.js"></script>
+<script src="https://d2vnkn0bfhsarv.cloudfront.net/assets/i18n/en-64dedcb98e2df5d5c3c945465dcb4594547e98f580d1d88681b0198da3f62168.js"></script>
+<script>
+  I18n.defaultLocale = "en";
+  I18n.locale = "en";
+</script>
+
+<script>
+    
+</script>
+</body>
+</html>
