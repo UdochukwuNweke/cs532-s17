@@ -286,7 +286,7 @@ values they give you to be from 0 to 1.0.  Use the same tool on all
 note that these tools typically report on the domain rather than
 the page, so it's not entirely accurate.\\
 
-The complete url for Table 1 in in 10CompleteUrl.txt folder.
+
 
 
 \begin{table}[h!]
@@ -312,12 +312,37 @@ The complete url for Table 1 in in 10CompleteUrl.txt folder.
   \end{tabular}
 \end{table}
 
+\begin{table}[h!]
+  \centering
+  \caption{10 Hits for the term ``Russia'', ranked by AlexaRank}
+  \label{tab:pr}
+  \begin{tabular}{cl}
+    \toprule
+   AlexaRank               &URI \\
+    \midrule
+      135                  &\url{https://www.washingtonpost.com/}\\
+      202                 & \url{https://www.buzzfeed.com/}\\
+      261                 & \url{http://insider.foxnews.com/}\\
+      845                 & \url{http://www.latimes.com/}\\
+      901                 & \url{http://www.politico.com/}\\
+      1156                &\url{https://www.theatlantic.com/}\\
+      1191                & \url{http://www.express.co.uk/}\\
+      2462                & \url{http://variety.com/}\\
+      15728               & \url{http://www.ocregister.com/}\\
+      30729               & \url{http://100percentfedup.com/}\\
+
+    \bottomrule
+  \end{tabular}
+\end{table}
+
 \textbf{Solution 3:}\\
 1. Table 2 shows the Page Rank and normalized page rank for the 10 urls.\\
 
 2. I used the \url{http://pr.eyedomain.com/}\\ to get the page ranking for the 10 urls.\\ 
 
-3. Comparing the rankings produced in Table \ref{tab:idf} and \ref{tab:pr} shows that not all urls with high TFIDF have high page ranking.
+3. Comparing the rankings produced in Table \ref{tab:idf} and \ref{tab:pr} shows that not all urls with high TFIDF have high page ranking.\\
+
+The complete url for Table 1 in in 10CompleteUrl.txt file.
 \end{homeworkProblem}
 
 %----------------------------------------------------------------------------------------
