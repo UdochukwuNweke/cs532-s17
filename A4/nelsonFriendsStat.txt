@@ -1,0 +1,7 @@
+friendsDict.len: 154
+problematicFriendsCount: 11
+
+Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+7.0   134.0   266.5   359.0   446.8  3187.0
+
+standard dev: 371.5853

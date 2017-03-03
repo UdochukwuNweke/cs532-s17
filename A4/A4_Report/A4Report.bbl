@@ -1,0 +1,19 @@
+\begin{thebibliography}{1}
+
+\bibitem{BeautifulSoup}
+{P}ython {L}ibrary.
+\newblock
+  http://stackoverflow.com/questions/7785831/xml-parsing-in-python-using-beautifulsoup.
+\newblock Accessed: 2017-25-02.
+
+\bibitem{Tweepy}
+{T}weepy.
+\newblock http://www.tweepy.org/.
+\newblock Accessed: 2017-25-02.
+
+\bibitem{Twitter}
+{T}witter {API}.
+\newblock https://dev.twitter.com/.
+\newblock Accessed: 2017-23-02.
+
+\end{thebibliography}
