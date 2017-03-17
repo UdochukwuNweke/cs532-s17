@@ -1,0 +1,6 @@
+P1.py
+	Addresses the Implementation of Girvan-Newman Algorithm using igraph
+karate.graphml
+    contains Zachary Karate club graph data
+graph_plots
+	contains graph and subgraphs of karate club.

@@ -1,0 +1,26 @@
+\begin{thebibliography}{1}
+
+\bibitem{Igraph}
+Igraph.
+\newblock
+  http://lists.nongnu.org/archive/html/igraph-help/2008-11/msg00047.html.
+\newblock Accessed: 2017-10-03.
+
+\bibitem{zachary1977information}
+An {I}nformation {F}low {M}odel for {C}onflict and {F}ission in {S}mall
+  {G}roups.
+\newblock Accessed: 2017-10-03.
+
+\bibitem{girvan2002community}
+Michelle Girvan and Mark~EJ Newman.
+\newblock Community structure in social and biological networks.
+\newblock {\em Proceedings of the national academy of sciences},
+  99(12):7821--7826, 2002.
+
+\bibitem{lu2013edge}
+LongJason Lu and Minlu Zhang.
+\newblock Edge betweenness centrality.
+\newblock In {\em Encyclopedia of systems biology}, pages 647--648. Springer,
+  2013.
+
+\end{thebibliography}
