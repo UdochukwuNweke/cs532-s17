@@ -1,0 +1,650 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{caption}
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,menucolor=black,runcolor=black,urlcolor=black,bookmarks=true]{hyperref}
+\usepackage[table,svgnames]{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{natbib}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Perl} % Load Perl syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=Perl, % Use Perl in this example
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
+        keywordstyle=[2]\color{Purple}, % Perl function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard Perl functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put Perl function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{A7} % Assignment title
+\newcommand{\hmwkDueDate}{Thursday,\ April\ 6,\ 2017} % Due date
+\newcommand{\hmwkClass}{\ INTRO. TO WEB SCIENCE:\ CS 532} % Course/class
+\newcommand{\hmwkClassTime}{} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Dr. Nelson} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Udochukwu Nweke} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\newpage
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\begin{homeworkProblem}
+
+\lstinputlisting[caption=MovieLens Solutions Code, language=python]{P1-4.py}
+
+\lstinputlisting[caption=MovieLens Code, language=python]{recommendations.py}
+
+The goal of this project is to use the basic recommendation principles
+we have learned for user-collected data. You will modify the code
+given to you which performs movie recommendations from the MovieLense
+data sets.\\
+
+The MovieLense data sets were collected by the GroupLens Research
+Project at the University of Minnesota during the seven-month period
+from September 19th, 1997 through April 22nd, 1998.  We are using the 
+``100k dataset''; available for download from:
+\url{http://grouplens.org/datasets/movielens/100k/}
+
+There are three files which we will use:
+
+1.  u.data: 100,000 ratings by 943 users on 1,682 movies. Each
+user has rated at least 20 movies. Users and items are numbered
+consecutively from 1. The data is randomly ordered. This is a tab
+separated list of \\
+
+\begin{verbatim}
+user id | item id | rating | timestamp
+\end{verbatim}
+The time stamps are unix seconds since 1/1/1970 UTC.
+
+1.  Find 3 users who are closest to you in terms of age, 
+gender, and occupation.  For each of those 3 users:
+
+- what are their top 3 favorite films?
+- bottom 3 least favorite films?
+
+Based on the movie values in those 6 tables (3 users X (favorite +
+least)), choose a user that you feel is most like you.  Feel 
+free to note any outliers (e.g., ``I mostly identify with user 123,
+except I did not like ``Ghost'' at all'').  
+
+This user is the ``substitute you''. \\
+
+
+
+\textbf{Solution 1:}\\
+
+In order to find 3 users who are closest to me in terms of age, gender, and occupation: I read the user data into a dictionary, with the key as userid and values represented by a vector containing age, gender, and occupation.\\
+
+I created a mapping of Gender: Male represented by 1,  Female represented by 0 and occupation: the first occupation (Technician) represented by  0, second occupation (Other) represented by  1, third occupation (Writer)  -2,  student  -5,  etc. \\
+
+I used \textit{euclideanDistance()} in listing 1 to compute euclidean distance between my vector representing my age, gender and occupation [32, 0, 5] and each user, and \textit{getClosestTriple()}(Listing 1.) to retrieve the users closest to me. The result is seen in Table \ref{tab:3 Users closest to me}\\ 
+
+\begin{table}[h!]
+ \centering
+ \caption{My Closest Triple}
+  \label{tab:3 Users closest to me}
+    \begin{tabular}{ |l| l | l | l| l|}
+     \hline
+ User id & Age& Gender& Occupation& Euclidean Distance\\
+ \hline
+ 560&32& Male& Student & 1.0\\
+ \hline
+ 350&32&  Male& Student& 1.0\\
+ \hline
+ 890&32& Male& Student& 1.0\\
+ \hline
+ 
+
+   \end{tabular}
+ \end{table}
+
+
+I sorted based on their movie ratings and picked their top 3 ratings and bottom 3 ratings.  The result is seen in Table  \ref{tab:`350'  3 Top Favorite} through Table \ref{tab:`890' 3 Least Favorite}.\\
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{User `350' Top 3 Favorite Films}
+  \label{tab:`350'  3 Top Favorite}
+    \begin{tabular}{ | l | l | l|}
+     \hline
+ Item& Movie-Title& Rating\\
+ \hline
+ 1 &Gone with the Wind (1939)& 5.0\\
+ \hline
+ 2 &Casablanca (1942) &  5.0\\
+ \hline
+ 3 &Empire Strikes Back, The (1980) & 5.0\\
+ \hline
+ 
+ \end{tabular}
+\end{table}
+
+ 
+
+\begin{table}[h!]
+ \centering
+ \caption{User `350' 3 Least Favorite Films}
+  \label{tab:`350'  3 Least Favorite}
+    \begin{tabular}{ | l | l | l|}
+     \hline
+ Item& Movie-Title& Rating\\
+ \hline
+ 1 &Hunt for Red October, The (1990) & 2.0\\
+ \hline
+ 2 &M*A*S*H (1970) &  2.0\\
+ \hline
+ 3 &Contact (1997)& 3.0\\
+ \hline
+ \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{User `560' Top 3 Favorite Films}
+  \label{tab:`560'  3 Top Favorite}
+    \begin{tabular}{ | l | l | l|}
+     \hline
+ Item& Movie& Rating\\
+ \hline
+ 1 &Star Wars (1977) & 5.0\\
+ \hline
+ 2 &Chinatown (1974) &  5.0\\
+ \hline
+ 3 &: Alien (1979) & 5.0\\
+ \hline
+ 
+ \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{User `560'  3 Least Favorite Films}
+  \label{tab:`560'  3 Least Favorite}
+    \begin{tabular}{ | l | l | l|}
+     \hline
+ Item& Movie-Title& Rating\\
+ \hline
+ 1 &Event Horizon (1997)& 1.0\\
+ \hline
+ 2 &Kids in the Hall: Brain Candy (1996) &  1.0\\
+ \hline
+ 3 &Bed of Roses (1996)& 1.0\\
+ \hline
+ 
+ \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{User `890' Top 3 Favorite Films}
+  \label{tab:`890' Top 3 Favorite}
+    \begin{tabular}{ | l | l | l|}
+     \hline
+ Item& Movie-Title& Rating\\
+ \hline
+ 1 &To Kill a Mockingbird (1962) & 5.0\\
+ \hline
+ 2 &One Flew Over the Cuckoo's Nest (1975) &  5.0\\
+ \hline
+ 3 &Empire Strikes Back, The (1980) & 5.0\\
+ \hline
+ 
+ \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{User `890' 3 Least Favorite Films}
+  \label{tab:`890' 3 Least Favorite}
+    \begin{tabular}{ | l | l | l|}
+     \hline
+ Item& Movie-Title& Rating\\
+ \hline
+ 1 &Star Trek: The Motion Picture (1979) & 1.0\\
+ \hline
+ 2 &Ref, The (1994) &  1.0\\
+ \hline
+ 3 &Batman (1989)& 1.0\\
+ \hline
+ 
+ \end{tabular}
+\end{table}
+
+
+The substitute me will be user `350'.The only difference is that I didn't like M*A*S*H (1970) at all. I will probably rate it 1.0 if I had to.
+
+
+
+
+\end{homeworkProblem}
+%----------------------------------------------------------------------------------------
+% PROBLEM 2
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}
+
+Which 5 users are most correlated to the substitute you? Which
+5 users are least correlated (i.e., negative correlation)?\\
+
+\textbf{Solution 2:}\\
+ 
+In order to compute the users that are least correlated to the substitute me, which is user `350', I modified \textit{topMatches()} in listing 2 by adding option to reverse to get most correlated users. The \textit{topMatches()} gives the least correlated users by default. The result is seen in Table \ref{tab:5 Most Correalated Users} and Table \ref{tab:5 Least Correalated Users}\\
+
+
+ \begin{table}[h!]
+  \centering
+  \caption{5 Users Most Correlated to User `350'}
+   \label{tab:5 Most Correalated Users}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& User& Correlation Coefficient\\
+ \hline
+ 1 & 544 & 1.0\\
+ \hline
+ 2 & 939 &  1.0\\
+ \hline
+ 3 &915& 1.0\\
+ \hline
+ 4 &904& 1.0\\
+ \hline
+ 5 &888& 1.0\\
+ \hline
+ 
+     \end{tabular}
+  \end{table}
+
+ \begin{table}[h!]
+  \centering
+  \caption{5 Users Least Correlated to User `350'}
+   \label{tab:5 Least Correalated Users}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& User& Correlation Coefficient\\
+ \hline
+ 1 &133  & -1.0\\
+ \hline
+ 2 &166 &  -1.0\\
+ \hline
+ 3 &17& -1.0\\
+ \hline
+ 4 &172& -1.0\\
+ \hline
+ 5 &190& -1.0\\
+ \hline
+ 
+    \end{tabular}
+  \end{table}
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 3
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}
+
+Compute ratings for all the films that the substitute you
+have not seen.  Provide a list of the top 5 recommendations for films
+that the substitute you should see.  Provide a list of the bottom
+5 recommendations (i.e., films the substitute you is almost certain
+to hate).\\
+
+\textbf{Solution 3:}\\
+
+In order to recommend movies to  user 350, I used \textit{getRecommendations()} in listing 2 to compute the most recommended movies and least recommended movies by taking into account the movies  user 350 have not seen. Table \ref{tab:5 Most Recommended Movies} and Table \ref{tab:5 Least Recommended Movies} shows the top and least recommended movies for user 350 respectively. 
+
+
+ \begin{table}[h!]
+  \centering
+  \caption{5 Most Recommended Movies for User `350'}
+   \label{tab:5 Most Recommended Movies}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& Movie-Title& Rating\\
+ \hline
+ 1 &They Made Me a Criminal (1939) & 5.0\\
+ \hline
+ 2 &The Deadly Cure (1996) &  5.0\\
+ \hline
+ 3 &Someone Else's America (1995)& 5.0\\
+ \hline
+ 4 &Santa with Muscles (1996)& 5.0\\
+ \hline
+ 5 &Prefontaine (1997)& 5.0\\
+ \hline
+ 
+     \end{tabular}
+  \end{table}
+
+ \begin{table}[h!]
+  \centering
+  \caption{5 Least Recommendation Movies for User `350'}
+   \label{tab:5 Least Recommended Movies}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& Movie-Title& Rating\\
+ \hline
+ 1 &3 Ninjas: High Noon At Mega Mountain (1998) & 1.0\\
+ \hline
+ 2 &Amityville 1992: It's About Time (1992) &  1.0\\
+ \hline
+ 3 &Amityville: A New Generation (1993)& 1.0\\
+ \hline
+ 4 &Amityville: Dollhouse (1996)& 1.0\\
+ \hline
+ 5 &B*A*P*S (1997)& 1.0\\
+ \hline
+ 
+ \end{tabular}
+\end{table}
+
+\end{homeworkProblem}
+
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 4
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}
+
+Choose your (the real you, not the substitute you) favorite and
+least favorite film from the data.  For each film, generate a list
+of the top 5 most correlated and bottom 5 least correlated films.
+Based on your knowledge of the resulting films, do you agree with
+the results?  In other words, do you personally like / dislike
+the resulting films?\\
+
+\textbf{Solution 4:}\\
+
+I chose the  Beautician and the Beast, The (1997) as my favorite film and  Steal Big, Steal Little (1995) as my least favorite.  This because I have seen both movies.
+
+In order to generate a list of the top most correlated and bottom least correlated movies for my favorite and least favorite movies, I used \textit{calculateSimilarItems()} in listing 2. The result is seen from Table \ref{tab:5 Most Correlated Movies to Beautician and the Beast} through Table \ref{tab:5 Least Correlated Movies to Steal Big, Steal Little}\\ 
+
+I agree with the resulting films in Table \ref{tab:5 Most Correlated Movies to Beautician and the Beast} and Table \ref{tab:5 Least Correlated Movies Beautician and the Beast}. Except for Twin Town in Table \ref{tab:5 Most Correlated Movies to Beautician and the Beast}. I would have included it in least correlated movies in Table \ref{tab:5 Least Correlated Movies Beautician and the Beast}.
+
+For my least favorite film, I totally agree with the resulting films in Table \ref{tab:5 Most Correlated Movies to Steal Big, Steal Little} and Table \ref{tab:5 Least Correlated Movies to Steal Big, Steal Little} .  
+
+\begin{table}[h!]
+  \centering
+  \caption{5  Most Correlated Movies to `Beautician and the Beast'}
+   \label{tab:5 Most Correlated Movies to Beautician and the Beast}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& Movie-Title& Similarity Rate\\
+ \hline
+ 1 &Wild America (1997) & 1.0\\
+ \hline
+ 2 &Welcome To Sarajevo (1997) &  1.0\\
+ \hline
+ 3 &Warriors of Virtue (1997)'& 1.0\\
+ \hline
+ 4 &Twisted (1996)& 1.0\\
+ \hline
+ 5 &Twin Town (1997)& 1.0\\
+ \hline
+ 
+     \end{tabular}
+  \end{table}
+
+\begin{table}[h!]
+  \centering
+  \caption{5 Least Correlated Movies To Beautician and the Beast}
+   \label{tab:5 Least Correlated Movies Beautician and the Beast}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& Movie-Title& Similarity Rate\\
+ \hline
+ 1 &Til There Was You (1997)) & 0\\
+ \hline
+ 2 &8 Seconds (1994) &  0\\
+ \hline
+ 3 &A Chef in Love (1996)& 0\\
+ \hline
+ 4 &Above the Rim (1994)& 0\\
+ \hline
+ 5 &Across the Sea of Time (1995)& 0\\
+ \hline
+ 
+     \end{tabular}
+  \end{table}
+
+  \begin{table}[h!]
+  \centering
+  \caption{5 Most Correlated Movies To Steal Big, Steal Little (1995)}
+   \label{tab:5 Most Correlated Movies to Steal Big, Steal Little}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& Movie-Title& Similarity Rate\\
+ \hline
+ 1 &Yankee Zulu (1994) & 1.0\\
+ \hline
+ 2 &Wyatt Earp (1994) &  1.0\\
+ \hline
+ 3 &Woman in Question, The (1950)& 1.0\\
+ \hline
+ 4 &Withnail and I (1987)& 1.0\\
+ \hline
+ 5 &Wishmaster (1997)& 1.0\\
+ \hline
+ 
+     \end{tabular}
+  \end{table}
+
+ \begin{table}[h!]
+  \centering
+  \caption{5 Least Correlated Movies To Steal Big, Steal Little (1995)}
+   \label{tab:5 Least Correlated Movies to Steal Big, Steal Little}
+     \begin{tabular}{ | l | l | l| }
+      \hline
+ Item& Movie-Title& Similarity Rate\\
+ \hline
+ 1 &Til There Was You (1997) & 0\\
+ \hline
+ 2 &87 (1997) &  0\\
+ \hline
+ 3 &3 Ninjas: High Noon At Mega Mountain (1998)& 0\\
+ \hline
+ 4 &39 Steps, The (1935)& 0\\
+ \hline
+ 5 &8 Heads in a Duffel Bag (1997)& 0\\
+ \hline
+ 
+     \end{tabular}
+  \end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{homeworkProblem}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{A7Ref}
+
+\end{document}
