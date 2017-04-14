@@ -1,0 +1,112 @@
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+
+cluster 0
+	Who needs a TV?
+	Me fala uma música boa aí
+	adrianoblog
+	Yestermorrow
+	earenjoy
+	ORGANMYTH
+	MTJR RANTS & RAVES ON MUSIC
+	fractalpress.gr
+	Words
+	Unexpectedly Bart (King!)
+	|[Tu queres ver isto]|
+	Green Eggs and Ham Mondays 8-10am
+	SPACE KiDZ a GoGo
+	One Stunning Single Egg
+	tumbleweed
+	Music-Drop Magazine
+	Stories From the City, Stories From the Sea
+	The Themes of My Life
+	Abu Everyday
+	LA BOUTIQUE
+	Visual Feeling
+	Riley Haas' blog
+	Δίσκοι Μουσικής στο Χρόνο
+cluster 1
+	Some Call It Noise....
+	GLI Press
+	SunStock Music
+	the fast break of champions
+	Oh Yes Jónsi!!
+	Steel City Rust
+	Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies
+	www.doginasweater.com Live Show Review Archive
+	Encore
+	F-Measure
+	the fast break of champions
+	The Stark Online
+	World Of Pearl Jam Bootlegs
+	The Jeopardy of Contentment
+	.
+	Floorshime Zipper Boots
+	Bleak Bliss
+	FOLK IS NOT HAPPY
+	from a voice plantation
+	It'll Glow On You
+	I/LOVE/TOTAL/DESTRUCTION
+	Cuz Music Rocks
+	CardrossManiac2
+	sweeping the kitchen
+	*Sixeyes: by Alan Williamson
+	aubade
+cluster 2
+	A Day in the Life of...Me!!
+	Room 19's Blog 2016
+	Hip In Detroit
+	Happy Accidents
+	Mile In Mine
+	CLOUDBUSTING
+	The Girl at the Rock Show
+	She May Be Naked
+	She's mad but she's magic. There's no lie in her fire.
+	What A Wonderful World
+	isyeli's
+	Morgan's Blog
+	STANLEY SAYS
+	Diagnosis: No Radio
+	The Stearns Family
+	MarkEOrtega's Journalism Portfolio
+	Cherry Area
+	Angie Dynamo
+	Sonology
+	bittersweet
+	The Perfect Vent
+	Kid F
+	nonsense a la mode
+	Pithy Title Here
+cluster 3
+	@65 Sounding Booth
+	Tremagazine
+	Everything Starts With an A...
+	U-Rock Radio™
+	If You Give a Girl a Camera...
+	In the Frame Film Reviews
+	Mystic Chords Of Memory
+	funky little demons
+cluster 4
+	macthemost
+	Stonehill Sketchbook
+	Avidd Wallows' Blog
+	Web Science and Digital Libraries Research Group
+	Chantelle Swain A2 Media Studies
+	ΜΕΣΑ ΣΤΗ ΒΡΩΜΙΑ
+	T H E V O I D S
+	Spinitron Charts
+	the traveling neighborhood
+	Bonjour Girl
+	juanbook
+	MarkFisher's-MusicReview
+	Punk Rock Teaching
+	Chemical Robert!
+	Myopiamuse
+	Stephanie Veto Photography
+	A2 MEDIA COURSEWORK JOINT BLOG
+	Make Up, Music & Fashion
+	STATUS

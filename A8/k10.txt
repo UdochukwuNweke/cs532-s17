@@ -1,0 +1,118 @@
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+Iteration 4
+Iteration 5
+Iteration 6
+
+cluster 0
+	Everything Starts With an A...
+	U-Rock Radio™
+	World Of Pearl Jam Bootlegs
+	Bleak Bliss
+	I/LOVE/TOTAL/DESTRUCTION
+	funky little demons
+	Riley Haas' blog
+cluster 1
+	Who needs a TV?
+	@65 Sounding Booth
+	ORGANMYTH
+	ΜΕΣΑ ΣΤΗ ΒΡΩΜΙΑ
+	Green Eggs and Ham Mondays 8-10am
+	One Stunning Single Egg
+	Chemical Robert!
+	Stories From the City, Stories From the Sea
+	If You Give a Girl a Camera...
+cluster 2
+	Tremagazine
+	A Day in the Life of...Me!!
+	Room 19's Blog 2016
+	Hip In Detroit
+	Mile In Mine
+	CLOUDBUSTING
+	Morgan's Blog
+	juanbook
+	The Stearns Family
+	Punk Rock Teaching
+	MarkEOrtega's Journalism Portfolio
+	Angie Dynamo
+	Stephanie Veto Photography
+	sweeping the kitchen
+	nonsense a la mode
+cluster 3
+	Me fala uma música boa aí
+	adrianoblog
+	Words
+	|[Tu queres ver isto]|
+	She's mad but she's magic. There's no lie in her fire.
+	isyeli's
+	tumbleweed
+	The Themes of My Life
+cluster 4
+	Yestermorrow
+cluster 5
+	SunStock Music
+	Encore
+	*Sixeyes: by Alan Williamson
+cluster 6
+	GLI Press
+	the fast break of champions
+	Oh Yes Jónsi!!
+	Steel City Rust
+	www.doginasweater.com Live Show Review Archive
+	F-Measure
+	the fast break of champions
+	The Girl at the Rock Show
+	Bonjour Girl
+	The Jeopardy of Contentment
+	Myopiamuse
+	from a voice plantation
+	It'll Glow On You
+	Cuz Music Rocks
+	CardrossManiac2
+	Pithy Title Here
+	aubade
+cluster 7
+	Some Call It Noise....
+	MTJR RANTS & RAVES ON MUSIC
+	fractalpress.gr
+	Happy Accidents
+	Unexpectedly Bart (King!)
+	T H E V O I D S
+	Spinitron Charts
+	She May Be Naked
+	SPACE KiDZ a GoGo
+	What A Wonderful World
+	STANLEY SAYS
+	Diagnosis: No Radio
+	Music-Drop Magazine
+	Cherry Area
+	Sonology
+	In the Frame Film Reviews
+	bittersweet
+	A2 MEDIA COURSEWORK JOINT BLOG
+	The Perfect Vent
+	Kid F
+	Make Up, Music & Fashion
+	LA BOUTIQUE
+	Visual Feeling
+	Δίσκοι Μουσικής στο Χρόνο
+cluster 8
+	earenjoy
+	Abu Everyday
+cluster 9
+	macthemost
+	Stonehill Sketchbook
+	Avidd Wallows' Blog
+	Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies
+	Web Science and Digital Libraries Research Group
+	Chantelle Swain A2 Media Studies
+	The Stark Online
+	the traveling neighborhood
+	MarkFisher's-MusicReview
+	.
+	Floorshime Zipper Boots
+	FOLK IS NOT HAPPY
+	Mystic Chords Of Memory
+	STATUS

@@ -1,0 +1,122 @@
+Iteration 0
+Iteration 1
+Iteration 2
+Iteration 3
+
+cluster 0
+	A Day in the Life of...Me!!
+	Room 19's Blog 2016
+	Happy Accidents
+	Mile In Mine
+	She May Be Naked
+	What A Wonderful World
+	Morgan's Blog
+	juanbook
+	Diagnosis: No Radio
+	The Stearns Family
+	Punk Rock Teaching
+	Myopiamuse
+	Sonology
+	nonsense a la mode
+	Pithy Title Here
+	Riley Haas' blog
+cluster 1
+	Me fala uma música boa aí
+	adrianoblog
+	fractalpress.gr
+	Unexpectedly Bart (King!)
+	Spinitron Charts
+	LA BOUTIQUE
+	Δίσκοι Μουσικής στο Χρόνο
+cluster 2
+	Oh Yes Jónsi!!
+	CLOUDBUSTING
+	Bonjour Girl
+	Angie Dynamo
+	Make Up, Music & Fashion
+cluster 3
+	Who needs a TV?
+	@65 Sounding Booth
+	ΜΕΣΑ ΣΤΗ ΒΡΩΜΙΑ
+	Green Eggs and Ham Mondays 8-10am
+	Chemical Robert!
+	Stories From the City, Stories From the Sea
+	If You Give a Girl a Camera...
+cluster 4
+	World Of Pearl Jam Bootlegs
+	Bleak Bliss
+cluster 5
+	GLI Press
+	Tremagazine
+	the fast break of champions
+	F-Measure
+	The Stark Online
+	The Jeopardy of Contentment
+	I/LOVE/TOTAL/DESTRUCTION
+	*Sixeyes: by Alan Williamson
+	aubade
+cluster 6
+	Yestermorrow
+	|[Tu queres ver isto]|
+cluster 7
+	Some Call It Noise....
+	MTJR RANTS & RAVES ON MUSIC
+	Everything Starts With an A...
+	U-Rock Radio™
+	SPACE KiDZ a GoGo
+cluster 8
+	MarkFisher's-MusicReview
+	Floorshime Zipper Boots
+	FOLK IS NOT HAPPY
+cluster 9
+	ORGANMYTH
+	isyeli's
+	It'll Glow On You
+cluster 10
+	SunStock Music
+	Steel City Rust
+	www.doginasweater.com Live Show Review Archive
+	Encore
+	The Girl at the Rock Show
+	from a voice plantation
+	Cuz Music Rocks
+	CardrossManiac2
+cluster 11
+	Hip In Detroit
+	MarkEOrtega's Journalism Portfolio
+	sweeping the kitchen
+cluster 12
+	earenjoy
+	Abu Everyday
+cluster 13
+	T H E V O I D S
+	STANLEY SAYS
+	Music-Drop Magazine
+	Cherry Area
+	In the Frame Film Reviews
+	Mystic Chords Of Memory
+	Kid F
+	Visual Feeling
+cluster 14
+	.
+cluster 15
+	macthemost
+	Stonehill Sketchbook
+	Avidd Wallows' Blog
+	Advanced Portfolio - Josh Pamfilo - Candidate Number 2186 - Centre Number 16607 - A2 Media Studies
+	Web Science and Digital Libraries Research Group
+	Chantelle Swain A2 Media Studies
+	the traveling neighborhood
+	Stephanie Veto Photography
+	A2 MEDIA COURSEWORK JOINT BLOG
+	STATUS
+cluster 16
+	Words
+	the fast break of champions
+	She's mad but she's magic. There's no lie in her fire.
+	One Stunning Single Egg
+	tumbleweed
+	bittersweet
+	The Themes of My Life
+	funky little demons
+	The Perfect Vent
