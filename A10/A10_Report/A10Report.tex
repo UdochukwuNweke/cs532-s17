@@ -1,0 +1,546 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{caption}
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,menucolor=black,runcolor=black,urlcolor=black,bookmarks=true]{hyperref}
+\usepackage[table,svgnames]{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{underscore}
+\usepackage{subfigure}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Perl} % Load Perl syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=Perl, % Use Perl in this example
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
+        keywordstyle=[2]\color{Purple}, % Perl function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard Perl functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put Perl function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{A10} % Assignment title
+\newcommand{\hmwkDueDate}{Monday,\ May\ 1,\ 2017} % Due date
+\newcommand{\hmwkClass}{\ INTRO. TO WEB SCIENCE:\ CS 532} % Course/class
+\newcommand{\hmwkClassTime}{} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Dr. Nelson} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Udochukwu Nweke} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\newpage
+\tableofcontents
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\begin{homeworkProblem}
+
+\lstinputlisting[caption= Computing K Nearest Neighbours Code, language=python]{P1.py}
+
+\lstinputlisting[caption=Pci Code, language=python]{numpredict.py}
+
+Support your answer: include all relevant discussion, assumptions,
+examples, etc.\\
+
+  Using the data from A8:\\
+
+Consider each row in the blog-term matrix as a 1000 dimension vector, 
+corresponding to a blog.\\  
+
+- From chapter 8, replace numpredict.euclidean() with cosine as the 
+distance metric.  In other words, you'll be computing the cosine between
+vectors of 1000 dimensions.\\  
+
+- Use knnestimate() to compute the nearest neighbors for both:
+
+\url{http://f-measure.blogspot.com/}\\
+\url{http://ws-dl.blogspot.com/}
+
+for k={1,2,5,10,20}.\\
+
+
+
+\textbf{Solution 1:}\\
+
+1. I extracted vectors of  \url{http://f-measure.blogspot.com/} and \url{http://ws-dl.blogspot.com/} from blog-term matrix and considered each row as a 1000 dimension vector. \textit{blogMatrix} was created in Assignment 8. This was achieved by using \textit{do_readfile()} and  \textit{createVectorData()} in listing 1.\\
+
+2. In order to computer cosine similarity between vectors of 1000 dimension (in blogMatix.txt) and  \url{http://f-measure.blogspot.com/} and \url{http://ws-dl.blogspot.com/} blog, I modified Pci \textit{numpredic.py} code by adding line 40-65 in listing 2 which replaced euclidean distance function with cosine similarity function.\\
+
+3. In order to compute K nearest neigbbors for \url{http://f-measure.blogspot.com/} and \url{http://ws-dl.blogspot.com/}, I used \textit{knnestimate()} in listing 1 to computer  for k={1,2,5,10,20} nearest neighbors respectively. The result for \url{http://f-measure.blogspot.com/} K Neighbors  is seen from Table \ref{tab:K=1 Neighbors} to Table \ref{tab:K=20 Neighbors}.  The result for \url{http://ws-dl.blogspot.com/} K Neighbors  is seen from Table \ref{tab:K=1 Neighbor wsdl} to Table \ref{tab:K=20 Neighbors wsdl}.
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 1 Nearest Neighbors f-measure}
+  \label{tab:K=1 Neighbors}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=1 & Nearest Neighbors\\
+ \hline
+ 1&the fast break of champions \\
+ \hline
+ \end{tabular}
+ \end{table}
+
+
+ \begin{table}[h!]
+ \centering
+ \caption{K= 2 Nearest Neighbors f-measure}
+  \label{tab:K=2 Neighbors}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=2 & Nearest Neighbors\\
+ \hline
+ 1&the fast break of champions \\
+ \hline
+ 2&The Jeopardy of Contentment\\
+ \hline
+
+ \end{tabular}
+ \end{table}
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 5 Nearest Neighbors f-measure}
+  \label{tab:K=5 Neighbors}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=5 & Nearest Neighbors\\
+ \hline
+ 1&the fast break of champions \\
+ \hline
+ 2&The Jeopardy of Contentment\\
+ \hline
+ 3&The Girl at the Rock Show\\
+ \hline
+ 4&I/LOVE/TOTAL/DESTRUCTION\\
+ \hline
+ 5&Cherry Area\\
+ \hline
+
+\end{tabular}
+ \end{table}
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 10 Nearest Neighbors f-measure}
+  \label{tab:K=10 Neighbors}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=10 & Nearest Neighbors\\
+ \hline
+ 1&the fast break of champions \\
+ \hline
+ 2&The Jeopardy of Contentment\\
+ \hline
+ 3&The Girl at the Rock Show\\
+ \hline
+ 4&I/LOVE/TOTAL/DESTRUCTION\\
+ \hline
+ 5&Cherry Area\\
+ \hline
+ 6&SunStock Music\\
+ \hline
+ 7&In the Frame Film Reviews\\
+ \hline
+ 8&CardrossManiac2\\
+ \hline
+ 9&Encore\\
+ \hline
+ 10&The Stark Online\\
+ \hline
+
+ \end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 20 Nearest Neighbors f-measure}
+  \label{tab:K=20 Neighbors}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=20 & Nearest Neighbors\\
+ \hline
+ 1&the fast break of champions \\
+ \hline
+ 2&The Jeopardy of Contentment\\
+ \hline
+ 3&The Girl at the Rock Show\\
+ \hline
+ 4&I/LOVE/TOTAL/DESTRUCTION\\
+ \hline
+ 5&Cherry Area\\
+ \hline
+ 6&SunStock Music\\
+ \hline
+ 7&In the Frame Film Reviews\\
+ \hline
+ 8&CardrossManiac2\\
+ \hline
+ 9&Encore\\
+ \hline
+ 10&The Stark Online\\
+ \hline
+ 11&Steel City Rust\\
+ \hline
+ 12&Diagnosis: No Radio\\
+ \hline
+ 13&www.doginasweater.com Live Show Review Archive\\
+ \hline
+ 14&Some Call It Noise....\\
+ \hline
+ 15&15 Cuz Music Rocks\\
+ \hline
+ 16&She May Be Naked\\
+ \hline
+ 17&GLI Press\\
+ \hline
+ 18&Morgan's Blog\\
+ \hline
+ 19&the fast break of champions\\
+ \hline
+ 20&Pithy Title Here\\
+ \hline
+
+ \end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 1 Nearest Neighbor WSDL}
+  \label{tab:K=1 Neighbor wsdl}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=1 & Nearest Neighbors\\
+ \hline
+ 1&tmacthemost \\
+ \hline
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 2 Nearest Neighbors WSDL}
+  \label{tab:K=2 Neighbors wsdl}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=2 & Nearest Neighbors\\
+ \hline
+ 1&tmacthemost \\
+ \hline
+ 2&the traveling neighborhood\\
+ \hline
+
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 5 Nearest Neighbors WSDL}
+  \label{tab:K=5 Neighbors wsdl}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=5 & Nearest Neighbors\\
+ \hline
+ 1&tmacthemost \\
+ \hline
+ 2&the traveling neighborhood\\
+ \hline
+ 3&MarkFisher's-MusicReview\\
+ \hline
+ 4&Bonjour Girl\\
+ \hline
+ 5&Avidd Wallows' Blog\\
+ \hline
+
+\end{tabular}
+\end{table}
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 10 Nearest Neighbors WSDL}
+  \label{tab:K=10 Neighbors wsdl}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=10 & Nearest Neighbors\\
+ \hline
+ 1&tmacthemost \\
+ \hline
+ 2&the traveling neighborhood\\
+ \hline
+ 3&MarkFisher's-MusicReview\\
+ \hline
+ 4&Bonjour Girl\\
+ \hline
+ 5&Avidd Wallows' Blog\\
+ \hline
+ 6&STATUS\\
+ \hline
+ 7&Cherry Area\\
+ \hline
+ 8&A2 MEDIA COURSEWORK JOINT BLOG\\
+ \hline
+ 9&The Stark Online\\
+ \hline
+ 10&Pithy Title Here\\
+ \hline
+
+\end{tabular}
+\end{table}
+
+
+\begin{table}[h!]
+ \centering
+ \caption{K= 20 Nearest Neighbors WSDL}
+  \label{tab:K=20 Neighbors wsdl}
+    \begin{tabular}{ |l| l | }
+     \hline
+ K=20 & Nearest Neighbors\\
+ \hline
+ 1&tmacthemost \\
+ \hline
+ 2&the traveling neighborhood\\
+ \hline
+ 3&MarkFisher's-MusicReview\\
+ \hline
+ 4&Bonjour Girl\\
+ \hline
+ 5&Avidd Wallows' Blog\\
+ \hline
+ 6&STATUS\\
+ \hline
+ 7&Cherry Area\\
+ \hline
+ 8&A2 MEDIA COURSEWORK JOINT BLOG\\
+ \hline
+ 9&The Stark Online\\
+ \hline
+ 10&Pithy Title Here\\
+ \hline
+ 11&Floorshime Zipper Boots\\
+ \hline
+ 12&juanbook\\
+ \hline
+ 13&Punk Rock Teaching\\
+ \hline
+ 14&Chantelle Swain A2 Media Studies\\
+ \hline
+ 15&Myopiamuse\\
+ \hline
+ 16&She May Be Naked\\
+ \hline
+ 17&Kid F\\
+ \hline
+ 18&the fast break of champions\\
+ \hline
+ 19&tDiagnosis: No Radio\\
+ \hline
+ 20&20 Mile In Mine\\
+ \hline
+
+ \end{tabular}
+\end{table}
+
+
+
+\end{homeworkProblem}
+%----------------------------------------------------------------------------------------
+% PROBLEM 2
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 3
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+\nocite{*}\clearpage
+\bibliographystyle{plain}
+\bibliography{A10Ref}
+
+
+\end{document}
