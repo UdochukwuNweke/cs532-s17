@@ -1,0 +1,50 @@
+TITLE <> PROB <> PREDICTED-LABEL <> ACTUAL-LABEL
+This Week: Sun, Sea & Tapas <> 0.24341453051975645 <> style <> style
+Five Years of Topshop Beauty <> 0.24341453051975645 <> beauty <> beauty
+Cherry Blossoms & Tulle <> 0.24341453051975645 <> style <> style
+Current Skincare Favourites & Morning/Evening Routine <> 0.17096083442702217 <> beauty <> beauty
+April Favourites <> 0.22039180765805877 <> beauty <> misc
+This Week: A Magical Disney Weekend! <> 0.4782781984854524 <> misc <> lifestyle
+I Went to Sephora and Only Bought One Thing <> 0.14726883255980008 <> beauty <> misc
+Boots Beaty Haul & First Impressions <> 0.26362038664323373 <> beauty <> misc
+This Week: Bonjour Paris! <> 0.1438049481975357 <> beauty <> lifestyle
+Budget Dupes & Drugstore Beauty Alternatives <> 0.26362038664323373 <> beauty <> misc
+Nutella Stuffed Chocolate Chip Cookies <> 0.1534788540245566 <> misc <> misc
+I Covet Thee Turns Four! <> 0.658720200752823 <> misc <> lifestyle
+March Favourites <> 1.0 <> beauty <> misc
+My Everyday Make Up Bag & Routine <> 0.23814678501840225 <> beauty <> misc
+This Week: Charlotte Tilbury X Norman Parkinson <> 1.0 <> beauty <> lifestyle
+The Best Budget Micellar Water <> 0.22039180765805877 <> beauty <> beauty
+This Week: The South's Best Mac & Cheese <> 0.24341453051975645 <> misc <> lifestyle
+This Week: The South's Best Mac & Cheese <> 0.24341453051975645 <> misc <> misc
+February Favourites <> 0.24341453051975645 <> beauty <> misc
+Hair Chat: Favourite Products & Styling Routine <> 0.24341453051975645 <> beauty <> misc
+Topshop, Asos & Missguided Haul <> 0.38723501951480827 <> style <> misc
+A Little Trip to Paris <> 0.26362038664323373 <> beauty <> misc
+January Favourites <> 0.1534788540245566 <> beauty <> misc
+The Best Healthy Cookies <> 0.1534788540245566 <> beauty <> misc
+Disappointing Products <> 0.26362038664323373 <> beauty <> misc
+This Week: Lunch at Jamie's <> 0.24341453051975645 <> misc <> misc
+Drugstore Make Up Favourites <> 0.24341453051975645 <> misc <> misc
+Minimal Make Up Routine <> 0.1534788540245566 <> beauty <> misc
+Wear It, Beat It <> 0.14726883255980008 <> beauty <> style
+This Week: Meet Up's & Halloumi Overload <> 0.1438049481975357 <> beauty <> misc
+Three New Year's Lifestyle Resolutions <> 0.3983390468832988 <> beauty <> lifestle
+Best of Beauty in 2014 <> 0.3470031545741325 <> beauty <> beauty
+Summing Up Vlogmas <> 0.14726883255980008 <> misc <> misc
+The Post-NYE Saviour <> 0.24341453051975645 <> beauty <> misc
+December Favourites <> 0.423728813559322 <> beauty <> misc
+The Best of I Covet Thee in 2014 <> 0.17096083442702217 <> beauty <> style
+Beauty Sales Picks <> 0.19981183221395235 <> beauty <> beauty
+The Pre-Christmas Pamper | #ICovetChristmas <> 0.24341453051975645 <> beauty <> misc
+Christmas Q&A With Suzie! | #ICovetChristmas <> 0.38723501951480827 <> misc <> misc
+The Christmas Jumper | #ICovetChristmas <> 0.2484378528946774 <> beauty <> misc
+Christmas Party Make Up | #ICovetChristmas <> 0.24341453051975645 <> misc <> misc
+Serozinc Comes to the UK <> 0.24341453051975645 <> misc <> misc
+Three Winter Coats <> 0.14726883255980008 <> beauty <> misc
+Winter Skincare Staples <> 0.1733011238315303 <> beauty <> misc
+November Favourites <> 0.24341453051975645 <> misc <> misc
+What's On My Christmas List <> 0.24341453051975645 <> beauty <> style
+Weekend Vlog: Christmas Markets & Crepes <> 0.15489010178492404 <> misc <> misc
+Jennifer Lawrence Inspired Drugstore Make Up Look <> 0.2844418905329694 <> misc <> beauty
+Autumn Beauty Haul <> 0.21266540642722118 <> misc <> beauty

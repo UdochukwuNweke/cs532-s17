@@ -1,0 +1,750 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Programming/Coding Assignment
+% LaTeX Template
+%
+% This template has been downloaded from:
+% http://www.latextemplates.com
+%
+% Original author:
+% Ted Pavlic (http://www.tedpavlic.com)
+%
+% Note:
+% The \lipsum[#] commands throughout this template generate dummy text
+% to fill the template out. These commands should all be removed when 
+% writing assignment content.
+%
+% This template uses a Perl script as an example snippet of code, most other
+% languages are also usable. Configure them in the "CODE INCLUSION 
+% CONFIGURATION" section.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage[usenames,dvipsnames]{color} % Required for custom colors
+\usepackage{graphicx} % Required to insert images
+\usepackage{caption}
+\usepackage{listings} % Required for insertion of code
+\usepackage{courier} % Required for the courier font
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[colorlinks=true,linkcolor=black,anchorcolor=black,citecolor=black,menucolor=black,runcolor=black,urlcolor=black,bookmarks=true]{hyperref}
+\usepackage[table,svgnames]{xcolor}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{natbib}
+\usepackage{underscore}
+\usepackage{subfigure}
+
+% Margins
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1} % Line spacing
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName} % Top left header
+\chead{\hmwkClass\ (\hmwkClassInstructor\ \hmwkClassTime): \hmwkTitle} % Top center head
+\rhead{\firstxmark} % Top right header
+\lfoot{\lastxmark} % Bottom left footer
+\cfoot{} % Bottom center footer
+\rfoot{Page\ \thepage\ of\ \protect\pageref{LastPage}} % Bottom right footer
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	CODE INCLUSION CONFIGURATION
+%----------------------------------------------------------------------------------------
+
+\definecolor{MyDarkGreen}{rgb}{0.0,0.4,0.0} % This is the color used for comments
+\lstloadlanguages{Perl} % Load Perl syntax for listings, for a list of other languages supported see: ftp://ftp.tex.ac.uk/tex-archive/macros/latex/contrib/listings/listings.pdf
+\lstset{language=Perl, % Use Perl in this example
+        frame=single, % Single frame around code
+        basicstyle=\small\ttfamily, % Use small true type font
+        keywordstyle=[1]\color{Blue}\bf, % Perl functions bold and blue
+        keywordstyle=[2]\color{Purple}, % Perl function arguments purple
+        keywordstyle=[3]\color{Blue}\underbar, % Custom functions underlined and blue
+        identifierstyle=, % Nothing special about identifiers                                         
+        commentstyle=\usefont{T1}{pcr}{m}{sl}\color{MyDarkGreen}\small, % Comments small dark green courier font
+        stringstyle=\color{Purple}, % Strings are purple
+        showstringspaces=false, % Don't put marks in string spaces
+        tabsize=5, % 5 spaces per tab
+        %
+        % Put standard Perl functions not included in the default language here
+        morekeywords={rand},
+        %
+        % Put Perl function parameters here
+        morekeywords=[2]{on, off, interp},
+        %
+        % Put user defined functions here
+        morekeywords=[3]{test},
+       	%
+        morecomment=[l][\color{Blue}]{...}, % Line continuation (...) like blue comment
+        numbers=left, % Line numbers on left
+        firstnumber=1, % Line numbers start with line 1
+        numberstyle=\tiny\color{Blue}, % Line numbers are blue and small
+        stepnumber=5 % Line numbers go in steps of 5
+}
+
+% Creates a new command to include a perl script, the first parameter is the filename of the script (without .pl), the second parameter is the caption
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT STRUCTURE COMMANDS
+%	Skip this unless you know what you're doing
+%----------------------------------------------------------------------------------------
+
+% Header and footer for when a page split occurs within a problem environment
+\newcommand{\enterProblemHeader}[1]{
+\nobreak\extramarks{#1}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+}
+
+% Header and footer for when a page split occurs between problem environments
+\newcommand{\exitProblemHeader}[1]{
+\nobreak\extramarks{#1 (continued)}{#1 continued on next page\ldots}\nobreak
+\nobreak\extramarks{#1}{}\nobreak
+}
+
+\setcounter{secnumdepth}{0} % Removes default section numbers
+\newcounter{homeworkProblemCounter} % Creates a counter to keep track of the number of problems
+
+\newcommand{\homeworkProblemName}{}
+\newenvironment{homeworkProblem}[1][Problem \arabic{homeworkProblemCounter}]{ % Makes a new environment called homeworkProblem which takes 1 argument (custom name) but the default is "Problem #"
+\stepcounter{homeworkProblemCounter} % Increase counter for number of problems
+\renewcommand{\homeworkProblemName}{#1} % Assign \homeworkProblemName the name of the problem
+\section{\homeworkProblemName} % Make a section in the document with the custom problem count
+\enterProblemHeader{\homeworkProblemName} % Header and footer within the environment
+}{
+\exitProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+\newcommand{\problemAnswer}[1]{ % Defines the problem answer command with the content as the only argument
+\noindent\framebox[\columnwidth][c]{\begin{minipage}{0.98\columnwidth}#1\end{minipage}} % Makes the box around the problem answer and puts the content inside
+}
+
+\newcommand{\homeworkSectionName}{}
+\newenvironment{homeworkSection}[1]{ % New environment for sections within homework problems, takes 1 argument - the name of the section
+\renewcommand{\homeworkSectionName}{#1} % Assign \homeworkSectionName to the name of the section from the environment argument
+\subsection{\homeworkSectionName} % Make a subsection with the custom name of the subsection
+\enterProblemHeader{\homeworkProblemName\ [\homeworkSectionName]} % Header and footer within the environment
+}{
+\enterProblemHeader{\homeworkProblemName} % Header and footer after the environment
+}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CLASS SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{A9} % Assignment title
+\newcommand{\hmwkDueDate}{Monday,\ May\ 1,\ 2017} % Due date
+\newcommand{\hmwkClass}{\ INTRO. TO WEB SCIENCE:\ CS 532} % Course/class
+\newcommand{\hmwkClassTime}{} % Class/lecture time
+\newcommand{\hmwkClassInstructor}{Dr. Nelson} % Teacher/lecturer
+\newcommand{\hmwkAuthorName}{Udochukwu Nweke} % Your name
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\title{
+\vspace{2in}
+\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+\vspace{0.1in}\large{\textit{\hmwkClassInstructor\ \hmwkClassTime}}
+\vspace{3in}
+}
+
+\author{\textbf{\hmwkAuthorName}}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Uncomment this line if you don't want subsections listed in the ToC
+
+\newpage
+\tableofcontents
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	PROBLEM 1
+%----------------------------------------------------------------------------------------
+
+% To have just one problem per page, simply put a \clearpage after each problem
+
+\begin{homeworkProblem}
+
+\lstinputlisting[caption= Training and Testing  Blog Entries Code, language=python]{P1-4.py}
+
+\lstinputlisting[caption=Pci Code, language=python]{feedfilter.py}
+
+Choose a blog or a newsfeed (or something similar with an Atom
+or RSS feed).  Every student should do a unique feed, so please
+``claim'' the feed on the class email list (first come, first served).
+It should be on a topic or topics of which you are qualified to
+provide classification training data.  Find something with at least
+100 entries (or items if RSS).\\
+
+Create between four and eight different categories for the entries
+in the feed\\
+
+examples: \\
+
+work, class, family, news, deals
+liberal, conservative, moderate, libertarian
+sports, local, financial, national, international, entertainment
+metal, electronic, ambient, folk, hip-hop, pop\\
+
+Download and process the pages of the feed as per the week 12 
+class slides.\\
+
+Be sure to upload the raw data (Atom or RSS) to your github account.\\
+
+Create a table with 100 rows, like:
+
+\begin{verbatim}
+
+title     classification
+-----     --------------
+Ric Ocasek -    80s 
+``Something To Grab 
+For'' (forgotten song) 
+
+Weezer - ``Pinkerton''  alternative
+(LP Review)
+
+Schon \& Hammer -  80s
+``No More Lies'' 
+(forgotten song)
+\end{verbatim}
+
+etc.  This is your ``ground truth'' (or ``gold standard'') data.\\
+
+
+
+\textbf{Solution 1:}\\
+
+1. I considered a blog with at least 100 entries and content . With this as my target, I claimed \url{http://www.icovetthee.com/}.\\
+
+2. After going through ( \url{http://www.icovetthee.com/}.) I classified the entries into four categories and they are:
+beauty, lifestyle, style and miscellaneous (misc)\\
+
+3. In order to extract the Atom feed of the blog, I used \textit{downloadBlogXML()} in listing 1 and saved the xml file into \textit{icovetthee.xml} . Table \ref{tab:Bloog Entries and Clasifications} shows the blog tiles and the blog classifications
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{100 Blog Entries}
+  \label{tab:Bloog Entries and Clasifications}
+    \begin{tabular}{ |l| l | l| }
+     \hline
+ Item & Title & Classification\\
+ \hline
+ 1&How I Style My Hair: Easy Laid Back Waves & beauty \\
+ \hline
+ 2&My Boxing Day Sales Picks & style\\
+ \hline
+ 3&What I'll Be Drinking This Christmas Eve & misc\\
+ \hline
+ 4&What's on My Christmas List This Year & style\\
+ \hline
+ 5&My Five Favourite Products Of The Year & beauty\\
+ \hline
+ 6&Silk For Your Skin & beauty\\
+ \hline
+ 7&The Three Best Apps For Instagram & misc\\
+ \hline
+ 8&Gucci Bamboo  & beauty\\
+ \hline
+ 9&Summer Denim & style\\
+ \hline
+ 10&Starting Your Day With The Right Skincare & beauty\\
+ \hline
+ 11&Wearing White In Winter & style\\
+ \hline
+ 12&A Swoon Worthy Diptyque Candle & misc\\
+ \hline
+ 13&Hello, It's I Covet Thee 4.0! & misc\\
+ \hline
+ 14&Taking You Through My Skincare Routine & beauty\\
+ \hline
+ 15&utumn Smokey Make Up Using the Lorac Pro Palette & beauty\\
+ \hline
+ 16&This Week: Feeling Autumnal & lifestyle\\
+ \hline
+ 17&What's In My Bag: Autumn Edition & lifestyle\\
+ \hline
+ 18&Suede on Black & style\\
+ \hline
+ 19&Autumn Style Picks & style\\
+ \hline
+ 20&My Most Used Products in September & beauty\\
+ \hline
+ 21&My Go-To Budget Friendly Make Up Look & misc\\
+ \hline
+ 22&What I Picked Up From The US & beauty\\
+ \hline
+ 23&A Lazy Girl's Guide to Tanning & beauty\\
+ \hline
+ 24&August Favourites & beauty\\
+ \hline
+ 25&Charlotte Tilbury Magic Foundation: An Exciting New Launch & beauty\\
+ \hline
+ 26&A Simple Step That Gets Me Up In The Morning & misc\\
+ \hline
+ 27&The Date Night: A Red Inspired Get Ready With Me & lifestyle\\
+ \hline
+ 28&The Week: Catching Up & lifestyle\\
+ \hline
+ 29&July Favourites & beauty\\
+ \hline
+ 30&This Week: Seven Days in L.A. & misc\\
+ \hline
+ 31&Mid-Year Beauty Round Up: Make Up \& Skincare Favourites & beauty\\
+ \hline
+ 32&New Skincare Additions & beauty\\
+ \hline
+ 33&Packing For a Week in L.A.! & lifestyle\\
+ \hline
+ 34&What's In My Bag: Whistle Fleet Tote & lifestyle\\
+ \hline
+ 35&Make Up Haul \& First Impressions  & misc\\
+ \hline
+ 36&Clinique Pop Lips & beauty\\
+ \hline
+ 37&Two Kiehl's Products I'm Loving & beauty\\
+ \hline
+ 38&June Favourites & beauty\\
+ \hline
+ 39&This Week: The Wimbledon Dress & style\\
+ \hline
+ 40&\#ICovetJune Round Up: Part Four & lifestyle\\
+ \hline
+ 41&Birthday Make Up! & beauty\\
+ \hline
+ 42&This Week: Turning Twenty Three & lifestyle\\
+ \hline
+ 43&\#ICovetJune Round Up: Part Three & lifestyle\\
+ \hline
+ 44&White Out & style\\
+ \hline
+
+  \end{tabular}
+\end{table}
+
+ \begin{table}[h!]
+ \centering
+    \begin{tabular}{ |l| l | l| }
+     \hline
+ Item & Title & Classification\\
+ \hline
+ 45&Get Un-Ready With Me: After Party Night Time Routine & beauty\\
+ \hline
+ 46&\#ICovetJune Round Up: Part Two & lifestyle\\
+ \hline
+ 47&Summer Bronze Smokey Eye & misc\\
+ \hline
+ 48&This Week: The Breakfast Club, Brighton & misc\\
+ \hline
+ 49&\#ICovetJune Round Up: Part One & lifestyle\\
+ \hline
+ 50&May Favourites \& Exciting Announcement! & misc\\
+ \hline
+ 51&This Week: Sun, Sea \& Tapas & style\\
+ \hline
+ 52&Five Years of Topshop Beauty & beauty\\
+ \hline
+ 53&Cherry Blossoms \& Tulle & style\\
+ \hline
+ 54&Current Skincare Favourites \& Morning/Evening Routine & beauty\\
+ \hline
+ 55&April Favourites & misc\\
+ \hline
+ 56&This Week: A Magical Disney Weekend! & lifestyle\\
+ \hline
+ 57&I Went to Sephora and Only Bought One Thing & misc\\
+ \hline
+ 58&Boots Beaty Haul \& First Impressions & misc\\
+ \hline
+ 59&This Week: Bonjour Paris! & lifesyle\\
+ \hline
+ 60&Budget Dupes \& Drugstore Beauty Alternatives & misc\\
+ \hline
+ 61&Nutella Stuffed Chocolate Chip Cookies & misc\\
+ \hline
+ 62&I Covet Thee Turns Four! & lifestyle\\
+ \hline
+ 63&March Favourites & misc\\
+ \hline
+ 64&My Everyday Make Up Bag \& Routine & misc\\
+ \hline
+ 65&This Week: Charlotte Tilbury X Norman Parkinson & lifesyle\\
+ \hline
+ 66&The Best Budget Micellar Water & beauty\\
+ \hline
+ 67&This Week: The South's Best Mac \& Cheese & lifesyle\\
+ \hline
+ 68&This Week: The South's Best Mac \& Cheese & misc\\
+ \hline
+ 69&February Favourites & misc\\
+ \hline
+ 70&Hair Chat: Favourite Products \& Styling Routine & misc\\
+ \hline
+ 71&Topshop, Asos \& Missguided Haul & misc \\
+ \hline
+ 72&A Little Trip to Paris & misc\\
+ \hline
+ 73&January Favourites & misc\\
+ \hline
+ 74&he Best Healthy Cookies & misc\\
+ \hline
+ 75&Disappointing Products & misc\\
+ \hline
+ 76&This Week: Lunch at Jamie's & misc \\
+ \hline
+ 77&Drugstore Make Up Favourites & misc\\
+ \hline
+ 78&New In: Three from the Drugstore & lifestyle\\
+ \hline
+ 79&Minimal Make Up Routine & misc\\
+ \hline
+ 80&Wear It, Beat It  & style\\
+ \hline
+ 81&This Week: Meet Up's \& Halloumi Overload & misc\\
+ \hline
+ 82&Three New Year's Lifestyle Resolutions & lifestyle\\
+ \hline
+ 83&Best of Beauty in 2014 & beauty\\
+ \hline
+ 84&Summing Up Vlogmas & misc \\
+ \hline
+ 85&The Post-NYE Saviour & misc\\
+ \hline
+ 86&December Favourites & misc\\
+ \hline
+ 87&The Best of I Covet Thee in 2014 & style\\
+ \hline
+ 88&Beauty Sales Picks & beauty\\
+ \hline
+ 89&The Pre-Christmas Pamper  \#ICovetChristmas & misc\\
+ \hline
+
+  \end{tabular}
+\end{table}
+
+
+ \begin{table}[h!]
+ \centering
+    \begin{tabular}{ |l| l |l | }
+     \hline
+ Item & Title& Classification\\
+ \hline
+ 90&Christmas Q\&A With Suzie! \#ICovetChristmas & misc \\
+ \hline
+ 91&The Christmas Jumper  \#ICovetChristmas & misc\\
+ \hline
+ 92&Christmas Party Make Up  \#ICovetChristmas & misc\\
+ \hline
+ 93&Serozinc Comes to the UK & misc\\
+ \hline
+ 94&Three Winter Coats & misc\\
+ \hline
+ 95&Winter Skincare Staples & misc\\
+ \hline
+ 96&November Favourites & misc\\
+ \hline
+ 97&What's On My Christmas List & style\\
+ \hline
+ 98&Weekend Vlog: Christmas Markets \& Crepes & misc\\
+ \hline
+ 99&Jennifer Lawrence Inspired Drugstore Make Up Look & beauty\\
+ \hline
+ 100&Autumn Beauty Haul & beauty\\
+ \hline
+ 
+   \end{tabular}
+ \end{table}
+
+
+\end{homeworkProblem}
+%----------------------------------------------------------------------------------------
+% PROBLEM 2
+%----------------------------------------------------------------------------------------
+
+\begin{homeworkProblem}
+
+\lstinputlisting[caption= Training and Testing Data, language=python]{eval.py}
+
+
+ Train the Fisher classifier on the first 50 entries (the ``training
+set''), then use the classifier to guess the classification of the
+next 50 entries (the ``test set'').
+
+Create a table with 50 rows, like
+
+\begin{verbatim}
+title     actual    predicted
+-----     ------    ---------
+Donnie Iris -     80s   80s
+``Ah! Leah!`` 
+(Forgotten Song)  
+
+Black Sabbath -   metal   metal
+``Vol. 4'' (LP Review)
+
+Catherine Wheel -   alternative metal
+``Ferment'' (LP Review)
+\end{verbatim}
+
+Assess the performance of your classifier in each of your categories
+by computing precision, recall, and F-measure.  Use the ``macro-averaged''
+label based method, as per:
+
+\url{http://stats.stackexchange.com/questions/21551/
+how-to-compute-precision-recall-for-multiclass-multilabel-classification}
+
+For example, if you have 5 categories (e.g., 80s, metal,
+alternative, electronic, cover), you will compute 
+precision, recall, and F-measure for each category,
+and then compute the average across the 5 categories.\\
+
+\textbf{Solution 2:}\\
+ 
+ 1. In order to train the fish classifier on the first 50 entries and use the classifier to guess the next 50 entries, I created two files from \textit{BlogMe.txt}. \textit{Training-50Entries.txt} and \textit{Testing-50Entries.txt}. \textit{Training-50Entries.txt} is my training set and \textit{Testing-50Entries.txt} is my test set.\\
+
+ 2. I used \textit{FisherModel(trainingInputfilename, xmlOutputFilename, dboutputFileName, `train', trainingCount)} in listing 1 to train my first 50 entries (\textit{Training-50Entries.txt}) and the result of the training is written in \textit{icovetthee.db}\\
+
+ 3. I used \textit{FisherModel(trainingInputfilename, xmlOutputFilename, dboutputFileName, `test', trainingCount)} in listing 1 to test (\textit{Testing-50Entries.txt})  and the result of test is written in \textit{Testing-50EntriesPredictions.txt}.\\ 
+
+
+ 4. I used \textit{getPredictActualLabels} in listing 3 to test \textit{Testing-50Entries.txt} in order to predict the category of each blog tile. The result of the test is saved in \textit{Testing-50EntriesPredictions.txt} and Table \ref{tab:Actual and Predicted} shows the result of testing 50 entries with prediction.\\
+
+ 5. In order to assess the performance of my classifier for each category, I computed precision, recall, and F-measure of each of the blog categories. This was achieved by using \textit{main(predictionFilename)} in listing 3. Table \ref{tab:computation} Shows the precision, recall, and F-measure for the blog categories.
+
+
+\begin{table}[h!]
+ \centering
+  \caption{Test Set}
+    \label{tab:Actual and Predicted}
+    \begin{tabular}{ |l| l | l| l| }
+     \hline
+ Item & Title & Actual & Predicted\\
+ \hline
+  1&This Week: Sun, Sea \& Tapas & style & style\\
+ \hline
+ 2&Five Years of Topshop Beauty & beauty & beauty\\
+ \hline
+ 3&Cherry Blossoms \& Tulle & style & style\\
+ \hline
+ 4&Current Skincare Favourites \& Morning/Evening Routine & beauty & beauty\\
+ \hline
+ 5&April Favourites & misc & beauty\\
+ \hline
+ 6&This Week: A Magical Disney Weekend! & lifestyle & misc \\
+ \hline
+ 7&I Went to Sephora and Only Bought One Thing & misc & beauty\\
+ \hline
+ 8&Boots Beaty Haul \& First Impressions & misc & beauty\\
+ \hline
+ 9&This Week: Bonjour Paris! & lifesyle & beauty\\
+ \hline
+ 10&Budget Dupes \& Drugstore Beauty Alternatives & misc & beauty\\
+ \hline
+ 11&Nutella Stuffed Chocolate Chip Cookies & misc & misc\\
+ \hline
+ 12&I Covet Thee Turns Four! & lifestyle & misc\\
+ \hline
+ 13&March Favourites & misc & beauty\\
+ \hline
+ 14&My Everyday Make Up Bag \& Routine & misc & beauty\\
+ \hline
+ 15&This Week: Charlotte Tilbury X Norman Parkinson & lifesyle & beauty\\
+ \hline
+ 16&The Best Budget Micellar Water & beauty & beauty\\
+ \hline
+ 17&This Week: The South's Best Mac \& Cheese & lifesyle & misc\\
+ \hline
+ 18&This Week: The South's Best Mac \& Cheese & misc & misc\\
+ \hline
+ 19&February Favourites & misc & beauty\\
+ \hline
+ 20&Hair Chat: Favourite Products \& Styling Routine & misc & beauty\\
+ \hline
+ 21&Topshop, Asos \& Missguided Haul & misc & style \\
+ \hline
+ 22&A Little Trip to Paris & misc & beauty\\
+ \hline
+ 23&January Favourites & misc & beauty\\
+ \hline
+ 24&he Best Healthy Cookies & misc & beauty\\ 
+ \hline
+ 25&Disappointing Products & misc & beauty\\
+ \hline
+ 26&This Week: Lunch at Jamie's & misc & misc \\
+ \hline
+ 27&Drugstore Make Up Favourites & misc & misc\\
+ \hline
+ 28&New In: Three from the Drugstore & lifestyle & beauty\\
+ \hline
+ 29&Minimal Make Up Routine & misc & beauty\\
+ \hline
+ 30&Wear It, Beat It  & style & beauty\\
+ \hline
+ 31&This Week: Meet Up's \& Halloumi Overload & misc & beauty\\
+ \hline
+ 32&Three New Year's Lifestyle Resolutions & lifestyle & beauty\\
+ \hline
+ 33&Best of Beauty in 2014 & beauty & beauty\\
+ \hline
+ 34&Summing Up Vlogmas & misc & misc \\
+ \hline
+ 35&The Post-NYE Saviour & misc & beauty\\
+ \hline
+ 36&December Favourites & misc & beauty\\
+ \hline
+ 37&The Best of I Covet Thee in 2014 & style & beauty\\
+ \hline
+ 38&Beauty Sales Picks & beauty & beauty\\
+ \hline
+ 39&The Pre-Christmas Pamper  \#ICovetChristmas & misc & beauty\\
+ \hline
+
+  \end{tabular}
+\end{table}
+
+
+ \begin{table}[h!]
+ \centering
+    \begin{tabular}{ |l| l |l | l|}
+     \hline
+ Item & Title& Actual & Predicted\\
+ \hline
+ 40&Christmas Q\&A With Suzie! \#ICovetChristmas & misc & beauty\\
+ \hline
+ 41&The Christmas Jumper  \#ICovetChristmas & misc & beauty\\
+ \hline
+ 42&Christmas Party Make Up  \#ICovetChristmas & misc & misc\\
+ \hline
+ 43&Serozinc Comes to the UK & misc & misc\\
+ \hline
+ 44&Three Winter Coats & misc & beauty\\
+ \hline
+ 45&Winter Skincare Staples & misc & beauty\\
+ \hline
+ 46&November Favourites & misc & misc\\
+ \hline
+ 47&What's On My Christmas List & style & beauty\\
+ \hline
+ 48&Weekend Vlog: Christmas Markets \& Crepes & misc & misc\\
+ \hline
+ 49&Jennifer Lawrence Inspired Drugstore Make Up Look & beauty & misc\\
+ \hline
+ 50&Autumn Beauty Haul & beauty & misc\\
+ \hline
+ 
+   \end{tabular}
+ \end{table}
+
+
+
+\begin{table}[h!]
+ \centering
+ \caption{Precision, Recall and F1 for 50 Blog Entries Categories}
+  \label{tab:computation}
+    \begin{tabular}{ |l| l | l | l| l|}
+     \hline
+ Item & Class& Precision & Recall & F1\\
+ \hline
+ 1&Beauty& 0.161290322581& 0.714285714286 & 0.263157894737\\
+ \hline
+ 2&style& 0.666666666667 & 0.400000000000 & 0.500000000000\\
+ \hline
+ 3&lifestyle& 0.000000000000 & 0.000000000000 & 0.000000000000\\
+ \hline
+ 4&misc& 0.666666666667 & 0.322580645161 & 0.434782608696\\
+ \hline
+ 
+
+   \end{tabular}
+ \end{table}
+
+
+\end{homeworkProblem}
+
+%----------------------------------------------------------------------------------------
+% PROBLEM 3
+%----------------------------------------------------------------------------------------
+\begin{homeworkProblem}
+
+Repeat question \#2, but use the first 90 entries to train your
+classifier and the last 10 entries for testing.\\
+
+
+\textbf{Solution 3:}\\
+
+1. I split the 100 entries bog  from \textit{BlogMe.txt} into 10 and 90 entries. I used the first 90 entires as my training set and it is saved in \textit{Training-90Entries.txt} and  the remaing 10 entries, my test set and it is saved in \textit{Testing-10Entries.txt}\\
+
+2. I used \textit{FisherModel(trainingInputfilename, xmlOutputFilename, dboutputFileName, `train', trainingCount)} in listing 1 to train \textit{Training-90Entries.txt} entries and the result of the training is written in \textit{icovetthee.90.db}\\
+
+3. I used \textit{FisherModel(trainingInputfilename, xmlOutputFilename, dboutputFileName, `test', trainingCount)} in listing 1 to test  and the result of the  is written in \textit{Testing-10EntriesPredictions.txt}. \\
+
+4. In order to assess the performance of my classifier for each category, I computed precision, recall, and F-measure of each of the blog categories. This was achieved by using \textit{main(predictionFilename)} in listing 3. Table \ref{tab:computing} Shows the precision, recall, and F-measure for the blog categories.\\
+
+
+\begin{table}[h!]
+ \centering
+ \caption{Precision, Recall and F1 for 10 Blog Entries Categories}
+  \label{tab:computing}
+    \begin{tabular}{ |l| l | l | l| l|}
+     \hline
+ Item & Class& Precision & Recall & F1\\
+ \hline
+ 1&Beauty& 1.000000000000& 0.333333333333 & 0.500000000000\\
+ \hline
+ 2&style& 0.400000000000 & 1.000000000000 & 0.571428571429\\
+ \hline
+ 3&misc& 0.000000000000 & 0.000000000000 & 0.000000000000\\
+ \hline
+ 
+
+   \end{tabular}
+ \end{table}
+
+Observation:  Training 90 entries and Testing 10 entries showed a higher precision presumably because we had more training data.
+
+\end{homeworkProblem}
+
+
+
+
+\nocite{*}\clearpage
+\bibliographystyle{plain}
+\bibliography{A9Ref}
+
+
+\end{document}

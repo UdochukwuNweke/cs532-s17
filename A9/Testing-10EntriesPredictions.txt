@@ -1,0 +1,7 @@
+TITLE <> PROB <> PREDICTED-LABEL <> ACTUAL-LABEL
+How I Style My Hair: Easy Laid Back Waves <> 0.4557224236147074 <> beauty <> beauty
+My Boxing Day Sales Picks <> 0.25588833963361446 <> style <> style
+What I'll Be Drinking This Christmas Eve <> 0.2 <> style <> misc
+Silk For Your Skin <> 0.30544949670253385 <> style <> beauty
+Gucci Bamboo <> 0.30544949670253385 <> style <> beauty
+Summer Denim <> 0.4309500489715965 <> style <> style
